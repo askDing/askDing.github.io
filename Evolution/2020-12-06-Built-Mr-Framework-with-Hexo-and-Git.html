@@ -762,6 +762,7 @@ hexo d # 部署到github</code></pre>
 <h3 id="备份博客"><a href="#备份博客" class="headerlink" title="备份博客"></a>备份博客</h3><pre><code class="zsh">cd Mr-Framework &amp;&amp; git init   #进入博客目录并初始化git
 git remote add origin https://github.com/askDing/Mr.Framework.git  # 添加远程git仓库
 git add . &amp;&amp; git commit -m &quot;My Blog Backup&quot;   # 初次提交到本地暂缓区
+git push --set-upstream origin master  # 设置上游分支
 git push origin master  # 上传到Github
 hexo clean &amp;&amp; hexo g &amp;&amp; hexo d &amp;&amp; git add . &amp;&amp; git commit -m &quot; `date` &quot; &amp;&amp; git push -f  # 部署到Github并进行备份
 </code></pre>
