@@ -18,8 +18,8 @@
   
   <entry>
     <title>应急响应基础篇</title>
-    <link href="http://example.com/EmergResp/2020-12-06-%E5%BA%94%E6%80%A5%E5%93%8D%E5%BA%94%E5%9F%BA%E7%A1%80%E7%AF%87.html"/>
-    <id>http://example.com/EmergResp/2020-12-06-%E5%BA%94%E6%80%A5%E5%93%8D%E5%BA%94%E5%9F%BA%E7%A1%80%E7%AF%87.html</id>
+    <link href="http://example.com/Response/2020-12-06-%E5%BA%94%E6%80%A5%E5%93%8D%E5%BA%94%E5%9F%BA%E7%A1%80%E7%AF%87.html"/>
+    <id>http://example.com/Response/2020-12-06-%E5%BA%94%E6%80%A5%E5%93%8D%E5%BA%94%E5%9F%BA%E7%A1%80%E7%AF%87.html</id>
     <published>2020-12-06T01:00:06.000Z</published>
     <updated>2020-12-06T01:00:06.000Z</updated>
     
@@ -35,7 +35,7 @@
     
     
     
-    <category term="EmergResp" scheme="http://example.com/categories/EmergResp/"/>
+    <category term="Response" scheme="http://example.com/categories/Response/"/>
     
     
   </entry>
