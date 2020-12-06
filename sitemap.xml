@@ -2,126 +2,126 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://example.com/Response/2020-12-06-%E5%BA%94%E6%80%A5%E5%93%8D%E5%BA%94%E5%9F%BA%E7%A1%80%E7%AF%87.html</loc>
+    <loc>https://askding.github.io/Response/%E5%BA%94%E6%80%A5%E5%93%8D%E5%BA%94%E5%9F%BA%E7%A1%80%E7%AF%87.html</loc>
     
     <lastmod>2020-12-06</lastmod>
     
   </url>
   
   <url>
-    <loc>http://example.com/Evolution/2020-12-06-Built-Mr-Framework-with-Hexo-and-Git.html</loc>
+    <loc>https://askding.github.io/Evolution/Built-Mr-Framework-with-Hexo-and-Git.html</loc>
     
     <lastmod>2020-12-05</lastmod>
     
   </url>
   
   <url>
-    <loc>http://example.com/404.html</loc>
+    <loc>https://askding.github.io/404.html</loc>
     
     <lastmod>2020-12-05</lastmod>
     
   </url>
   
   <url>
-    <loc>http://example.com/Kali/Exploit/2020-12-04-InfluxDB.html</loc>
+    <loc>https://askding.github.io/Kali/Exploit/InfluxDB.html</loc>
     
     <lastmod>2020-12-04</lastmod>
     
   </url>
   
   <url>
-    <loc>http://example.com/Kali/Exploit/2020-12-04-MongoDB.html</loc>
+    <loc>https://askding.github.io/Kali/Exploit/MongoDB.html</loc>
     
     <lastmod>2020-12-04</lastmod>
     
   </url>
   
   <url>
-    <loc>http://example.com/Kali/Exploit/2020-12-04-Redis.html</loc>
+    <loc>https://askding.github.io/Kali/Exploit/Redis.html</loc>
     
     <lastmod>2020-12-04</lastmod>
     
   </url>
   
   <url>
-    <loc>http://example.com/Kali/Exploit/2020-12-04-MySQL.html</loc>
+    <loc>https://askding.github.io/Kali/Exploit/MySQL.html</loc>
     
     <lastmod>2020-12-04</lastmod>
     
   </url>
   
   <url>
-    <loc>http://example.com/Kali/Exploit/2020-12-04-Memcache.html</loc>
+    <loc>https://askding.github.io/Kali/Exploit/Memcache.html</loc>
     
     <lastmod>2020-12-04</lastmod>
     
   </url>
   
   <url>
-    <loc>http://example.com/Kali/Exploit/2020-12-04-Hadoop.html</loc>
+    <loc>https://askding.github.io/Kali/Exploit/Hadoop.html</loc>
     
     <lastmod>2020-12-04</lastmod>
     
   </url>
   
   <url>
-    <loc>http://example.com/Kali/Exploit/2020-12-04-Zookeeper.html</loc>
+    <loc>https://askding.github.io/Kali/Exploit/Zookeeper.html</loc>
     
     <lastmod>2020-12-04</lastmod>
     
   </url>
   
   <url>
-    <loc>http://example.com/Kali/Exploit/2020-12-04-Tomcat.html</loc>
+    <loc>https://askding.github.io/Kali/Exploit/Tomcat.html</loc>
     
     <lastmod>2020-12-04</lastmod>
     
   </url>
   
   <url>
-    <loc>http://example.com/Kali/Exploit/2020-12-04-Supervisord.html</loc>
+    <loc>https://askding.github.io/Kali/Exploit/Supervisord.html</loc>
     
     <lastmod>2020-12-04</lastmod>
     
   </url>
   
   <url>
-    <loc>http://example.com/Kali/Exploit/2020-12-04-SaltStack.html</loc>
+    <loc>https://askding.github.io/Kali/Exploit/SaltStack.html</loc>
     
     <lastmod>2020-12-04</lastmod>
     
   </url>
   
   <url>
-    <loc>http://example.com/Kali/Exploit/2020-12-04-NFS.html</loc>
+    <loc>https://askding.github.io/Kali/Exploit/NFS.html</loc>
     
     <lastmod>2020-12-04</lastmod>
     
   </url>
   
   <url>
-    <loc>http://example.com/Kali/Exploit/2020-12-04-Harbor.html</loc>
+    <loc>https://askding.github.io/Kali/Exploit/Harbor.html</loc>
     
     <lastmod>2020-12-04</lastmod>
     
   </url>
   
   <url>
-    <loc>http://example.com/Kali/Exploit/2020-12-04-JDWP.html</loc>
+    <loc>https://askding.github.io/Kali/Exploit/JDWP.html</loc>
     
     <lastmod>2020-12-04</lastmod>
     
   </url>
   
   <url>
-    <loc>http://example.com/Kali/Exploit/2020-12-04-Java-RMI.html</loc>
+    <loc>https://askding.github.io/Kali/Exploit/Java-RMI.html</loc>
     
     <lastmod>2020-12-04</lastmod>
     
   </url>
   
   <url>
-    <loc>http://example.com/Kali/2020-12-03-kali-inux%E7%B3%BB%E7%BB%9F%E4%BC%98%E5%8C%96.html</loc>
+    <loc>https://askding.github.io/Kali/kali-inux%E7%B3%BB%E7%BB%9F%E4%BC%98%E5%8C%96.html</loc>
     
     <lastmod>2020-12-03</lastmod>
     
@@ -129,7 +129,7 @@
   
 
   <url>
-    <loc>http://example.com/</loc>
+    <loc>https://askding.github.io/</loc>
     <lastmod>2020-12-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
@@ -137,7 +137,7 @@
 
   
   <url>
-    <loc>http://example.com/tags/%E7%B3%BB%E7%BB%9F%E9%85%8D%E7%BD%AE/</loc>
+    <loc>https://askding.github.io/tags/%E7%B3%BB%E7%BB%9F%E9%85%8D%E7%BD%AE/</loc>
     <lastmod>2020-12-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -146,28 +146,28 @@
 
   
   <url>
-    <loc>http://example.com/categories/Kali/</loc>
+    <loc>https://askding.github.io/categories/Kali/</loc>
     <lastmod>2020-12-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://example.com/categories/Kali/Exploit/</loc>
+    <loc>https://askding.github.io/categories/Kali/Exploit/</loc>
     <lastmod>2020-12-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://example.com/categories/Evolution/</loc>
+    <loc>https://askding.github.io/categories/Evolution/</loc>
     <lastmod>2020-12-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://example.com/categories/Response/</loc>
+    <loc>https://askding.github.io/categories/Response/</loc>
     <lastmod>2020-12-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
