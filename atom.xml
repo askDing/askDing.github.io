@@ -18,8 +18,8 @@
   
   <entry>
     <title>pythonic_tools</title>
-    <link href="https://askding.github.io/Programing/Python/pythonic-tools.html"/>
-    <id>https://askding.github.io/Programing/Python/pythonic-tools.html</id>
+    <link href="https://askding.github.io/Coding/Python/pythonic-tools.html"/>
+    <id>https://askding.github.io/Coding/Python/pythonic-tools.html</id>
     <published>2020-12-06T11:12:43.000Z</published>
     <updated>2020-12-06T11:12:43.000Z</updated>
     
@@ -34,9 +34,9 @@
     
     
     
-    <category term="Programing" scheme="https://askding.github.io/categories/Programing/"/>
+    <category term="Coding" scheme="https://askding.github.io/categories/Coding/"/>
     
-    <category term="Python" scheme="https://askding.github.io/categories/Programing/Python/"/>
+    <category term="Python" scheme="https://askding.github.io/categories/Coding/Python/"/>
     
     
   </entry>

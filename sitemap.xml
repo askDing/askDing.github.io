@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://askding.github.io/Programing/Python/pythonic-tools.html</loc>
+    <loc>https://askding.github.io/Coding/Python/pythonic-tools.html</loc>
     
     <lastmod>2020-12-06</lastmod>
     
@@ -160,7 +160,7 @@
   </url>
   
   <url>
-    <loc>https://askding.github.io/categories/Programing/</loc>
+    <loc>https://askding.github.io/categories/Coding/</loc>
     <lastmod>2020-12-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -174,7 +174,7 @@
   </url>
   
   <url>
-    <loc>https://askding.github.io/categories/Programing/Python/</loc>
+    <loc>https://askding.github.io/categories/Coding/Python/</loc>
     <lastmod>2020-12-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
