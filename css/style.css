@@ -676,7 +676,7 @@
   display: block;
 }
 .nav-right {
-  width: 350px /*调整文章列表宽度*/;
+  width: 420px;
   height: 100%;
   background: #f2f1d7 /* 柔黄色F2F1D7 深绿色00B271  绿色C7EDCC   浅绿E8FFE8  */;
   border-right: 1px solid #e5e8ec;
@@ -1673,10 +1673,10 @@ h2 {
 }
 .nav {
   position: relative;
-  width: 542px;
+  width: 100px;
   height: 100%;
   float: left;
-  background-color: #fff;
+  background-color: #f2f1d7;
   transition: margin-left 0.5s cubic-bezier(0.77, 0, 0.175, 1);
 }
 .nav.fullscreen {
@@ -1786,7 +1786,7 @@ img.pswp__img {
     font: 400 15px/1 "Open Sans", "Hiragino Sans GB", sans-serif;
   }
   .nav {
-    width: 492px;
+    width: 522px /*492px*/;
   }
   .nav.fullscreen {
     margin-left: -492px;

@@ -4,7 +4,7 @@
     font: 400 15px/1 "Open Sans", "Hiragino Sans GB", sans-serif;
   }
   .nav {
-    width: 492px;
+    width: 522px /*492px*/;
   }
   .nav.fullscreen {
     margin-left: -492px;
