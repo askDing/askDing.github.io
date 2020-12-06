@@ -507,9 +507,9 @@
   color: #f00;
 }
 .nav-left {
-  width: 125px /* 左侧导航宽度 125px */;
+  width: 150px /* 左侧导航宽度 150px */;
   height: 100%;
-  background: #2a2935;
+  background: #32414e /* 这个颜色比较好看*/;
   box-shadow: inset -15px 0 15px -15px #222;
   float: left;
   position: relative;
