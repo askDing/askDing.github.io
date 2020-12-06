@@ -676,7 +676,7 @@
   display: block;
 }
 .nav-right {
-  width: 420px;
+  width: 350px /*调整文章列表宽度*/;
   height: 100%;
   background: #f2f1d7 /* 柔黄色F2F1D7 深绿色00B271  绿色C7EDCC   浅绿E8FFE8  */;
   border-right: 1px solid #e5e8ec;
