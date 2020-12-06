@@ -6,7 +6,7 @@
   <link href="https://askding.github.io/atom.xml" rel="self"/>
   
   <link href="https://askding.github.io/"/>
-  <updated>2020-12-06T11:12:43.000Z</updated>
+  <updated>2020-12-06T12:03:55.000Z</updated>
   <id>https://askding.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>about</title>
+    <link href="https://askding.github.io/Kali/PostExploit/about.html"/>
+    <id>https://askding.github.io/Kali/PostExploit/about.html</id>
+    <published>2020-12-06T12:03:55.000Z</published>
+    <updated>2020-12-06T12:03:55.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>[toc]</p><p>isfalkjasldfja</p><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;[toc]&lt;/p&gt;
+&lt;p&gt;isfalkjasldfja&lt;/p&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js&quot;&gt;&lt;/script&gt;&lt;s</summary>
+      
+    
+    
+    
+    <category term="Kali" scheme="https://askding.github.io/categories/Kali/"/>
+    
+    <category term="PostExploit" scheme="https://askding.github.io/categories/Kali/PostExploit/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>pythonic_tools</title>

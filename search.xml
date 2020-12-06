@@ -4,6 +4,27 @@
   
     
     <entry>
+      <title>about</title>
+      <link href="Kali/PostExploit/about.html"/>
+      <url>Kali/PostExploit/about.html</url>
+      
+        <content type="html"><![CDATA[<p>[toc]</p><p>isfalkjasldfja</p><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">]]></content>
+      
+      
+      <categories>
+          
+          <category> Kali </category>
+          
+          <category> PostExploit </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>pythonic_tools</title>
       <link href="Coding/Python/pythonic-tools.html"/>
       <url>Coding/Python/pythonic-tools.html</url>
