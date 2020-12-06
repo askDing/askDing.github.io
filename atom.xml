@@ -23,13 +23,13 @@
     <published>2020-12-06T11:12:43.000Z</published>
     <updated>2020-12-06T11:12:43.000Z</updated>
     
-    <content type="html"><![CDATA[<p>[toc]</p><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">]]></content>
+    <content type="html"><![CDATA[<p>[toc]</p><h2 id="通过pymusic-dl下载音乐"><a href="#通过pymusic-dl下载音乐" class="headerlink" title="通过pymusic-dl下载音乐"></a>通过pymusic-dl下载音乐</h2><pre><code class="zsh">pip install pymusic-dl  # 安装音乐模块music-dl -k &quot;&lt;音乐名&gt;&quot;   # 下载音乐</code></pre><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">]]></content>
     
     
       
       
     <summary type="html">&lt;p&gt;[toc]&lt;/p&gt;
-&lt;script type=&quot;text/javascript&quot; src=&quot;https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javas</summary>
+&lt;h2 id=&quot;通过pymusic-dl下载音乐&quot;&gt;&lt;a href=&quot;#通过pymusic-dl下载音乐&quot; class=&quot;headerlink&quot; title=&quot;通过pymusic-dl下载音乐&quot;&gt;&lt;/a&gt;通过pymusic-dl下载音乐&lt;/h2&gt;&lt;pre</summary>
       
     
     
