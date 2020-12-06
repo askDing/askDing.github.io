@@ -189,7 +189,7 @@
     <div><a class="about  hasFriend  site_url"  href="/about">About</a><a style="width: 50%"  class="friends">Friends</a></div>
 </div>
 <input type="hidden" id="yelog_site_posts_number" value="17">
-<input type="hidden" id="yelog_site_word_count" value="16.8k">
+<input type="hidden" id="yelog_site_word_count" value="16.9k">
 <div style="display: none">
     <span id="busuanzi_value_site_uv"></span>
     <span id="busuanzi_value_site_pv"></span>
@@ -446,6 +446,17 @@
             </span>
         </span>
         
+        
+        <span class="top-comment" title="跳转至评论区">
+            <a href="#comments">
+                Comment:<span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </a>
+        </span>
         
     </div>
     
@@ -732,6 +743,27 @@ sudo make install</code></pre>
 </p>
 
 
+
+
+    <div id="comments"></div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+
+<script type="text/javascript">
+    $.getScript('/js/gitalk.js', function () {
+        var gitalk = new Gitalk({
+            clientID: '3675559917bdc294608c',
+            clientSecret: 'a826e0ded6d8b29a5bb77843f4c3805ecf7b263f',
+            repo: 'askding.github.io',
+            owner: 'askDing',
+            admin: ['askDing'],
+            id: decodeURI(location.pathname),
+            distractionFreeMode: 'true',
+            language: 'zh-CN',
+            perPage: parseInt('10',10)
+        })
+        gitalk.render('comments')
+    })
+</script>
 
 
 
