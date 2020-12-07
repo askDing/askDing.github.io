@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Tmux | Mr.Framework</title>
+  <title>代码审计概念 | Mr.Framework</title>
   <meta name="keywords" content="">
-  <meta name="description" content="Tmux | Mr.Framework">
+  <meta name="description" content="代码审计概念 | Mr.Framework">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="404 Not Found: 该页面无法显示很抱歉，您所访问的地址并不存在">
 <meta property="og:type" content="website">
@@ -507,9 +507,9 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="post-Tmux" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-代码审计概念" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">Tmux</h1>
+        <h1 class="article-title">代码审计概念</h1>
     
     <div class="article-meta">
         
@@ -519,7 +519,9 @@
             <i class="iconfont icon-category"></i>
             
             
-            <a  data-rel="Tools">Tools</a>
+            <a  data-rel="Coding">Coding</a> > 
+            
+            <a  data-rel="Coding&lt;---&gt;Audit">Audit</a>
             
         </span>
         
@@ -527,12 +529,12 @@
     </div>
     <div class="article-meta">
         
-            Created At : <time class="date" title='Updated At: 2020-12-07 18:14:43'>2020-12-07 18:14</time>
+            Created At : <time class="date" title='Updated At: 2020-12-07 19:51:19'>2020-12-07 19:51</time>
         
     </div>
     <div class="article-meta">
         
-        <span>Count:737</span>
+        <span>Count:255</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -562,7 +564,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Installation"><span class="toc-text">Installation</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Key-Bindings"><span class="toc-text">Key-Bindings</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Session-Operation"><span class="toc-text">Session Operation:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Windows-Operation"><span class="toc-text">Windows Operation:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Panel-Operation"><span class="toc-text">Panel Operation:</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Configuration"><span class="toc-text">Configuration</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Configuring-the-status-line"><span class="toc-text">Configuring the status line</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Accessing-the-macOS-clipboard-from-within-tmux-sessions"><span class="toc-text">Accessing the macOS clipboard from within tmux sessions</span></a></li></ol></li></ol>
+        
     
 <style>
     .left-col .switch-btn,
@@ -578,111 +580,29 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><img src="../images/85596a5a-9bbf-11e6-8aa1-7c8d9829c008.gif" alt="Screenshot"></p>
-<h2 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h2><pre><code>$ cd
-$ git clone https://github.com/gpakosz/.tmux.git
-$ ln -s -f .tmux/.tmux.conf
-$ cp .tmux/.tmux.conf.local .</code></pre>
-<h2 id="Key-Bindings"><a href="#Key-Bindings" class="headerlink" title="Key-Bindings"></a>Key-Bindings</h2><ul>
-<li><code>&lt;prefix&gt;</code> <kbd>Ctrl</kbd> + <kbd>a</kbd> or <kbd>Ctrl</kbd> + <kbd>b</kbd></li>
-<li><code>&lt;prefix&gt; c</code>  <kbd>Ctrl</kbd> + <kbd>a</kbd> + <kbd>c</kbd></li>
-<li><code>&lt;prefix&gt; C-c</code>  <kbd>Ctrl</kbd> + <kbd>a</kbd>  + <kbd>Ctrl</kbd> + <kbd>c</kbd></li>
-<li><code>&lt;prefix&gt; ?</code> manual </li>
-<li><code>&lt;prefix&gt; d</code> detached the current session</li>
-<li><code>&lt;ctrl&gt; +d</code> kill current session</li>
-<li><code>&lt;prefix&gt; d</code> close current panel</li>
-</ul>
-<p>This configuration uses the following bindings:</p>
+        <p>程序=算法+代码<br>                    代码=函数+变量+（流程控制）</p>
+<p>漏洞形成的条件：</p>
 <ul>
-<li><code>&lt;prefix&gt; e</code> opens <code>~/.tmux.conf.local</code></li>
-<li><code>&lt;prefix&gt; r</code> reloads <code>~/.tmux.conf.local</code></li>
-<li><code>C-l</code> clears both the screen and the tmux history</li>
+<li>一、变量可控   一切输入都是有害的</li>
+<li>二、变量传递到有利用价值的函数（可利用函数）</li>
 </ul>
-<h3 id="Session-Operation"><a href="#Session-Operation" class="headerlink" title="Session Operation:"></a>Session Operation:</h3><ul>
-<li><code>&lt;prefix&gt; C-c</code> creates a new session</li>
-<li><code>&lt;prefix&gt; C-f</code> lets you switch to another session by name</li>
-<li><code>&lt;prefix&gt; $</code> rename session name</li>
-<li><code>&lt;prefix&gt; s</code> list sessions</li>
-</ul>
-<h3 id="Windows-Operation"><a href="#Windows-Operation" class="headerlink" title="Windows Operation:"></a>Windows Operation:</h3><ul>
-<li><code>&lt;prefix&gt; C-h</code> and <code>&lt;prefix&gt; C-l</code> let you navigate windows </li>
-<li><code>&lt;prefix&gt; c</code> create window</li>
-<li><code>&lt;prefix&gt; w</code> list windows </li>
-<li><code>&lt;prefix&gt; Tab</code> brings you to the last active window</li>
-<li><code>&lt;prefix&gt; 1,2,3</code> let you navigate to specific window</li>
-<li><code>&lt;prefix&gt; ,</code> rename current window</li>
-<li><code>&lt;prefix&gt; &amp;</code> close current window</li>
-<li><code>&lt;prefix&gt; f</code> find specific window by name</li>
-</ul>
-<h3 id="Panel-Operation"><a href="#Panel-Operation" class="headerlink" title="Panel Operation:"></a>Panel Operation:</h3><ul>
-<li><p><code>&lt;prefix&gt; /</code> splits the current pane vertically</p>
-</li>
-<li><p><code>&lt;prefix&gt; -</code> splits the current pane horizontally</p>
-</li>
-<li><p><code>&lt;prefix&gt; h</code>, <code>&lt;prefix&gt; j</code>, <code>&lt;prefix&gt; k</code> and <code>&lt;prefix&gt; l</code> let you navigate</p>
-</li>
-<li><p><code>&lt;prefix&gt; o</code> navigate panels</p>
-</li>
-<li><p><code>&lt;prefix&gt; H</code>, <code>&lt;prefix&gt; J</code>, <code>&lt;prefix&gt; K</code>, <code>&lt;prefix&gt; L</code> let you resize panes</p>
-</li>
-<li><p><code>&lt;prefix&gt; &lt;</code> and <code>&lt;prefix&gt; &gt;</code> let you swap panes</p>
-</li>
-<li><p><code>&lt;prefix&gt; +</code> maximizes the current pane to a new panel</p>
-</li>
-<li><p><code>&lt;prefix&gt; x</code> kill the current panel</p>
-</li>
-<li><p><code>&lt;prefix&gt; m</code> toggles mouse mode on or off</p>
-</li>
-<li><p><code>&lt;prefix&gt; &lt;space&gt; </code> 切换窗格布局</p>
-</li>
-<li><p><code>&lt;prefix&gt; Enter</code> enters copy-mode</p>
-</li>
-<li><p><code>&lt;prefix&gt; b</code> lists the paste-buffers</p>
-</li>
-<li><p><code>&lt;prefix&gt; p</code> pastes from the top paste-buffer</p>
-</li>
-<li><p><code>&lt;prefix&gt; P</code> lets you choose the paste-buffer to paste from</p>
-</li>
-</ul>
-<h2 id="Configuration"><a href="#Configuration" class="headerlink" title="Configuration"></a>Configuration</h2><hr>
-<p>file: <code>~/.tmux.conf.local</code><br>variables:</p>
-<pre><code>tmux_conf_theme_left_separator_main=&#39;\uE0B0&#39;
-tmux_conf_theme_left_separator_sub=&#39;\uE0B1&#39;
-tmux_conf_theme_right_separator_main=&#39;\uE0B2&#39;
-tmux_conf_theme_right_separator_sub=&#39;\uE0B3&#39;</code></pre>
-<h3 id="Configuring-the-status-line"><a href="#Configuring-the-status-line" class="headerlink" title="Configuring the status line"></a>Configuring the status line</h3><p>Edit the <code>~/.tmux.conf.local</code> file (<code>&lt;prefix&gt; e</code>) and adjust the<br><code>tmux_conf_theme_status_left</code> and <code>tmux_conf_theme_status_right</code> variables to<br>your own preferences.</p>
-<p>This configuration supports the following builtin variables:</p>
+<p>漏洞造成的效果：<br>漏洞的利用效果取决于最终函数的功能<br>变量进入什么样的函数就会导致什么样的效果</p>
+<p>危险函数：<br>函数的功能 导致 漏洞的种类</p>
 <ul>
-<li><code>#&#123;battery_bar&#125;</code>: horizontal battery charge bar</li>
-<li><code>#&#123;battery_percentage&#125;</code>: battery percentage</li>
-<li><code>#&#123;battery_status&#125;</code>: is battery charging or discharging?</li>
-<li><code>#&#123;battery_vbar&#125;</code>: vertical battery charge bar</li>
-<li><code>#&#123;circled_session_name&#125;</code>: circled session number, up to 20</li>
-<li><code>#&#123;hostname&#125;</code>: SSH/Mosh aware hostname information</li>
-<li><code>#&#123;hostname_ssh&#125;</code>: SSH/Mosh aware hostname information, blank when not<br>connected to a remote server through SSH/Mosh</li>
-<li><code>#&#123;loadavg&#125;</code>: load average</li>
-<li><code>#&#123;pairing&#125;</code>: is session attached to more than one client?</li>
-<li><code>#&#123;prefix&#125;</code>: is prefix being depressed?</li>
-<li><code>#&#123;root&#125;</code>: is current user root?</li>
-<li><code>#&#123;synchronized&#125;</code>: are the panes synchronized?</li>
-<li><code>#&#123;uptime_y&#125;</code>: uptime years</li>
-<li><code>#&#123;uptime_d&#125;</code>: uptime days, modulo 365 when <code>#&#123;uptime_y&#125;</code> is used</li>
-<li><code>#&#123;uptime_h&#125;</code>: uptime hours</li>
-<li><code>#&#123;uptime_m&#125;</code>: uptime minutes</li>
-<li><code>#&#123;uptime_s&#125;</code>: uptime seconds</li>
-<li><code>#&#123;username&#125;</code>: SSH/Mosh aware username information</li>
-<li><code>#&#123;username_ssh&#125;</code>: SSH aware username information, blank when not connected<br>to a remote server through SSH/Mosh</li>
+<li>文件包含：包含漏洞</li>
+<li>代码执行：执行任意代码漏洞</li>
+<li>命令执行：执行任意命令漏洞</li>
+<li>文件系统操作：文件/目录 读写删除等漏洞</li>
+<li>数据库操作：SQL注入漏洞</li>
+<li>数据显示：xss等客户端漏洞</li>
+<li>。。。</li>
 </ul>
-<p>Beside custom variables mentioned above, the <code>tmux_conf_theme_status_left</code> and<br><code>tmux_conf_theme_status_right</code> variables support usual tmux syntax, e.g. using<br><code>#()</code> to call an external command that inserts weather information provided by<br><a target="_blank" rel="noopener" href="https://github.com/chubin/wttr.in#one-line-output">wttr.in</a>:</p>
-<pre><code>tmux_conf_theme_status_right=&#39;#&#123;prefix&#125;#&#123;pairing&#125;#&#123;synchronized&#125; #(curl wttr.in?format=3) , %R , %d %b | #&#123;username&#125;#&#123;root&#125; | #&#123;hostname&#125; &#39;</code></pre>
-<p><img src="../images/52175490-07797c00-27a5-11e9-9fb6-42eec4fe4188.png" alt="Weather information from wttr.in"></p>
-<h3 id="Accessing-the-macOS-clipboard-from-within-tmux-sessions"><a href="#Accessing-the-macOS-clipboard-from-within-tmux-sessions" class="headerlink" title="Accessing the macOS clipboard from within tmux sessions"></a>Accessing the macOS clipboard from within tmux sessions</h3><p>[Chris Johnsen created the <code>reattach-to-user-namespace</code><br>utility][reattach-to-user-namespace] that makes <code>pbcopy</code> and <code>pbpaste</code> work<br>again within tmux.</p>
-<p>To install <code>reattach-to-user-namespace</code>, use either <a target="_blank" rel="noopener" href="http://www.macports.org/">MacPorts</a> or<br><a target="_blank" rel="noopener" href="http://brew.sh/">Homebrew</a>:</p>
-<p>   <code> $ port install tmux-pasteboard</code></p>
-<p>or</p>
-<pre><code>`$ brew install reattach-to-user-namespace`</code></pre>
-<p>Once installed, <code>reattach-to-usernamespace</code> will be automatically detected.</p>
-<p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/kevingrace/p/6496899.html">tmux终端复用神器</a><br><a target="_blank" rel="noopener" href="https://gist.github.com/ryerh/14b7c24dfd623ef8edc7">Tmux 快捷键</a><br><a target="_blank" rel="noopener" href="https://segmentfault.com/a/1190000016283278">多窗口管理器Tmux - 从入门到精通</a><br><a target="_blank" rel="noopener" href="https://harttle.land/2015/11/06/tmux-startup.html">优雅地使用命令行：Tmux 终端复用 </a><br>[<a target="_blank" rel="noopener" href="https://segmentfault.com/a/1190000000423141">结对编程利器：SSH和Tmux</a>]</p>
+<p>变量跟踪分类：</p>
+<ul>
+<li>正向跟踪：通过变量找函数</li>
+<li>逆向跟踪：通过函数找变量</li>
+</ul>
+<p>代码审计的本质<br>找漏洞=找对应变量与函数<br>变量就是漏洞（bug）本身，函数就是这个bug的爪子/衣服/种类</p>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 askding@qq.com </span>

