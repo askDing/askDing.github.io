@@ -1,6 +1,6 @@
 #comments {
   padding: 2.5em;
-  background: #fff;
+  background: #e8ffe8 /* 评论区背景颜色   */;
 }
 #comments .comment-bar {
   display: block;
