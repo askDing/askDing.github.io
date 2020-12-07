@@ -9,6 +9,13 @@
   </url>
   
   <url>
+    <loc>https://askding.github.io/Kali/PostExploit/%E5%86%85%E7%BD%91%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86.html</loc>
+    
+    <lastmod>2020-12-07</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://askding.github.io/Tools/Tmux.html</loc>
     
     <lastmod>2020-12-07</lastmod>
@@ -230,14 +237,14 @@
   </url>
   
   <url>
-    <loc>https://askding.github.io/categories/Response/</loc>
+    <loc>https://askding.github.io/categories/Coding/</loc>
     <lastmod>2020-12-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://askding.github.io/categories/Coding/</loc>
+    <loc>https://askding.github.io/categories/Response/</loc>
     <lastmod>2020-12-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
