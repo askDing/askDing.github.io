@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://askding.github.io/Evolution/Learning-Markdown.html</loc>
+    
+    <lastmod>2020-12-07</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://askding.github.io/about/index.html</loc>
     
     <lastmod>2020-12-06</lastmod>
@@ -188,7 +195,7 @@
   </url>
   
   <url>
-    <loc>https://askding.github.io/categories/Coding/</loc>
+    <loc>https://askding.github.io/categories/Evolution/</loc>
     <lastmod>2020-12-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -202,14 +209,14 @@
   </url>
   
   <url>
-    <loc>https://askding.github.io/categories/Coding/Python/</loc>
+    <loc>https://askding.github.io/categories/Coding/</loc>
     <lastmod>2020-12-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://askding.github.io/categories/Evolution/</loc>
+    <loc>https://askding.github.io/categories/Coding/Python/</loc>
     <lastmod>2020-12-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
