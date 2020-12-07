@@ -656,7 +656,7 @@ nmap --script ip-geolocation-maxmind &lt;target&gt; [--script-args ip-geolocatio
 <pre><code class="zsh">nmap --script ip-geolocation-ipinfodb &lt;target&gt; --script-args ip-geolocation-ipinfodb.apikey=&lt;API_key&gt;</code></pre>
 <h3 id="获取Whois记录"><a href="#获取Whois记录" class="headerlink" title="获取Whois记录"></a>获取Whois记录</h3><pre><code class="zsh">nmap --script &quot;whois-*&quot; --script-args whodb=nocache target </code></pre>
 <h3 id="从Shodan获取目标信息"><a href="#从Shodan获取目标信息" class="headerlink" title="从Shodan获取目标信息"></a>从Shodan获取目标信息</h3><pre><code class="zsh">vi /usr/local/Cellar/nmap/7.80_1/share/nmap/scripts/shodan-api.nse
-set local apiKey = &quot;7VYpw5QnxgWeww59w7sX7jD6up7Qtha9&quot;
+set local apiKey = &quot;7VYpw5QnxgWeww59w7sX7jD6up7Qth9a&quot;
  nmap  -sn -Pn -n --script shodan-api  --script-args &#39;shodan-api.outfile=potato.csv&#39; x.y.z.0/24</code></pre>
 <h3 id="探测WAF"><a href="#探测WAF" class="headerlink" title="探测WAF"></a>探测WAF</h3><pre><code class="zsh">nmap --script &quot;http-waf-*&quot; &lt;target&gt;</code></pre>
 <h3 id="探测代理"><a href="#探测代理" class="headerlink" title="探测代理"></a>探测代理</h3><pre><code class="zsh">nmap --script http-open-proxy &lt;target&gt;</code></pre>
