@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>JDWP | Mr.Framework</title>
+  <title>BurpSuite | Mr.Framework</title>
   <meta name="keywords" content="">
-  <meta name="description" content="JDWP | Mr.Framework">
+  <meta name="description" content="BurpSuite | Mr.Framework">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="404 Not Found: 该页面无法显示很抱歉，您所访问的地址并不存在">
 <meta property="og:type" content="website">
@@ -523,9 +523,9 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="post-JDWP" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-BurpSuite" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">JDWP</h1>
+        <h1 class="article-title">BurpSuite</h1>
     
     <div class="article-meta">
         
@@ -535,9 +535,7 @@
             <i class="iconfont icon-category"></i>
             
             
-            <a  data-rel="Kali">Kali</a> > 
-            
-            <a  data-rel="Kali&lt;---&gt;Exploit">Exploit</a>
+            <a  data-rel="Tools">Tools</a>
             
         </span>
         
@@ -545,12 +543,12 @@
     </div>
     <div class="article-meta">
         
-            Created At : <time class="date" title='Updated At: 2020-12-04 20:22:28'>2020-12-04 20:22</time>
+            Created At : <time class="date" title='Updated At: 2020-12-08 11:34:11'>2020-12-08 11:34</time>
         
     </div>
     <div class="article-meta">
         
-        <span>Count:339</span>
+        <span>Count:99</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -580,7 +578,7 @@
     
     <div class="toc-ref">
     
-        
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#FireFox-Hackbar"><span class="toc-text">FireFox+Hackbar</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Firefox%E5%85%B3%E9%97%AD%E8%87%AA%E5%8A%A8%E6%9B%B4%E6%96%B0"><span class="toc-text">Firefox关闭自动更新</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%89%E8%A3%85Hackbar"><span class="toc-text">安装Hackbar</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -596,46 +594,22 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <script src=/js/crypto-js.js></script>
-<script>
-function doDecrypt (pwd, onError) {
-	console.log('in doDecrypt');
-	const txt = document.getElementById('enc_content').innerHTML;
-	let plantext;
-	try {
-		const bytes = CryptoJS.AES.decrypt(txt, pwd);
-		var plaintext = bytes.toString(CryptoJS.enc.Utf8);
-	} catch(err) {
-		if(onError) {
-			onError(err);
-		}
-		return;
-	}
-	document.getElementById('enc_content').innerHTML = plaintext;
-	document.getElementById('enc_content').style.display = 'block';
-	document.getElementById('enc_passwd').style.display = 'none';
-	if(typeof MathJax !== 'undefined') {
-		MathJax.Hub.Queue(
-			['resetEquationNumbers', MathJax.InputJax.TeX],
-			['PreProcess', MathJax.Hub],
-			['Reprocess', MathJax.Hub]
-		);
-	}
-}
-</script>
-<div id="enc_content" style="display:none">U2FsdGVkX1+ngo3aR+1v/KyG2xtKyCOuWGQT02d5zGRPnFSssOzNt1tYHkiIkmWvW5QuGoZSDqZ+yRCIsYiKUOcQTi5l2DeuvE4MXoUJB3XsrE8YRstrs8apPFlC0uWBAwDjhMOtaZiwY0Sj/JY3j9wG0pvtxxm8phknVuinUnBwqxhXcHIVl/zdGsZ5eIBcEyK6QGpokGzpA+pqHyxBT0etr/Ro/YfPU6X2I8npW8ahTZDocheGKjBQh2Cyz+xVGd3pX536R3C8oD2hhozhNslx28yzD4jk0bE+m4Y4RHz+oO1l4f10+TfiHmXaoj7Y5yFCp58B9Y22Y9rs0Bh6+1LdF0ySCSjJaadG6LKoOPYCnC/fjaOCfzcZizWtTNzHJnEV2v9sMWhUVF7uAxvaaUtdqnhAHmxIZVPbEuXX9UUpwk4QRtvkSnDwogJbY4m0q0Qj2fiL8KFZmJJWk2vQ0yuxTUnBhL4KVqRaLYzPeUk3Gs8bRmA1Gvbrk3ky1UySAucqbbHX6437gfYQuQ67CremR6hL/Q8WMI1gdoo9ch3wrBaYdgiJd5Ak7A/6478IC1rJU5HlpUyrvReZdsQlpoFsjBxMGss1F9YA3q03rBS7zHTrJMZo8YVGzu05CdWGMGYkTlnyhMYkaOBbrazexBRmp4noZUmxJy1SveOfmanzFpnUNsGee8Np+BuOXvJDvNhIZ6PXeMA07tkr6zsQFL0fwx7m1e2FA2w6GzQclRgYQG0BZ4Cn/0QB0YA/gvEIA6gTqOoWqz2HEogaZy8cPqliCBW50Jy5rUwUnPSi56WgZnmoJnG24t48bXIkHRw1kECro++d6FEh4dW1Wq9l++b6xv71VStcQ16OShv/9ripsrMIIzhuvlNIdXm9HwK5UEuA7wPO5+wnrHgnoHUakXxxzVppCNfLMNZHzYHPb27d2SeykCxlUtAXaRgT+K1Nlghj3RnNmzVuUWXiIO8ethBhV3zmf4B0iXU3Ozp2R017iBHDaqsz3U2cywULidJ/xf0kH1sk0zEM4vwMB3BZ634XBSORfX6g5+bszio/MQHgVEfD/JFZ1VERsUU7UCzh6LhMs8WCJwTZmMDQVb3RdTqFNrLSrye+MnplG7vHAqAgs3FOJmKdRieGJf2ABbOHHAeqePi9KPsPUfcRcHfzZaLK4AgsUewD/WFfkw8Ti1VufqcArws6DFQoi1waqcErteYxgzdwSlSB+VDIwF4uaPWOk0fDFVF3/9oVDYDBJXY38jEXqqMooy4zvs64a/VeUDxKJOkaViCUgd7vwz2XWniOHPn9dCTJz1ZoBbYrRh6wVvZNefYYrC4mxEHzYDj9+MFxNvKL947KRaXj3ZiEzQ64QU/zTk8xOnMXDdwps29vXznQ9uUKW4Z+78qcPu+jJHs3+7yJly5Y+GdOVeiFEWGc4qNOGX012ksqX1Y1But10AY1ynUDDbUS9MesRbJJydAlD+xsRC4ncIKhvl6hNSjjNbrP64cXWCjCf52xS3idK3eT6iAt8RImeFx3IHjQ43QirqmyuIHE7gknz4zL25hnX5bRejV0GpaQCKxwHR6j7yVOumepHLbZXdyTkyCsAhsqw0JUXHbiXaybRTLkitmA52zFRbZNCY7dfJSthKxa7r6YNN3luzAh6+uVrqaaGsq3s5JgwTOUAiha+mSywqX0JkdNgtHOAoc5H2VFnegoKR296EZkx8UaNFhx+pbYtmFrlfSKgfv/gfrqA/HPcbE3QvZaCai/u5yg8nfkWmHV1E3Xkbpr8JyyKsq8rq8l91DATvQwuFzQxCvyBtLbVaIALjHTqNJWlqn5wvou/Z1dFmfVbXvMxmdymcsl/2MDJ/WWFMn0pb0EbpNqg/uGDkDhAGOEh9e266dznuVGGMEU3/xCVM7xsafwlw0qbWpOFKuxet9VQh1l29na28pNp+gY7kuXDj0u0sUcEAUOPMaCZSEIzo5/yQwAutkskqNu8W3WOCh6HkFZd3qaMDM3tZw7dZQT3QEsE8RAcsYoOvm80QwnCQPn8v8Zo3B/noqVq4hMCS8ia9GhBpirjU9jWodsYaGNOinNxeqmRX8IPUXmoP1DJwLMKOO2wl7OxdPrrfJQBU8UmzZYdZulmQuPjP9in1yie6qNmDEMPdSh1qZX2DuHkOKM4x8jpDYxrWdhmeDVsTTd03PoQMep/XJ4pI24slJfykWkAnDigzNtk6AvlKJzlWQ0hJTgYgh4qwCAHySwA+cpwumwzcVjlRIVZdhDC0qQOy4uT2/l4oeU9yia8NXlZK4nYC4wzGirZOrKNBsZQpqcFCXT3ZQ/+AjV8RYiscNnZHvuiGrDTkcR4gdRI2fwrHXRuiHsLSEvQKsHPBTJQV9tvbiJlrn6l6Vqu/Q1JTwYH6i4+dwTWf7XLyjGnKHZ/GW5Fv/b/KDinXxfKc+G4Uhfyu/XqzMVqD8g9yvvYWIJbxtcK/RaWnSuuD4SmZiejTzzg07maTzlIDzYHRr/bgQLd/WzT+4zYoVeSAr0ieYCzyuatQdCLD8hvaP+hZw9Ocbj6m8J6oXWb0n025SoPISRX07llbCaEgdtTdM79SgDfKSKkhwjx8jrYS98inJdEVmDA4vZf1pOOHLR7qAT3mCXt06QLWd58J/MCUWiJRHY9I9ZI/gmHtybaMtW/ViaxdtLYqY0mbt+FVTcT2JksahlT9NoY+0WI+kiulxpBla7F+eB80nCm4z2W4OBZz11YUpkDOvl8EX+44YR67rsNuMXprDTB8C+wXx3m12akSqa4DuFJ02lPbhFra4+O4cAgN8R/b6HYzgkJ3gnMwSEaY4AOPVuyMAF+Rvcix0m0hgjyMxED17/c7EvxXHWMAuLeDRmmEthsieh4NaFqLvRwOrVjN7ju24pljd24srhMKzWwkfSy8JMsrH42ih6N8RFla181L3HjZrSoqwkJuM6PikRfbtJ8I4esZh/g0N+JL8hMyBeaHwzUrotwexl1Q4kH/XdGYcHcjzjeyG/Kfn6yWp5ujaY9xr5DLHrdL2ENbam6sHfTcJSvB53Fok0FoJL+22vEJ0UuG9ZVw4OKnF+NqXWhf2CvMuEpKCj0yolPF+W3mBXc7BXUM+7tkD7XUF/5n6dN64HPItBlhcjOe6By+jjhI4jMFGdjdihcF6kq9LJzolf6G17AQhxGQbxT99ZQ5YbPO24F2MEt+xSIYUxHBrUNGbXPfpkiICNIP5Y3rB9T5xVxuyRoPDJOB4nuLTr70Ntw0BFv2NEVUtWfUORr1n202uy8Km77weKM4oI83otF5xhH6OUcD/xojxipQMTSGWA6o/V//8P7XAav6ojm+U62KlahBFB18mQ85VA65O1ux1E6mx86lqOto/VkylBdv2xaRMMRN5LuhCTtUyLCJ8opq4nQNvA9S6E94tB5jXTL+4PWOaErnykfYLIKf4SLGPr3rnqjNbIAGfBwtBiqI58q4+sRCY6wEBKOz4F6iIRr6esI7MjQHtfg1RE4KUjFUD0CSPB2kIIYluTNO64hWdDqQCQ6hWoki2RZasAeqUxTa64LUetQIA472942ovDyoKvNqFIs8L2uzHFnUeTxejLgrz7WnlzeQqPlXkTgJOLCI9EXxz6b1sKaNWw6zxzO4sUDe0YgjSH/vyncxkClvT8kShtERupq4J0aGn32rwiz7uFNZHIOwj7+pT4bFm5thAG8VTrok2yJsv2vcACD+bngAIP6uqxcCc8zWtoU9PLjSmSP3g2KY0/Zy2V4/opJWnAGF4akoGxc+hif84HvjGK9g0kIXX/h+SiZ9hWpTtmKjuw1MhNIS5BA8Gph6HvcpdCkT4ekdQBG9F/D+e1L+onSwYLwbeOK7+wjFyRkiYEEq0lPHLGMz/UXGqnu3WFop/yn0awQx4uYhVPjG1XlhRbqI6BoC9E+4MJObnURft74v6pOxsT7y9aBt/vDkQVZSHBg6quqW8au9vpu6NVw1ny2QXMd8rYeG2oyFDK2dfop/a1xbMSlwV8prh9vq5bIqOyhMl9k4NlFQlD/5fa8Luwa7FUj6n1ZoXf5UoZWqmdYBiHea6g+cCJMzbUqpxPE8t/ZGpfbmL8mhDmBODyv+RYDDRssch0af7XxEy3to4y9Szpigw3OrKFjRWmiAD9o85hU1pwl6YA6PhG+jaXDFanXYDVTDoTCCxOJ3b8FY48R1TGuh3dxIADwF0V2Hi3gu6dBF1q8XjQhAD/JDQvFF4++lnxRmdn7ICxh9543Ok3ATQfJztKx9yTWDW7Lo23wo0eFEnQj4izlnABCwf0ANR5L6hUxg5RE6nz3pdgTX79HgQ7LydnFDdrdGfjc5cNTlIYkCXoLa7MdX/EJQDIRW6234CIYKGsjNUlEM/mVkJe/azY1bacjRZtDVlhajPwzKRUq7n2+mOMoZEykkJZpYET2zACnYkSHy9Z9U0BUpV+Clqq0L8zz6vwHpzyWQnmWlBwcnlNaXqCF+ShW84DDGWd5DjYAAs5u9hE84W+yajlWqlMQhKt3DU3GCLH9kbiyblKvQgn4ILKDZ++0YlMbh/XUBy0GXFqu/+qQAkXjmggfCzNP4jkfGVOfFzEOLptzMvXXdXwO8vWyRRJ6DjRwh+umyuV0UPRBxdnqe4ajGaEZWy+Y4iM42AmUQX9yxksfLbhAbQONaiIfsZ1iDjpsKipu9os/jas2Bhq+Hps/XAONsufAWTazoeVqsaD73u1kjclBzfu7wXcSVixIRUNynWLiS4Vxsi9hFC7rCrJrZuvxlIFQPV2PHl/s6oUsWM+fDsyWS0c1O3FaPJGaE12bOoG66dJyHy3iBI0PawRl1Iwg2/EWxNuPBRh1+bhSSS/sCpwRephShZzmPthVrwbi4tIz1MkhGc8c1KJR/BA52d3K36Dl81HRGbZp0blbgvu0fipWlkUh9aLRF88Ji1AsdcsfSqKniNQ55YMVF+i3dzx9Jr7ZiQH3ZJLFHmtlZRlZrHI5bEBwOu3eFKkZppj3PufN3Cvcde6YhkxMGuk0rtiueL5uNWdpbh6DKEcuHlhL1e5KO2hoj7ukcpX958t0TQ/PZLksAZDiB9Ti8ig2bDMxpCpMH7Oj6AK8rMOx/SQZjc9ll5rFm/KAIjnV8d2MQdNaOxgg19yBV05zqPR7VITmrQ7OTj0aISDApsgZqVzYq2Yla3Pd4ptNuGIkdAMcGDtx+/k+bTc4qB7xsu7fJqdh5jHZOgyOwxvpO38j3in21d/LYOMhfZYfvVOiaPfqbd6MuSAO0as9N6enYkf3VyYhj4a4/co4WtOkArpjYso5IxTL1l/NMjJKlPsjudVTZNZZX2bk9qTbDlKLwP64Zmz6GtcnSSZmKgp2RklJRfinKkZwRjCCaKRbw6s3uqvB/YevNHr9q3x7pIucJRJqmnTl7DfqIMSPLySFqa6CAA/PQrXAMlh67Zhw2djhjTv2rK3mEHk8aLUCTn4BRgcZDN6xZzfdZaWRYWZw7IQJmqo4ZyJi1OpG4lmied8KTTA26143BsTEOfCLi+tn5xEaaMea2xqg65PfvAUUsTxzXwmG+u2sEhuCofGZ0NnkFFcix5XCIDdz9m5pE+gCinqFag8dMF7lIMudIme0R4lZwG8OkMoUSYrO28KgbNO4QNq9+dMBzuiD7YBrfIHA6Nxk1c7UpA7IzZaboESUHYrkbhrmgSDVoQQgftnqRVWv9s1XNTmJ6VYjJVjPKP4BaRF0pMggvRB67xCMkppYN5kwjzm3GCTYprNvDmOqxhOqG4ZtZ6Fu1lrqc62CsDOnZxl0aQqlZT0gAntahJ4cdecWy0ZuJrt5TIogmZJMsc4LOXbUwFYEESsF3ZbTG3AsWk56sjJNex1nUyEgo7O77AqjoFYv8kgB3bP581kXHivsdYzBG/38BXl9oQFxhcXSH5njy2PbhSOId69bTBvtmx0qDnoJwMsYZ/un11pUknAMdS/DT6TaMKT34b01GWlJqqIXPzN5G/uNTwnyiLeY+jy3OuGJ6C960nfzKRGp7r1hc9clDZCfNhpOVMRAr4u925Mr8Q/Zw/mmEeTXwNA0QOTIrt2YenOmWIjg8AEjCnOA+DGJNTEaF9NzAb2Ba40utCmDPE1y0UMIetKXkf8o8afHY8/NjIDnrc4qF4ZWOaHOJcoopAtHV1J+BvLYKKJayrVAKLJyAt8aIm8ztpGT0zpmKMYAcyqQRkke0nlmJck2p4Bz9C1zqFPN51OdF2+/3SrdI9d6emirZnuaHfS7aP63rcti9oe0OcUAowGKwa//ljnBiqwJ5A3Ld2nk9gUfGsj258QqWrdCfiT1WRJ31ucEaLkn5OO5YAiaodyQ4YGlQb6Z3j3525lsJctn37aXAI5LVmrlBHYIT52EjOSwihybX7Jr+LgzgoHIbjNuAFSQ5GUMeL6H9vP5H9fd3tQWVCAFZTlFO+2nqMws5LSe9vyausgLo1RYXdbLk6TG3OCE5UXFVG6hNVY5dgtPc3ITI9vGiUUov87W2kucRihC+sH5Wtb65Oo7PgwvrXzw+QuqFn3Enqc2s4fIUfvJGkivZOoAq1reLP2UoD/3mY8mBNKWlO/prJV+KZZgGlIldn2Z4Q8Yb/Gd6i+YtUz7L0tseCi2IBC32n2P2uxDXg4nsK0xtU3W6gIPRiCjGTAmgYS+6ALqqReX7F+7nfRcLSX5VKCXGwghHjii+wKWV9gwPDU+G3FF65bWzqGUHqHVJKJIyouduegCurgWzzwTqalBiD5kv1RR6gMPeTFxiFJYlFOnRzrse7vgMQ10powDEYTTiLOZitQGi9Z79YIW+YsD9X+cXqCwv2Pd2NkBW8+1cQ86XU+Q4xyV5azHPIL4RLGScL5BIe+G2MlWCmrrxe/bcA3WJjh5gkWds0AV41WmxdQDPY3UoaDxi+l0GD1M330hYz55MmB4gvg2wJ7lxYucToUMeCz4iDoKM0ZZcYpP3p/QDjKe7TBB5M99yatrUtGxMq5cJFPP8Jt33BwEmO0Mblj13DoKiUx047Y3jVad1omyMkPzQsZ5hVJcFBB0iRGBYnRHdIFatCGjKda4U9ukN/DvnNEsmt7eZrZ+VEtI6MUFoItNMSuxVrjJ49qeMRV6JjJaWTUAu5LF6cBy3fPnrnW/1jO4Dwm3ZIRgRROl0nWQYLGRWws3ItbbiHGZTwaErPLg44AcIYW4OR04j4M2CCQx6PpXqzHDsocR/5bNkFMusshZJZrRXozK2tMI8J9BqTPCzsB6kGJ88IsMooXi0ZVM40KHZ+Ut8MGp/eGRh0ayjhvDNXrdQT+pHAPcoIWhaWMYRW+XwouJv/gTEMTSN2gzZZWktHCQa33EL0Q8OMvAsMwdSUJAh9BlvQaVD/oRPxx1tc/zJ6jqnHYI/1c5qTffvtqc1qwccdfWLHoC6Io7rXa+yegFiWzSWZGsTzHuqppZjR2WfExTClvmUF2xFiQf97nY1E2Y/ALtTqemMAN3Li/iPVO2NV0CZcIFSa2ELFpx7VTgvS28KssxonB7qIC2hUXuTHmBNs8W3eKPlGTM8I4kDyZLWNVHmfOzcQlk2+feJWN40KVimZ8aeuJXVc/h5GmLarBNuelR/HRIf5Iv8vPvxMwDQ7S3pRFsmmTJCEWx2Ro6AGRTWCyHB55xL/QGKfA8R5kdHy7v79vxRMXBSmfvtiZ67ACv9CtbWkE7qQap09L4obL260lMvOyVFS3slnmonKiFSe7f2BVCz1BebGJZtbA1FOqT+tW3BIR/XITpsU/8vEcOLzCF0EB7o0B9AiqYzzeDx7vjwHlGjMvE86ek1mXln0cmIeejEW73FTDi4IGtmJ96ySMW44kkIaXQ/DSGQIXe+ed38eN/BUy5ChClHEBCFnerHSVnp/6FyUevgENViR2o0h7KaC+oyIwnv1/Gx3lTeO+eXDJlH13r/NL8XvwgYjZoTEhPc1E4pm1oGphMsGHRsIkHsDKuUIFY9J8vpQp0MNVgHndkmySEhXZScS3igFpfFVddHHcpAT8MVDiZZXpYr+vgULjxHpfmnSIJ1iYKkWKoXX6LSlAo44FEzOjJ0Qx/4KzFJCzFhiupC/tqeF/5vnlXtb07KEZ8iLMuCngAgrw44SgIQVSQftcdVVI2ENFfPkUTxLqxkL87R6Y2GzxLD7eANYgoXL6M4RuDPFhITNIrVbDDmAjMFtey/hLQNFCHGB9GuVVudMiRGKWekfEHAFbBtLs1Iw2+O1kt/0ggPWE0hz5THMYNgqu0AdqkO2gbQH8ZAtvj/4HYgu9+ALYQqN45RtLTC6thWGDKwS52INwUhYrhCj8NLdjw/dLTkF4P/zxiIhyvRJS4sKz9CyVePwtWYyzwSw4sq9E+Y4S+MD1BpMq8DTNw+fviZQCd6qRtS5yiB2+jTABEq4vL3ZyTIVFjn03Xa4oV6JKywHwVgz/9rBc0dd4s4FRb1Ir63vewT4GOrvyBlQEOEczu88yYrOKGiHnIdq3+Rg3JBOw39sEIyYGOcU=</div>
-<div id="enc_passwd"> <input id="enc_pwd_input" type="password" style="border-radius: 5px;border-style: groove;height: 30px;width: 50%;cursor: auto;font-size: 102%;color: currentColor;outline: none;text-overflow: initial;padding-left: 5px;" onkeydown="if (event.keyCode == 13) { decrypt(); return false;}"> <input type="submit" value="解&nbsp;密" onclick="decrypt()" style="width: 58px;height: 34px;border-radius: 5px;background-color: white;border-style: solid;color: currentColor;"><div id="enc_error" style="display: inline-block;color: #d84527;margin-left: 10px"></div>
-<script>
-var onError = function(error) {
-	document.getElementById("enc_error").innerHTML = "password error!"
-};
-function decrypt() {
-var passwd = document.getElementById("enc_pwd_input").value;
-console.log(passwd);
-doDecrypt(passwd, onError);
-}
-</script>
-</div><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">
+        <p>推荐阅读<br><a target="_blank" rel="noopener" href="https://www.sqlsec.com/2019/11/macbp.html">macOS 下如何优雅的使用 Burp Suite</a></p>
+<h3 id="FireFox-Hackbar"><a href="#FireFox-Hackbar" class="headerlink" title="FireFox+Hackbar"></a>FireFox+Hackbar</h3><ul>
+<li><p><a target="_blank" rel="noopener" href="https://download-origin.cdn.mozilla.net/pub/devedition/releases/56.0b9/win64/zh-CN/Firefox%20Setup%2056.0b9.exe">Firefox-Windows_x64</a></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://download-origin.cdn.mozilla.net/pub/devedition/releases/56.0b9/linux-x86_64/zh-CN/firefox-56.0b9.tar.bz2">Firefox-Linux_64</a></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://download-origin.cdn.mozilla.net/pub/devedition/releases/56.0b9/mac/zh-CN/Firefox%2056.0b9.dmg">Firefox_macOS</a></p>
+</li>
+</ul>
+<h4 id="Firefox关闭自动更新"><a href="#Firefox关闭自动更新" class="headerlink" title="Firefox关闭自动更新"></a>Firefox关闭自动更新</h4><p>推荐断网安装Firefox，防止自动升级。</p>
+<p>安装后在浏览器地址栏输入: <code>about:preferences</code> ，☑️ 不检查更新</p>
+<p><img src="../images/image-20201208144110186.png" alt="image-20201208144110186"></p>
+<h4 id="安装Hackbar"><a href="#安装Hackbar" class="headerlink" title="安装Hackbar"></a>安装Hackbar</h4><p>在浏览器地址栏输入: <code>about:config</code> 点击<code>我了解此风险</code>。 <code>xpinstall.signatures.required</code>和<code>xpinstall.whitelist.required</code>，将值切换为<code>false</code></p>
+<p><img src="file:///Users/ethan/Mr-Framework/source/images/image-20201208144811342.png?lastModify=1607410101" alt="image-20201208144811342"></p>
+<p>即可安装hackbar。</p>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 askding@qq.com </span>
     </div>
