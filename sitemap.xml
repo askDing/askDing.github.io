@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://askding.github.io/Kali/Exploit/Docker.html</loc>
+    
+    <lastmod>2020-12-09</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://askding.github.io/about/index.html</loc>
     
     <lastmod>2020-12-08</lastmod>
@@ -265,14 +272,14 @@
   </url>
   
   <url>
-    <loc>https://askding.github.io/categories/Coding/Audit/</loc>
+    <loc>https://askding.github.io/categories/Coding/Python/</loc>
     <lastmod>2020-12-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://askding.github.io/categories/Coding/Python/</loc>
+    <loc>https://askding.github.io/categories/Coding/Audit/</loc>
     <lastmod>2020-12-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
