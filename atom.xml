@@ -6,7 +6,7 @@
   <link href="https://askding.github.io/atom.xml" rel="self"/>
   
   <link href="https://askding.github.io/"/>
-  <updated>2020-12-09T07:53:15.000Z</updated>
+  <updated>2020-12-10T03:32:07.000Z</updated>
   <id>https://askding.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Kibana</title>
+    <link href="https://askding.github.io/Kali/Exploit/Kibana.html"/>
+    <id>https://askding.github.io/Kali/Exploit/Kibana.html</id>
+    <published>2020-12-10T03:32:07.000Z</published>
+    <updated>2020-12-10T03:32:07.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>编写进度</p><ul><li><input checked="" disabled="" type="checkbox"> </li></ul><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;编写进度&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&quot;&quot; disabled=&quot;&quot; type=&quot;checkbox&quot;&gt; &lt;/li&gt;
+&lt;/ul&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://cdn.jsdelivr.net</summary>
+      
+    
+    
+    
+    <category term="Kali" scheme="https://askding.github.io/categories/Kali/"/>
+    
+    <category term="Exploit" scheme="https://askding.github.io/categories/Kali/Exploit/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>Docker</title>
@@ -481,30 +509,6 @@
       
     <summary type="html">&lt;p&gt;&lt;code&gt;Zookeeper&lt;/code&gt;是一个分布式协调服务的开源框架，主要解决分布式集群中应用系统的一致性问题（避免同时操作同一数据造成脏读问题），本质上是一个&lt;code&gt;分布式的小文件存储系统&lt;/code&gt;。&lt;/p&gt;
 &lt;p&gt;Zookeeper=&lt;code&gt;文件系统&lt;</summary>
-      
-    
-    
-    
-    <category term="Kali" scheme="https://askding.github.io/categories/Kali/"/>
-    
-    <category term="Exploit" scheme="https://askding.github.io/categories/Kali/Exploit/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Tomcat</title>
-    <link href="https://askding.github.io/Kali/Exploit/Tomcat.html"/>
-    <id>https://askding.github.io/Kali/Exploit/Tomcat.html</id>
-    <published>2020-12-04T12:23:16.000Z</published>
-    <updated>2020-12-04T12:23:16.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>Apache 和 Tomcat 都是web网络服务器，两者既有联系又有区别，在进行HTML、PHP、JSP、Perl等开发过程中，需要准确掌握其各自特点，选择最佳的服务器配置。<br>　　Apache是web服务器（静态解析，如HTML），tomcat是java应用服务器（动态解析，如JSP）<br>　　Tomcat只是一个servlet(jsp也翻译成servlet)容器，可以认为是apache的扩展，但是可以独立于apache运行</p><h2 id="信息收集"><a href="#信息收集" class="headerlink" title="信息收集"></a>信息收集</h2><pre><code class="zsh">sudo nmap -sV -Pn -T4 -sSU -p 8080,8009 -sC    192.168.79.207Starting Nmap 7.91 ( https://nmap.org ) at 2020-12-04 18:47 CSTNmap scan report for 192.168.79.207Host is up (0.00012s latency).PORT     STATE  SERVICE  VERSION8009/tcp open   ajp13    Apache Jserv (Protocol v1.3)| ajp-methods:|_  Supported methods: GET HEAD POST OPTIONS8080/tcp open   http     Apache Tomcat 9.0.30|_http-favicon: Apache Tomcat|_http-title: Apache Tomcat/9.0.308009/udp closed unknown8080/udp closed http-altNmap done: 1 IP address (1 host up) scanned in 7.62 seconds</code></pre><h2 id="Apache-Tomcat文件包含漏洞-CNVD-2020-10487-CVE-2020-1938"><a href="#Apache-Tomcat文件包含漏洞-CNVD-2020-10487-CVE-2020-1938" class="headerlink" title="Apache Tomcat文件包含漏洞-CNVD-2020-10487/CVE-2020-1938"></a>Apache Tomcat文件包含漏洞-CNVD-2020-10487/CVE-2020-1938</h2><p>该漏洞是由于Tomcat AJP协议存在缺陷而导致，攻击者利用该漏洞可通过构造特定参数，读取服务器webapp下的任意文件。若目标服务器同时存在文件上传功能，攻击者可进一步实现远程代码执行。</p><h3 id="在线检测"><a href="#在线检测" class="headerlink" title="在线检测"></a>在线检测</h3><blockquote><p><a href="https://www.chaitin.cn/en/ghostcat">https://www.chaitin.cn/en/ghostcat</a></p></blockquote><p><a href="https://github.com/YDHCUI/CNVD-2020-10487-Tomcat-Ajp-lfi.git">Tomcat-AJP文件包含工具</a></p><pre><code>./CNVD-2020-10487-Tomcat-Ajp-lfi.py -p 8009 -f WEB-INF/web.xml 10.184.67.100</code></pre><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;Apache 和 Tomcat 都是web网络服务器，两者既有联系又有区别，在进行HTML、PHP、JSP、Perl等开发过程中，需要准确掌握其各自特点，选择最佳的服务器配置。&lt;br&gt;　　Apache是web服务器（静态解析，如HTML），tomcat是java应用服务器（</summary>
       
     
     
