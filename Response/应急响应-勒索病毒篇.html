@@ -763,7 +763,31 @@
 <li>通过<code>ls -ar | grep &quot;^\.&quot;</code>查看当前目录下的隐藏文件</li>
 </ul>
 <h3 id="Windows补丁排查"><a href="#Windows补丁排查" class="headerlink" title="Windows补丁排查"></a>Windows补丁排查</h3><p>通过<code>systeminfo</code>排查MS17-010漏洞补丁</p>
-<p>操作系统对应MS17-010的补丁号<br>|系统|补丁号|<br>|:—:|:—:|<br>|WinXP|KB4012598|<br>|Win2003|KB4012598|<br>|Win2008R2|KB4012212、KB4012215|<br>|Win7|KB4012212、KB4012215|</p>
+<p>操作系统对应MS17-010的补丁号</p>
+<table>
+<thead>
+<tr>
+<th align="center">系统</th>
+<th align="center">补丁号</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">WinXP</td>
+<td align="center">KB4012598</td>
+</tr>
+<tr>
+<td align="center">Win2003</td>
+<td align="center">KB4012598</td>
+</tr>
+<tr>
+<td align="center">Win2008R2</td>
+<td align="center">KB4012212、KB4012215</td>
+</tr>
+<tr>
+<td align="center">Win7</td>
+<td align="center">KB4012212、KB4012215</td>
+</tr>
+</tbody></table>
 <h3 id="账户排查"><a href="#账户排查" class="headerlink" title="账户排查"></a>账户排查</h3><p><img src="../images/d0ebb9ab52e44ae3b969a9efd5fa2ddd.png" alt="15bfba5c6d457138ab2ef0fcfae4cc66.png"></p>
 <pre><code class="zsh">cat /etc/passwd | grep -E &quot;/bin/bash$&quot;  # 查看能够登陆系统的账户</code></pre>
 <h3 id="网络连接、进程、任务计划排查"><a href="#网络连接、进程、任务计划排查" class="headerlink" title="网络连接、进程、任务计划排查"></a>网络连接、进程、任务计划排查</h3><h4 id="Windows"><a href="#Windows" class="headerlink" title="Windows"></a>Windows</h4><pre><code>使用工具**PCHunter**进行查看</code></pre>
