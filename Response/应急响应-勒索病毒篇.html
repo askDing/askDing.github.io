@@ -790,7 +790,9 @@
 </tbody></table>
 <h3 id="账户排查"><a href="#账户排查" class="headerlink" title="账户排查"></a>账户排查</h3><p><img src="../images/d0ebb9ab52e44ae3b969a9efd5fa2ddd.png" alt="15bfba5c6d457138ab2ef0fcfae4cc66.png"></p>
 <pre><code class="zsh">cat /etc/passwd | grep -E &quot;/bin/bash$&quot;  # 查看能够登陆系统的账户</code></pre>
-<h3 id="网络连接、进程、任务计划排查"><a href="#网络连接、进程、任务计划排查" class="headerlink" title="网络连接、进程、任务计划排查"></a>网络连接、进程、任务计划排查</h3><h4 id="Windows"><a href="#Windows" class="headerlink" title="Windows"></a>Windows</h4><pre><code>使用工具**PCHunter**进行查看</code></pre>
+<h3 id="网络连接、进程、任务计划排查"><a href="#网络连接、进程、任务计划排查" class="headerlink" title="网络连接、进程、任务计划排查"></a>网络连接、进程、任务计划排查</h3><h4 id="Windows"><a href="#Windows" class="headerlink" title="Windows"></a>Windows</h4><blockquote>
+<p>使用工具<strong>PCHunter</strong>进行查看</p>
+</blockquote>
 <ol>
 <li>网络连接<code>netstat -ano</code><br>重点关注是否暴露135、445、3389等高危端口</li>
 <li>可疑进程<code>tasklist</code><br>重点关注随机命名的进程，可通过威胁平台判定是否为恶意进程</li>
