@@ -2,84 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://askding.github.io/aaa/%E7%9B%AE%E6%A0%87%E4%B8%BB%E6%9C%BAshowmount%20-e%E4%BF%A1%E6%81%AF%E6%B3%84%E9%9C%B2(CVE-1999-0554)%20-%20zw1sh%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD.html</loc>
-    
-    <lastmod>2020-12-20</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://askding.github.io/aaa/Weblogic%20wls-wsat%E7%BB%84%E4%BB%B6%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96%E6%BC%8F%E6%B4%9ECVE-2017-10271.html</loc>
-    
-    <lastmod>2020-12-20</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://askding.github.io/aaa/SSH%E7%AB%AF%E5%8F%A3%E8%BD%AC%E5%8F%91%EF%BC%88%E6%9C%AC%E5%9C%B0%E8%BD%AC%E5%8F%91%E3%80%81%E8%BF%9C%E7%A8%8B%E8%BD%AC%E5%8F%91%E3%80%81%E5%8A%A8%E6%80%81%E8%BD%AC%E5%8F%91%EF%BC%89%20-%20zangfans%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD.html</loc>
-    
-    <lastmod>2020-12-20</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://askding.github.io/aaa/Linux%E6%96%87%E4%BB%B6%E6%9D%83%E9%99%90%E4%B8%8E%E5%B1%9E%E6%80%A7%E8%AF%A6%E8%A7%A3.html</loc>
-    
-    <lastmod>2020-12-20</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://askding.github.io/aaa/WeeChat%20%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97.html</loc>
-    
-    <lastmod>2020-12-20</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://askding.github.io/aaa/%E5%AF%BB%E6%89%BEPHP%20webshell%20%E4%BD%BF%E7%94%A8Linux%20Bash%20shell.html</loc>
-    
-    <lastmod>2020-12-20</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://askding.github.io/aaa/DNS%E5%9F%9F%E4%BC%A0%E9%80%81%E6%BC%8F%E6%B4%9E.html</loc>
-    
-    <lastmod>2020-12-20</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://askding.github.io/aaa/web%E7%9B%B8%E5%85%B3%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.html</loc>
-    
-    <lastmod>2020-12-20</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://askding.github.io/aaa/CORS.html</loc>
-    
-    <lastmod>2020-12-20</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://askding.github.io/aaa/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0.html</loc>
-    
-    <lastmod>2020-12-20</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://askding.github.io/askDing/SQL%E6%B3%A8%E5%85%A5%E5%8E%9F%E7%90%86.html</loc>
-    
-    <lastmod>2020-12-20</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://askding.github.io/aaa/MSSQL%E6%B3%A8%E5%85%A5.html</loc>
     
     <lastmod>2020-12-20</lastmod>
     
@@ -433,14 +356,14 @@
   </url>
   
   <url>
-    <loc>https://askding.github.io/categories/Coding/Python/</loc>
+    <loc>https://askding.github.io/categories/Coding/JavaScript/</loc>
     <lastmod>2020-12-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://askding.github.io/categories/Coding/JavaScript/</loc>
+    <loc>https://askding.github.io/categories/Coding/Python/</loc>
     <lastmod>2020-12-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
