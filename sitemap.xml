@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://askding.github.io/Kali/Exploit/%E5%BA%94%E6%80%A5%E5%93%8D%E5%BA%94%E8%BF%9B%E9%98%B6%E7%AF%87.html</loc>
+    <loc>https://askding.github.io/Response/%E5%BA%94%E6%80%A5%E5%93%8D%E5%BA%94%E8%BF%9B%E9%98%B6%E7%AF%87.html</loc>
     
     <lastmod>2020-12-20</lastmod>
     
@@ -328,6 +328,13 @@
   </url>
   
   <url>
+    <loc>https://askding.github.io/categories/Response/</loc>
+    <lastmod>2020-12-20</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://askding.github.io/categories/Coding/Python/</loc>
     <lastmod>2020-12-20</lastmod>
     <changefreq>daily</changefreq>
@@ -336,13 +343,6 @@
   
   <url>
     <loc>https://askding.github.io/categories/Coding/Audit/</loc>
-    <lastmod>2020-12-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://askding.github.io/categories/Response/</loc>
     <lastmod>2020-12-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
