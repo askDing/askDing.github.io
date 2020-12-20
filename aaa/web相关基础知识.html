@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>about | Mr.Framework</title>
+  <title>Mr.Framework</title>
   <meta name="keywords" content="">
-  <meta name="description" content="about | Mr.Framework">
+  <meta name="description" content="Mr.Framework">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="404 Not Found: 该页面无法显示很抱歉，您所访问的地址并不存在">
 <meta property="og:type" content="website">
@@ -621,8 +621,6 @@
     <div class="pjax">
         <article id="page-" class="article article-type-page" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">about</h1>
-    
     <div class="article-meta">
         
         
@@ -631,12 +629,12 @@
     </div>
     <div class="article-meta">
         
-            Created At : <time class="date" title='Updated At: 2020-12-08 19:41:14'>2020-12-08 19:41</time>
+            Created At : <time class="date" title='Updated At: 2020-12-20 19:36:19'>2020-12-20 19:36</time>
         
     </div>
     <div class="article-meta">
         
-        <span>Count:98</span>
+        <span>Count:1k</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -666,7 +664,7 @@
     
     <div class="toc-ref">
     
-        
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#HTTP"><span class="toc-text">HTTP</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#HTTP%E6%95%B0%E6%8D%AE%E5%8C%85"><span class="toc-text">HTTP数据包</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#URL%E7%90%86%E8%A7%A3"><span class="toc-text">URL理解</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#HTTP%E7%8A%B6%E6%80%81%E7%A0%81"><span class="toc-text">HTTP状态码</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -682,46 +680,112 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <script src=/js/crypto-js.js></script>
-<script>
-function doDecrypt (pwd, onError) {
-	console.log('in doDecrypt');
-	const txt = document.getElementById('enc_content').innerHTML;
-	let plantext;
-	try {
-		const bytes = CryptoJS.AES.decrypt(txt, pwd);
-		var plaintext = bytes.toString(CryptoJS.enc.Utf8);
-	} catch(err) {
-		if(onError) {
-			onError(err);
-		}
-		return;
-	}
-	document.getElementById('enc_content').innerHTML = plaintext;
-	document.getElementById('enc_content').style.display = 'block';
-	document.getElementById('enc_passwd').style.display = 'none';
-	if(typeof MathJax !== 'undefined') {
-		MathJax.Hub.Queue(
-			['resetEquationNumbers', MathJax.InputJax.TeX],
-			['PreProcess', MathJax.Hub],
-			['Reprocess', MathJax.Hub]
-		);
-	}
-}
-</script>
-<div id="enc_content" style="display:none">U2FsdGVkX1/Gh8MvUgBI6841Os0Wy2Tueq0mfjWLafEYI3J6FC3sKMFYL1fUdxVpUPoW0zKGQ5qEI4kGY7VQlA==</div>
-<div id="enc_passwd"> <input id="enc_pwd_input" type="password" style="border-radius: 5px;border-style: groove;height: 30px;width: 50%;cursor: auto;font-size: 102%;color: currentColor;outline: none;text-overflow: initial;padding-left: 5px;" onkeydown="if (event.keyCode == 13) { decrypt(); return false;}"> <input type="submit" value="解&nbsp;密" onclick="decrypt()" style="width: 58px;height: 34px;border-radius: 5px;background-color: white;border-style: solid;color: currentColor;"><div id="enc_error" style="display: inline-block;color: #d84527;margin-left: 10px"></div>
-<script>
-var onError = function(error) {
-	document.getElementById("enc_error").innerHTML = "password error!"
-};
-function decrypt() {
-var passwd = document.getElementById("enc_pwd_input").value;
-console.log(passwd);
-doDecrypt(passwd, onError);
-}
-</script>
-</div><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">
+        <p>web相关基础知识</p>
+<h2 id="HTTP"><a href="#HTTP" class="headerlink" title="HTTP"></a>HTTP</h2><ul>
+<li><p>http协议是 <strong>超文本传输协议</strong></p>
+</li>
+<li><p>http协议的作用<br>  在浏览器和服务器间进行交互(访问、读取、文件交互等等、)</p>
+</li>
+</ul>
+<h3 id="HTTP数据包"><a href="#HTTP数据包" class="headerlink" title="HTTP数据包"></a>HTTP数据包</h3><ul>
+<li>请求头 : 客户机的信息(请求地址、浏览器、操作系统等等)</li>
+<li>响应头 : 服务器返回的信息(搭建平台、脚本语言、文件类型等等)</li>
+</ul>
+<h3 id="URL理解"><a href="#URL理解" class="headerlink" title="URL理解"></a>URL理解</h3><blockquote>
+<p><a target="_blank" rel="noopener" href="http://www.test.com/news/1.php?id=1">http://www.test.com/news/1.php?id=1</a></p>
+</blockquote>
+<p>http:// 协议<br><a target="_blank" rel="noopener" href="http://www.test.com/">www.test.com</a> 域名<br>/news/ 代表news目录<br>1.php 脚本文件<br>? 脚本与参数之间的连接符<br>Id 参数<br>1 参数值  </p>
+<p>http协议进去到<a target="_blank" rel="noopener" href="http://www.test.com/%E4%B8%8B%E9%9D%A2%E7%9A%84/news/%E8%BF%99%E4%B8%AA%E7%9B%AE%E5%BD%95%E4%B8%8B%E7%9A%841.php%E6%96%87%E4%BB%B6%EF%BC%8C%E6%96%87%E4%BB%B6%E9%87%8C%E7%9A%84%E5%80%BC%E4%B8%BA1%E7%9A%84id%E5%8F%82%E6%95%B0%E3%80%82">www.test.com/下面的/news/这个目录下的1.php文件，文件里的值为1的id参数。</a></p>
+<h3 id="HTTP状态码"><a href="#HTTP状态码" class="headerlink" title="HTTP状态码"></a>HTTP状态码</h3><ul>
+<li>2xx<ul>
+<li>200 访问正常</li>
+</ul>
+</li>
+<li>3xx<ul>
+<li>302 重定向，(访问A可能会跳转到B)</li>
+</ul>
+</li>
+<li>4xx<ul>
+<li>403 代表目录存在，但是不允许访问内容</li>
+<li>404 代表不存在的访问请求(文件、目录)。</li>
+</ul>
+</li>
+<li>5xx<ul>
+<li>500 由于服务器内部错误，导致无法访问我们的请求</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p>服务器系统探测方法</p>
+<ul>
+<li>IIS是windows服务器<ul>
+<li>IIS6.0 windows2003</li>
+<li>IIS7 7.5 基本都是windows2008搭建</li>
+<li>IIS8 8.5 windows2008以上版本(IIS8 一般都是win2012搭建)</li>
+</ul>
+</li>
+<li>Apache和nginx 可能windows/linux (nginx 和linux 都可以是80 8080默认端口)</li>
+</ul>
+</li>
+<li><p>利用linux特性来判断</p>
+<ul>
+<li><p>Linux特性:它对大小写敏感<br>如果linux服务器的站  <a target="_blank" rel="noopener" href="http://www.test.com/abc.php">www.test.com/abc.php</a>  访问<a target="_blank" rel="noopener" href="http://www.test.com/abC.php">www.test.com/abC.php</a> 就会报错。<br>因为服务器找不到这个文件，对大小写敏感。<br>Windows:对大小写不敏感。</p>
+</li>
+<li><p>如果访问网站存在的一个文件，文件名改成大写，如果访问正常就说明是windows系统，反之是linux系统。<br>访问3389查看远程界面<br>3389开放或者可疑像3389的端口开放，都可以尝试连接:mstsc</p>
+</li>
+</ul>
+</li>
+<li><p>查找网站后台</p>
+<ul>
+<li><p>猜解常用路径<br>  大部分网站默认都是admin目录后台。</p>
+</li>
+<li><p>Robots.txt<br>  Robots是防止搜索引擎抓取敏感目录和文件的的一个指引文件。<br>  很多管理员为了防止后台被搜索引擎抓取，所有会把后台路径放进robots.txt里，类似robots.txt sitemap.xml</p>
+</li>
+<li><p>扫描工具(御剑、Awvs   burp suite 整站爬行工具)<br>  如果字典内有目标的后台路径，那么就可以扫出来(可能会有复杂的情况，禁止扫描等 不过很少)</p>
+</li>
+<li><p>查看图片属性<br><a target="_blank" rel="noopener" href="http://www.lygix.net/">http://www.lygix.net</a><br><a target="_blank" rel="noopener" href="http://www.lygjxt.net/admin/eWebEditor/uploadfile/20130814102032468.jpg">http://www.lygjxt.net/admin/eWebEditor/uploadfile/20130814102032468.jpg</a>  </p>
+</li>
+</ul>
+</li>
+<li><p>为什么会爆出后台路径？<br>当我们上传点在后台目录后面，很有可能导致这种情况。一般编辑器放在后台目录后面，基本上都可以用这种方法找到后台。</p>
+<ul>
+<li>自带上传点</li>
+<li>编辑器上传点  上传会导致这种情况。</li>
+</ul>
+</li>
+<li><p>谷歌语法 </p>
+<p>site:目标站 intitle:后台 管理 登录 管理员 管理中心  inurl:admin|login|user</p>
+</li>
+</ul>
+<ul>
+<li>Webshell密码查找<ol>
+<li>搜索font 在高亮偏后的位置，可能会出现密码。</li>
+<li>输入一个错误的密码。看源码font</li>
+<li>在大马url后门加上参数?profile=a</li>
+<li>常用密码 admin root hack hacker</li>
+<li>看默认密码</li>
+</ol>
+</li>
+</ul>
+<blockquote>
+<p>原理:由于很多，马会有后门。一部分在url get中传递出去，这样给他profile=a 可以溢出密码(必须是马内的参数)</p>
+</blockquote>
+<ul>
+<li>URL中关于空格的编码正是与空格所在位置相关<ul>
+<li>空格被编码成加号+的情况只会在查询字符串部分出现</li>
+<li>空格编码成%20则可以出现在路径和查询字符串中</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>原因：<br>urlencode(“ “)    返回+<br>encodeURI(“ “)   返回%20  </p>
+<ul>
+<li>W3C标准规定：<br>当 Content-Type：application/x-www-form-urlencoded时，URL中？后出现的空格用+替代（即URL中查询参数名和参数值出现的空格）</li>
+<li>RFC 2396规定：<br>URI里的保留字符都需转义成%HH格式，<br>空格会被编码成%20，<br>加号+本身也作为保留字而被编成%2B，  </li>
+</ul>
+</blockquote>
+<p>所以一个安全的举措是URL中统一使用%20来编码空格字符。</p>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 askding@qq.com </span>
     </div>

@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>about | Mr.Framework</title>
+  <title>Mr.Framework</title>
   <meta name="keywords" content="">
-  <meta name="description" content="about | Mr.Framework">
+  <meta name="description" content="Mr.Framework">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="404 Not Found: 该页面无法显示很抱歉，您所访问的地址并不存在">
 <meta property="og:type" content="website">
@@ -621,8 +621,6 @@
     <div class="pjax">
         <article id="page-" class="article article-type-page" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">about</h1>
-    
     <div class="article-meta">
         
         
@@ -631,12 +629,12 @@
     </div>
     <div class="article-meta">
         
-            Created At : <time class="date" title='Updated At: 2020-12-08 19:41:14'>2020-12-08 19:41</time>
+            Created At : <time class="date" title='Updated At: 2020-12-20 19:36:19'>2020-12-20 19:36</time>
         
     </div>
     <div class="article-meta">
         
-        <span>Count:98</span>
+        <span>Count:3k</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -666,7 +664,7 @@
     
     <div class="toc-ref">
     
-        
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#SSK-keygen%E7%94%A8%E6%B3%95"><span class="toc-text">SSK-keygen用法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E7%BA%A7%E8%B7%B3%E6%9D%BF"><span class="toc-text">二级跳板</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AF%81%E4%B9%A6%E7%99%BB%E5%BD%95%E7%9A%84%E6%B5%81%E7%A8%8B"><span class="toc-text">证书登录的流程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%9F%E6%88%90-CA-%E7%9A%84%E5%AF%86%E9%92%A5"><span class="toc-text">生成 CA 的密钥</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CA-%E7%AD%BE%E5%8F%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%AF%81%E4%B9%A6"><span class="toc-text">CA 签发服务器证书</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CA-%E7%AD%BE%E5%8F%91%E7%94%A8%E6%88%B7%E8%AF%81%E4%B9%A6"><span class="toc-text">CA 签发用户证书</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%89%E8%A3%85%E8%AF%81%E4%B9%A6"><span class="toc-text">服务器安装证书</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%89%E8%A3%85-CA-%E5%85%AC%E9%92%A5"><span class="toc-text">服务器安装 CA 公钥</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%AE%89%E8%A3%85%E8%AF%81%E4%B9%A6"><span class="toc-text">客户端安装证书</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%AE%89%E8%A3%85-CA-%E5%85%AC%E9%92%A5"><span class="toc-text">客户端安装 CA 公钥</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BA%9F%E9%99%A4%E8%AF%81%E4%B9%A6"><span class="toc-text">废除证书</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -682,46 +680,141 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <script src=/js/crypto-js.js></script>
-<script>
-function doDecrypt (pwd, onError) {
-	console.log('in doDecrypt');
-	const txt = document.getElementById('enc_content').innerHTML;
-	let plantext;
-	try {
-		const bytes = CryptoJS.AES.decrypt(txt, pwd);
-		var plaintext = bytes.toString(CryptoJS.enc.Utf8);
-	} catch(err) {
-		if(onError) {
-			onError(err);
-		}
-		return;
-	}
-	document.getElementById('enc_content').innerHTML = plaintext;
-	document.getElementById('enc_content').style.display = 'block';
-	document.getElementById('enc_passwd').style.display = 'none';
-	if(typeof MathJax !== 'undefined') {
-		MathJax.Hub.Queue(
-			['resetEquationNumbers', MathJax.InputJax.TeX],
-			['PreProcess', MathJax.Hub],
-			['Reprocess', MathJax.Hub]
-		);
-	}
-}
-</script>
-<div id="enc_content" style="display:none">U2FsdGVkX1/Gh8MvUgBI6841Os0Wy2Tueq0mfjWLafEYI3J6FC3sKMFYL1fUdxVpUPoW0zKGQ5qEI4kGY7VQlA==</div>
-<div id="enc_passwd"> <input id="enc_pwd_input" type="password" style="border-radius: 5px;border-style: groove;height: 30px;width: 50%;cursor: auto;font-size: 102%;color: currentColor;outline: none;text-overflow: initial;padding-left: 5px;" onkeydown="if (event.keyCode == 13) { decrypt(); return false;}"> <input type="submit" value="解&nbsp;密" onclick="decrypt()" style="width: 58px;height: 34px;border-radius: 5px;background-color: white;border-style: solid;color: currentColor;"><div id="enc_error" style="display: inline-block;color: #d84527;margin-left: 10px"></div>
-<script>
-var onError = function(error) {
-	document.getElementById("enc_error").innerHTML = "password error!"
-};
-function decrypt() {
-var passwd = document.getElementById("enc_pwd_input").value;
-console.log(passwd);
-doDecrypt(passwd, onError);
-}
-</script>
-</div><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">
+        <p>SSH端口转发（本地转发、远程转发、动态转发） - zangfans - 博客园</p>
+<p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/zangfans/p/8848279.html">https://www.cnblogs.com/zangfans/p/8848279.html</a></p>
+<h2 id="SSK-keygen用法"><a href="#SSK-keygen用法" class="headerlink" title="SSK-keygen用法"></a>SSK-keygen用法</h2><pre><code class="zsh">ssh-keygen -t rsa -b 4096 -c -N &lt;passphrase&gt;  -C &quot;you_email@domain.com&quot; -f mykey  -F
+examle.com -R
+
+-t 指定生成密钥的加密算法，dsa/rsa
+-b 指定二进制最大位数，2048/4096
+-N 指定私钥的密码(passphrase)
+-C 指定密钥文件新的注释
+-f 指定生成的私钥文件名
+-F 检查某个主机名是否在known_hosts内
+-R 从known_host文件内移除某主机的公钥</code></pre>
+<p>## 简易 VPN</p>
+<p>VPN 用来在外网与内网之间建立一条加密通道。内网的服务器不能从外网直接访问，必须通过一个跳板机，如果本机可以访问跳板机，就可以使用 ssh 本地转发，简单实现一个 VPN。</p>
+<pre><code class="zsh">$ ssh -L 2080:corp-server:80 -L 2443:corp-server:443 tunnel-host -N
+</code></pre>
+<p>上面命令通过 ssh 跳板机，将本机的<code>2080</code>端口绑定内网服务器的<code>80</code>端口，本机的<code>2443</code>端口绑定内网服务器的<code>443</code>端口。</p>
+<h2 id="二级跳板"><a href="#二级跳板" class="headerlink" title="二级跳板"></a>二级跳板</h2><p>端口转发可以有多级，比如新建两个 ssh 隧道，第一个隧道转发给第二个隧道，第二个隧道才能访问目标服务器。</p>
+<p>首先，新建第一级隧道。</p>
+<pre><code class="zsh">$ ssh -L 7999:localhost:2999 tunnel1-host
+</code></pre>
+<p>上面命令在本地<code>7999</code>端口与<code>tunnel1-host</code>之间建立一条隧道，隧道的出口是<code>tunnel1-host</code>的<code>localhost:2999</code>，也就是<code>tunnel1-host</code>收到本机的请求以后，转发给本机的<code>2999</code>端口。</p>
+<p>然后，在第一台跳板机执行下面的命令，新建第二级隧道。</p>
+<pre><code class="zsh">$ ssh -L 2999:target-host:7999 tunnel2-host -N
+</code></pre>
+<p>上面命令将第一台跳板机<code>tunnel1-host</code>的<code>2999</code>端口，通过第二台跳板机<code>tunnel2-host</code>，连接到目标服务器<code>target-host</code>的<code>7999</code>端口。</p>
+<p>最终效果就是，访问本机的<code>2999</code>端口，就会转发到<code>target-host</code>的<code>2999</code>端口。</p>
+<h2 id="证书登录的流程"><a href="#证书登录的流程" class="headerlink" title="证书登录的流程"></a>证书登录的流程</h2><p>SSH 证书登录之前，如果还没有证书，需要生成证书。具体方法是：（1）用户和服务器都将自己的公钥，发给 CA；（2）CA 使用服务器公钥，生成服务器证书，发给服务器；（3）CA 使用用户的公钥，生成用户证书，发给用户。</p>
+<p>有了证书以后，用户就可以登录服务器了。整个过程都是 SSH 自动处理，用户无感知。</p>
+<p>第一步，用户登录服务器时，SSH 自动将用户证书发给服务器。</p>
+<p>第二步，服务器检查用户证书是否有效，以及是否由可信的 CA 颁发。证实以后，就可以信任用户。</p>
+<p>第三步，SSH 自动将服务器证书发给用户。</p>
+<p>第四步，用户检查服务器证书是否有效，以及是否由信任的 CA 颁发。证实以后，就可以信任服务器。</p>
+<p>第五步，双方建立连接，服务器允许用户登录。</p>
+<h2 id="生成-CA-的密钥"><a href="#生成-CA-的密钥" class="headerlink" title="生成 CA 的密钥"></a>生成 CA 的密钥</h2><p>证书登录的前提是，必须有一个 CA，而 CA 本质上就是一对密钥，跟其他密钥没有不同，CA 就用这对密钥去签发证书。</p>
+<p>虽然 CA 可以用同一对密钥签发用户证书和服务器证书，但是出于安全性和灵活性，最好用不同的密钥分别签发。所以，CA 至少需要两对密钥，一对是签发用户证书的密钥，假设叫做<code>user_ca</code>，另一对是签发服务器证书的密钥，假设叫做<code>host_ca</code>。</p>
+<p>使用下面的命令，生成<code>user_ca</code>。</p>
+<pre><code class="bash"># 生成 CA 签发用户证书的密钥
+$ ssh-keygen -t rsa -b 4096 -f ~/.ssh/user_ca -C user_ca</code></pre>
+<p>上面的命令会在<code>~/.ssh</code>目录生成一对密钥：<code>user_ca</code>（私钥）和<code>user_ca.pub</code>（公钥）。</p>
+<p>这个命令的各个参数含义如下。</p>
+<ul>
+<li><code>-t rsa</code>：指定密钥算法 RSA。</li>
+<li><code>-b 4096</code>：指定密钥的位数是4096位。安全性要求不高的场合，这个值可以小一点，但是不应小于1024。</li>
+<li><code>-f ~/.ssh/user_ca</code>：指定生成密钥的位置和文件名。</li>
+<li><code>-C user_ca</code>：指定密钥的识别字符串，相当于注释，可以随意设置。</li>
+</ul>
+<p>使用下面的命令，生成<code>host_ca</code>。</p>
+<pre><code class="bash"># 生成 CA 签发服务器证书的密钥
+$ ssh-keygen -t rsa -b 4096 -f host_ca -C host_ca</code></pre>
+<p>上面的命令会在<code>~/.ssh</code>目录生成一对密钥：<code>host_ca</code>（私钥）和<code>host_ca.pub</code>（公钥）。</p>
+<p>现在，<code>~/.ssh</code>目录应该至少有四把密钥。</p>
+<ul>
+<li><code>~/.ssh/user_ca</code></li>
+<li><code>~/.ssh/user_ca.pub</code></li>
+<li><code>~/.ssh/host_ca</code></li>
+<li><code>~/.ssh/host_ca.pub</code></li>
+</ul>
+<h2 id="CA-签发服务器证书"><a href="#CA-签发服务器证书" class="headerlink" title="CA 签发服务器证书"></a>CA 签发服务器证书</h2><p>有了 CA 以后，就可以签发服务器证书了。</p>
+<p>签发证书，除了 CA 的密钥以外，还需要服务器的公钥。一般来说，SSH 服务器（通常是<code>sshd</code>）安装时，已经生成密钥<code>/etc/ssh/ssh_host_rsa_key</code>了。如果没有的话，可以用下面的命令生成。</p>
+<pre><code class="bash">$ sudo ssh-keygen -f /etc/ssh/ssh_host_rsa_key -b 4096 -t rsa</code></pre>
+<p>上面命令会在<code>/etc/ssh</code>目录，生成<code>ssh_host_rsa_key</code>（私钥）和<code>ssh_host_rsa_key.pub</code>（公钥）。然后，需要把服务器公钥<code>ssh_host_rsa_key.pub</code>，复制或上传到 CA 所在的服务器。</p>
+<p>上传以后，CA 就可以使用密钥<code>host_ca</code>为服务器的公钥<code>ssh_host_rsa_key.pub</code>签发服务器证书。</p>
+<pre><code class="bash">$ ssh-keygen -s host_ca -I host.example.com -h -n host.example.com -V +52w ssh_host_rsa_key.pub</code></pre>
+<p>上面的命令会生成服务器证书<code>ssh_host_rsa_key-cert.pub</code>（服务器公钥名字加后缀<code>-cert</code>）。这个命令各个参数的含义如下。</p>
+<ul>
+<li><code>-s</code>：指定 CA 签发证书的密钥。</li>
+<li><code>-I</code>：身份字符串，可以随便设置，相当于注释，方便区分证书，将来可以使用这个字符串撤销证书。</li>
+<li><code>-h</code>：指定该证书是服务器证书，而不是用户证书。</li>
+<li><code>-n host.example.com</code>：指定服务器的域名，表示证书仅对该域名有效。如果有多个域名，则使用逗号分隔。用户登录该域名服务器时，SSH 通过证书的这个值，分辨应该使用哪张证书发给用户，用来证明服务器的可信性。</li>
+<li><code>-V +52w</code>：指定证书的有效期，这里为52周（一年）。默认情况下，证书是永远有效的。建议使用该参数指定有效期，并且有效期最好短一点，最长不超过52周。</li>
+<li><code>ssh_host_rsa_key.pub</code>：服务器公钥。</li>
+</ul>
+<p>生成证书以后，可以使用下面的命令，查看证书的细节。</p>
+<pre><code class="bash">$ ssh-keygen -L -f ssh_host_rsa_key-cert.pub</code></pre>
+<p>最后，为证书设置权限。</p>
+<pre><code class="bash">$ chmod 600 ssh_host_rsa_key-cert.pub</code></pre>
+<h2 id="CA-签发用户证书"><a href="#CA-签发用户证书" class="headerlink" title="CA 签发用户证书"></a>CA 签发用户证书</h2><p>下面，再用 CA 签发用户证书。这时需要用户的公钥，如果没有的话，客户端可以用下面的命令生成一对密钥。</p>
+<pre><code class="bash">$ ssh-keygen -f ~/.ssh/user_key -b 4096 -t rsa</code></pre>
+<p>上面命令会在<code>~/.ssh</code>目录，生成<code>user_key</code>（私钥）和<code>user_key.pub</code>（公钥）。</p>
+<p>然后，将用户公钥<code>user_key.pub</code>，上传或复制到 CA 服务器。接下来，就可以使用 CA 的密钥<code>user_ca</code>为用户公钥<code>user_key.pub</code>签发用户证书。</p>
+<pre><code class="bash">$ ssh-keygen -s user_ca -I user@example.com -n user -V +1d user_key.pub</code></pre>
+<p>上面的命令会生成用户证书<code>user_key-cert.pub</code>（用户公钥名字加后缀<code>-cert</code>）。这个命令各个参数的含义如下。</p>
+<ul>
+<li><code>-s</code>：指定 CA 签发证书的密钥</li>
+<li><code>-I</code>：身份字符串，可以随便设置，相当于注释，方便区分证书，将来可以使用这个字符串撤销证书。</li>
+<li><code>-n user</code>：指定用户名，表示证书仅对该用户名有效。如果有多个用户名，使用逗号分隔。用户以该用户名登录服务器时，SSH 通过这个值，分辨应该使用哪张证书，证明自己的身份，发给服务器。</li>
+<li><code>-V +1d</code>：指定证书的有效期，这里为1天，强制用户每天都申请一次证书，提高安全性。默认情况下，证书是永远有效的。</li>
+<li><code>user_key.pub</code>：用户公钥。</li>
+</ul>
+<p>生成证书以后，可以使用下面的命令，查看证书的细节。</p>
+<pre><code class="bash">$ ssh-keygen -L -f user_key-cert.pub</code></pre>
+<p>最后，为证书设置权限。</p>
+<pre><code class="bash">$ chmod 600 user_key-cert.pub</code></pre>
+<h2 id="服务器安装证书"><a href="#服务器安装证书" class="headerlink" title="服务器安装证书"></a>服务器安装证书</h2><p>CA 生成服务器证书<code>ssh_host_rsa_key-cert.pub</code>以后，需要将该证书发回服务器，可以使用下面的<code>scp</code>命令，将证书拷贝过去。</p>
+<pre><code class="bash">$ scp ~/.ssh/ssh_host_rsa_key-cert.pub root@host.example.com:/etc/ssh/</code></pre>
+<p>然后，将下面一行添加到服务器配置文件<code>/etc/ssh/sshd_config</code>。</p>
+<pre><code class="bash">HostCertificate /etc/ssh/ssh_host_rsa_key-cert.pub</code></pre>
+<p>上面的代码告诉 sshd，服务器证书是哪一个文件。</p>
+<p>重新启动 sshd。</p>
+<pre><code class="bash">$ sudo systemctl restart sshd.service
+# 或者
+$ sudo service sshd restart</code></pre>
+<h2 id="服务器安装-CA-公钥"><a href="#服务器安装-CA-公钥" class="headerlink" title="服务器安装 CA 公钥"></a>服务器安装 CA 公钥</h2><p>为了让服务器信任用户证书，必须将 CA 签发用户证书的公钥<code>user_ca.pub</code>，拷贝到服务器。</p>
+<pre><code class="bash">$ scp ~/.ssh/user_ca.pub root@host.example.com:/etc/ssh/</code></pre>
+<p>上面的命令，将 CA 签发用户证书的公钥<code>user_ca.pub</code>，拷贝到 SSH 服务器的<code>/etc/ssh</code>目录。</p>
+<p>然后，将下面一行添加到服务器配置文件<code>/etc/ssh/sshd_config</code>。</p>
+<pre><code class="bash">TrustedUserCAKeys /etc/ssh/user_ca.pub</code></pre>
+<p>上面的做法是将<code>user_ca.pub</code>加到<code>/etc/ssh/sshd_config</code>，这会产生全局效果，即服务器的所有账户都会信任<code>user_ca</code>签发的所有用户证书。</p>
+<p>另一种做法是将<code>user_ca.pub</code>加到服务器某个账户的<code>~/.ssh/authorized_keys</code>文件，只让该账户信任<code>user_ca</code>签发的用户证书。具体方法是打开<code>~/.ssh/authorized_keys</code>，追加一行，开头是<code>@cert-authority principals=&quot;...&quot;</code>，然后后面加上<code>user_ca.pub</code>的内容，大概是下面这个样子。</p>
+<pre><code class="bash">@cert-authority principals=&quot;user&quot; ssh-rsa AAAAB3Nz...XNRM1EX2gQ==</code></pre>
+<p>上面代码中，<code>principals=&quot;user&quot;</code>指定用户登录的服务器账户名，一般就是<code>authorized_keys</code>文件所在的账户。</p>
+<p>重新启动 sshd。</p>
+<pre><code class="bash">$ sudo systemctl restart sshd.service
+# 或者
+$ sudo service sshd restart</code></pre>
+<p>至此，SSH 服务器已配置为信任<code>user_ca</code>签发的证书。</p>
+<h2 id="客户端安装证书"><a href="#客户端安装证书" class="headerlink" title="客户端安装证书"></a>客户端安装证书</h2><p>客户端安装用户证书很简单，就是从 CA 将用户证书<code>user_key-cert.pub</code>复制到客户端，与用户的密钥<code>user_key</code>保存在同一个目录即可。</p>
+<h2 id="客户端安装-CA-公钥"><a href="#客户端安装-CA-公钥" class="headerlink" title="客户端安装 CA 公钥"></a>客户端安装 CA 公钥</h2><p>为了让客户端信任服务器证书，必须将 CA 签发服务器证书的公钥<code>host_ca.pub</code>，加到客户端的<code>/etc/ssh/ssh_known_hosts</code>文件（全局级别）或者<code>~/.ssh/known_hosts</code>文件（用户级别）。</p>
+<p>具体做法是打开<code>ssh_known_hosts</code>或<code>known_hosts</code>文件，追加一行，开头为<code>@cert-authority *.example.com</code>，然后将<code>host_ca.pub</code>文件的内容（即公钥）粘贴在后面，大概是下面这个样子。</p>
+<pre><code class="bash">@cert-authority *.example.com ssh-rsa AAAAB3Nz...XNRM1EX2gQ==</code></pre>
+<p>上面代码中，<code>*.example.com</code>是域名的模式匹配，表示只要服务器符合该模式的域名，且签发服务器证书的 CA 匹配后面给出的公钥，就都可以信任。如果没有域名限制，这里可以写成<code>*</code>。如果有多个域名模式，可以使用逗号分隔；如果服务器没有域名，可以用主机名（比如<code>host1,host2,host3</code>）或者 IP 地址（比如<code>11.12.13.14,21.22.23.24</code>）。</p>
+<p>然后，就可以使用证书，登录远程服务器了。</p>
+<pre><code class="bash">$ ssh -i ~/.ssh/user_key user@host.example.com</code></pre>
+<p>上面命令的<code>-i</code>参数用来指定用户的密钥。如果证书与密钥在同一个目录，则连接服务器时将自动使用该证书。</p>
+<h2 id="废除证书"><a href="#废除证书" class="headerlink" title="废除证书"></a>废除证书</h2><p>废除证书的操作，分成用户证书的废除和服务器证书的废除两种。</p>
+<p>服务器证书的废除，用户需要在<code>known_hosts</code>文件里面，修改或删除对应的<code>@cert-authority</code>命令的那一行。</p>
+<p>用户证书的废除，需要在服务器新建一个<code>/etc/ssh/revoked_keys</code>文件，然后在配置文件<code>sshd_config</code>添加一行，内容如下。</p>
+<pre><code class="bash">RevokedKeys /etc/ssh/revoked_keys</code></pre>
+<p><code>revoked_keys</code>文件保存不再信任的用户公钥，由下面的命令生成。</p>
+<pre><code class="bash">$ ssh-keygen -kf /etc/ssh/revoked_keys -z 1 ~/.ssh/user1_key.pub</code></pre>
+<p>上面命令中，<code>-z</code>参数用来指定用户公钥保存在<code>revoked_keys</code>文件的哪一行，这个例子是保存在第1行。</p>
+<p>如果以后需要废除其他的用户公钥，可以用下面的命令保存在第2行。</p>
+<pre><code class="bash">$ ssh-keygen -ukf /etc/ssh/revoked_keys -z 2 ~/.ssh/user2_key.pub</code></pre>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 askding@qq.com </span>
     </div>

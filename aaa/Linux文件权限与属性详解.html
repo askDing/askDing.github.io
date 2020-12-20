@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>about | Mr.Framework</title>
+  <title>Mr.Framework</title>
   <meta name="keywords" content="">
-  <meta name="description" content="about | Mr.Framework">
+  <meta name="description" content="Mr.Framework">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="404 Not Found: 该页面无法显示很抱歉，您所访问的地址并不存在">
 <meta property="og:type" content="website">
@@ -621,8 +621,6 @@
     <div class="pjax">
         <article id="page-" class="article article-type-page" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">about</h1>
-    
     <div class="article-meta">
         
         
@@ -631,12 +629,12 @@
     </div>
     <div class="article-meta">
         
-            Created At : <time class="date" title='Updated At: 2020-12-08 19:41:14'>2020-12-08 19:41</time>
+            Created At : <time class="date" title='Updated At: 2020-12-20 19:36:19'>2020-12-20 19:36</time>
         
     </div>
     <div class="article-meta">
         
-        <span>Count:98</span>
+        <span>Count:625</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -666,7 +664,7 @@
     
     <div class="toc-ref">
     
-        
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#SetUID%E6%9D%A1%E4%BB%B6%EF%BC%9A"><span class="toc-text">SetUID条件：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E8%AE%BE%E7%BD%AE%E5%92%8C%E5%8F%96%E6%B6%88SetUID"><span class="toc-text">1. 设置和取消SetUID</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#SetGID"><span class="toc-text">SetGID</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#0-SetGID%E6%9D%A1%E4%BB%B6%EF%BC%9A"><span class="toc-text">0. SetGID条件：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E8%AE%BE%E7%BD%AE%E5%92%8C%E5%8F%96%E6%B6%88SetGID"><span class="toc-text">1. 设置和取消SetGID</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#SBIT"><span class="toc-text">SBIT</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#0-%E4%BD%9C%E7%94%A8%EF%BC%9A"><span class="toc-text">0.作用：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E8%AE%BE%E7%BD%AE%E5%92%8C%E5%8F%96%E6%B6%88SBIT"><span class="toc-text">1. 设置和取消SBIT</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -682,46 +680,126 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <script src=/js/crypto-js.js></script>
-<script>
-function doDecrypt (pwd, onError) {
-	console.log('in doDecrypt');
-	const txt = document.getElementById('enc_content').innerHTML;
-	let plantext;
-	try {
-		const bytes = CryptoJS.AES.decrypt(txt, pwd);
-		var plaintext = bytes.toString(CryptoJS.enc.Utf8);
-	} catch(err) {
-		if(onError) {
-			onError(err);
-		}
-		return;
-	}
-	document.getElementById('enc_content').innerHTML = plaintext;
-	document.getElementById('enc_content').style.display = 'block';
-	document.getElementById('enc_passwd').style.display = 'none';
-	if(typeof MathJax !== 'undefined') {
-		MathJax.Hub.Queue(
-			['resetEquationNumbers', MathJax.InputJax.TeX],
-			['PreProcess', MathJax.Hub],
-			['Reprocess', MathJax.Hub]
-		);
-	}
-}
-</script>
-<div id="enc_content" style="display:none">U2FsdGVkX1/Gh8MvUgBI6841Os0Wy2Tueq0mfjWLafEYI3J6FC3sKMFYL1fUdxVpUPoW0zKGQ5qEI4kGY7VQlA==</div>
-<div id="enc_passwd"> <input id="enc_pwd_input" type="password" style="border-radius: 5px;border-style: groove;height: 30px;width: 50%;cursor: auto;font-size: 102%;color: currentColor;outline: none;text-overflow: initial;padding-left: 5px;" onkeydown="if (event.keyCode == 13) { decrypt(); return false;}"> <input type="submit" value="解&nbsp;密" onclick="decrypt()" style="width: 58px;height: 34px;border-radius: 5px;background-color: white;border-style: solid;color: currentColor;"><div id="enc_error" style="display: inline-block;color: #d84527;margin-left: 10px"></div>
-<script>
-var onError = function(error) {
-	document.getElementById("enc_error").innerHTML = "password error!"
-};
-function decrypt() {
-var passwd = document.getElementById("enc_pwd_input").value;
-console.log(passwd);
-doDecrypt(passwd, onError);
-}
-</script>
-</div><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">
+        <p>Linux文件权限与属性详解</p>
+<p><strong>chmod u+s filename                         执行文件的用户以文件所有者权限执行</strong><br><strong>chmod g+s fielname/dirname         执行（文件/目录）的用户以（文件/目录）所属组权限执行</strong></p>
+<p><strong>chmod o+t dirname                         任意用户可在该目录下创建（文件/目录），但该（文件/目录）仅所有者和root可以删除</strong></p>
+<h3 id="SetUID条件："><a href="#SetUID条件：" class="headerlink" title="SetUID条件："></a>SetUID条件：</h3><hr>
+<hr>
+<p>必须具备以下几个条件（前提）：</p>
+<ol>
+<li><blockquote>
+<p>只有可执行的二进制程序才可以设置SetUID</p>
+</blockquote>
+</li>
+<li><blockquote>
+<p>所有者必须对欲设置SetUID的文件具备 <strong>&gt; 可执行(x)</strong>&gt;  权限</p>
+</blockquote>
+</li>
+<li><blockquote>
+<p>命令执行过程中，其它用户获取所有者的身份（灵魂附体）</p>
+</blockquote>
+</li>
+<li><blockquote>
+<p>SetUID具有时间限制，即完成该程序执行后就消失（不能霸占住不放吧？）</p>
+</blockquote>
+</li>
+</ol>
+<h3 id="1-设置和取消SetUID"><a href="#1-设置和取消SetUID" class="headerlink" title="1. 设置和取消SetUID"></a>1. 设置和取消SetUID</h3><ul>
+<li><strong>&gt; 设置SetUID</strong></li>
+</ul>
+<blockquote>
+<p>chmod 4xxx &lt; file-name &gt;<br>chmod u+s &lt; file-name &gt;</p>
+</blockquote>
+<ul>
+<li><strong>取消SetUID</strong></li>
+</ul>
+<blockquote>
+<p>chmod xxx &lt; file-name &gt;<br>chmod u-s &lt; file-name &gt;</p>
+</blockquote>
+<h2 id="SetGID"><a href="#SetGID" class="headerlink" title="SetGID"></a>SetGID</h2><hr>
+<hr>
+<p>其实，SetGID基本与SetUID相同，无非也就是一个设置所有者的权限，GID为设置所属组的特殊权限！<br>区别点在于：SetGID也可以设置目录的相关SetGID权限！</p>
+<h3 id="0-SetGID条件："><a href="#0-SetGID条件：" class="headerlink" title="0. SetGID条件："></a>0. SetGID条件：</h3><ul>
+<li><p><strong>针对文件</strong>：</p>
+<ul>
+<li><blockquote>
+<p>可执行的二进制文件</p>
+</blockquote>
+</li>
+<li><blockquote>
+<p>命令执行者（即所属组）对该文件具备 <strong>&gt; x</strong>&gt;  权限</p>
+</blockquote>
+</li>
+<li><blockquote>
+<p>执行时，执行者被所属组灵魂附体</p>
+</blockquote>
+</li>
+<li><blockquote>
+<p>权限只在执行过程中有效</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li><p><strong>针对目录</strong>：</p>
+<ul>
+<li><blockquote>
+<p>普通用户对目录具备r和x权限，才可以进入到该目录</p>
+</blockquote>
+</li>
+<li><blockquote>
+<p>普通用户在此目录中的有效组会变成此目录的所属组</p>
+</blockquote>
+</li>
+<li><blockquote>
+<p>如普通用户对该目录具备w权限，新建文件的所属组为该目录的所属组</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="1-设置和取消SetGID"><a href="#1-设置和取消SetGID" class="headerlink" title="1. 设置和取消SetGID"></a>1. 设置和取消SetGID</h3><ul>
+<li><strong>&gt; 设置SetGID</strong></li>
+</ul>
+<blockquote>
+<p>chmod 2xxx<br>chmod g+s</p>
+</blockquote>
+<ul>
+<li><strong>取消SetGID</strong></li>
+</ul>
+<blockquote>
+<p>chmod xxx<br>chmod g-s</p>
+</blockquote>
+<h2 id="SBIT"><a href="#SBIT" class="headerlink" title="SBIT"></a>SBIT</h2><hr>
+<hr>
+<p>Stick Bit，粘滞位。</p>
+<h3 id="0-作用："><a href="#0-作用：" class="headerlink" title="0.作用："></a>0.作用：</h3><ul>
+<li><blockquote>
+<p>只对目录有效</p>
+</blockquote>
+</li>
+<li><blockquote>
+<p>普通用户对该目录有w和x权限</p>
+</blockquote>
+</li>
+<li><blockquote>
+<p>若没有粘滞位，则普通用户可以对目录下的文件/子目录进行删除操作（因为普通用户对目录具有w权限），包括其它用户建立的目录/文件；但若赋了SBIT,则普通用户只能删除自己创建的文件/目录，而不能删除不属于自己的文件/目录！</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="1-设置和取消SBIT"><a href="#1-设置和取消SBIT" class="headerlink" title="1. 设置和取消SBIT"></a>1. 设置和取消SBIT</h3><ul>
+<li><strong>&gt; 设置SBIT</strong></li>
+</ul>
+<blockquote>
+<p>chmod 1xxx &lt; dir-name &gt;<br>chmod o+t &lt; dir-name &gt;</p>
+</blockquote>
+<ul>
+<li><strong>取消SBIT</strong></li>
+</ul>
+<blockquote>
+<p>chmod xxx &lt; dir-name &gt;<br>chmod o-t &lt; dir-name &gt;</p>
+</blockquote>
+<p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/jimmy1988/p/7260215.html">https://www.cnblogs.com/jimmy1988/p/7260215.html</a></p>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 askding@qq.com </span>
     </div>

@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>about | Mr.Framework</title>
+  <title>Mr.Framework</title>
   <meta name="keywords" content="">
-  <meta name="description" content="about | Mr.Framework">
+  <meta name="description" content="Mr.Framework">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="404 Not Found: 该页面无法显示很抱歉，您所访问的地址并不存在">
 <meta property="og:type" content="website">
@@ -621,8 +621,6 @@
     <div class="pjax">
         <article id="page-" class="article article-type-page" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">about</h1>
-    
     <div class="article-meta">
         
         
@@ -631,12 +629,12 @@
     </div>
     <div class="article-meta">
         
-            Created At : <time class="date" title='Updated At: 2020-12-08 19:41:14'>2020-12-08 19:41</time>
+            Created At : <time class="date" title='Updated At: 2020-12-20 19:36:19'>2020-12-20 19:36</time>
         
     </div>
     <div class="article-meta">
         
-        <span>Count:98</span>
+        <span>Count:373</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -666,7 +664,7 @@
     
     <div class="toc-ref">
     
-        
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#PHP%E5%90%8E%E9%97%A8%E6%9C%A8%E9%A9%AC%E5%B8%B8%E7%94%A8%E5%87%BD%E6%95%B0"><span class="toc-text">PHP后门木马常用函数</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9F%A5%E6%89%BEPHP%E6%9C%A8%E9%A9%AC"><span class="toc-text">查找PHP木马</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9F%A5%E6%89%BE%E5%85%B3%E9%94%AE%E8%AF%8D%E2%80%9Dhello-world%E2%80%9D%E5%9C%A8%E9%82%A3%E4%BA%9B%E6%96%87%E4%BB%B6%E4%B8%AD"><span class="toc-text">查找关键词”hello world”在那些文件中</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9F%A5%E6%89%BE%E5%90%8E%E9%97%A8%E5%AE%9E%E7%94%A8%E5%91%BD%E4%BB%A4"><span class="toc-text">查找后门实用命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%A8%E7%9B%98%E6%90%9C%E7%B4%A2%E6%8C%82%E9%A9%AC%E6%96%87%E4%BB%B6"><span class="toc-text">全盘搜索挂马文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E6%97%A5%E5%BF%97"><span class="toc-text">查看日志</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -682,46 +680,47 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <script src=/js/crypto-js.js></script>
-<script>
-function doDecrypt (pwd, onError) {
-	console.log('in doDecrypt');
-	const txt = document.getElementById('enc_content').innerHTML;
-	let plantext;
-	try {
-		const bytes = CryptoJS.AES.decrypt(txt, pwd);
-		var plaintext = bytes.toString(CryptoJS.enc.Utf8);
-	} catch(err) {
-		if(onError) {
-			onError(err);
-		}
-		return;
-	}
-	document.getElementById('enc_content').innerHTML = plaintext;
-	document.getElementById('enc_content').style.display = 'block';
-	document.getElementById('enc_passwd').style.display = 'none';
-	if(typeof MathJax !== 'undefined') {
-		MathJax.Hub.Queue(
-			['resetEquationNumbers', MathJax.InputJax.TeX],
-			['PreProcess', MathJax.Hub],
-			['Reprocess', MathJax.Hub]
-		);
-	}
-}
-</script>
-<div id="enc_content" style="display:none">U2FsdGVkX1/Gh8MvUgBI6841Os0Wy2Tueq0mfjWLafEYI3J6FC3sKMFYL1fUdxVpUPoW0zKGQ5qEI4kGY7VQlA==</div>
-<div id="enc_passwd"> <input id="enc_pwd_input" type="password" style="border-radius: 5px;border-style: groove;height: 30px;width: 50%;cursor: auto;font-size: 102%;color: currentColor;outline: none;text-overflow: initial;padding-left: 5px;" onkeydown="if (event.keyCode == 13) { decrypt(); return false;}"> <input type="submit" value="解&nbsp;密" onclick="decrypt()" style="width: 58px;height: 34px;border-radius: 5px;background-color: white;border-style: solid;color: currentColor;"><div id="enc_error" style="display: inline-block;color: #d84527;margin-left: 10px"></div>
-<script>
-var onError = function(error) {
-	document.getElementById("enc_error").innerHTML = "password error!"
-};
-function decrypt() {
-var passwd = document.getElementById("enc_pwd_input").value;
-console.log(passwd);
-doDecrypt(passwd, onError);
-}
-</script>
-</div><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">
+        <p>寻找PHP webshell 使用Linux Bash shell</p>
+<h2 id="PHP后门木马常用函数"><a href="#PHP后门木马常用函数" class="headerlink" title="PHP后门木马常用函数"></a>PHP后门木马常用函数</h2><ul>
+<li>执行系统命令：<ul>
+<li>system  passthru  shell_exec exec popen proc_open</li>
+</ul>
+</li>
+<li>代码执行加密<ul>
+<li>eval assert call_user_func base64_decode gzinflate gzuncompress gzdecode str_rot13</li>
+</ul>
+</li>
+<li>文件包含与生成<ul>
+<li>require require_once include include_once file_get_contents file_put_contents fputs fwrite</li>
+</ul>
+</li>
+<li>.htaccess <ul>
+<li>SetHandler auto_prepend_file auto_append_file</li>
+</ul>
+</li>
+</ul>
+<h3 id="查找PHP木马"><a href="#查找PHP木马" class="headerlink" title="查找PHP木马"></a>查找PHP木马</h3><p><code>find ./  -name &quot;*.php&quot; | xargs egrep &quot;phpspy|c99sh|milw0rm|eval\(gunerpress|eval\(base64_decoolcode|spider_bc&quot;&gt; /tmp/php.txt </code></p>
+<p><code>grep -r  --include=*.php &#39;[^a-z]eval($_POST&#39; .&gt; /tmp/eval.txt</code></p>
+<p><code> grep -r --include=*.php &#39;file_put_contents(.*$_POST\[.*\]);&#39; . &gt; /tmp/file_put_contents.txt </code></p>
+<p><code> find ./  -name &quot;*.php&quot; -type f -print0 | xargs -0 egrep &quot;(phpspy|c99sh|milw0rm|eval\(gzuncompress\(base64_decoolcode|eval\(base64_decoolcode|spider_bc|gzinflate)&quot; | awk -F:&#39;&#123;print $1&#125;&#39; | sort | uniq </code></p>
+<h3 id="查找关键词”hello-world”在那些文件中"><a href="#查找关键词”hello-world”在那些文件中" class="headerlink" title="查找关键词”hello world”在那些文件中"></a>查找关键词”hello world”在那些文件中</h3><p>查找网站项目里带有挂马的文件<br><code>grep --color -i -r -n &quot;hello world&quot; /data/www/</code></p>
+<pre><code>--color 关键字标红
+-i      不区分大小写
+-r      递归
+</code></pre>
+<h3 id="查找后门实用命令"><a href="#查找后门实用命令" class="headerlink" title="查找后门实用命令"></a>查找后门实用命令</h3><ul>
+<li><p>找出website目录下<code>35分钟前新建</code>的php文件<br><code>find /data/web/website/ -iname *.php -mtime -35 </code></p>
+</li>
+<li><p>找出website里面源码包含<code>eval($_POST[</code>的php文件<br><code>find /data/web/website -name &quot;*.php&quot; | xargs grep &quot;eval($_POST[&quot; </code></p>
+</li>
+<li><p>查找最近一天被修改的PHP文件<br>` find ./  -mtime -1 -type f -name *.php </p>
+</li>
+<li><p>修改网站的权限<br><code>find ./  -type f -name \*.php -exec chmod 444 &#123;&#125; \;</code><br><code> find ./  -type d -exec chmod 555&#123;&#125; \;</code> </p>
+</li>
+</ul>
+<h3 id="全盘搜索挂马文件"><a href="#全盘搜索挂马文件" class="headerlink" title="全盘搜索挂马文件"></a>全盘搜索挂马文件</h3><p>全盘搜索当前目录所有文件（包含子目录）中带有eval的文件，这条可以快速查找到被挂马的文件。<br><code>grep &#39;eval&#39; * -R</code></p>
+<h3 id="查看日志"><a href="#查看日志" class="headerlink" title="查看日志"></a>查看日志</h3><p><code>cat access_log_20120823.log | grep &#39;POST&#39; | grep -v &#39;反向查找’ | less </code></p>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 askding@qq.com </span>
     </div>
