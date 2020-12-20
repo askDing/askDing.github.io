@@ -141,11 +141,11 @@
 
 
 <ul>
-    <li><div class="all active" data-rel="All">All<small>(37)</small></div></li>
+    <li><div class="all active" data-rel="All">All<small>(36)</small></div></li>
     
         
             
-            <li><div data-rel="Tools">Tools<small>(5)</small></div>
+            <li><div data-rel="Tools">Tools<small>(4)</small></div>
                 
             </li>
             
@@ -241,8 +241,8 @@
     </div>
     <div><a class="about  hasFriend  site_url"  href="/about">About</a><a style="width: 50%"  class="friends">Friends</a></div>
 </div>
-<input type="hidden" id="yelog_site_posts_number" value="37">
-<input type="hidden" id="yelog_site_word_count" value="50.4k">
+<input type="hidden" id="yelog_site_posts_number" value="36">
+<input type="hidden" id="yelog_site_word_count" value="50.3k">
 <div style="display: none">
     <span id="busuanzi_value_site_uv"></span>
     <span id="busuanzi_value_site_pv"></span>
@@ -408,14 +408,6 @@
            data-author="" >
             <span class="post-title" title="应急响应基础篇">应急响应基础篇</span>
             <span class="post-date" title="2020-12-08 19:00:06">2020/12/08</span>
-        </a>
-        
-        <a  class="All Tools "
-           href="/Tools/BurpSuite.html"
-           data-tag=""
-           data-author="" >
-            <span class="post-title" title="BurpSuite">BurpSuite</span>
-            <span class="post-date" title="2020-12-08 11:34:11">2020/12/08</span>
         </a>
         
         <a  class="All Tools "
@@ -690,7 +682,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><img src="../images/85596a5a-9bbf-11e6-8aa1-7c8d9829c008.gif" alt="Screenshot"></p>
+        <p><img src="../images/tmux-1.gif" alt="tmux-1"></p>
 <h2 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h2><pre><code>$ cd
 $ git clone https://github.com/gpakosz/.tmux.git
 $ ln -s -f .tmux/.tmux.conf
@@ -787,7 +779,7 @@ tmux_conf_theme_right_separator_sub=&#39;\uE0B3&#39;</code></pre>
 </ul>
 <p>Beside custom variables mentioned above, the <code>tmux_conf_theme_status_left</code> and<br><code>tmux_conf_theme_status_right</code> variables support usual tmux syntax, e.g. using<br><code>#()</code> to call an external command that inserts weather information provided by<br><a target="_blank" rel="noopener" href="https://github.com/chubin/wttr.in#one-line-output">wttr.in</a>:</p>
 <pre><code>tmux_conf_theme_status_right=&#39;#&#123;prefix&#125;#&#123;pairing&#125;#&#123;synchronized&#125; #(curl wttr.in?format=3) , %R , %d %b | #&#123;username&#125;#&#123;root&#125; | #&#123;hostname&#125; &#39;</code></pre>
-<p><img src="../images/52175490-07797c00-27a5-11e9-9fb6-42eec4fe4188.png" alt="Weather information from wttr.in"></p>
+<p><img src="../images/tmux-2.png" alt="tmux-2"></p>
 <h3 id="Accessing-the-macOS-clipboard-from-within-tmux-sessions"><a href="#Accessing-the-macOS-clipboard-from-within-tmux-sessions" class="headerlink" title="Accessing the macOS clipboard from within tmux sessions"></a>Accessing the macOS clipboard from within tmux sessions</h3><p>[Chris Johnsen created the <code>reattach-to-user-namespace</code><br>utility][reattach-to-user-namespace] that makes <code>pbcopy</code> and <code>pbpaste</code> work<br>again within tmux.</p>
 <p>To install <code>reattach-to-user-namespace</code>, use either <a target="_blank" rel="noopener" href="http://www.macports.org/">MacPorts</a> or<br><a target="_blank" rel="noopener" href="http://brew.sh/">Homebrew</a>:</p>
 <p>   <code> $ port install tmux-pasteboard</code></p>

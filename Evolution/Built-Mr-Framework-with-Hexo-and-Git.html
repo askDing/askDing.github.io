@@ -141,11 +141,11 @@
 
 
 <ul>
-    <li><div class="all active" data-rel="All">All<small>(37)</small></div></li>
+    <li><div class="all active" data-rel="All">All<small>(36)</small></div></li>
     
         
             
-            <li><div data-rel="Tools">Tools<small>(5)</small></div>
+            <li><div data-rel="Tools">Tools<small>(4)</small></div>
                 
             </li>
             
@@ -241,8 +241,8 @@
     </div>
     <div><a class="about  hasFriend  site_url"  href="/about">About</a><a style="width: 50%"  class="friends">Friends</a></div>
 </div>
-<input type="hidden" id="yelog_site_posts_number" value="37">
-<input type="hidden" id="yelog_site_word_count" value="50.4k">
+<input type="hidden" id="yelog_site_posts_number" value="36">
+<input type="hidden" id="yelog_site_word_count" value="50.3k">
 <div style="display: none">
     <span id="busuanzi_value_site_uv"></span>
     <span id="busuanzi_value_site_pv"></span>
@@ -408,14 +408,6 @@
            data-author="" >
             <span class="post-title" title="应急响应基础篇">应急响应基础篇</span>
             <span class="post-date" title="2020-12-08 19:00:06">2020/12/08</span>
-        </a>
-        
-        <a  class="All Tools "
-           href="/Tools/BurpSuite.html"
-           data-tag=""
-           data-author="" >
-            <span class="post-title" title="BurpSuite">BurpSuite</span>
-            <span class="post-date" title="2020-12-08 11:34:11">2020/12/08</span>
         </a>
         
         <a  class="All Tools "
@@ -698,7 +690,7 @@
 <li><a target="_blank" rel="noopener" href="https://segmentfault.com/a/1190000021614307">https://segmentfault.com/a/1190000021614307</a></li>
 <li><a target="_blank" rel="noopener" href="https://juejin.cn/post/6844903805859921933">https://juejin.cn/post/6844903805859921933</a></li>
 </ul>
-<p><img src="../images/FjUDxVksbmykVH1wvQJc4h57wMrQ.jpg" alt="图解"></p>
+<p><img src="../images/hexo-1.jpg" alt="hexo-1"></p>
 <h2 id="搭建过程"><a href="#搭建过程" class="headerlink" title="搭建过程"></a>搭建过程</h2><p><a target="_blank" rel="noopener" href="https://hexo.io/docs/">hexo</a> 是一个快速、简洁且高效的博客框架。</p>
 <h3 id="Hexo安装"><a href="#Hexo安装" class="headerlink" title="Hexo安装"></a>Hexo安装</h3><pre><code class="zsh">brew install git node  # 安装git 和node
 npm config set registry https://registry.npm.taobao.org # 配置npm源
@@ -1125,11 +1117,11 @@ link:
     rss: /atom.xml</code></pre>
 <pre><code class="zsh">npm install hexo-generator-feed hexo-generator-sitemap </code></pre>
 <p>提交sitemap到<a target="_blank" rel="noopener" href="https://developers.google.com/search">Google站点平台</a></p>
-<p><img src="../images/image-20201206225243358.png" alt="image-20201206225243358"></p>
+<p><img src="../images/hexo-2.png" alt="hexo-2"></p>
 <p>下载这个html文件，到网站仓库上传这个html文件点击<strong>VERIFY</strong></p>
-<p><img src="../images/image-20201206230006831.png" alt="image-20201206230006831"></p>
+<p><img src="../images/hexo-3.png" alt="hexo-3"></p>
 <p>添加站点文件sitemap.xml </p>
-<p><img src="../images/image-20201206230543305.png" alt="image-20201206230543305"></p>
+<p><img src="../images/hexo-4.png" alt="hexo-4"></p>
 <h4 id="添加建站时间"><a href="#添加建站时间" class="headerlink" title="添加建站时间"></a>添加建站时间</h4><pre><code class="js">&lt;!-- 添加建站时间代码到Mr-Framework/themes/3-hexo/layout/_partial/footer.ejs文件末尾 --&gt;
 &lt;script language=javascript&gt;
     function siteTime() &#123;
@@ -1232,7 +1224,7 @@ about:  # &#39;关于&#39; 按钮
  # 在终端内运行
  hexo new page about  #在source目录下创建/source/about/index.md 编辑index.md即可</code></pre>
 <h4 id="添加音乐插件"><a href="#添加音乐插件" class="headerlink" title="添加音乐插件"></a>添加音乐插件</h4><h5 id="生成外链代码"><a href="#生成外链代码" class="headerlink" title="生成外链代码"></a>生成外链代码</h5><p>在<a target="_blank" rel="noopener" href="https://music.163.com/">网易云音乐</a> 搜索一个作为背景音乐的歌曲，并进入播放页面，点击 <strong>生成外链播放器</strong></p>
-<p><img src="../images/image-20201206203809346.png" alt="image-20201206203809346"></p>
+<p><img src="../images/hexo-5.png" alt="hexo-5"></p>
 <h5 id="插入js脚本"><a href="#插入js脚本" class="headerlink" title="插入js脚本"></a>插入js脚本</h5><p>给在第6步的外链代码进行优化如下，在**/Mr-Framework/themes/3-hexo/layout/_partial/footer.ejs**末尾添加下列代码</p>
 <pre><code class="html">&lt;div id=&quot;musicMouseDrag&quot; style=&quot;position:fixed; z-index: 9999; bottom: 0; right: 0;&quot;&gt;
                                                                                        &lt;!--默认style是底部bottom,右下角right --&gt;
@@ -1379,7 +1371,7 @@ Mr-Framework/node_modules/hexo-encrypt/lib/conf_post.js
     &#125;)();
 &lt;/script&gt;</code></pre>
 <h4 id="评论系统gitalk配置"><a href="#评论系统gitalk配置" class="headerlink" title="评论系统gitalk配置"></a>评论系统gitalk配置</h4><h5 id="注册OAuth-Application"><a href="#注册OAuth-Application" class="headerlink" title="注册OAuth Application"></a>注册OAuth Application</h5><p><a target="_blank" rel="noopener" href="https://github.com/settings/applications/new">点击此处</a> 来注册一个新的 OAuth Application。</p>
-<p><img src="../images/image-20201206120125712.png" alt="image-20201206120125712"></p>
+<p><img src="../images/hexo-6.png" alt="hexo-6"></p>
 <h5 id="修改主题配置文件"><a href="#修改主题配置文件" class="headerlink" title="修改主题配置文件"></a>修改主题配置文件</h5><blockquote>
 <p> /Mr-Framework/themes/3-hexo/_config.yml</p>
 </blockquote>
@@ -1425,18 +1417,18 @@ hexo clean &amp;&amp; hexo g &amp;&amp; hexo d &amp;&amp; git add . &amp;&amp; g
 alias hdb=&#39;cd ~/Mr-Framework &amp;&amp; hexo clean &amp;&amp; hexo g &amp;&amp; hexo d &amp;&amp; git add . &amp;&amp; git commit -m &quot; Mr.Framework updated: `date` &quot; &amp;&amp; git push -f&#39;    # 部署到Github并进行备份</code></pre>
 <h3 id="Coding部署-1"><a href="#Coding部署-1" class="headerlink" title="Coding部署-1"></a>Coding部署-1</h3><p><strong>5. 开启coding pages服务，绑定域名</strong></p>
 <p>如图：</p>
-<p><img src="../images/v2-1136f014eae5c088808a265ded2c6845_1440w.jpg" alt="img"></p>
+<p><img src="../images/hexo-7.jpg" alt="hexo-7"></p>
 <p><strong>6. 阿里云添加解析</strong></p>
-<p><img src="../images/v2-9a9ffbf08b2ec0917027ce2f3d14cfaf_1440w.jpg" alt="img"></p>
+<p><img src="../images/hexo-8.jpg" alt="hexo-8"></p>
 <p>这个时候就可以把之前github的解析改成境外，把coding的解析设为默认了。</p>
 <p><strong>7. 去除coding page的跳转广告</strong></p>
 <p>coding page的一个比较恶心人的地方就是，你只是银牌会员的话，访问会先跳转到一个广告，再到你自己的域名。那么它也给出了消除的办法。右上角切换到coding的旧版界面，默认新版是不行的。然后再来到<code>pages服务</code>这里。</p>
 <p>这里：</p>
-<p><img src="../images/v2-2b9a0f546007202e28bdf917edd559df_1440w.jpg" alt="img"></p>
+<p><img src="../images/hexo-9.jpg" alt="hexo-9"></p>
 <p>只要你在页面上添加一行文字，写<code>Hosted by Coding Pages</code>，然后点下面的小勾勾，两个工作日内它就会审核通过了。</p>
 <pre><code class="text">&lt;p&gt;Hosted by &lt;a href=&quot;https://pages.coding.me&quot; style=&quot;font-weight: bold&quot;&gt;Coding Pages&lt;/a&gt;&lt;/p&gt;</code></pre>
 <p>我的选择是把这一行代码放在主题文件夹<code>/layout/common/footer.ejs</code>里面，也就是本来在页面中看到的页脚部分。</p>
-<p><img src="../images/v2-fdc3b5fe205f9214a127464563395489_1440w.jpg" alt="img"></p>
+<p><img src="../images/hexo-10.jpg" alt="hexo-10"></p>
 <p>当然，为了统一，我又在后面加上了and <strong>Github</strong>哈哈，可以不加。</p>
 <pre><code class="text">&lt;p&gt;&lt;span&gt;Hosted by &lt;a href=&quot;https://pages.coding.me&quot; style=&quot;font-weight: bold&quot;&gt;Coding Pages&lt;/a&gt;&lt;/span&gt; and &lt;span&gt;&lt;a href=&quot;https://github.com&quot; style=&quot;font-weight: bold&quot;&gt;Github&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;</code></pre>
 <p>这是最终加上去的代码。</p>

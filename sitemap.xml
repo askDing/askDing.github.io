@@ -107,13 +107,6 @@
   </url>
   
   <url>
-    <loc>https://askding.github.io/Tools/BurpSuite.html</loc>
-    
-    <lastmod>2020-12-08</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://askding.github.io/Tools/Nmap.html</loc>
     
     <lastmod>2020-12-07</lastmod>
@@ -314,13 +307,6 @@
   </url>
   
   <url>
-    <loc>https://askding.github.io/categories/Tools/</loc>
-    <lastmod>2020-12-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://askding.github.io/categories/Kali/Exploit/</loc>
     <lastmod>2020-12-20</lastmod>
     <changefreq>daily</changefreq>
@@ -342,7 +328,21 @@
   </url>
   
   <url>
+    <loc>https://askding.github.io/categories/Tools/</loc>
+    <lastmod>2020-12-20</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://askding.github.io/categories/Coding/</loc>
+    <lastmod>2020-12-20</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://askding.github.io/categories/Response/</loc>
     <lastmod>2020-12-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -364,13 +364,6 @@
   
   <url>
     <loc>https://askding.github.io/categories/Coding/Audit/</loc>
-    <lastmod>2020-12-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://askding.github.io/categories/Response/</loc>
     <lastmod>2020-12-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
