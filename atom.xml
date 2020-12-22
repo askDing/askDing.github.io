@@ -6,7 +6,7 @@
   <link href="https://askding.github.io/atom.xml" rel="self"/>
   
   <link href="https://askding.github.io/"/>
-  <updated>2020-12-21T08:02:17.000Z</updated>
+  <updated>2020-12-22T01:26:14.000Z</updated>
   <id>https://askding.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Learning_in_workplace_with_high_efficiency</title>
+    <link href="https://askding.github.io/Evolution/Learning-in-workplace-with-high-efficiency.html"/>
+    <id>https://askding.github.io/Evolution/Learning-in-workplace-with-high-efficiency.html</id>
+    <published>2020-12-22T01:26:14.000Z</published>
+    <updated>2020-12-22T01:26:14.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>编写进度</p><ul><li><input checked="" disabled="" type="checkbox"> </li></ul><pre class="mermaid"></pre><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;编写进度&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&quot;&quot; disabled=&quot;&quot; type=&quot;checkbox&quot;&gt; &lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre class=&quot;mermaid&quot;&gt;
+&lt;/pre&gt;
+&lt;script type=&quot;text/javascript&quot; </summary>
+      
+    
+    
+    
+    <category term="Evolution" scheme="https://askding.github.io/categories/Evolution/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>PostgreSQL</title>
@@ -518,31 +546,6 @@
     <category term="Kali" scheme="https://askding.github.io/categories/Kali/"/>
     
     <category term="Exploit" scheme="https://askding.github.io/categories/Kali/Exploit/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Learning_Markdown</title>
-    <link href="https://askding.github.io/Evolution/Learning-Markdown.html"/>
-    <id>https://askding.github.io/Evolution/Learning-Markdown.html</id>
-    <published>2020-12-07T06:56:32.000Z</published>
-    <updated>2020-12-07T06:56:32.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>编写进度</p><ul><li><input checked="" disabled="" type="checkbox"> Markdown开源工具</li><li><input checked="" disabled="" type="checkbox"> Markdown基础语法</li><li><input checked="" disabled="" type="checkbox"> 扩展语法GFM</li><li><input disabled="" type="checkbox"> 扩展插件mermaid<ul><li><input checked="" disabled="" type="checkbox"> 图形graph</li><li><input checked="" disabled="" type="checkbox"> 时序图</li><li><input disabled="" type="checkbox"> 类图</li><li><input disabled="" type="checkbox"> 状态图</li><li><input disabled="" type="checkbox"> ER图</li><li><input disabled="" type="checkbox"> 用户旅程图</li><li><input disabled="" type="checkbox"> 甘特图</li><li><input disabled="" type="checkbox"> 饼形图</li><li><input disabled="" type="checkbox"> 其他例子</li></ul></li></ul><blockquote><p>Mardown<a href="%E5%8F%82%E8%80%83%E3%80%8A%E4%BA%86%E4%B8%8D%E8%B5%B7%E7%9A%84Markdown%E3%80%8Bhttp://www.bixiaofan.com/thegreatmarkdown/#/">^Markdown</a>是一种用于<code>排版</code>的标记语言，由一些<code>简单的符号</code>(eg:&amp;/-[]#)组成，<code>可读</code>性强</p></blockquote><p>[toc]</p><h2 id="Markdown开源工具"><a href="#Markdown开源工具" class="headerlink" title="Markdown开源工具"></a>Markdown开源工具</h2><hr><ul><li><p>优秀编辑器</p><ul><li><strong><em><a href="https://github.com/laurent22/joplin">Joplin</a></em></strong> 一个免费的开源笔记记录和待办事项应用程序</li><li><a href="https://typora.io/#download">Typora</a> 一款轻量级Markdown编辑器</li><li><a href="https://github.com/vnotex/vnote">VNote</a> 一款更懂程序员和Markdown的笔记软件</li></ul></li><li><p>在线编辑器-<a href="https://dillinger.io/">DILLINGER</a> 漂亮强大，支持md、 html、pdf 文件导出，支持Dropbox、Github、Google Drive、Onedrive 一键保存</p></li><li><p>浏览器插件-<a href="https://markdown-here.com/index.html">Markdown here</a></p></li><li><p>交互式文档工具</p><ul><li><a href="https://jupyterlab.readthedocs.io/en/stable/">JupyterLab</a> 是用于交互式计算的基于Web的笔记本环境。</li><li><a href="https://github.com/rstudio/rmarkdown">R Markdown</a> 基于R语言实现的交互式文档</li></ul></li><li><p>项目文档协作工具</p><ul><li><a href="https://www.google.com/docs/about/">Google Doc</a> 个人免费在线文档</li><li><a href="https://docs.qq.com/">腾讯文档</a> 支持多人在线编辑Word、Excel、PPT文档</li><li><a href="https://shimo.im/">石墨文档</a> 企业在线协同办公系统平台,支持云端多人在线协作编                 辑文档和表格</li><li><a href="https://github.com/hedgedoc/hedgedoc">HedgeDoc</a> 编写和共享Markdown的最佳平台</li><li><a href="https://github.com/mkdocs/mkdocs">MkDocs</a> Markdown的项目文档。</li></ul></li><li><p>静态文档生成器</p><ul><li><a href="https://github.com/vercel/next.js">Next.js</a> 一个轻量级的React 服务端渲染应用框架。</li><li><a href="https://github.com/gatsbyjs/gatsby">Gatsby</a> 基于React的免费开源框架，可帮助开发人员构建快速                的网站和应用</li><li><a href="https://vuepress.vuejs.org/">VuePress</a> 基于Vue的静态文档生成器</li></ul></li></ul><h2 id="Markdown基础语法"><a href="#Markdown基础语法" class="headerlink" title="Markdown基础语法"></a>Markdown基础语法</h2><hr><p><img src="../images/markdown-1.png" alt="markdown-1"></p><ul><li>段落分割标志：两段之间空一行</li><li>段内换行：在上一行末尾添加2*<code>space</code>+<code>回车</code></li><li><code>行内</code>字符少于<code>80</code>个</li></ul><p>文字样式</p><pre><code>==高亮==***粗斜体****[缩写abbr]: 这是缩写的解释&amp;emsp;空格  一个中文字符宽度&amp;ensp;空格  半个中文字符宽度&amp;nbsp;空格  1/4个中文字符宽度&lt;center&gt;居中&lt;/center&gt;&lt;p align=right&gt;最右&lt;/p&gt;&lt;div align=&quot;right&quot;&gt;最右&lt;/div&gt;</code></pre><p>引用</p><pre><code>&gt; 123&gt;&gt; 456&gt;&gt;&gt; 789</code></pre><p>图片</p><pre><code>![alt_name](http://www.example.com/xx.gif)![alt_name](../path/to/xx.gif)</code></pre><p>链接</p><pre><code>* 文字链接[Github](https://github.com &quot;title&quot;)* 引用链接在工作中使用的网站有[Github]、[Google]、[Stack Overflow][Github]: https://github.com/[Google]: https://www.google.com/[Stack Overflow]: https://stackoverflow.com?utm_source=rss&amp;utm_medium=rss</code></pre><p>脚注[^footnote]</p><pre><code>这是一个注脚[^footnote]的样例。[^footnote]: 注脚内容</code></pre><h2 id="扩展语法GFM-Github-Flavoerd-Markdown"><a href="#扩展语法GFM-Github-Flavoerd-Markdown" class="headerlink" title="扩展语法GFM(Github Flavoerd Markdown)"></a>扩展语法GFM(Github Flavoerd Markdown)</h2><hr><h3 id="删除线"><a href="#删除线" class="headerlink" title="删除线"></a>删除线</h3><pre><code>~~被删除的文字~~</code></pre><h3 id="表情符号"><a href="#表情符号" class="headerlink" title="表情符号"></a>表情符号</h3><pre><code>:表情代码: ---&gt;  :smile:</code></pre><h3 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h3><pre><code>| 项目        | 价格   |  数量  || :--------   | :-----:  | ----:  || 计算机     | \$1600 |   5     || 手机        |   \$12   |   12   || 管线        |    \$1    |  234  |</code></pre><h3 id="任务列表"><a href="#任务列表" class="headerlink" title="任务列表"></a>任务列表</h3><pre><code>- [ ] **七月旅行准备**    - [ ] 准备邮轮上需要携带的物品    - [ ] 浏览日本免税店的物品    - [x] 购买蓝宝石公主号七月一日的船票</code></pre><h3 id="锚点"><a href="#锚点" class="headerlink" title="锚点"></a>锚点</h3><pre><code>[锚点描述](#锚点名)</code></pre><h2 id="扩展插件Mermaid语法"><a href="#扩展插件Mermaid语法" class="headerlink" title="扩展插件Mermaid语法"></a>扩展插件<a href="https://mermaid-js.github.io/mermaid/#/">Mermaid</a>语法</h2><hr><p><a href="https://mermaid-js.github.io/mermaid-live-editor/">Mermaid在线编辑器</a>允许您使用文本和代码表示图表</p><blockquote><p>单行注释符 <code>%%</code></p></blockquote><h3 id="图形graph"><a href="#图形graph" class="headerlink" title="图形graph"></a>图形graph</h3><p>子图subgraph定义</p><pre><code>    subgraph title id        a1--&gt;c1    end</code></pre><pre class="mermaid">    graph TB    %% 这是一个单行注视 A -- text --> B{node}    c1-->a2    subgraph one [askDing]        a1-->a2    end    subgraph two        b1-->b2    end    subgraph three        c1-->c2    end</pre><p>流程图flowchart</p><pre class="mermaid">    flowchart TB    c1-->a2    subgraph one    a1-->a2    end    subgraph two    b1-->b2    end    subgraph three    c1-->c2    end    one --> two    three --> two    two --> c2</pre><h4 id="图形graph的方向"><a href="#图形graph的方向" class="headerlink" title="图形graph的方向"></a>图形graph的方向</h4><ul><li><code>TB</code> 从上到下</li><li><code>TD</code> 自顶向下</li><li><code>BT</code> 从下到上</li><li><code>RL</code> 从右到左</li><li><code>LR</code> 从左到右</li></ul><h4 id="节点形状"><a href="#节点形状" class="headerlink" title="节点形状"></a>节点形状</h4><pre class="mermaid">graph TD    A[默认矩形]    B(圆角矩形)    C([体育场形])    D[[电梯形]]    E[(圆柱形)]    F((圆形))    G>不规则形]</pre><pre class="mermaid">graph    H{菱形}    I    J[/平行四边形/]    K[\平行四边形\]    L[/梯形\]    M[\梯形/]</pre><h4 id="节点中的图标"><a href="#节点中的图标" class="headerlink" title="节点中的图标"></a>节点中的图标</h4><blockquote><p>fontawesome</p></blockquote><p><a href="https://fontawesome.com/v4.7.0/icons/">https://fontawesome.com/v4.7.0/icons/</a></p><pre class="mermaid">graph TD%%支持图标fontawesome 语法fa:fa-`icon`访问图标    B["fa:fa-twitter for peace"]    B-->C[fa:fa-ban forbidden]    B-->D(fa:fa-spinner);    B-->E(A fa:fa-camera-retro perhaps?);</pre><h4 id="节点样式"><a href="#节点样式" class="headerlink" title="节点样式"></a>节点样式</h4><pre class="mermaid">graph LR    A(Start)-->B(Stop)    style A fill:#f9f,stroke:#333,stroke-width:4px    style B fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff,stroke-dasharray: 5 5    classDef sharp fill:#f9f,stroke:#333,stroke:4px;    %%    默认类     classDef default fill:#f9f,stroke:#333,stroke-width:8px;    C:::sharp --> D</pre><h4 id="节点上的动作"><a href="#节点上的动作" class="headerlink" title="节点上的动作"></a>节点上的动作</h4><pre class="mermaid">graph LR;    A-->B;    B-->C;    click A "http://www.gitee.com" _blank    click B "http://www.github.com" "Open this in a new tab"</pre><h4 id="节点间的链接形状"><a href="#节点间的链接形状" class="headerlink" title="节点间的链接形状"></a>节点间的链接形状</h4><ul><li>箭头链接 <code>A--&gt;B</code></li><li>开放链接 <code>A---B</code></li><li>标签开放链接 <code>A--Text---B</code> ｜ <code>A ---|text|B</code></li><li>箭头标签链接 <code>A--&gt;|text|B</code> | <code>A--Text --&gt;B</code></li><li>虚线开放链接 <code>A-.-B</code></li><li>虚线箭头链接 <code>A-.-&gt;B</code> </li><li>虚线标签箭头链接 <code>A-.text.-&gt;B</code></li><li>虚线标签开放链接 <code>A-.text.-B</code></li><li>开放粗线链接 <code>A===B</code></li><li>箭头粗线链接 <code>A==&gt;B</code></li><li>标签粗线开放链接 <code>A==text==B</code></li><li>标签粗线箭头链接 <code>A==text==&gt;B</code></li></ul><h4 id="节点间特殊形式的链接"><a href="#节点间特殊形式的链接" class="headerlink" title="节点间特殊形式的链接"></a>节点间特殊形式的链接</h4><blockquote><p>&amp;两边节点不链接</p></blockquote><pre class="mermaid">graph LR    A--text-->B--text-->C    a-->b  & c-->d         1 & 2 --> 3 & 4</pre><p>新箭头类型</p><blockquote><p>使用流程图flowchart</p></blockquote><pre class="mermaid">    flowchart LR    A --o B    B --x C    A1 o--o B1    B1 <--> A3    A3 x--x B3</pre><h3 id="序列图-sequenceDiagram"><a href="#序列图-sequenceDiagram" class="headerlink" title="序列图 sequenceDiagram"></a>序列图 <code>sequenceDiagram</code></h3><blockquote><p>序列图显示进程如何相互操作以及以什么顺序进行操作</p></blockquote><pre class="mermaid">    sequenceDiagram    %% participant指定参与者出现的顺序, as指定别名    participant  J as John    participant  A as Alice    participant  B as Bob    %%消息内容 A ->J: ”message text“    A ->>+ J: hello John, how are you?    %% 通过+/-来激活/停用角色，默认为+    J ->>+ A: Great    %% Note right of actor: text 添加便签    Note right of J: aa    Note over A ,J: bb    A ->>- J: askDing    %% 通过 loop 实线循环    loop Every minute        J-->A: 循环内容    end    %%Alt键可以在顺序图中表达代替路径    A ->> B: Hello Bob,how are you ?    alt is sick        B->>A: Not so good :(    else is well        B->>A: Feeling fresh like a daisy    end    opt Extra response        B->>A: Thanks for asking    end    %% 平行 par end：可以显示饼形发生的动作    par  J to A        J ->> A:Hello,guys!    and  J to B        J ->>B:Hello,guys!    end    %% 背景高亮 rect rgb    end    rect rgb(0,255,234)        J->> A:Hello guys!        J->> B:Hello guys!    end    %% sequenceNumber    autonumber</pre><h4 id="箭头种类"><a href="#箭头种类" class="headerlink" title="箭头种类"></a>箭头种类</h4><ul><li>实线<ul><li>实线无箭头 <code>-&gt;</code></li><li>实线带箭头 <code>-&gt;&gt;</code></li><li>实线末端带叉号(异步) <code>-X</code></li></ul></li><li>虚线<ul><li>虚线无箭头 <code>--&gt;</code></li><li>虚线带箭头 <code>--&gt;&gt;</code></li><li>虚线末端带叉号(异步) <code>--X</code></li></ul></li></ul><h4 id="激活方式"><a href="#激活方式" class="headerlink" title="激活方式"></a>激活方式</h4><blockquote><p>可用通过关键字 <code>(de)activate actor</code>来停用激活actor<br>快捷键 <code>+/-</code></p></blockquote><h4 id="便签note"><a href="#便签note" class="headerlink" title="便签note"></a>便签note</h4><blockquote><p>可通过 <code>Note right of|left of| over | Actor1,Actor2 : text in note </code> 来添加便签</p></blockquote><h4 id="循环-loop"><a href="#循环-loop" class="headerlink" title="循环 loop"></a>循环 <code>loop</code></h4><blockquote><p>loop Loop_text<br> …statements …<br>end</p></blockquote><h4 id="Alt键"><a href="#Alt键" class="headerlink" title="Alt键"></a>Alt键</h4><blockquote><p>alt Describing text<br>    …statemnet…<br>else<br>    …statement…<br>end<br>opt Describing text<br>    …statement…<br>end</p></blockquote><h4 id="平行-par"><a href="#平行-par" class="headerlink" title="平行 par"></a>平行 <code>par</code></h4><blockquote><p>par [Action 1]<br>    …statement…<br>and [Action 2]<br>    …statement…<br>and [Action N]<br>    …statement…<br>end</p></blockquote><h4 id="背景高亮"><a href="#背景高亮" class="headerlink" title="背景高亮"></a>背景高亮</h4><blockquote><p>rect rgb(0,255,0)<br>…content…<br>end</p></blockquote><blockquote><p>rect rgba(0,0,255,.1)<br>…statement…<br>end</p></blockquote><h4 id="sequenceNumber"><a href="#sequenceNumber" class="headerlink" title="sequenceNumber"></a>sequenceNumber</h4><blockquote><p>autonumber</p></blockquote><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;编写进度&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;input checked=&quot;&quot; disabled=&quot;&quot; type=&quot;checkbox&quot;&gt; Markdown开源工具&lt;/li&gt;
-&lt;li&gt;&lt;input checked=&quot;&quot; disabled=&quot;&quot; type=&quot;checkbox&quot;&gt; Mar</summary>
-      
-    
-    
-    
-    <category term="Evolution" scheme="https://askding.github.io/categories/Evolution/"/>
     
     
   </entry>
