@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://askding.github.io/Coding/bash-basic.html</loc>
+    
+    <lastmod>2021-01-02</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://askding.github.io/Evolution/sleep.html</loc>
     
     <lastmod>2020-12-28</lastmod>
@@ -12,13 +19,6 @@
     <loc>https://askding.github.io/Kali/Exploit/SSLTLS%E7%9B%B8%E5%85%B3%E6%BC%8F%E6%B4%9E.html</loc>
     
     <lastmod>2020-12-25</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://askding.github.io/Coding/bash-basic.html</loc>
-    
-    <lastmod>2020-12-24</lastmod>
     
   </url>
   
@@ -370,14 +370,14 @@
   </url>
   
   <url>
-    <loc>https://askding.github.io/categories/Coding/JavaScript/</loc>
+    <loc>https://askding.github.io/categories/Coding/Python/</loc>
     <lastmod>2021-01-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://askding.github.io/categories/Coding/Python/</loc>
+    <loc>https://askding.github.io/categories/Coding/JavaScript/</loc>
     <lastmod>2021-01-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
