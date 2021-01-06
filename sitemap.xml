@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://askding.github.io/Tools/CURL.html</loc>
+    
+    <lastmod>2021-01-06</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://askding.github.io/Kali/Exploit/Elasticsearch.html</loc>
+    
+    <lastmod>2021-01-06</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://askding.github.io/Coding/bash-basic.html</loc>
     
     <lastmod>2021-01-02</lastmod>
@@ -335,6 +349,13 @@
   </url>
   
   <url>
+    <loc>https://askding.github.io/categories/Tools/</loc>
+    <lastmod>2021-01-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://askding.github.io/categories/Kali/Exploit/</loc>
     <lastmod>2021-01-06</lastmod>
     <changefreq>daily</changefreq>
@@ -350,13 +371,6 @@
   
   <url>
     <loc>https://askding.github.io/categories/Evolution/</loc>
-    <lastmod>2021-01-06</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://askding.github.io/categories/Tools/</loc>
     <lastmod>2021-01-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
