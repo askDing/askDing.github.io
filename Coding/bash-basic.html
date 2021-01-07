@@ -1008,7 +1008,8 @@ echo -e &quot;The exit status of this script is: \t $?&quot;
 <li><p><code>[ -x fname ]</code> : fname(文件或目录)存在且可执行,返回真</p>
 </li>
 </ul>
-<h1 id="流程控制语句"><a href="#流程控制语句" class="headerlink" title="流程控制语句"></a>流程控制语句</h1><p>条件测试语句格式：</p>
+<h1 id="流程控制语句"><a href="#流程控制语句" class="headerlink" title="流程控制语句"></a>流程控制语句</h1><h2 id="顺序语句"><a href="#顺序语句" class="headerlink" title="顺序语句"></a>顺序语句</h2><p>程序会顺序来执行代码，从上往下一行一行执行</p>
+<h2 id="分支语句"><a href="#分支语句" class="headerlink" title="分支语句"></a>分支语句</h2><p>条件测试语句格式：</p>
 <blockquote>
 <p>[ <expression> ]   等效于test <expression><br>[[ <expression> ]]   </p>
 </blockquote>
@@ -1017,8 +1018,7 @@ echo -e &quot;The exit status of this script is: \t $?&quot;
 <li><code>[]</code> 不支持逻辑运算符、正则表达式</li>
 <li><code>[[]]</code> 支持逻辑运算符&amp;&amp;、||、!、和()，支持正则表达式匹配</li>
 </ul>
-<h2 id="顺序语句"><a href="#顺序语句" class="headerlink" title="顺序语句"></a>顺序语句</h2><p>程序会顺序来执行代码，从上往下一行一行执行</p>
-<h2 id="分支语句"><a href="#分支语句" class="headerlink" title="分支语句"></a>分支语句</h2><h3 id="if型"><a href="#if型" class="headerlink" title="if型"></a>if型</h3><ul>
+<h3 id="if型"><a href="#if型" class="headerlink" title="if型"></a>if型</h3><ul>
 <li><code>if</code>语句可嵌套使用</li>
 <li>必须以<code>if</code>开头，<code>fi</code>结尾</li>
 <li><code>elif</code> 可以有<code>0个或多个</code></li>
