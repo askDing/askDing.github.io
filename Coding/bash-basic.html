@@ -1170,8 +1170,9 @@ echo $?       # 查看函数myfun返回值</code></pre>
 <li>函数定义中不必声明参数个数，参数个数由此函数被调用时给定。</li>
 </ul>
 <h1 id="调试"><a href="#调试" class="headerlink" title="调试"></a>调试</h1><h2 id="打印变量"><a href="#打印变量" class="headerlink" title="打印变量"></a>打印变量</h2><pre><code class="zsh">#! /bin/bash
-trap &quot;echo a=$a b=$b&quot;  EXIT   # 程序退出打印程序内的变量  
+echo $var ; exit   # 单独调试某个变量 
 
+trap &quot;echo a=$a b=$b&quot;  EXIT   # 程序退出打印程序内的变量  
 a=20
 b=30
 
