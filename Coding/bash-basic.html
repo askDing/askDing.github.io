@@ -750,7 +750,6 @@
 <ul>
 <li><input checked="" disabled="" type="checkbox"> </li>
 </ul>
-<p><img src="../images/aa.svg" alt="aa"></p>
 <h1 id="编程基本元素"><a href="#编程基本元素" class="headerlink" title="编程基本元素"></a>编程基本元素</h1><h2 id="I-O"><a href="#I-O" class="headerlink" title="I/O"></a>I/O</h2><pre><code class="zsh">VAR=&quot;string&quot; # 声明变量之间不能带有空格
 read MYVAR  # input
 CMDOUT=$(pwd)  # 将pwd命令的输出保存到CMDOUT中
@@ -1344,7 +1343,7 @@ commnet here
 # Version: 1.1
 # Description: </code></pre>
 <h2 id="cat的特殊用法"><a href="#cat的特殊用法" class="headerlink" title="cat的特殊用法"></a>cat的特殊用法</h2><pre><code class="zsh">echo &quot;aa bb cc&quot; | cat - other_file   # - 作为stdin文本的文件名</code></pre>
-<h2 id="script录制终端会话"><a href="#script录制终端会话" class="headerlink" title="script录制终端会话"></a>script录制终端会话</h2><pre><code class="zsh">script -t 2&gt; rec.time  -a rec.his # 开始录制 -t 记录时间数据 -a 追加输出到文件, -a可忽略
+<h2 id="script录制终端会话"><a href="#script录制终端会话" class="headerlink" title="script录制终端会话"></a>script录制终端会话</h2><pre><code class="zsh">script -t 2&gt; rec.time  -a rec.his # 开始录制 -t 记录时序 -a 追加输出到文件, -a可忽略
 exit                              # 结束录制
 scriptreplay  -t  rec.time  -s  rec.his   # 回放 -t -s可省略</code></pre>
 <h2 id="termtosvg生成svg动画"><a href="#termtosvg生成svg动画" class="headerlink" title="termtosvg生成svg动画"></a>termtosvg生成svg动画</h2><p><a target="_blank" rel="noopener" href="https://nbedos.github.io/termtosvg/">termtosvg</a></p>
