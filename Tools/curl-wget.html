@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>CURL | Mr.Framework</title>
+  <title>curl-wget | Mr.Framework</title>
   <meta name="keywords" content="">
-  <meta name="description" content="CURL | Mr.Framework">
+  <meta name="description" content="curl-wget | Mr.Framework">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="404 Not Found: 该页面无法显示很抱歉，您所访问的地址并不存在">
 <meta property="og:type" content="website">
@@ -242,7 +242,7 @@
     <div><a class="about  hasFriend  site_url"  href="/about">About</a><a style="width: 50%"  class="friends">Friends</a></div>
 </div>
 <input type="hidden" id="yelog_site_posts_number" value="44">
-<input type="hidden" id="yelog_site_word_count" value="59.3k">
+<input type="hidden" id="yelog_site_word_count" value="60.6k">
 <div style="display: none">
     <span id="busuanzi_value_site_uv"></span>
     <span id="busuanzi_value_site_pv"></span>
@@ -323,10 +323,10 @@
         </a>
         
         <a  class="All Tools "
-           href="/Tools/CURL.html"
+           href="/Tools/curl-wget.html"
            data-tag=""
            data-author="" >
-            <span class="post-title" title="CURL">CURL</span>
+            <span class="post-title" title="curl-wget">curl-wget</span>
             <span class="post-date" title="2021-01-06 18:03:15">2021/01/06</span>
         </a>
         
@@ -675,9 +675,9 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="post-CURL" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-curl-wget" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">CURL</h1>
+        <h1 class="article-title">curl-wget</h1>
     
     <div class="article-meta">
         
@@ -700,7 +700,7 @@
     </div>
     <div class="article-meta">
         
-        <span>Count:256</span>
+        <span>Count:684</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -730,7 +730,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%91%E9%80%81JSON%E6%A0%BC%E5%BC%8F%E7%9A%84%E8%AF%B7%E6%B1%82"><span class="toc-text">发送JSON格式的请求</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#curl"><span class="toc-text">curl</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E6%A0%BC%E5%BC%8F"><span class="toc-text">常用格式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%91%E9%80%81JSON%E6%A0%BC%E5%BC%8F%E7%9A%84%E8%AF%B7%E6%B1%82"><span class="toc-text">发送JSON格式的请求</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#wget"><span class="toc-text">wget</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -750,7 +750,44 @@
 <ul>
 <li><input checked="" disabled="" type="checkbox"> </li>
 </ul>
-<pre><code>curl -X&lt;VERB&gt;  &#39;&lt;PROTOCOL&gt;://&lt;HOST&gt;:&lt;PORT&gt;/&lt;PATH&gt;?&lt;QUERY_STRING&gt;&#39;  -d &#39;&lt;BODY&gt;&#39;</code></pre>
+<h2 id="curl"><a href="#curl" class="headerlink" title="curl"></a>curl</h2><p>curl是一个精简的命令行浏览器,调试API,类似于postman、Apifox</p>
+<pre><code class="zsh">curl  
+      [-X GET/POST/HEAD/PUT]     \# 请求方法设置 
+      [-G ]
+      # 请求头设置
+      [-H &#39;xx: xx&#39;]               \# 设置请求头信息
+      [-A &#39;Mozilla/5.0***&#39;]       \# 指定User-Agent
+      [-b &#39;foo=bar&#39;]              \# 指定cookie
+      [-c cookies.txt]            \# 指定cookie
+      [-e &#39;https://xxx&#39;]          \# 设定Referer
+      [-D respHeader.txt]             \# 将服务器响应头信息保存到respHeader.txt 即cookie    
+
+      # 数据设置
+      [-d &#39;xx&#39;]                   \# POST请求数据(自动设置Content-Type: application/x-www-form-urlencoded)
+      [-d @local_file]            \# POST请求数据
+      [--data-urlencode &#39;xx&#39;]     \# 等同于-d,但会对数据进行url编码
+      [-F &#39;file=@photo.png;filename=me.png;type=application/octet-stream&#39;]      
+      \# 上传二进制文件photo.png(自动设置Content-Type: multipart/form-data, MIME:application/octet-stream 服务器收到的文件名为me.png)
+
+      # 认证信息
+      [-u &#39;bob:12345&#39;]          \# 用户密码(自动设置Authorization: Basic Ym9iOjEyMzQ1)
+
+      # 代理设置
+      [--no-proxy proxyserver]          \# 跳过passwd@proxyserver代理
+      [-x user:passwd@proxyserver:port]  \# 默认HTTP代理
+      [-x socks4://user:passwd@proxyserver:port]  \# socks4代理
+      [-x socks5://user:passwd@proxyserver:port]  \# socks5代理
+
+      # 其他设置
+      [-C -]                  \# 断点续传
+      [-v]                  \# 显示请求过程
+      [-#]                  \# 显示进度条
+      [-k]                  \# 跳过SSL检测
+      [-L]                  \# 自动重定向
+      [-o example.html]     \# 保存html页面
+      [-O ]                 \# 保存与服务器url中同名的文件名
+      [-sS]                 \#仅输出错误信息</code></pre>
+<h3 id="常用格式"><a href="#常用格式" class="headerlink" title="常用格式"></a>常用格式</h3><pre><code class="zsh">curl -X &lt;VERB&gt;  &#39;&lt;PROTOCOL&gt;://&lt;HOST&gt;:&lt;PORT&gt;/&lt;PATH&gt;?&lt;QUERY_STRING&gt;&#39;  -d &#39;&lt;BODY&gt;&#39;</code></pre>
 <table>
 <thead>
 <tr>
@@ -787,7 +824,7 @@
 <td>一个 JSON 格式的请求体 (如果请求需要的话)</td>
 </tr>
 </tbody></table>
-<h2 id="发送JSON格式的请求"><a href="#发送JSON格式的请求" class="headerlink" title="发送JSON格式的请求"></a>发送JSON格式的请求</h2><pre><code class="zsh">curl -XGET &#39;http://localhost:9200/_count?pretty&#39; -d &#39;
+<h3 id="发送JSON格式的请求"><a href="#发送JSON格式的请求" class="headerlink" title="发送JSON格式的请求"></a>发送JSON格式的请求</h3><pre><code class="zsh">curl -XGET &#39;http://localhost:9200/_count?pretty&#39; -d &#39;
 &#123;
     &quot;query&quot;: &#123;
         &quot;match_all&quot;: &#123;&#125;
@@ -803,6 +840,17 @@
         &quot;failed&quot; : 0
     &#125;
 &#125;</code></pre>
+<h2 id="wget"><a href="#wget" class="headerlink" title="wget"></a>wget</h2><p>wget是一个下载工具</p>
+<pre><code class="zsh">wget  [-t 5]  \ #网络不稳定导致的终端，重试下载次数,0表示不断重试
+      [-O output_name]   \ # 指定输出文件名
+      [--limit-rate 20k]   \# 限速 20k
+      [-c]     \ # 断点续传
+      [--mirror --convert-links]   \# 复制整个网站
+      [-r]      \# 递归下载
+      [--user username --password pass]  \# 提供身份验证
+      [--user-agent=&quot;Mozilla/5.0&quot;] \ #指定user-agent
+      [-P /tmp]   \ #指定下载目录
+      URL1 URL2 ... URLn</code></pre>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 askding@qq.com </span>
