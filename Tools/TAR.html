@@ -242,7 +242,7 @@
     <div><a class="about  hasFriend  site_url"  href="/about">About</a><a style="width: 50%"  class="friends">Friends</a></div>
 </div>
 <input type="hidden" id="yelog_site_posts_number" value="45">
-<input type="hidden" id="yelog_site_word_count" value="60.6k">
+<input type="hidden" id="yelog_site_word_count" value="60.9k">
 <div style="display: none">
     <span id="busuanzi_value_site_uv"></span>
     <span id="busuanzi_value_site_pv"></span>
@@ -708,7 +708,7 @@
     </div>
     <div class="article-meta">
         
-        <span>Count:29</span>
+        <span>Count:286</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -758,7 +758,25 @@
 <ul>
 <li><input checked="" disabled="" type="checkbox"> tar(tape archive) 命令可以为Linux的文件和目录创建档案。</li>
 </ul>
-<h2 id="归档"><a href="#归档" class="headerlink" title="归档"></a>归档</h2><h2 id="压缩"><a href="#压缩" class="headerlink" title="压缩"></a>压缩</h2><h2 id="解压"><a href="#解压" class="headerlink" title="解压"></a>解压</h2><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">
+<h2 id="归档"><a href="#归档" class="headerlink" title="归档"></a>归档</h2><pre><code class="zsh">tar -cf output.tar file1 file2 ... filen  # 创建归档文件 ,-c创建  -f 归档文件名
+tar -tvf archive.tar  # 列出归档文件中的文件
+
+tar -rf original.tar new_file # 向归档文件追加/替换文件
+tar -uf archive.tar file1  # 更新归档中的指定文件
+tar -df archive.tar    # 查看归档中文件与系统中文件的差异
+tar -f archive.tar --delete file1 file2 ..  # 删除指定文件
+
+tar -Af file1.tar file2.tar   # 合并多个tar文件</code></pre>
+<h2 id="压缩"><a href="#压缩" class="headerlink" title="压缩"></a>压缩</h2><ul>
+<li><code>-j</code> : bunzip2格式</li>
+<li><code>-z</code> : gzip格式</li>
+<li><code>--lzma</code> : lzma格式</li>
+</ul>
+<pre><code class="zsh">tar -acvf  archive.tar.gz  *  --exclude &quot;*.txt&quot;   # -a根据压缩文件命令自动选择压缩算法,排除指定文件(也可使用-X exclue_file)
+tar -acvf archive.tar.gz * --excluede-cvs  --totals     # 排除版本控制系统相关文件,显示压缩文件大小</code></pre>
+<h2 id="解压"><a href="#解压" class="headerlink" title="解压"></a>解压</h2><pre><code class="zsh">tar -axvf archive.tar.gz  file1 file4  -C /path/to/extraction_directory   # 根据压缩后缀自动选择解压算法,提取指定文件到指定目录
+tar -xzvkpf archive.tar    # 解压bunzip2格式文件，-k不覆盖本地已有文件 -p保留文件相关权限</code></pre>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 askding@qq.com </span>
     </div>
