@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://askding.github.io/Tools/awk-sed-grep.html</loc>
+    
+    <lastmod>2021-01-10</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://askding.github.io/Tools/TAR.html</loc>
     
     <lastmod>2021-01-09</lastmod>
@@ -398,6 +405,13 @@
   </url>
   
   <url>
+    <loc>https://askding.github.io/categories/Coding/Audit/</loc>
+    <lastmod>2021-01-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://askding.github.io/categories/Coding/JavaScript/</loc>
     <lastmod>2021-01-10</lastmod>
     <changefreq>daily</changefreq>
@@ -406,13 +420,6 @@
   
   <url>
     <loc>https://askding.github.io/categories/Coding/Python/</loc>
-    <lastmod>2021-01-10</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://askding.github.io/categories/Coding/Audit/</loc>
     <lastmod>2021-01-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
