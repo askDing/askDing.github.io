@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>TAR | Mr.Frame</title>
+  <title>Markdown_of_Emacs | Mr.Frame</title>
   <meta name="keywords" content="">
-  <meta name="description" content="TAR | Mr.Frame">
+  <meta name="description" content="Markdown_of_Emacs | Mr.Frame">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="function doDecrypt (pwd, onError) { 	console.log(&#39;in doDecrypt&#39;); 	const txt &#x3D; document.getElementById(&#39;enc_content&#39;).innerHTML; 	let plantext; 	try { 		const bytes &#x3D; CryptoJS.AES.decrypt(txt, pwd);">
 <meta property="og:type" content="website">
@@ -699,9 +699,9 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="post-TAR" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-Markdown-of-Emacs" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">TAR</h1>
+        <h1 class="article-title">Markdown_of_Emacs</h1>
     
     <div class="article-meta">
         
@@ -711,7 +711,7 @@
             <i class="iconfont icon-category"></i>
             
             
-            <a  data-rel="Tools">Tools</a>
+            <a  data-rel="Evolution">Evolution</a>
             
         </span>
         
@@ -719,12 +719,12 @@
     </div>
     <div class="article-meta">
         
-            Created At : <time class="date" title='Updated At: 2021-01-09 21:00:07'>2021-01-09 21:00</time>
+            Created At : <time class="date" title='Updated At: 2021-01-14 11:22:07'>2021-01-14 11:22</time>
         
     </div>
     <div class="article-meta">
         
-        <span>Count:335</span>
+        <span>Count:46</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -754,7 +754,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BD%92%E6%A1%A3"><span class="toc-text">归档</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8E%8B%E7%BC%A9"><span class="toc-text">压缩</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A7%A3%E5%8E%8B"><span class="toc-text">解压</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Tips"><span class="toc-text">Tips</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AE%89%E8%A3%85markdown-mode"><span class="toc-text">安装markdown-mode</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -772,28 +772,15 @@
       
         <p>编写进度</p>
 <ul>
-<li><input checked="" disabled="" type="checkbox"> tar(tape archive) 命令可以为Linux的文件和目录创建档案。</li>
+<li><input checked="" disabled="" type="checkbox"> </li>
 </ul>
-<h2 id="归档"><a href="#归档" class="headerlink" title="归档"></a>归档</h2><pre><code class="zsh">tar -cf output.tar file1 file2 ... filen  # 创建归档文件 ,-c创建  -f 归档文件名
-tar -tvf archive.tar  # 列出归档文件中的文件
-
-tar -rf original.tar new_file # 向归档文件追加/替换文件
-tar -uf archive.tar file1  # 更新归档中的指定文件
-tar -df archive.tar    # 查看归档中文件与系统中文件的差异
-tar -f archive.tar --delete file1 file2 ..  # 删除指定文件
-
-tar -Af file1.tar file2.tar   # 合并多个tar文件</code></pre>
-<h2 id="压缩"><a href="#压缩" class="headerlink" title="压缩"></a>压缩</h2><ul>
-<li><code>-j</code> : bunzip2格式</li>
-<li><code>-z</code> : gzip格式</li>
-<li><code>--lzma</code> : lzma格式</li>
-</ul>
-<pre><code class="zsh">tar -acvf  archive.tar.gz  *  --exclude &quot;*.txt&quot;   # -a根据压缩文件命令自动选择压缩算法,排除指定文件(也可使用-X exclue_file)
-tar -acvf archive.tar.gz * --excluede-cvs  --totals     # 排除版本控制系统相关文件,显示压缩文件大小</code></pre>
-<h2 id="解压"><a href="#解压" class="headerlink" title="解压"></a>解压</h2><pre><code class="zsh">tar -axvf archive.tar.gz  file1 file4  -C /path/to/extraction_directory   # 根据压缩后缀自动选择解压算法,提取指定文件到指定目录
-tar -xzvkpf archive.tar    # 解压bunzip2格式文件，-k不覆盖本地已有文件 -p保留文件相关权限</code></pre>
-<h2 id="Tips"><a href="#Tips" class="headerlink" title="Tips"></a>Tips</h2><pre><code class="zsh">tar -cvf - files/ --exclude-cvs | ssh user@server &quot;tar xv -C /tmp&quot; 
-# 对file目录中的文件进行归档并将其输出到stdout(-代表stdout), 然后提取到远程系统中的/tmp目录</code></pre>
+<h1 id="安装markdown-mode"><a href="#安装markdown-mode" class="headerlink" title="安装markdown-mode"></a>安装markdown-mode</h1><pre><code class="emacs-lisp">(use-package markdown-mode
+  :ensure t
+  :commands (markdown-mode gfm-mode)
+  :mode ((&quot;README\\.md\\&#39;&quot; . gfm-mode)
+         (&quot;\\.md\\&#39;&quot; . markdown-mode)
+         (&quot;\\.markdown\\&#39;&quot; . markdown-mode))
+  :init (setq markdown-command &quot;multimarkdown&quot;))</code></pre>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 askding@qq.com </span>
