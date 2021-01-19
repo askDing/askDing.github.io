@@ -141,7 +141,7 @@
 
 
 <ul>
-    <li><div class="all active" data-rel="All">All<small>(47)</small></div></li>
+    <li><div class="all active" data-rel="All">All<small>(46)</small></div></li>
     
         
             
@@ -225,7 +225,7 @@
     
         
             
-            <li><div data-rel="Evolution">Evolution<small>(5)</small></div>
+            <li><div data-rel="Evolution">Evolution<small>(4)</small></div>
                 
             </li>
             
@@ -241,8 +241,8 @@
     </div>
     <div><a class="about  hasFriend  site_url"  href="/about">About</a><a style="width: 50%"  class="friends">Friends</a></div>
 </div>
-<input type="hidden" id="yelog_site_posts_number" value="47">
-<input type="hidden" id="yelog_site_word_count" value="61.1k">
+<input type="hidden" id="yelog_site_posts_number" value="46">
+<input type="hidden" id="yelog_site_word_count" value="60k">
 <div style="display: none">
     <span id="busuanzi_value_site_uv"></span>
     <span id="busuanzi_value_site_pv"></span>
@@ -546,14 +546,6 @@
             <span class="post-date" title="2020-12-07 17:26:21">2020/12/07</span>
         </a>
         
-        <a  class="All Evolution "
-           href="/Evolution/Learning-Markdown.html"
-           data-tag=""
-           data-author="" >
-            <span class="post-title" title="Learning_Markdown">Learning_Markdown</span>
-            <span class="post-date" title="2020-12-07 14:56:32">2020/12/07</span>
-        </a>
-        
         <a  class="All Coding Python "
            href="/Coding/Python/pythonic-tools.html"
            data-tag=""
@@ -724,7 +716,7 @@
     </div>
     <div class="article-meta">
         
-        <span>Count:46</span>
+        <span>Count:530</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -754,7 +746,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AE%89%E8%A3%85markdown-mode"><span class="toc-text">安装markdown-mode</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AE%89%E8%A3%85markdown-mode"><span class="toc-text">安装markdown-mode</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Markdown-%E8%AF%AD%E6%B3%95"><span class="toc-text">Markdown 语法</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A0%87%E9%A2%98"><span class="toc-text">标题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%87%E6%9C%AC"><span class="toc-text">文本</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%93%BE%E6%8E%A5"><span class="toc-text">链接</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81"><span class="toc-text">代码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%97%E8%A1%A8"><span class="toc-text">列表</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%8D%E9%80%89%E6%A1%86"><span class="toc-text">复选框</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A1%A8%E6%A0%BC"><span class="toc-text">表格</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Latex-%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F"><span class="toc-text">Latex&#x2F;数学公式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B5%81%E7%A8%8B%E5%9B%BE"><span class="toc-text">流程图</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B6%E4%BB%96"><span class="toc-text">其他</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%84%9A%E6%B3%A8"><span class="toc-text">脚注</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%82%AE%E7%AE%B1"><span class="toc-text">邮箱</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BC%BA%E5%88%B6%E5%88%86%E9%A1%B5"><span class="toc-text">强制分页</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E6%9C%AC%E6%8D%A2%E8%A1%8C"><span class="toc-text">文本换行</span></a></li></ol></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -774,13 +766,340 @@
 <ul>
 <li><input checked="" disabled="" type="checkbox"> </li>
 </ul>
-<h1 id="安装markdown-mode"><a href="#安装markdown-mode" class="headerlink" title="安装markdown-mode"></a>安装markdown-mode</h1><pre><code class="emacs-lisp">(use-package markdown-mode
+<h1 id="安装markdown-mode"><a href="#安装markdown-mode" class="headerlink" title="安装markdown-mode"></a>安装<a target="_blank" rel="noopener" href="https://jblevins.org/projects/markdown-mode/" title="官网">markdown-mode</a></h1><pre><code class="emacs-lisp">(use-package markdown-mode
   :ensure t
   :commands (markdown-mode gfm-mode)
   :mode ((&quot;README\\.md\\&#39;&quot; . gfm-mode)
          (&quot;\\.md\\&#39;&quot; . markdown-mode)
          (&quot;\\.markdown\\&#39;&quot; . markdown-mode))
   :init (setq markdown-command &quot;multimarkdown&quot;))</code></pre>
+<h1 id="Markdown-语法"><a href="#Markdown-语法" class="headerlink" title="Markdown 语法"></a>Markdown 语法</h1><table>
+<thead>
+<tr>
+<th align="center">操作</th>
+<th align="center">keybinding</th>
+<th align="center">function</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">快捷键列表</td>
+<td align="center">C-c C-h C-h</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">折叠/展开</td>
+<td align="center">TAB</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">移动到标题上一个</td>
+<td align="center">C-c C-p</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">移动到标题下一个</td>
+<td align="center">C-c C-n</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">移动到同级标题上一个</td>
+<td align="center">C-c C-b</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">移动到同级标题下一个</td>
+<td align="center">C-c C-f</td>
+<td align="center"></td>
+</tr>
+</tbody></table>
+<h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><table>
+<thead>
+<tr>
+<th align="center">操作</th>
+<th align="center">keybinding</th>
+<th align="center">function</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">自动设置标题</td>
+<td align="center">C-c C-s h/H</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">插入n级标题</td>
+<td align="center">C-c C-s/t <n></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">上移标题</td>
+<td align="center">C-c <up></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">下移标题</td>
+<td align="center">C-c <down></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">升级标题</td>
+<td align="center">C-c <left></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">降级标题</td>
+<td align="center">C-c <right></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">水平分割线</td>
+<td align="center">C-c C-s -</td>
+<td align="center"></td>
+</tr>
+</tbody></table>
+<h2 id="文本"><a href="#文本" class="headerlink" title="文本"></a>文本</h2><table>
+<thead>
+<tr>
+<th align="center">操作</th>
+<th align="center">keybinding</th>
+<th align="center">function</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">斜体</td>
+<td align="center">C-c C-s i/e</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">粗体</td>
+<td align="center">C-c C-s b</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"><kbd>标签</td>
+<td align="center">C-c C-s k</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">高亮</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">删除线</td>
+<td align="center">C-c C-s s</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">引用</td>
+<td align="center">C-c C-s q</td>
+<td align="center"></td>
+</tr>
+</tbody></table>
+<h2 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h2><table>
+<thead>
+<tr>
+<th align="center">操作</th>
+<th align="center">keybinding</th>
+<th align="center">function</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">URL</td>
+<td align="center">C-c C-l</td>
+<td align="center">markdown-insert-link</td>
+</tr>
+<tr>
+<td align="center">Image</td>
+<td align="center">C-c C-i</td>
+<td align="center">markdwon-insert-image</td>
+</tr>
+<tr>
+<td align="center">显示/关闭图片</td>
+<td align="center">C-c C-x C-i</td>
+<td align="center">markdown-toggle-inline-images</td>
+</tr>
+</tbody></table>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><table>
+<thead>
+<tr>
+<th align="center">语法</th>
+<th align="center">keybinding</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">行内代码</td>
+<td align="center">C-c C-s c</td>
+</tr>
+<tr>
+<td align="center">代码块</td>
+<td align="center">C-c C-s C</td>
+</tr>
+<tr>
+<td align="center">编辑块</td>
+<td align="center">C-c ‘</td>
+</tr>
+<tr>
+<td align="center">开/关代码颜色</td>
+<td align="center">C-c C-x C-f</td>
+</tr>
+</tbody></table>
+<h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><table>
+<thead>
+<tr>
+<th align="center">操作</th>
+<th align="center">keybinding</th>
+<th align="center">function</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">插入</td>
+<td align="center">C-c C-j</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">上移</td>
+<td align="center">C-c <up></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">下移</td>
+<td align="center">C-c <down></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">列右移</td>
+<td align="center">C-c <right></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">列左移</td>
+<td align="center">C-c <left></td>
+<td align="center"></td>
+</tr>
+</tbody></table>
+<h2 id="复选框"><a href="#复选框" class="headerlink" title="复选框"></a>复选框</h2><table>
+<thead>
+<tr>
+<th align="center">操作</th>
+<th align="center">keybinding</th>
+<th align="center">function</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"></td>
+<td align="center">C-c C-d</td>
+<td align="center"></td>
+</tr>
+</tbody></table>
+<h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><table>
+<thead>
+<tr>
+<th align="center">语法</th>
+<th align="center">keybindings</th>
+<th>function</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">插入表格</td>
+<td align="center">C-c C-s t</td>
+<td></td>
+</tr>
+<tr>
+<td align="center">行上移</td>
+<td align="center">C-c <up></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">行下移</td>
+<td align="center">C-c <down></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">列左移</td>
+<td align="center">C-c <left></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">列右移</td>
+<td align="center">C-c <right></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">删除行</td>
+<td align="center">C-c <S-up></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">插入行</td>
+<td align="center">C-c <S-down></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">删除列</td>
+<td align="center">C-c <S-left></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">插入列</td>
+<td align="center">C-c <S-right></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">行排序</td>
+<td align="center">C-c C-c ^</td>
+<td></td>
+</tr>
+<tr>
+<td align="center">表格转置</td>
+<td align="center">C-c C-c t</td>
+<td></td>
+</tr>
+<tr>
+<td align="center">区域转表</td>
+<td align="center">C-c C-c</td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id="Latex-数学公式"><a href="#Latex-数学公式" class="headerlink" title="Latex/数学公式"></a>Latex/数学公式</h2><table>
+<thead>
+<tr>
+<th align="center">操作</th>
+<th align="center">keybinding</th>
+<th align="center">function</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">开关支持</td>
+<td align="center">C-c C-x C-e</td>
+<td align="center"></td>
+</tr>
+</tbody></table>
+<h2 id="流程图"><a href="#流程图" class="headerlink" title="流程图"></a>流程图</h2><p><a target="_blank" rel="noopener" href="https://mermaid-js.github.io/" title="官网">Mermaid</a><br><a target="_blank" rel="noopener" href="https://mermaid-js.github.io/mermaid-live-editor/">在线编辑器</a></p>
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><h3 id="脚注"><a href="#脚注" class="headerlink" title="脚注"></a>脚注</h3><table>
+<thead>
+<tr>
+<th align="center">操作</th>
+<th align="center">keybinding</th>
+<th align="center">function</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"></td>
+<td align="center">C-c C-s f</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">C-c C-a f</td>
+<td align="center"></td>
+</tr>
+</tbody></table>
+<h3 id="邮箱"><a href="#邮箱" class="headerlink" title="邮箱"></a>邮箱</h3><p><a href="mailto:&#x61;&#x73;&#x6b;&#100;&#105;&#x6e;&#103;&#64;&#x71;&#113;&#x2e;&#99;&#111;&#109;">&#x61;&#x73;&#x6b;&#100;&#105;&#x6e;&#103;&#64;&#x71;&#113;&#x2e;&#99;&#111;&#109;</a></p>
+<pre><code class="markdown">&lt;askding@qq.com&gt;</code></pre>
+<h3 id="强制分页"><a href="#强制分页" class="headerlink" title="强制分页"></a>强制分页</h3><p>在 markdown 文本中需要分页的地方添入:</p>
+<pre><code class="html"> &lt;div STYLE=&quot;page-break-after: always
+     ;&quot;&gt;&lt;/div&gt;</code></pre>
+<h3 id="文本换行"><a href="#文本换行" class="headerlink" title="文本换行"></a>文本换行</h3><pre><code class="markdown">&lt;br/&gt;</code></pre>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 askding@qq.com </span>
