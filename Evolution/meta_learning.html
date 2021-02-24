@@ -1,0 +1,1384 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>meta_learning | Mr.Frame</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="meta_learning | Mr.Frame">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="function doDecrypt (pwd, onError) { 	console.log(&#39;in doDecrypt&#39;); 	const txt &#x3D; document.getElementById(&#39;enc_content&#39;).innerHTML; 	let plantext; 	try { 		const bytes &#x3D; CryptoJS.AES.decrypt(txt, pwd);">
+<meta property="og:type" content="website">
+<meta property="og:title" content="about">
+<meta property="og:url" content="https://askding.github.io/about/index.html">
+<meta property="og:site_name" content="Mr.Frame">
+<meta property="og:description" content="function doDecrypt (pwd, onError) { 	console.log(&#39;in doDecrypt&#39;); 	const txt &#x3D; document.getElementById(&#39;enc_content&#39;).innerHTML; 	let plantext; 	try { 		const bytes &#x3D; CryptoJS.AES.decrypt(txt, pwd);">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-12-08T11:41:14.000Z">
+<meta property="article:modified_time" content="2020-12-08T11:41:14.000Z">
+<meta property="article:author" content="Mr.Frame">
+<meta property="article:tag" content="kali exploit vulnerability programing">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="icon" href="/img/avatar.jpg">
+
+<link href="/css/style.css?v=1.1.0" rel="stylesheet">
+
+<link href="/css/hl_theme/gruvbox-dark.css?v=1.1.0" rel="stylesheet">
+
+<link href="//cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css" rel="stylesheet">
+
+<script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="/js/titleTip.js?v=1.1.0" ></script>
+
+<script src="//cdn.jsdelivr.net/npm/highlightjs@9.16.2/highlight.pack.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<script src="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js"></script>
+
+
+
+<script src="//cdn.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.min.js" ></script>
+
+<script src="/js/iconfont.js?v=1.1.0" ></script>
+
+<meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="Mr.Frame" type="application/atom+xml">
+</head>
+<div style="display: none">
+  <input class="theme_disqus_on" value="false">
+  <input class="theme_preload_comment" value="">
+  <input class="theme_blog_path" value="">
+  <input id="theme_shortcut" value="true" />
+  <input id="theme_highlight_on" value="true" />
+  <input id="theme_code_copy" value="true" />
+</div>
+
+
+
+<body>
+<aside class="nav">
+    <div class="nav-left">
+        <a href="/" class="avatar_target">
+    <img class="avatar" src="/img/avatar.jpg" />
+</a>
+<div class="author">
+    <span>Mr.Frame</span>
+</div>
+
+<div class="icon">
+    
+        
+        <a title="rss" href="/atom.xml" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-rss"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="github" href="https://github.com/askDing" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-github"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+        <a title="email" href="mailto:askding@qq.com" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-email"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="qq" href="http://wpa.qq.com/msgrd?v=3&uin=741474596&site=qq&menu=yes" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-qq"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+    
+        
+    
+</div>
+
+
+
+
+<ul>
+    <li><div class="all active" data-rel="All">All<small>(49)</small></div></li>
+    
+        
+            
+            <li><div data-rel="Tools">Tools<small>(8)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="Kali"><i class="fold iconfont icon-right"></i>Kali<small>(28)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="Kali<--->Exploit">Exploit<small>(25)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="Kali<--->PostExploit">PostExploit<small>(2)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+            <li><div data-rel="Response">Response<small>(2)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="Coding"><i class="fold iconfont icon-right"></i>Coding<small>(7)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="Coding<--->Audit">Audit<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="Coding<--->Python">Python<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="Coding<--->JavaScript">JavaScript<small>(2)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+            <li><div data-rel="Evolution">Evolution<small>(4)</small></div>
+                
+            </li>
+            
+        
+    
+</ul>
+<div class="left-bottom">
+    <div class="menus">
+    
+    
+    
+    
+    </div>
+    <div><a class="about  hasFriend  site_url"  href="/about">About</a><a style="width: 50%"  class="friends">Friends</a></div>
+</div>
+<input type="hidden" id="yelog_site_posts_number" value="49">
+<input type="hidden" id="yelog_site_word_count" value="66.3k">
+<div style="display: none">
+    <span id="busuanzi_value_site_uv"></span>
+    <span id="busuanzi_value_site_pv"></span>
+</div>
+
+    </div>
+    <div class="nav-right">
+        <div class="friends-area">
+    <div class="friends-title">
+        Links
+        <i class="iconfont icon-left"></i>
+    </div>
+    <div class="friends-content">
+        <ul>
+            
+            <li><a target="_blank" href="https://fun0nydg.github.io/">Fun0nydg</a></li>
+            
+            <li><a target="_blank" href="http://yelog.org/">叶落阁</a></li>
+            
+            <li><a target="_blank" href="http://gsh3ll.top/">Gsh3ll</a></li>
+            
+        </ul>
+    </div>
+</div>
+        <div class="title-list">
+    <div class="right-top">
+        <div id="default-panel">
+            <i class="iconfont icon-search" data-title="搜索 快捷键 i"></i>
+            <div class="right-title">All</div>
+            <i class="iconfont icon-file-tree" data-title="切换到大纲视图 快捷键 w"></i>
+        </div>
+        <div id="search-panel">
+            <i class="iconfont icon-left" data-title="返回"></i>
+            <input id="local-search-input" />
+            <label class="border-line" for="input"></label>
+            <i class="iconfont icon-case-sensitive" data-title="大小写敏感"></i>
+            <i class="iconfont icon-tag" data-title="标签"></i>
+        </div>
+        <div id="outline-panel" style="display: none">
+            <div class="right-title">大纲</div>
+            <i class="iconfont icon-list" data-title="切换到文章列表"></i>
+        </div>
+    </div>
+
+    <div class="tags-list">
+    <input id="tag-search" />
+    <div class="tag-wrapper">
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>aa</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>system</a>
+            </li>
+        
+    </div>
+
+</div>
+
+    
+    <div id="local-search-result">
+
+    </div>
+    
+    <nav id="title-list-nav">
+        
+        <a id="top" class="All Kali "
+           href="/Kali/kali-inux%E7%B3%BB%E7%BB%9F%E4%BC%98%E5%8C%96.html"
+           data-tag="system"
+           data-author="" >
+            <span class="post-title" title="kali inux系统优化">kali inux系统优化</span>
+            <span class="post-date" title="2020-12-03 20:44:23">2020/12/03</span>
+        </a>
+        
+        <a  class="All Coding "
+           href="/Coding/python-basic.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="python-basic">python-basic</span>
+            <span class="post-date" title="2021-01-30 11:48:44">2021/01/30</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/fastjson-rce.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="fastjson_rce">fastjson_rce</span>
+            <span class="post-date" title="2021-01-29 16:09:51">2021/01/29</span>
+        </a>
+        
+        <a  class="All Evolution "
+           href="/Evolution/Markdown-of-Emacs.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Markdown_of_Emacs">Markdown_of_Emacs</span>
+            <span class="post-date" title="2021-01-14 11:22:07">2021/01/14</span>
+        </a>
+        
+        <a  class="All Tools "
+           href="/Tools/emacs.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="emacs">emacs</span>
+            <span class="post-date" title="2021-01-12 09:46:03">2021/01/12</span>
+        </a>
+        
+        <a  class="All Tools "
+           href="/Tools/awk-sed-grep-find.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="awk-sed-grep-find">awk-sed-grep-find</span>
+            <span class="post-date" title="2021-01-10 10:20:21">2021/01/10</span>
+        </a>
+        
+        <a  class="All Tools "
+           href="/Tools/TAR.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="TAR">TAR</span>
+            <span class="post-date" title="2021-01-09 21:00:07">2021/01/09</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Shellshock.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Shellshock">Shellshock</span>
+            <span class="post-date" title="2021-01-08 15:54:41">2021/01/08</span>
+        </a>
+        
+        <a  class="All Tools "
+           href="/Tools/curl-wget.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="curl-wget">curl-wget</span>
+            <span class="post-date" title="2021-01-06 18:03:15">2021/01/06</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Elasticsearch.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Elasticsearch">Elasticsearch</span>
+            <span class="post-date" title="2021-01-06 17:50:11">2021/01/06</span>
+        </a>
+        
+        <a  class="All Coding "
+           href="/Coding/bash-basic.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="bash_basic">bash_basic</span>
+            <span class="post-date" title="2021-01-02 18:00:59">2021/01/02</span>
+        </a>
+        
+        <a  class="All Evolution "
+           href="/Evolution/sleep.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="sleep">sleep</span>
+            <span class="post-date" title="2020-12-28 15:50:03">2020/12/28</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/SSLTLS%E7%9B%B8%E5%85%B3%E6%BC%8F%E6%B4%9E.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="SSLTLS相关漏洞">SSLTLS相关漏洞</span>
+            <span class="post-date" title="2020-12-25 10:41:48">2020/12/25</span>
+        </a>
+        
+        <a  class="All Evolution "
+           href="/Evolution/meta_learning.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="meta_learning">meta_learning</span>
+            <span class="post-date" title="2020-12-22 09:26:14">2020/12/22</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/PostgreSQL.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="PostgreSQL">PostgreSQL</span>
+            <span class="post-date" title="2020-12-21 16:02:17">2020/12/21</span>
+        </a>
+        
+        <a  class="All Coding JavaScript "
+           href="/Coding/JavaScript/css-basic.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="css_basic">css_basic</span>
+            <span class="post-date" title="2020-12-20 17:31:07">2020/12/20</span>
+        </a>
+        
+        <a  class="All Coding JavaScript "
+           href="/Coding/JavaScript/html-basic.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="html_basic">html_basic</span>
+            <span class="post-date" title="2020-12-20 14:05:39">2020/12/20</span>
+        </a>
+        
+        <a  class="All Response "
+           href="/Response/%E5%BA%94%E6%80%A5%E5%93%8D%E5%BA%94%E6%A8%A1%E6%9D%BF.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="应急响应模板">应急响应模板</span>
+            <span class="post-date" title="2020-12-20 13:57:33">2020/12/20</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Graphite.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Graphite">Graphite</span>
+            <span class="post-date" title="2020-12-17 17:05:35">2020/12/17</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Spring.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Spring">Spring</span>
+            <span class="post-date" title="2020-12-17 09:25:12">2020/12/17</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/XenMobile.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="XenMobile">XenMobile</span>
+            <span class="post-date" title="2020-12-13 14:50:45">2020/12/13</span>
+        </a>
+        
+        <a  class="All Tools "
+           href="/Tools/SpaceVim.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="SpaceVim">SpaceVim</span>
+            <span class="post-date" title="2020-12-12 12:20:18">2020/12/12</span>
+        </a>
+        
+        <a  class="All Tools "
+           href="/Tools/VIM.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="VIM">VIM</span>
+            <span class="post-date" title="2020-12-11 19:10:54">2020/12/11</span>
+        </a>
+        
+        <a  class="All Coding "
+           href="/Coding/program-concept.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="program_concept">program_concept</span>
+            <span class="post-date" title="2020-12-11 16:40:10">2020/12/11</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Kibana.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Kibana">Kibana</span>
+            <span class="post-date" title="2020-12-10 11:32:07">2020/12/10</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Docker.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Docker">Docker</span>
+            <span class="post-date" title="2020-12-09 15:53:15">2020/12/09</span>
+        </a>
+        
+        <a  class="All Response "
+           href="/Response/%E5%BA%94%E6%80%A5%E5%93%8D%E5%BA%94%E5%9F%BA%E7%A1%80%E7%AF%87.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="应急响应基础篇">应急响应基础篇</span>
+            <span class="post-date" title="2020-12-08 19:00:06">2020/12/08</span>
+        </a>
+        
+        <a  class="All Tools "
+           href="/Tools/Nmap.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Nmap">Nmap</span>
+            <span class="post-date" title="2020-12-07 20:08:51">2020/12/07</span>
+        </a>
+        
+        <a  class="All Coding Audit "
+           href="/Coding/Audit/%E4%BB%A3%E7%A0%81%E5%AE%A1%E8%AE%A1%E6%A6%82%E5%BF%B5.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="代码审计概念">代码审计概念</span>
+            <span class="post-date" title="2020-12-07 19:51:19">2020/12/07</span>
+        </a>
+        
+        <a  class="All Kali PostExploit "
+           href="/Kali/PostExploit/%E5%86%85%E7%BD%91%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="内网信息收集">内网信息收集</span>
+            <span class="post-date" title="2020-12-07 18:52:47">2020/12/07</span>
+        </a>
+        
+        <a  class="All Tools "
+           href="/Tools/Tmux.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Tmux">Tmux</span>
+            <span class="post-date" title="2020-12-07 18:14:43">2020/12/07</span>
+        </a>
+        
+        <a  class="All Kali PostExploit "
+           href="/Kali/PostExploit/IPC-Basic-Operation.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="IPC Basic Operation">IPC Basic Operation</span>
+            <span class="post-date" title="2020-12-07 17:55:00">2020/12/07</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/ActiveMQ.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="ActiveMQ">ActiveMQ</span>
+            <span class="post-date" title="2020-12-07 17:26:21">2020/12/07</span>
+        </a>
+        
+        <a  class="All Coding Python "
+           href="/Coding/Python/pythonic-tools.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="pythonic_tools">pythonic_tools</span>
+            <span class="post-date" title="2020-12-06 19:12:43">2020/12/06</span>
+        </a>
+        
+        <a  class="All Evolution "
+           href="/Evolution/Built-Mr-Framework-with-Hexo-and-Git.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Built Mr.Framework with Hexo and Git">Built Mr.Framework with Hexo and Git</span>
+            <span class="post-date" title="2020-12-06 00:09:20">2020/12/06</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/InfluxDB.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="InfluxDB">InfluxDB</span>
+            <span class="post-date" title="2020-12-04 20:24:03">2020/12/04</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/MongoDB.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="MongoDB">MongoDB</span>
+            <span class="post-date" title="2020-12-04 20:23:56">2020/12/04</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Redis.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Redis">Redis</span>
+            <span class="post-date" title="2020-12-04 20:23:48">2020/12/04</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/MySQL.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="MySQL">MySQL</span>
+            <span class="post-date" title="2020-12-04 20:23:41">2020/12/04</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Memcache.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Memcache">Memcache</span>
+            <span class="post-date" title="2020-12-04 20:23:36">2020/12/04</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Hadoop.html"
+           data-tag="aa"
+           data-author="" >
+            <span class="post-title" title="Hadoop">Hadoop</span>
+            <span class="post-date" title="2020-12-04 20:23:31">2020/12/04</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Zookeeper.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Zookeeper">Zookeeper</span>
+            <span class="post-date" title="2020-12-04 20:23:24">2020/12/04</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Tomcat.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Tomcat">Tomcat</span>
+            <span class="post-date" title="2020-12-04 20:23:16">2020/12/04</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Supervisord.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Supervisord">Supervisord</span>
+            <span class="post-date" title="2020-12-04 20:23:08">2020/12/04</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/SaltStack.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="SaltStack">SaltStack</span>
+            <span class="post-date" title="2020-12-04 20:23:00">2020/12/04</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/NFS.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="NFS">NFS</span>
+            <span class="post-date" title="2020-12-04 20:22:50">2020/12/04</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Harbor.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Harbor">Harbor</span>
+            <span class="post-date" title="2020-12-04 20:22:36">2020/12/04</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/JDWP.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="JDWP">JDWP</span>
+            <span class="post-date" title="2020-12-04 20:22:28">2020/12/04</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Java-RMI.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Java RMI">Java RMI</span>
+            <span class="post-date" title="2020-12-04 20:22:17">2020/12/04</span>
+        </a>
+        
+        <div id="no-item-tips">
+
+        </div>
+    </nav>
+    <div id="outline-list">
+    </div>
+</div>
+    </div>
+    <div class="hide-list">
+        <div class="semicircle" data-title="切换全屏 快捷键 s">
+            <div class="brackets first"><</div>
+            <div class="brackets">&gt;</div>
+        </div>
+    </div>
+</aside>
+<div id="post">
+    <div class="pjax">
+        <article id="draft-meta_learning" class="article article-type-draft" itemscope itemprop="blogPost">
+    
+        <h1 class="article-title">meta_learning</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        <span class="book">
+            <i class="iconfont icon-category"></i>
+            
+            
+            <a  data-rel="Evolution">Evolution</a>
+            
+        </span>
+        
+        
+    </div>
+    <div class="article-meta">
+        
+            Created At : <time class="date" title='Updated At: 2020-12-22 09:26:14'>2020-12-22 09:26</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        <span>Count:3.4k</span>
+        
+        
+        <span id="busuanzi_container_page_pv">
+            Views 👀 :<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+        <span class="top-comment" title="跳转至评论区">
+            <a href="#comments">
+                Comment:<span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </a>
+        </span>
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%97%B6%E9%97%B4-%E7%B2%BE%E5%8A%9B-%E7%AE%A1%E7%90%86"><span class="toc-text">时间(精力)管理</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%9F%A5%E8%AF%86%E7%AE%A1%E7%90%86"><span class="toc-text">知识管理</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%9F%A5%E8%AF%86%E5%88%86%E7%B1%BB"><span class="toc-text">知识分类</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E4%B8%AA%E9%98%B6%E6%AE%B5"><span class="toc-text">三个阶段</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%9F%A5%E8%AF%86%E4%BD%93%E7%B3%BB"><span class="toc-text">知识体系</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%AA%E4%BA%BA%E7%9F%A5%E8%AF%86%E4%BD%93%E7%B3%BB"><span class="toc-text">个人知识体系</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AD%A6%E7%A7%91%E7%9F%A5%E8%AF%86%E4%BD%93%E7%B3%BB"><span class="toc-text">学科知识体系</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9E%84%E5%BB%BA%E7%9F%A5%E8%AF%86%E4%BD%93%E7%B3%BB%EF%BC%8C%E7%9C%8B%E4%B9%A6-vs-%E7%BD%91%E7%BB%9C"><span class="toc-text">构建知识体系，看书 vs 网络</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E8%AE%B0%E7%AC%94%E8%AE%B0"><span class="toc-text">如何记笔记</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AD%A6%E4%B9%A0"><span class="toc-text">学习</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AD%A6%E4%B9%A0%E9%80%94%E5%BE%84"><span class="toc-text">学习途径</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AD%A6%E4%B9%A0%E7%AD%96%E7%95%A5"><span class="toc-text">学习策略</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%80%E4%BD%B3%E5%AD%A6%E4%B9%A0%E7%8A%B6%E6%80%81"><span class="toc-text">最佳学习状态</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%80%E4%BD%B3%E5%AD%A6%E4%B9%A0%E6%96%B9%E5%BC%8F"><span class="toc-text">最佳学习方式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AD%A6%E4%B9%A0%E7%9A%84%E8%BF%87%E7%A8%8B"><span class="toc-text">学习的过程</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BD%93%E7%B3%BB%E5%8C%96%E7%A2%8E%E7%89%87%E5%BC%8F%E5%AD%A6%E4%B9%A0"><span class="toc-text">体系化碎片式学习</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AD%A6%E4%B9%A0%E6%A1%86%E6%9E%B6-%E8%81%8C%E5%9C%BA%E8%B7%A8%E7%95%8C"><span class="toc-text">学习框架&#x2F;职场跨界</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E6%9E%84%E5%BB%BA%E6%A1%86%E6%9E%B6"><span class="toc-text">1-构建框架</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E5%AF%B9%E6%AF%94%E8%BF%81%E7%A7%BB"><span class="toc-text">2-对比迁移</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E5%8A%9F%E5%88%A9%E6%80%A7%E5%AD%A6%E4%B9%A0"><span class="toc-text">3-功利性学习</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%90%9C%E7%B4%A2%E6%8A%80%E5%B7%A7"><span class="toc-text">搜索技巧</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%98%85%E8%AF%BB%E6%8A%80%E5%B7%A7"><span class="toc-text">阅读技巧</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E6%95%B4%E4%BD%93%E5%BA%94%E7%94%A8"><span class="toc-text">4-整体应用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-%E6%94%B9%E8%BF%9B%E8%BF%AD%E4%BB%A3"><span class="toc-text">5-改进迭代</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%85%B6%E4%BB%96"><span class="toc-text">其他</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%87%91%E5%AD%97%E5%A1%94"><span class="toc-text">金字塔</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%9F%A5%E8%AF%86%E3%80%81%E6%8A%80%E8%83%BD%E3%80%81%E4%B8%8E%E8%83%BD%E5%8A%9B%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-text">知识、技能、与能力的区别</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%B9%E5%85%BB%E6%80%9D%E7%BB%B4"><span class="toc-text">培养思维</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B9%A0%E6%83%AF%E5%85%BB%E6%88%90"><span class="toc-text">习惯养成</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%BA%90"><span class="toc-text">学习资源</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%AE%B0%E5%BF%86"><span class="toc-text">记忆</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%9E%AC%E6%97%B6%E8%AE%B0%E5%BF%86%E4%B8%8E%E9%95%BF%E6%9C%9F%E8%AE%B0%E5%BF%86"><span class="toc-text">瞬时记忆与长期记忆</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AE%B0%E5%BF%86%E5%AE%AB%E6%AE%BF"><span class="toc-text">记忆宫殿</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%89%E5%B1%82%E5%AE%9A%E6%A1%A9%E6%B3%95"><span class="toc-text">三层定桩法</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%90%84%E7%B1%BB%E6%8A%80%E8%83%BD%E5%AD%A6%E4%B9%A0%E5%BA%94%E7%94%A8%E6%8A%80%E5%B7%A7"><span class="toc-text">各类技能学习应用技巧</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%A8%8B%E5%BA%8F%E6%80%A7%E8%AE%A4%E7%9F%A5%E6%8A%80%E8%83%BD%E5%AD%A6%E4%B9%A0"><span class="toc-text">程序性认知技能学习</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%90%86%E8%A7%A3%E6%80%A7%E8%AE%A4%E7%9F%A5%E6%8A%80%E8%83%BD%E5%AD%A6%E4%B9%A0"><span class="toc-text">理解性认知技能学习</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A1%8C%E4%B8%BA%E6%8A%80%E8%83%BD%E5%AD%A6%E4%B9%A0"><span class="toc-text">行为技能学习</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%9B%B8%E5%85%B3%E6%A6%82%E5%BF%B5"><span class="toc-text">相关概念</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%8D%E7%9B%98%E6%80%9D%E7%BB%B4"><span class="toc-text">复盘思维</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8F%82%E8%80%83%E4%B9%A6%E7%B1%8D"><span class="toc-text">参考书籍</span></a></li></ol>
+    
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+    .toc-level-6 i,
+    .toc-level-6 ol {
+        display: none !important;
+    }
+</style>
+</div>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>编写进度</p>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> </li>
+</ul>
+<h1 id="时间-精力-管理"><a href="#时间-精力-管理" class="headerlink" title="时间(精力)管理"></a>时间(精力)管理</h1><p><img src="../images/time.jpg" alt="time"></p>
+<p>时间管理的本质是注意力和精力管理</p>
+<p>保持充分的自律，从容的生活节奏，才是节约时间的最好方式</p>
+<ul>
+<li>把零碎的事项放到零碎的时间去做。</li>
+</ul>
+<p>Why -&gt; How -&gt; What </p>
+<h1 id="知识管理"><a href="#知识管理" class="headerlink" title="知识管理"></a>知识管理</h1><p>在碎片化时代的知识管理，重点是<strong>对加工知识的大脑进行管理</strong>，而不是对承载知识的文档和文章进行管理。</p>
+<p>知识管理最高境界: <strong>输出、包括写作输出(育人)</strong></p>
+<p>知识晶体就是一些结构性的东西，它不是一些碎片，而是一个框架、一个思维模型</p>
+<h2 id="知识分类"><a href="#知识分类" class="headerlink" title="知识分类"></a>知识分类</h2><ul>
+<li><input disabled="" type="checkbox"> 事实性知识: 分离、孤立的、信息片段式的知识<ul>
+<li>记忆(思维导图、记忆宫殿)</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"> 概念性知识: 含有名词概念、模型、原则、原理/理论性等以结构化的形式组织起来的知识<ul>
+<li>了解知识的来龙去脉</li>
+<li>知识间的联系</li>
+<li>知识的前提条件</li>
+<li>类比和比喻</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"> 程序性知识: 关于做某事需要遵循一系列步骤形式的知识。<ul>
+<li>流程化: 书面树立程序性知识的流程图</li>
+<li>刻意用: 有意识地应用流程步骤</li>
+<li>一般化: 提炼出更具一般性的流程</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"> 元认知知识</li>
+</ul>
+<h2 id="三个阶段"><a href="#三个阶段" class="headerlink" title="三个阶段"></a>三个阶段</h2><p>知识管理三个阶段:</p>
+<ul>
+<li><p><input disabled="" type="checkbox">  收集并分类学习材料(知识、信息、经验)</p>
+<ul>
+<li>知识仓库: </li>
+<li>具有便捷性、索引性、检索性，</li>
+<li>例如：微信、印象笔记、有道云笔记、为知笔记</li>
+<li>知识体系: <ul>
+<li>使用Emacs/OneNote/Joplin</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><input disabled="" type="checkbox">  联系经验、加工整理，在应用中学习，构建知识体系</p>
+</li>
+<li><p><input disabled="" type="checkbox">  通过输出升级表达、解决复杂问题、促进他人成长</p>
+</li>
+</ul>
+<h2 id="知识体系"><a href="#知识体系" class="headerlink" title="知识体系"></a>知识体系</h2><p>能够让人有稳定的根基和框架，树立成长思维，批判思维和系统思维。</p>
+<h3 id="个人知识体系"><a href="#个人知识体系" class="headerlink" title="个人知识体系"></a>个人知识体系</h3><p>个人知识系统框架中所有知识一定都指向同一个应用目标</p>
+<ul>
+<li><input disabled="" type="checkbox"> 以解决问题为中心，促进应用，创造价值</li>
+</ul>
+<h3 id="学科知识体系"><a href="#学科知识体系" class="headerlink" title="学科知识体系"></a>学科知识体系</h3><p>为了尽可能覆盖这个学科所有的内容，没有一个共同的应用目标</p>
+<ul>
+<li><input disabled="" type="checkbox"> 以知识学习为中心，指导科研，树立框架，撰写论文</li>
+</ul>
+<h3 id="构建知识体系，看书-vs-网络"><a href="#构建知识体系，看书-vs-网络" class="headerlink" title="构建知识体系，看书 vs 网络"></a>构建知识体系，看书 vs 网络</h3><blockquote>
+<p>信息/知识的碎片化不是问题，能否对信息进行<strong>分析和整理</strong>才是关键</p>
+</blockquote>
+<ul>
+<li>若学习能力差, 看书和看手机没区别</li>
+<li>若学习能力一般, 针对尚无基础的领域，看书比看手机好</li>
+<li>若学习能力较强, 在该领域发展了属于自己的体系, 看书和看手机都可以把知识拆为己用</li>
+</ul>
+<p>虽然书中信息确实比网络信息更加体系化，但书上的体系和自己的体系不是一回事</p>
+<blockquote>
+<p>得意时信儒、失意时信道、绝望时信佛<br>                        林语堂</p>
+</blockquote>
+<h1 id="如何记笔记"><a href="#如何记笔记" class="headerlink" title="如何记笔记"></a>如何记笔记</h1><p>作用是帮助思考</p>
+<ul>
+<li>笔记场景</li>
+<li><input disabled="" type="checkbox"> 速记式-微信</li>
+<li><input disabled="" type="checkbox"> 流程式-excel</li>
+<li><input disabled="" type="checkbox"> 梳理式-思维导图</li>
+<li><input disabled="" type="checkbox"> 学习式-OneNote/康奈尔笔记法</li>
+<li><input disabled="" type="checkbox"> 总结式-图表化输出</li>
+</ul>
+<h1 id="学习"><a href="#学习" class="headerlink" title="学习"></a>学习</h1><p>学习是在<strong>以原有的经验和知识为基础，<br>    模仿+反复刻意练习，<br>    主动生成信息构建新的理解的过程</strong>。</p>
+<p>最好的学习方法 就是<strong>教会别人</strong>,是帮自己更快、更深、更系统地掌握知识与技能的一种方法</p>
+<h2 id="学习途径"><a href="#学习途径" class="headerlink" title="学习途径"></a>学习途径</h2><ul>
+<li><p><input disabled="" type="checkbox">  学习的四种途径: 网、书、人、事<br><img src="../images/learn_ways.jpg" alt="学习四种途径"></p>
+</li>
+<li><p><strong>分享</strong>是反复的学习过程<br><img src="../images/learn_pyramid.jpg" alt="学习吸收率金字塔"></p>
+</li>
+</ul>
+<h2 id="学习策略"><a href="#学习策略" class="headerlink" title="学习策略"></a>学习策略</h2><p>  在搭好整体框架的基础上，紧紧围绕工作需要，先学急用的和基础的内容。<br>在时间和精力允许的条件下，再填充框架中其他空白的部分。<br>这个填充过程可能是几个月，也可能是几年，甚至一辈子。</p>
+<p>将工作和学习合二为一，再工作中练习和重复技能，直至达到熟练和精通的程度。</p>
+<ul>
+<li><p><input checked="" disabled="" type="checkbox">  功利性学习(带着问题意识)： 从工作的实际需要出发，学习后立马应用</p>
+<ul>
+<li><input disabled="" type="checkbox"> 选问题: 工作中需要解决的问题</li>
+<li><input disabled="" type="checkbox"> 定范围: 确定学习内容的范围和顺序</li>
+<li><input disabled="" type="checkbox"> 实际用: 应用所学内容解决问题</li>
+</ul>
+</li>
+<li><p><input checked="" disabled="" type="checkbox">  搭建高质量框架: “宏观”输入知识，需要掌握信息的结构化思维，懂得何如从一大段信息中迅速提炼出”框架”</p>
+<ul>
+<li><input disabled="" type="checkbox"> 整体性: 将知识以本质的内在联系组织为一个整体，并服务于一个根本应用目标</li>
+<li><input disabled="" type="checkbox"> 调整性: 自身具有很好的调整性</li>
+<li><input disabled="" type="checkbox"> 转换性: 目标改变，框架可同步转换以支撑新目标的实现</li>
+</ul>
+</li>
+<li><p><input checked="" disabled="" type="checkbox">  框架可迁移: 跨界生存</p>
+<ul>
+<li><input disabled="" type="checkbox"> 组织好先前知识和先前经验</li>
+<li><input disabled="" type="checkbox"> 条件化知识，在多样化情况中应用</li>
+<li><input disabled="" type="checkbox"> 多知识做高层次的抽象</li>
+</ul>
+</li>
+</ul>
+<h2 id="最佳学习状态"><a href="#最佳学习状态" class="headerlink" title="最佳学习状态"></a>最佳学习状态</h2><ul>
+<li><input disabled="" type="checkbox"> 专注   将<strong>脑与心</strong>全部投入到当前的知识上，并且始终<strong>保持着知识输入与加工</strong>的运动状态</li>
+</ul>
+<h2 id="最佳学习方式"><a href="#最佳学习方式" class="headerlink" title="最佳学习方式"></a>最佳学习方式</h2><ul>
+<li><input disabled="" type="checkbox"> 在**情境(任务框架和特定条件)**中,<ul>
+<li><input disabled="" type="checkbox"> 对<strong>知识的输入、加工和输出</strong>,<pre><code>* [ ] 清楚地**构建出自己原有经验的知识体系框架**。</code></pre>
+</li>
+<li><input disabled="" type="checkbox"> 在每次学习新知识时，再<strong>对原有框架</strong>加以<strong>增补和修正</strong>。</li>
+</ul>
+</li>
+</ul>
+<p><strong>费曼学习法</strong>: 用转述、教给别人的方法巩固自己的知识。<br><a target="_blank" rel="noopener" href="https://learnku.com/articles/35137">费曼学习法</a><br>大脑真正的输入，是它对知识的输出。(让输出来倒逼输入)</p>
+<p>如果想真正掌握一门知识，最好以论述题而非选择题的方式来让自己做练习<br>唯有以**理解为目标(标准)**输入知识，才能把知识有效地学进去<br><img src="../images/feiman.jpg" alt="feiman"></p>
+<h2 id="学习的过程"><a href="#学习的过程" class="headerlink" title="学习的过程"></a>学习的过程</h2><p>学习者主动构建知识的过程<br><img src="../images/learn_process.jpg" alt="学习的过程"></p>
+<h1 id="体系化碎片式学习"><a href="#体系化碎片式学习" class="headerlink" title="体系化碎片式学习"></a>体系化碎片式学习</h1><p>碎片阅读: 在碎片化的时间里，以自己碎片化理解的方式去学习碎片化的内容,并融合到自己的知识体系中</p>
+<p><img src="../images/fragment_learn.jpg" alt="碎片学习"></p>
+<p>聚沙成塔/搭建自我知识体系的有效工具——Anki卡片法/便签法<br><img src="../images/fragment.jpg" alt="零存整取"></p>
+<p>知识不仅需要系统的输入,还需要零碎的积累和补充。</p>
+<p><img src="../images/jilei.jpg" alt="jilei"></p>
+<p>先有知识框架，再<strong>碎片化学习</strong>丰富框架细节，深化理解。</p>
+<ul>
+<li><input disabled="" type="checkbox"> 前提: 建立在<strong>主动、切实实践</strong>的基础上 </li>
+<li><input disabled="" type="checkbox"> 首先: 建立<strong>知识体系框架</strong></li>
+<li><input disabled="" type="checkbox"> 然后: <strong>碎片化输入、体系化积累</strong></li>
+<li><input disabled="" type="checkbox"> 最后: <strong>层次化、立体化</strong>知识体系框架</li>
+</ul>
+<h1 id="学习框架-职场跨界"><a href="#学习框架-职场跨界" class="headerlink" title="学习框架/职场跨界"></a>学习框架/职场跨界</h1><p>对三大学习策略（框架、可迁移、功利性学习）的综合运用</p>
+<h2 id="1-构建框架"><a href="#1-构建框架" class="headerlink" title="1-构建框架"></a>1-构建框架</h2><p><img src="../images/frame.jpg" alt="知识体系"></p>
+<ul>
+<li>三种方法<ul>
+<li><input disabled="" type="checkbox"> 请教业内有深刻理解/丰富经验的人对这个行业建立的整体认知框架</li>
+<li><input disabled="" type="checkbox"> 参加培训</li>
+<li><input disabled="" type="checkbox"> 阅读经典书籍</li>
+</ul>
+</li>
+</ul>
+<h2 id="2-对比迁移"><a href="#2-对比迁移" class="headerlink" title="2-对比迁移"></a>2-对比迁移</h2><p>在对照整体框架做迁移时，对比的是知识和技能，而不是能力和素质。<br>能力和素质与行业无关。</p>
+<h2 id="3-功利性学习"><a href="#3-功利性学习" class="headerlink" title="3-功利性学习"></a>3-功利性学习</h2><p>优先学习优先级:</p>
+<ul>
+<li><input disabled="" type="checkbox"> 新行业必备的基础知识和技能</li>
+<li><input disabled="" type="checkbox"> 与工作需要迫切程度一致</li>
+<li><input disabled="" type="checkbox"> 根据工作类型确定学习的深度</li>
+</ul>
+<h3 id="搜索技巧"><a href="#搜索技巧" class="headerlink" title="搜索技巧"></a>搜索技巧</h3><p>整个检索过程：<br>从搜索引擎角度思考，先关键词检索，再调整，再检索</p>
+<ul>
+<li><input disabled="" type="checkbox"> 搜索语法: <ul>
+<li>空格”与” “北京 冬奥会”</li>
+<li>包含任意关键词(|) </li>
+<li>排除关键词(-)</li>
+<li>包含完整关键词(“”)</li>
+<li>文学影视作品 (《》)</li>
+<li>限定网站site:</li>
+<li>限定文件类型filetype</li>
+<li>限定关键词在url中（inurl）</li>
+<li>限定关键词在标题中(title)</li>
+</ul>
+</li>
+</ul>
+<h3 id="阅读技巧"><a href="#阅读技巧" class="headerlink" title="阅读技巧"></a>阅读技巧</h3><ul>
+<li>阅读方法<br><img src="../images/fragment_read.jpg" alt="碎片阅读过程"><ul>
+<li><input disabled="" type="checkbox"> 提炼- 拆解提练: 核心内容和知识体系</li>
+<li><input disabled="" type="checkbox"> 链接- 关联自己的经验</li>
+<li><input disabled="" type="checkbox"> 融合: 组块化存储，模型式归档</li>
+</ul>
+</li>
+</ul>
+<h2 id="4-整体应用"><a href="#4-整体应用" class="headerlink" title="4-整体应用"></a>4-整体应用</h2><p>对新学的知识和技能做最大限度的应用</p>
+<h2 id="5-改进迭代"><a href="#5-改进迭代" class="headerlink" title="5-改进迭代"></a>5-改进迭代</h2><p>无论是个人理解和应用出了问题，还是应用前提不一致，或者理论不完善，都要根据实践结果做出改进，裁剪出适用于自己的方法，以便下次应用得更好</p>
+<p>名言：<br>一本书能让失眠的人睡去，也能让沉睡的人醒来；<br>有多少书，能让我们看清这个世界，成为我们看不见的竞争力；<br>又有多少书，能让我们在看清这个世界的同时，仍旧热爱这个世界。</p>
+<p>自由不是随心所欲做想做的事情，而是有能力可以不做”不想做”的事情<br>所以实现自由并不是靠勇气，而是靠能力</p>
+<p>任何决策都可以用利益来衡量<br>你说你没有办法坚持每天早起，只不过是因为早起带给你的收益远远小于你睡觉的收益。</p>
+<p>价值观念：</p>
+<ul>
+<li>复利</li>
+<li>在成人的世界里，没有好坏，只有利弊</li>
+<li>机会成本: 花时间和精力做了A事，就没法做B事，那B事所产生的收益就是机会成本</li>
+<li>沉没成本</li>
+<li>能用钱解决，千万不要用人情</li>
+<li>免费是最贵的</li>
+<li>学习是回报率最高的投资</li>
+<li>学什么不重要，重要是你的知识和服务有没有人愿意付钱</li>
+</ul>
+<p>高智学习，是搞清楚事物之间的因果关系，并且总结出模型、规律，应用到不同的场景。<br>低智学习，通过试错、模仿来学习，获得经验。</p>
+<p>知识变现: 本质是信息不对称，你要比别人先察觉、先尝试、先理解、先分享。</p>
+<h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><h2 id="金字塔"><a href="#金字塔" class="headerlink" title="金字塔"></a>金字塔</h2><p>马斯诺需求金字塔<br><img src="../images/masiluo.jpg" alt="需求金字塔"></p>
+<h2 id="知识、技能、与能力的区别"><a href="#知识、技能、与能力的区别" class="headerlink" title="知识、技能、与能力的区别"></a>知识、技能、与能力的区别</h2><ul>
+<li>知识是客观存在的</li>
+<li>技能是某种工具的使用方法、某个具体工作的完成技巧</li>
+<li>能力是比技能更加深层和通用的存在</li>
+</ul>
+<h2 id="培养思维"><a href="#培养思维" class="headerlink" title="培养思维"></a>培养思维</h2><p>要想教给人们一种新的思维方式，不要刻意去教，而应当给他们一种工具，让他们通过使用工具培养新的思维模式。</p>
+<h2 id="习惯养成"><a href="#习惯养成" class="headerlink" title="习惯养成"></a>习惯养成</h2><p><img src="../images/habit.jpg" alt="习惯养成"></p>
+<p>思想 -&gt; 行动 -&gt;  习惯 -&gt; 性格 -&gt; 命运</p>
+<h2 id="学习资源"><a href="#学习资源" class="headerlink" title="学习资源"></a>学习资源</h2><ul>
+<li>学习资源：真正有效的信息绝不会多到需要囤积。囤积学习材料不能于学习知识，例如网盘学习法</li>
+<li>正确使用材料的方法：一定坚持看完文章，做好笔记，深入理解，再视情况进行知识整理</li>
+<li>真正有效的知识绝不会过于复杂，复杂的往往知识市面上衍生材料的营销手段。</li>
+</ul>
+<h1 id="记忆"><a href="#记忆" class="headerlink" title="记忆"></a>记忆</h1><h2 id="瞬时记忆与长期记忆"><a href="#瞬时记忆与长期记忆" class="headerlink" title="瞬时记忆与长期记忆"></a>瞬时记忆与长期记忆</h2><p><img src="../images/memory.jpg" alt="记忆分类"></p>
+<h2 id="记忆宫殿"><a href="#记忆宫殿" class="headerlink" title="记忆宫殿"></a>记忆宫殿</h2><p>利用人类的内视觉记忆，通过想象在脑海中看到的虚幻画<br>外视觉是我们通过肉眼可以看到的真实世界</p>
+<p>万物皆可桩</p>
+<p>记忆模式: 记忆宫殿= 地点+记忆影像</p>
+<p>思维导图一般用于整理信息，梳理书本的脉络<br>记忆宫殿用于对树上各个知识点的具体记忆</p>
+<p>记忆：信息和头脑中固有的知识形成了密切的联系</p>
+<h3 id="三层定桩法"><a href="#三层定桩法" class="headerlink" title="三层定桩法"></a>三层定桩法</h3><p>元桩: 先找10个房间，每个房间找10个记忆点<br>基础桩: 用元桩记忆100幅图像，每幅图像找10个地点</p>
+<p>注意点：</p>
+<ul>
+<li>记忆桩之前不能有视觉上的阻挡</li>
+<li>顺序记忆</li>
+</ul>
+<h1 id="各类技能学习应用技巧"><a href="#各类技能学习应用技巧" class="headerlink" title="各类技能学习应用技巧"></a>各类技能学习应用技巧</h1><ul>
+<li><p>行为技能:<br>强调身体熟练度的技能，核心在于熟能生巧</p>
+</li>
+<li><p>理解性认知技能<br>强调理解的深度，要求能够抽象出更一般的规律</p>
+</li>
+<li><p>程序性认知技能<br>要求先理解，后重操作</p>
+</li>
+</ul>
+<h2 id="程序性认知技能学习"><a href="#程序性认知技能学习" class="headerlink" title="程序性认知技能学习"></a>程序性认知技能学习</h2><p>误区:</p>
+<ul>
+<li>理解完全后再上手</li>
+<li>完全不经理论指导直接上手</li>
+</ul>
+<p>简单入门 -&gt; 迭代深化 -&gt; 自然重复</p>
+<h2 id="理解性认知技能学习"><a href="#理解性认知技能学习" class="headerlink" title="理解性认知技能学习"></a>理解性认知技能学习</h2><p>误区:</p>
+<ul>
+<li>靠直觉而非成熟的框架入门</li>
+<li>死搬理论，不知变通和改进</li>
+</ul>
+<p>选用框架 -&gt; 生搬硬套 -&gt; 质疑改进</p>
+<h2 id="行为技能学习"><a href="#行为技能学习" class="headerlink" title="行为技能学习"></a>行为技能学习</h2><p>误区：</p>
+<ul>
+<li>靠直觉而非模仿专业示范入门</li>
+<li>盲目模仿,没有量力而行</li>
+<li>一味重复,没有细化改进</li>
+</ul>
+<p>挑选对象 -&gt; 量力模仿 -&gt; 分解简化 -&gt; 局部细化</p>
+<p><img src="../images/change.jpg" alt="改变的动力"></p>
+<h1 id="相关概念"><a href="#相关概念" class="headerlink" title="相关概念"></a>相关概念</h1><ul>
+<li><p>鸡尾酒效应<br>在喧闹的场合突然叫你的名字，你会马上反应过来</p>
+</li>
+<li><p>心流<br>个体注意力完全投驻在某种活动上的感觉</p>
+</li>
+<li><p>绿灯思维<br>不要等到这条街上的绿灯全部都亮你才开车，而是这段路上的绿灯亮了，你往前进一点，看到红灯就停下，等待下一个绿灯</p>
+</li>
+<li><p>稻草战略<br>以小博大，一点一点去换</p>
+</li>
+<li><p>冠军战略<br>尽可能在一个戏份领域突围成为第一人</p>
+</li>
+<li><p>抽签盒战略<br>不要怕失败，多做尝试，寻找自己擅长的领域</p>
+</li>
+</ul>
+<ul>
+<li>5W2H方法<br><img src="../images/5w2h.jpg" alt="5W2H"></li>
+</ul>
+<ul>
+<li>RIA便签法<br>便签一：自述知识<br>便签二：述自经验<br>便签三：如何应用</li>
+</ul>
+<h2 id="复盘思维"><a href="#复盘思维" class="headerlink" title="复盘思维"></a>复盘思维</h2><p>尽早及时地进行”回想”式复习</p>
+<p>知识点/目标粉末化</p>
+<h1 id="参考书籍"><a href="#参考书籍" class="headerlink" title="参考书籍"></a>参考书籍</h1><ul>
+<li>学习力:颠覆职场学习的高效方法</li>
+<li>这样读书就够了 个人学习力升级指南</li>
+<li>高效学习法:名校学霸教你把学习变得轻而易举</li>
+<li>颠覆平庸 如何成为领先的少数人</li>
+<li>洋葱阅读法</li>
+</ul>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">
+      
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 askding@qq.com </span>
+    </div>
+</article>
+
+
+<p>
+    <a  class="dashang" onclick="dashangToggle()">💰</a>
+</p>
+
+
+
+
+    <div id="comments"></div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+
+<script type="text/javascript">
+    $.getScript('/js/gitalk.js', function () {
+        var gitalk = new Gitalk({
+            clientID: '3675559917bdc294608c',
+            clientSecret: 'a826e0ded6d8b29a5bb77843f4c3805ecf7b263f',
+            repo: 'askding.github.io',
+            owner: 'askDing',
+            admin: ['askDing'],
+            id: decodeURI(location.pathname),
+            distractionFreeMode: 'true',
+            language: 'zh-CN',
+            perPage: parseInt('10',10)
+        })
+        gitalk.render('comments')
+    })
+</script>
+
+
+
+
+    
+
+
+
+
+    </div>
+    <div class="copyright">
+        <p class="footer-entry">
+    ©1996-2020 Mr.Frame
+</p>
+<p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
+
+    </div>
+    <div class="full-toc">
+        <button class="full" data-title="切换全屏 快捷键 s"><span class="min "></span></button>
+<a class="" id="rocket" ></a>
+
+    </div>
+</div>
+
+<div class="hide_box" onclick="dashangToggle()"></div>
+<div class="shang_box">
+    <a class="shang_close"  onclick="dashangToggle()">×</a>
+    <div class="shang_tit">
+        <p>Help us with donation</p>
+    </div>
+    <div class="shang_payimg">
+        <div class="pay_img">
+            <img src="/img/alipay.jpg" class="alipay" title="扫码支持">
+            <img src="/img/weixin.jpg" class="weixin" title="扫码支持">
+        </div>
+    </div>
+    <div class="shang_payselect">
+        <span><label><input type="radio" name="pay" checked value="alipay">alipay</label></span><span><label><input type="radio" name="pay" value="weixin">weixin</label></span>
+    </div>
+</div>
+
+
+</body>
+<script src="/js/jquery.pjax.js?v=1.1.0" ></script>
+
+<script src="/js/script.js?v=1.1.0" ></script>
+<script>
+    var img_resize = 'default';
+    function initArticle() {
+        /*渲染对应的表格样式*/
+        
+            $("#post .pjax table").addClass("green_title");
+        
+
+        /*渲染打赏样式*/
+        
+        $("input[name=pay]").on("click", function () {
+            if($("input[name=pay]:checked").val()=="weixin"){
+                $(".shang_box .shang_payimg .pay_img").addClass("weixin_img");
+            } else {
+                $(".shang_box .shang_payimg .pay_img").removeClass("weixin_img");
+            }
+        })
+        
+
+        /*高亮代码块行号*/
+        
+
+        /*访问数量*/
+        
+        $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
+        
+
+        /*代码高亮，行号对齐*/
+        $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
+
+        
+        
+        /* 渲染*/
+        function HTMLDecode(text) {
+            var temp = document.createElement("div");
+            temp.innerHTML = text;
+            var output = temp.innerText || temp.textContent;
+            temp = null;
+            return output;
+        }
+        if (window.mermaid){
+            window.mermaid = null
+        }
+        $.getScript("//cdn.jsdelivr.net/npm/mermaid@8.4.2/dist/mermaid.min.js", function () {
+            var mermaidOptions = JSON.parse(HTMLDecode("{&#34;theme&#34;:&#34;default&#34;,&#34;startOnLoad&#34;:true,&#34;flowchart&#34;:{&#34;useMaxWidth&#34;:false,&#34;htmlLabels&#34;:true}}"))
+            if (window.mermaid) {
+                mermaid.initialize(mermaidOptions)
+                mermaid.contentLoaded()
+            }
+        })
+        
+    }
+
+    /*打赏页面隐藏与展示*/
+    
+    function dashangToggle() {
+        $(".shang_box").fadeToggle();
+        $(".hide_box").fadeToggle();
+    }
+    
+
+</script>
+
+<!--加入行号的高亮代码块样式-->
+
+<!--自定义样式设置-->
+<style>
+    
+    
+    .nav {
+        width: 542px;
+    }
+    .nav.fullscreen {
+        margin-left: -542px;
+    }
+    .nav-left {
+        width: 120px;
+    }
+    
+    
+    @media screen and (max-width: 1468px) {
+        .nav {
+            width: 492px;
+        }
+        .nav.fullscreen {
+            margin-left: -492px;
+        }
+        .nav-left {
+            width: 100px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1024px) {
+        .nav {
+            width: 492px;
+            margin-left: -492px
+        }
+        .nav.fullscreen {
+            margin-left: 0;
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .nav {
+            width: 100%;
+        }
+        .nav-left {
+            width: 100%;
+        }
+    }
+    
+    
+    .nav-right .title-list nav a .post-title, .nav-right .title-list #local-search-result a .post-title {
+        color: #383636;
+    }
+    
+    
+    .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
+        color: #5e5e5f;
+    }
+    
+    
+    .nav-right nav a.hover, #local-search-result a.hover{
+        background-color: #e2e0e0;
+    }
+    
+    
+
+    /*列表样式*/
+    
+
+    /* 背景图样式 */
+    
+    
+
+
+    /*引用块样式*/
+    
+
+    /*文章列表背景图*/
+    
+
+    
+</style>
+
+
+
+
+
+
+
+<div id="musicMouseDrag" style="position:fixed; z-index: 9999; bottom: 0; right: 0;">
+    <!--默认style是底部bottom,右下角right -->
+    <div id="musicDragArea" style="position: absolute; top: 0; left: 0; width: 100%;height: 10px;cursor: move; z-index: 10;">
+    </div>
+    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=150 height=40 src="//music.163.com/outchain/player?type=2&id=1373296&auto=1&height=32">
+    </iframe>
+</div>
+
+
+<!--以下代码是为了支持随时拖动音乐控件的位置，如没有需求，可去掉下面代码-->
+<!--但是好像不能用 -->
+<script>
+    var $DOC = $(document)
+    $('#musicMouseDrag').on('mousedown', function (e) {
+// 阻止文本选中
+        $DOC.bind("selectstart", function () {
+            return false;
+        });
+        $('#musicDragArea').css('height', '100%');
+        var $moveTarget = $('#musicMouseDrag');
+        $moveTarget.css('border', '1px dashed grey')
+        var div_x = e.pageX - $moveTarget.offset().left;
+        var div_y = e.pageY - $moveTarget.offset().top;
+        $DOC.on('mousemove', function (e) {
+            var targetX = e.pageX - div_x;
+            var targetY = e.pageY - div_y;
+            targetX = targetX < 0 ? 0 : (targetX + $moveTarget.outerWidth() >= window.innerWidth) ? window.innerWidth - $moveTarget.outerWidth() : targetX;
+            targetY = targetY < 0 ? 0 : (targetY + $moveTarget.outerHeight() >= window.innerHeight) ? window.innerHeight - $moveTarget.outerHeight() : targetY;
+            $moveTarget.css({'left': targetX + 'px', 'top': targetY + 'px', 'bottom': 'inherit', 'right': 'inherit'})
+        }).on('mouseup', function () {
+            $DOC.unbind("selectstart");
+            $DOC.off('mousemove')
+            $DOC.off('mouseup')
+            $moveTarget.css('border', 'none')
+            $('#musicDragArea').css('height', '10px');
+        })
+    })
+</script>
+
+
+
+<!--添加建站时间代码 -->
+<script language=javascript>
+    function siteTime() {
+        window.setTimeout("siteTime()", 1000);
+        var seconds = 1000;
+        var minutes = seconds * 60;
+        var hours = minutes * 60;
+        var days = hours * 24;
+        var years = days * 365;
+        var today = new Date();
+        var todayYear = today.getFullYear();
+        var todayMonth = today.getMonth() + 1;
+        var todayDate = today.getDate();
+        var todayHour = today.getHours();
+        var todayMinute = today.getMinutes();
+        var todaySecond = today.getSeconds();
+        /* Date.UTC() -- 返回date对象距世界标准时间(UTC)1970年1月1日午夜之间的毫秒数(时间戳)
+        year - 作为date对象的年份，为4位年份值
+        month - 0-11之间的整数，做为date对象的月份
+        day - 1-31之间的整数，做为date对象的天数
+        hours - 0(午夜24点)-23之间的整数，做为date对象的小时数
+        minutes - 0-59之间的整数，做为date对象的分钟数
+        seconds - 0-59之间的整数，做为date对象的秒数
+        microseconds - 0-999之间的整数，做为date对象的毫秒数 */
+        var t1 = Date.UTC(2020, 12, 05, 00, 00, 00); //北京时间2020-12-05 00:00:00
+        var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+        var diff = t2 - t1;
+        var diffYears = Math.floor(diff / years);
+        var diffDays = Math.floor((diff / days) - diffYears * 365);
+        var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+        var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) / minutes);
+        var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours - diffMinutes * minutes) / seconds);
+        document.getElementById("sitetime").innerHTML = "本站已运行: " +diffYears+" 年 "+diffDays + " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+    }/*因为建站时间还没有一年，就将之注释掉了。需要的可以取消*/
+    siteTime();
+</script>
+
+</html>
