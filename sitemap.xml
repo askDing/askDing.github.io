@@ -447,13 +447,6 @@
   </url>
   
   <url>
-    <loc>https://askding.github.io/categories/Coding/Python/</loc>
-    <lastmod>2021-03-10</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://askding.github.io/categories/Response/</loc>
     <lastmod>2021-03-10</lastmod>
     <changefreq>daily</changefreq>
@@ -462,6 +455,13 @@
   
   <url>
     <loc>https://askding.github.io/categories/Coding/JavaScript/</loc>
+    <lastmod>2021-03-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://askding.github.io/categories/Coding/Python/</loc>
     <lastmod>2021-03-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
