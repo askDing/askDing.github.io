@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>about | Mr.Frame</title>
+  <title>xray_crawlergo | Mr.Frame</title>
   <meta name="keywords" content="">
-  <meta name="description" content="about | Mr.Frame">
+  <meta name="description" content="xray_crawlergo | Mr.Frame">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="404 Not Found: 该页面无法显示很抱歉，您所访问的地址并不存在">
 <meta property="og:type" content="website">
@@ -767,24 +767,32 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="page-" class="article article-type-page" itemscope itemprop="blogPost">
+        <article id="post-xray-crawlergo" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">about</h1>
+        <h1 class="article-title">xray_crawlergo</h1>
     
     <div class="article-meta">
         
         
+        
+        <span class="book">
+            <i class="iconfont icon-category"></i>
+            
+            
+            <a  data-rel="Tools">Tools</a>
+            
+        </span>
         
         
     </div>
     <div class="article-meta">
         
-            Created At : <time class="date" title='Updated At: 2020-12-08 19:41:14'>2020-12-08 19:41</time>
+            Created At : <time class="date" title='Updated At: 2021-03-25 11:58:41'>2021-03-25 11:58</time>
         
     </div>
     <div class="article-meta">
         
-        <span>Count:97</span>
+        <span>Count:381</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -830,46 +838,58 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <script src=/js/crypto-js.js></script>
-<script>
-function doDecrypt (pwd, onError) {
-	console.log('in doDecrypt');
-	const txt = document.getElementById('enc_content').innerHTML;
-	let plantext;
-	try {
-		const bytes = CryptoJS.AES.decrypt(txt, pwd);
-		var plaintext = bytes.toString(CryptoJS.enc.Utf8);
-	} catch(err) {
-		if(onError) {
-			onError(err);
-		}
-		return;
-	}
-	document.getElementById('enc_content').innerHTML = plaintext;
-	document.getElementById('enc_content').style.display = 'block';
-	document.getElementById('enc_passwd').style.display = 'none';
-	if(typeof MathJax !== 'undefined') {
-		MathJax.Hub.Queue(
-			['resetEquationNumbers', MathJax.InputJax.TeX],
-			['PreProcess', MathJax.Hub],
-			['Reprocess', MathJax.Hub]
-		);
-	}
-}
-</script>
-<div id="enc_content" style="display:none">U2FsdGVkX19oBP0mZoUixznxHKwaKQTwvW1EVrXVrkuARepBqL5scRRa8IXcFS0EHF6KzwhJMiqK25c05IwWIw==</div>
-<div id="enc_passwd"> <input id="enc_pwd_input" type="password" style="border-radius: 5px;border-style: groove;height: 30px;width: 50%;cursor: auto;font-size: 102%;color: currentColor;outline: none;text-overflow: initial;padding-left: 5px;" onkeydown="if (event.keyCode == 13) { decrypt(); return false;}"> <input type="submit" value="解&nbsp;密" onclick="decrypt()" style="width: 58px;height: 34px;border-radius: 5px;background-color: white;border-style: solid;color: currentColor;"><div id="enc_error" style="display: inline-block;color: #d84527;margin-left: 10px"></div>
-<script>
-var onError = function(error) {
-	document.getElementById("enc_error").innerHTML = "password error!"
-};
-function decrypt() {
-var passwd = document.getElementById("enc_pwd_input").value;
-console.log(passwd);
-doDecrypt(passwd, onError);
-}
-</script>
-</div><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">
+        <p>编写进度</p>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> </li>
+</ul>
+<p>发现大佬写了<a target="_blank" rel="noopener" href="https://github.com/timwhitez/crawlergo_x_XRAY">crawler_x_XRAY</a> 的python版本，于是边写下了sh脚本的版本</p>
+<p><a target="_blank" rel="noopener" href="https://github.com/askDing/crawlergo_x_XRAY/blob/master/crawler_xray.sh">crawlergo_x_XRAY.sh</a></p>
+<pre><code class="zsh">#! /bin/bash
+## File Name: crawler_xray.sh 
+# Author: Mr.Frame
+# Blog: https://askding.github.io/
+# Date: Thu Mar 25 10:32:35 CST 2021
+# Description:
+#             联动crawlergo和xray
+# 用法：
+#    ./crawler_xray.sh   &lt;path/to/target.txt&gt;
+#
+# 提示:
+# 需要修改chrome路径
+
+thread=50                                 # 定义进程数
+[ -e /tmp/$$.fifo ] || mkfifo /tmp/$$.fifo # 创建命名管道文件
+exec 3&lt;&gt; /tmp/$$fifo                      # 创建FD 3，以可读（&lt;）可写（&gt;）的方式关联管道文件，FD 3具有命名管道的特性
+rm -rf /tmp/$$fifo                        # 删除命名管道文件，通过FD 3
+
+
+echo &quot;./xray_darwin_amd64 webscan --listen 127.0.0.1:7777 --html-output xray-report.html&quot; &amp;&amp; sleep 1.5
+./xray_darwin_amd64 webscan --listen 127.0.0.1:7777 --html-output xray-report.html &amp;
+
+for i in $(seq $thread); do
+    echo &gt;&amp;3                              # 循环$thread次向FD 3写入\n , 类比一个令牌 
+done
+
+echo &quot;./crawlergo -c ~/.BurpSuite/burpbrowser/88.0.4324.192/Chromium.app/Contents/MacOS/Chromium  -t 10  -f smart --fuzz-path --push-pool-max 10 --output-mode json --push-to-proxy http://127.0.0.1:7777 Target&quot; &amp;&amp; sleep 1.5
+while read url; do
+    read -u 3
+    (
+        ./crawlergo -c ~/.BurpSuite/burpbrowser/88.0.4324.192/Chromium.app/Contents/MacOS/Chromium  -t 5  -f smart --fuzz-path --push-pool-max 10 --output-mode json --push-to-proxy http://127.0.0.1:7777 $url
+    )&amp;
+    # 最后需要归还令牌
+    echo &gt;&amp;3                          # 再次向FD 3写入\n , 类似归还令牌
+done &lt; $1
+wait                                      # 等待并发进程执行完毕，执行后续命令 
+if [ $? -eq 0 ]; then
+    echo &quot;Scan succeed. &quot;
+else
+    echo &quot;scan failed &quot;
+fi
+
+exec 3&lt;&amp;-                                 # 关闭FD 3的读
+exec 3&gt;&amp;-                                 # 关闭FD 3的写
+</code></pre>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 askding@qq.com </span>
     </div>
