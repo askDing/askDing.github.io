@@ -242,7 +242,7 @@
     <div><a class="about  hasFriend  site_url"  href="/about">About</a><a style="width: 50%"  class="friends">Friends</a></div>
 </div>
 <input type="hidden" id="yelog_site_posts_number" value="58">
-<input type="hidden" id="yelog_site_word_count" value="70k">
+<input type="hidden" id="yelog_site_word_count" value="70.1k">
 <div style="display: none">
     <span id="busuanzi_value_site_uv"></span>
     <span id="busuanzi_value_site_pv"></span>
@@ -816,7 +816,7 @@
     </div>
     <div class="article-meta">
         
-        <span>Count:407</span>
+        <span>Count:472</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -882,7 +882,7 @@
 &lt;bot_name&gt;         //机器人名字
 &lt;user_name&gt;_bot    //机器人ID  输入完毕后返回此机器人的Token 《1234567890:AAGRfRacMktFHtM1XSpj477m33RSONKlPWo》
 
-    Done! Congratulations on your new bot. You will find it at t.me/Bili_auto_checkIn_bot. You can now add a description, about section and profile picture for your bot, see /help for a list of commands. By the way, when you&#39;ve finished creating your cool bot, ping our Bot Support if you want a better username for it. Just make sure the bot is fully operational before you do this.
+Done! Congratulations on your new bot. You will find it at t.me/Bili_auto_checkIn_bot. You can now add a description, about section and profile picture for your bot, see /help for a list of commands. By the way, when you&#39;ve finished creating your cool bot, ping our Bot Support if you want a better username for it. Just make sure the bot is fully operational before you do this.
 
   Use this token to access the HTTP API:
   1234567890:AAGRfRacMktFHtM1XSpj477m33RSONKlPWo
@@ -898,11 +898,38 @@ Id: 509654615
   Lang: en</code></pre>
 </li>
 <li><p><input disabled="" type="checkbox">  curl测试推送内容到机器人</p>
-<pre><code class="zsh">curl -X POST &quot;https://api.telegram.org/bot17020123420:AAGRfRacMKAtFHtM1XSpj477m33RSONKlPWo/sendMessage&quot; -d &quot;chat_id=509654615&amp;text=https://askding.github.io&quot;
+<pre><code class="zsh">curl -X POST &quot;https://api.telegram.org/bot173220123420:AAGRfRacMKAtFHtM1XSpj477mMFRSONKlPWo/sendMessage&quot; -d &quot;chat_id=509654615&amp;text=https://askding.github.io&quot;
+&#123;
+  &quot;ok&quot;: true, 
+  &quot;result&quot;: &#123;
+      &quot;message_id&quot;: 11, 
+      &quot;from&quot;: &#123;
+          &quot;id&quot;: 17020603330, 
+          &quot;is_bot&quot;: true, 
+          &quot;first_name&quot;: &quot;Bili&quot;, 
+          &quot;username&quot;: &quot;Bili_checkIn_bot&quot;
+      &#125;, 
+      &quot;chat&quot;: &#123;
+          &quot;id&quot;: 5096546232, 
+          &quot;first_name&quot;: &quot;Ethan&quot;, 
+          &quot;last_name&quot;: &quot;Hunter&quot;, 
+          &quot;username&quot;: &quot;et7an&quot;, 
+          &quot;type&quot;: &quot;private&quot;
+      &#125;, 
+      &quot;date&quot;: 1617958429, 
+      &quot;text&quot;: &quot;https://askding.github.io&quot;, 
+      &quot;entities&quot;: [
+          &#123;
+              &quot;offset&quot;: 0, 
+              &quot;length&quot;: 25, 
+              &quot;type&quot;: &quot;url&quot;
+          &#125;
+      ]
+  &#125;
+&#125;
 </code></pre>
 </li>
 </ul>
-<p>{<br>    “ok”: true,<br>    “result”: {<br>        “message_id”: 11,<br>        “from”: {<br>            “id”: 1702060320,<br>            “is_bot”: true,<br>            “first_name”: “Bili”,<br>            “username”: “Bili_auto_checkIn_bot”<br>        },<br>        “chat”: {<br>            “id”: 509654615,<br>            “first_name”: “Ethan”,<br>            “last_name”: “Hunter”,<br>            “username”: “et7an”,<br>            “type”: “private”<br>        },<br>        “date”: 1617958429,<br>        “text”: “<a target="_blank" rel="noopener" href="https://askding.github.io&quot;/">https://askding.github.io&quot;</a>,<br>        “entities”: [<br>            {<br>                “offset”: 0,<br>                “length”: 25,<br>                “type”: “url”<br>            }<br>        ]<br>    }<br>}</p>
 <pre><code>
 
 参考
