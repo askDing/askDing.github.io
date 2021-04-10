@@ -816,7 +816,7 @@
     </div>
     <div class="article-meta">
         
-        <span>Count:378</span>
+        <span>Count:447</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -846,7 +846,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Kali-Nethunter"><span class="toc-text">Kali Nethunter</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C"><span class="toc-text">准备工作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%B7%E5%85%A5"><span class="toc-text">刷入</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%87%E7%BA%A7%E7%B3%BB%E7%BB%9F%E4%BF%9D%E7%95%99ROOT%E6%9D%83%E9%99%90%E6%93%8D%E4%BD%9C"><span class="toc-text">升级系统保留ROOT权限操作</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Andrax"><span class="toc-text">Andrax</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Kali-Nethunter"><span class="toc-text">Kali Nethunter</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C"><span class="toc-text">准备工作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%B7%E5%85%A5"><span class="toc-text">刷入</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%87%E7%BA%A7%E7%B3%BB%E7%BB%9F%E4%BF%9D%E7%95%99ROOT%E6%9D%83%E9%99%90%E6%93%8D%E4%BD%9C"><span class="toc-text">升级系统保留ROOT权限操作</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Andrax"><span class="toc-text">Andrax</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#SSH"><span class="toc-text">SSH</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#VNC"><span class="toc-text">VNC</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Bluetooth-Hacking"><span class="toc-text">Bluetooth Hacking</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -897,11 +897,29 @@ adb reboot                                                  # 重启</code></pre
 <h2 id="升级系统保留ROOT权限操作"><a href="#升级系统保留ROOT权限操作" class="headerlink" title="升级系统保留ROOT权限操作"></a>升级系统保留ROOT权限操作</h2><p><a target="_blank" rel="noopener" href="https://cyhour.com/1233/">一加7T如何保留ROOT OTA升级系统</a><br><a target="_blank" rel="noopener" href="https://koonchung.github.io/post/2020-05-07/">一加7 OTA升级保留ROOT</a></p>
 <h1 id="Andrax"><a href="#Andrax" class="headerlink" title="Andrax"></a><a target="_blank" rel="noopener" href="https://andrax.thecrackertechnology.com/">Andrax</a></h1><p><a target="_blank" rel="noopener" href="https://andrax.thecrackertechnology.com/documentation/">Andrax文档</a></p>
 <p><a target="_blank" rel="noopener" href="https://gitlab.com/crk-mythical/andrax-hackers-platform-v5-2">Andrax仓库</a></p>
-<p>下载<a target="_blank" rel="noopener" href="https://andrax.thecrackertechnology.com/download/">Andrax app</a> 到桌面，<br>手机连接电脑输入</p>
-<pre><code class="zsh">adb install andraxv5b5.apk</code></pre>
-<p>安装完成后打开andrax软件，会提示下载andraxcore.tar.xz包,大约3G，请挂代理下载，下载期间不要熄屏，锁屏，也不要切换软件。</p>
+<p>下载<a target="_blank" rel="noopener" href="https://download2347.mediafire.com/dj83upef4o5g/xvxo6hw9i99kdcn/ANDRAX-Mobile.zip">Andrax-mobile.zip</a><br>手机连接电脑输入</p>
+<pre><code class="zsh">unzip ANDRAX-Mobile.zip 
+adb push andraxcorev6001.tar.xz.cpt /sdcard/Download
+adb install ANDRAXMobile6001.apk</code></pre>
+<p>安装完成后打开andrax软件，点击”OK”</p>
 <p>root和andrax默认密码<code>andrax</code><br><img src="../images/andrax-1.jpg" alt="Andrax"></p>
 <p><img src="../images/andrax-2.jpg" alt="Andrax"></p>
+<h2 id="SSH"><a href="#SSH" class="headerlink" title="SSH"></a>SSH</h2><pre><code class="zsh">sudo service --status-all
+sudo service ssh start</code></pre>
+<h2 id="VNC"><a href="#VNC" class="headerlink" title="VNC"></a>VNC</h2><pre><code class="zsh">sudo service vnc start
+vnc-viewer 192.168.43.73:5901</code></pre>
+<h2 id="Bluetooth-Hacking"><a href="#Bluetooth-Hacking" class="headerlink" title="Bluetooth Hacking"></a>Bluetooth Hacking</h2><ol>
+<li><p>open Andrax Terminal with Recovery shell</p>
+<pre><code class="zsh">su
+cd /;cat *.rc | grep -i &quot;bluetooth&quot; | grep -i &quot;net_bt_stack&quot; | grep -i &quot;\/dev&quot;  # 定位串口</code></pre>
+<p>输出<br> chown bluetooth net_bt_stack <strong>/dev/ttyS0</strong></p>
+</li>
+<li><p>open Andrax Terminal</p>
+<pre><code class="zsh">sudo stty -F /dev/ttyS0  # 查看串口速率
+sudo hciattach -s 115200 /dev/ttyS0 any 3000000   # 创建接口
+sudo hciconfig hci0 up  # 激活接口</code></pre>
+</li>
+</ol>
 <p>参考<br><a target="_blank" rel="noopener" href="https://www.zerozd.xyz/Android/67.html">一加7基于安卓10版本安装NetHunter</a><br><a target="_blank" rel="noopener" href="https://www.blackh4t.org/oneplus7pro-kali-nethunter/">一加7Pro把玩Nethunter</a><br><a target="_blank" rel="noopener" href="https://www.oneplusbbs.com/thread-4446250-1.html">就砖</a><br><a target="_blank" rel="noopener" href="https://www.oneplusbbs.com/forum.php?mod=viewthread&tid=4065238">TWRP备份与还原操作</a><br><a target="_blank" rel="noopener" href="https://www.xiaoyuanjiu.com/9093.html">TWRP备份与还原操作2</a></p>
 <p><a target="_blank" rel="noopener" href="https://www.anquanke.com/post/id/223493">Andrax和nethunter介绍</a></p>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">
