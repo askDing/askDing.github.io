@@ -1,0 +1,1704 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>kali inux系统优化 | Mr.Frame</title>
+  <meta name="keywords" content=" system ">
+  <meta name="description" content="kali inux系统优化 | Mr.Frame">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="404 Not Found: 该页面无法显示很抱歉，您所访问的地址并不存在">
+<meta property="og:type" content="website">
+<meta property="og:title" content="404">
+<meta property="og:url" content="https://askding.github.io/404.html">
+<meta property="og:site_name" content="Mr.Frame">
+<meta property="og:description" content="404 Not Found: 该页面无法显示很抱歉，您所访问的地址并不存在">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-12-05T14:51:22.000Z">
+<meta property="article:modified_time" content="2020-12-05T14:51:22.000Z">
+<meta property="article:author" content="Mr.Frame">
+<meta property="article:tag" content="kali exploit vulnerability programing">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="icon" href="/img/avatar.jpg">
+
+<link href="/css/style.css?v=1.1.0" rel="stylesheet">
+
+<link href="/css/hl_theme/atom-light.css?v=1.1.0" rel="stylesheet">
+
+<link href="//cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css" rel="stylesheet">
+
+<script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="/js/titleTip.js?v=1.1.0" ></script>
+
+<script src="//cdn.jsdelivr.net/npm/highlightjs@9.16.2/highlight.pack.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<script src="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js"></script>
+
+
+
+<script src="//cdn.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.min.js" ></script>
+
+<script src="/js/iconfont.js?v=1.1.0" ></script>
+
+<meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="Mr.Frame" type="application/atom+xml">
+</head>
+<div style="display: none">
+  <input class="theme_disqus_on" value="false">
+  <input class="theme_preload_comment" value="">
+  <input class="theme_blog_path" value="">
+  <input id="theme_shortcut" value="true" />
+  <input id="theme_highlight_on" value="true" />
+  <input id="theme_code_copy" value="true" />
+</div>
+
+
+
+<body>
+<aside class="nav">
+    <div class="nav-left">
+        <a href="/"
+   class="avatar_target">
+    <img class="avatar"
+         src="/img/avatar.jpg"/>
+</a>
+<div class="author">
+    <span>Mr.Frame</span>
+</div>
+
+<div class="icon">
+    
+        
+            <a title="rss"
+               href="/atom.xml"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-rss"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="github"
+               href="https://github.com/yelog"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-github"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="facebook"
+               href="https://www.facebook.com/faker.tops"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-facebook"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+    
+        
+    
+        
+            <a title="instagram"
+               href="https://www.facebook.com/faker.tops"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-instagram"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="reddit"
+               href="https://www.reddit.com/user/yelog/"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-reddit"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="weibo"
+               href="http://weibo.com/u/2307534817"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-weibo"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="jianshu"
+               href="https://www.jianshu.com/u/ff56736de7cf"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-jianshu"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="zhihu"
+               href="https://www.zhihu.com/people/jaytp/activities"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-zhihu"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+    
+        
+            <a title="oschina"
+               href="https://my.oschina.net/yelog"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-oschina"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+    
+        
+            <a title="email"
+               href="mailto:jaytp@qq.com"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-email"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="qq"
+               href="http://wpa.qq.com/msgrd?v=3&uin=872336115&site=qq&menu=yes"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-qq"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="kugou"
+               href="https://www.kugou.com/"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-kugou"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="neteasemusic"
+               href="https://music.163.com/#/user/home?id=88151013"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-neteasemusic"></use>
+                    </svg>
+                
+            </a>
+        
+    
+</div>
+
+
+
+
+<ul>
+    <li>
+        <div class="all active" data-rel="All">All
+            
+                <small>(67)</small>
+            
+        </div>
+    </li>
+    
+        
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Coding">
+                        <i class="fold iconfont icon-right"></i>
+                        
+                        Coding
+                        <small>(10)</small>
+                        
+                    </div>
+                    
+                        <ul class="sub hide">
+                            
+                                <li>
+                                    <div data-rel="Coding<--->Audit">
+                                        
+                                        Audit
+                                        
+                                            <small>(1
+                                                )</small>
+                                        
+                                    </div>
+                                    
+                                </li>
+                            
+                                <li>
+                                    <div data-rel="Coding<--->JavaScript">
+                                        
+                                        JavaScript
+                                        
+                                            <small>(2
+                                                )</small>
+                                        
+                                    </div>
+                                    
+                                </li>
+                            
+                                <li>
+                                    <div data-rel="Coding<--->Python">
+                                        
+                                        Python
+                                        
+                                            <small>(1
+                                                )</small>
+                                        
+                                    </div>
+                                    
+                                </li>
+                            
+                        </ul>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Evolution">
+                        
+                        Evolution
+                        <small>(6)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Kali">
+                        <i class="fold iconfont icon-right"></i>
+                        
+                        Kali
+                        <small>(39)</small>
+                        
+                    </div>
+                    
+                        <ul class="sub hide">
+                            
+                                <li>
+                                    <div data-rel="Kali<--->Exploit">
+                                        
+                                        Exploit
+                                        
+                                            <small>(32
+                                                )</small>
+                                        
+                                    </div>
+                                    
+                                </li>
+                            
+                                <li>
+                                    <div data-rel="Kali<--->PostExploit">
+                                        
+                                        PostExploit
+                                        
+                                            <small>(5
+                                                )</small>
+                                        
+                                    </div>
+                                    
+                                </li>
+                            
+                        </ul>
+                    
+                </li>
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Response">
+                        
+                        Response
+                        <small>(2)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Tools">
+                        
+                        Tools
+                        <small>(10)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+</ul>
+<div class="left-bottom">
+    <div class="menus">
+        
+            
+            
+            
+    </div>
+    <div>
+        
+            <a class="about  hasFriend  site_url"
+               
+               href="/about">About</a>
+        
+        <a style="width: 50%"
+                
+                                           class="friends">Friends</a>
+        
+    </div>
+</div>
+<input type="hidden" id="yelog_site_posts_number" value="67">
+
+<div style="display: none">
+    <span id="busuanzi_value_site_uv"></span>
+    <span id="busuanzi_value_site_pv"></span>
+</div>
+
+    </div>
+    <div class="nav-right">
+        <div class="friends-area">
+    <div class="friends-title">
+        Links
+        <i class="iconfont icon-left"></i>
+    </div>
+    <div class="friends-content">
+        <ul>
+            
+            <li><a target="_blank" href="http://yelog.org/">叶落阁</a></li>
+            
+        </ul>
+    </div>
+</div>
+        <div class="title-list">
+    <div class="right-top">
+        <div id="default-panel">
+            <i class="iconfont icon-search" data-title="搜索 快捷键 i"></i>
+            <div class="right-title">All</div>
+            <i class="iconfont icon-file-tree" data-title="切换到大纲视图 快捷键 w"></i>
+        </div>
+        <div id="search-panel">
+            <i class="iconfont icon-left" data-title="返回"></i>
+            <input id="local-search-input" autocomplete="off"/>
+            <label class="border-line" for="input"></label>
+            <i class="iconfont icon-case-sensitive" data-title="大小写敏感"></i>
+            <i class="iconfont icon-tag" data-title="标签"></i>
+        </div>
+        <div id="outline-panel" style="display: none">
+            <div class="right-title">大纲</div>
+            <i class="iconfont icon-list" data-title="切换到文章列表"></i>
+        </div>
+    </div>
+
+    <div class="tags-list">
+    <input id="tag-search" />
+    <div class="tag-wrapper">
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>aa</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>system</a>
+            </li>
+        
+    </div>
+
+</div>
+
+    
+    <nav id="title-list-nav">
+        
+        <a  class="All Kali PostExploit "
+           href="/Kali/PostExploit/%E5%A6%82%E4%BD%95%E5%9C%A8mac%E4%B8%8A%E6%8A%93%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%9A%84%E6%B5%81%E9%87%8F.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="如何在mac上抓小程序的流量">如何在mac上抓小程序的流量</span>
+            <span class="post-date" title="2021-11-15 20:57:33">2021/11/15</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Spring.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Spring">Spring</span>
+            <span class="post-date" title="2021-11-15 20:55:56">2021/11/15</span>
+        </a>
+        
+        <a  class="All Kali PostExploit "
+           href="/Kali/PostExploit/%E5%85%8D%E6%9D%80%E6%80%9D%E8%B7%AF.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="免杀思路">免杀思路</span>
+            <span class="post-date" title="2021-09-25 14:06:46">2021/09/25</span>
+        </a>
+        
+        <a  class="All Kali PostExploit "
+           href="/Kali/PostExploit/%E7%BA%A2%E8%93%9D%E5%AF%B9%E6%8A%97.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="红蓝对抗">红蓝对抗</span>
+            <span class="post-date" title="2021-09-23 10:37:34">2021/09/23</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Nsfocus2docx-md.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Nsfocus2docx.md">Nsfocus2docx.md</span>
+            <span class="post-date" title="2021-05-23 00:05:22">2021/05/23</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Landray-OA.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Landray-OA 蓝凌OA custom.jsp页面任意文件读取">Landray-OA 蓝凌OA custom.jsp页面任意文件读取</span>
+            <span class="post-date" title="2021-05-13 19:40:49">2021/05/13</span>
+        </a>
+        
+        <a  class="All Evolution "
+           href="/Evolution/org-syntax.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="org-syntax">org-syntax</span>
+            <span class="post-date" title="2021-05-08 16:59:18">2021/05/08</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Gopher-md.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Gopher">Gopher</span>
+            <span class="post-date" title="2021-05-06 11:04:32">2021/05/06</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/SSRF.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="SSRF">SSRF</span>
+            <span class="post-date" title="2021-04-19 15:03:37">2021/04/19</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Chrome-0day-RCE-no-sandbox.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Chrome_0day_RCE_no_sandbox">Chrome_0day_RCE_no_sandbox</span>
+            <span class="post-date" title="2021-04-15 15:20:17">2021/04/15</span>
+        </a>
+        
+        <a  class="All Tools "
+           href="/Tools/Telegram.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Telegram">Telegram</span>
+            <span class="post-date" title="2021-04-09 12:42:22">2021/04/09</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Nginx.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Nginx">Nginx</span>
+            <span class="post-date" title="2021-04-07 20:48:12">2021/04/07</span>
+        </a>
+        
+        <a  class="All Evolution "
+           href="/Evolution/win10%E7%B3%BB%E7%BB%9F%E4%BC%98%E5%8C%96.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="win10系统优化">win10系统优化</span>
+            <span class="post-date" title="2021-03-30 13:09:36">2021/03/30</span>
+        </a>
+        
+        <a  class="All Tools "
+           href="/Tools/xray-crawlergo.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="xray_crawlergo">xray_crawlergo</span>
+            <span class="post-date" title="2021-03-25 11:58:41">2021/03/25</span>
+        </a>
+        
+        <a  class="All Coding "
+           href="/Coding/java-basic.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="java-basic">java-basic</span>
+            <span class="post-date" title="2021-03-21 09:04:43">2021/03/21</span>
+        </a>
+        
+        <a  class="All Coding "
+           href="/Coding/getHttpProxy.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="getHttpProxy">getHttpProxy</span>
+            <span class="post-date" title="2021-03-17 17:12:28">2021/03/17</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Ruijie-RG-UAC.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Ruijie_RG_UAC">Ruijie_RG_UAC</span>
+            <span class="post-date" title="2021-03-08 15:36:33">2021/03/08</span>
+        </a>
+        
+        <a  class="All Coding "
+           href="/Coding/code-of-principle.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="code_of_principle">code_of_principle</span>
+            <span class="post-date" title="2021-03-07 15:23:04">2021/03/07</span>
+        </a>
+        
+        <a  class="All Kali "
+           href="/Kali/kali-nethunter_and_Andrax.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="kali_nethunter and Andrax">kali_nethunter and Andrax</span>
+            <span class="post-date" title="2021-03-02 09:01:43">2021/03/02</span>
+        </a>
+        
+        <a  class="All Coding "
+           href="/Coding/python-basic.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="python-basic">python-basic</span>
+            <span class="post-date" title="2021-01-30 11:48:44">2021/01/30</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/fastjson-rce.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="fastjson_rce">fastjson_rce</span>
+            <span class="post-date" title="2021-01-29 16:09:51">2021/01/29</span>
+        </a>
+        
+        <a  class="All Evolution "
+           href="/Evolution/Markdown-of-Emacs.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Markdown_of_Emacs">Markdown_of_Emacs</span>
+            <span class="post-date" title="2021-01-14 11:22:07">2021/01/14</span>
+        </a>
+        
+        <a  class="All Tools "
+           href="/Tools/emacs.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="emacs">emacs</span>
+            <span class="post-date" title="2021-01-12 09:46:03">2021/01/12</span>
+        </a>
+        
+        <a  class="All Tools "
+           href="/Tools/awk-sed-grep-find.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="awk-sed-grep-find">awk-sed-grep-find</span>
+            <span class="post-date" title="2021-01-10 10:20:21">2021/01/10</span>
+        </a>
+        
+        <a  class="All Tools "
+           href="/Tools/TAR.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="TAR">TAR</span>
+            <span class="post-date" title="2021-01-09 21:00:07">2021/01/09</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Shellshock.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Shellshock">Shellshock</span>
+            <span class="post-date" title="2021-01-08 15:54:41">2021/01/08</span>
+        </a>
+        
+        <a  class="All Tools "
+           href="/Tools/curl-wget.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="curl-wget">curl-wget</span>
+            <span class="post-date" title="2021-01-06 18:03:15">2021/01/06</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Elasticsearch.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Elasticsearch">Elasticsearch</span>
+            <span class="post-date" title="2021-01-06 17:50:11">2021/01/06</span>
+        </a>
+        
+        <a  class="All Coding "
+           href="/Coding/bash-basic.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="bash_basic">bash_basic</span>
+            <span class="post-date" title="2021-01-02 18:00:59">2021/01/02</span>
+        </a>
+        
+        <a  class="All Evolution "
+           href="/Evolution/sleep.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="sleep">sleep</span>
+            <span class="post-date" title="2020-12-28 15:50:03">2020/12/28</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/SSLTLS%E7%9B%B8%E5%85%B3%E6%BC%8F%E6%B4%9E.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="SSLTLS相关漏洞">SSLTLS相关漏洞</span>
+            <span class="post-date" title="2020-12-25 10:41:48">2020/12/25</span>
+        </a>
+        
+        <a  class="All Evolution "
+           href="/Evolution/meta_learning.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="meta_learning">meta_learning</span>
+            <span class="post-date" title="2020-12-22 09:26:14">2020/12/22</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/PostgreSQL.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="PostgreSQL">PostgreSQL</span>
+            <span class="post-date" title="2020-12-21 16:02:17">2020/12/21</span>
+        </a>
+        
+        <a  class="All Coding JavaScript "
+           href="/Coding/JavaScript/css-basic.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="css_basic">css_basic</span>
+            <span class="post-date" title="2020-12-20 17:31:07">2020/12/20</span>
+        </a>
+        
+        <a  class="All Coding JavaScript "
+           href="/Coding/JavaScript/html-basic.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="html_basic">html_basic</span>
+            <span class="post-date" title="2020-12-20 14:05:39">2020/12/20</span>
+        </a>
+        
+        <a  class="All Response "
+           href="/Response/%E5%BA%94%E6%80%A5%E5%93%8D%E5%BA%94%E6%A8%A1%E6%9D%BF.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="应急响应模板">应急响应模板</span>
+            <span class="post-date" title="2020-12-20 13:57:33">2020/12/20</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Graphite.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Graphite">Graphite</span>
+            <span class="post-date" title="2020-12-17 17:05:35">2020/12/17</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/XenMobile.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="XenMobile">XenMobile</span>
+            <span class="post-date" title="2020-12-13 14:50:45">2020/12/13</span>
+        </a>
+        
+        <a  class="All Tools "
+           href="/Tools/SpaceVim.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="SpaceVim">SpaceVim</span>
+            <span class="post-date" title="2020-12-12 12:20:18">2020/12/12</span>
+        </a>
+        
+        <a  class="All Tools "
+           href="/Tools/VIM.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="VIM">VIM</span>
+            <span class="post-date" title="2020-12-11 19:10:54">2020/12/11</span>
+        </a>
+        
+        <a  class="All Coding "
+           href="/Coding/program-concept.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="program_concept">program_concept</span>
+            <span class="post-date" title="2020-12-11 16:40:10">2020/12/11</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Kibana.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Kibana">Kibana</span>
+            <span class="post-date" title="2020-12-10 11:32:07">2020/12/10</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Docker.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Docker">Docker</span>
+            <span class="post-date" title="2020-12-09 15:53:15">2020/12/09</span>
+        </a>
+        
+        <a  class="All Response "
+           href="/Response/%E5%BA%94%E6%80%A5%E5%93%8D%E5%BA%94%E5%9F%BA%E7%A1%80%E7%AF%87.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="应急响应基础篇">应急响应基础篇</span>
+            <span class="post-date" title="2020-12-08 19:00:06">2020/12/08</span>
+        </a>
+        
+        <a  class="All Tools "
+           href="/Tools/Nmap.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Nmap">Nmap</span>
+            <span class="post-date" title="2020-12-07 20:08:51">2020/12/07</span>
+        </a>
+        
+        <a  class="All Coding Audit "
+           href="/Coding/Audit/%E4%BB%A3%E7%A0%81%E5%AE%A1%E8%AE%A1%E6%A6%82%E5%BF%B5.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="代码审计概念">代码审计概念</span>
+            <span class="post-date" title="2020-12-07 19:51:19">2020/12/07</span>
+        </a>
+        
+        <a  class="All Kali PostExploit "
+           href="/Kali/PostExploit/%E5%86%85%E7%BD%91%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="内网信息收集">内网信息收集</span>
+            <span class="post-date" title="2020-12-07 18:52:47">2020/12/07</span>
+        </a>
+        
+        <a  class="All Tools "
+           href="/Tools/Tmux.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Tmux">Tmux</span>
+            <span class="post-date" title="2020-12-07 18:14:43">2020/12/07</span>
+        </a>
+        
+        <a  class="All Kali PostExploit "
+           href="/Kali/PostExploit/IPC-Basic-Operation.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="IPC Basic Operation">IPC Basic Operation</span>
+            <span class="post-date" title="2020-12-07 17:55:00">2020/12/07</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/ActiveMQ.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="ActiveMQ">ActiveMQ</span>
+            <span class="post-date" title="2020-12-07 17:26:21">2020/12/07</span>
+        </a>
+        
+        <a  class="All Coding Python "
+           href="/Coding/Python/pythonic-tools.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="pythonic_tools">pythonic_tools</span>
+            <span class="post-date" title="2020-12-06 19:12:43">2020/12/06</span>
+        </a>
+        
+        <a  class="All Evolution "
+           href="/Evolution/Built-Mr-Frame-with-Hexo-and-Git.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Built Mr.Frame with Hexo and Git">Built Mr.Frame with Hexo and Git</span>
+            <span class="post-date" title="2020-12-06 00:09:20">2020/12/06</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/InfluxDB.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="InfluxDB">InfluxDB</span>
+            <span class="post-date" title="2020-12-04 20:24:03">2020/12/04</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/MongoDB.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="MongoDB">MongoDB</span>
+            <span class="post-date" title="2020-12-04 20:23:56">2020/12/04</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Redis.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Redis">Redis</span>
+            <span class="post-date" title="2020-12-04 20:23:48">2020/12/04</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/MySQL.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="MySQL">MySQL</span>
+            <span class="post-date" title="2020-12-04 20:23:41">2020/12/04</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Memcache.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Memcache">Memcache</span>
+            <span class="post-date" title="2020-12-04 20:23:36">2020/12/04</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Hadoop.html"
+           data-tag="aa"
+           data-author="" >
+            <span class="post-title" title="Hadoop">Hadoop</span>
+            <span class="post-date" title="2020-12-04 20:23:31">2020/12/04</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Zookeeper.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Zookeeper">Zookeeper</span>
+            <span class="post-date" title="2020-12-04 20:23:24">2020/12/04</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Tomcat.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Tomcat">Tomcat</span>
+            <span class="post-date" title="2020-12-04 20:23:16">2020/12/04</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Supervisord.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Supervisord">Supervisord</span>
+            <span class="post-date" title="2020-12-04 20:23:08">2020/12/04</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/SaltStack.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="SaltStack">SaltStack</span>
+            <span class="post-date" title="2020-12-04 20:23:00">2020/12/04</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/NFS.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="NFS">NFS</span>
+            <span class="post-date" title="2020-12-04 20:22:50">2020/12/04</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Harbor.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Harbor">Harbor</span>
+            <span class="post-date" title="2020-12-04 20:22:36">2020/12/04</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/JDWP.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="JDWP">JDWP</span>
+            <span class="post-date" title="2020-12-04 20:22:28">2020/12/04</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Java-RMI.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Java RMI">Java RMI</span>
+            <span class="post-date" title="2020-12-04 20:22:17">2020/12/04</span>
+        </a>
+        
+        <a  class="All Kali "
+           href="/Kali/kali-inux%E7%B3%BB%E7%BB%9F%E4%BC%98%E5%8C%96.html"
+           data-tag="system"
+           data-author="" >
+            <span class="post-title" title="kali inux系统优化">kali inux系统优化</span>
+            <span class="post-date" title="2020-12-03 20:44:23">2020/12/03</span>
+        </a>
+        
+        <div id="no-item-tips">
+
+        </div>
+    </nav>
+    <div id="outline-list">
+    </div>
+</div>
+
+    </div>
+    <div class="hide-list">
+        <div class="semicircle" data-title="切换全屏 快捷键 s">
+            <div class="brackets first"><</div>
+            <div class="brackets">&gt;</div>
+        </div>
+    </div>
+</aside>
+<div id="post">
+    <div class="pjax">
+        <article id="post-kali-inux系统优化" class="article article-type-post" itemscope itemprop="blogPost">
+    
+        <h1 class="article-title">kali inux系统优化</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        <span class="book">
+            <i class="iconfont icon-category"></i>
+            
+            
+            <a  data-rel="Kali">Kali</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            <i class="iconfont icon-tag"></i>
+            
+            <a class="color2">system</a>
+            
+        </span>
+        
+    </div>
+    <div class="article-meta">
+        
+            Created At : <time class="date" title='Updated At: 2020-12-03 20:44:23'>2020-12-03 20:44</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        
+        <span id="busuanzi_container_page_pv">
+            Views 👀 :<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%B3%BB%E7%BB%9F%E9%85%8D%E7%BD%AE"><span class="toc-text">系统配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AE%BE%E7%BD%AEroot%E5%AF%86%E7%A0%81"><span class="toc-text">设置root密码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9B%B4%E6%94%B9%E5%8C%BA%E5%9F%9F%E8%AE%BE%E7%BD%AE"><span class="toc-text">更改区域设置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BE%93%E5%85%A5%E6%B3%95-amp-%E5%AD%97%E4%BD%93%E9%85%8D%E7%BD%AE"><span class="toc-text">输入法&amp;字体配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8D%87%E7%BA%A7%E7%B3%BB%E7%BB%9F"><span class="toc-text">升级系统</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85-%E6%B8%85%E7%90%86%E5%86%85%E6%A0%B8%E5%A4%B4%E6%96%87%E4%BB%B6"><span class="toc-text">安装&#x2F;清理内核头文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#UI%E4%BC%98%E5%8C%96"><span class="toc-text">UI优化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BB%88%E7%AB%AF%E4%BC%98%E5%8C%96"><span class="toc-text">终端优化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B6%E4%BB%96%E4%BC%98%E5%8C%96"><span class="toc-text">其他优化</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B0%B8%E4%B9%85%E5%BC%80%E5%90%AFIP%E8%BD%AC%E5%8F%91%E5%8A%9F%E8%83%BD"><span class="toc-text">永久开启IP转发功能</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8F%B3%E9%94%AE%E6%96%87%E4%BB%B6%E7%BC%96%E7%A0%81%E8%BD%AC%E6%8D%A2"><span class="toc-text">右键文件编码转换</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%B3%BB%E7%BB%9F%E6%9C%8D%E5%8A%A1%E9%85%8D%E7%BD%AE"><span class="toc-text">系统服务配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#PostgreSQL%E6%9C%8D%E5%8A%A1"><span class="toc-text">PostgreSQL服务</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AE%BE%E7%BD%AE-SSH-%E9%80%9A%E8%BF%87%E5%AF%86%E9%92%A5%E7%99%BB%E5%BD%95"><span class="toc-text">设置 SSH 通过密钥登录</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#lt-1-gt-VPS%E4%B8%8Asshd%E9%85%8D%E7%BD%AE"><span class="toc-text">&lt;1&gt;VPS上sshd配置</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#lt-2-gt-%E6%9C%AC%E5%9C%B0%E9%85%8D%E7%BD%AE"><span class="toc-text">&lt;2&gt;本地配置</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85"><span class="toc-text">软件安装</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E8%BD%AF%E4%BB%B6"><span class="toc-text">渗透测试软件</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#BurpSuite-Professional"><span class="toc-text">[BurpSuite Professional]</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Nessus-Professional"><span class="toc-text">[Nessus Professional]</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%A0%81%E5%AD%97%E7%A5%9E%E5%99%A8Joplin"><span class="toc-text">码字神器Joplin</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8A%9E%E5%85%AC%E7%A5%9E%E5%99%A8WPS"><span class="toc-text">办公神器WPS</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81%E5%B7%AE%E5%BC%82%E5%88%86%E6%9E%90%E7%A5%9E%E5%99%A8diff-so-fancy"><span class="toc-text">代码差异分析神器diff-so-fancy</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5%E7%A5%9E%E5%99%A8Remmina"><span class="toc-text">远程连接神器Remmina</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BB%A3%E7%90%86Proxy%E8%BD%AF%E4%BB%B6v2rayL"><span class="toc-text">代理Proxy软件v2rayL</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E4%BA%92%E4%BC%A0%E7%A5%9E%E5%99%A8croc"><span class="toc-text">文件互传神器croc</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9B%BE%E5%BD%A2%E5%8C%96hex%E7%BC%96%E8%BE%91%E5%99%A8"><span class="toc-text">图形化hex编辑器</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%B3%BB%E7%BB%9F%E4%BC%98%E5%8C%96-amp-%E7%9B%91%E8%A7%86%E5%99%A8"><span class="toc-text">系统优化&amp;监视器</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Gif%E5%BD%95%E5%B1%8F%E5%B7%A5%E5%85%B7peek"><span class="toc-text">Gif录屏工具peek</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%87%AA%E5%8A%A8%E5%8C%96%E9%85%8D%E7%BD%AE%E8%84%9A%E6%9C%AC-%E5%90%8E%E7%BB%AD%E6%95%B4%E7%90%86"><span class="toc-text">自动化配置脚本-后续整理</span></a></li></ol>
+    
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+    .toc-level-3 i,
+    .toc-level-3 ol {
+        display: none !important;
+    }
+</style>
+</div>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="系统配置"><a href="#系统配置" class="headerlink" title="系统配置"></a>系统配置</h2><h3 id="设置root密码"><a href="#设置root密码" class="headerlink" title="设置root密码"></a>设置root密码</h3><pre><code class="zsh">sudo passwd root
+echo &quot;$USER ALL=(ALL:ALL) NOPASSWD: ALL&quot; | sudo tee /etc/sudoers.d/dont-prompt-$USER-for-sudo-password  # 执行root权限的命令</code></pre>
+<h3 id="更改区域设置"><a href="#更改区域设置" class="headerlink" title="更改区域设置"></a>更改区域设置</h3><pre><code class="zsh">sudo dpkg-reconfigure locales
+
+&gt; - en_US.UTF-8
+&gt; - zh_CN.UTF-8</code></pre>
+<h3 id="输入法-amp-字体配置"><a href="#输入法-amp-字体配置" class="headerlink" title="输入法&amp;字体配置"></a>输入法&amp;字体配置</h3><pre><code class="zsh">wget https://ime.sogoucdn.com/dl/index/1605612770/sogoupinyin_2.4.0.2732_amd64.deb?st=dhRiak9ucl6k3GZibQ0Tfg&amp;e=1605918428&amp;fn=sogoupinyin_2.4.0.2732_amd64.deb   # 下载搜狗输入法软件包
+
+dpkg -i sougoupinyin.deb  #安装输入法
+dpkg --configure -a  #软件包更新中断时的修复命令
+
+dpkg -r sogoupinyin   # 删除软件
+dpkg -P sougoupinyin  # 删除软件及配置文件
+
+apt install zsh-theme-powerlevel9k # 安装zsh-theme-powerlevel9k字体</code></pre>
+<h3 id="升级系统"><a href="#升级系统" class="headerlink" title="升级系统"></a>升级系统</h3><pre><code class="zsh">echo &quot;#deb http://http.kali.org/kali kali-rolling main non-free contrib
+deb http://mirrors.aliyum.com/kali kali-rolling main non-free contrib
+deb http://mirrors.ustc.edu.cn/kali kali-rolling main non-free contrib&quot; | tee /etc/apt/sources.list   #配置阿里和中科大源
+
+apt update &amp;&amp; apt upgrade -y  # 升级软件列表并更新软件 \&amp;&amp;
+apt dist-upgrade -y  # 升级系统 \&amp;&amp;
+apt clean &amp;&amp; apt autoclean &amp;&amp; apt autoremove -y # 清除 已下载的软件包 和 旧软件包
+
+dpkg -l |grep ^rc|awk &#39;&#123;print $2&#125;&#39; |sudo xargs dpkg -P   # 清理系统残存配置</code></pre>
+<p>常见清理命令理解</p>
+<ul>
+<li>apt remove/autoremove 卸载软件</li>
+<li>apt clean/autoclean   删除软件包<table>
+<thead>
+<tr>
+<th align="left">命令</th>
+<th align="center">作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><code>apt purge </code></td>
+<td align="center">删除软件,删除配置信息</td>
+</tr>
+<tr>
+<td align="left"><code>apt remove </code></td>
+<td align="center">删除软件(保留配置信息)</td>
+</tr>
+<tr>
+<td align="left"><code>apt autoremove</code></td>
+<td align="center">删除为了满足其他软件包的依赖而安装，但现在不再需要的软件包</td>
+</tr>
+<tr>
+<td align="left"><code>apt autoclean</code></td>
+<td align="center">删除未安装在系统的软件包</td>
+</tr>
+<tr>
+<td align="left"><code>apt clean</code></td>
+<td align="center">删除已安装的软件包(/var/cache/apt/archives内的软件包</td>
+</tr>
+<tr>
+<td align="left">apt install –fix-broken /-f</td>
+<td align="center">dpkg安装失败时修复依赖关系</td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+<h3 id="安装-清理内核头文件"><a href="#安装-清理内核头文件" class="headerlink" title="安装/清理内核头文件"></a>安装/清理内核头文件</h3><pre><code>apt install linux-headers-$(uname -r)   
+dpkg --get-selections | grep linux   
+apt purge &lt;kernel-name&gt;  &lt;haders-name&gt;</code></pre>
+<h3 id="UI优化"><a href="#UI优化" class="headerlink" title="UI优化"></a>UI优化</h3><ul>
+<li><p>主题文件：/usr/share/themes/</p>
+</li>
+<li><p>图标文件：/usr/share/icons/</p>
+</li>
+<li><p>背景壁纸：/usr/share/background/ </p>
+</li>
+<li><p>grub启动图片： /usr/share/images/desktop-bas</p>
+<ul>
+<li>login-background.png #进如系统界面的背景图  </li>
+<li>kali-grub.png　　　　　#grub的背景图片  </li>
+<li>kali-wallpaper_1024×786 #类似的都是桌面背景图</li>
+</ul>
+</li>
+<li><p>、/usr/share/wallpapers/</p>
+</li>
+<li><p>conky: /etc/conky/</p>
+</li>
+</ul>
+<h3 id="终端优化"><a href="#终端优化" class="headerlink" title="终端优化"></a>终端优化</h3><ol>
+<li><p>zsh优化</p>
+<pre><code class="zsh">#oh-my-zsh
+sh -c &quot;$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&quot;  # 安装oh-my-zsh
+sed -i &#39;s/robbyrussell/gnzh/g&#39;  .zshrc  # 替换主题
+git clone https://github.com/zsh-users/zsh-autosuggestions $&#123;ZSH_CUSTOM:-~/.oh-my-zsh/custom&#125;/plugins/zsh-autosuggestions  # 下载zsh-autosuggestions插件
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $&#123;ZSH_CUSTOM:-~/.oh-my-zsh/custom&#125;/plugins/zsh-syntax-highlighting  # 下载syntax-highling插件
+git clone https://github.com/zsh-users/zsh-completions $&#123;ZSH_CUSTOM:=~/.oh-my-zsh/custom&#125;/plugins/zsh-completions   # 下载zsh-completions
+sed -i &quot;s/plugins.*/plugins=(git web-search autojump zsh-autosuggestions zsh-syntax-highlighting zsh-completions )/g&quot; .zshrc  # 配置插件
+apt install autojump  # 安装autojump
+curl -fsSL https://starship.rs/install.sh | bash #下载prompt-starship
+echo &quot;ZXZhbCAiJChzdGFyc2hpcCBpbml0IGJhc2gpIgo=&quot; | base64 -d &gt;&gt;~/.zshrc    # 添加eval &quot;$(starship init bash)&quot;  到.zshrc
+rm &quot;$(which starship)&quot;  # Locate and delete the starship binary
+#opt: zsh欢迎语
+echo &quot;CiMgenNoIHdlbGNvbWUgYmFubmVyIQpmaWdsZXQgImFza0RpbmciCmVjaG8gLW5lICJUb2RheSBpczpcdFx0JHtyZWR9IiBgZGF0ZWAgO2VjaG8gIiIgI2Rpc3BsYXkgY3VycmVudCB0aW1lCmVjaG8gLW5lICIke2xpZ2h0Z3JlZW59S2VybmVsIEluZm9ybWF0aW9uOiBcdCR7cmVkfSIgYHVuYW1lIC1zbXJgICNkaXNwbGF5IHN5c3RlbSBpbmZvcm1hdGlvbgoK&quot;| base64 -d  &gt;&gt; .zshrc &amp;&amp; source .zshrc  # 设置zsh欢迎语并立即生效</code></pre>
+</li>
+<li><p>vim/neovim优化</p>
+<pre><code class="zsh">curl -sLf https://spacevim.org/install.sh | bash  </code></pre>
+</li>
+<li><p>tmux优化</p>
+<pre><code class="zsh">git clone https://github.com/gpakosz/.tmux.git ~/.tmux &amp;&amp;\
+ln -s -f .tmux/.tmux.conf  &amp;&amp;\
+cp .tmux/.tmux.conf.local .   # tmux</code></pre>
+</li>
+<li><p>eDux-ui终端</p>
+<blockquote>
+<p><a target="_blank" rel="noopener" href="https://github.com/GitSquared/edex-ui">https://github.com/GitSquared/edex-ui</a></p>
+</blockquote>
+</li>
+</ol>
+<h3 id="其他优化"><a href="#其他优化" class="headerlink" title="其他优化"></a>其他优化</h3><h4 id="永久开启IP转发功能"><a href="#永久开启IP转发功能" class="headerlink" title="永久开启IP转发功能"></a>永久开启IP转发功能</h4><pre><code class="zsh">echo &quot;net.ipv4.ip_forward=1&quot;  &gt;&gt; /etc/sysctl.conf
+
+echo 1 &gt; /proc/sys/net/ipv6/conf/all/forwarding</code></pre>
+<h4 id="右键文件编码转换"><a href="#右键文件编码转换" class="headerlink" title="右键文件编码转换"></a>右键文件编码转换</h4><h2 id="系统服务配置"><a href="#系统服务配置" class="headerlink" title="系统服务配置"></a>系统服务配置</h2><h3 id="PostgreSQL服务"><a href="#PostgreSQL服务" class="headerlink" title="PostgreSQL服务"></a>PostgreSQL服务</h3><pre><code class="zsh">systemctl start postgresql.service
+systemctl enable postgresql</code></pre>
+<h3 id="设置-SSH-通过密钥登录"><a href="#设置-SSH-通过密钥登录" class="headerlink" title="设置 SSH 通过密钥登录"></a>设置 SSH 通过密钥登录</h3><p>分为服务器<code>sshd文件配置</code>和<code>本地客户端配置</code></p>
+<h4 id="lt-1-gt-VPS上sshd配置"><a href="#lt-1-gt-VPS上sshd配置" class="headerlink" title="&lt;1&gt;VPS上sshd配置"></a>&lt;1&gt;VPS上sshd配置</h4><ol>
+<li>在vps上生成rsa密钥,并为私钥添加passphrase,</li>
+</ol>
+<pre><code class="zsh">[root@～]# ssh-keygen -t rsa        #生成rsa密钥
+Generating public/private rsa key pair.
+Enter file in which to save the key (/root/.ssh/id_rsa): 
+Created directory &#39;/root/.ssh&#39;.
+Enter passphrase (empty for no passphrase):      #设置密钥短语
+Enter same passphrase again: 
+Your identification has been saved in /root/.ssh/id_rsa
+Your public key has been saved in /root/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:9k3RJ8EpR63FIK5PSkCdujrIoP1gmkokxcDuCfV+eoI root@kali
+The key&#39;s randomart image is:
++---[RSA 3072]----+
+|o       .. ..o+= |
+| +.    .  o..o+.+|
+|..o.    ..  oooo.|
+|.o  .   .. . ..o |
+|+...    S.o o    |
+|oo. . ...o *     |
+| +o+ + .  o o    |
+|o+E.= +          |
+|=  ..o .         |
++----[SHA256]-----+</code></pre>
+<ol start="2">
+<li><p>把公钥文件写入到<code> ~/.ssh/authorized_keys</code></p>
+<pre><code class="zsh">[root@～]# cat .ssh/id_rsa.pub &gt;&gt; .ssh/authorized_keys     #添加公钥到授权文件</code></pre>
+</li>
+<li><p>更改.ssh目录及文件权限</p>
+<pre><code class="zsh">[root@local]# chmod 700 .ssh  &amp;&amp;\
+           chmod 600 .ssh/id_rsa.pub  .ssh/authorized_keys &amp;&amp;\
+           chmod 400 .ssh/id_rsa
+ #设置.ssh目录权限</code></pre>
+</li>
+<li><p>修改<code>/etc/ssh/sshd_config</code>文件</p>
+<pre><code class="zsh">sed -i &quot;s/#Port.*/Port 2020/g&quot; /etc/ssh/sshd_config  #修改端口为2020
+</code></pre>
+</li>
+</ol>
+<p>sed -i “s/#PermitRootLogin.*/PermitRootLogin yes/g” /etc/ssh/sshd_config   #允许root登陆</p>
+<p>sed -i “38a\RSAAuthentication yes” /etc/ssh/sshd_config   #使用RSA认证</p>
+<p>sed -i “s/^#AuthorizedKeysFile.*/AuthorizedKeysFile .ssh/authorized_keys/g” /etc/ssh/sshd_config  #启用authorized_keys文件</p>
+<p>sed -i “s/^PasswordAuthentication.*/PasswordAuthentication no/g” /etc/ssh/sshd_config    #关闭密码认证</p>
+<p>可选:建立隧道<br>sed -i “s/#AllowTcpForwarding yes/AllowTcpForwarding yes/g” /etc/ssh/sshd_config  #启用tcp转发</p>
+<p>sed -i “s/#TCPKeepAlive yes/TCPKeepAlive yes/g”  /etc/ssh/sshd_config   #防止死连接</p>
+<pre><code>
+5. 设置开机自启动服务
+```zsh
+[root@～]# systemctl restart ssh &amp;&amp; systemctl enable ssh</code></pre>
+<h4 id="lt-2-gt-本地配置"><a href="#lt-2-gt-本地配置" class="headerlink" title="&lt;2&gt;本地配置"></a>&lt;2&gt;本地配置</h4><p>拷贝私钥到本地电脑为id_rsa.vps</p>
+<pre><code class="zsh">[root@～]# ssh -i .ssh/id_rsa.vps root@172.16.41.4 -p 2020</code></pre>
+<h2 id="软件安装"><a href="#软件安装" class="headerlink" title="软件安装"></a>软件安装</h2><h3 id="渗透测试软件"><a href="#渗透测试软件" class="headerlink" title="渗透测试软件"></a>渗透测试软件</h3><h4 id="BurpSuite-Professional"><a href="#BurpSuite-Professional" class="headerlink" title="[BurpSuite Professional]"></a>[BurpSuite Professional]</h4><blockquote>
+<p><a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1klNoVJdPxVdanAbiJBT4kg">https://pan.baidu.com/s/1klNoVJdPxVdanAbiJBT4kg</a>  密码: mpnk</p>
+</blockquote>
+<blockquote>
+<p>Project options &gt; Misc &gt; Embedded Browser</p>
+</blockquote>
+<pre><code class="zsh">apt purge burpsuite  # 清除系统自带社区版
+apt-mark hold burpsuite  # 禁止burpsuite自动安装/升级/卸载
+
+echo &quot;W0Rlc2t0b3AgRW50cnldCk5hbWU9QnVycFN1aXRlIFByb2Zlc3Npb25hbApFbmNvZGluZz1VVEYtOApFeGVjPSBzaCAtYyAiY2QgL29wdC9idXJwc3VpdGVfcHJvOyBqYXZhIC1qYXIgL29wdC9idXJwc3VpdGVfcHJvL0J1cnBTdWl0ZUxvYWRlci5qYXIiCkljb249a2FsaS1idXJwc3VpdGUKU3RhcnR1cE5vdGlmeT1mYWxzZQpUZXJtaW5hbD1mYWxzZQpUeXBlPUFwcGxpY2F0aW9uCkNhdGVnb3JpZXM9MDMtd2ViYXBwLWFuYWx5c2lzOzAzLTA2LXdlYi1hcHBsaWNhdGlvbi1wcm94aWVzOwpYLUthbGktUGFja2FnZT1idXJwc3VpdGU=&quot; | base64 -d | tee /usr/share/applications/kali-burpsuite.desktop  # 配置BurpSuite启动器链接，启动路径为Exec= sh -c &quot;cd /opt/burpsuite_pro; java -jar /opt/burpsuite_pro/BurpSuiteLoader.jari&quot;
+
+chattr +i /usr/share/applications/kali-burpsuite.desktop  # 防止升级时被删除或修改</code></pre>
+<h4 id="Nessus-Professional"><a href="#Nessus-Professional" class="headerlink" title="[Nessus Professional]"></a>[Nessus Professional]</h4><blockquote>
+<p>链接: <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1RkXQE5XkeBGHlgWK42pArA">https://pan.baidu.com/s/1RkXQE5XkeBGHlgWK42pArA</a>  密码: c07r</p>
+</blockquote>
+<ul>
+<li>安装<pre><code class="zsh">dpkg -i Nessus-8.12.1-debian6_amd64.deb   # 安装Nessus软件
+systemctl start nessusd.service  # 启动nessud服务</code></pre>
+</li>
+<li>访问<a target="_blank" rel="noopener" href="https://localhost:8834/">https://localhost:8834/</a>  </li>
+<li>选择 <code>Managed Scanner</code> 然后 <code>tenable.SC</code> 最后创建 <code>user with password</code> 并登陆</li>
+<li>升级插件库并替换<code>plugin_feed_info.inc</code>文件<pre><code class="zsh">systemctl stop nessusd.service  # 关闭nessud服务
+/opt/nessus/sbin/nessuscli update /root/Desktop/all-2.0.tar.gz  # 升级插件库
+</code></pre>
+</li>
+</ul>
+<p>cp /root/Desktop/plugin_feed_info.inc  /opt/nessus/var/nessus/plugin_feed_info.inc  # 替换plugin_feed_info.inc<br>cp /root/Desktop/plugin_feed_info.inc  /opt/nessus/lib/nessus/plugins/plugin_feed_info.inc   # 替换plugin_feed_info.inc</p>
+<p>systemctl start nessusd.service  # 启动nessud服务</p>
+<pre><code>
+
+
+
+### 常用软件
+
+#### 码字神器Typora
+```zsh
+# sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys BA300B7755AFCFAE
+
+wget -qO - https://typora.io/linux/public-key.asc | sudo apt-key add -
+
+# add Typora&#39;s repository
+
+sudo add-apt-repository &#39;deb https://typora.io/linux ./&#39;
+
+sudo apt-get update
+
+# install typora
+
+sudo apt-get install typora</code></pre>
+<h4 id="码字神器Joplin"><a href="#码字神器Joplin" class="headerlink" title="码字神器Joplin"></a>码字神器Joplin</h4><pre><code class="zsh">apt install joplin /joplin-cli</code></pre>
+<p>或者</p>
+<pre><code class="zsh">apt install nodejs npm
+npm config set registry https://registry.npm.taobao.org
+echo  -e &quot;\n#Jopling configure\nNPM_CONFIG_PREFIX=~/.joplin-bin\n&quot; &gt;&gt; ~/.zshrc
+npm install -g joplin
+ln -s ~/.joplin-bin/bin/joplin /usr/bin/joplin</code></pre>
+<h4 id="办公神器WPS"><a href="#办公神器WPS" class="headerlink" title="办公神器WPS"></a>办公神器WPS</h4><pre><code class="zsh">wget https://wdl1.cache.wps.cn/wps/download/ep/Linux2019/9719/wps-office_11.1.0.9719_amd64.deb  # 下载wps-office软件
+
+dpkg -i wps-office_11.1.0.9719_amd64.deb </code></pre>
+<h4 id="代码差异分析神器diff-so-fancy"><a href="#代码差异分析神器diff-so-fancy" class="headerlink" title="代码差异分析神器diff-so-fancy"></a>代码差异分析神器diff-so-fancy</h4><pre><code class="zsh">git clone https://github.com/so-fancy/diff-so-fancy.git</code></pre>
+<h4 id="远程连接神器Remmina"><a href="#远程连接神器Remmina" class="headerlink" title="远程连接神器Remmina"></a>远程连接神器Remmina</h4><pre><code class="zsh">apt  install remmina</code></pre>
+<h4 id="代理Proxy软件v2rayL"><a href="#代理Proxy软件v2rayL" class="headerlink" title="代理Proxy软件v2rayL"></a>代理Proxy软件v2rayL</h4><ul>
+<li>v2aryL<pre><code class="zsh">bash &lt;(curl -s -L http://dl.thinker.ink/install.sh)</code></pre>
+</li>
+<li>clash<blockquote>
+<p><a target="_blank" rel="noopener" href="https://github.com/Dreamacro/clash/releases">https://github.com/Dreamacro/clash/releases</a></p>
+</blockquote>
+<pre><code class="zsh">tar -zxvf clash-linux-amd64-v1.3.0.gz
+mv clash-linux-amd64-v1.3.0 /usr/local/bin/clash
+chmod +x /usr/local/bin/clash</code></pre>
+</li>
+</ul>
+<h4 id="文件互传神器croc"><a href="#文件互传神器croc" class="headerlink" title="文件互传神器croc"></a>文件互传神器<a target="_blank" rel="noopener" href="https://github.com/mingrammer/diagrams">croc</a></h4><pre><code class="zsh">curl https://getcroc.schollz.com | bash</code></pre>
+<h4 id="图形化hex编辑器"><a href="#图形化hex编辑器" class="headerlink" title="图形化hex编辑器"></a>图形化hex编辑器</h4><pre><code class="zsh">apt install bless</code></pre>
+<h4 id="系统优化-amp-监视器"><a href="#系统优化-amp-监视器" class="headerlink" title="系统优化&amp;监视器"></a>系统优化&amp;监视器</h4><ul>
+<li>stacer<pre><code class="zsh">apt install stacer</code></pre>
+</li>
+<li>bashtop<pre><code class="zsh">git clone https://github.com/aristocratos/bashtop.git &amp;&amp;\
+cd bashtop  &amp;&amp; \
+sudo make install</code></pre>
+</li>
+</ul>
+<h4 id="Gif录屏工具peek"><a href="#Gif录屏工具peek" class="headerlink" title="Gif录屏工具peek"></a>Gif录屏工具peek</h4><pre><code class="zsh">apt install peek</code></pre>
+<h2 id="自动化配置脚本-后续整理"><a href="#自动化配置脚本-后续整理" class="headerlink" title="自动化配置脚本-后续整理"></a>自动化配置脚本-后续整理</h2><pre><code class="zsh">echo &quot;&quot;
+echo &quot;==========================================================================&quot;
+echo &quot;=               Kali Auto Init Tool                                      =&quot;
+echo &quot;=                      Powered by Mr.Framework                               =&quot;
+echo &quot;=                      https://askding.github.io                        =&quot;
+echo &quot;==========================================================================&quot;
+
+echo &quot;&quot;
+echo &quot;[*] 即将自动对kali进行基本配置，建议你根据需要修改脚本。安装配置过程可能需要一会儿，并且由你的网速决定....&quot;
+read -p &quot;[*] 请按任意键继续....&quot;
+
+
+echo &quot;[+] 添加kali源&quot;
+apt-key adv --recv ED444FF07D8D0BF6
+echo &quot;deb http://http.kali.org/kali kali-rolling main non-free contrib&quot; &gt;&gt; /etc/apt/sources.list
+echo &quot;deb http://mirrors.ustc.edu.cn/kali kali-rolling main non-free contrib&quot; &gt;&gt; /etc/apt/sources.list
+echo &quot;deb http://mirrors.aliyun.com/debian stable main contrib non-free&quot;  &gt;&gt; /etc/apt/sources.list
+echo &quot;[ok] 添加kali源成功！&quot;
+echo &quot;&quot;
+
+echo &quot;[+] 添加一个普通用户&quot;
+read -p &quot;请输入用户名: &quot; username
+useradd -m -G sudo,video,audio,cdrom -s /bin/bash $username
+echo &quot;请设置用户密码：&quot;
+passwd $username
+echo &quot;[ok] 添加普通用户成功！&quot;
+echo &quot;&quot;
+
+# 安装内核头文件
+echo &quot;[+] 安装内核头文件... &quot;
+apt-get -y install linux-headers-$(uname -r)
+echo &quot;&quot;
+echo &quot;[ok] 内核头文件安装成功！&quot;
+echo &quot;&quot;
+
+# 解决kali启动时静音问题
+echo &quot;[+] 安装 alsa-utils 解决kali启动时静音问题&quot;
+apt-get -y install alsa-utils
+echo &quot;[ok] 安装 alsa-utils 成功！&quot;
+echo &quot;&quot;
+
+echo &quot;[+] 添加PPPoE拨号连接功能&quot;
+apt-get install pppoe pppoeconf
+echo &quot;[ok] 安装PPPoE成功!&quot;
+echo &quot;      &gt;&gt; 你可以使用 nm-connection-editor 命令管理pppoe连接&quot;
+echo &quot;&quot;
+
+echo &quot;[+] 添加VPN支持: PPTP IPsec/IKEv2 vpnc network-manager-ssh&quot;
+apt-get -y install network-manager-pptp network-manager-pptp-gnome network-manager-strongswan network-manager-vpnc network-manager-vpnc-gnome network-manager-ssh
+echo &quot;[ok] 成功添加vpn支持!&quot;
+echo &quot;&quot;
+
+
+# Base Tool
+echo &quot;[+] 安装一些必备系统工具：谷歌拼音输入法、垃圾清理工具、截图工具、快速启动工具、软件包管理工具等&quot;
+apt-get -y install  fcitx fcitx-googlepinyin flameshot bleachbit gdebi synaptic synapse catfish scrot vokoscreen chromium
+echo &quot;[ok] 成功安装系统必备软件!&quot;
+echo &quot;&quot;
+
+# Server Tools
+echo &quot;[+] 安装服务器连接管理工具：remmina、filezilla&quot;
+apt-get -y install remmina filezilla
+echo &quot;[ok] 安装服务器连接管理工具成功!&quot;
+echo &quot;&quot;
+
+# 美化
+echo &quot;[+] 设置窗口按钮到左侧&quot;
+gsettings set org.gnome.desktop.wm.preferences button-layout &#39;close,maximize,minimize:&#39;
+echo &quot;[ok] 设置窗口按钮到左侧成功！&quot;
+echo &quot;&quot;
+
+echo &quot;[+] 安装中文字体&quot;
+apt-get -y install fonts-wqy-microhei fonts-wqy-zenhei
+echo &quot;[ok] 安装中文字体成功！&quot;
+echo &quot;&quot;
+
+echo &quot;[+] 安装基本美化工具&quot;
+apt-get -y install zsh screenfetch neofetch figlet peek
+#apt-get -y install cairo-dock
+echo &quot;[ok] 安装成功！&quot;
+echo &quot;&quot;
+
+echo &quot;[+] 删除无用主题&quot;
+cd /usr/share/themes/ &amp;&amp; rm -rf Albatross Blackbird Bluebird HighContrast Greybird*
+echo &quot;[ok] 删除成功！&quot;
+
+# Security Tools
+echo &quot;[+] 安装图形化十六进制编辑器bless&quot;
+apt-get -y install bless
+echo &quot;[ok] 安装成功！&quot;
+echo &quot;&quot;
+
+echo &quot;[+] 安装firewalld防火墙及iptables图形化管理工具gufw &quot;
+apt-get -y install gufw firewalld firewall-applet
+#systemctl enable firewalld.service
+echo &quot;[ok] 安装成功！&quot;
+echo &quot;&quot;
+
+# Install sublime text 3
+echo &quot;[+] 安装sublime text 3，速度可能会比较慢&quot;
+wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
+sudo apt-get install apt-transport-https
+echo &quot;deb https://download.sublimetext.com/ apt/stable/&quot; | sudo tee /etc/apt/sources.list.d/sublime-text.list
+apt-get update
+apt-get install sublime-text
+
+echo &quot;[+] 解决sublime-text 中文输入问题&quot;
+git clone https://github.com/lyfeyaj/sublime-text-imfix.git
+cd sublime-text-imfix
+cp ./lib/libsublime-imfix.so /opt/sublime_text/ &amp;&amp; cp ./src/subl /usr/bin/
+echo &quot;[ok] 修复成功。输入subl命令启动sublime text即可输入中文！&quot;
+echo &quot;&quot;
+
+# Install typora
+echo &quot;[+] 安装 typora，速度可能会比较慢&quot;
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys BA300B7755AFCFAE
+echo &quot;deb http://typora.io linux/&quot; | sudo tee /etc/apt/sources.list.d/typora.list
+sudo apt-get update -y
+sudo apt-get install typora
+echo &quot;&quot;
+
+
+echo &quot;[+] 安装 node npm&quot;
+wget https://npm.taobao.org/mirrors/node/v8.9.3/node-v8.9.3.tar.gz
+tar zxvf node-v8.9.3.tar.gz &amp;&amp; mv node-v8.9.3-linux-x64 /opt
+ln -s /opt/node-v8.9.3-linux-x64/bin/node /usr/local/bin/node
+ln -s /opt/node-v8.9.3-linux-x64/bin/npm /usr/local/bin/npm
+rm ~/node-v8.9.3.tar.gz
+echo &quot;&quot;
+
+echo &quot;[+] 清除垃圾 ......&quot;
+apt-get clean &amp;&amp; apt-get autoclean &amp;&amp;  apt-get autoremove -y　
+echo &quot;[+] Cleaning OK!&quot;
+
+# Install oh-my-zsh
+# 普通用户就以普通权限安装
+apt-get install zsh
+echo &quot;[+] Install oh-my-zsh&quot;
+sh -c &quot;$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)&quot;
+echo &quot; Setting oh-my-zsh be the default terminal&quot;
+chsh -s /bin/zsh
+echo &quot;&quot;
+
+neofetch
+echo &quot;[OK] 所有任务完成!&quot;
+
+</code></pre>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">
+      
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jaytp@qq.com </span>
+    </div>
+</article>
+
+
+<p>
+    <a  class="dashang" onclick="dashangToggle()">💰</a>
+</p>
+
+
+
+
+
+
+    
+
+
+
+
+    </div>
+    <div class="copyright">
+        <p class="footer-entry">
+    ©2016-2020 Yelog
+</p>
+<p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
+
+    </div>
+    <div class="full-toc">
+        <button class="full" data-title="切换全屏 快捷键 s"><span class="min "></span></button>
+<a class="" id="rocket" ></a>
+
+    </div>
+</div>
+
+<div class="hide_box" onclick="dashangToggle()"></div>
+<div class="shang_box">
+    <a class="shang_close"  onclick="dashangToggle()">×</a>
+    <div class="shang_tit">
+        <p>Help us with donation</p>
+    </div>
+    <div class="shang_payimg">
+        <div class="pay_img">
+            <img src="/img/alipay.jpg" class="alipay" title="扫码支持">
+            <img src="/img/weixin.jpg" class="weixin" title="扫码支持">
+        </div>
+    </div>
+    <div class="shang_payselect">
+        <span><label><input type="radio" name="pay" checked value="alipay">alipay</label></span><span><label><input type="radio" name="pay" value="weixin">weixin</label></span>
+    </div>
+</div>
+
+
+</body>
+<script src="/js/jquery.pjax.js?v=1.1.0" ></script>
+
+<script src="/js/script.js?v=1.1.0" ></script>
+<script>
+    var img_resize = 'default';
+    function initArticle() {
+        /*渲染对应的表格样式*/
+        
+            $("#post .pjax table").addClass("green_title");
+        
+
+        /*渲染打赏样式*/
+        
+        $("input[name=pay]").on("click", function () {
+            if($("input[name=pay]:checked").val()=="weixin"){
+                $(".shang_box .shang_payimg .pay_img").addClass("weixin_img");
+            } else {
+                $(".shang_box .shang_payimg .pay_img").removeClass("weixin_img");
+            }
+        })
+        
+
+        /*高亮代码块行号*/
+        
+
+        /*访问数量*/
+        
+        $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
+        
+
+        /*代码高亮，行号对齐*/
+        $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
+
+        
+        
+    }
+
+    /*打赏页面隐藏与展示*/
+    
+    function dashangToggle() {
+        $(".shang_box").fadeToggle();
+        $(".hide_box").fadeToggle();
+    }
+    
+
+</script>
+
+<!--加入行号的高亮代码块样式-->
+
+<!--自定义样式设置-->
+<style>
+    
+    
+    .nav {
+        width: 542px;
+    }
+    .nav.fullscreen {
+        margin-left: -542px;
+    }
+    .nav-left {
+        width: 120px;
+    }
+    
+    
+    @media screen and (max-width: 1468px) {
+        .nav {
+            width: 492px;
+        }
+        .nav.fullscreen {
+            margin-left: -492px;
+        }
+        .nav-left {
+            width: 100px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1024px) {
+        .nav {
+            width: 492px;
+            margin-left: -492px
+        }
+        .nav.fullscreen {
+            margin-left: 0;
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .nav {
+            width: 100%;
+        }
+        .nav-left {
+            width: 100%;
+        }
+    }
+    
+    
+    .nav-right .title-list nav a .post-title, .nav-right .title-list #local-search-result a .post-title {
+        color: #383636;
+    }
+    
+    
+    .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
+        color: #5e5e5f;
+    }
+    
+    
+    .nav-right nav a.hover, #local-search-result a.hover{
+        background-color: #e2e0e0;
+    }
+    
+    
+
+    /*列表样式*/
+    
+
+    /* 背景图样式 */
+    
+    
+
+
+    /*引用块样式*/
+    
+
+    /*文章列表背景图*/
+    
+
+    
+</style>
+
+
+
+
+
+
+
+</html>

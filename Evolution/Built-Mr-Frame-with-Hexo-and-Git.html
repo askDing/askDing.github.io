@@ -1,0 +1,2091 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Built Mr.Frame with Hexo and Git | Mr.Frame</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="Built Mr.Frame with Hexo and Git | Mr.Frame">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="404 Not Found: 该页面无法显示很抱歉，您所访问的地址并不存在">
+<meta property="og:type" content="website">
+<meta property="og:title" content="404">
+<meta property="og:url" content="https://askding.github.io/404.html">
+<meta property="og:site_name" content="Mr.Frame">
+<meta property="og:description" content="404 Not Found: 该页面无法显示很抱歉，您所访问的地址并不存在">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-12-05T14:51:22.000Z">
+<meta property="article:modified_time" content="2020-12-05T14:51:22.000Z">
+<meta property="article:author" content="Mr.Frame">
+<meta property="article:tag" content="kali exploit vulnerability programing">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="icon" href="/img/avatar.jpg">
+
+<link href="/css/style.css?v=1.1.0" rel="stylesheet">
+
+<link href="/css/hl_theme/atom-light.css?v=1.1.0" rel="stylesheet">
+
+<link href="//cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css" rel="stylesheet">
+
+<script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="/js/titleTip.js?v=1.1.0" ></script>
+
+<script src="//cdn.jsdelivr.net/npm/highlightjs@9.16.2/highlight.pack.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<script src="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js"></script>
+
+
+
+<script src="//cdn.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.min.js" ></script>
+
+<script src="/js/iconfont.js?v=1.1.0" ></script>
+
+<meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="Mr.Frame" type="application/atom+xml">
+</head>
+<div style="display: none">
+  <input class="theme_disqus_on" value="false">
+  <input class="theme_preload_comment" value="">
+  <input class="theme_blog_path" value="">
+  <input id="theme_shortcut" value="true" />
+  <input id="theme_highlight_on" value="true" />
+  <input id="theme_code_copy" value="true" />
+</div>
+
+
+
+<body>
+<aside class="nav">
+    <div class="nav-left">
+        <a href="/"
+   class="avatar_target">
+    <img class="avatar"
+         src="/img/avatar.jpg"/>
+</a>
+<div class="author">
+    <span>Mr.Frame</span>
+</div>
+
+<div class="icon">
+    
+        
+            <a title="rss"
+               href="/atom.xml"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-rss"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="github"
+               href="https://github.com/yelog"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-github"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="facebook"
+               href="https://www.facebook.com/faker.tops"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-facebook"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+    
+        
+    
+        
+            <a title="instagram"
+               href="https://www.facebook.com/faker.tops"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-instagram"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="reddit"
+               href="https://www.reddit.com/user/yelog/"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-reddit"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="weibo"
+               href="http://weibo.com/u/2307534817"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-weibo"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="jianshu"
+               href="https://www.jianshu.com/u/ff56736de7cf"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-jianshu"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="zhihu"
+               href="https://www.zhihu.com/people/jaytp/activities"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-zhihu"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+    
+        
+            <a title="oschina"
+               href="https://my.oschina.net/yelog"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-oschina"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+    
+        
+            <a title="email"
+               href="mailto:jaytp@qq.com"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-email"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="qq"
+               href="http://wpa.qq.com/msgrd?v=3&uin=872336115&site=qq&menu=yes"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-qq"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="kugou"
+               href="https://www.kugou.com/"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-kugou"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="neteasemusic"
+               href="https://music.163.com/#/user/home?id=88151013"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-neteasemusic"></use>
+                    </svg>
+                
+            </a>
+        
+    
+</div>
+
+
+
+
+<ul>
+    <li>
+        <div class="all active" data-rel="All">All
+            
+                <small>(67)</small>
+            
+        </div>
+    </li>
+    
+        
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Coding">
+                        <i class="fold iconfont icon-right"></i>
+                        
+                        Coding
+                        <small>(10)</small>
+                        
+                    </div>
+                    
+                        <ul class="sub hide">
+                            
+                                <li>
+                                    <div data-rel="Coding<--->Audit">
+                                        
+                                        Audit
+                                        
+                                            <small>(1
+                                                )</small>
+                                        
+                                    </div>
+                                    
+                                </li>
+                            
+                                <li>
+                                    <div data-rel="Coding<--->JavaScript">
+                                        
+                                        JavaScript
+                                        
+                                            <small>(2
+                                                )</small>
+                                        
+                                    </div>
+                                    
+                                </li>
+                            
+                                <li>
+                                    <div data-rel="Coding<--->Python">
+                                        
+                                        Python
+                                        
+                                            <small>(1
+                                                )</small>
+                                        
+                                    </div>
+                                    
+                                </li>
+                            
+                        </ul>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Evolution">
+                        
+                        Evolution
+                        <small>(6)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Kali">
+                        <i class="fold iconfont icon-right"></i>
+                        
+                        Kali
+                        <small>(39)</small>
+                        
+                    </div>
+                    
+                        <ul class="sub hide">
+                            
+                                <li>
+                                    <div data-rel="Kali<--->Exploit">
+                                        
+                                        Exploit
+                                        
+                                            <small>(32
+                                                )</small>
+                                        
+                                    </div>
+                                    
+                                </li>
+                            
+                                <li>
+                                    <div data-rel="Kali<--->PostExploit">
+                                        
+                                        PostExploit
+                                        
+                                            <small>(5
+                                                )</small>
+                                        
+                                    </div>
+                                    
+                                </li>
+                            
+                        </ul>
+                    
+                </li>
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Response">
+                        
+                        Response
+                        <small>(2)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Tools">
+                        
+                        Tools
+                        <small>(10)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+</ul>
+<div class="left-bottom">
+    <div class="menus">
+        
+            
+            
+            
+    </div>
+    <div>
+        
+            <a class="about  hasFriend  site_url"
+               
+               href="/about">About</a>
+        
+        <a style="width: 50%"
+                
+                                           class="friends">Friends</a>
+        
+    </div>
+</div>
+<input type="hidden" id="yelog_site_posts_number" value="67">
+
+<div style="display: none">
+    <span id="busuanzi_value_site_uv"></span>
+    <span id="busuanzi_value_site_pv"></span>
+</div>
+
+    </div>
+    <div class="nav-right">
+        <div class="friends-area">
+    <div class="friends-title">
+        Links
+        <i class="iconfont icon-left"></i>
+    </div>
+    <div class="friends-content">
+        <ul>
+            
+            <li><a target="_blank" href="http://yelog.org/">叶落阁</a></li>
+            
+        </ul>
+    </div>
+</div>
+        <div class="title-list">
+    <div class="right-top">
+        <div id="default-panel">
+            <i class="iconfont icon-search" data-title="搜索 快捷键 i"></i>
+            <div class="right-title">All</div>
+            <i class="iconfont icon-file-tree" data-title="切换到大纲视图 快捷键 w"></i>
+        </div>
+        <div id="search-panel">
+            <i class="iconfont icon-left" data-title="返回"></i>
+            <input id="local-search-input" autocomplete="off"/>
+            <label class="border-line" for="input"></label>
+            <i class="iconfont icon-case-sensitive" data-title="大小写敏感"></i>
+            <i class="iconfont icon-tag" data-title="标签"></i>
+        </div>
+        <div id="outline-panel" style="display: none">
+            <div class="right-title">大纲</div>
+            <i class="iconfont icon-list" data-title="切换到文章列表"></i>
+        </div>
+    </div>
+
+    <div class="tags-list">
+    <input id="tag-search" />
+    <div class="tag-wrapper">
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>aa</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>system</a>
+            </li>
+        
+    </div>
+
+</div>
+
+    
+    <nav id="title-list-nav">
+        
+        <a  class="All Kali PostExploit "
+           href="/Kali/PostExploit/%E5%A6%82%E4%BD%95%E5%9C%A8mac%E4%B8%8A%E6%8A%93%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%9A%84%E6%B5%81%E9%87%8F.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="如何在mac上抓小程序的流量">如何在mac上抓小程序的流量</span>
+            <span class="post-date" title="2021-11-15 20:57:33">2021/11/15</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Spring.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Spring">Spring</span>
+            <span class="post-date" title="2021-11-15 20:55:56">2021/11/15</span>
+        </a>
+        
+        <a  class="All Kali PostExploit "
+           href="/Kali/PostExploit/%E5%85%8D%E6%9D%80%E6%80%9D%E8%B7%AF.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="免杀思路">免杀思路</span>
+            <span class="post-date" title="2021-09-25 14:06:46">2021/09/25</span>
+        </a>
+        
+        <a  class="All Kali PostExploit "
+           href="/Kali/PostExploit/%E7%BA%A2%E8%93%9D%E5%AF%B9%E6%8A%97.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="红蓝对抗">红蓝对抗</span>
+            <span class="post-date" title="2021-09-23 10:37:34">2021/09/23</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Nsfocus2docx-md.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Nsfocus2docx.md">Nsfocus2docx.md</span>
+            <span class="post-date" title="2021-05-23 00:05:22">2021/05/23</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Landray-OA.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Landray-OA 蓝凌OA custom.jsp页面任意文件读取">Landray-OA 蓝凌OA custom.jsp页面任意文件读取</span>
+            <span class="post-date" title="2021-05-13 19:40:49">2021/05/13</span>
+        </a>
+        
+        <a  class="All Evolution "
+           href="/Evolution/org-syntax.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="org-syntax">org-syntax</span>
+            <span class="post-date" title="2021-05-08 16:59:18">2021/05/08</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Gopher-md.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Gopher">Gopher</span>
+            <span class="post-date" title="2021-05-06 11:04:32">2021/05/06</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/SSRF.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="SSRF">SSRF</span>
+            <span class="post-date" title="2021-04-19 15:03:37">2021/04/19</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Chrome-0day-RCE-no-sandbox.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Chrome_0day_RCE_no_sandbox">Chrome_0day_RCE_no_sandbox</span>
+            <span class="post-date" title="2021-04-15 15:20:17">2021/04/15</span>
+        </a>
+        
+        <a  class="All Tools "
+           href="/Tools/Telegram.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Telegram">Telegram</span>
+            <span class="post-date" title="2021-04-09 12:42:22">2021/04/09</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Nginx.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Nginx">Nginx</span>
+            <span class="post-date" title="2021-04-07 20:48:12">2021/04/07</span>
+        </a>
+        
+        <a  class="All Evolution "
+           href="/Evolution/win10%E7%B3%BB%E7%BB%9F%E4%BC%98%E5%8C%96.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="win10系统优化">win10系统优化</span>
+            <span class="post-date" title="2021-03-30 13:09:36">2021/03/30</span>
+        </a>
+        
+        <a  class="All Tools "
+           href="/Tools/xray-crawlergo.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="xray_crawlergo">xray_crawlergo</span>
+            <span class="post-date" title="2021-03-25 11:58:41">2021/03/25</span>
+        </a>
+        
+        <a  class="All Coding "
+           href="/Coding/java-basic.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="java-basic">java-basic</span>
+            <span class="post-date" title="2021-03-21 09:04:43">2021/03/21</span>
+        </a>
+        
+        <a  class="All Coding "
+           href="/Coding/getHttpProxy.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="getHttpProxy">getHttpProxy</span>
+            <span class="post-date" title="2021-03-17 17:12:28">2021/03/17</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Ruijie-RG-UAC.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Ruijie_RG_UAC">Ruijie_RG_UAC</span>
+            <span class="post-date" title="2021-03-08 15:36:33">2021/03/08</span>
+        </a>
+        
+        <a  class="All Coding "
+           href="/Coding/code-of-principle.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="code_of_principle">code_of_principle</span>
+            <span class="post-date" title="2021-03-07 15:23:04">2021/03/07</span>
+        </a>
+        
+        <a  class="All Kali "
+           href="/Kali/kali-nethunter_and_Andrax.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="kali_nethunter and Andrax">kali_nethunter and Andrax</span>
+            <span class="post-date" title="2021-03-02 09:01:43">2021/03/02</span>
+        </a>
+        
+        <a  class="All Coding "
+           href="/Coding/python-basic.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="python-basic">python-basic</span>
+            <span class="post-date" title="2021-01-30 11:48:44">2021/01/30</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/fastjson-rce.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="fastjson_rce">fastjson_rce</span>
+            <span class="post-date" title="2021-01-29 16:09:51">2021/01/29</span>
+        </a>
+        
+        <a  class="All Evolution "
+           href="/Evolution/Markdown-of-Emacs.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Markdown_of_Emacs">Markdown_of_Emacs</span>
+            <span class="post-date" title="2021-01-14 11:22:07">2021/01/14</span>
+        </a>
+        
+        <a  class="All Tools "
+           href="/Tools/emacs.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="emacs">emacs</span>
+            <span class="post-date" title="2021-01-12 09:46:03">2021/01/12</span>
+        </a>
+        
+        <a  class="All Tools "
+           href="/Tools/awk-sed-grep-find.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="awk-sed-grep-find">awk-sed-grep-find</span>
+            <span class="post-date" title="2021-01-10 10:20:21">2021/01/10</span>
+        </a>
+        
+        <a  class="All Tools "
+           href="/Tools/TAR.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="TAR">TAR</span>
+            <span class="post-date" title="2021-01-09 21:00:07">2021/01/09</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Shellshock.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Shellshock">Shellshock</span>
+            <span class="post-date" title="2021-01-08 15:54:41">2021/01/08</span>
+        </a>
+        
+        <a  class="All Tools "
+           href="/Tools/curl-wget.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="curl-wget">curl-wget</span>
+            <span class="post-date" title="2021-01-06 18:03:15">2021/01/06</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Elasticsearch.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Elasticsearch">Elasticsearch</span>
+            <span class="post-date" title="2021-01-06 17:50:11">2021/01/06</span>
+        </a>
+        
+        <a  class="All Coding "
+           href="/Coding/bash-basic.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="bash_basic">bash_basic</span>
+            <span class="post-date" title="2021-01-02 18:00:59">2021/01/02</span>
+        </a>
+        
+        <a  class="All Evolution "
+           href="/Evolution/sleep.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="sleep">sleep</span>
+            <span class="post-date" title="2020-12-28 15:50:03">2020/12/28</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/SSLTLS%E7%9B%B8%E5%85%B3%E6%BC%8F%E6%B4%9E.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="SSLTLS相关漏洞">SSLTLS相关漏洞</span>
+            <span class="post-date" title="2020-12-25 10:41:48">2020/12/25</span>
+        </a>
+        
+        <a  class="All Evolution "
+           href="/Evolution/meta_learning.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="meta_learning">meta_learning</span>
+            <span class="post-date" title="2020-12-22 09:26:14">2020/12/22</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/PostgreSQL.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="PostgreSQL">PostgreSQL</span>
+            <span class="post-date" title="2020-12-21 16:02:17">2020/12/21</span>
+        </a>
+        
+        <a  class="All Coding JavaScript "
+           href="/Coding/JavaScript/css-basic.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="css_basic">css_basic</span>
+            <span class="post-date" title="2020-12-20 17:31:07">2020/12/20</span>
+        </a>
+        
+        <a  class="All Coding JavaScript "
+           href="/Coding/JavaScript/html-basic.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="html_basic">html_basic</span>
+            <span class="post-date" title="2020-12-20 14:05:39">2020/12/20</span>
+        </a>
+        
+        <a  class="All Response "
+           href="/Response/%E5%BA%94%E6%80%A5%E5%93%8D%E5%BA%94%E6%A8%A1%E6%9D%BF.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="应急响应模板">应急响应模板</span>
+            <span class="post-date" title="2020-12-20 13:57:33">2020/12/20</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Graphite.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Graphite">Graphite</span>
+            <span class="post-date" title="2020-12-17 17:05:35">2020/12/17</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/XenMobile.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="XenMobile">XenMobile</span>
+            <span class="post-date" title="2020-12-13 14:50:45">2020/12/13</span>
+        </a>
+        
+        <a  class="All Tools "
+           href="/Tools/SpaceVim.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="SpaceVim">SpaceVim</span>
+            <span class="post-date" title="2020-12-12 12:20:18">2020/12/12</span>
+        </a>
+        
+        <a  class="All Tools "
+           href="/Tools/VIM.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="VIM">VIM</span>
+            <span class="post-date" title="2020-12-11 19:10:54">2020/12/11</span>
+        </a>
+        
+        <a  class="All Coding "
+           href="/Coding/program-concept.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="program_concept">program_concept</span>
+            <span class="post-date" title="2020-12-11 16:40:10">2020/12/11</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Kibana.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Kibana">Kibana</span>
+            <span class="post-date" title="2020-12-10 11:32:07">2020/12/10</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Docker.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Docker">Docker</span>
+            <span class="post-date" title="2020-12-09 15:53:15">2020/12/09</span>
+        </a>
+        
+        <a  class="All Response "
+           href="/Response/%E5%BA%94%E6%80%A5%E5%93%8D%E5%BA%94%E5%9F%BA%E7%A1%80%E7%AF%87.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="应急响应基础篇">应急响应基础篇</span>
+            <span class="post-date" title="2020-12-08 19:00:06">2020/12/08</span>
+        </a>
+        
+        <a  class="All Tools "
+           href="/Tools/Nmap.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Nmap">Nmap</span>
+            <span class="post-date" title="2020-12-07 20:08:51">2020/12/07</span>
+        </a>
+        
+        <a  class="All Coding Audit "
+           href="/Coding/Audit/%E4%BB%A3%E7%A0%81%E5%AE%A1%E8%AE%A1%E6%A6%82%E5%BF%B5.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="代码审计概念">代码审计概念</span>
+            <span class="post-date" title="2020-12-07 19:51:19">2020/12/07</span>
+        </a>
+        
+        <a  class="All Kali PostExploit "
+           href="/Kali/PostExploit/%E5%86%85%E7%BD%91%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="内网信息收集">内网信息收集</span>
+            <span class="post-date" title="2020-12-07 18:52:47">2020/12/07</span>
+        </a>
+        
+        <a  class="All Tools "
+           href="/Tools/Tmux.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Tmux">Tmux</span>
+            <span class="post-date" title="2020-12-07 18:14:43">2020/12/07</span>
+        </a>
+        
+        <a  class="All Kali PostExploit "
+           href="/Kali/PostExploit/IPC-Basic-Operation.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="IPC Basic Operation">IPC Basic Operation</span>
+            <span class="post-date" title="2020-12-07 17:55:00">2020/12/07</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/ActiveMQ.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="ActiveMQ">ActiveMQ</span>
+            <span class="post-date" title="2020-12-07 17:26:21">2020/12/07</span>
+        </a>
+        
+        <a  class="All Coding Python "
+           href="/Coding/Python/pythonic-tools.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="pythonic_tools">pythonic_tools</span>
+            <span class="post-date" title="2020-12-06 19:12:43">2020/12/06</span>
+        </a>
+        
+        <a  class="All Evolution "
+           href="/Evolution/Built-Mr-Frame-with-Hexo-and-Git.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Built Mr.Frame with Hexo and Git">Built Mr.Frame with Hexo and Git</span>
+            <span class="post-date" title="2020-12-06 00:09:20">2020/12/06</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/InfluxDB.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="InfluxDB">InfluxDB</span>
+            <span class="post-date" title="2020-12-04 20:24:03">2020/12/04</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/MongoDB.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="MongoDB">MongoDB</span>
+            <span class="post-date" title="2020-12-04 20:23:56">2020/12/04</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Redis.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Redis">Redis</span>
+            <span class="post-date" title="2020-12-04 20:23:48">2020/12/04</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/MySQL.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="MySQL">MySQL</span>
+            <span class="post-date" title="2020-12-04 20:23:41">2020/12/04</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Memcache.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Memcache">Memcache</span>
+            <span class="post-date" title="2020-12-04 20:23:36">2020/12/04</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Hadoop.html"
+           data-tag="aa"
+           data-author="" >
+            <span class="post-title" title="Hadoop">Hadoop</span>
+            <span class="post-date" title="2020-12-04 20:23:31">2020/12/04</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Zookeeper.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Zookeeper">Zookeeper</span>
+            <span class="post-date" title="2020-12-04 20:23:24">2020/12/04</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Tomcat.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Tomcat">Tomcat</span>
+            <span class="post-date" title="2020-12-04 20:23:16">2020/12/04</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Supervisord.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Supervisord">Supervisord</span>
+            <span class="post-date" title="2020-12-04 20:23:08">2020/12/04</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/SaltStack.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="SaltStack">SaltStack</span>
+            <span class="post-date" title="2020-12-04 20:23:00">2020/12/04</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/NFS.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="NFS">NFS</span>
+            <span class="post-date" title="2020-12-04 20:22:50">2020/12/04</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Harbor.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Harbor">Harbor</span>
+            <span class="post-date" title="2020-12-04 20:22:36">2020/12/04</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/JDWP.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="JDWP">JDWP</span>
+            <span class="post-date" title="2020-12-04 20:22:28">2020/12/04</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Java-RMI.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Java RMI">Java RMI</span>
+            <span class="post-date" title="2020-12-04 20:22:17">2020/12/04</span>
+        </a>
+        
+        <a  class="All Kali "
+           href="/Kali/kali-inux%E7%B3%BB%E7%BB%9F%E4%BC%98%E5%8C%96.html"
+           data-tag="system"
+           data-author="" >
+            <span class="post-title" title="kali inux系统优化">kali inux系统优化</span>
+            <span class="post-date" title="2020-12-03 20:44:23">2020/12/03</span>
+        </a>
+        
+        <div id="no-item-tips">
+
+        </div>
+    </nav>
+    <div id="outline-list">
+    </div>
+</div>
+
+    </div>
+    <div class="hide-list">
+        <div class="semicircle" data-title="切换全屏 快捷键 s">
+            <div class="brackets first"><</div>
+            <div class="brackets">&gt;</div>
+        </div>
+    </div>
+</aside>
+<div id="post">
+    <div class="pjax">
+        <article id="draft-Built-Mr-Frame-with-Hexo-and-Git" class="article article-type-draft" itemscope itemprop="blogPost">
+    
+        <h1 class="article-title">Built Mr.Frame with Hexo and Git</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        <span class="book">
+            <i class="iconfont icon-category"></i>
+            
+            
+            <a  data-rel="Evolution">Evolution</a>
+            
+        </span>
+        
+        
+    </div>
+    <div class="article-meta">
+        
+            Created At : <time class="date" title='Updated At: 2020-12-06 00:09:20'>2020-12-06 00:09</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        
+        <span id="busuanzi_container_page_pv">
+            Views 👀 :<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B"><span class="toc-text">搭建过程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Hexo%E5%AE%89%E8%A3%85"><span class="toc-text">Hexo安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Hexo%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84"><span class="toc-text">Hexo目录结构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Hexo%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6"><span class="toc-text">Hexo配置文件</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE"><span class="toc-text">主题配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9F%BA%E7%A1%80%E9%85%8D%E7%BD%AE"><span class="toc-text">基础配置</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#UI%E9%A2%9C%E8%89%B2%E9%85%8D%E7%BD%AE"><span class="toc-text">UI颜色配置</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Gitalk%E8%AF%84%E8%AE%BA%E8%83%8C%E6%99%AF%E9%A2%9C%E8%89%B2"><span class="toc-text">Gitalk评论背景颜色</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A4%B4%E5%83%8F%E9%85%8D%E7%BD%AE"><span class="toc-text">头像配置</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%81%94%E7%B3%BB%E9%93%BE%E6%8E%A5%E9%85%8D%E7%BD%AE"><span class="toc-text">联系链接配置</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%96%87%E7%AB%A0%E5%88%86%E7%B1%BB%E8%AE%BE%E7%BD%AE"><span class="toc-text">文章分类设置</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%B7%A6%E4%B8%8B%E8%A7%92%E8%87%AA%E5%AE%9A%E4%B9%89%E8%8F%9C%E5%8D%95"><span class="toc-text">左下角自定义菜单</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%96%87%E6%9C%AB%E5%A3%B0%E6%98%8E"><span class="toc-text">文末声明</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%B7%A6%E4%BE%A7%E5%AF%BC%E8%88%AA%E5%AE%BD%E5%BA%A6"><span class="toc-text">左侧导航宽度</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%8D%E8%92%9C%E5%AD%90%E7%BD%91%E7%AB%99%E8%AE%A1%E6%95%B0%E9%85%8D%E7%BD%AE"><span class="toc-text">不蒜子网站计数配置</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81%E9%AB%98%E4%BA%AE%E9%85%8D%E7%BD%AE"><span class="toc-text">代码高亮配置</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%AB%98%E7%BA%A7%E9%85%8D%E7%BD%AE"><span class="toc-text">高级配置</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#MathJax%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F"><span class="toc-text">MathJax数学公式</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B7%BB%E5%8A%A0Mermaid%E5%9B%BE%E6%A0%87"><span class="toc-text">添加Mermaid图标</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AD%97%E6%95%B0%E7%BB%9F%E8%AE%A1"><span class="toc-text">字数统计</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE"><span class="toc-text">配置思维导图</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%85%A8%E6%96%87%E6%90%9C%E7%B4%A2"><span class="toc-text">全文搜索</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B7%BB%E5%8A%A0RSS%E5%92%8CSitemap"><span class="toc-text">添加RSS和Sitemap</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B7%BB%E5%8A%A0%E5%BB%BA%E7%AB%99%E6%97%B6%E9%97%B4"><span class="toc-text">添加建站时间</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B7%BB%E5%8A%A0%E7%99%BE%E5%BA%A6%E7%BB%9F%E8%AE%A1%E5%92%8C%E8%B0%B7%E6%AD%8C%E7%BB%9F%E8%AE%A1%E4%BB%A3%E7%A0%81-%E4%B8%8D%E9%80%82%E7%94%A8"><span class="toc-text">添加百度统计和谷歌统计代码-不适用</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9B%BE%E7%89%87%E6%B7%BB%E5%8A%A0%E6%B0%B4%E5%8D%B0-%E6%9C%AA%E9%80%82%E7%94%A8"><span class="toc-text">图片添加水印-未适用</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#404%E9%A1%B5%E9%9D%A2"><span class="toc-text">404页面</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#About-Resume%E9%A1%B5%E9%9D%A2"><span class="toc-text">About&#x2F;Resume页面</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B7%BB%E5%8A%A0%E9%9F%B3%E4%B9%90%E6%8F%92%E4%BB%B6"><span class="toc-text">添加音乐插件</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%94%9F%E6%88%90%E5%A4%96%E9%93%BE%E4%BB%A3%E7%A0%81"><span class="toc-text">生成外链代码</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%8F%92%E5%85%A5js%E8%84%9A%E6%9C%AC"><span class="toc-text">插入js脚本</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BB%99%E5%8D%9A%E6%96%87%E5%8A%A0%E5%AF%86%F0%9F%94%90-hexo-blog-encrypt-%E5%8A%9F%E8%83%BD%E6%9A%82%E6%9C%AA%E9%85%8D%E7%BD%AE%E6%AD%A3%E7%A1%AE"><span class="toc-text">给博文加密🔐-hexo-blog-encrypt-功能暂未配置正确</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%AE%89%E8%A3%85hexo-blog-encrypt%E6%8F%92%E4%BB%B6"><span class="toc-text">安装hexo-blog-encrypt插件</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%BD%91%E7%AB%99%E6%A0%B9%E7%9B%AE%E5%BD%95%E4%B8%8B%E7%9A%84-config-yml%E6%96%87%E4%BB%B6%E9%85%8D%E7%BD%AE%EF%BC%8C%E6%B7%BB%E5%8A%A0%E5%A6%82%E4%B8%8B%E5%AD%97%E6%AE%B5"><span class="toc-text">网站根目录下的_config.yml文件配置，添加如下字段</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%8D%9A%E6%96%87front-matter%E9%85%8D%E7%BD%AE"><span class="toc-text">博文front-matter配置</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%A6%81%E7%94%A8tag%E5%8A%A0%E5%AF%86%F0%9F%94%90"><span class="toc-text">禁用tag加密🔐</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%A6%81%E7%94%A8%E6%A0%87%E7%AD%BEtag%E5%8A%A0%E5%AF%86%E9%85%8D%E7%BD%AE"><span class="toc-text">禁用标签tag加密配置</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BB%99%E5%8D%9A%E6%96%87%E5%8A%A0%E5%AF%86%F0%9F%94%90-hexo-encrypt-%E6%AD%A3%E5%B8%B8%E9%85%8D%E7%BD%AE"><span class="toc-text">给博文加密🔐-hexo-encrypt-正常配置</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%AE%89%E8%A3%85hex-encrypt"><span class="toc-text">安装hex-encrypt</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E7%AB%99%E7%82%B9%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6"><span class="toc-text">配置站点配置文件</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%8D%9A%E6%96%87%E5%A4%B4%E9%83%A8front-matter%E9%85%8D%E7%BD%AE"><span class="toc-text">博文头部front-matter配置</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%8A%A0%E5%AF%86%E7%95%8C%E9%9D%A2%E5%BE%AE%E8%B0%83"><span class="toc-text">加密界面微调</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%89%8B%E5%8A%A8%E6%B7%BB%E5%8A%A0js%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0%E5%8D%9A%E6%96%87%E5%8A%A0%E5%AF%86%E5%8A%A0%E5%AF%86"><span class="toc-text">手动添加js代码实现博文加密加密</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9Fgitalk%E9%85%8D%E7%BD%AE"><span class="toc-text">评论系统gitalk配置</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%B3%A8%E5%86%8COAuth-Application"><span class="toc-text">注册OAuth Application</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6"><span class="toc-text">修改主题配置文件</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%83%A8%E7%BD%B2"><span class="toc-text">部署</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Github%E9%83%A8%E7%BD%B2"><span class="toc-text">Github部署</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%85%8D%E7%BD%AEdeploy"><span class="toc-text">配置deploy</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A4%87%E4%BB%BD%E5%8D%9A%E5%AE%A2"><span class="toc-text">备份博客</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%BF%AB%E6%8D%B7%E5%91%BD%E4%BB%A4"><span class="toc-text">快捷命令</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Coding%E9%83%A8%E7%BD%B2-1"><span class="toc-text">Coding部署-1</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link"><span class="toc-text"></span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Markdown%E7%BC%96%E8%BE%91%E5%99%A8%E9%85%8D%E7%BD%AE-Typora"><span class="toc-text">Markdown编辑器配置-Typora</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Preferences"><span class="toc-text">Preferences</span></a></li></ol></li></ol>
+    
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+    .toc-level-3 i,
+    .toc-level-3 ol {
+        display: none !important;
+    }
+</style>
+</div>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><div class='inner-toc'><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B"><span class="toc-text">搭建过程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Hexo%E5%AE%89%E8%A3%85"><span class="toc-text">Hexo安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Hexo%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84"><span class="toc-text">Hexo目录结构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Hexo%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6"><span class="toc-text">Hexo配置文件</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE"><span class="toc-text">主题配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9F%BA%E7%A1%80%E9%85%8D%E7%BD%AE"><span class="toc-text">基础配置</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#UI%E9%A2%9C%E8%89%B2%E9%85%8D%E7%BD%AE"><span class="toc-text">UI颜色配置</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Gitalk%E8%AF%84%E8%AE%BA%E8%83%8C%E6%99%AF%E9%A2%9C%E8%89%B2"><span class="toc-text">Gitalk评论背景颜色</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A4%B4%E5%83%8F%E9%85%8D%E7%BD%AE"><span class="toc-text">头像配置</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%81%94%E7%B3%BB%E9%93%BE%E6%8E%A5%E9%85%8D%E7%BD%AE"><span class="toc-text">联系链接配置</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%96%87%E7%AB%A0%E5%88%86%E7%B1%BB%E8%AE%BE%E7%BD%AE"><span class="toc-text">文章分类设置</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%B7%A6%E4%B8%8B%E8%A7%92%E8%87%AA%E5%AE%9A%E4%B9%89%E8%8F%9C%E5%8D%95"><span class="toc-text">左下角自定义菜单</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%96%87%E6%9C%AB%E5%A3%B0%E6%98%8E"><span class="toc-text">文末声明</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%B7%A6%E4%BE%A7%E5%AF%BC%E8%88%AA%E5%AE%BD%E5%BA%A6"><span class="toc-text">左侧导航宽度</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%8D%E8%92%9C%E5%AD%90%E7%BD%91%E7%AB%99%E8%AE%A1%E6%95%B0%E9%85%8D%E7%BD%AE"><span class="toc-text">不蒜子网站计数配置</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81%E9%AB%98%E4%BA%AE%E9%85%8D%E7%BD%AE"><span class="toc-text">代码高亮配置</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%AB%98%E7%BA%A7%E9%85%8D%E7%BD%AE"><span class="toc-text">高级配置</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#MathJax%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F"><span class="toc-text">MathJax数学公式</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B7%BB%E5%8A%A0Mermaid%E5%9B%BE%E6%A0%87"><span class="toc-text">添加Mermaid图标</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AD%97%E6%95%B0%E7%BB%9F%E8%AE%A1"><span class="toc-text">字数统计</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE"><span class="toc-text">配置思维导图</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%85%A8%E6%96%87%E6%90%9C%E7%B4%A2"><span class="toc-text">全文搜索</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B7%BB%E5%8A%A0RSS%E5%92%8CSitemap"><span class="toc-text">添加RSS和Sitemap</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B7%BB%E5%8A%A0%E5%BB%BA%E7%AB%99%E6%97%B6%E9%97%B4"><span class="toc-text">添加建站时间</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B7%BB%E5%8A%A0%E7%99%BE%E5%BA%A6%E7%BB%9F%E8%AE%A1%E5%92%8C%E8%B0%B7%E6%AD%8C%E7%BB%9F%E8%AE%A1%E4%BB%A3%E7%A0%81-%E4%B8%8D%E9%80%82%E7%94%A8"><span class="toc-text">添加百度统计和谷歌统计代码-不适用</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9B%BE%E7%89%87%E6%B7%BB%E5%8A%A0%E6%B0%B4%E5%8D%B0-%E6%9C%AA%E9%80%82%E7%94%A8"><span class="toc-text">图片添加水印-未适用</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#404%E9%A1%B5%E9%9D%A2"><span class="toc-text">404页面</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#About-Resume%E9%A1%B5%E9%9D%A2"><span class="toc-text">About&#x2F;Resume页面</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B7%BB%E5%8A%A0%E9%9F%B3%E4%B9%90%E6%8F%92%E4%BB%B6"><span class="toc-text">添加音乐插件</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%94%9F%E6%88%90%E5%A4%96%E9%93%BE%E4%BB%A3%E7%A0%81"><span class="toc-text">生成外链代码</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%8F%92%E5%85%A5js%E8%84%9A%E6%9C%AC"><span class="toc-text">插入js脚本</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BB%99%E5%8D%9A%E6%96%87%E5%8A%A0%E5%AF%86%F0%9F%94%90-hexo-blog-encrypt-%E5%8A%9F%E8%83%BD%E6%9A%82%E6%9C%AA%E9%85%8D%E7%BD%AE%E6%AD%A3%E7%A1%AE"><span class="toc-text">给博文加密🔐-hexo-blog-encrypt-功能暂未配置正确</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%AE%89%E8%A3%85hexo-blog-encrypt%E6%8F%92%E4%BB%B6"><span class="toc-text">安装hexo-blog-encrypt插件</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%BD%91%E7%AB%99%E6%A0%B9%E7%9B%AE%E5%BD%95%E4%B8%8B%E7%9A%84-config-yml%E6%96%87%E4%BB%B6%E9%85%8D%E7%BD%AE%EF%BC%8C%E6%B7%BB%E5%8A%A0%E5%A6%82%E4%B8%8B%E5%AD%97%E6%AE%B5"><span class="toc-text">网站根目录下的_config.yml文件配置，添加如下字段</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%8D%9A%E6%96%87front-matter%E9%85%8D%E7%BD%AE"><span class="toc-text">博文front-matter配置</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%A6%81%E7%94%A8tag%E5%8A%A0%E5%AF%86%F0%9F%94%90"><span class="toc-text">禁用tag加密🔐</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%A6%81%E7%94%A8%E6%A0%87%E7%AD%BEtag%E5%8A%A0%E5%AF%86%E9%85%8D%E7%BD%AE"><span class="toc-text">禁用标签tag加密配置</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BB%99%E5%8D%9A%E6%96%87%E5%8A%A0%E5%AF%86%F0%9F%94%90-hexo-encrypt-%E6%AD%A3%E5%B8%B8%E9%85%8D%E7%BD%AE"><span class="toc-text">给博文加密🔐-hexo-encrypt-正常配置</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%AE%89%E8%A3%85hex-encrypt"><span class="toc-text">安装hex-encrypt</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E7%AB%99%E7%82%B9%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6"><span class="toc-text">配置站点配置文件</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%8D%9A%E6%96%87%E5%A4%B4%E9%83%A8front-matter%E9%85%8D%E7%BD%AE"><span class="toc-text">博文头部front-matter配置</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%8A%A0%E5%AF%86%E7%95%8C%E9%9D%A2%E5%BE%AE%E8%B0%83"><span class="toc-text">加密界面微调</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%89%8B%E5%8A%A8%E6%B7%BB%E5%8A%A0js%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0%E5%8D%9A%E6%96%87%E5%8A%A0%E5%AF%86%E5%8A%A0%E5%AF%86"><span class="toc-text">手动添加js代码实现博文加密加密</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9Fgitalk%E9%85%8D%E7%BD%AE"><span class="toc-text">评论系统gitalk配置</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%B3%A8%E5%86%8COAuth-Application"><span class="toc-text">注册OAuth Application</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6"><span class="toc-text">修改主题配置文件</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%83%A8%E7%BD%B2"><span class="toc-text">部署</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Github%E9%83%A8%E7%BD%B2"><span class="toc-text">Github部署</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%85%8D%E7%BD%AEdeploy"><span class="toc-text">配置deploy</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A4%87%E4%BB%BD%E5%8D%9A%E5%AE%A2"><span class="toc-text">备份博客</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%BF%AB%E6%8D%B7%E5%91%BD%E4%BB%A4"><span class="toc-text">快捷命令</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Coding%E9%83%A8%E7%BD%B2-1"><span class="toc-text">Coding部署-1</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link"><span class="toc-text"></span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Markdown%E7%BC%96%E8%BE%91%E5%99%A8%E9%85%8D%E7%BD%AE-Typora"><span class="toc-text">Markdown编辑器配置-Typora</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Preferences"><span class="toc-text">Preferences</span></a></li></ol></li></ol></div></p>
+<p>推荐博文：</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/J4ghw2iWQTKoNynF3gIcPQ">https://mp.weixin.qq.com/s/J4ghw2iWQTKoNynF3gIcPQ</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.shangyang.me/2016/12/16/hexo-base-concept/">https://www.shangyang.me/2016/12/16/hexo-base-concept/</a></li>
+<li><a target="_blank" rel="noopener" href="https://segmentfault.com/a/1190000021614307">https://segmentfault.com/a/1190000021614307</a></li>
+<li><a target="_blank" rel="noopener" href="https://juejin.cn/post/6844903805859921933">https://juejin.cn/post/6844903805859921933</a></li>
+</ul>
+<p><img src="../images/hexo-1.jpg" alt="hexo-1"></p>
+<h2 id="搭建过程"><a href="#搭建过程" class="headerlink" title="搭建过程"></a>搭建过程</h2><p><a target="_blank" rel="noopener" href="https://hexo.io/docs/">hexo</a> 是一个快速、简洁且高效的博客框架。</p>
+<h3 id="Hexo安装"><a href="#Hexo安装" class="headerlink" title="Hexo安装"></a>Hexo安装</h3><pre><code class="zsh">brew install git node  # 安装git 和node
+npm config set registry https://registry.npm.taobao.org # 配置npm源
+npm install -g hexo-cli  # 安装hexo
+proxychains4 hexo  init Mr-Framework   # 初始化博客
+git clone https://github.com/yelog/hexo-theme-3-hexo.git themes/3-hexo   # 下载3-hexo主题</code></pre>
+<h3 id="Hexo目录结构"><a href="#Hexo目录结构" class="headerlink" title="Hexo目录结构"></a>Hexo目录结构</h3><pre><code class="yml">Mr-Framework
+├── _config.yml        // 网站配置文件
+├── node_modules    // npm依赖模块目录
+├── package-lock.json    // node项目配置文件
+├── package.json    // node项目配置文件
+├── scaffolds            // 新建mardown文件模板目录
+│   ├── draft.md                    
+│   ├── page.md                        
+│   └── post.md                        
+├── source        // 存放makrdown文件和图片
+│   └── _posts
+│       └── hello-world.md  //hexo默认markdown文件
+└── themes                                //hexo主题目录
+    └── 3-hexo
+    ├── LICENSE
+    ├── README.md
+    ├── _config.yml                //主题配置文件
+    ├── languages                    //语言支持插件
+    │   ├── en.yml
+    │   └── zh-CN.yml
+    ├── layout                        //布局文件
+    │   ├── _partial
+    │   ├── index.ejs
+    │   ├── indexs.md
+    │   └── post.ejs
+    └── source                    //主题源代码
+        ├── css
+        ├── img
+        └── js</code></pre>
+<h3 id="Hexo配置文件"><a href="#Hexo配置文件" class="headerlink" title="Hexo配置文件"></a>Hexo配置文件</h3><pre><code class="yml"># Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site
+title: Mr.Framework   #网站标题
+subtitle: &#39;subtitle&#39;   #网站副标题
+description: &#39;&#39;      #网站描述,主要用于SEO，告诉搜索引擎一个关于您站点的简单描述，通常建议在其中包含您网站的关键词
+keywords:       #网站的关键词,支持多个
+author: askDing    #作者
+language: en       #网站使用的语言
+timezone: &#39;Asia/Shanghai&#39;      #时区，
+
+# URL
+## If your site is put in a subdirectory, set url as &#39;http://example.com/child&#39; and root as &#39;/child/&#39;
+url: https://askding.github.io
+root: /     # 网站根目录存放位置
+permalink: :category/:title.html   # 文章中的永久链接格式
+permalink_defaults:   # 永久链接中的默认设置
+pretty_urls:
+  trailing_index: true # Set to false to remove trailing &#39;index.html&#39; from permalinks
+  trailing_html: true # Set to false to remove trailing &#39;.html&#39; from permalinks
+
+# Directory
+source_dir: source   # 资源文件夹，存放内容的
+public_dir: public    # 公共文件夹，用于存放生成的站点文件
+tag_dir: tags        # 标签文件夹
+archive_dir: archives    # 归档文件夹
+category_dir: categories  # 分类文件夹
+code_dir: downloads/code  # source_dir下的子目录,存放代码用的
+i18n_dir: :lang      # 国际化文件夹
+skip_render:       # 跳过指定文件的渲染，匹配到文件将直接复制到public目录中
+
+# Writing
+new_post_name: :year-:month-:day-:title.md # File name of new posts
+default_layout: page
+titlecase: false # Transform title into titlecase
+external_link:
+  enable: true # Open external links in new tab
+  field: site # Apply to the whole site
+  exclude: &#39;&#39;
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: true
+highlight:
+  enable: false
+  line_number: true
+  auto_detect: false
+  tab_replace: &#39;&#39;
+  wrap: true
+  hljs: false
+prismjs:
+  enable: false
+  preprocess: true
+  line_number: true
+  tab_replace: &#39;&#39;
+
+# Home page setting
+# path: Root path for your blogs index page. (default = &#39;&#39;)
+# per_page: Posts displayed per page. (0 = disable pagination)
+# order_by: Posts order. (Order by date descending by default)
+index_generator:
+  path: &#39;&#39;
+  per_page: 10
+  order_by: -date
+
+# Category &amp; Tag
+default_category: askDing
+category_map:
+tag_map:
+
+search:      # 文章搜索
+   path: search.xml
+   field: _post
+
+# Metadata elements
+## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
+meta_generator: true
+
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+## updated_option supports &#39;mtime&#39;, &#39;date&#39;, &#39;empty&#39;
+updated_option: &#39;date&#39;
+
+# Pagination
+## Set per_page to 0 to disable pagination
+per_page: 10
+pagination_dir: page
+
+# Include / Exclude file(s)
+## include:/exclude: options only apply to the &#39;source/&#39; folder
+include:
+exclude:
+ignore:
+
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: 3-hexo
+
+## Plugins: http://hexo.io/plugins/
+#RSS订阅和sitemap
+plugin:
+  - hexo-generator-feed
+  - hexo-generator-feed
+  - hexo-generator-sitemap
+#Feed Atom
+feed:
+type: atom
+path: atom.xml
+limit: 20
+
+# Deployment
+## Docs: https://hexo.io/docs/one-command-deployment
+deploy:
+  type: &#39;git&#39;
+  repository: https://github.com/askDing/askDing.github.io.git
+  branch: master
+</code></pre>
+<h2 id="主题配置"><a href="#主题配置" class="headerlink" title="主题配置"></a>主题配置</h2><p>hexo的主题仓库<a target="_blank" rel="noopener" href="https://hexo.io/themes/">点击此处</a></p>
+<p>推荐的博客主题 **<a target="_blank" rel="noopener" href="https://github.com/yelog/hexo-theme-3-hexo">3-hexo</a>**、<a target="_blank" rel="noopener" href="https://github.com/Yue-plus/hexo-theme-arknights">Arknights</a> 、 <a target="_blank" rel="noopener" href="https://github.com/Ares-X/hexo-theme-freemind.bithack">freemind.bithack</a>        </p>
+<blockquote>
+<p>Mr-Framework/themes/3-hexo/_config.yml</p>
+</blockquote>
+<!--
+1. 代码块
+
+位置：source/css/_partial/post.styl:229
+
+2.页面字体、字号
+
+大屏字体：
+字体位置：source/css/style.styl:8
+字号位置：source/css/_partial/post.styl:3
+中屏字体：
+字体位置：source/css/mobile.styl:3
+字号位置：source/css/mobile.styl:17
+手机字体：
+字号位置：source/css/mobile.styl:146
+
+-->
+
+
+
+<h3 id="基础配置"><a href="#基础配置" class="headerlink" title="基础配置"></a>基础配置</h3><h4 id="UI颜色配置"><a href="#UI颜色配置" class="headerlink" title="UI颜色配置"></a>UI颜色配置</h4><blockquote>
+<p>Mr-Framework/themes/3-hexo/source/css/_partial/nav-right.styl</p>
+</blockquote>
+<pre><code class="css">.nav-right
+  width 420px
+  height 100%
+  background #F2F1D7    /* 柔黄色 */
+  border-right 1px solid #e5e8ec
+  overflow hidden
+  float left
+  position relative
+  -webkit-user-select none
+  -moz-user-select none
+  -ms-user-select none
+  -o-user-select none
+  user-select none</code></pre>
+<blockquote>
+<p> Mr-Framework/themes/3-hexo/source/css/_partial/post.styl</p>
+</blockquote>
+<pre><code class="css">#post
+  height 100%
+  font-weight: 350;
+  font-size: 14px;
+  line-height 1.55
+  background #E8FFE8    /* 浅绿色  */
+  overflow-x hidden
+  overflow-y auto
+  -webkit-overflow-scrolling touch
+  font-family -apple-system,system-ui,BlinkMacSystemFont,Helvetica Neue,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Arial,sans-serif
+  color #2f2f2f
+  margin-left 1px
+
+
+   article
+      padding 1em    /* 内容间隔1em */
+      background #E8FFE8
+      .article-entry&gt;p:nth-child(1)
+        margin-top 20px
+
+   .copyright
+    margin-top 50px
+    padding-bottom 30px
+    background #E8FFE8    /* 版权浅绿色 */
+    line-height 14px
+    text-align center
+    color #BCC1C4</code></pre>
+<h4 id="Gitalk评论背景颜色"><a href="#Gitalk评论背景颜色" class="headerlink" title="Gitalk评论背景颜色"></a>Gitalk评论背景颜色</h4><blockquote>
+<p>/Mr-Framework/themes/3-hexo/source/css/_partial/comment.styl</p>
+</blockquote>
+<pre><code class="css">#comments
+  padding 2.5em
+  background #e8ffe8   /* 评论区背景颜色   */
+  .comment-bar
+    display block
+    cursor pointer
+    background rgba(255,255,255,0.3)
+    padding 0.5rem
+    -webkit-box-shadow 3px 2px 8px rgba(0,0,0,0.07)
+    box-shadow 3px 2px 8px rgba(0,0,0,0.07)
+    text-align center
+    font-size 2rem</code></pre>
+<h4 id="头像配置"><a href="#头像配置" class="headerlink" title="头像配置"></a>头像配置</h4><blockquote>
+<p>图片存放在 Mr-Framework/themes/3-hexo/source/img/</p>
+</blockquote>
+<pre><code class="yml">avatar: /img/avatar.png
+favicon: /img/avatar.png</code></pre>
+<h4 id="联系链接配置"><a href="#联系链接配置" class="headerlink" title="联系链接配置"></a>联系链接配置</h4><pre><code class="yml">ink:
+  theme: color # 链接样式，color: 彩色图标  white: 黑白图标
+  items:
+    rss: /atom.xml
+    github: https://github.com/askDing
+    email: askding@qq.com
+    qq: 741474596</code></pre>
+<h4 id="文章分类设置"><a href="#文章分类设置" class="headerlink" title="文章分类设置"></a>文章分类设置</h4><pre><code class="yml">category:
+  num: true # 分类显示文章数
+  sub: true # 开启多级分类
+  sort:
+    - Cyber Security
+    - aaa
+    - bb</code></pre>
+<h4 id="左下角自定义菜单"><a href="#左下角自定义菜单" class="headerlink" title="左下角自定义菜单"></a>左下角自定义菜单</h4><pre><code class="yml">menu:
+  about:  # &#39;关于&#39; 按钮
+    on: true # 是否显示
+    url: /about  # 跳转链接
+    type: 1 # 跳转类型 1：站内异步跳转 2：当前页面跳转 3：打开新的tab页
+  friend: # &#39;友链&#39; 按钮
+    on: true # 是否展示
+  menus: # 添加的其他菜单写在 menus 下，如下三个菜单：动态菜单1、动态菜单2、动态菜单3
+    相册:
+      on: false
+      url: /photo
+      type: 1  # 跳转类型 1：站内异步跳转
+    叶落阁:
+      on: false
+      url: http://yelog.org/
+      type: 2  # 跳转类型 2：当前页面跳转
+    github:
+      on: false
+      url: https://github.com/yelog
+      type: 3  # 跳转类型 3：打开新的tab页
+</code></pre>
+<h4 id="文末声明"><a href="#文末声明" class="headerlink" title="文末声明"></a>文末声明</h4><pre><code class="yml"># 文末声明
+article_txt: 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 askding@qq.com
+
+bottom_text: ©1996-2020 Mr.Framework
+# 自定义页面最下方的站点版权信息
+# 如果不填，则自定义为 ©2017 author (这个author为hexo根目录_config.yml中配置的)
+
+# 底部备案号
+miit:
+  on: false
+  info: 京ICP证030173号
+  url: http://beian.miit.gov.cn/ # 默认链接为 http://beian.miit.gov.cn/
+</code></pre>
+<h4 id="左侧导航宽度"><a href="#左侧导航宽度" class="headerlink" title="左侧导航宽度"></a>左侧导航宽度</h4><blockquote>
+<p>Mr-Framework/themes/3-hexo/source/css/_partial/nav-left.styl</p>
+</blockquote>
+<pre><code class="css">.nav-left
+  width 130px    /* 左侧导航宽度 130px */
+  height 100%
+  background #2A2935
+  box-shadow inset -15px 0 15px -15px #222
+  float left
+  position relative
+  -webkit-user-select none
+  -moz-user-select none
+  -ms-user-select none
+  -o-user-select none
+  user-select none</code></pre>
+<h4 id="不蒜子网站计数配置"><a href="#不蒜子网站计数配置" class="headerlink" title="不蒜子网站计数配置"></a>不蒜子网站计数配置</h4><pre><code class="yml"># 不蒜子网站计数设置
+# http://ibruce.info/2015/04/04/busuanzi/
+visit_counter:
+  on: true
+  site_visit: true
+  page_visit: true
+</code></pre>
+<h4 id="代码高亮配置"><a href="#代码高亮配置" class="headerlink" title="代码高亮配置"></a>代码高亮配置</h4><ol>
+<li>禁用网站配置文件里的代码高亮设置<blockquote>
+<p>Mr-Framework/_config.yml</p>
+</blockquote>
+<pre><code class="yml">highlight:
+enable: false  /* 禁用代码高亮 */
+line_number: true
+auto_detect: false
+tab_replace: &#39;&#39;
+wrap: true
+hljs: false</code></pre>
+</li>
+<li>启用主题配置文件里的代码高亮<blockquote>
+<p>Mr-Framework/themes/3-hexo/_config.yml</p>
+</blockquote>
+<pre><code class="yml">highlight:
+on: true # true开启代码高亮，开启需要关闭博客 _config.yml 中的 highlight
+lineNum: false # true显示行号
+copy: true # 复制功能
+theme: gruvbox-dark</code></pre>
+</li>
+</ol>
+<h3 id="高级配置"><a href="#高级配置" class="headerlink" title="高级配置"></a>高级配置</h3><h4 id="MathJax数学公式"><a href="#MathJax数学公式" class="headerlink" title="MathJax数学公式"></a>MathJax数学公式</h4><p>修改 <code>_config.yml</code></p>
+<pre><code class="yml"># MathJax 数学公式支持
+mathjax:
+  on: true #是否启用
+  per_page: false # 若只渲染单个页面，此选项设为false，页面内加入 mathjax: true
+yaml复制代码</code></pre>
+<p>考虑到页面的加载速度，支持渲染单个页面。<br>设置 <code>per_page: false</code> ,在需要渲染的页面内 加入 <code>mathjax: true</code></p>
+<blockquote>
+<p><strong><code>注意:</code></strong><br>由于hexo的MarkDown渲染器与MathJax有冲突，可能会造成矩阵等使用不正常。所以在使用之前需要修改两个地方<br>编辑 <code>node_modules\marked\lib\marked.js</code> 脚本</p>
+</blockquote>
+<ol>
+<li>将451行 ，这一步取消了对 <code>\\,\&#123;,\&#125;</code> 的转义(escape)</li>
+</ol>
+<pre><code class="js">escape: /^\\([\\`*&#123;&#125;\[\]()# +\-.!_&gt;])/,
+改为
+escape: /^\\([`*\[\]()# +\-.!_&gt;])/,</code></pre>
+<ol start="2">
+<li>将459行，这一步取消了对斜体标记 <code>_</code>的转义</li>
+</ol>
+<pre><code class="js">em: /^\b_((?:[^_]|__)+?)_\b|^\*((?:\*\*|[\s\S])+?)\*(?!\*)/,
+改为
+em:/^\*((?:\*\*|[\s\S])+?)\*(?!\*)/,</code></pre>
+<h4 id="添加Mermaid图标"><a href="#添加Mermaid图标" class="headerlink" title="添加Mermaid图标"></a>添加Mermaid图标</h4><pre><code class="zsh">##&gt;&gt;&gt;&gt;&gt;&gt;&gt;在网站配置文件中Mr-Framework/_config.yml添加如下内容 &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;###
+
+# Mermaid 支持
+mermaid:
+  on: true
+  cdn: //cdn.jsdelivr.net/npm/mermaid@8.4.2/dist/mermaid.min.js
+  #cdn: //cdnjs.cloudflare.com/ajax/libs/mermaid/8.3.1/mermaid.min.js
+  options: # 更多配置信息可以参考 https://mermaidjs.github.io/#/mermaidAPI
+    theme: &#39;default&#39;
+    startOnLoad: true
+    flowchart: true
+      useMaxWidth: false
+      htmlLabels: true
+
+##&gt;&gt;&gt;&gt;&gt;&gt;&gt;命令行安装hexo-filter-mermaid-diagrams插件 &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;###
+npm install hexo-filter-mermaid-diagrams</code></pre>
+<h4 id="字数统计"><a href="#字数统计" class="headerlink" title="字数统计"></a>字数统计</h4><pre><code class="zsh">word_count: false
+# true 开启字数统计
+# 开启此功能需要安装插件 ：在 hexo根目录 执行
+npm install hexo-wordcount </code></pre>
+<h4 id="配置思维导图"><a href="#配置思维导图" class="headerlink" title="配置思维导图"></a>配置思维导图</h4><pre><code class="zsh">npm install hexo-simple-mindmap  # 安装思维导图插件
+
+在markdown中按照如下格式输写
+
+&#123;% pullquote mindmap mindmap-md %&#125;
+- [在 Hexo 中使用思维导图](https://hunterx.xyz/use-mindmap-in-hexo.html)
+  - 前言
+  - 操作指南
+    - 准备需要的文件
+    - 为主题添加 CSS/JS 文件
+  - 使用方法
+&#123;% endpullquote %&#125;
+</code></pre>
+<h4 id="全文搜索"><a href="#全文搜索" class="headerlink" title="全文搜索"></a>全文搜索</h4><pre><code class="zsh">searchAll: ture
+# true 启用全文搜索
+# 开启此功能需要下面操作：
+# 1. 在 hexo 根目录 执行 npm install hexo-generator-search --save 安装插件
+# 2. 在 hexo 根目录的 _config.xml 中添加下面内容
+# search:
+#   path: search.xml
+#   field: post
+npm install hexo-generator-search</code></pre>
+<h4 id="添加RSS和Sitemap"><a href="#添加RSS和Sitemap" class="headerlink" title="添加RSS和Sitemap"></a>添加RSS和Sitemap</h4><pre><code class="yml">##&gt;&gt;&gt;&gt;&gt;&gt;&gt;在网站配置文件中Mr-Framework/_config.yml添加如下内容 &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;###
+## Plugins: http://hexo.io/plugins/
+#RSS订阅和sitemap
+plugin:
+  - hexo-generator-feed
+  - hexo-generator-sitemap
+#Feed Atom
+feed:
+type: atom
+path: atom.xml
+limit: 20
+
+##### 在主题配置文件中Mr-Framework/themes/3-hexo/_config.yml添加如下内容 &lt;&lt;&lt;&lt;&lt;&lt;&lt;######
+link:
+  theme: color # 链接样式，color: 彩色图标  white: 黑白图标
+  items:
+    rss: /atom.xml</code></pre>
+<pre><code class="zsh">npm install hexo-generator-feed hexo-generator-sitemap </code></pre>
+<p>提交sitemap到<a target="_blank" rel="noopener" href="https://developers.google.com/search">Google站点平台</a></p>
+<p><img src="../images/hexo-2.png" alt="hexo-2"></p>
+<p>下载这个html文件，到网站仓库上传这个html文件点击<strong>VERIFY</strong></p>
+<p><img src="../images/hexo-3.png" alt="hexo-3"></p>
+<p>添加站点文件sitemap.xml </p>
+<p><img src="../images/hexo-4.png" alt="hexo-4"></p>
+<h4 id="添加建站时间"><a href="#添加建站时间" class="headerlink" title="添加建站时间"></a>添加建站时间</h4><pre><code class="js">&lt;!-- 添加建站时间代码到Mr-Framework/themes/3-hexo/layout/_partial/footer.ejs文件末尾 --&gt;
+&lt;script language=javascript&gt;
+    function siteTime() &#123;
+        window.setTimeout(&quot;siteTime()&quot;, 1000);
+        var seconds = 1000;
+        var minutes = seconds * 60;
+        var hours = minutes * 60;
+        var days = hours * 24;
+        var years = days * 365;
+        var today = new Date();
+        var todayYear = today.getFullYear();
+        var todayMonth = today.getMonth() + 1;
+        var todayDate = today.getDate();
+        var todayHour = today.getHours();
+        var todayMinute = today.getMinutes();
+        var todaySecond = today.getSeconds();
+        /* Date.UTC() -- 返回date对象距世界标准时间(UTC)1970年1月1日午夜之间的毫秒数(时间戳)
+        year - 作为date对象的年份，为4位年份值
+        month - 0-11之间的整数，做为date对象的月份
+        day - 1-31之间的整数，做为date对象的天数
+        hours - 0(午夜24点)-23之间的整数，做为date对象的小时数
+        minutes - 0-59之间的整数，做为date对象的分钟数
+        seconds - 0-59之间的整数，做为date对象的秒数
+        microseconds - 0-999之间的整数，做为date对象的毫秒数 */
+        var t1 = Date.UTC(2020, 12, 05, 00, 00, 00); //北京时间2020-12-05 00:00:00
+        var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+        var diff = t2 - t1;
+        var diffYears = Math.floor(diff / years);
+        var diffDays = Math.floor((diff / days) - diffYears * 365);
+        var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+        var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) / minutes);
+        var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours - diffMinutes * minutes) / seconds);
+        document.getElementById(&quot;sitetime&quot;).innerHTML = &quot;本站已运行 &quot; +diffYears+&quot; 年 &quot;+diffDays + &quot; 天 &quot; + diffHours + &quot; 小时 &quot; + diffMinutes + &quot; 分钟 &quot; + diffSeconds + &quot; 秒&quot;;
+    &#125;/*因为建站时间还没有一年，就将之注释掉了。需要的可以取消*/
+    siteTime();
+&lt;/script&gt;
+</code></pre>
+<p>然后在合适的地方（比如copyright声明后面）加上下面的代码就行了：</p>
+<blockquote>
+<p>Mr-Framework/themes/3-hexo/layout/indexs.md文件中添加如下代码</p>
+</blockquote>
+<pre><code class="html">&lt;span id=&quot;sitetime&quot;&gt;&lt;/span&gt;</code></pre>
+<h4 id="添加百度统计和谷歌统计代码-不适用"><a href="#添加百度统计和谷歌统计代码-不适用" class="headerlink" title="添加百度统计和谷歌统计代码-不适用"></a>添加百度统计和谷歌统计代码-不适用</h4><p>打开<code>themes/matery/layout/_partial/head.ejs</code>，修改下面两行：</p>
+<pre><code class="html">&lt;meta name=&quot;baidu-site-verification&quot; content=&quot;fmlEuI34ir&quot; /&gt;
+&lt;meta name=&quot;google-site-verification&quot; content=&quot;yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48&quot; /&gt;</code></pre>
+<p>其中<code>content</code>内容改成你自己的就行了。</p>
+<h4 id="图片添加水印-未适用"><a href="#图片添加水印-未适用" class="headerlink" title="图片添加水印-未适用"></a>图片添加水印-未适用</h4><p>为了防止别人抄袭你文章，可以把所有的图片都加上水印，方法很简单。</p>
+<p>首先在博客根目录下新建一个<code>watermark.py</code>，代码如下：</p>
+<pre><code class="python"># -*- coding: utf-8 -*-
+import sys
+import glob
+from PIL import Image
+from PIL import ImageDraw
+from PIL import ImageFont
+
+
+def watermark(post_name):
+    if post_name == &#39;all&#39;:
+        post_name = &#39;*&#39;
+    dir_name = &#39;source/_posts/&#39; + post_name + &#39;/*&#39;
+    for files in glob.glob(dir_name):
+        im = Image.open(files)
+        if len(im.getbands()) &lt; 3:
+            im = im.convert(&#39;RGB&#39;)
+            print(files)
+        font = ImageFont.truetype(&#39;STSONG.TTF&#39;, max(30, int(im.size[1] / 20)))
+        draw = ImageDraw.Draw(im)
+        draw.text((im.size[0] / 2, im.size[1] / 2),
+                  u&#39;@yourname&#39;, fill=(0, 0, 0), font=font)
+        im.save(files)
+
+
+if __name__ == &#39;__main__&#39;:
+    if len(sys.argv) == 2:
+        watermark(sys.argv[1])
+    else:
+        print(&#39;[usage] &lt;input&gt;&#39;)</code></pre>
+<p>字体也放根目录下，自己找字体。然后每次写完一篇文章可以运行<code>python3 watermark.py postname</code>添加水印，如果第一次运行要给所有文章添加水印，可以运行<code>python3 watermark.py all</code>。</p>
+<h4 id="404页面"><a href="#404页面" class="headerlink" title="404页面"></a>404页面</h4><ol>
+<li>进入 Hexo 所在文件夹，输入 <code>hexo new page 404</code> ;</li>
+<li>打开刚新建的页面文件，默认在 Hexo 文件夹根目录下 /source/404/index.md；</li>
+<li>在顶部插入一行，写上 <code>permalink: /404</code>，这表示指定该页固定链接为 <code>http://&quot;主页&quot;/404.html</code></li>
+</ol>
+<pre><code>---
+title: 404
+permalink: /404
+date: 2016-09-27 11:31:01
+---
+---
+## 页面未找到！</code></pre>
+<h4 id="About-Resume页面"><a href="#About-Resume页面" class="headerlink" title="About/Resume页面"></a>About/Resume页面</h4><blockquote>
+<p>修改主题配置文件Mr-Framework/themes/3-hexo/source/<em>config.yml</em></p>
+</blockquote>
+<pre><code class="yml">menu:
+about:  # &#39;关于&#39; 按钮
+ on: true # 是否显示
+ url: /about  # 跳转链接
+ type: 1 # 跳转类型 1：站内异步跳转 2：当前页面跳转 3：打开新的tab页
+
+ # 在终端内运行
+ hexo new page about  #在source目录下创建/source/about/index.md 编辑index.md即可</code></pre>
+<h4 id="添加音乐插件"><a href="#添加音乐插件" class="headerlink" title="添加音乐插件"></a>添加音乐插件</h4><h5 id="生成外链代码"><a href="#生成外链代码" class="headerlink" title="生成外链代码"></a>生成外链代码</h5><p>在<a target="_blank" rel="noopener" href="https://music.163.com/">网易云音乐</a> 搜索一个作为背景音乐的歌曲，并进入播放页面，点击 <strong>生成外链播放器</strong></p>
+<p><img src="../images/hexo-5.png" alt="hexo-5"></p>
+<h5 id="插入js脚本"><a href="#插入js脚本" class="headerlink" title="插入js脚本"></a>插入js脚本</h5><p>给在第6步的外链代码进行优化如下，在**/Mr-Framework/themes/3-hexo/layout/_partial/footer.ejs**末尾添加下列代码</p>
+<pre><code class="html">&lt;div id=&quot;musicMouseDrag&quot; style=&quot;position:fixed; z-index: 9999; bottom: 0; right: 0;&quot;&gt;
+                                                                                       &lt;!--默认style是底部bottom,右下角right --&gt;
+    &lt;div id=&quot;musicDragArea&quot; style=&quot;position: absolute; top: 0; left: 0; width: 100%;height: 10px;cursor: move; z-index: 10;&quot;&gt; 
+      &lt;/div&gt;   
+      &lt;!--网易云外链放在此处--&gt;
+  &lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=150 height=40 src=&quot;//music.163.com/outchain/player?type=2&amp;id=1373296&amp;auto=1&amp;height=32&quot;&gt;
+   &lt;/iframe&gt;
+&lt;/div&gt;
+
+
+&lt;!--以下代码是为了支持随时拖动音乐控件的位置，如没有需求，可去掉下面代码--&gt;
+&lt;!--但是好像不能用 --&gt;
+&lt;script&gt;
+var $DOC = $(document)
+$(&#39;#musicMouseDrag&#39;).on(&#39;mousedown&#39;, function (e) &#123;
+// 阻止文本选中
+$DOC.bind(&quot;selectstart&quot;, function () &#123;
+return false;
+&#125;);
+$(&#39;#musicDragArea&#39;).css(&#39;height&#39;, &#39;100%&#39;);
+var $moveTarget = $(&#39;#musicMouseDrag&#39;);
+$moveTarget.css(&#39;border&#39;, &#39;1px dashed grey&#39;)
+var div_x = e.pageX - $moveTarget.offset().left;
+var div_y = e.pageY - $moveTarget.offset().top;
+$DOC.on(&#39;mousemove&#39;, function (e) &#123;
+var targetX = e.pageX - div_x;
+var targetY = e.pageY - div_y;
+targetX = targetX &lt; 0 ? 0 : (targetX + $moveTarget.outerWidth() &gt;= window.innerWidth) ? window.innerWidth - $moveTarget.outerWidth() : targetX;
+targetY = targetY &lt; 0 ? 0 : (targetY + $moveTarget.outerHeight() &gt;= window.innerHeight) ? window.innerHeight - $moveTarget.outerHeight() : targetY;
+$moveTarget.css(&#123;&#39;left&#39;: targetX + &#39;px&#39;, &#39;top&#39;: targetY + &#39;px&#39;, &#39;bottom&#39;: &#39;inherit&#39;, &#39;right&#39;: &#39;inherit&#39;&#125;)
+&#125;).on(&#39;mouseup&#39;, function () &#123;
+$DOC.unbind(&quot;selectstart&quot;);
+$DOC.off(&#39;mousemove&#39;)
+$DOC.off(&#39;mouseup&#39;)
+$moveTarget.css(&#39;border&#39;, &#39;none&#39;)
+$(&#39;#musicDragArea&#39;).css(&#39;height&#39;, &#39;10px&#39;);
+&#125;)
+&#125;)
+&lt;/script&gt;</code></pre>
+<h4 id="给博文加密🔐-hexo-blog-encrypt-功能暂未配置正确"><a href="#给博文加密🔐-hexo-blog-encrypt-功能暂未配置正确" class="headerlink" title="给博文加密🔐-hexo-blog-encrypt-功能暂未配置正确"></a>给博文加密🔐-hexo-blog-encrypt-功能暂未配置正确</h4><h5 id="安装hexo-blog-encrypt插件"><a href="#安装hexo-blog-encrypt插件" class="headerlink" title="安装hexo-blog-encrypt插件"></a>安装<strong>hexo-blog-encrypt</strong>插件</h5><pre><code class="zsh">npm install hexo-blog-encrypt </code></pre>
+<h5 id="网站根目录下的-config-yml文件配置，添加如下字段"><a href="#网站根目录下的-config-yml文件配置，添加如下字段" class="headerlink" title="网站根目录下的_config.yml文件配置，添加如下字段"></a>网站根目录下的_config.yml文件配置，添加如下字段</h5><pre><code class="yml"># Security
+encrypt: # hexo-blog-encrypt
+  abstract: 有东西被加密了, 请输入密码查看.
+  message: 您好, 这里需要密码.
+  tags:
+  - &#123;name: tagName, password: 密码A&#125;
+  - &#123;name: tagName, password: 密码B&#125;
+  template: &lt;div id=&quot;hexo-blog-encrypt&quot; data-wpm=&quot;&#123;&#123;hbeWrongPassMessage&#125;&#125;&quot; data-whm=&quot;&#123;&#123;hbeWrongHashMessage&#125;&#125;&quot;&gt;&lt;div class=&quot;hbe-input-container&quot;&gt;&lt;input type=&quot;password&quot; id=&quot;hbePass&quot; placeholder=&quot;&#123;&#123;hbeMessage&#125;&#125;&quot; /&gt;&lt;label&gt;&#123;&#123;hbeMessage&#125;&#125;&lt;/label&gt;&lt;div class=&quot;bottom-line&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;script id=&quot;hbeData&quot; type=&quot;hbeData&quot; data-hmacdigest=&quot;&#123;&#123;hbeHmacDigest&#125;&#125;&quot;&gt;&#123;&#123;hbeEncryptedData&#125;&#125;&lt;/script&gt;&lt;/div&gt;
+  wrong_pass_message: 抱歉, 这个密码看着不太对, 请再试试.
+  wrong_hash_message: 抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.
+   silent: true   # 禁用日志输出</code></pre>
+<h5 id="博文front-matter配置"><a href="#博文front-matter配置" class="headerlink" title="博文front-matter配置"></a>博文front-matter配置</h5><pre><code class="markdown">---
+title: Hello World
+tags:
+- 作为日记加密
+date: 2016-03-30 21:12:21
+password: mikemessi
+abstract: 有东西被加密了, 请输入密码查看.
+message: 您好, 这里需要密码.
+wrong_pass_message: 抱歉, 这个密码看着不太对, 请再试试.
+wrong_hash_message: 抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.
+---</code></pre>
+<h5 id="禁用tag加密🔐"><a href="#禁用tag加密🔐" class="headerlink" title="禁用tag加密🔐"></a>禁用tag加密🔐</h5><pre><code class="markdown">---
+title: Callback Test
+date: 2019-12-21 11:54:07
+tags:
+    - A Tag should be encrypted
+password: &quot;&quot;
+---
+
+Use a &quot;&quot; to diable tag encryption.</code></pre>
+<h5 id="禁用标签tag加密配置"><a href="#禁用标签tag加密配置" class="headerlink" title="禁用标签tag加密配置"></a>禁用标签tag加密配置</h5><p> 在md文章中front-matter中设置如下</p>
+<pre><code class="yml">---
+title: Callback Test
+date: 2019-12-21 11:54:07
+tags:
+    - A Tag should be encrypted
+password: &quot;&quot;
+---
+Use a &quot;&quot; to diable tag encryption.</code></pre>
+<h4 id="给博文加密🔐-hexo-encrypt-正常配置"><a href="#给博文加密🔐-hexo-encrypt-正常配置" class="headerlink" title="给博文加密🔐-hexo-encrypt-正常配置"></a>给博文加密🔐-hexo-encrypt-正常配置</h4><h5 id="安装hex-encrypt"><a href="#安装hex-encrypt" class="headerlink" title="安装hex-encrypt"></a>安装hex-encrypt</h5><pre><code class="zsh">npm install hexo-encrypt  # 安装hexo-encrypt依赖包</code></pre>
+<h5 id="配置站点配置文件"><a href="#配置站点配置文件" class="headerlink" title="配置站点配置文件"></a>配置站点配置文件</h5><blockquote>
+<p>Mr-Framework/_config.yml 新增如下字段</p>
+</blockquote>
+<pre><code class="yml">encrypt: 
+  password: 123456   # 默认密码</code></pre>
+<h5 id="博文头部front-matter配置"><a href="#博文头部front-matter配置" class="headerlink" title="博文头部front-matter配置"></a>博文头部front-matter配置</h5><pre><code class="markdown">---
+encrypt: true
+enc_pwd: 123
+
+---
+enc_pwd不写，则是默认配置文件里的123456密码</code></pre>
+<h5 id="加密界面微调"><a href="#加密界面微调" class="headerlink" title="加密界面微调"></a>加密界面微调</h5><pre><code class="javascript">/***
+Mr-Framework/node_modules/hexo-encrypt/lib/conf_post.js
+***/
+    if (this.template == undefined || this.template == &#39;&#39;) &#123;
+        this.template = &#39; &lt;input id=&quot;enc_pwd_input&quot; type=&quot;password&quot; style=&quot;&#39; +
+                  &#39;border-radius: 5px;&#39; +
+                  &#39;background-color: white;&#39; +  /*  密码输入框背景颜色 浅绿色 #E8FFE8   */
+                  &#39;border-style: groove;&#39; + 
+                  &#39;height: 30px;&#39; + 
+                  &#39;width: 50%;&#39; + 
+                  &#39;cursor: auto;&#39; + 
+                  &#39;font-size: 102%;&#39; + 
+                  &#39;color: currentColor;&#39; +        /* 密文字体*的颜色   默认为currentColor */
+                  &#39;outline: none;&#39; + 
+                  &#39;text-overflow: initial;&#39; + 
+                  &#39;padding-left: 5px;&quot; onkeydown=&quot;if (event.keyCode == 13) &#123; decrypt(); return false;&#125;&quot;&gt; &#39; + 
+              &#39;&lt;input type=&quot;submit&quot; value=&quot;解&amp;nbsp;密&quot; onclick=&quot;decrypt()&quot; style=&quot;&#39; + 
+                  &#39;width: 58px;&#39; + 
+                  &#39;height: 34px;&#39; + 
+                  &#39;border-radius: 5px;&#39; + 
+                  &#39;background-color: #32414e;&#39; +  /*  提交按钮背景颜色    */
+                  &#39;border-style: solid;&#39; + 
+                  &#39;color: white;&#39; +    /* 字体的颜色   默认为currentColor */
+                  &#39;&quot;&gt;&#39; + 
+              &#39;&lt;div id=&quot;enc_error&quot; style=&quot;&#39; + 
+                  &#39;display: inline-block;&#39; +
+                  &#39;color: #d84527;&#39; + 
+                  &#39;margin-left: 10px&#39; +
+                  &#39;&quot;&gt;&lt;/div&gt;\n&#39; +
+              &#39;&lt;script&gt;\n&#39; + 
+                &#39;var onError = function(error) &#123;\n&#39; +
+                &#39;    document.getElementById(&quot;enc_error&quot;).innerHTML = &quot;password error!&quot;\n&#39; +
+                &#39;&#125;;\n&#39; +
+                &#39;function decrypt() &#123;\n&#39; + 
+                    &#39;var passwd = document.getElementById(&quot;enc_pwd_input&quot;).value;\n&#39; + 
+                    &#39;console.log(passwd);\n&#39; + 
+                    &#39;doDecrypt(passwd, onError);\n&#39; + 
+                &#39;&#125;\n&#39; + 
+              &#39;&lt;/script&gt;\n&#39;;
+    &#125;</code></pre>
+<h4 id="手动添加js代码实现博文加密加密"><a href="#手动添加js代码实现博文加密加密" class="headerlink" title="手动添加js代码实现博文加密加密"></a>手动添加js代码实现博文加密加密</h4><pre><code class="javascript">/* 在Mr-Framework/themes/3-hexo/layout/_partial/header.ejs末尾添加如下js脚本  */
+#JavaScript
+&lt;script&gt;
+    (function()&#123;
+        if(&#39;&#123;&#123; page.password &#125;&#125;&#39;)&#123;
+            if (prompt(&#39;请输入密码&#39;) !== &#39;&#123;&#123; page.password &#125;&#125;&#39;)&#123;
+                alert(&#39;密码错误&#39;);
+                history.back();
+            &#125;
+        &#125;
+    &#125;)();
+&lt;/script&gt;</code></pre>
+<h4 id="评论系统gitalk配置"><a href="#评论系统gitalk配置" class="headerlink" title="评论系统gitalk配置"></a>评论系统gitalk配置</h4><h5 id="注册OAuth-Application"><a href="#注册OAuth-Application" class="headerlink" title="注册OAuth Application"></a>注册OAuth Application</h5><p><a target="_blank" rel="noopener" href="https://github.com/settings/applications/new">点击此处</a> 来注册一个新的 OAuth Application。</p>
+<p><img src="../images/hexo-6.png" alt="hexo-6"></p>
+<h5 id="修改主题配置文件"><a href="#修改主题配置文件" class="headerlink" title="修改主题配置文件"></a>修改主题配置文件</h5><blockquote>
+<p> /Mr-Framework/themes/3-hexo/_config.yml</p>
+</blockquote>
+<pre><code class="yml">##########评论设置#############
+comment:
+  on: true
+  type: gitalk  # 评论系统：gitalk、disqus、gitment、utteranc、livere,注意：使用时，在下方对应位置进行配置
+  comment_count: true  # 文章标题下方显示评论数 目前仅支持 gitalk 和 disqus
+  ## 使用说明 https://yelog.org//2020/05/23/3-hexo-comment/
+# 各评论系统配置 ↓↓
+
+
+gitalk:
+  githubID: askDing    # githubID: github用户名
+  repo: askDing.github.io  # repo: 使用哪个仓库的issue
+  ClientID:  3675559917bdc294608c  #  创建 OAuth application 就会生成：
+  ClientSecret: a826e0ded6d8b29a5bb77843f4c3805ecf7b263f   #  创建 OAuth application 就会生成
+  adminUser: askDing # 使用自己的 github 用户名即可 
+  distractionFreeMode: true    # 全屏遮罩效果
+  language: zh-CN   # 支持：en / zh-CN / zh-TW 三种
+  perPage: 10   # 每次加载的数据大小，默认10，最大100</code></pre>
+<pre><code class="zsh">npm install gitalk  # 安装gitalk模块</code></pre>
+<p>更多评论配置请查看<a target="_blank" rel="noopener" href="https://yelog.org/2020/05/23/3-hexo-comment/">叶落阁</a></p>
+<h2 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h2><h3 id="Github部署"><a href="#Github部署" class="headerlink" title="Github部署"></a>Github部署</h3><h4 id="配置deploy"><a href="#配置deploy" class="headerlink" title="配置deploy"></a>配置deploy</h4><pre><code class="yml"># Deployment
+## Docs: https://hexo.io/docs/one-command-deployment
+deploy:
+  type: &#39;git&#39;
+  repository: https://github.com/askDing/askDing.github.io.git
+  branch: master</code></pre>
+<pre><code class="zsh">npm install hexo-deployer-git. # 安装git部署插件
+hexo d # 部署到github</code></pre>
+<h4 id="备份博客"><a href="#备份博客" class="headerlink" title="备份博客"></a>备份博客</h4><pre><code class="zsh">cd Mr-Framework &amp;&amp; git init   #进入博客目录并初始化git
+git remote add origin https://github.com/askDing/Mr.Framework.git  # 添加远程git仓库
+git add . &amp;&amp; git commit -m &quot;My Blog Backup&quot;   # 初次提交到本地暂缓区
+git push --set-upstream origin master  # 设置上游分支
+git push origin master  # 上传到Github
+hexo clean &amp;&amp; hexo g &amp;&amp; hexo d &amp;&amp; git add . &amp;&amp; git commit -m &quot; `date` &quot; &amp;&amp; git push -f  # 部署到Github并进行备份
+</code></pre>
+<h4 id="快捷命令"><a href="#快捷命令" class="headerlink" title="快捷命令"></a>快捷命令</h4><blockquote>
+<p>在.zshrc中添加</p>
+</blockquote>
+<pre><code class="zsh">alias hs=&#39;cd ~/Mr-Framework &amp;&amp; hexo clean &amp;&amp; hexo g &amp;&amp; hexo s&#39;    # 启动本地服务
+alias hdb=&#39;cd ~/Mr-Framework &amp;&amp; hexo clean &amp;&amp; hexo g &amp;&amp; hexo d &amp;&amp; git add . &amp;&amp; git commit -m &quot; Mr.Framework updated: `date` &quot; &amp;&amp; git push -f&#39;    # 部署到Github并进行备份</code></pre>
+<h3 id="Coding部署-1"><a href="#Coding部署-1" class="headerlink" title="Coding部署-1"></a>Coding部署-1</h3><p><strong>5. 开启coding pages服务，绑定域名</strong></p>
+<p>如图：</p>
+<p><img src="../images/hexo-7.jpg" alt="hexo-7"></p>
+<p><strong>6. 阿里云添加解析</strong></p>
+<p><img src="../images/hexo-8.jpg" alt="hexo-8"></p>
+<p>这个时候就可以把之前github的解析改成境外，把coding的解析设为默认了。</p>
+<p><strong>7. 去除coding page的跳转广告</strong></p>
+<p>coding page的一个比较恶心人的地方就是，你只是银牌会员的话，访问会先跳转到一个广告，再到你自己的域名。那么它也给出了消除的办法。右上角切换到coding的旧版界面，默认新版是不行的。然后再来到<code>pages服务</code>这里。</p>
+<p>这里：</p>
+<p><img src="../images/hexo-9.jpg" alt="hexo-9"></p>
+<p>只要你在页面上添加一行文字，写<code>Hosted by Coding Pages</code>，然后点下面的小勾勾，两个工作日内它就会审核通过了。</p>
+<pre><code class="text">&lt;p&gt;Hosted by &lt;a href=&quot;https://pages.coding.me&quot; style=&quot;font-weight: bold&quot;&gt;Coding Pages&lt;/a&gt;&lt;/p&gt;</code></pre>
+<p>我的选择是把这一行代码放在主题文件夹<code>/layout/common/footer.ejs</code>里面，也就是本来在页面中看到的页脚部分。</p>
+<p><img src="../images/hexo-10.jpg" alt="hexo-10"></p>
+<p>当然，为了统一，我又在后面加上了and <strong>Github</strong>哈哈，可以不加。</p>
+<pre><code class="text">&lt;p&gt;&lt;span&gt;Hosted by &lt;a href=&quot;https://pages.coding.me&quot; style=&quot;font-weight: bold&quot;&gt;Coding Pages&lt;/a&gt;&lt;/span&gt; and &lt;span&gt;&lt;a href=&quot;https://github.com&quot; style=&quot;font-weight: bold&quot;&gt;Github&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;</code></pre>
+<p>这是最终加上去的代码。</p>
+<h4 id=""><a href="#" class="headerlink" title=""></a></h4><h2 id="Markdown编辑器配置-Typora"><a href="#Markdown编辑器配置-Typora" class="headerlink" title="Markdown编辑器配置-Typora"></a>Markdown编辑器配置-Typora</h2><h3 id="Preferences"><a href="#Preferences" class="headerlink" title="Preferences"></a>Preferences</h3><ul>
+<li><p>General</p>
+<ul>
+<li>On Lauch  &gt;open custom folder  set <strong>source</strong> of the hexo blog folder</li>
+<li>Save &amp; Recover &gt; ☑️ Save without asking when switch files on side panel</li>
+</ul>
+</li>
+<li><p>Apperarance</p>
+<ul>
+<li>Font Size &gt; ☑️ Auto      </li>
+<li>Themes<ul>
+<li>Open Theme Folder  Downloaded from <a target="_blank" rel="noopener" href="https://typora.io/">typora</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Editor</p>
+<ul>
+<li>Indent Size on Save <ul>
+<li>Auto ☑️ Pretty indentation</li>
+<li>Auto Pair<ul>
+<li>☑️ Auto pair brackets and quotes</li>
+<li>☑️ Auto pair common Markdown syntax</li>
+<li>Default Copy Behavior<ul>
+<li>☑️ Copy Markdown source as plain text</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Image</p>
+<ul>
+<li>When Insert ...<pre><code>- Copy image to custom folder
+- ../imges
+- ☑️ Apply above rules to local images
+- ☑️ Apply above rules to online images
+- ☑️ User relative path if possible
+- ☑️Auto escape image URL when insert  </code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">
+      
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jaytp@qq.com </span>
+    </div>
+</article>
+
+
+<p>
+    <a  class="dashang" onclick="dashangToggle()">💰</a>
+</p>
+
+
+
+
+
+
+    
+
+
+
+
+    </div>
+    <div class="copyright">
+        <p class="footer-entry">
+    ©2016-2020 Yelog
+</p>
+<p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
+
+    </div>
+    <div class="full-toc">
+        <button class="full" data-title="切换全屏 快捷键 s"><span class="min "></span></button>
+<a class="" id="rocket" ></a>
+
+    </div>
+</div>
+
+<div class="hide_box" onclick="dashangToggle()"></div>
+<div class="shang_box">
+    <a class="shang_close"  onclick="dashangToggle()">×</a>
+    <div class="shang_tit">
+        <p>Help us with donation</p>
+    </div>
+    <div class="shang_payimg">
+        <div class="pay_img">
+            <img src="/img/alipay.jpg" class="alipay" title="扫码支持">
+            <img src="/img/weixin.jpg" class="weixin" title="扫码支持">
+        </div>
+    </div>
+    <div class="shang_payselect">
+        <span><label><input type="radio" name="pay" checked value="alipay">alipay</label></span><span><label><input type="radio" name="pay" value="weixin">weixin</label></span>
+    </div>
+</div>
+
+
+</body>
+<script src="/js/jquery.pjax.js?v=1.1.0" ></script>
+
+<script src="/js/script.js?v=1.1.0" ></script>
+<script>
+    var img_resize = 'default';
+    function initArticle() {
+        /*渲染对应的表格样式*/
+        
+            $("#post .pjax table").addClass("green_title");
+        
+
+        /*渲染打赏样式*/
+        
+        $("input[name=pay]").on("click", function () {
+            if($("input[name=pay]:checked").val()=="weixin"){
+                $(".shang_box .shang_payimg .pay_img").addClass("weixin_img");
+            } else {
+                $(".shang_box .shang_payimg .pay_img").removeClass("weixin_img");
+            }
+        })
+        
+
+        /*高亮代码块行号*/
+        
+
+        /*访问数量*/
+        
+        $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
+        
+
+        /*代码高亮，行号对齐*/
+        $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
+
+        
+        
+    }
+
+    /*打赏页面隐藏与展示*/
+    
+    function dashangToggle() {
+        $(".shang_box").fadeToggle();
+        $(".hide_box").fadeToggle();
+    }
+    
+
+</script>
+
+<!--加入行号的高亮代码块样式-->
+
+<!--自定义样式设置-->
+<style>
+    
+    
+    .nav {
+        width: 542px;
+    }
+    .nav.fullscreen {
+        margin-left: -542px;
+    }
+    .nav-left {
+        width: 120px;
+    }
+    
+    
+    @media screen and (max-width: 1468px) {
+        .nav {
+            width: 492px;
+        }
+        .nav.fullscreen {
+            margin-left: -492px;
+        }
+        .nav-left {
+            width: 100px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1024px) {
+        .nav {
+            width: 492px;
+            margin-left: -492px
+        }
+        .nav.fullscreen {
+            margin-left: 0;
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .nav {
+            width: 100%;
+        }
+        .nav-left {
+            width: 100%;
+        }
+    }
+    
+    
+    .nav-right .title-list nav a .post-title, .nav-right .title-list #local-search-result a .post-title {
+        color: #383636;
+    }
+    
+    
+    .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
+        color: #5e5e5f;
+    }
+    
+    
+    .nav-right nav a.hover, #local-search-result a.hover{
+        background-color: #e2e0e0;
+    }
+    
+    
+
+    /*列表样式*/
+    
+
+    /* 背景图样式 */
+    
+    
+
+
+    /*引用块样式*/
+    
+
+    /*文章列表背景图*/
+    
+
+    
+</style>
+
+
+
+
+
+
+
+</html>

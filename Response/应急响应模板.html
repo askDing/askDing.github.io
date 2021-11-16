@@ -1,0 +1,1417 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>应急响应模板 | Mr.Frame</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="应急响应模板 | Mr.Frame">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="404 Not Found: 该页面无法显示很抱歉，您所访问的地址并不存在">
+<meta property="og:type" content="website">
+<meta property="og:title" content="404">
+<meta property="og:url" content="https://askding.github.io/404.html">
+<meta property="og:site_name" content="Mr.Frame">
+<meta property="og:description" content="404 Not Found: 该页面无法显示很抱歉，您所访问的地址并不存在">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-12-05T14:51:22.000Z">
+<meta property="article:modified_time" content="2020-12-05T14:51:22.000Z">
+<meta property="article:author" content="Mr.Frame">
+<meta property="article:tag" content="kali exploit vulnerability programing">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="icon" href="/img/avatar.jpg">
+
+<link href="/css/style.css?v=1.1.0" rel="stylesheet">
+
+<link href="/css/hl_theme/atom-light.css?v=1.1.0" rel="stylesheet">
+
+<link href="//cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css" rel="stylesheet">
+
+<script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="/js/titleTip.js?v=1.1.0" ></script>
+
+<script src="//cdn.jsdelivr.net/npm/highlightjs@9.16.2/highlight.pack.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<script src="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js"></script>
+
+
+
+<script src="//cdn.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.min.js" ></script>
+
+<script src="/js/iconfont.js?v=1.1.0" ></script>
+
+<meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="Mr.Frame" type="application/atom+xml">
+</head>
+<div style="display: none">
+  <input class="theme_disqus_on" value="false">
+  <input class="theme_preload_comment" value="">
+  <input class="theme_blog_path" value="">
+  <input id="theme_shortcut" value="true" />
+  <input id="theme_highlight_on" value="true" />
+  <input id="theme_code_copy" value="true" />
+</div>
+
+
+
+<body>
+<aside class="nav">
+    <div class="nav-left">
+        <a href="/"
+   class="avatar_target">
+    <img class="avatar"
+         src="/img/avatar.jpg"/>
+</a>
+<div class="author">
+    <span>Mr.Frame</span>
+</div>
+
+<div class="icon">
+    
+        
+            <a title="rss"
+               href="/atom.xml"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-rss"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="github"
+               href="https://github.com/yelog"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-github"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="facebook"
+               href="https://www.facebook.com/faker.tops"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-facebook"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+    
+        
+    
+        
+            <a title="instagram"
+               href="https://www.facebook.com/faker.tops"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-instagram"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="reddit"
+               href="https://www.reddit.com/user/yelog/"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-reddit"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="weibo"
+               href="http://weibo.com/u/2307534817"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-weibo"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="jianshu"
+               href="https://www.jianshu.com/u/ff56736de7cf"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-jianshu"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="zhihu"
+               href="https://www.zhihu.com/people/jaytp/activities"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-zhihu"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+    
+        
+            <a title="oschina"
+               href="https://my.oschina.net/yelog"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-oschina"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+    
+        
+            <a title="email"
+               href="mailto:jaytp@qq.com"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-email"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="qq"
+               href="http://wpa.qq.com/msgrd?v=3&uin=872336115&site=qq&menu=yes"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-qq"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="kugou"
+               href="https://www.kugou.com/"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-kugou"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="neteasemusic"
+               href="https://music.163.com/#/user/home?id=88151013"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-neteasemusic"></use>
+                    </svg>
+                
+            </a>
+        
+    
+</div>
+
+
+
+
+<ul>
+    <li>
+        <div class="all active" data-rel="All">All
+            
+                <small>(67)</small>
+            
+        </div>
+    </li>
+    
+        
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Coding">
+                        <i class="fold iconfont icon-right"></i>
+                        
+                        Coding
+                        <small>(10)</small>
+                        
+                    </div>
+                    
+                        <ul class="sub hide">
+                            
+                                <li>
+                                    <div data-rel="Coding<--->Audit">
+                                        
+                                        Audit
+                                        
+                                            <small>(1
+                                                )</small>
+                                        
+                                    </div>
+                                    
+                                </li>
+                            
+                                <li>
+                                    <div data-rel="Coding<--->JavaScript">
+                                        
+                                        JavaScript
+                                        
+                                            <small>(2
+                                                )</small>
+                                        
+                                    </div>
+                                    
+                                </li>
+                            
+                                <li>
+                                    <div data-rel="Coding<--->Python">
+                                        
+                                        Python
+                                        
+                                            <small>(1
+                                                )</small>
+                                        
+                                    </div>
+                                    
+                                </li>
+                            
+                        </ul>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Evolution">
+                        
+                        Evolution
+                        <small>(6)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Kali">
+                        <i class="fold iconfont icon-right"></i>
+                        
+                        Kali
+                        <small>(39)</small>
+                        
+                    </div>
+                    
+                        <ul class="sub hide">
+                            
+                                <li>
+                                    <div data-rel="Kali<--->Exploit">
+                                        
+                                        Exploit
+                                        
+                                            <small>(32
+                                                )</small>
+                                        
+                                    </div>
+                                    
+                                </li>
+                            
+                                <li>
+                                    <div data-rel="Kali<--->PostExploit">
+                                        
+                                        PostExploit
+                                        
+                                            <small>(5
+                                                )</small>
+                                        
+                                    </div>
+                                    
+                                </li>
+                            
+                        </ul>
+                    
+                </li>
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Response">
+                        
+                        Response
+                        <small>(2)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Tools">
+                        
+                        Tools
+                        <small>(10)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+</ul>
+<div class="left-bottom">
+    <div class="menus">
+        
+            
+            
+            
+    </div>
+    <div>
+        
+            <a class="about  hasFriend  site_url"
+               
+               href="/about">About</a>
+        
+        <a style="width: 50%"
+                
+                                           class="friends">Friends</a>
+        
+    </div>
+</div>
+<input type="hidden" id="yelog_site_posts_number" value="67">
+
+<div style="display: none">
+    <span id="busuanzi_value_site_uv"></span>
+    <span id="busuanzi_value_site_pv"></span>
+</div>
+
+    </div>
+    <div class="nav-right">
+        <div class="friends-area">
+    <div class="friends-title">
+        Links
+        <i class="iconfont icon-left"></i>
+    </div>
+    <div class="friends-content">
+        <ul>
+            
+            <li><a target="_blank" href="http://yelog.org/">叶落阁</a></li>
+            
+        </ul>
+    </div>
+</div>
+        <div class="title-list">
+    <div class="right-top">
+        <div id="default-panel">
+            <i class="iconfont icon-search" data-title="搜索 快捷键 i"></i>
+            <div class="right-title">All</div>
+            <i class="iconfont icon-file-tree" data-title="切换到大纲视图 快捷键 w"></i>
+        </div>
+        <div id="search-panel">
+            <i class="iconfont icon-left" data-title="返回"></i>
+            <input id="local-search-input" autocomplete="off"/>
+            <label class="border-line" for="input"></label>
+            <i class="iconfont icon-case-sensitive" data-title="大小写敏感"></i>
+            <i class="iconfont icon-tag" data-title="标签"></i>
+        </div>
+        <div id="outline-panel" style="display: none">
+            <div class="right-title">大纲</div>
+            <i class="iconfont icon-list" data-title="切换到文章列表"></i>
+        </div>
+    </div>
+
+    <div class="tags-list">
+    <input id="tag-search" />
+    <div class="tag-wrapper">
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>aa</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>system</a>
+            </li>
+        
+    </div>
+
+</div>
+
+    
+    <nav id="title-list-nav">
+        
+        <a  class="All Kali PostExploit "
+           href="/Kali/PostExploit/%E5%A6%82%E4%BD%95%E5%9C%A8mac%E4%B8%8A%E6%8A%93%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%9A%84%E6%B5%81%E9%87%8F.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="如何在mac上抓小程序的流量">如何在mac上抓小程序的流量</span>
+            <span class="post-date" title="2021-11-15 20:57:33">2021/11/15</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Spring.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Spring">Spring</span>
+            <span class="post-date" title="2021-11-15 20:55:56">2021/11/15</span>
+        </a>
+        
+        <a  class="All Kali PostExploit "
+           href="/Kali/PostExploit/%E5%85%8D%E6%9D%80%E6%80%9D%E8%B7%AF.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="免杀思路">免杀思路</span>
+            <span class="post-date" title="2021-09-25 14:06:46">2021/09/25</span>
+        </a>
+        
+        <a  class="All Kali PostExploit "
+           href="/Kali/PostExploit/%E7%BA%A2%E8%93%9D%E5%AF%B9%E6%8A%97.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="红蓝对抗">红蓝对抗</span>
+            <span class="post-date" title="2021-09-23 10:37:34">2021/09/23</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Nsfocus2docx-md.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Nsfocus2docx.md">Nsfocus2docx.md</span>
+            <span class="post-date" title="2021-05-23 00:05:22">2021/05/23</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Landray-OA.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Landray-OA 蓝凌OA custom.jsp页面任意文件读取">Landray-OA 蓝凌OA custom.jsp页面任意文件读取</span>
+            <span class="post-date" title="2021-05-13 19:40:49">2021/05/13</span>
+        </a>
+        
+        <a  class="All Evolution "
+           href="/Evolution/org-syntax.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="org-syntax">org-syntax</span>
+            <span class="post-date" title="2021-05-08 16:59:18">2021/05/08</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Gopher-md.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Gopher">Gopher</span>
+            <span class="post-date" title="2021-05-06 11:04:32">2021/05/06</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/SSRF.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="SSRF">SSRF</span>
+            <span class="post-date" title="2021-04-19 15:03:37">2021/04/19</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Chrome-0day-RCE-no-sandbox.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Chrome_0day_RCE_no_sandbox">Chrome_0day_RCE_no_sandbox</span>
+            <span class="post-date" title="2021-04-15 15:20:17">2021/04/15</span>
+        </a>
+        
+        <a  class="All Tools "
+           href="/Tools/Telegram.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Telegram">Telegram</span>
+            <span class="post-date" title="2021-04-09 12:42:22">2021/04/09</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Nginx.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Nginx">Nginx</span>
+            <span class="post-date" title="2021-04-07 20:48:12">2021/04/07</span>
+        </a>
+        
+        <a  class="All Evolution "
+           href="/Evolution/win10%E7%B3%BB%E7%BB%9F%E4%BC%98%E5%8C%96.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="win10系统优化">win10系统优化</span>
+            <span class="post-date" title="2021-03-30 13:09:36">2021/03/30</span>
+        </a>
+        
+        <a  class="All Tools "
+           href="/Tools/xray-crawlergo.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="xray_crawlergo">xray_crawlergo</span>
+            <span class="post-date" title="2021-03-25 11:58:41">2021/03/25</span>
+        </a>
+        
+        <a  class="All Coding "
+           href="/Coding/java-basic.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="java-basic">java-basic</span>
+            <span class="post-date" title="2021-03-21 09:04:43">2021/03/21</span>
+        </a>
+        
+        <a  class="All Coding "
+           href="/Coding/getHttpProxy.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="getHttpProxy">getHttpProxy</span>
+            <span class="post-date" title="2021-03-17 17:12:28">2021/03/17</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Ruijie-RG-UAC.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Ruijie_RG_UAC">Ruijie_RG_UAC</span>
+            <span class="post-date" title="2021-03-08 15:36:33">2021/03/08</span>
+        </a>
+        
+        <a  class="All Coding "
+           href="/Coding/code-of-principle.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="code_of_principle">code_of_principle</span>
+            <span class="post-date" title="2021-03-07 15:23:04">2021/03/07</span>
+        </a>
+        
+        <a  class="All Kali "
+           href="/Kali/kali-nethunter_and_Andrax.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="kali_nethunter and Andrax">kali_nethunter and Andrax</span>
+            <span class="post-date" title="2021-03-02 09:01:43">2021/03/02</span>
+        </a>
+        
+        <a  class="All Coding "
+           href="/Coding/python-basic.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="python-basic">python-basic</span>
+            <span class="post-date" title="2021-01-30 11:48:44">2021/01/30</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/fastjson-rce.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="fastjson_rce">fastjson_rce</span>
+            <span class="post-date" title="2021-01-29 16:09:51">2021/01/29</span>
+        </a>
+        
+        <a  class="All Evolution "
+           href="/Evolution/Markdown-of-Emacs.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Markdown_of_Emacs">Markdown_of_Emacs</span>
+            <span class="post-date" title="2021-01-14 11:22:07">2021/01/14</span>
+        </a>
+        
+        <a  class="All Tools "
+           href="/Tools/emacs.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="emacs">emacs</span>
+            <span class="post-date" title="2021-01-12 09:46:03">2021/01/12</span>
+        </a>
+        
+        <a  class="All Tools "
+           href="/Tools/awk-sed-grep-find.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="awk-sed-grep-find">awk-sed-grep-find</span>
+            <span class="post-date" title="2021-01-10 10:20:21">2021/01/10</span>
+        </a>
+        
+        <a  class="All Tools "
+           href="/Tools/TAR.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="TAR">TAR</span>
+            <span class="post-date" title="2021-01-09 21:00:07">2021/01/09</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Shellshock.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Shellshock">Shellshock</span>
+            <span class="post-date" title="2021-01-08 15:54:41">2021/01/08</span>
+        </a>
+        
+        <a  class="All Tools "
+           href="/Tools/curl-wget.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="curl-wget">curl-wget</span>
+            <span class="post-date" title="2021-01-06 18:03:15">2021/01/06</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Elasticsearch.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Elasticsearch">Elasticsearch</span>
+            <span class="post-date" title="2021-01-06 17:50:11">2021/01/06</span>
+        </a>
+        
+        <a  class="All Coding "
+           href="/Coding/bash-basic.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="bash_basic">bash_basic</span>
+            <span class="post-date" title="2021-01-02 18:00:59">2021/01/02</span>
+        </a>
+        
+        <a  class="All Evolution "
+           href="/Evolution/sleep.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="sleep">sleep</span>
+            <span class="post-date" title="2020-12-28 15:50:03">2020/12/28</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/SSLTLS%E7%9B%B8%E5%85%B3%E6%BC%8F%E6%B4%9E.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="SSLTLS相关漏洞">SSLTLS相关漏洞</span>
+            <span class="post-date" title="2020-12-25 10:41:48">2020/12/25</span>
+        </a>
+        
+        <a  class="All Evolution "
+           href="/Evolution/meta_learning.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="meta_learning">meta_learning</span>
+            <span class="post-date" title="2020-12-22 09:26:14">2020/12/22</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/PostgreSQL.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="PostgreSQL">PostgreSQL</span>
+            <span class="post-date" title="2020-12-21 16:02:17">2020/12/21</span>
+        </a>
+        
+        <a  class="All Coding JavaScript "
+           href="/Coding/JavaScript/css-basic.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="css_basic">css_basic</span>
+            <span class="post-date" title="2020-12-20 17:31:07">2020/12/20</span>
+        </a>
+        
+        <a  class="All Coding JavaScript "
+           href="/Coding/JavaScript/html-basic.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="html_basic">html_basic</span>
+            <span class="post-date" title="2020-12-20 14:05:39">2020/12/20</span>
+        </a>
+        
+        <a  class="All Response "
+           href="/Response/%E5%BA%94%E6%80%A5%E5%93%8D%E5%BA%94%E6%A8%A1%E6%9D%BF.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="应急响应模板">应急响应模板</span>
+            <span class="post-date" title="2020-12-20 13:57:33">2020/12/20</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Graphite.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Graphite">Graphite</span>
+            <span class="post-date" title="2020-12-17 17:05:35">2020/12/17</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/XenMobile.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="XenMobile">XenMobile</span>
+            <span class="post-date" title="2020-12-13 14:50:45">2020/12/13</span>
+        </a>
+        
+        <a  class="All Tools "
+           href="/Tools/SpaceVim.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="SpaceVim">SpaceVim</span>
+            <span class="post-date" title="2020-12-12 12:20:18">2020/12/12</span>
+        </a>
+        
+        <a  class="All Tools "
+           href="/Tools/VIM.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="VIM">VIM</span>
+            <span class="post-date" title="2020-12-11 19:10:54">2020/12/11</span>
+        </a>
+        
+        <a  class="All Coding "
+           href="/Coding/program-concept.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="program_concept">program_concept</span>
+            <span class="post-date" title="2020-12-11 16:40:10">2020/12/11</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Kibana.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Kibana">Kibana</span>
+            <span class="post-date" title="2020-12-10 11:32:07">2020/12/10</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Docker.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Docker">Docker</span>
+            <span class="post-date" title="2020-12-09 15:53:15">2020/12/09</span>
+        </a>
+        
+        <a  class="All Response "
+           href="/Response/%E5%BA%94%E6%80%A5%E5%93%8D%E5%BA%94%E5%9F%BA%E7%A1%80%E7%AF%87.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="应急响应基础篇">应急响应基础篇</span>
+            <span class="post-date" title="2020-12-08 19:00:06">2020/12/08</span>
+        </a>
+        
+        <a  class="All Tools "
+           href="/Tools/Nmap.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Nmap">Nmap</span>
+            <span class="post-date" title="2020-12-07 20:08:51">2020/12/07</span>
+        </a>
+        
+        <a  class="All Coding Audit "
+           href="/Coding/Audit/%E4%BB%A3%E7%A0%81%E5%AE%A1%E8%AE%A1%E6%A6%82%E5%BF%B5.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="代码审计概念">代码审计概念</span>
+            <span class="post-date" title="2020-12-07 19:51:19">2020/12/07</span>
+        </a>
+        
+        <a  class="All Kali PostExploit "
+           href="/Kali/PostExploit/%E5%86%85%E7%BD%91%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="内网信息收集">内网信息收集</span>
+            <span class="post-date" title="2020-12-07 18:52:47">2020/12/07</span>
+        </a>
+        
+        <a  class="All Tools "
+           href="/Tools/Tmux.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Tmux">Tmux</span>
+            <span class="post-date" title="2020-12-07 18:14:43">2020/12/07</span>
+        </a>
+        
+        <a  class="All Kali PostExploit "
+           href="/Kali/PostExploit/IPC-Basic-Operation.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="IPC Basic Operation">IPC Basic Operation</span>
+            <span class="post-date" title="2020-12-07 17:55:00">2020/12/07</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/ActiveMQ.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="ActiveMQ">ActiveMQ</span>
+            <span class="post-date" title="2020-12-07 17:26:21">2020/12/07</span>
+        </a>
+        
+        <a  class="All Coding Python "
+           href="/Coding/Python/pythonic-tools.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="pythonic_tools">pythonic_tools</span>
+            <span class="post-date" title="2020-12-06 19:12:43">2020/12/06</span>
+        </a>
+        
+        <a  class="All Evolution "
+           href="/Evolution/Built-Mr-Frame-with-Hexo-and-Git.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Built Mr.Frame with Hexo and Git">Built Mr.Frame with Hexo and Git</span>
+            <span class="post-date" title="2020-12-06 00:09:20">2020/12/06</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/InfluxDB.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="InfluxDB">InfluxDB</span>
+            <span class="post-date" title="2020-12-04 20:24:03">2020/12/04</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/MongoDB.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="MongoDB">MongoDB</span>
+            <span class="post-date" title="2020-12-04 20:23:56">2020/12/04</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Redis.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Redis">Redis</span>
+            <span class="post-date" title="2020-12-04 20:23:48">2020/12/04</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/MySQL.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="MySQL">MySQL</span>
+            <span class="post-date" title="2020-12-04 20:23:41">2020/12/04</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Memcache.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Memcache">Memcache</span>
+            <span class="post-date" title="2020-12-04 20:23:36">2020/12/04</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Hadoop.html"
+           data-tag="aa"
+           data-author="" >
+            <span class="post-title" title="Hadoop">Hadoop</span>
+            <span class="post-date" title="2020-12-04 20:23:31">2020/12/04</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Zookeeper.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Zookeeper">Zookeeper</span>
+            <span class="post-date" title="2020-12-04 20:23:24">2020/12/04</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Tomcat.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Tomcat">Tomcat</span>
+            <span class="post-date" title="2020-12-04 20:23:16">2020/12/04</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Supervisord.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Supervisord">Supervisord</span>
+            <span class="post-date" title="2020-12-04 20:23:08">2020/12/04</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/SaltStack.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="SaltStack">SaltStack</span>
+            <span class="post-date" title="2020-12-04 20:23:00">2020/12/04</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/NFS.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="NFS">NFS</span>
+            <span class="post-date" title="2020-12-04 20:22:50">2020/12/04</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Harbor.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Harbor">Harbor</span>
+            <span class="post-date" title="2020-12-04 20:22:36">2020/12/04</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/JDWP.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="JDWP">JDWP</span>
+            <span class="post-date" title="2020-12-04 20:22:28">2020/12/04</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Java-RMI.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Java RMI">Java RMI</span>
+            <span class="post-date" title="2020-12-04 20:22:17">2020/12/04</span>
+        </a>
+        
+        <a  class="All Kali "
+           href="/Kali/kali-inux%E7%B3%BB%E7%BB%9F%E4%BC%98%E5%8C%96.html"
+           data-tag="system"
+           data-author="" >
+            <span class="post-title" title="kali inux系统优化">kali inux系统优化</span>
+            <span class="post-date" title="2020-12-03 20:44:23">2020/12/03</span>
+        </a>
+        
+        <div id="no-item-tips">
+
+        </div>
+    </nav>
+    <div id="outline-list">
+    </div>
+</div>
+
+    </div>
+    <div class="hide-list">
+        <div class="semicircle" data-title="切换全屏 快捷键 s">
+            <div class="brackets first"><</div>
+            <div class="brackets">&gt;</div>
+        </div>
+    </div>
+</aside>
+<div id="post">
+    <div class="pjax">
+        <article id="post-应急响应模板" class="article article-type-post" itemscope itemprop="blogPost">
+    
+        <h1 class="article-title">应急响应模板</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        <span class="book">
+            <i class="iconfont icon-category"></i>
+            
+            
+            <a  data-rel="Response">Response</a>
+            
+        </span>
+        
+        
+    </div>
+    <div class="article-meta">
+        
+            Created At : <time class="date" title='Updated At: 2020-12-20 13:57:33'>2020-12-20 13:57</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        
+        <span id="busuanzi_container_page_pv">
+            Views 👀 :<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8B%E4%BB%B6%E9%A2%84%E5%88%A4"><span class="toc-text">事件预判</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%AD%E5%8B%92%E7%B4%A2%E7%97%85%E6%AF%92%E7%9A%84%E7%89%B9%E5%BE%81"><span class="toc-text">中勒索病毒的特征</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%AD%E6%8C%96%E7%9F%BF%E6%9C%A8%E9%A9%AC%E7%89%B9%E5%BE%81"><span class="toc-text">中挖矿木马特征</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%ADwebshell%E7%89%B9%E5%BE%81"><span class="toc-text">中webshell特征</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8B%E4%BB%B6%E6%8E%92%E6%9F%A5"><span class="toc-text">事件排查</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8B%92%E7%B4%A2%E7%97%85%E6%AF%92%E6%8E%92%E6%9F%A5%E6%80%9D%E8%B7%AF"><span class="toc-text">勒索病毒排查思路</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8C%96%E7%9F%BF%E6%9C%A8%E9%A9%AC%E6%8E%92%E6%9F%A5%E6%80%9D%E8%B7%AF"><span class="toc-text">挖矿木马排查思路</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Webshell%E6%8E%92%E6%9F%A5%E6%80%9D%E8%B7%AF"><span class="toc-text">Webshell排查思路</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8B%E4%BB%B6%E5%A4%84%E7%90%86"><span class="toc-text">事件处理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8B%92%E7%B4%A2%E7%97%85%E6%AF%92"><span class="toc-text">勒索病毒</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8C%96%E7%9F%BF%E6%9C%A8%E9%A9%AC"><span class="toc-text">挖矿木马</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Webshell"><span class="toc-text">Webshell</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8B%E4%BB%B6%E6%80%BB%E7%BB%93"><span class="toc-text">事件总结</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%90%8E%E7%BB%AD%E9%98%B2%E8%8C%83"><span class="toc-text">后续防范</span></a></li></ol>
+    
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+    .toc-level-3 i,
+    .toc-level-3 ol {
+        display: none !important;
+    }
+</style>
+</div>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>编写进度</p>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> </li>
+</ul>
+<p><div class='inner-toc'><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8B%E4%BB%B6%E9%A2%84%E5%88%A4"><span class="toc-text">事件预判</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%AD%E5%8B%92%E7%B4%A2%E7%97%85%E6%AF%92%E7%9A%84%E7%89%B9%E5%BE%81"><span class="toc-text">中勒索病毒的特征</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%AD%E6%8C%96%E7%9F%BF%E6%9C%A8%E9%A9%AC%E7%89%B9%E5%BE%81"><span class="toc-text">中挖矿木马特征</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%ADwebshell%E7%89%B9%E5%BE%81"><span class="toc-text">中webshell特征</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8B%E4%BB%B6%E6%8E%92%E6%9F%A5"><span class="toc-text">事件排查</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8B%92%E7%B4%A2%E7%97%85%E6%AF%92%E6%8E%92%E6%9F%A5%E6%80%9D%E8%B7%AF"><span class="toc-text">勒索病毒排查思路</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8C%96%E7%9F%BF%E6%9C%A8%E9%A9%AC%E6%8E%92%E6%9F%A5%E6%80%9D%E8%B7%AF"><span class="toc-text">挖矿木马排查思路</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Webshell%E6%8E%92%E6%9F%A5%E6%80%9D%E8%B7%AF"><span class="toc-text">Webshell排查思路</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8B%E4%BB%B6%E5%A4%84%E7%90%86"><span class="toc-text">事件处理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8B%92%E7%B4%A2%E7%97%85%E6%AF%92"><span class="toc-text">勒索病毒</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8C%96%E7%9F%BF%E6%9C%A8%E9%A9%AC"><span class="toc-text">挖矿木马</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Webshell"><span class="toc-text">Webshell</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8B%E4%BB%B6%E6%80%BB%E7%BB%93"><span class="toc-text">事件总结</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%90%8E%E7%BB%AD%E9%98%B2%E8%8C%83"><span class="toc-text">后续防范</span></a></li></ol></div></p>
+<p>应急响应分类:</p>
+<ul>
+<li><p><strong>勒索病毒(Rasomware)</strong> 是伴随数字货币星期的一种新型病毒木马，<br>机器一旦遭受勒索病毒攻击，将会使绝大多数文件被非对称加密算法和对称加密算法组合的方式进行篡改，并添加一个特殊后缀。<br>绝大大叔勒索病毒均无法通过技术手段解密，必须拿到对应的解密私钥才有可能无损还原加密文件。<br>常见的勒索病毒有WannaCry、GlobeImposter、Dharma等。</p>
+</li>
+<li><p><strong>挖矿(Mining)木马</strong> 是一种利用被入侵计算机的算力挖掘加密数字货币以谋取利益的木马， </p>
+</li>
+</ul>
+<p>它会采用多种安全对抗技术(如修改任务计划、修改防火墙配置、修改系统动态链接库等)手段驻留在服务器中。</p>
+<p>常见的挖矿木马： WannaMine、Mykings、Bulehero等。</p>
+<ul>
+<li><strong>网站后门(Webshell)</strong><br>Webshell是一种带有文件操作、命令执行等功能的网页脚本,常见脚本如下：</li>
+<li>JSP:<pre><code class="js">&lt;% Runtime.getRuntime().exe(request.getParameter(&quot;cmd&quot;)) %&gt;</code></pre>
+</li>
+<li>ASP:<pre><code class="js">&lt;% eval request(&quot;cmd&quot;) %&gt;</code></pre>
+</li>
+<li>PHP:<pre><code class="js">&lt;?php eval($_GET[“cmd&quot;]);?&gt;</code></pre>
+</li>
+</ul>
+<h2 id="事件预判"><a href="#事件预判" class="headerlink" title="事件预判"></a>事件预判</h2><p>事件背景<br>xxxx年x月x日，x公司内网服务器遭遇(挖矿木马、勒索病毒、网站被篡改)。<br>应急响应工程师在抵达现场后，对包含服务器在的x台机器进行系统排查和日志分析。</p>
+<ul>
+<li>发现服务器大量资源被占用，初步判断内网多台服务器均感染挖矿病毒。</li>
+<li>确定内网多台服务器均感染xx勒索病毒，该公司多区，多台服务器重要数据均被加密。  </li>
+<li>确定服务器已被植入webshell后门。</li>
+</ul>
+<h3 id="中勒索病毒的特征"><a href="#中勒索病毒的特征" class="headerlink" title="中勒索病毒的特征"></a>中勒索病毒的特征</h3><ul>
+<li>业务系统无法访问(50%)</li>
+<li>桌面新txt文件(60%)</li>
+<li>文件后缀被篡改(80%)</li>
+<li>勒索信展示(100%)</li>
+</ul>
+<h3 id="中挖矿木马特征"><a href="#中挖矿木马特征" class="headerlink" title="中挖矿木马特征"></a>中挖矿木马特征</h3><ul>
+<li>服务器CPU使用率飙升，系统卡顿，部分服务无法正常运行等现象</li>
+<li>根据安全监测设备的告警判断，挖矿木马会与矿池地址建立连接</li>
+</ul>
+<p>确定挖矿开始时间</p>
+<ol>
+<li><p>查看矿池地址<br>挖矿木马会与矿池建立连接，通过安全监测类设备查看第一次连接矿池地址的时间，可作为初始时间</p>
+</li>
+<li><p>查看计划任务创建时间<br>挖矿木马通常会创建计划任务，定期运行，可以查看计划任务的时间，但计划任务存在更新的情况，会刷新时间</p>
+</li>
+<li><p>挖矿木马文件创建时间<br>可以判断挖矿木马运行的初始时间，但也存在被计划任务定时运行而更新木马文件创建的时间。</p>
+</li>
+</ol>
+<h3 id="中webshell特征"><a href="#中webshell特征" class="headerlink" title="中webshell特征"></a>中webshell特征</h3><ul>
+<li>网页被篡改（植入暗链、异常字段等）</li>
+<li>安全设备告警</li>
+</ul>
+<h2 id="事件排查"><a href="#事件排查" class="headerlink" title="事件排查"></a>事件排查</h2><h3 id="勒索病毒排查思路"><a href="#勒索病毒排查思路" class="headerlink" title="勒索病毒排查思路"></a>勒索病毒排查思路</h3><p>重点关注网络连接、进程、任务计划等信息，针对windows还需关注启动项和注册表<br>若涉及溯源和证据固定，可提前对可疑对象做好备份，对涉及的可疑系统用户组可先进行禁用操作，防止出现可疑内容删除而无法溯源和提供证据的发生。</p>
+<h3 id="挖矿木马排查思路"><a href="#挖矿木马排查思路" class="headerlink" title="挖矿木马排查思路"></a>挖矿木马排查思路</h3><p>挖矿木马一般会创建恶意的进程连接矿池，利用系统内存、CPU、GPU资源进行挖矿，<br>同时会通过创建用户、服务、任务计划、修改注册表、启动项、防火墙策略等手段来实现病毒的持久化。<br>需重点关注<strong>用户、异常IP连接、进程、服务、任务计划</strong></p>
+<h3 id="Webshell排查思路"><a href="#Webshell排查思路" class="headerlink" title="Webshell排查思路"></a>Webshell排查思路</h3><p>如果网站被植入暗链或单击出现意外跳转到其他网站，应首先排查网站首页的相关的js文件。</p>
+<ol>
+<li><p>Webshell排查<br> 使用工具(D盾等)对网站目录进行扫描，定位webshell并清除。</p>
+</li>
+<li><p>Web日志分析<br> 对访问网站的Web日志进行分析，重点关注已知的入侵事件前后的日志记录。</p>
+</li>
+<li><p>系统排查<br> 防止获取webshell后进行后续提权等操作</p>
+</li>
+<li><p>网络流量排查</p>
+</li>
+</ol>
+<h2 id="事件处理"><a href="#事件处理" class="headerlink" title="事件处理"></a>事件处理</h2><h3 id="勒索病毒"><a href="#勒索病毒" class="headerlink" title="勒索病毒"></a>勒索病毒</h3><p>确认勒索病毒事件后，需及时对勒索病毒进行清理并进行相应的数据恢复工作，同时对服务器/主机进行安全加固，避免二次感染。</p>
+<ol>
+<li>隔离问题主机，断开网络连接</li>
+<li>在网络边界防洪墙上全局关闭3389端口，或3389端口只对特定IP地址开放</li>
+<li>开启Windows防火墙，尽量关闭135、139、445、3389等不用的高危端口</li>
+<li>每台机器设置唯一登陆密码，且应设置高强度的密码，位数在15位以上，包含大小写字母，数字，特殊字符。</li>
+<li>安装最新杀毒软件，对被感染机器进行安全扫描和病毒查杀</li>
+<li>对系统进行补丁更新，封堵病毒传播路径</li>
+<li>结合备份的网站日志对网站应用进行全面代码审计，找出攻击者利用的漏洞入口，进行封堵</li>
+<li>使用全流量设备对全网中存在的威胁进行分析，排查问题</li>
+</ol>
+<h3 id="挖矿木马"><a href="#挖矿木马" class="headerlink" title="挖矿木马"></a>挖矿木马</h3><ol>
+<li>封堵矿池地址</li>
+<li>结束异常进程</li>
+<li>清理计划任务、禁用可疑用户</li>
+<li>清除挖矿木马</li>
+<li>全盘杀毒、加固</li>
+</ol>
+<h3 id="Webshell"><a href="#Webshell" class="headerlink" title="Webshell"></a>Webshell</h3><h2 id="事件总结"><a href="#事件总结" class="headerlink" title="事件总结"></a>事件总结</h2><p>综上，对发现的线索进行梳理如下：</p>
+<ol>
+<li>xx</li>
+<li>xx</li>
+<li>xx</li>
+<li>xx</li>
+<li>xx<br>综上分析，<br>此次内网服务器所感染的病毒为XX挖矿蠕虫病毒。</li>
+</ol>
+<ul>
+<li>通过收集病毒感染的服务器日志信息，发现最早感染的主机为堡垒机应用服务器，感染时间为Y/m/d H:M:S.</li>
+<li>通过收集分析堡垒机应用服务器所有日志信息，排除人为投毒的可能性。</li>
+<li>通过阅读解密后的脚本内容发现，该脚本&lt;脚本运行的逻辑描述，通过分析该下载文件，可判断该文件为挖矿木马的母体。</li>
+</ul>
+<p>IP地址为x.x.x.x的主机最先远程登录到IP地址x.x.x.x的主机，先进行一系列扫描及内部RDP暴力破解等操作，并通过x.x.x.x的主机进行横向移动，寻找有价值的服务器进行人工投毒，植入类似病毒进行攻击。</p>
+<h2 id="后续防范"><a href="#后续防范" class="headerlink" title="后续防范"></a>后续防范</h2><ol>
+<li>服务器、终端防护<ol>
+<li>所有服务器、终端应强行实施复杂密码策略，杜绝弱口令</li>
+<li>杜绝使用通用密码管理所有机器</li>
+<li>安装杀毒软件、终端安全管理软件，并及时更新病毒库</li>
+<li>及时安装漏洞补丁</li>
+<li>服务器开启关键日志收集功能，为安全事件的溯源提供支持</li>
+</ol>
+</li>
+<li>网络防护与安全监测<ol>
+<li>对内网的安全域进行合理划分，各个安全域之间严格限制访问控制列表(ACL),限制横向移动的范围</li>
+<li>配置并开启相关关键系统、应用日志，对系统日志进行定期异地归档、备份。</li>
+<li>重要业务系统及核心数据库应设置独立的安全区域，并做好区域边界的安全防御工作，严格限制重要区域的访问权限，并关闭Telnet、SNMP等不必要、不安全的服务</li>
+<li>在网络内架设IDS/IPS设备，及时发现、阻断内网的横向移动行为</li>
+<li>在网络内架设全流量记录设备，以发现内网的横向移动行为，并为溯源提供支持</li>
+</ol>
+</li>
+<li>应用系统防护及数据备份<ol>
+<li>需要对应用系统进行安全渗透测试与加固，保障应用系统自身安全可控</li>
+<li>对业务系统及数据进行及时备份，并定期验证备份系统及备份数据的可用性</li>
+<li>建立安全灾备预案，一旦核心系统遭受攻击，需要确保备份业务系统可以立即启用，同时做好备份系统与主系统的安全隔离工作，避免主、备系统同时被攻击，影响业务连续性</li>
+</ol>
+</li>
+</ol>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">
+      
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jaytp@qq.com </span>
+    </div>
+</article>
+
+
+<p>
+    <a  class="dashang" onclick="dashangToggle()">💰</a>
+</p>
+
+
+
+
+
+
+    
+
+
+
+
+    </div>
+    <div class="copyright">
+        <p class="footer-entry">
+    ©2016-2020 Yelog
+</p>
+<p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
+
+    </div>
+    <div class="full-toc">
+        <button class="full" data-title="切换全屏 快捷键 s"><span class="min "></span></button>
+<a class="" id="rocket" ></a>
+
+    </div>
+</div>
+
+<div class="hide_box" onclick="dashangToggle()"></div>
+<div class="shang_box">
+    <a class="shang_close"  onclick="dashangToggle()">×</a>
+    <div class="shang_tit">
+        <p>Help us with donation</p>
+    </div>
+    <div class="shang_payimg">
+        <div class="pay_img">
+            <img src="/img/alipay.jpg" class="alipay" title="扫码支持">
+            <img src="/img/weixin.jpg" class="weixin" title="扫码支持">
+        </div>
+    </div>
+    <div class="shang_payselect">
+        <span><label><input type="radio" name="pay" checked value="alipay">alipay</label></span><span><label><input type="radio" name="pay" value="weixin">weixin</label></span>
+    </div>
+</div>
+
+
+</body>
+<script src="/js/jquery.pjax.js?v=1.1.0" ></script>
+
+<script src="/js/script.js?v=1.1.0" ></script>
+<script>
+    var img_resize = 'default';
+    function initArticle() {
+        /*渲染对应的表格样式*/
+        
+            $("#post .pjax table").addClass("green_title");
+        
+
+        /*渲染打赏样式*/
+        
+        $("input[name=pay]").on("click", function () {
+            if($("input[name=pay]:checked").val()=="weixin"){
+                $(".shang_box .shang_payimg .pay_img").addClass("weixin_img");
+            } else {
+                $(".shang_box .shang_payimg .pay_img").removeClass("weixin_img");
+            }
+        })
+        
+
+        /*高亮代码块行号*/
+        
+
+        /*访问数量*/
+        
+        $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
+        
+
+        /*代码高亮，行号对齐*/
+        $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
+
+        
+        
+    }
+
+    /*打赏页面隐藏与展示*/
+    
+    function dashangToggle() {
+        $(".shang_box").fadeToggle();
+        $(".hide_box").fadeToggle();
+    }
+    
+
+</script>
+
+<!--加入行号的高亮代码块样式-->
+
+<!--自定义样式设置-->
+<style>
+    
+    
+    .nav {
+        width: 542px;
+    }
+    .nav.fullscreen {
+        margin-left: -542px;
+    }
+    .nav-left {
+        width: 120px;
+    }
+    
+    
+    @media screen and (max-width: 1468px) {
+        .nav {
+            width: 492px;
+        }
+        .nav.fullscreen {
+            margin-left: -492px;
+        }
+        .nav-left {
+            width: 100px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1024px) {
+        .nav {
+            width: 492px;
+            margin-left: -492px
+        }
+        .nav.fullscreen {
+            margin-left: 0;
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .nav {
+            width: 100%;
+        }
+        .nav-left {
+            width: 100%;
+        }
+    }
+    
+    
+    .nav-right .title-list nav a .post-title, .nav-right .title-list #local-search-result a .post-title {
+        color: #383636;
+    }
+    
+    
+    .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
+        color: #5e5e5f;
+    }
+    
+    
+    .nav-right nav a.hover, #local-search-result a.hover{
+        background-color: #e2e0e0;
+    }
+    
+    
+
+    /*列表样式*/
+    
+
+    /* 背景图样式 */
+    
+    
+
+
+    /*引用块样式*/
+    
+
+    /*文章列表背景图*/
+    
+
+    
+</style>
+
+
+
+
+
+
+
+</html>

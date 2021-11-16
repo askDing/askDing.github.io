@@ -1,0 +1,2054 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>bash_basic | Mr.Frame</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="bash_basic | Mr.Frame">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="404 Not Found: 该页面无法显示很抱歉，您所访问的地址并不存在">
+<meta property="og:type" content="website">
+<meta property="og:title" content="404">
+<meta property="og:url" content="https://askding.github.io/404.html">
+<meta property="og:site_name" content="Mr.Frame">
+<meta property="og:description" content="404 Not Found: 该页面无法显示很抱歉，您所访问的地址并不存在">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-12-05T14:51:22.000Z">
+<meta property="article:modified_time" content="2020-12-05T14:51:22.000Z">
+<meta property="article:author" content="Mr.Frame">
+<meta property="article:tag" content="kali exploit vulnerability programing">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="icon" href="/img/avatar.jpg">
+
+<link href="/css/style.css?v=1.1.0" rel="stylesheet">
+
+<link href="/css/hl_theme/atom-light.css?v=1.1.0" rel="stylesheet">
+
+<link href="//cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css" rel="stylesheet">
+
+<script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="/js/titleTip.js?v=1.1.0" ></script>
+
+<script src="//cdn.jsdelivr.net/npm/highlightjs@9.16.2/highlight.pack.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<script src="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js"></script>
+
+
+
+<script src="//cdn.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.min.js" ></script>
+
+<script src="/js/iconfont.js?v=1.1.0" ></script>
+
+<meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="Mr.Frame" type="application/atom+xml">
+</head>
+<div style="display: none">
+  <input class="theme_disqus_on" value="false">
+  <input class="theme_preload_comment" value="">
+  <input class="theme_blog_path" value="">
+  <input id="theme_shortcut" value="true" />
+  <input id="theme_highlight_on" value="true" />
+  <input id="theme_code_copy" value="true" />
+</div>
+
+
+
+<body>
+<aside class="nav">
+    <div class="nav-left">
+        <a href="/"
+   class="avatar_target">
+    <img class="avatar"
+         src="/img/avatar.jpg"/>
+</a>
+<div class="author">
+    <span>Mr.Frame</span>
+</div>
+
+<div class="icon">
+    
+        
+            <a title="rss"
+               href="/atom.xml"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-rss"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="github"
+               href="https://github.com/yelog"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-github"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="facebook"
+               href="https://www.facebook.com/faker.tops"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-facebook"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+    
+        
+    
+        
+            <a title="instagram"
+               href="https://www.facebook.com/faker.tops"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-instagram"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="reddit"
+               href="https://www.reddit.com/user/yelog/"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-reddit"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="weibo"
+               href="http://weibo.com/u/2307534817"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-weibo"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="jianshu"
+               href="https://www.jianshu.com/u/ff56736de7cf"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-jianshu"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="zhihu"
+               href="https://www.zhihu.com/people/jaytp/activities"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-zhihu"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+    
+        
+            <a title="oschina"
+               href="https://my.oschina.net/yelog"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-oschina"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+    
+        
+            <a title="email"
+               href="mailto:jaytp@qq.com"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-email"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="qq"
+               href="http://wpa.qq.com/msgrd?v=3&uin=872336115&site=qq&menu=yes"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-qq"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="kugou"
+               href="https://www.kugou.com/"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-kugou"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="neteasemusic"
+               href="https://music.163.com/#/user/home?id=88151013"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-neteasemusic"></use>
+                    </svg>
+                
+            </a>
+        
+    
+</div>
+
+
+
+
+<ul>
+    <li>
+        <div class="all active" data-rel="All">All
+            
+                <small>(67)</small>
+            
+        </div>
+    </li>
+    
+        
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Coding">
+                        <i class="fold iconfont icon-right"></i>
+                        
+                        Coding
+                        <small>(10)</small>
+                        
+                    </div>
+                    
+                        <ul class="sub hide">
+                            
+                                <li>
+                                    <div data-rel="Coding<--->Audit">
+                                        
+                                        Audit
+                                        
+                                            <small>(1
+                                                )</small>
+                                        
+                                    </div>
+                                    
+                                </li>
+                            
+                                <li>
+                                    <div data-rel="Coding<--->JavaScript">
+                                        
+                                        JavaScript
+                                        
+                                            <small>(2
+                                                )</small>
+                                        
+                                    </div>
+                                    
+                                </li>
+                            
+                                <li>
+                                    <div data-rel="Coding<--->Python">
+                                        
+                                        Python
+                                        
+                                            <small>(1
+                                                )</small>
+                                        
+                                    </div>
+                                    
+                                </li>
+                            
+                        </ul>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Evolution">
+                        
+                        Evolution
+                        <small>(6)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Kali">
+                        <i class="fold iconfont icon-right"></i>
+                        
+                        Kali
+                        <small>(39)</small>
+                        
+                    </div>
+                    
+                        <ul class="sub hide">
+                            
+                                <li>
+                                    <div data-rel="Kali<--->Exploit">
+                                        
+                                        Exploit
+                                        
+                                            <small>(32
+                                                )</small>
+                                        
+                                    </div>
+                                    
+                                </li>
+                            
+                                <li>
+                                    <div data-rel="Kali<--->PostExploit">
+                                        
+                                        PostExploit
+                                        
+                                            <small>(5
+                                                )</small>
+                                        
+                                    </div>
+                                    
+                                </li>
+                            
+                        </ul>
+                    
+                </li>
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Response">
+                        
+                        Response
+                        <small>(2)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Tools">
+                        
+                        Tools
+                        <small>(10)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+</ul>
+<div class="left-bottom">
+    <div class="menus">
+        
+            
+            
+            
+    </div>
+    <div>
+        
+            <a class="about  hasFriend  site_url"
+               
+               href="/about">About</a>
+        
+        <a style="width: 50%"
+                
+                                           class="friends">Friends</a>
+        
+    </div>
+</div>
+<input type="hidden" id="yelog_site_posts_number" value="67">
+
+<div style="display: none">
+    <span id="busuanzi_value_site_uv"></span>
+    <span id="busuanzi_value_site_pv"></span>
+</div>
+
+    </div>
+    <div class="nav-right">
+        <div class="friends-area">
+    <div class="friends-title">
+        Links
+        <i class="iconfont icon-left"></i>
+    </div>
+    <div class="friends-content">
+        <ul>
+            
+            <li><a target="_blank" href="http://yelog.org/">叶落阁</a></li>
+            
+        </ul>
+    </div>
+</div>
+        <div class="title-list">
+    <div class="right-top">
+        <div id="default-panel">
+            <i class="iconfont icon-search" data-title="搜索 快捷键 i"></i>
+            <div class="right-title">All</div>
+            <i class="iconfont icon-file-tree" data-title="切换到大纲视图 快捷键 w"></i>
+        </div>
+        <div id="search-panel">
+            <i class="iconfont icon-left" data-title="返回"></i>
+            <input id="local-search-input" autocomplete="off"/>
+            <label class="border-line" for="input"></label>
+            <i class="iconfont icon-case-sensitive" data-title="大小写敏感"></i>
+            <i class="iconfont icon-tag" data-title="标签"></i>
+        </div>
+        <div id="outline-panel" style="display: none">
+            <div class="right-title">大纲</div>
+            <i class="iconfont icon-list" data-title="切换到文章列表"></i>
+        </div>
+    </div>
+
+    <div class="tags-list">
+    <input id="tag-search" />
+    <div class="tag-wrapper">
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>aa</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>system</a>
+            </li>
+        
+    </div>
+
+</div>
+
+    
+    <nav id="title-list-nav">
+        
+        <a  class="All Kali PostExploit "
+           href="/Kali/PostExploit/%E5%A6%82%E4%BD%95%E5%9C%A8mac%E4%B8%8A%E6%8A%93%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%9A%84%E6%B5%81%E9%87%8F.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="如何在mac上抓小程序的流量">如何在mac上抓小程序的流量</span>
+            <span class="post-date" title="2021-11-15 20:57:33">2021/11/15</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Spring.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Spring">Spring</span>
+            <span class="post-date" title="2021-11-15 20:55:56">2021/11/15</span>
+        </a>
+        
+        <a  class="All Kali PostExploit "
+           href="/Kali/PostExploit/%E5%85%8D%E6%9D%80%E6%80%9D%E8%B7%AF.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="免杀思路">免杀思路</span>
+            <span class="post-date" title="2021-09-25 14:06:46">2021/09/25</span>
+        </a>
+        
+        <a  class="All Kali PostExploit "
+           href="/Kali/PostExploit/%E7%BA%A2%E8%93%9D%E5%AF%B9%E6%8A%97.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="红蓝对抗">红蓝对抗</span>
+            <span class="post-date" title="2021-09-23 10:37:34">2021/09/23</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Nsfocus2docx-md.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Nsfocus2docx.md">Nsfocus2docx.md</span>
+            <span class="post-date" title="2021-05-23 00:05:22">2021/05/23</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Landray-OA.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Landray-OA 蓝凌OA custom.jsp页面任意文件读取">Landray-OA 蓝凌OA custom.jsp页面任意文件读取</span>
+            <span class="post-date" title="2021-05-13 19:40:49">2021/05/13</span>
+        </a>
+        
+        <a  class="All Evolution "
+           href="/Evolution/org-syntax.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="org-syntax">org-syntax</span>
+            <span class="post-date" title="2021-05-08 16:59:18">2021/05/08</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Gopher-md.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Gopher">Gopher</span>
+            <span class="post-date" title="2021-05-06 11:04:32">2021/05/06</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/SSRF.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="SSRF">SSRF</span>
+            <span class="post-date" title="2021-04-19 15:03:37">2021/04/19</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Chrome-0day-RCE-no-sandbox.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Chrome_0day_RCE_no_sandbox">Chrome_0day_RCE_no_sandbox</span>
+            <span class="post-date" title="2021-04-15 15:20:17">2021/04/15</span>
+        </a>
+        
+        <a  class="All Tools "
+           href="/Tools/Telegram.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Telegram">Telegram</span>
+            <span class="post-date" title="2021-04-09 12:42:22">2021/04/09</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Nginx.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Nginx">Nginx</span>
+            <span class="post-date" title="2021-04-07 20:48:12">2021/04/07</span>
+        </a>
+        
+        <a  class="All Evolution "
+           href="/Evolution/win10%E7%B3%BB%E7%BB%9F%E4%BC%98%E5%8C%96.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="win10系统优化">win10系统优化</span>
+            <span class="post-date" title="2021-03-30 13:09:36">2021/03/30</span>
+        </a>
+        
+        <a  class="All Tools "
+           href="/Tools/xray-crawlergo.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="xray_crawlergo">xray_crawlergo</span>
+            <span class="post-date" title="2021-03-25 11:58:41">2021/03/25</span>
+        </a>
+        
+        <a  class="All Coding "
+           href="/Coding/java-basic.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="java-basic">java-basic</span>
+            <span class="post-date" title="2021-03-21 09:04:43">2021/03/21</span>
+        </a>
+        
+        <a  class="All Coding "
+           href="/Coding/getHttpProxy.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="getHttpProxy">getHttpProxy</span>
+            <span class="post-date" title="2021-03-17 17:12:28">2021/03/17</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Ruijie-RG-UAC.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Ruijie_RG_UAC">Ruijie_RG_UAC</span>
+            <span class="post-date" title="2021-03-08 15:36:33">2021/03/08</span>
+        </a>
+        
+        <a  class="All Coding "
+           href="/Coding/code-of-principle.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="code_of_principle">code_of_principle</span>
+            <span class="post-date" title="2021-03-07 15:23:04">2021/03/07</span>
+        </a>
+        
+        <a  class="All Kali "
+           href="/Kali/kali-nethunter_and_Andrax.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="kali_nethunter and Andrax">kali_nethunter and Andrax</span>
+            <span class="post-date" title="2021-03-02 09:01:43">2021/03/02</span>
+        </a>
+        
+        <a  class="All Coding "
+           href="/Coding/python-basic.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="python-basic">python-basic</span>
+            <span class="post-date" title="2021-01-30 11:48:44">2021/01/30</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/fastjson-rce.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="fastjson_rce">fastjson_rce</span>
+            <span class="post-date" title="2021-01-29 16:09:51">2021/01/29</span>
+        </a>
+        
+        <a  class="All Evolution "
+           href="/Evolution/Markdown-of-Emacs.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Markdown_of_Emacs">Markdown_of_Emacs</span>
+            <span class="post-date" title="2021-01-14 11:22:07">2021/01/14</span>
+        </a>
+        
+        <a  class="All Tools "
+           href="/Tools/emacs.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="emacs">emacs</span>
+            <span class="post-date" title="2021-01-12 09:46:03">2021/01/12</span>
+        </a>
+        
+        <a  class="All Tools "
+           href="/Tools/awk-sed-grep-find.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="awk-sed-grep-find">awk-sed-grep-find</span>
+            <span class="post-date" title="2021-01-10 10:20:21">2021/01/10</span>
+        </a>
+        
+        <a  class="All Tools "
+           href="/Tools/TAR.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="TAR">TAR</span>
+            <span class="post-date" title="2021-01-09 21:00:07">2021/01/09</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Shellshock.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Shellshock">Shellshock</span>
+            <span class="post-date" title="2021-01-08 15:54:41">2021/01/08</span>
+        </a>
+        
+        <a  class="All Tools "
+           href="/Tools/curl-wget.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="curl-wget">curl-wget</span>
+            <span class="post-date" title="2021-01-06 18:03:15">2021/01/06</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Elasticsearch.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Elasticsearch">Elasticsearch</span>
+            <span class="post-date" title="2021-01-06 17:50:11">2021/01/06</span>
+        </a>
+        
+        <a  class="All Coding "
+           href="/Coding/bash-basic.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="bash_basic">bash_basic</span>
+            <span class="post-date" title="2021-01-02 18:00:59">2021/01/02</span>
+        </a>
+        
+        <a  class="All Evolution "
+           href="/Evolution/sleep.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="sleep">sleep</span>
+            <span class="post-date" title="2020-12-28 15:50:03">2020/12/28</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/SSLTLS%E7%9B%B8%E5%85%B3%E6%BC%8F%E6%B4%9E.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="SSLTLS相关漏洞">SSLTLS相关漏洞</span>
+            <span class="post-date" title="2020-12-25 10:41:48">2020/12/25</span>
+        </a>
+        
+        <a  class="All Evolution "
+           href="/Evolution/meta_learning.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="meta_learning">meta_learning</span>
+            <span class="post-date" title="2020-12-22 09:26:14">2020/12/22</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/PostgreSQL.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="PostgreSQL">PostgreSQL</span>
+            <span class="post-date" title="2020-12-21 16:02:17">2020/12/21</span>
+        </a>
+        
+        <a  class="All Coding JavaScript "
+           href="/Coding/JavaScript/css-basic.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="css_basic">css_basic</span>
+            <span class="post-date" title="2020-12-20 17:31:07">2020/12/20</span>
+        </a>
+        
+        <a  class="All Coding JavaScript "
+           href="/Coding/JavaScript/html-basic.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="html_basic">html_basic</span>
+            <span class="post-date" title="2020-12-20 14:05:39">2020/12/20</span>
+        </a>
+        
+        <a  class="All Response "
+           href="/Response/%E5%BA%94%E6%80%A5%E5%93%8D%E5%BA%94%E6%A8%A1%E6%9D%BF.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="应急响应模板">应急响应模板</span>
+            <span class="post-date" title="2020-12-20 13:57:33">2020/12/20</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Graphite.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Graphite">Graphite</span>
+            <span class="post-date" title="2020-12-17 17:05:35">2020/12/17</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/XenMobile.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="XenMobile">XenMobile</span>
+            <span class="post-date" title="2020-12-13 14:50:45">2020/12/13</span>
+        </a>
+        
+        <a  class="All Tools "
+           href="/Tools/SpaceVim.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="SpaceVim">SpaceVim</span>
+            <span class="post-date" title="2020-12-12 12:20:18">2020/12/12</span>
+        </a>
+        
+        <a  class="All Tools "
+           href="/Tools/VIM.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="VIM">VIM</span>
+            <span class="post-date" title="2020-12-11 19:10:54">2020/12/11</span>
+        </a>
+        
+        <a  class="All Coding "
+           href="/Coding/program-concept.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="program_concept">program_concept</span>
+            <span class="post-date" title="2020-12-11 16:40:10">2020/12/11</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Kibana.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Kibana">Kibana</span>
+            <span class="post-date" title="2020-12-10 11:32:07">2020/12/10</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Docker.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Docker">Docker</span>
+            <span class="post-date" title="2020-12-09 15:53:15">2020/12/09</span>
+        </a>
+        
+        <a  class="All Response "
+           href="/Response/%E5%BA%94%E6%80%A5%E5%93%8D%E5%BA%94%E5%9F%BA%E7%A1%80%E7%AF%87.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="应急响应基础篇">应急响应基础篇</span>
+            <span class="post-date" title="2020-12-08 19:00:06">2020/12/08</span>
+        </a>
+        
+        <a  class="All Tools "
+           href="/Tools/Nmap.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Nmap">Nmap</span>
+            <span class="post-date" title="2020-12-07 20:08:51">2020/12/07</span>
+        </a>
+        
+        <a  class="All Coding Audit "
+           href="/Coding/Audit/%E4%BB%A3%E7%A0%81%E5%AE%A1%E8%AE%A1%E6%A6%82%E5%BF%B5.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="代码审计概念">代码审计概念</span>
+            <span class="post-date" title="2020-12-07 19:51:19">2020/12/07</span>
+        </a>
+        
+        <a  class="All Kali PostExploit "
+           href="/Kali/PostExploit/%E5%86%85%E7%BD%91%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="内网信息收集">内网信息收集</span>
+            <span class="post-date" title="2020-12-07 18:52:47">2020/12/07</span>
+        </a>
+        
+        <a  class="All Tools "
+           href="/Tools/Tmux.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Tmux">Tmux</span>
+            <span class="post-date" title="2020-12-07 18:14:43">2020/12/07</span>
+        </a>
+        
+        <a  class="All Kali PostExploit "
+           href="/Kali/PostExploit/IPC-Basic-Operation.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="IPC Basic Operation">IPC Basic Operation</span>
+            <span class="post-date" title="2020-12-07 17:55:00">2020/12/07</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/ActiveMQ.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="ActiveMQ">ActiveMQ</span>
+            <span class="post-date" title="2020-12-07 17:26:21">2020/12/07</span>
+        </a>
+        
+        <a  class="All Coding Python "
+           href="/Coding/Python/pythonic-tools.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="pythonic_tools">pythonic_tools</span>
+            <span class="post-date" title="2020-12-06 19:12:43">2020/12/06</span>
+        </a>
+        
+        <a  class="All Evolution "
+           href="/Evolution/Built-Mr-Frame-with-Hexo-and-Git.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Built Mr.Frame with Hexo and Git">Built Mr.Frame with Hexo and Git</span>
+            <span class="post-date" title="2020-12-06 00:09:20">2020/12/06</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/InfluxDB.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="InfluxDB">InfluxDB</span>
+            <span class="post-date" title="2020-12-04 20:24:03">2020/12/04</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/MongoDB.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="MongoDB">MongoDB</span>
+            <span class="post-date" title="2020-12-04 20:23:56">2020/12/04</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Redis.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Redis">Redis</span>
+            <span class="post-date" title="2020-12-04 20:23:48">2020/12/04</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/MySQL.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="MySQL">MySQL</span>
+            <span class="post-date" title="2020-12-04 20:23:41">2020/12/04</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Memcache.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Memcache">Memcache</span>
+            <span class="post-date" title="2020-12-04 20:23:36">2020/12/04</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Hadoop.html"
+           data-tag="aa"
+           data-author="" >
+            <span class="post-title" title="Hadoop">Hadoop</span>
+            <span class="post-date" title="2020-12-04 20:23:31">2020/12/04</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Zookeeper.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Zookeeper">Zookeeper</span>
+            <span class="post-date" title="2020-12-04 20:23:24">2020/12/04</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Tomcat.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Tomcat">Tomcat</span>
+            <span class="post-date" title="2020-12-04 20:23:16">2020/12/04</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Supervisord.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Supervisord">Supervisord</span>
+            <span class="post-date" title="2020-12-04 20:23:08">2020/12/04</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/SaltStack.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="SaltStack">SaltStack</span>
+            <span class="post-date" title="2020-12-04 20:23:00">2020/12/04</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/NFS.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="NFS">NFS</span>
+            <span class="post-date" title="2020-12-04 20:22:50">2020/12/04</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Harbor.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Harbor">Harbor</span>
+            <span class="post-date" title="2020-12-04 20:22:36">2020/12/04</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/JDWP.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="JDWP">JDWP</span>
+            <span class="post-date" title="2020-12-04 20:22:28">2020/12/04</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Java-RMI.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Java RMI">Java RMI</span>
+            <span class="post-date" title="2020-12-04 20:22:17">2020/12/04</span>
+        </a>
+        
+        <a  class="All Kali "
+           href="/Kali/kali-inux%E7%B3%BB%E7%BB%9F%E4%BC%98%E5%8C%96.html"
+           data-tag="system"
+           data-author="" >
+            <span class="post-title" title="kali inux系统优化">kali inux系统优化</span>
+            <span class="post-date" title="2020-12-03 20:44:23">2020/12/03</span>
+        </a>
+        
+        <div id="no-item-tips">
+
+        </div>
+    </nav>
+    <div id="outline-list">
+    </div>
+</div>
+
+    </div>
+    <div class="hide-list">
+        <div class="semicircle" data-title="切换全屏 快捷键 s">
+            <div class="brackets first"><</div>
+            <div class="brackets">&gt;</div>
+        </div>
+    </div>
+</aside>
+<div id="post">
+    <div class="pjax">
+        <article id="post-bash-basic" class="article article-type-post" itemscope itemprop="blogPost">
+    
+        <h1 class="article-title">bash_basic</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        <span class="book">
+            <i class="iconfont icon-category"></i>
+            
+            
+            <a  data-rel="Coding">Coding</a>
+            
+        </span>
+        
+        
+    </div>
+    <div class="article-meta">
+        
+            Created At : <time class="date" title='Updated At: 2021-01-02 18:00:59'>2021-01-02 18:00</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        
+        <span id="busuanzi_container_page_pv">
+            Views 👀 :<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%BC%96%E7%A8%8B%E5%9F%BA%E6%9C%AC%E5%85%83%E7%B4%A0"><span class="toc-text">编程基本元素</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#I-O"><span class="toc-text">I&#x2F;O</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BE%93%E5%85%A5read%E5%91%BD%E4%BB%A4"><span class="toc-text">输入read命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BE%93%E5%87%BA"><span class="toc-text">输出</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#echo%E5%91%BD%E4%BB%A4"><span class="toc-text">echo命令</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#printf"><span class="toc-text">printf</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%9A%E8%A1%8C%E8%BE%93%E5%87%BA"><span class="toc-text">多行输出</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%98%E9%87%8F"><span class="toc-text">变量</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%98%E9%87%8F%E6%93%8D%E4%BD%9C"><span class="toc-text">变量操作</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%98%E9%87%8F%E9%97%B4%E6%8E%A5%E5%BC%95%E7%94%A8eval"><span class="toc-text">变量间接引用eval</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#shell%E5%8F%82%E6%95%B0%E6%89%A9%E5%B1%95"><span class="toc-text">shell参数扩展</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%93%8D%E4%BD%9C"><span class="toc-text">字符串操作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E7%BB%84%E6%93%8D%E4%BD%9C"><span class="toc-text">数组操作</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E6%95%B0%E7%BB%84"><span class="toc-text">创建数组</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AF%BB%E5%8F%96%E6%95%B0%E7%BB%84"><span class="toc-text">读取数组</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E7%BB%84%E9%95%BF%E5%BA%A6"><span class="toc-text">数组长度</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%89%93%E5%8D%B0%E6%95%B0%E7%BB%84%E5%BA%8F%E5%8F%B7"><span class="toc-text">打印数组序号</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%89%93%E5%8D%B0%E6%95%B0%E7%BB%84%E6%88%90%E5%91%98-%E6%95%B0%E7%BB%84%E5%88%87%E7%89%87"><span class="toc-text">打印数组成员(数组切片)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%BD%E5%8A%A0%E6%95%B0%E7%BB%84%E6%88%90%E5%91%98"><span class="toc-text">追加数组成员</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%A0%E9%99%A4%E6%95%B0%E7%BB%84%E5%8F%8A%E6%88%90%E5%91%98"><span class="toc-text">删除数组及成员</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#shell%E5%86%85%E9%83%A8%E5%8F%98%E9%87%8F"><span class="toc-text">shell内部变量</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%86%85%E9%83%A8%E7%89%B9%E6%AE%8A%E5%8F%82%E6%95%B0"><span class="toc-text">内部特殊参数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%93%8D%E4%BD%9C%E7%AC%A6"><span class="toc-text">操作符</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B4%E6%95%B0%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-text">整数运算符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B4%E6%95%B0%E6%AF%94%E8%BE%83%E6%93%8D%E4%BD%9C%E7%AC%A6%E5%8F%B7"><span class="toc-text">整数比较操作符号</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%B5%8B%E8%AF%95%E6%93%8D%E4%BD%9C%E7%AC%A6%E5%8F%B7"><span class="toc-text">字符串测试操作符号</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-text">逻辑运算符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E6%B5%8B%E8%AF%95%E6%93%8D%E4%BD%9C%E7%AC%A6%E5%8F%B7"><span class="toc-text">文件测试操作符号</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6%E8%AF%AD%E5%8F%A5"><span class="toc-text">流程控制语句</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A1%BA%E5%BA%8F%E8%AF%AD%E5%8F%A5"><span class="toc-text">顺序语句</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%86%E6%94%AF%E8%AF%AD%E5%8F%A5"><span class="toc-text">分支语句</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#if%E5%9E%8B"><span class="toc-text">if型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#case%E5%9E%8B"><span class="toc-text">case型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#select%E5%9E%8B"><span class="toc-text">select型</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BE%AA%E7%8E%AF%E8%AF%AD%E5%8F%A5"><span class="toc-text">循环语句</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#for%E5%BE%AA%E7%8E%AF"><span class="toc-text">for循环</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#while%E5%BE%AA%E7%8E%AF"><span class="toc-text">while循环</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#until%E5%BE%AA%E7%8E%AF"><span class="toc-text">until循环</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%87%BD%E6%95%B0"><span class="toc-text">函数</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%B0%83%E8%AF%95"><span class="toc-text">调试</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%89%93%E5%8D%B0%E5%8F%98%E9%87%8F"><span class="toc-text">打印变量</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#sh%E5%91%BD%E4%BB%A4%E5%8F%82%E6%95%B0"><span class="toc-text">sh命令参数</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Tips"><span class="toc-text">Tips</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AD%90shell%E8%BF%90%E8%A1%8C"><span class="toc-text">子shell运行</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BC%82%E6%AD%A5%E6%89%A7%E8%A1%8C-wait-PID"><span class="toc-text">异步执行 wait [PID]</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%91%BD%E4%BB%A4%E7%BB%84"><span class="toc-text">命令组</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BD%AC%E4%B9%89%E7%AC%A6"><span class="toc-text">转义符\</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BC%95%E5%8F%B7%E2%80%99%E2%80%99-%E2%80%9C%E2%80%9D"><span class="toc-text">引号’’ “”</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%82%E6%95%B0%E5%B7%A6%E7%A7%BBshift-n"><span class="toc-text">参数左移shift [n] </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%95%E5%AD%97%E7%AC%A6%E5%8F%82%E6%95%B0%E5%A4%84%E7%90%86getopts"><span class="toc-text">单字符参数处理getopts</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%9A%E5%AD%97%E7%AC%A6%E5%8F%82%E6%95%B0%E5%A4%84%E7%90%86getopt"><span class="toc-text">多字符参数处理getopt</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#shell%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F"><span class="toc-text">shell环境变量</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%87%8D%E5%AE%9A%E5%90%91"><span class="toc-text">重定向</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%91%BD%E4%BB%A4%E6%9B%BF%E6%8D%A2"><span class="toc-text">命令替换</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%84%9A%E6%9C%AC%E6%89%A7%E8%A1%8C%E7%BB%93%E6%9D%9F%E6%B8%85%E7%90%86%E7%BC%93%E5%AD%98%E6%96%87%E4%BB%B6"><span class="toc-text">脚本执行结束清理缓存文件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A0%B9%E6%8D%AE%E6%89%A9%E5%B1%95%E5%90%8D%E5%88%87%E5%88%86%E6%96%87%E4%BB%B6%E5%90%8D"><span class="toc-text">根据扩展名切分文件名</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#set%E5%91%BD%E4%BB%A4%E5%88%87%E5%88%86%E5%AD%97%E6%AE%B5"><span class="toc-text">set命令切分字段</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#GUI%E7%95%8C%E9%9D%A2Dialog"><span class="toc-text">GUI界面Dialog</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%88%E7%AB%AF%E9%A2%9C%E8%89%B2"><span class="toc-text">终端颜色</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#tput%E6%98%BE%E7%A4%BA%E9%A2%9C%E8%89%B2"><span class="toc-text">tput显示颜色</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#bash%E6%B3%A8%E9%87%8A"><span class="toc-text">bash注释</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8D%95%E8%A1%8C%E6%B3%A8%E9%87%8A"><span class="toc-text">单行注释 #</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%9A%E8%A1%8C%E6%B3%A8%E9%87%8A"><span class="toc-text">多行注释</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%90%8E%E5%8F%B0%E8%BF%90%E8%A1%8C"><span class="toc-text">后台运行</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%87%E6%8D%A2%E7%9B%AE%E5%BD%95cd"><span class="toc-text">切换目录cd -</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BC%80%E5%8F%91%E8%A7%84%E8%8C%83"><span class="toc-text">开发规范</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%86%E5%89%B2-%E5%90%88%E5%B9%B6%E6%96%87%E4%BB%B6"><span class="toc-text">分割&#x2F;合并文件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#cat%E7%9A%84%E7%89%B9%E6%AE%8A%E7%94%A8%E6%B3%95"><span class="toc-text">cat的特殊用法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%88%E7%AB%AF%E6%88%AA%E5%9B%BE"><span class="toc-text">终端截图</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#script%E5%BD%95%E5%88%B6%E7%BB%88%E7%AB%AF%E4%BC%9A%E8%AF%9D"><span class="toc-text">script录制终端会话</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#termtosvg%E7%94%9F%E6%88%90svg%E5%8A%A8%E7%94%BB"><span class="toc-text">termtosvg生成svg动画</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#find%E5%91%BD%E4%BB%A4%E6%8A%80%E5%B7%A7"><span class="toc-text">find命令技巧</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#xargs%E5%91%BD%E4%BB%A4%E6%8A%80%E5%B7%A7"><span class="toc-text">xargs命令技巧</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B9%B6%E5%8F%91%E6%89%A7%E8%A1%8C-amp-amp"><span class="toc-text">并发执行()&amp;&#x2F;{}&amp;</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%A9%E7%94%A8%E7%AE%A1%E9%81%93%E5%92%8C%E6%96%87%E4%BB%B6%E6%8F%8F%E8%BF%B0%E7%AC%A6FD-id%E5%AE%9E%E7%8E%B0%E5%B9%B6%E5%8F%91%E6%95%B0%E6%8E%A7%E5%88%B6"><span class="toc-text">利用管道和文件描述符FD_id实现并发数控制</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#mkfifo%E4%BB%8B%E7%BB%8D"><span class="toc-text">mkfifo介绍</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#exec%E5%91%BD%E4%BB%A4%E3%80%81%E6%93%8D%E4%BD%9C%E6%96%87%E4%BB%B6%E6%8F%8F%E8%BF%B0%E7%AC%A6"><span class="toc-text">exec命令、操作文件描述符</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%9B%91%E8%A7%86%E5%91%BD%E4%BB%A4%E8%BE%93%E5%87%BA"><span class="toc-text">监视命令输出</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%89%B9%E6%AE%8A%E6%96%87%E4%BB%B6%E6%9D%83%E9%99%90-S-t-T"><span class="toc-text">特殊文件权限  S t&#x2F;T</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%8F%AF%E8%A7%86%E5%8C%96%E5%B7%A5%E5%85%B7"><span class="toc-text">正则表达式可视化工具</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AF%B9%E5%88%AB%E5%90%8D%E8%BF%9B%E8%A1%8C%E8%BD%AC%E4%B9%89"><span class="toc-text">对别名进行转义</span></a></li></ol></li></ol>
+    
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+    .toc-level-3 i,
+    .toc-level-3 ol {
+        display: none !important;
+    }
+</style>
+</div>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>编写进度</p>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> </li>
+</ul>
+<h1 id="编程基本元素"><a href="#编程基本元素" class="headerlink" title="编程基本元素"></a>编程基本元素</h1><h2 id="I-O"><a href="#I-O" class="headerlink" title="I/O"></a>I/O</h2><pre><code class="zsh">VAR=&quot;string&quot; # 声明变量之间不能带有空格
+read MYVAR  # input
+CMDOUT=$(pwd)  # 将pwd命令的输出保存到CMDOUT中
+
+echo &quot;$MYVAR&quot;  # output
+printf &quot;$VAR&quot;  # output</code></pre>
+<h3 id="输入read命令"><a href="#输入read命令" class="headerlink" title="输入read命令"></a>输入<code>read命令</code></h3><ul>
+<li>a 后跟一个变量，该变量会被认为是个数组，然后给其赋值，默认是以空格为分割符。</li>
+<li>d 后面跟一个标志符，其实只有其后的第一个字符有用，作为结束的标志。</li>
+<li>p 后面跟提示信息，即在输入前打印提示信息。</li>
+<li>e 在输入的时候可以使用命令补全功能。</li>
+<li>n 后跟一个数字，定义输入文本的长度，很实用。</li>
+<li>r 屏蔽\，如果没有该选项，则\作为一个转义字符，有的话 \就是个正常的字符了。</li>
+<li>s 安静模式，在输入字符时不再屏幕上显示，例如login时输入密码。</li>
+<li>t 后面跟秒数，定义输入字符的等待时间。</li>
+<li>u 后面跟fd，从文件描述符中读入，该文件描述符可以是exec新开启的。 )</li>
+</ul>
+<h3 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h3><h4 id="echo命令"><a href="#echo命令" class="headerlink" title="echo命令"></a>echo命令</h4><p> echo显示颜色<br><img src="http://c.biancheng.net/uploads/allimg/180926/3-1P926164539348.jpg" alt="echo显示颜色
+"></p>
+<pre><code class="zsh">echo [-ne E] [String]
+
+-E : (默认)转义,不解释参数中的转义符
+-e : 不转义,解释参数中的转义符
+
+-n : 打印内容不换行</code></pre>
+<ul>
+<li><code>String</code> 中的转义符(由echo命令解释)<ul>
+<li><code>\a</code> : 告警</li>
+<li><code>\b</code> : 退格</li>
+<li><code>\c</code> : 忽略输出中最后的换行符</li>
+<li><code>\f</code> : 换页</li>
+<li><code>\n</code> : 回车换行(Newline)</li>
+<li><code>\r</code> : 回车</li>
+<li><code>\t</code> : 水平制表符</li>
+<li><code>\v</code> : 垂直制表符</li>
+<li><code>\\</code> : 反斜线</li>
+</ul>
+</li>
+</ul>
+<h4 id="printf"><a href="#printf" class="headerlink" title="printf"></a><code>printf</code></h4><pre><code class="zsh">printf &quot;&lt;foramtString&gt;&quot; arg1 arg2 ...</code></pre>
+<ul>
+<li><p><code>formatString</code> : 待输出的字符串</p>
+</li>
+<li><p><code>格式规范 %[flags][width][.precision]&lt;type&gt;</code></p>
+<ol>
+<li><code>flags</code> : <code>+ - # &lt;space&gt;</code></li>
+</ol>
+<ul>
+<li><code>+</code> : 在整数前加+/-</li>
+<li><code>-</code> : 使用<code>width</code>时,表示输出数值左对齐</li>
+<li><code>#</code> : 输出(八进制标识符)<code>0</code> 和(十六进制标识符)<code>0x</code>或<code>0X</code></li>
+<li><code>&lt;space&gt;</code> : 空格,起对齐作用在打印正数前面加上一个空格,打印负数前面加上<code>-</code>。</li>
+</ul>
+<ol start="2">
+<li><p><code>width</code> 指定输出参数时最小字段宽度<num>, 对应的参数默认采用右对齐的形式 </p>
+</li>
+<li><p><code>.precision</code> : 表示整数的最小位数,字符串的最大字符数,<code>*</code>代表使用下一个参数作为精度</p>
+</li>
+<li><p><code>type</code> </p>
+</li>
+</ol>
+<ul>
+<li><p><code>%d</code> : 整数</p>
+</li>
+<li><p><code>%u</code> : 无符号整数</p>
+</li>
+<li><p><code>%o</code> : 八进制整数</p>
+</li>
+<li><p><code>%x</code> : 十六进制整数(a-f)</p>
+</li>
+<li><p><code>%X</code> : 十六进制整数(A~F)</p>
+</li>
+<li><p><code>%c</code> : 单个字符</p>
+</li>
+<li><p><code>%s</code> : 字符串字面量</p>
+</li>
+<li><p><code>%b</code> : 包含转义字符的字符串</p>
+</li>
+<li><p><code>%%</code> : 百分号</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="多行输出"><a href="#多行输出" class="headerlink" title="多行输出"></a>多行输出</h3><ul>
+<li>不转义输出<pre><code class="zsh">cat &lt;&lt;EOF     # date命令会执行
+Line1
+`date`
+Line3
+EOF</code></pre>
+</li>
+</ul>
+<ul>
+<li>转义输出<pre><code class="zsh">cat &lt;&lt;\EOF    # date命令原样输出
+Line1
+`date`
+Line3
+EOF</code></pre>
+</li>
+</ul>
+<h2 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h2><p>变量名(字母、数字、下划线)由[a-z]、[A-Z]、<code>_</code>、[0-9]组合，且开头不能是[0-9]</p>
+<blockquote>
+<p>变量本质上是存储数据的一个或多个计算机内存地址</p>
+</blockquote>
+<h3 id="变量操作"><a href="#变量操作" class="headerlink" title="变量操作"></a>变量操作</h3><pre><code class="zsh">var=value   # 等号两边不能有空格 
+var=`command argument` # 变量名
+
+var=1  # 设置变量
+unset var  # 清除变量
+var=2
+readonly var #设置var为只读变量</code></pre>
+<h3 id="变量间接引用eval"><a href="#变量间接引用eval" class="headerlink" title="变量间接引用eval"></a>变量间接引用<code>eval</code></h3><p>eval 使shell对args求值, 然后执行求职结果。常用于从变量中构造命令行</p>
+<p>变量适用条件：</p>
+<ul>
+<li> 含有命令终止符: <code>;、|、&amp;</code></li>
+<li> 含有I/O重定向: <code>&lt;、&gt;</code></li>
+<li> 引号: <code>&#39;、&quot;</code></li>
+</ul>
+<pre><code class="zsh">x=&quot;askding&quot;
+askding_url=&quot;askding.github.io&quot;
+eval echo \$$&#123;x&#125;_url</code></pre>
+<h3 id="shell参数扩展"><a href="#shell参数扩展" class="headerlink" title="shell参数扩展"></a>shell参数扩展</h3><p>参数扩展：取得var代表的变量的值</p>
+<ul>
+<li><code>$&#123;var-word&#125;</code> : var存在(可为空),就是var,不存在就是word</li>
+<li><code>$&#123;var=word&#125;</code> : var存在(可为空),就是var,不存在就是word, var也是word。</li>
+<li><code>$&#123;var+word&#125;</code> : var存在(可为空),就是var,不存在就是空</li>
+<li><code>$&#123;var?word&#125;</code> : var存在(可为空),就是var, 不存在将word写入到标准错误并退出</li>
+</ul>
+<blockquote>
+<p>:表示var非空</p>
+</blockquote>
+<ul>
+<li><p><code>$&#123;var:-word&#125;</code> :   var存在非空就是var，不存在就是word</p>
+<ul>
+<li>若var存在且非空,则${}=$var</li>
+<li>若var未定义或为空值, ${}=word，$var不变</li>
+</ul>
+</li>
+<li><p><code>$&#123;var:=word&#125;</code> :   var存在非空就是var，不存在就是word，var也是word</p>
+<ul>
+<li>若var存在且非空, ${}=$var</li>
+<li>若var未定义或为空值,${}=word, 且$var=word</li>
+</ul>
+</li>
+<li><p><code>$&#123;var:+word&#125;</code> :   var存在非空就是var，不存在就是空</p>
+<ul>
+<li>若var存在且非空, ${}=word</li>
+<li>若var未定义或为空值, ${}为空，$var不变</li>
+</ul>
+</li>
+<li><p><code>$&#123;var:?word&#125;</code> :    var存在就非空是var，不存在打印word并终止</p>
+<ul>
+<li>若var存在且非空, ${}=$var</li>
+<li>若var未定义或为空值, 输出word,并终止脚本</li>
+</ul>
+</li>
+</ul>
+<h2 id="字符串操作"><a href="#字符串操作" class="headerlink" title="字符串操作"></a>字符串操作</h2><ul>
+<li><p><code>$&#123;#var&#125;</code> : 返回${var}变量的长度</p>
+</li>
+<li><p><code>$&#123;var:m&#125;</code> : 返回${var}中第m个字符开始到结尾部分(从0开始计算)</p>
+</li>
+<li><p><code>$&#123;var:m:len&#125;</code> : 返回${var}中第m个字符开始，长度位len的部分</p>
+</li>
+<li><p><code>$&#123;var#pattern&#125;</code> : 删除${var}中开头部分与pattern匹配的部分(非贪婪模式)</p>
+</li>
+<li><p><code>$&#123;var##pattern&#125;</code> : 删除${var}中开头部分与pattern匹配的部分(贪婪模式)</p>
+</li>
+<li><p><code>$&#123;var%pattern&#125;</code> : 删除${var}中结尾部分与pattern匹配的部分(非贪婪模式)</p>
+</li>
+<li><p><code>$&#123;var%%pattern&#125;</code> : 删除${var}中结尾部分与pattern匹配的部分(贪婪模式)</p>
+</li>
+<li><p><code>$&#123;var/old/new&#125;</code> : 用new替换${var}中第一次出现的old</p>
+</li>
+<li><p><code>$&#123;var//old/new&#125;</code> : 用new替换${var}中所有old(全局替换)</p>
+</li>
+<li><p><code>$&#123;var/#old/new&#125;</code> : 用new替换${var}中开头部分与old匹配的部分</p>
+</li>
+<li><p><code>$&#123;var/%old/new&#125;</code> : 用new替换${var}中结尾部分与old匹配的部分</p>
+</li>
+</ul>
+<h2 id="数组操作"><a href="#数组操作" class="headerlink" title="数组操作"></a>数组操作</h2><ul>
+<li>整数索引的数字 <code>Arrary[index]</code> 可直接使用变量名创建</li>
+<li>关联(字符串)数组 <code>Colors[&quot;red&quot;]=&quot;#FF0000&quot;</code> 必须使用<code>declare -A</code>声明创建</li>
+</ul>
+<h3 id="创建数组"><a href="#创建数组" class="headerlink" title="创建数组"></a>创建数组</h3><pre><code class="zsh">ARRAY[index]=value   # index为算数表达式,或(0,1,2,...)的整数
+
+ARRAY=(Value1 Value2 Value3 [5]=Vlaue5 ...)   # 第三、四元素为空字符串&quot;&quot;
+
+declare -a Array_name # 声明Array_name是一个数组
+read -a Array_name    # 将用户的命令行输入,当成Array_name的数组元素,以空格符分隔符</code></pre>
+<h3 id="读取数组"><a href="#读取数组" class="headerlink" title="读取数组"></a>读取数组</h3><pre><code class="zsh">echo $&#123;array[index]&#125;            # 打印单个数组成员
+echo $&#123;array[@]&#125; $&#123;array[*]&#125;    # 打印所有成员,推荐使用`&quot;$&#123;array[@]&#125;&quot;`
+array_copy=( &quot;$&#123;array[@]&#125;&quot; )    # 拷贝数组</code></pre>
+<h3 id="数组长度"><a href="#数组长度" class="headerlink" title="数组长度"></a>数组长度</h3><pre><code class="zsh">echo $&#123;#array[@]&#125; $&#123;#array[*]&#125;    # 打印数组长度
+echo $&#123;#array&#125;                    #打印第一个成员的长度
+echo $&#123;#array[i]&#125;                 # 打印指定成员长度 </code></pre>
+<h3 id="打印数组序号"><a href="#打印数组序号" class="headerlink" title="打印数组序号"></a>打印数组序号</h3><pre><code class="zsh">echo $&#123;!array[@]&#125;  $&#123;!array[*]&#125;  </code></pre>
+<h3 id="打印数组成员-数组切片"><a href="#打印数组成员-数组切片" class="headerlink" title="打印数组成员(数组切片)"></a>打印数组成员(数组切片)</h3><pre><code class="zsh">echo $&#123;array[@]:position:lens&#125;   $&#123;array[*]:position:lens&#125; 
+# position从0开始
+# lens为长度，不指定，返回从position开始的所有成员</code></pre>
+<h3 id="追加数组成员"><a href="#追加数组成员" class="headerlink" title="追加数组成员"></a>追加数组成员</h3><pre><code class="zsh">array=(a b c)
+array+=(d e f)    # 利用+=可以追加数组元素
+echo $&#123;array[@]&#125;</code></pre>
+<h3 id="删除数组及成员"><a href="#删除数组及成员" class="headerlink" title="删除数组及成员"></a>删除数组及成员</h3><pre><code class="zsh">unset array     # 清空整个数组
+array[i]=&#39;&#39;     #隐藏第i+i个元素,设为空值=&#39;&#39;</code></pre>
+<h2 id="shell内部变量"><a href="#shell内部变量" class="headerlink" title="shell内部变量"></a>shell内部变量</h2><ul>
+<li><code>#</code> : 位置参数的个数</li>
+<li><code>?</code> : 上条命令执行后的返回值</li>
+<li><code>$</code> : 当前shell进程的PID</li>
+<li><code>!</code> : 最后一个后台运行命令的PID</li>
+<li><code>0</code> : 当前执行的shell程序的名称</li>
+<li><code>@</code> : 位置参数的内容</li>
+<li><code>*</code> : 位置参数的内容,受<code>IFS</code>影响</li>
+<li><code>_</code> : shell启动时,为正在运行shell程序的绝对路径。shell结束后为上一条命令的最后一个参数 </li>
+</ul>
+<h2 id="内部特殊参数"><a href="#内部特殊参数" class="headerlink" title="内部特殊参数"></a>内部特殊参数</h2><p>每个参数由空格符分隔，并在bash中使用一组特殊的标识符$[num]进行访问。</p>
+<ul>
+<li>$0 : 表示命令行输入的脚本名称</li>
+<li>$1 : 第一个参数</li>
+<li>$n : 第n个参数</li>
+<li>$# : 参数的个数,不包括$0</li>
+<li>$@ : 用空格分隔的所有参数$1 $2 $3 … $n</li>
+<li>$* : 根据$IFS分隔所有参数</li>
+</ul>
+<p>进程状态的相关参数</p>
+<ul>
+<li><code>$$</code>: 输出当前进程的进程号<PID></li>
+<li><code>$!</code> : 输出后台运行的最后一个PID</li>
+<li><code>$_</code>: 输出上一条命令的最后一个参数 </li>
+</ul>
+<p>exit <n> # 设置返回状态码</p>
+<ul>
+<li>$? : 输出上条命令执行后的返回值<ul>
+<li>0 : 成功</li>
+<li>1-255 : 不成功<ul>
+<li>1 : 通用错误/执行失败</li>
+<li>126 : 命令或脚本没执行权限</li>
+<li>127 : 命令没找到</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<pre><code class="zsh"># 练习脚本
+echo &quot;Hello,$USER, the output of this script are as follows:&quot;
+echo -e &quot;The script name is              : \t $(basename $0)&quot;
+echo -e &quot;The first param of the script is: \t $1&quot;
+echo -e &quot;The second param of the script is: \t $2&quot;
+echo -e &quot;The five param of the script is: \t $5&quot;
+echo -e &quot;All the params you input are: \t $@&quot;
+echo -e &quot;The PID of this script is: \t $$&quot;
+echo -e &quot;The exit status of this script is: \t $?&quot;
+</code></pre>
+<h2 id="操作符"><a href="#操作符" class="headerlink" title="操作符"></a>操作符</h2><h3 id="整数运算符"><a href="#整数运算符" class="headerlink" title="整数运算符"></a>整数运算符</h3><p> <code>$[]</code>  和 <code>$((expression))</code> :+ - * / % **(幂)</p>
+<h3 id="整数比较操作符号"><a href="#整数比较操作符号" class="headerlink" title="整数比较操作符号"></a>整数比较操作符号</h3><ol>
+<li><code>[]</code>和<code>[[]]</code>的操作符号</li>
+</ol>
+<ul>
+<li><code>[ int1 -eq int2 ]</code> : =   <code>((int1 == int2))</code> </li>
+<li><code>[ int1 -ne int2 ]</code> : !=  <code>((int1 != int2))</code> </li>
+<li><code>[ int1 -gt int2 ]</code> : &gt;  <code>((int1 &gt; int2))</code> </li>
+<li><code>[ int1 -ge int2]</code> : &gt;=  <code>((int1 &gt;= int2))</code> </li>
+<li><code>[ int1 -lt int2 ]</code> : &lt;   <code>((int1 &lt; int2))</code> </li>
+<li><code>[ int1 -le int2 ]</code> : &lt;=  <code>((int1 &lt;= int2))</code> </li>
+</ul>
+<p>⚠️：<br><code>== != &lt; &gt;</code> 等操作符号在<code>[]</code> <code>[[]]</code>中使用需要转义,macOS中不可用此种方式</p>
+<pre><code class="zsh">a=2;b=6; [ $a \&gt; $b ]; echo $?</code></pre>
+<h3 id="字符串测试操作符号"><a href="#字符串测试操作符号" class="headerlink" title="字符串测试操作符号"></a>字符串测试操作符号</h3><pre><code class="zsh">str=Tom ;[ -z &quot;$str&quot; ]; echo $?</code></pre>
+<ul>
+<li><p><code>[ str ]</code> : $str不为空,返回真</p>
+</li>
+<li><p><code>[ -z str ]</code> : $str长度为0,返回真</p>
+</li>
+<li><p><code>[ -n str ]</code> : $str长度不为0,返回真</p>
+</li>
+<li><p><code>[ str1 = str2 ]</code> : 测试str1与str2相等,返回真</p>
+</li>
+<li><p><code>[ str1 != str2 ]</code> : 测试str1与str2不想等,返回真</p>
+</li>
+<li><p><code>[[ str1 == str2 ]]</code> : 测试str1与str2相同,返回真</p>
+</li>
+<li><p><code>[[ str1 != str2 ]]</code> : 测试str1与str2不相同,返回真</p>
+</li>
+<li><p><code>[[ str1 =~ str2 ]]</code> : str2是str1的子串,返回真</p>
+</li>
+<li><p><code>[[ str1 &gt; str2 ]]</code> : str1 大于str2,返回真</p>
+</li>
+<li><p><code>[[ str1 &lt; str2 ]]</code> : str1小于str2,返回真</p>
+</li>
+</ul>
+<h3 id="逻辑运算符"><a href="#逻辑运算符" class="headerlink" title="逻辑运算符"></a>逻辑运算符</h3><p>三元表达式: <code> [  ] &amp;&amp; echo T  || echo F</code></p>
+<ol>
+<li>常用方式:</li>
+</ol>
+<ul>
+<li><code>[[ pattern1 &amp;&amp; pattern2 ]]</code> : 逻辑与</li>
+<li><code>[[ pattern1 || pattern2 ]]</code> : 逻辑或</li>
+<li><code>[[ !pattern ]]</code> : 逻辑非</li>
+</ul>
+<ol start="2">
+<li>不常用方式:</li>
+</ol>
+<ul>
+<li><code>[ expr1 -a expr2 ]</code> : and</li>
+<li><code>[ expr1 -o expr2 ]</code> : or</li>
+<li><code>[ !expr ]</code> : 非！<pre><code class="zsh">x=1;name=Tom; [ $x -eq 1 -a -n $name ]; echo $?</code></pre>
+</li>
+</ul>
+<h3 id="文件测试操作符号"><a href="#文件测试操作符号" class="headerlink" title="文件测试操作符号"></a>文件测试操作符号</h3><ul>
+<li><p><code>[ -b fname ]</code> : fname为块设备,返回真</p>
+</li>
+<li><p><code>[ -c fname ]</code> : fname为字符设备,返回真</p>
+</li>
+<li><p><code>[ -p fname ]</code> : fname为命名管道,返回真</p>
+</li>
+<li><p><code>[ -S fname ]</code> : fname为Socket,返回真</p>
+</li>
+<li><p><code>[ -s fname ]</code> : fname存在且size&gt;0,返回真</p>
+</li>
+<li><p><code>[ -f fname ]</code> : fname存在且是普通文件,返回真</p>
+</li>
+<li><p><code>[ -L fname ]</code> : fname存在且是链接文件,返回真 </p>
+</li>
+<li><p><code>[ -e fname ]</code> : fname(文件或目录)存在,返回真</p>
+</li>
+<li><p><code>[ -d fname ]</code> : fname存在且是目录,返回真</p>
+</li>
+<li><p><code>[ -r fname ]</code> : fname(文件或目录)存在且可读,返回真</p>
+</li>
+<li><p><code>[ -w fname ]</code> : fname(文件或目录)存在且可写,返回真</p>
+</li>
+<li><p><code>[ -x fname ]</code> : fname(文件或目录)存在且可执行,返回真</p>
+</li>
+</ul>
+<h1 id="流程控制语句"><a href="#流程控制语句" class="headerlink" title="流程控制语句"></a>流程控制语句</h1><h2 id="顺序语句"><a href="#顺序语句" class="headerlink" title="顺序语句"></a>顺序语句</h2><p>程序会顺序来执行代码，从上往下一行一行执行</p>
+<h2 id="分支语句"><a href="#分支语句" class="headerlink" title="分支语句"></a>分支语句</h2><p>条件测试语句格式：</p>
+<blockquote>
+<p>[ <expression> ]   等效于test <expression><br>[[ <expression> ]]   </p>
+</blockquote>
+<p>区别：</p>
+<ul>
+<li><code>[]</code> 不支持逻辑运算符、正则表达式</li>
+<li><code>[[]]</code> 支持逻辑运算符&amp;&amp;、||、!、和()，支持正则表达式匹配</li>
+</ul>
+<h3 id="if型"><a href="#if型" class="headerlink" title="if型"></a>if型</h3><ul>
+<li><code>if</code>语句可嵌套使用</li>
+<li>必须以<code>if</code>开头，<code>fi</code>结尾</li>
+<li><code>elif</code> 可以有<code>0个或多个</code></li>
+<li><code>else</code>最多只能有个一个</li>
+<li><code>commands</code>为可执行语句块,shell提供空命令<code>:</code></li>
+<li><code>;</code> 相当于命令换行</li>
+</ul>
+<pre><code class="zsh">if [ expr1 ]; then
+  &lt;commands1&gt;   #expr1为真时，执行commands1
+
+elif [ expr2 ]; then
+  &lt;commands2&gt;   # expr1为假，expr2为真时，执行commands2
+elif [ expr3 ]; then
+  &lt;commands3&gt;   # expr1到expr2为假，expr3为真时，执行commands3
+    ...
+elif [ exprn ]; then
+  &lt;commandsn&gt;   # expr1到expr(n-1)为假，exprn为真时，执行commandsn
+else
+  &lt;command&gt;   # 当expr(1-n)都为假时，执行command 
+
+fi</code></pre>
+<h3 id="case型"><a href="#case型" class="headerlink" title="case型"></a>case型</h3><pre><code class="zsh">case $expr in           
+  pattern1)         # 若expr与pattern1匹配,
+    commands1       # 执行语句块commands
+    ;;              # 跳出case结构
+  pattern2)
+    commands2
+    ;;
+  *)                # 若expr与上面的pattern均不匹配
+    commands        
+    ;;
+esac                # case语句必须以easc终止</code></pre>
+<h3 id="select型"><a href="#select型" class="headerlink" title="select型"></a>select型</h3><blockquote>
+<p>while+case语句可实现select</p>
+</blockquote>
+<pre><code class="zsh">select answer in &lt;list&gt;; do
+  commands                     # 循环变量answer每取一次值，循环体commands就执行一遍
+done                           # 循环结束标志</code></pre>
+<h2 id="循环语句"><a href="#循环语句" class="headerlink" title="循环语句"></a>循环语句</h2><ul>
+<li><code>break</code> 强行退出本层循环。  <code>break [n]</code> 退出第几层循环(最里面为第一层循环)</li>
+<li><code>continue</code> 忽略本次循环的剩余部分，回到循环的顶部,继续下一次循环。 <code>continue [n]</code> 回到第n次循环的顶部</li>
+</ul>
+<h3 id="for循环"><a href="#for循环" class="headerlink" title="for循环"></a>for循环</h3><ul>
+<li>python格式</li>
+</ul>
+<pre><code class="zsh">for item in list ; do
+  commands
+done</code></pre>
+<ul>
+<li>C语言格式(不常用)</li>
+</ul>
+<pre><code class="zsh">for ((i=0;i&lt;100;i++))
+do
+  echo $i
+done</code></pre>
+<h3 id="while循环"><a href="#while循环" class="headerlink" title="while循环"></a>while循环</h3><blockquote>
+<p>与until作用相反</p>
+</blockquote>
+<pre><code class="zsh">while expr ; do       # 执行expr表达式是否为真
+  commands            # 循环体语句
+done [&lt; test.file]      # 循环结束标志,返回循环顶部</code></pre>
+<h3 id="until循环"><a href="#until循环" class="headerlink" title="until循环"></a>until循环</h3><blockquote>
+<p>与while作用相反</p>
+</blockquote>
+<pre><code class="zsh">until expr ; do      # 执行expr表达式是否为假,   expr为真退出循环
+  commands           # expr退出状态为假, 执行循环体commands
+done                 # 循环体结束标志, 返回循环顶部
+</code></pre>
+<h1 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h1><p>关键字<code>function</code>和<code>重定向</code>命令可选</p>
+<pre><code class="zsh">[function] myfun()&#123;
+
+  commands     # body of the funtion goes here
+  [break]      # 退出当前函数
+  [exit &lt;n&gt;]   # 退出整个脚本
+  [return &lt;n&gt;] # 退出当前函数。未指定n，则返回函数最后一条milling执行后所返回的状态  
+
+&#125; [重定向]
+
+myfun [arg1 arg2 ... argn]   # 运行函数,arg参数通过位置参数$n传入
+echo $?       # 查看函数myfun返回值</code></pre>
+<p>⚠️</p>
+<ul>
+<li>作用域: 函数内的变量的作用域默认是全局的，可使用<code>local</code>限定作用域于函数内</li>
+<li>函数定义中不必声明参数个数，参数个数由此函数被调用时给定。</li>
+</ul>
+<h1 id="调试"><a href="#调试" class="headerlink" title="调试"></a>调试</h1><h2 id="打印变量"><a href="#打印变量" class="headerlink" title="打印变量"></a>打印变量</h2><pre><code class="zsh">#! /bin/bash
+echo $var ; exit   # 单独调试某个变量 
+
+trap &quot;echo a=$a b=$b&quot;  EXIT   # 程序退出打印程序内的变量  
+a=20
+b=30
+
+exit</code></pre>
+<h2 id="sh命令参数"><a href="#sh命令参数" class="headerlink" title="sh命令参数"></a>sh命令参数</h2><pre><code class="zsh">bash [-n | -v | -x]  &lt;file.sh&gt;
+
+-n : 仅模糊检查语法错误,不执行file.sh脚本。
+-x : 打印每条命令的结果</code></pre>
+<h1 id="Tips"><a href="#Tips" class="headerlink" title="Tips"></a>Tips</h1><ul>
+<li><code>help</code> 查看shell内置命令</li>
+</ul>
+<pre><code class="zsh">ssh myserver ps &gt; /tmp/ps.out  #重定向到本地/tmp目录
+ssh myserver ps \&gt; /tmp/ps.out #重定向到服务器/tmp目录 
+</code></pre>
+<ul>
+<li><code>. aa.sh</code> : 在当前shell环境下执行aa.sh内的命令</li>
+</ul>
+<h2 id="子shell运行"><a href="#子shell运行" class="headerlink" title="子shell运行"></a>子shell运行</h2><ul>
+<li><code>export &lt;variables&gt;[=value]</code> : 导出指定变量到子shell中</li>
+</ul>
+<pre><code class="zsh">var1=value1 var2=value2 ... varn=valuen  command</code></pre>
+<p>将var[1-n]及其值放入到command环境中,执行command。当前shell不存在变量var[1-n]</p>
+<h2 id="异步执行-wait-PID"><a href="#异步执行-wait-PID" class="headerlink" title="异步执行 wait [PID]"></a>异步执行 <code>wait [PID]</code></h2><pre><code>wait [PID]   # 不写PID, 则shell会等待所有的子进程执行完毕。在子进程执行完毕前,当前shell会被挂起。</code></pre>
+<h2 id="命令组"><a href="#命令组" class="headerlink" title="命令组"></a>命令组</h2><ul>
+<li><code>(commands ...)</code> : 在子shell中运行</li>
+<li><code>&#123; command;..;&#125;</code> : 在当前shell中运行, 开头有<code>空格</code>,命令后带<code>;</code></li>
+</ul>
+<h2 id="转义符"><a href="#转义符" class="headerlink" title="转义符\"></a>转义符<code>\</code></h2><p>转义就是转成字符字面含义<br><code>\x</code> : 使用x字符的字面意义。</p>
+<h2 id="引号’’-“”"><a href="#引号’’-“”" class="headerlink" title="引号’’ “”"></a>引号’’ “”</h2><ul>
+<li><code>&#39;&#39;</code> 单引号不能嵌套,引号内的所有字符转义,即保持字面含义。</li>
+<li><code>&quot;&quot;</code> 双引号内的字符,含有转义符<code>\</code> 后跟$、`、&quot; 、\保持特殊含义，不转义。</li>
+</ul>
+<h2 id="参数左移shift-n"><a href="#参数左移shift-n" class="headerlink" title="参数左移shift [n] "></a>参数左移<code>shift [n] </code></h2><p>shell命令将shell程序的参数$1 …$n分别向左移动n位。</p>
+<h2 id="单字符参数处理getopts"><a href="#单字符参数处理getopts" class="headerlink" title="单字符参数处理getopts"></a>单字符参数处理<code>getopts</code></h2><pre><code class="zsh">getopts &lt;optstring&gt;  &lt;opt&gt;  [arg...]</code></pre>
+<ul>
+<li><code>optstring</code> : 代表参数字符串, 开头含有<code>:</code>,表示不打印错误信息<ul>
+<li>eg: <code>aa.sh -a -b -p value</code>     </li>
+<li><code>optstring</code>就是<code>abp:</code> , <code>-a -b</code>为开关型选项     </li>
+<li> 当getopts匹配到-p参数时, <code>value</code>会被存放在shell内置变量<code>OPTARG</code>中 </li>
+</ul>
+</li>
+<li><code>opt</code> : getopts存放参数名的变量, 参数对应的值存在<code>OPTARG</code> <ul>
+<li>每次执行getopts,会从命令行中获取下一个参数，存放在<code>name</code>中  </li>
+<li> 如果获取的参数不在<code>optstring</code>中, <code>name</code>的值为<code>?</code></li>
+</ul>
+</li>
+<li><code>arg</code> : 默认是<code>$@</code>, 即shell脚本的全部参数</li>
+<li><code>OPTIND</code> : 存放所有参数的下标, 开关型参数下标=1  含参型下标=2</li>
+</ul>
+<h2 id="多字符参数处理getopt"><a href="#多字符参数处理getopt" class="headerlink" title="多字符参数处理getopt"></a>多字符参数处理<code>getopt</code></h2><h2 id="shell环境变量"><a href="#shell环境变量" class="headerlink" title="shell环境变量"></a>shell环境变量</h2><ul>
+<li><code>HOME</code> : 存放用户主目录的完整路径名</li>
+<li><code>PATH</code> : shell执行命令时顺序搜索可执行文件</li>
+<li><code>TERM</code> : 终端类型</li>
+<li><code>UID</code> : 当前用户标识</li>
+<li><code>PS1</code> : 主提示符</li>
+<li><code>PS2</code> : 辅助提示符</li>
+<li><code>PS4</code> : <code>set -x</code> 模式下的提示符,默认+</li>
+<li><code>IFS</code> : 输入域分隔符</li>
+</ul>
+<h2 id="重定向"><a href="#重定向" class="headerlink" title="重定向"></a>重定向</h2><table>
+<thead>
+<tr>
+<th align="center">形式</th>
+<th align="center">含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">&lt; file</td>
+<td align="center">标准输入重定向到file,将file内容输入到终端里</td>
+</tr>
+<tr>
+<td align="center">&gt; file</td>
+<td align="center">标准输出重定向到file</td>
+</tr>
+<tr>
+<td align="center">command &lt; file1 &gt;file2</td>
+<td align="center">将 file1 作为 command 的输入，并将 command 的处理结果输出到 file2。</td>
+</tr>
+</tbody></table>
+<ul>
+<li><p>重定向标准输出及标准错误</p>
+<pre><code class="zsh">`commands`&gt;file 2&gt;&amp;1   等效于   &amp;&gt;file    等效于  &gt;&amp;file</code></pre>
+<p>按照重定向符号的顺序自左至右执行，<br>首先标准输出重定向至file中，<br>2&gt;&amp;1 表示将标准错误重定向至标准输出</p>
+</li>
+<li><p>追加重定向标准输出及标准错误</p>
+<pre><code class="zsh">`command` &gt;&gt; file 2&gt;&amp;1   等效于 &amp;&gt;&gt; file</code></pre>
+</li>
+</ul>
+<h2 id="命令替换"><a href="#命令替换" class="headerlink" title="命令替换"></a>命令替换</h2><p>将命令的输出作为命令替换位置的文本</p>
+<p>var=<code>ps -ef |wc -l</code><br>var=$(ps -ef | wc -l)</p>
+<ul>
+<li><code>$&#123;&#125;</code> :用于定义变量</li>
+<li><code>$()</code> : 用于命令替换,等效于` `</li>
+<li> <code>$[ ] </code> 和<code>$(())</code>: 用于整数运算 </li>
+</ul>
+<h2 id="脚本执行结束清理缓存文件"><a href="#脚本执行结束清理缓存文件" class="headerlink" title="脚本执行结束清理缓存文件"></a>脚本执行结束清理缓存文件</h2><pre><code class="zsh">#!/bin/bash 
+
+# trap捕捉到EXIT信号时执行rm -f &quot;$TMPFILE&quot; 命令
+# 最好放在shell脚本的开头
+# trap  &lt;command | function &gt;  &lt;SIGNAL&gt; SINGAL2 ...SINGALN
+trap &#39;rm -f &quot;$TMPFILE&quot;&#39; EXIT
+
+TMPFILE=$(mktemp) || exit 1
+ls /etc &gt; $TMPFILE
+if grep -qi &quot;kernel&quot; $TMPFILE; then
+  echo &#39;find&#39;
+fi</code></pre>
+<h2 id="根据扩展名切分文件名"><a href="#根据扩展名切分文件名" class="headerlink" title="根据扩展名切分文件名"></a>根据扩展名切分文件名</h2><p>文件名格式:<code>name.extention</code></p>
+<ul>
+<li><code>%</code> : 提取文件名name部分</li>
+<li><code>#</code> : 提取文件名extention部分<pre><code class="zsh">file=&quot;sample.jpg&quot;
+</code></pre>
+</li>
+</ul>
+<p>echo “文件名: ${file%.<em>}”  # 从file中删除位于%右侧通配符(.</em>)匹配到的字符,匹配方向从右向左匹配,非贪婪模式,贪婪模式加%%<br>echo “扩展名: ${file#<em>.}”  # 从file中删除位于#右侧通配符(</em>.)匹配到的字符串,匹配方向从左到右匹配,非贪婪模式,贪婪模式加##</p>
+<pre><code>
+## shell命令行使用vi行编辑模式
+修改命令时，不管处于哪种模式，按下`Enter`就会解释当前命令。
+```zsh
+set -o vi/emacs</code></pre>
+<h2 id="set命令切分字段"><a href="#set命令切分字段" class="headerlink" title="set命令切分字段"></a>set命令切分字段</h2><pre><code class="zsh">aa=&quot;aa bb cc&quot;
+# set $aa会将aa的值根据IFS来切分赋给位置参数
+set $aa
+echo $1
+echo $2
+echo $3</code></pre>
+<h2 id="GUI界面Dialog"><a href="#GUI界面Dialog" class="headerlink" title="GUI界面Dialog"></a>GUI界面Dialog</h2><h2 id="终端颜色"><a href="#终端颜色" class="headerlink" title="终端颜色"></a>终端颜色</h2><h3 id="tput显示颜色"><a href="#tput显示颜色" class="headerlink" title="tput显示颜色"></a>tput显示颜色</h3><ul>
+<li><code>tput setab &lt;num&gt;</code> : 设置背景色</li>
+<li><code>tput setaf &lt;num&gt;</code> : 设置前景色</li>
+</ul>
+<p>|||||||<br>|—|—|—|—|—|—|—|<br>|&lt;num&gt;|0|1|2|3|4|5|6|7|<br>|color|黑|红|绿|黄|蓝|洋红|黄|白|</p>
+<pre><code class="zsh">RED=$(tput setaf 1)
+GREEN=$(tput setaf 2)
+RESET=$(tput sgr0)   # sgr0 表示颜色重置
+echo &quot;$&#123;RED&#125;red text $&#123;GREEN&#125;green text$&#123;RESET&#125;&quot;</code></pre>
+<h2 id="bash注释"><a href="#bash注释" class="headerlink" title="bash注释"></a>bash注释</h2><h3 id="单行注释"><a href="#单行注释" class="headerlink" title="单行注释 #"></a>单行注释 #</h3><pre><code class="zsh"># 单行注释符
+: commnets here
+</code></pre>
+<h3 id="多行注释"><a href="#多行注释" class="headerlink" title="多行注释"></a>多行注释</h3><ol>
+<li><p>方式一</p>
+<pre><code class="zsh">&lt;&lt; COMMENT
+comment here
+....
+comment here
+COMMENT</code></pre>
+</li>
+<li><p>方式二</p>
+<pre><code class="zsh">:&#39;
+commnet here
+...
+commnet here
+&#39;</code></pre>
+</li>
+</ol>
+<h2 id="后台运行"><a href="#后台运行" class="headerlink" title="后台运行"></a>后台运行</h2><pre><code class="zsh">&lt;command&gt;    # 按下ctrl-z即可挂起该进程</code></pre>
+<ul>
+<li><code>fg</code> : 在前台恢复执行当前作业 </li>
+<li><code>bg</code> : 在后台恢复执行当前作业</li>
+</ul>
+<h2 id="切换目录cd"><a href="#切换目录cd" class="headerlink" title="切换目录cd -"></a>切换目录<code>cd -</code></h2><ul>
+<li><code>-</code> 表示上一个目录</li>
+</ul>
+<h2 id="开发规范"><a href="#开发规范" class="headerlink" title="开发规范"></a>开发规范</h2><pre><code class="zsh"># Date: 2020-8-8 8:8:8
+# Author: askDing
+# Blog: https://askding.github.io
+#
+# Version: 1.1
+# Description: </code></pre>
+<h2 id="分割-合并文件"><a href="#分割-合并文件" class="headerlink" title="分割/合并文件"></a>分割/合并文件</h2><ul>
+<li>分割文件<pre><code class="zsh">cut -f &lt;col_list&gt; -d &#39;;&#39; --complenment  --output-delimiter &#39;-&#39; file  
+# 按列切分文件 -f 指定待提取的列号
+# -d 指定分隔符
+# --complenment 输出-f指定之外的所有列
+# --output-delimiter 指定输出分隔符
+split [-b size] [-d [-a &lt;num&gt;]]  file  
+# -b指定分割文件的大小10k、10M、10G、
+# -d 以数字为后缀
+# -a num 指定后缀的长度</code></pre>
+</li>
+<li>合并文件<pre><code class="zsh">cat file1 file2 ... &gt; file_total  # 按行合并文件
+paste file1 file2 ... -d &#39;,&#39; # 按列合并文件,-d指定分隔符</code></pre>
+</li>
+</ul>
+<h2 id="cat的特殊用法"><a href="#cat的特殊用法" class="headerlink" title="cat的特殊用法"></a>cat的特殊用法</h2><pre><code class="zsh">echo &quot;aa bb cc&quot; | cat - other_file   # - 作为stdin文本的文件名</code></pre>
+<h2 id="终端截图"><a href="#终端截图" class="headerlink" title="终端截图"></a>终端截图</h2><pre><code class="zsh">xwd -root -out /tmp/xwd_test.xwd  # 截取整个屏幕,不需要鼠标选择区域
+xwud -in /tmp/xwd_test.xwd      # 查看截屏文件
+convert /tmp/xwd_test.xwd  /tmp/xwd_test.png   # 转换成png格式图片</code></pre>
+<h2 id="script录制终端会话"><a href="#script录制终端会话" class="headerlink" title="script录制终端会话"></a>script录制终端会话</h2><pre><code class="zsh">script -t 2&gt; rec.time  -a rec.his # 开始录制 -t 记录时序 -a 追加输出到文件, -a可忽略
+exit                              # 结束录制
+scriptreplay  -t  rec.time  -s  rec.his   # 回放 -t -s可省略</code></pre>
+<h2 id="termtosvg生成svg动画"><a href="#termtosvg生成svg动画" class="headerlink" title="termtosvg生成svg动画"></a>termtosvg生成svg动画</h2><p><a target="_blank" rel="noopener" href="https://nbedos.github.io/termtosvg/">termtosvg</a></p>
+<pre><code class="zsh">brew install termtosvg
+termtosvg
+exit</code></pre>
+<h2 id="find命令技巧"><a href="#find命令技巧" class="headerlink" title="find命令技巧"></a>find命令技巧</h2><pre><code class="zsh">find . -type f -name &quot;*.a&quot; -print0  -exec rm  &#123;&#125; \;     
+find . \(-path &quot;./code&quot; -o -path &quot;./code2&quot; \) -prune -o -name &quot;*.txt&quot; -print     //在当前目录及除code和code2之外的子目录中查找txt文件
+# 可用于删除-开头的文件,  
+# -print0 使用0(NULL)字符分割查找到的元素
+# &#123;&#125;代表find出的文件名 
+# \; 对;进行转义,代表rm命令的结束</code></pre>
+<h2 id="xargs命令技巧"><a href="#xargs命令技巧" class="headerlink" title="xargs命令技巧"></a>xargs命令技巧</h2><p>一般情况下可使用``来执行命令，然后将其输出作为命令行参数，达到使用只能接收命令行参数的命令,<br>但需要处理的文件过多,会出现”Argument list too long”的错误。可使用xargs来解决</p>
+<pre><code class="zsh">&lt;command1&gt; | xargs [-n] [-d &#39;X&#39;]  [-I &#123;&#125;]  [command2 -p &#123;&#125; -l] 
+
+# -n 限制每行输出n个元素, 输出m行,command2命令执行m次 
+# -d &#39;X&#39;  以X作为分隔符分割command1输出的内容
+# -I &#123;&#125; 以&#123;&#125;位置作为xargs传递给command 的参数位置
+# 使用-I时,command2以循环的方式执行。如果m=3，command2连同&#123;&#125;一起执行3次,&#123;&#125;会在每次执行中被替换为相应的参数</code></pre>
+<p><code>xargs</code> 紧跟在管道操作符<code>|</code>之后,  默认使用执行<code>/bin/echo</code>。<br>将数据以空格或换行符分隔成单个元素，然后调用指定命令并将这些元素作为该命令的参数,  类似于<code>find -exec</code>  </p>
+<pre><code class="zsh">cat target.txt | xargs  # 多行输入转单行输出
+cat args.txt | xargs -I &#123;&#125; ./aa.sh -p &#123;&#125; -l # -I &#123;&#125; 指定aa.sh命令执行时替换字符串的位置标识
+find /smbMount  -iname &quot;*.docx&quot; -print0 | xargs -0 grep &quot;askDing&quot;  # -iname 忽略大小写, -print0 -0都是以0作为分隔符 </code></pre>
+<h2 id="并发执行-amp-amp"><a href="#并发执行-amp-amp" class="headerlink" title="并发执行()&amp;/{}&amp;"></a>并发执行()&amp;/{}&amp;</h2><p>主要方法是使用 &amp; 符号，将命令fork到后台执行,然后配合wait等待进程结束</p>
+<pre><code class="zsh">for ip in 192.168.8.&#123;1..255&#125;; do
+  (
+    ping $ip -c2 &amp;&gt; /dev/null
+    if [ $? -eq 0 ]; then
+      echo $ip is alive
+    fi
+
+)&amp;
+done
+wait</code></pre>
+<h2 id="利用管道和文件描述符FD-id实现并发数控制"><a href="#利用管道和文件描述符FD-id实现并发数控制" class="headerlink" title="利用管道和文件描述符FD_id实现并发数控制"></a>利用管道和文件描述符FD_id实现并发数控制</h2><ul>
+<li>FD关联命令管道,具有管道特性，并且可以 无限存不阻塞，无限取不阻塞，而不用关心管道内是否为空，也不用关心是否有内容写入</li>
+<li>命名管道控制并发数</li>
+<li>操作FD</li>
+</ul>
+<ol>
+<li>创建一个管道并用指定FD_ID打开 <code>mkfifo /tmp/$$.fifo; exec 3&lt;&gt;/tmp/$$.fifo</code> 以当前进程PID创建fifo文件，防止冲突</li>
+<li>循环向FD_ID(关联到管道)输入任意字符(建议echo输入空白字符\n)    &gt;创建进程数</li>
+<li>在循环体中，通过<code>read -u &lt;文件描述符&gt;</code> 读取管道中的数据，执行命令，然后<code>echo &gt;&amp;FD_ID</code>,补充进程数  &gt;执行程序</li>
+<li>全部任务完成后，<code>exec FD_ID&lt;&amp;- &amp;&amp; exec FD_ID&gt;&amp;-</code> 关闭管道</li>
+</ol>
+<h3 id="mkfifo介绍"><a href="#mkfifo介绍" class="headerlink" title="mkfifo介绍"></a>mkfifo介绍</h3><p>管道具有存一个读一个，读完一个就少一个，没有则阻塞，放回的可以重复取，这正是队列特性</p>
+<pre><code class="shell">[ -e /tmp/$$.fifo ] || mkfifo /tmp/$$.fifo  # 创建命名管道
+exec 3&lt;&gt; /tmp/$$.fifo                       # 将FD关联到管道
+rm -rf /tmp/$$.fifo                         # 删除管道文件，FD具有管道的一切特性，可通过FD来操作
+echo &gt;&amp;8                                    # 向FD内输入`\n`</code></pre>
+<h3 id="exec命令、操作文件描述符"><a href="#exec命令、操作文件描述符" class="headerlink" title="exec命令、操作文件描述符"></a>exec命令、操作文件描述符</h3><ol>
+<li>exec操作命令或脚本时：</li>
+</ol>
+<ul>
+<li><code>exec xx.sh</code> : xx.sh会替换当前进程, 执行xx.sh，就不会再返回调用exec的程序。</li>
+</ul>
+<ol start="2">
+<li>exec操作文件描述符时：</li>
+</ol>
+<ul>
+<li><code>exec 3&lt;/tmp/1.txt</code> 以只读方式打开/tmp/1.txt文件，文件描述符为3</li>
+<li><code>exec 3&gt;/tmp/1.txt</code> 以只写方式打开/tmp/1.txt文件，文件描述符为3</li>
+<li><code>exec 3&lt;&gt;/tmp/1.txt</code> 以读写方式打开/tmp/1.txt文件，文件描述符为3</li>
+<li><code>exec 3&lt;&amp;-</code> 关闭文件描述符3的读</li>
+<li><code>exec 3&gt;&amp;-</code> 关闭文件描述符的写</li>
+</ul>
+<pre><code class="shell">#!/bin/bash
+
+thread=10                                 # 定义进程数
+start_time=`date +%s`                       
+
+[ -e /tmp/$$.fifo ] || mkfifo /tmp/$$.fifo # 创建命名管道文件
+
+exec 3&lt;&gt; /tmp/$$fifo                      # 创建FD 3，以可读（&lt;）可写（&gt;）的方式关联管道文件，FD 3具有命名管道的特性
+rm -rf /tmp/$$fifo                        # 删除命名管道文件，通过FD 3
+
+for i in $(seq $thread); do
+    echo &gt;&amp;3                              # 循环$thread次向FD 3写入\n , 类比一个令牌 
+done
+
+for i in $(seq 1000); do
+    read -u 3                             # 循环读取FD 3中取\n , 直到读取位置
+    &#123;
+    # 需要并行执行的命令放在此处
+    sleep 1 &amp;&amp; echo &quot;$i  Done&quot;
+
+    # 最后需要归还令牌
+    echo &gt;&amp;3                          # 再次向FD 3写入\n , 类似归还令牌
+    &#125;&amp;                                    # 并发执行标志&#123;&#125;&amp;，fork放在后台执行
+done
+wait                                      # 等待并发进程执行完毕，执行后续命令 
+
+stop_time=`date +%s`
+
+echo &quot;TIME: `expr $stop_time-$start_time`&quot;        
+
+exec 3&lt;&amp;-                                 # 关闭FD 3的读
+exec 3&gt;&amp;-                                 # 关闭FD 3的写</code></pre>
+<h2 id="监视命令输出"><a href="#监视命令输出" class="headerlink" title="监视命令输出"></a>监视命令输出</h2><pre><code class="zsh">watch [-d] [-n &lt;num&gt;] command  # 每隔num秒更新一次command命令的输出, -d 标记输出差异</code></pre>
+<h2 id="特殊文件权限-S-t-T"><a href="#特殊文件权限-S-t-T" class="headerlink" title="特殊文件权限  S t/T"></a>特殊文件权限  S t/T</h2><p>权限模式</p>
+<table>
+<thead>
+<tr>
+<th>文件类型</th>
+<th>所有者</th>
+<th>所属组</th>
+<th>其他用户</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>-/b/c/d/l/p/s</td>
+<td>r w x</td>
+<td>r w x</td>
+<td>r w x</td>
+</tr>
+</tbody></table>
+<p>特殊权限均出现在执行权限(x)的位置</p>
+<ul>
+<li><code>setuid权限</code> 允许其他用户执行此(ELF格式的二进制)文件会以文件拥有者的权限来运行 <code>-rwS------</code>  <pre><code class="zsh">chmod u+s executeable_file   </code></pre>
+</li>
+<li><code>setgid权限</code> 其他用户运行此文件时具有所属组权限<code>----rwS---</code><pre><code class="zsh">chmod g+s  directory_name/executeable_file #一般设置目录 ,该目录下的文件集成该目录的属性</code></pre>
+</li>
+<li><code>目录sticky bit</code>  针对其他用户设置的,只有目录/文件所有者和root才能删除的文件<code>-------rwt</code>或<code>---------T</code> 如<code>/tmp</code>目录  <ul>
+<li><code>t</code> 表示目录内文件有可执行权限</li>
+<li><code>T</code> 表示目录内文件无可执行权限<pre><code class="zsh">chmod o+t &lt;directory_name&gt;</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="正则表达式可视化工具"><a href="#正则表达式可视化工具" class="headerlink" title="正则表达式可视化工具"></a>正则表达式可视化工具</h2><p><a target="_blank" rel="noopener" href="https://regexper.com/">Regexpr
+</a></p>
+<h2 id="对别名进行转义"><a href="#对别名进行转义" class="headerlink" title="对别名进行转义"></a>对别名进行转义</h2><p>在不可信环境下执行特权命令时，在命令前加上<code>\</code>忽略可能存在的别名</p>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">
+      
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jaytp@qq.com </span>
+    </div>
+</article>
+
+
+<p>
+    <a  class="dashang" onclick="dashangToggle()">💰</a>
+</p>
+
+
+
+
+
+
+    
+
+
+
+
+    </div>
+    <div class="copyright">
+        <p class="footer-entry">
+    ©2016-2020 Yelog
+</p>
+<p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
+
+    </div>
+    <div class="full-toc">
+        <button class="full" data-title="切换全屏 快捷键 s"><span class="min "></span></button>
+<a class="" id="rocket" ></a>
+
+    </div>
+</div>
+
+<div class="hide_box" onclick="dashangToggle()"></div>
+<div class="shang_box">
+    <a class="shang_close"  onclick="dashangToggle()">×</a>
+    <div class="shang_tit">
+        <p>Help us with donation</p>
+    </div>
+    <div class="shang_payimg">
+        <div class="pay_img">
+            <img src="/img/alipay.jpg" class="alipay" title="扫码支持">
+            <img src="/img/weixin.jpg" class="weixin" title="扫码支持">
+        </div>
+    </div>
+    <div class="shang_payselect">
+        <span><label><input type="radio" name="pay" checked value="alipay">alipay</label></span><span><label><input type="radio" name="pay" value="weixin">weixin</label></span>
+    </div>
+</div>
+
+
+</body>
+<script src="/js/jquery.pjax.js?v=1.1.0" ></script>
+
+<script src="/js/script.js?v=1.1.0" ></script>
+<script>
+    var img_resize = 'default';
+    function initArticle() {
+        /*渲染对应的表格样式*/
+        
+            $("#post .pjax table").addClass("green_title");
+        
+
+        /*渲染打赏样式*/
+        
+        $("input[name=pay]").on("click", function () {
+            if($("input[name=pay]:checked").val()=="weixin"){
+                $(".shang_box .shang_payimg .pay_img").addClass("weixin_img");
+            } else {
+                $(".shang_box .shang_payimg .pay_img").removeClass("weixin_img");
+            }
+        })
+        
+
+        /*高亮代码块行号*/
+        
+
+        /*访问数量*/
+        
+        $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
+        
+
+        /*代码高亮，行号对齐*/
+        $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
+
+        
+        
+    }
+
+    /*打赏页面隐藏与展示*/
+    
+    function dashangToggle() {
+        $(".shang_box").fadeToggle();
+        $(".hide_box").fadeToggle();
+    }
+    
+
+</script>
+
+<!--加入行号的高亮代码块样式-->
+
+<!--自定义样式设置-->
+<style>
+    
+    
+    .nav {
+        width: 542px;
+    }
+    .nav.fullscreen {
+        margin-left: -542px;
+    }
+    .nav-left {
+        width: 120px;
+    }
+    
+    
+    @media screen and (max-width: 1468px) {
+        .nav {
+            width: 492px;
+        }
+        .nav.fullscreen {
+            margin-left: -492px;
+        }
+        .nav-left {
+            width: 100px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1024px) {
+        .nav {
+            width: 492px;
+            margin-left: -492px
+        }
+        .nav.fullscreen {
+            margin-left: 0;
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .nav {
+            width: 100%;
+        }
+        .nav-left {
+            width: 100%;
+        }
+    }
+    
+    
+    .nav-right .title-list nav a .post-title, .nav-right .title-list #local-search-result a .post-title {
+        color: #383636;
+    }
+    
+    
+    .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
+        color: #5e5e5f;
+    }
+    
+    
+    .nav-right nav a.hover, #local-search-result a.hover{
+        background-color: #e2e0e0;
+    }
+    
+    
+
+    /*列表样式*/
+    
+
+    /* 背景图样式 */
+    
+    
+
+
+    /*引用块样式*/
+    
+
+    /*文章列表背景图*/
+    
+
+    
+</style>
+
+
+
+
+
+
+
+</html>
