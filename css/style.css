@@ -1,6 +1,6 @@
 #comments {
   padding: 2.5em;
-  background: #fff;
+  background: #e8ffe8 /* 评论区背景颜色   */;
 }
 #comments .comment-bar {
   display: block;
@@ -326,7 +326,7 @@
   src: url("//at.alicdn.com/t/font_236002_600u3zzht94.eot?#iefix") format('embedded-opentype'), url("//at.alicdn.com/t/font_236002_600u3zzht94.woff2") format('woff2'), url("//at.alicdn.com/t/font_236002_600u3zzht94.woff") format('woff'), url("//at.alicdn.com/t/font_236002_600u3zzht94.ttf") format('truetype'), url("//at.alicdn.com/t/font_236002_600u3zzht94.svg#iconfont") format('svg');
 }
 .iconfont {
-  font-family: "iconfont", "custom-iconfont" !important;
+  font-family: "iconfont" !important;
   font-size: 16px;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
@@ -507,9 +507,9 @@
   color: #f00;
 }
 .nav-left {
-  width: 120px;
+  width: 150px /* 左侧导航宽度 150px */;
   height: 100%;
-  background: #2a2935;
+  background: #32414e /* 这个颜色比较好看*/;
   box-shadow: inset -15px 0 15px -15px #222;
   float: left;
   position: relative;
@@ -552,6 +552,42 @@
 .nav-left .icon a:hover {
   color: #309e85;
 }
+.nav-left .icon a.rss:before {
+  content: "\ea9b";
+}
+.nav-left .icon a.github:before {
+  content: "\eab0";
+}
+.nav-left .icon a.twitter:before {
+  content: "\ea96";
+}
+.nav-left .icon a.weibo:before {
+  content: "\ea9a";
+}
+.nav-left .icon a.linkedin:before {
+  content: "\eac9";
+}
+.nav-left .icon a.instagram:before {
+  content: "\ea92";
+}
+.nav-left .icon a.email:before {
+  content: "\e945";
+}
+.nav-left .icon a.facebook:before {
+  content: "\ea91";
+}
+.nav-left .icon a.reddit:before {
+  content: "\eac6";
+}
+.nav-left .icon a.qq:before {
+  content: "\e626";
+}
+.nav-left .icon a.neteasemusic:before {
+  content: "\e607";
+}
+.nav-left .icon a.kugou:before {
+  content: "\e6ce";
+}
 .nav-left ul {
   margin: 0;
   padding: 0;
@@ -590,8 +626,6 @@
   color: rgba(255,255,255,0.7);
   transition: all 0.15s linear;
   position: relative;
-  white-space: nowrap;
-  overflow: hidden;
 }
 .nav-left ul li>div:hover {
   color: #f7f7f7;
@@ -616,11 +650,10 @@
   border-collapse: collapse;
   bottom: 0;
   width: 100%;
-  font-size: 0;
+  font-size: 17px;
   color: rgba(255,255,255,0.7);
 }
 .nav-left .left-bottom a {
-  font-size: 17px;
   display: table-cell;
   height: 30px;
   text-align: center;
@@ -634,7 +667,7 @@
 }
 .nav-left .left-bottom a.about.hasFriend {
   border-right: 1px solid #fff;
-  width: calc(49% - 1px);
+  width: 49%;
 }
 .nav-left .left-bottom a.friends {
   display: inline-block;
@@ -645,7 +678,7 @@
 .nav-right {
   width: 420px;
   height: 100%;
-  background: #fff;
+  background: #f2f1d7 /* 柔黄色F2F1D7 深绿色00B271  绿色C7EDCC   浅绿E8FFE8  */;
   border-right: 1px solid #e5e8ec;
   overflow: hidden;
   float: left;
@@ -995,11 +1028,6 @@
   overflow: hidden;
   outline: none;
 }
-.nav-right .title-list nav a .post-title .search-keyword,
-.nav-right .title-list #local-search-result a .post-title .search-keyword {
-  color: #f00;
-  font-style: normal;
-}
 .nav-right .title-list nav a .post-date,
 .nav-right .title-list #local-search-result a .post-date {
   font-size: 15px;
@@ -1183,7 +1211,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 1.75;
-  background: #f4f5f5;
+  background: #e8ffe8 /* 浅绿色  */;
   overflow-x: hidden;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
@@ -1219,8 +1247,8 @@
   animation: fadeOuts 0.2s;
 }
 #post .pjax article {
-  padding: 2.5em;
-  background: #fff;
+  padding: 1em;
+  background: #e8ffe8;
 /* Inline code */
 }
 #post .pjax article .article-entry>p:nth-child(1) {
@@ -1556,6 +1584,7 @@
 #post .copyright {
   margin-top: 50px;
   padding-bottom: 30px;
+  background: #e8ffe8;
   line-height: 14px;
   text-align: center;
   color: #bcc1c4;
@@ -1644,10 +1673,10 @@ h2 {
 }
 .nav {
   position: relative;
-  width: 542px;
+  width: 100px;
   height: 100%;
   float: left;
-  background-color: #fff;
+  background-color: #f2f1d7;
   transition: margin-left 0.5s cubic-bezier(0.77, 0, 0.175, 1);
 }
 .nav.fullscreen {
@@ -1757,7 +1786,7 @@ img.pswp__img {
     font: 400 15px/1 "Open Sans", "Hiragino Sans GB", sans-serif;
   }
   .nav {
-    width: 492px;
+    width: 522px /*492px*/;
   }
   .nav.fullscreen {
     margin-left: -492px;

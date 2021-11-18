@@ -4,6 +4,7 @@ jQuery.fn.quberTip = function (options) {
 		xOffset: 10,
 		yOffset: 10
 	};
+	
 	var options = $.extend(defaults, options);
 	return this.each(function () {
 		var $this = jQuery(this);
