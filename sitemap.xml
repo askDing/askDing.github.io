@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://askding.github.io/Kali/Exploit/Apache-Log4j-RCE.html</loc>
+    
+    <lastmod>2021-12-10</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://askding.github.io/Kali/PostExploit/%E8%BD%AF%E4%BB%B6%E4%BB%A3%E7%A0%81%E7%BC%BA%E9%99%B7%E6%A6%82%E8%BF%B0.html</loc>
     
     <lastmod>2021-11-29</lastmod>
@@ -501,7 +508,7 @@
 
   <url>
     <loc>https://askding.github.io/</loc>
-    <lastmod>2021-11-29</lastmod>
+    <lastmod>2021-12-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -509,14 +516,14 @@
   
   <url>
     <loc>https://askding.github.io/tags/aa/</loc>
-    <lastmod>2021-11-29</lastmod>
+    <lastmod>2021-12-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://askding.github.io/tags/system/</loc>
-    <lastmod>2021-11-29</lastmod>
+    <lastmod>2021-12-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -525,70 +532,70 @@
   
   <url>
     <loc>https://askding.github.io/categories/Kali/</loc>
-    <lastmod>2021-11-29</lastmod>
+    <lastmod>2021-12-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://askding.github.io/categories/Evolution/</loc>
-    <lastmod>2021-11-29</lastmod>
+    <lastmod>2021-12-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://askding.github.io/categories/Kali/Exploit/</loc>
-    <lastmod>2021-11-29</lastmod>
+    <lastmod>2021-12-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://askding.github.io/categories/Kali/PostExploit/</loc>
-    <lastmod>2021-11-29</lastmod>
+    <lastmod>2021-12-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://askding.github.io/categories/Tools/</loc>
-    <lastmod>2021-11-29</lastmod>
+    <lastmod>2021-12-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://askding.github.io/categories/Coding/</loc>
-    <lastmod>2021-11-29</lastmod>
+    <lastmod>2021-12-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://askding.github.io/categories/Coding/JavaScript/</loc>
-    <lastmod>2021-11-29</lastmod>
+    <lastmod>2021-12-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://askding.github.io/categories/Coding/Python/</loc>
-    <lastmod>2021-11-29</lastmod>
+    <lastmod>2021-12-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://askding.github.io/categories/Coding/Audit/</loc>
-    <lastmod>2021-11-29</lastmod>
+    <lastmod>2021-12-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://askding.github.io/categories/Response/</loc>
-    <lastmod>2021-11-29</lastmod>
+    <lastmod>2021-12-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
