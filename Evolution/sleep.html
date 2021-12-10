@@ -6,18 +6,23 @@
   <meta name="keywords" content="">
   <meta name="description" content="sleep | Mr.Frame">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta name="description" content="function doDecrypt (pwd, onError) { 	console.log(&#39;in doDecrypt&#39;); 	const txt &#x3D; document.getElementById(&#39;enc_content&#39;).innerHTML; 	let plantext; 	try { 		const bytes &#x3D; CryptoJS.AES.decrypt(txt, pwd);">
-<meta property="og:type" content="website">
-<meta property="og:title" content="about">
-<meta property="og:url" content="https://askding.github.io/about/index.html">
+<meta name="description" content="编写进度     Apache-Log4jApache Log4j 远程代码执行  攻击者可直接构造恶意请求，触发远程代码执行漏洞。漏洞利用无需特殊配置，经阿里云安全团队验证，Apache Struts2、Apache Solr、Apache Druid、Apache Flink等均受影响   复线步骤编译exp-修改Log4jRCE.javapublic class Log4jRCE &amp;#123">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Apache_Log4j_RCE">
+<meta property="og:url" content="https://askding.github.io/Kali/Exploit/Apache-Log4j-RCE.html">
 <meta property="og:site_name" content="Mr.Frame">
-<meta property="og:description" content="function doDecrypt (pwd, onError) { 	console.log(&#39;in doDecrypt&#39;); 	const txt &#x3D; document.getElementById(&#39;enc_content&#39;).innerHTML; 	let plantext; 	try { 		const bytes &#x3D; CryptoJS.AES.decrypt(txt, pwd);">
+<meta property="og:description" content="编写进度     Apache-Log4jApache Log4j 远程代码执行  攻击者可直接构造恶意请求，触发远程代码执行漏洞。漏洞利用无需特殊配置，经阿里云安全团队验证，Apache Struts2、Apache Solr、Apache Druid、Apache Flink等均受影响   复线步骤编译exp-修改Log4jRCE.javapublic class Log4jRCE &amp;#123">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-12-08T11:41:14.000Z">
-<meta property="article:modified_time" content="2020-12-08T11:41:14.000Z">
+<meta property="og:image" content="https://user-images.githubusercontent.com/45926593/145425339-47c71230-87d2-4519-8919-9c3520850f83.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/crkmythical/PicGo/main/images/20211210134009.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/crkmythical/PicGo/main/images/20211210141034.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/crkmythical/PicGo/main/images/20211210134659.png">
+<meta property="article:published_time" content="2021-12-10T05:31:59.000Z">
+<meta property="article:modified_time" content="2021-12-10T05:31:59.000Z">
 <meta property="article:author" content="Mr.Frame">
 <meta property="article:tag" content="kali exploit vulnerability programing">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://user-images.githubusercontent.com/45926593/145425339-47c71230-87d2-4519-8919-9c3520850f83.png">
 
 
 <link rel="icon" href="/img/avatar.jpg">
@@ -985,7 +990,7 @@ function doDecrypt (pwd, onError) {
 	}
 }
 </script>
-<div id="enc_content" style="display:none">U2FsdGVkX1/Jua8HyTQYL3Q0YOwA1dKPNfqgRUmr5CMH3sRXcv/n38QSykz6U3M+1sGxzDro/LXmTL5ulg+7Ra7mo4/IRPLXIBmXLE27sJaIyNrmCexwuMWW39jwcBhimX4gGzhWp+odh/qsC9A3MWRIytUvnTd80OkdAhk+lP6zKp46BpNk0dRJgDTkHbmdIjYX1Pbm+PvfZqCxIJozNaLPAK4GIUYoYigOdZToZ7Hpt+8RMKSvu3y+BVNVoJkfKVc5w4O6qaiocAxHodPvP6QXhcRmvNnddc0pD9+REbWYoRn0Vbz6VkNvQ+IeOW9oYarvc3SNu6oD+pyc074X47dlMaMuprVSqQoHhOa6/9LGkKMdGn8kUcR8rpa4JRTv9iPUjQY2yPizej6lRg+JsD18siWQ5nfST45dJd4s2baPdWYcPl28vTDygohx3l01gZO7/GmDeF8wo+gGAqSJ57uDK2rYK8UNs1PI7I8adqHUfFG+tuB5V+/DE72gC85RBpCDfWaheeuAlWM31YadbGJOao47JxyBARhxgkleKR73pr37ozKzOLGZHhRA1lGplp+6C6iODMBdkqIp+warRDGQ10oOyVzIQwYj/hOQWoMmlmS07CUyWdtfQytQT7sujoFZrff3HVH8pCitqiUrXPn9DjjKYvAdcVDGaAre9EmQSCwezqLebPrBkfICvw96bis42XYIIju00cGAK8fkLxY9x2V6x0miNYu6nymzYsVaSg2+U6bFSZPHajCaITE0meqznB70APhXBJEOyIb9Q0SKvbgT4FZLWWNGnsRsW0NMqMIQQVtBPSLqgVOLDfDafiaFNqBH7J6gzEG82TL045flA3V00RxpHhHjaycLetH3cFZrNiZmC6L1o1zDxPetpOEtljMIK4B3tOw9PVgzvkpSRdvWb5pqmoh2WeI0OAPf+P/3SrHvBbQ7DJ+TqplwQ20YSu5Si1ZbbT3gaixMvSSphjnzIJsDsgi9UI2dmIQZ8nAuMi0ipLNkmpkUb2GdnlgSil97UAk18bNxbXEGWP0KS64gj3vdlRWF6LHIwTXHm4IWLS6KdarG53lLMBahtPia/wUGLvBzCxWnDCEXMOBO2Gd1w8BzK3fwV/s/4F2NLt/xfhmoT7kdowmh4Hi9hQ3Ocfc3p2/XXpi1V7OQUepZQZ95ZUM/1H6OJpL5mOUmEBfo/uDsAB4vg6nUbCRjp5CeOksYjOeFPo2Jltj8i3Wa300C2uRvSLPQqCh5qzG/aoeOlYzkv6FwQSDlX6PUf2IYoA1bliMoeDuzZtUGRJpw2T5f265gsdAyRUc3HIzvF95aS+WPKTBhuE64MeIw2Kkwx8KGVNqJz7+IIfUtnx0IuMQ/F2a+StqXgZIRwjJS/5c0V7KsDfo4u18Id8cfc7ewZ48EoDutVY8O159amf/ZQEuQ4qPf1J0xxehilx2j6xPmQGLOqEnuDsxLzPsSfOilwrZJ7afxizyCIZ4mW0+oE6NxDdGC9bFsUgsbByJ8HMCGPT+gTj4upxsVNrajXkD1+FcGdWb2FOUcC1X4qin8zC4ipFCnUR+G/SvvB0K1CYNBMqflsci3UBTqRVEtf8vKORE+j71gwcJUnxMAe7XRQiVAuX4cWuESxVKh1xtJZe7WTdYvmzdZeyoR3H17</div>
+<div id="enc_content" style="display:none">U2FsdGVkX19JglvCTBWY8cDyZDqx57KcUmewj8zTLzuRwkg1pt9XmgJAO2x2M4PNzRmvkf8hT2DqCouqwykXPLPOP8jcYpN2xKHEi65E6pCyXAr36KpzPP9J8L4kErP65t2BY5Wh6UNeI6vBA09kL35BxCjf8CGJQMdoOIc72dpyl6dLuFY4bIXCti2bDtKCPSuN+hsG/qzzZMgvBaUXGAocdW/+i/ijh1aeOX0dHUrnJaOeqWQ94ylDEwfQwajn+Ott0PZZwKBjgW5ENDWBUD32rTmywLyIDFT650haIyoYvXzJVB/zfexOymlDGS+RHXVJJrSbadYO3vy2sWLtKN9FXGkfz9M4vt1NHM56kZHo0gCWgx9FKzr7nErVbjxnn0hvp/SiE4OB/GLKB85/ViBbWpcdAQaH7V+YF47ykJjuMCwDPC1GjlVKwFb9W+jQ6FPlXl2WDqsht5YiWCVIS84PsaDGCfRft56ioH++gDSemYtEAKBwuAG4qdc1bZdvu1pORRF+DsnZ2ATeJhLRd5luxQOQr5XriVuySEZ7hdWBHviJYEba/8TVPORyUVzot+cjTWhSs8oyrgzv4SEFVxyu2Nm8t3kO4bH/8jj/USKyX/UUDNRaj+0HbBjmByHM4QioY0V03BNO6RmFwFqI9QHdROBzl3n8BpOtPXDtLlkWz1vVWzjth/hi6kFBJxnHXnwUWSa09EEAqGrrz7CTO+x+0Y1iaqqjiuXEXi69MZXiGaO4kegX8zMV7LOlkRXa4y0UA1lfy/cN1gnbvy1/ybUy8vtyEp/U30g8w3Ujefn3+Dlux6IAW7FuG00nE/lkJRSRk/PQjmXM2nUYY1O6dZ8Nplo5SJyEJqYGnmjMGQ3/OsrLDe1qwrYz0bACdW4Dr90JnjePtQ2Sx/QPI3k3fkY1D67/YbkzAiFkObCm5qSaOo6AEygUEcBipHWBHmra8CYkqsj0RzC45vLPKtTP8X360NJILMajFE96xxHh99jBKdesJ76D/bWUGdRAVdaiTq9tiCGirYypKz9gDSsl5On/Ws8atVVHD8Okzt0FeKPMztQhEeyy7rLAyG8YOeduBBEoiH4/nUNojdPJl5fifeXh1PsfiKn1fIWH3U2y4jQofdDcFi6SM5J1/w0M4NVuUH1u413LtqNcOKWUqsbGYyX3AxYMtvY5fuQMLv+ihaj+jjoDxLAAc+kdIT/hPW4/uXT35qpjt2o8T45jk6YmYaZta4SfWRNSaytNuoDQAdyqbHXo3m9Pq7HBvW4+XWJYlRPHpnB9f06Gli2hkwaQ3JXIrXqK8r9MaxN067QypqCOf7EI0kOWLSiYkAhanoU6L4YcI87tyzieCJQqBSlJ4bMtdK1f5QTnG03YrQK9OnScK9Kiu157rw4OMH1wjwoT8a9sqPdQTEReBvoONdgLwN7B9ncq1tRSkjMGuf4pJxyn2jtSEHD3QVKskn9urb5ueuC6qFyOA+JZ/Vs8c6P0wXlTz2DMANqOUtOxt9J/819etK6XfEFxzPLXtYD3imUYF51U1xnrdw6FPrGvaJxX/ZUnKSIfLj+J6nZKFqeZ4rYEyOyGL1PIi64uhKvgJbZTiBKdz2Hjzc5y2L2iA1+Eeaik4aEiQMAx8vu7B03ZFoVcRB3FHBQyz66yXvQRBzul</div>
 <div id="enc_passwd"> <input id="enc_pwd_input" type="password" style="border-radius: 5px;border-style: groove;height: 30px;width: 50%;cursor: auto;font-size: 102%;color: currentColor;outline: none;text-overflow: initial;padding-left: 5px;" onkeydown="if (event.keyCode == 13) { decrypt(); return false;}"> <input type="submit" value="解&nbsp;密" onclick="decrypt()" style="width: 58px;height: 34px;border-radius: 5px;background-color: white;border-style: solid;color: currentColor;"><div id="enc_error" style="display: inline-block;color: #d84527;margin-left: 10px"></div>
 <script>
 var onError = function(error) {
