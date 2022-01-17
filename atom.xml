@@ -6,7 +6,7 @@
   <link href="https://askding.github.io/atom.xml" rel="self"/>
   
   <link href="https://askding.github.io/"/>
-  <updated>2021-12-20T04:08:47.000Z</updated>
+  <updated>2022-01-17T08:57:39.000Z</updated>
   <id>https://askding.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Confluence-CVE2021-26084</title>
+    <link href="https://askding.github.io/Kali/Exploit/Confluence-CVE2021-26084.html"/>
+    <id>https://askding.github.io/Kali/Exploit/Confluence-CVE2021-26084.html</id>
+    <published>2022-01-17T08:57:39.000Z</published>
+    <updated>2022-01-17T08:57:39.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>编写进度</p><ul><li><input checked="" disabled="" type="checkbox"> </li></ul><p><img src="https://raw.githubusercontent.com/crkmythical/PicGo/main/images/20220117165653.png"></p><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;编写进度&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&quot;&quot; disabled=&quot;&quot; type=&quot;checkbox&quot;&gt; &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/crkmythical/P</summary>
+      
+    
+    
+    
+    <category term="Kali" scheme="https://askding.github.io/categories/Kali/"/>
+    
+    <category term="Exploit" scheme="https://askding.github.io/categories/Kali/Exploit/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>awschatbot_slack集成</title>
@@ -528,32 +556,6 @@
 &lt;li&gt;&lt;input checked=&quot;&quot; disabled=&quot;&quot; type=&quot;checkbox&quot;&gt; &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&quot;基础知识&quot;&gt;&lt;a href=&quot;#基础知识&quot; class=&quot;headerlink&quot; title=&quot;基础知识</summary>
-      
-    
-    
-    
-    <category term="Coding" scheme="https://askding.github.io/categories/Coding/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>getHttpProxy</title>
-    <link href="https://askding.github.io/Coding/getHttpProxy.html"/>
-    <id>https://askding.github.io/Coding/getHttpProxy.html</id>
-    <published>2021-03-17T09:12:28.000Z</published>
-    <updated>2021-03-17T09:12:28.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>编写进度</p><ul><li><input checked="" disabled="" type="checkbox"> </li></ul><p>在github上发现一个自动更新的http代理的仓库<a href="https://github.com/fate0/proxylist">fate0</a></p><p>因此编写了一个python脚本自动获取并添加到proxychains.conf配置文件中</p><p><a href="https://github.com/askDing/socks5_list">getHttp.py</a></p><pre><code class="python">#!/usr/bin/env python3# -*- coding: utf-8 -*-# Wed Mar 17 16:39:04 CST 2021# AUTHOR: Mr.Frame # Description:#      自动获取http代理，并添加到proxychains.conf中#Usage:#      python3 gethttp.py  [/path/to/proxychains.conf]import requestsimport urllib3import jsondef get_socks5(proxychains_path):    &quot;&quot;&quot;    get socks from http://proxylist.fatezero.org/proxy.list.    proxychains_path: str -&gt; the path of proxycahins-ng configuation file.    ***suggestion:   enable  round_robin_chain****    #strict_chain    #dynamic_chain    #round_robin_chain    random_chain    chain_len = 2    &quot;&quot;&quot;    proxychains_file = proxychains_path    url=&quot;http://proxylist.fatezero.org/proxy.list&quot;    headers=&#123;        &quot;User-Agent&quot;: &quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36&quot;    &#125;    urllib3.disable_warnings() # 关闭ssl警告    try:        response = requests.get(url=url,headers=headers,verify=False,timeout=2)    except Exception as e:        print(&quot;\033[31m[x]Connection failed\033[0m&quot;)        print(e.__str__())        exit()    if response.status_code == 200 :        proxy_list = response.text.splitlines()        socks_list=&quot;\n\n# socks5 list from  http://proxylist.fatezero.org/proxy.list\n&quot;        for item in proxy_list:            item_dict = json.loads(item)            if &quot;http&quot; == item_dict[&#39;type&#39;] and &quot;high_anonymous&quot; == item_dict[&#39;anonymity&#39;]:                socks_item = item_dict[&#39;type&#39;] +&quot;\t&quot; + item_dict[&#39;host&#39;] + &quot;\t&quot; + str(item_dict[&#39;port&#39;])+&quot;\n&quot;                socks_list += socks_item            print(socks_list)        # with open(&quot;/usr/local/etc/proxychains.conf&quot;,&#39;a+&#39;) as f:        with open(proxychains_file,&quot;a+&quot;) as f:            f.write(socks_list)if __name__ == &#39;__main__&#39;:    import sys    if sys.argv.__len__() == 1:        get_socks5(&quot;/usr/local/etc/proxychains.conf&quot;)    else:        get_socks5(sys.argv[1])</code></pre><p>执行脚本后,代理效果不是很好</p><pre><code class="zsh"> proxychains4 curl cip.cc[proxychains] config file found: /usr/local/etc/proxychains.conf[proxychains] preloading /usr/local/Cellar/proxychains-ng/4.14/lib/libproxychains4.dylib[proxychains] DLL init: proxychains-ng 4.14[proxychains] Random chain  ...  222.78.210.229:57186  ...  cip.cc:80  ...  OKIP    : 222.78.210.229地址    : 中国  福建  南平运营商    : 电信数据二    : 福建省南平市 | 电信数据三    : 中国福建省南平市 | 电信URL    : http://www.cip.cc/222.78.210.229</code></pre><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;编写进度&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;input checked=&quot;&quot; disabled=&quot;&quot; type=&quot;checkbox&quot;&gt; &lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;在github上发现一个自动更新的http代理的仓库&lt;a href=&quot;https://github.com/fat</summary>
       
     
     
