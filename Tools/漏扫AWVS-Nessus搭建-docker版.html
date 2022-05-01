@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>NFS | Mr.Frame</title>
+  <title>漏扫AWVS-Nessus搭建-docker版 | Mr.Frame</title>
   <meta name="keywords" content="">
-  <meta name="description" content="NFS | Mr.Frame">
+  <meta name="description" content="漏扫AWVS-Nessus搭建-docker版 | Mr.Frame">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="404 Not Found: 该页面无法显示很抱歉，您所访问的地址并不存在!!!">
 <meta property="og:type" content="website">
@@ -967,9 +967,9 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="post-NFS" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-漏扫AWVS-Nessus搭建-docker版" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">NFS</h1>
+        <h1 class="article-title">漏扫AWVS-Nessus搭建-docker版</h1>
     
     <div class="article-meta">
         
@@ -979,9 +979,7 @@
             <i class="iconfont icon-category"></i>
             
             
-            <a  data-rel="Kali">Kali</a> > 
-            
-            <a  data-rel="Kali&lt;---&gt;Exploit">Exploit</a>
+            <a  data-rel="Tools">Tools</a>
             
         </span>
         
@@ -989,12 +987,12 @@
     </div>
     <div class="article-meta">
         
-            Created At : <time class="date" title='Updated At: 2020-12-04 20:22:50'>2020-12-04 20:22</time>
+            Created At : <time class="date" title='Updated At: 2022-02-09 18:54:33'>2022-02-09 18:54</time>
         
     </div>
     <div class="article-meta">
         
-        <span>Count:393</span>
+        <span>Count:130</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -1024,7 +1022,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86"><span class="toc-text">信息收集</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#NFS%E5%85%B1%E4%BA%AB%E4%BF%A1%E6%81%AF%E6%B3%84%E9%9C%B2%E6%BC%8F%E6%B4%9E-CVE-1999-0170"><span class="toc-text">NFS共享信息泄露漏洞 CVE-1999-0170</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#MSF%E7%9B%B8%E5%85%B3%E6%A8%A1%E5%9D%97"><span class="toc-text">MSF相关模块</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8C%82%E8%BD%BDNFS"><span class="toc-text">挂载NFS</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#AWVS%E6%90%AD%E5%BB%BA"><span class="toc-text">AWVS搭建</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Nessus"><span class="toc-text">Nessus</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#AWVS-amp-NESSUS"><span class="toc-text">AWVS&amp;NESSUS</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -1040,51 +1038,28 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>NFS 网络文件系统(Network File System) 允许客户端上的用户像访问本地文件一样地访问网络上的文件</p>
-<h2 id="信息收集"><a href="#信息收集" class="headerlink" title="信息收集"></a>信息收集</h2><pre><code class="zsh">nmap -Pn -T4 -sV -p111,2049 10.211.55.6 --script rpcinfo
-Host discovery disabled (-Pn). All addresses will be marked &#39;up&#39; and scan times will be slower.
-Starting Nmap 7.91 ( https://nmap.org ) at 2020-11-27 17:00 CST
-Nmap scan report for centos-linux.shared (10.211.55.6)
-Host is up (0.00050s latency).
-
-PORT     STATE SERVICE VERSION
-111/tcp  open  rpcbind 2-4 (RPC #100000)
-| rpcinfo:
-|   program version    port/proto  service
-|   100000  2,3,4        111/tcp   rpcbind
-|   100003  3,4         2049/udp6  nfs
-|   100005  1,2,3      20048/tcp   mountd
-      100021  1,3,4      42555/udp6  nlockmgr
-|   100024  1          34047/tcp6  status
-|   100227  3           2049/tcp   nfs_acl
-2049/tcp open  nfs_acl 3 (RPC #100227)
-
-Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-Nmap done: 1 IP address (1 host up) scanned in 6.38 seconds</code></pre>
-<h2 id="NFS共享信息泄露漏洞-CVE-1999-0170"><a href="#NFS共享信息泄露漏洞-CVE-1999-0170" class="headerlink" title="NFS共享信息泄露漏洞 CVE-1999-0170"></a>NFS共享信息泄露漏洞 CVE-1999-0170</h2><h3 id="MSF相关模块"><a href="#MSF相关模块" class="headerlink" title="MSF相关模块"></a>MSF相关模块</h3><pre><code class="zsh">msf6 auxiliary(scanner/nfs/nfsmount) &gt; show options
-
-Module options (auxiliary/scanner/nfs/nfsmount):
-
-   Name      Current Setting  Required  Description
-   ----      ---------------  --------  -----------
-   PROTOCOL  udp              yes       The protocol to use (Accepted: udp, tcp)
-   RHOSTS    10.211.55.6      yes       The target host(s), range CIDR identifier, or hosts file with syntax &#39;file:&lt;path&gt;&#39;
-   RPORT     111              yes       The target port (TCP)
-   THREADS   1                yes       The number of concurrent threads (max one per host)
-
-msf6 auxiliary(scanner/nfs/nfsmount) &gt; run
-
-[+] 10.211.55.6:111       - 10.211.55.6 NFS Export: / [*]
-[*] 10.211.55.6:111       - Scanned 1 of 1 hosts (100% complete)
-[*] Auxiliary module execution completed</code></pre>
-<h3 id="挂载NFS"><a href="#挂载NFS" class="headerlink" title="挂载NFS"></a>挂载NFS</h3><pre><code class="zsh">&gt; showmount -e 10.211.55.6   # 查看NSF服务器共享目录
-Exports list on 10.211.55.6:
-/root                               *
-
-&gt; mount -t nfs 10.211.55.6:/root /mnt  # 挂在NSF服务器共享的/root目录到本地的/mnt目录
-&gt; ls /mnt   # 查看/mnt目录的文件
-anaconda-ks.cfg  index.html  index.html.1  index.html.2  original-ks.cfg
-</code></pre>
+        <p>编写进度</p>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> </li>
+</ul>
+<h2 id="AWVS搭建"><a href="#AWVS搭建" class="headerlink" title="AWVS搭建"></a>AWVS搭建</h2><pre><code class="shell">docker pull xrsec/awvs:latest
+docker run -it -d  --name awvs  -p 3443:3443  --restart=always  xrsec/awvs:latest</code></pre>
+<p>访问 <a target="_blank" rel="noopener" href="https://ip:3443/">https://ip:3443</a></p>
+<p>账户密码  <code> awvs@awvs.com/Awvs@awvs.com</code></p>
+<h2 id="Nessus"><a href="#Nessus" class="headerlink" title="Nessus"></a><a target="_blank" rel="noopener" href="https://github.com/stevemcgrath/docker-nessus_scanner">Nessus</a></h2><pre><code class="shell">docker pull stevemcgrath/nessus_scanner:latest
+docker run -dt \
+    -e LINKING_KEY=&#123;LINKING_KEY&#125;\
+    -e SCANNER_NAME=&#123;SCANNER_NAME&#125;\
+    --name nessus_scanner\
+    stevemcgrath/nessus_scanner:latest</code></pre>
+<h2 id="AWVS-amp-NESSUS"><a href="#AWVS-amp-NESSUS" class="headerlink" title="AWVS&amp;NESSUS"></a><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/ecPLUbVGuaHMhPMPE6oWmA">AWVS&amp;NESSUS</a></h2><pre><code class="shell">docker pull leishianquan/awvs-nessus:v04
+docker run -it -d -p 13443:3443 -p 8834:8834 leishianquan/awvs-nessus:v04
+echo  `docker ps -a | grep  awvs-nessus` | awk &#39;&#123;print $1&#125;&#39;
+docker exec –it 容器id   /bin/bash
+/etc/init.d/nessusd start</code></pre>
+<p>访问 <a target="_blank" rel="noopener" href="https://ip:8834/">https://ip:8834/</a></p>
+<p>用户密码 <code>leishi/leishianquan</code></p>
+<p><a target="_blank" rel="noopener" href="https://www.showdoc.com.cn/903737475535911/4808693697997263">https://www.showdoc.com.cn/903737475535911/4808693697997263</a></p>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 askding@qq.com </span>

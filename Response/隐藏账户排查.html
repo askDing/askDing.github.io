@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>NFS | Mr.Frame</title>
+  <title>隐藏账户排查 | Mr.Frame</title>
   <meta name="keywords" content="">
-  <meta name="description" content="NFS | Mr.Frame">
+  <meta name="description" content="隐藏账户排查 | Mr.Frame">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="404 Not Found: 该页面无法显示很抱歉，您所访问的地址并不存在!!!">
 <meta property="og:type" content="website">
@@ -967,9 +967,9 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="post-NFS" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-隐藏账户排查" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">NFS</h1>
+        <h1 class="article-title">隐藏账户排查</h1>
     
     <div class="article-meta">
         
@@ -979,9 +979,7 @@
             <i class="iconfont icon-category"></i>
             
             
-            <a  data-rel="Kali">Kali</a> > 
-            
-            <a  data-rel="Kali&lt;---&gt;Exploit">Exploit</a>
+            <a  data-rel="Response">Response</a>
             
         </span>
         
@@ -989,12 +987,12 @@
     </div>
     <div class="article-meta">
         
-            Created At : <time class="date" title='Updated At: 2020-12-04 20:22:50'>2020-12-04 20:22</time>
+            Created At : <time class="date" title='Updated At: 2022-02-15 18:57:27'>2022-02-15 18:57</time>
         
     </div>
     <div class="article-meta">
         
-        <span>Count:393</span>
+        <span>Count:333</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -1024,7 +1022,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86"><span class="toc-text">信息收集</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#NFS%E5%85%B1%E4%BA%AB%E4%BF%A1%E6%81%AF%E6%B3%84%E9%9C%B2%E6%BC%8F%E6%B4%9E-CVE-1999-0170"><span class="toc-text">NFS共享信息泄露漏洞 CVE-1999-0170</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#MSF%E7%9B%B8%E5%85%B3%E6%A8%A1%E5%9D%97"><span class="toc-text">MSF相关模块</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8C%82%E8%BD%BDNFS"><span class="toc-text">挂载NFS</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%9A%90%E8%97%8F%E8%B4%A6%E6%88%B7%E6%8E%92%E6%9F%A5"><span class="toc-text">隐藏账户排查</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E9%9A%90%E8%97%8F%E8%B4%A6%E6%88%B7"><span class="toc-text">创建隐藏账户</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8E%92%E6%9F%A5%E9%9A%90%E8%97%8F%E8%B4%A6%E6%88%B7-lusrmgr%E6%96%B9%E5%BC%8F"><span class="toc-text">排查隐藏账户-lusrmgr方式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8E%92%E6%9F%A5%E9%9A%90%E8%97%8F%E8%B4%A6%E6%88%B7-regedit%E6%96%B9%E5%BC%8F"><span class="toc-text">排查隐藏账户-regedit方式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AB%AF%E5%8F%A3%E6%8E%92%E6%9F%A5"><span class="toc-text">端口排查</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%90%AF%E5%8A%A8%E9%A1%B9%E5%8F%8A%E8%AE%A1%E5%88%92%E4%BB%BB%E5%8A%A1%E6%8E%92%E6%9F%A5"><span class="toc-text">启动项及计划任务排查</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -1040,51 +1038,25 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>NFS 网络文件系统(Network File System) 允许客户端上的用户像访问本地文件一样地访问网络上的文件</p>
-<h2 id="信息收集"><a href="#信息收集" class="headerlink" title="信息收集"></a>信息收集</h2><pre><code class="zsh">nmap -Pn -T4 -sV -p111,2049 10.211.55.6 --script rpcinfo
-Host discovery disabled (-Pn). All addresses will be marked &#39;up&#39; and scan times will be slower.
-Starting Nmap 7.91 ( https://nmap.org ) at 2020-11-27 17:00 CST
-Nmap scan report for centos-linux.shared (10.211.55.6)
-Host is up (0.00050s latency).
-
-PORT     STATE SERVICE VERSION
-111/tcp  open  rpcbind 2-4 (RPC #100000)
-| rpcinfo:
-|   program version    port/proto  service
-|   100000  2,3,4        111/tcp   rpcbind
-|   100003  3,4         2049/udp6  nfs
-|   100005  1,2,3      20048/tcp   mountd
-      100021  1,3,4      42555/udp6  nlockmgr
-|   100024  1          34047/tcp6  status
-|   100227  3           2049/tcp   nfs_acl
-2049/tcp open  nfs_acl 3 (RPC #100227)
-
-Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-Nmap done: 1 IP address (1 host up) scanned in 6.38 seconds</code></pre>
-<h2 id="NFS共享信息泄露漏洞-CVE-1999-0170"><a href="#NFS共享信息泄露漏洞-CVE-1999-0170" class="headerlink" title="NFS共享信息泄露漏洞 CVE-1999-0170"></a>NFS共享信息泄露漏洞 CVE-1999-0170</h2><h3 id="MSF相关模块"><a href="#MSF相关模块" class="headerlink" title="MSF相关模块"></a>MSF相关模块</h3><pre><code class="zsh">msf6 auxiliary(scanner/nfs/nfsmount) &gt; show options
-
-Module options (auxiliary/scanner/nfs/nfsmount):
-
-   Name      Current Setting  Required  Description
-   ----      ---------------  --------  -----------
-   PROTOCOL  udp              yes       The protocol to use (Accepted: udp, tcp)
-   RHOSTS    10.211.55.6      yes       The target host(s), range CIDR identifier, or hosts file with syntax &#39;file:&lt;path&gt;&#39;
-   RPORT     111              yes       The target port (TCP)
-   THREADS   1                yes       The number of concurrent threads (max one per host)
-
-msf6 auxiliary(scanner/nfs/nfsmount) &gt; run
-
-[+] 10.211.55.6:111       - 10.211.55.6 NFS Export: / [*]
-[*] 10.211.55.6:111       - Scanned 1 of 1 hosts (100% complete)
-[*] Auxiliary module execution completed</code></pre>
-<h3 id="挂载NFS"><a href="#挂载NFS" class="headerlink" title="挂载NFS"></a>挂载NFS</h3><pre><code class="zsh">&gt; showmount -e 10.211.55.6   # 查看NSF服务器共享目录
-Exports list on 10.211.55.6:
-/root                               *
-
-&gt; mount -t nfs 10.211.55.6:/root /mnt  # 挂在NSF服务器共享的/root目录到本地的/mnt目录
-&gt; ls /mnt   # 查看/mnt目录的文件
-anaconda-ks.cfg  index.html  index.html.1  index.html.2  original-ks.cfg
-</code></pre>
+        <p>编写进度</p>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> </li>
+</ul>
+<p>隐藏账户排查</p>
+<h1 id="隐藏账户排查"><a href="#隐藏账户排查" class="headerlink" title="隐藏账户排查"></a>隐藏账户排查</h1><h2 id="创建隐藏账户"><a href="#创建隐藏账户" class="headerlink" title="创建隐藏账户"></a>创建隐藏账户</h2><p>用户名$ 方式创建的用户，使用<code>net user</code>方式查看不到<br>参考 <a target="_blank" rel="noopener" href="https://www.freebuf.com/articles/system/258981.html">隐藏账户创建</a><br>D盾可查到</p>
+<pre><code class="zsh">net user test$ passwd /add &amp;&amp; net localgroup administrators test$ /add  </code></pre>
+<h2 id="排查隐藏账户-lusrmgr方式"><a href="#排查隐藏账户-lusrmgr方式" class="headerlink" title="排查隐藏账户-lusrmgr方式"></a>排查隐藏账户-lusrmgr方式</h2><p><code>win+R</code> 输入 <code>lusrmgr.msc</code> 打开 <strong>本地用户和组</strong>，查看是否存在$结尾的账户</p>
+<h2 id="排查隐藏账户-regedit方式"><a href="#排查隐藏账户-regedit方式" class="headerlink" title="排查隐藏账户-regedit方式"></a>排查隐藏账户-regedit方式</h2><p><code>win+R</code> 输入 <code>regedit</code> 打开 <strong>注册表编辑器</strong> ，定位到 <code>HKEY_LOCAL_MACHINE/SAM/SAM</code>,右键最后一个 <strong>SAM</strong> 选择<strong>权限</strong> 将权限勾选为<strong>完全控制</strong>，然后确定，关闭注册表编辑器<br><img src="https://raw.githubusercontent.com/crkmythical/PicGo/main/images/20210818143221_regedit.png" alt="regedit"></p>
+<p>最后定位到 <code>HKEY_LOCAL_MACHINE\SAM\SAM\Domains\Account\Users\Names</code>查看所有账户<br><img src="https://raw.githubusercontent.com/crkmythical/PicGo/main/images/20210818143712_regedit-Names.png" alt="regiedit-Names"></p>
+<h2 id="端口排查"><a href="#端口排查" class="headerlink" title="端口排查"></a>端口排查</h2><ul>
+<li><code>win+R</code> 输入 <code>cmd</code> 运行 <code>netstat -nao</code> 查看异常端口连接找到对应PID</li>
+<li><code>win+R</code> 输入 <code>taskmgr</code> 打开任务管理器 点击<strong>详细信息</strong>查看对应的PID进程信息，右键进程打开文件所在位置，可查看当前进程对应的程序</li>
+</ul>
+<h2 id="启动项及计划任务排查"><a href="#启动项及计划任务排查" class="headerlink" title="启动项及计划任务排查"></a>启动项及计划任务排查</h2><ul>
+<li>系统启动菜单<code>C:\Users\frame\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup</code> </li>
+<li><code>win+R</code> 输入 <code>msconfig</code> 打开系统配置，查看<strong>启动</strong></li>
+<li> <code>win+R</code> 输入 <code>regedit</code> 打开注册表编辑器，查看以下路径是否存在<br><code>&#123;HKEY_LOCAL_MACHINE|HKEY_CURRENT_USER&#125;\Software\Microsoft\Windows\CurrentVersion\&#123;Run|RunOnce&#125;</code></li>
+</ul>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 askding@qq.com </span>
