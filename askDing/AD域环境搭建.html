@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Tmux | Mr.Frame</title>
+  <title>AD域环境搭建 | Mr.Frame</title>
   <meta name="keywords" content="">
-  <meta name="description" content="Tmux | Mr.Frame">
+  <meta name="description" content="AD域环境搭建 | Mr.Frame">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="404 Not Found: 该页面无法显示很抱歉，您所访问的地址并不存在!!!">
 <meta property="og:type" content="website">
@@ -1015,32 +1015,24 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="post-Tmux" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-AD域环境搭建" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">Tmux</h1>
+        <h1 class="article-title">AD域环境搭建</h1>
     
     <div class="article-meta">
         
         
-        
-        <span class="book">
-            <i class="iconfont icon-category"></i>
-            
-            
-            <a  data-rel="Tools">Tools</a>
-            
-        </span>
         
         
     </div>
     <div class="article-meta">
         
-            Created At : <time class="date" title='Updated At: 2020-12-07 18:14:43'>2020-12-07 18:14</time>
+            Created At : <time class="date" title='Updated At: 2022-02-05 18:15:20'>2022-02-05 18:15</time>
         
     </div>
     <div class="article-meta">
         
-        <span>Count:737</span>
+        <span>Count:300</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -1070,7 +1062,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Installation"><span class="toc-text">Installation</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Key-Bindings"><span class="toc-text">Key-Bindings</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Session-Operation"><span class="toc-text">Session Operation:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Windows-Operation"><span class="toc-text">Windows Operation:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Panel-Operation"><span class="toc-text">Panel Operation:</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Configuration"><span class="toc-text">Configuration</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Configuring-the-status-line"><span class="toc-text">Configuring the status line</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Accessing-the-macOS-clipboard-from-within-tmux-sessions"><span class="toc-text">Accessing the macOS clipboard from within tmux sessions</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#AD%E5%B0%8F%E5%9E%8B%E5%9F%9F%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA"><span class="toc-text">AD小型域环境搭建</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%9C%A8Winserver%E9%83%A8%E7%BD%B2-Active-Directory%E5%9F%9F%E6%9C%8D%E5%8A%A1"><span class="toc-text">在Winserver部署 Active Directory域服务</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9B%B4%E6%94%B9%E6%9C%AC%E5%9C%B0DNS%E6%8C%87%E5%90%91%E6%9C%AC%E6%9C%BA%E5%9C%B0%E5%9D%80"><span class="toc-text">更改本地DNS指向本机地址</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%83%A8%E7%BD%B2Active-Directory%E5%9F%9F%E6%9C%8D%E5%8A%A1"><span class="toc-text">部署Active Directory域服务</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%85%8D%E7%BD%AEActive-Directory%E5%9F%9F%E6%9C%8D%E5%8A%A1"><span class="toc-text">配置Active Directory域服务</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B7%BB%E5%8A%A0%E5%9F%9F%E7%94%A8%E6%88%B7"><span class="toc-text">添加域用户</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%B7%BB%E5%8A%A0%E5%9F%9F%E6%88%90%E5%91%98%E6%9C%BA"><span class="toc-text">添加域成员机</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9B%B4%E6%94%B9DNS%E6%8C%87%E5%90%91%E5%9F%9F%E6%8E%A7-10-211-55-5"><span class="toc-text">更改DNS指向域控 10.211.55.5</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#win7-10-%E5%85%A5-%E5%87%BA%E5%9F%9F%E6%93%8D%E4%BD%9C"><span class="toc-text">win7&#x2F;10 入&#x2F;出域操作</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -1086,111 +1078,54 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><img src="../images/tmux-1.gif" alt="tmux-1"></p>
-<h2 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h2><pre><code>$ cd
-$ git clone https://github.com/gpakosz/.tmux.git
-$ ln -s -f .tmux/.tmux.conf
-$ cp .tmux/.tmux.conf.local .</code></pre>
-<h2 id="Key-Bindings"><a href="#Key-Bindings" class="headerlink" title="Key-Bindings"></a>Key-Bindings</h2><ul>
-<li><code>&lt;prefix&gt;</code> <kbd>Ctrl</kbd> + <kbd>a</kbd> or <kbd>Ctrl</kbd> + <kbd>b</kbd></li>
-<li><code>&lt;prefix&gt; c</code>  <kbd>Ctrl</kbd> + <kbd>a</kbd> + <kbd>c</kbd></li>
-<li><code>&lt;prefix&gt; C-c</code>  <kbd>Ctrl</kbd> + <kbd>a</kbd>  + <kbd>Ctrl</kbd> + <kbd>c</kbd></li>
-<li><code>&lt;prefix&gt; ?</code> manual </li>
-<li><code>&lt;prefix&gt; d</code> detached the current session</li>
-<li><code>&lt;ctrl&gt; +d</code> kill current session</li>
-<li><code>&lt;prefix&gt; d</code> close current panel</li>
-</ul>
-<p>This configuration uses the following bindings:</p>
+        <p>编写进度</p>
 <ul>
-<li><code>&lt;prefix&gt; e</code> opens <code>~/.tmux.conf.local</code></li>
-<li><code>&lt;prefix&gt; r</code> reloads <code>~/.tmux.conf.local</code></li>
-<li><code>C-l</code> clears both the screen and the tmux history</li>
+<li><input checked="" disabled="" type="checkbox"> </li>
 </ul>
-<h3 id="Session-Operation"><a href="#Session-Operation" class="headerlink" title="Session Operation:"></a>Session Operation:</h3><ul>
-<li><code>&lt;prefix&gt; C-c</code> creates a new session</li>
-<li><code>&lt;prefix&gt; C-f</code> lets you switch to another session by name</li>
-<li><code>&lt;prefix&gt; $</code> rename session name</li>
-<li><code>&lt;prefix&gt; s</code> list sessions</li>
-</ul>
-<h3 id="Windows-Operation"><a href="#Windows-Operation" class="headerlink" title="Windows Operation:"></a>Windows Operation:</h3><ul>
-<li><code>&lt;prefix&gt; C-h</code> and <code>&lt;prefix&gt; C-l</code> let you navigate windows </li>
-<li><code>&lt;prefix&gt; c</code> create window</li>
-<li><code>&lt;prefix&gt; w</code> list windows </li>
-<li><code>&lt;prefix&gt; Tab</code> brings you to the last active window</li>
-<li><code>&lt;prefix&gt; 1,2,3</code> let you navigate to specific window</li>
-<li><code>&lt;prefix&gt; ,</code> rename current window</li>
-<li><code>&lt;prefix&gt; &amp;</code> close current window</li>
-<li><code>&lt;prefix&gt; f</code> find specific window by name</li>
-</ul>
-<h3 id="Panel-Operation"><a href="#Panel-Operation" class="headerlink" title="Panel Operation:"></a>Panel Operation:</h3><ul>
-<li><p><code>&lt;prefix&gt; /</code> splits the current pane vertically</p>
-</li>
-<li><p><code>&lt;prefix&gt; -</code> splits the current pane horizontally</p>
-</li>
-<li><p><code>&lt;prefix&gt; h</code>, <code>&lt;prefix&gt; j</code>, <code>&lt;prefix&gt; k</code> and <code>&lt;prefix&gt; l</code> let you navigate</p>
-</li>
-<li><p><code>&lt;prefix&gt; o</code> navigate panels</p>
-</li>
-<li><p><code>&lt;prefix&gt; H</code>, <code>&lt;prefix&gt; J</code>, <code>&lt;prefix&gt; K</code>, <code>&lt;prefix&gt; L</code> let you resize panes</p>
-</li>
-<li><p><code>&lt;prefix&gt; &lt;</code> and <code>&lt;prefix&gt; &gt;</code> let you swap panes</p>
-</li>
-<li><p><code>&lt;prefix&gt; +</code> maximizes the current pane to a new panel</p>
-</li>
-<li><p><code>&lt;prefix&gt; x</code> kill the current panel</p>
-</li>
-<li><p><code>&lt;prefix&gt; m</code> toggles mouse mode on or off</p>
-</li>
-<li><p><code>&lt;prefix&gt; &lt;space&gt; </code> 切换窗格布局</p>
-</li>
-<li><p><code>&lt;prefix&gt; Enter</code> enters copy-mode</p>
-</li>
-<li><p><code>&lt;prefix&gt; b</code> lists the paste-buffers</p>
-</li>
-<li><p><code>&lt;prefix&gt; p</code> pastes from the top paste-buffer</p>
-</li>
-<li><p><code>&lt;prefix&gt; P</code> lets you choose the paste-buffer to paste from</p>
-</li>
-</ul>
-<h2 id="Configuration"><a href="#Configuration" class="headerlink" title="Configuration"></a>Configuration</h2><hr>
-<p>file: <code>~/.tmux.conf.local</code><br>variables:</p>
-<pre><code>tmux_conf_theme_left_separator_main=&#39;\uE0B0&#39;
-tmux_conf_theme_left_separator_sub=&#39;\uE0B1&#39;
-tmux_conf_theme_right_separator_main=&#39;\uE0B2&#39;
-tmux_conf_theme_right_separator_sub=&#39;\uE0B3&#39;</code></pre>
-<h3 id="Configuring-the-status-line"><a href="#Configuring-the-status-line" class="headerlink" title="Configuring the status line"></a>Configuring the status line</h3><p>Edit the <code>~/.tmux.conf.local</code> file (<code>&lt;prefix&gt; e</code>) and adjust the<br><code>tmux_conf_theme_status_left</code> and <code>tmux_conf_theme_status_right</code> variables to<br>your own preferences.</p>
-<p>This configuration supports the following builtin variables:</p>
+<h1 id="AD小型域环境搭建"><a href="#AD小型域环境搭建" class="headerlink" title="AD小型域环境搭建"></a>AD小型域环境搭建</h1><p>参考<a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/lsIyKJXjywh83btdz186Vw">快速搭建精简的小型域环境</a></p>
 <ul>
-<li><code>#&#123;battery_bar&#125;</code>: horizontal battery charge bar</li>
-<li><code>#&#123;battery_percentage&#125;</code>: battery percentage</li>
-<li><code>#&#123;battery_status&#125;</code>: is battery charging or discharging?</li>
-<li><code>#&#123;battery_vbar&#125;</code>: vertical battery charge bar</li>
-<li><code>#&#123;circled_session_name&#125;</code>: circled session number, up to 20</li>
-<li><code>#&#123;hostname&#125;</code>: SSH/Mosh aware hostname information</li>
-<li><code>#&#123;hostname_ssh&#125;</code>: SSH/Mosh aware hostname information, blank when not<br>connected to a remote server through SSH/Mosh</li>
-<li><code>#&#123;loadavg&#125;</code>: load average</li>
-<li><code>#&#123;pairing&#125;</code>: is session attached to more than one client?</li>
-<li><code>#&#123;prefix&#125;</code>: is prefix being depressed?</li>
-<li><code>#&#123;root&#125;</code>: is current user root?</li>
-<li><code>#&#123;synchronized&#125;</code>: are the panes synchronized?</li>
-<li><code>#&#123;uptime_y&#125;</code>: uptime years</li>
-<li><code>#&#123;uptime_d&#125;</code>: uptime days, modulo 365 when <code>#&#123;uptime_y&#125;</code> is used</li>
-<li><code>#&#123;uptime_h&#125;</code>: uptime hours</li>
-<li><code>#&#123;uptime_m&#125;</code>: uptime minutes</li>
-<li><code>#&#123;uptime_s&#125;</code>: uptime seconds</li>
-<li><code>#&#123;username&#125;</code>: SSH/Mosh aware username information</li>
-<li><code>#&#123;username_ssh&#125;</code>: SSH aware username information, blank when not connected<br>to a remote server through SSH/Mosh</li>
+<li>WinServer 2016     10.211.55.5  (DC)</li>
+<li>Win7 专业版           10.211.55.6</li>
+<li>Win10 专业版         10.211.55.3</li>
 </ul>
-<p>Beside custom variables mentioned above, the <code>tmux_conf_theme_status_left</code> and<br><code>tmux_conf_theme_status_right</code> variables support usual tmux syntax, e.g. using<br><code>#()</code> to call an external command that inserts weather information provided by<br><a target="_blank" rel="noopener" href="https://github.com/chubin/wttr.in#one-line-output">wttr.in</a>:</p>
-<pre><code>tmux_conf_theme_status_right=&#39;#&#123;prefix&#125;#&#123;pairing&#125;#&#123;synchronized&#125; #(curl wttr.in?format=3) , %R , %d %b | #&#123;username&#125;#&#123;root&#125; | #&#123;hostname&#125; &#39;</code></pre>
-<p><img src="../images/tmux-2.png" alt="tmux-2"></p>
-<h3 id="Accessing-the-macOS-clipboard-from-within-tmux-sessions"><a href="#Accessing-the-macOS-clipboard-from-within-tmux-sessions" class="headerlink" title="Accessing the macOS clipboard from within tmux sessions"></a>Accessing the macOS clipboard from within tmux sessions</h3><p>[Chris Johnsen created the <code>reattach-to-user-namespace</code><br>utility][reattach-to-user-namespace] that makes <code>pbcopy</code> and <code>pbpaste</code> work<br>again within tmux.</p>
-<p>To install <code>reattach-to-user-namespace</code>, use either <a target="_blank" rel="noopener" href="http://www.macports.org/">MacPorts</a> or<br><a target="_blank" rel="noopener" href="http://brew.sh/">Homebrew</a>:</p>
-<p>   <code> $ port install tmux-pasteboard</code></p>
-<p>or</p>
-<pre><code>`$ brew install reattach-to-user-namespace`</code></pre>
-<p>Once installed, <code>reattach-to-usernamespace</code> will be automatically detected.</p>
-<p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/kevingrace/p/6496899.html">tmux终端复用神器</a><br><a target="_blank" rel="noopener" href="https://gist.github.com/ryerh/14b7c24dfd623ef8edc7">Tmux 快捷键</a><br><a target="_blank" rel="noopener" href="https://segmentfault.com/a/1190000016283278">多窗口管理器Tmux - 从入门到精通</a><br><a target="_blank" rel="noopener" href="https://harttle.land/2015/11/06/tmux-startup.html">优雅地使用命令行：Tmux 终端复用 </a><br>[<a target="_blank" rel="noopener" href="https://segmentfault.com/a/1190000000423141">结对编程利器：SSH和Tmux</a>]</p>
+<h1 id="在Winserver部署-Active-Directory域服务"><a href="#在Winserver部署-Active-Directory域服务" class="headerlink" title="在Winserver部署 Active Directory域服务"></a>在Winserver部署 <code>Active Directory域服务</code></h1><h2 id="更改本地DNS指向本机地址"><a href="#更改本地DNS指向本机地址" class="headerlink" title="更改本地DNS指向本机地址"></a>更改本地DNS指向本机地址</h2><pre><code class="powershell"># 设置静态ip
+netsh interface ip set addr &quot;本地连接&quot; static 192.168.0.1 255.255.255.0 192.168.0.254 1
+netsh interface ip set dns &quot;本地连接&quot; static 202.103.24.68
+netsh interface ip add dns &quot;本地连接&quot; 10.211.55.5
+# 设置动态ip
+netsh interface ip set addr &quot;本地连接&quot; dhcp
+netsh interface ip set dns &quot;本地连接&quot; dhcp</code></pre>
+<p><img src="https://raw.githubusercontent.com/crkmythical/PicGo/main/images/202109300955989AD_DNS.png"></p>
+<h2 id="部署Active-Directory域服务"><a href="#部署Active-Directory域服务" class="headerlink" title="部署Active Directory域服务"></a>部署Active Directory域服务</h2><p><img src="https://raw.githubusercontent.com/crkmythical/PicGo/main/images/202109301046684add_ad.png"></p>
+<h2 id="配置Active-Directory域服务"><a href="#配置Active-Directory域服务" class="headerlink" title="配置Active Directory域服务"></a>配置Active Directory域服务</h2><p><img src="https://raw.githubusercontent.com/crkmythical/PicGo/main/images/202109301036336ad_conf.png"></p>
+<p>⚠️ 指定与控制功能时，不能选择 <strong>只读域控制器(RODC)</strong></p>
+<h2 id="添加域用户"><a href="#添加域用户" class="headerlink" title="添加域用户"></a>添加域用户</h2><ul>
+<li>zhangsan    qwe@123</li>
+<li>lisi               qwe@123</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/crkmythical/PicGo/main/images/202109301140291ad_user.png"></p>
+<p>验证是否安装成功</p>
+<p><img src="https://raw.githubusercontent.com/crkmythical/PicGo/main/images/202109301142454ad_nettime.png"></p>
+<h1 id="添加域成员机"><a href="#添加域成员机" class="headerlink" title="添加域成员机"></a>添加域成员机</h1><h2 id="更改DNS指向域控-10-211-55-5"><a href="#更改DNS指向域控-10-211-55-5" class="headerlink" title="更改DNS指向域控 10.211.55.5"></a>更改DNS指向域控 <code>10.211.55.5</code></h2><p><img src="https://raw.githubusercontent.com/crkmythical/PicGo/main/images/202109301148913add_dns.png"></p>
+<p><img src="https://raw.githubusercontent.com/crkmythical/PicGo/main/images/202109301154047ad_dns.png"></p>
+<h2 id="win7-10-入-出域操作"><a href="#win7-10-入-出域操作" class="headerlink" title="win7/10 入/出域操作"></a>win7/10 入/出域操作</h2><ul>
+<li><p>powershell(管理员)</p>
+<p>打开powershell</p>
+</li>
+</ul>
+<pre><code class="shell">hostname    # 查看当前主机名
+rename-computer -NewName win10    # win10 更改NetBIOS名
+add-computer -domain &quot;域名&quot; -cred &quot;域名\授权用户&quot; -passthru  ;restart-computer
+remove-computer -credential &quot;域名\授权用户&quot; -passthru -verbose; restart-computer</code></pre>
+<p><img src="https://raw.githubusercontent.com/crkmythical/PicGo/main/images/202109301226617ad_join.png"></p>
+<p><img src="https://raw.githubusercontent.com/crkmythical/PicGo/main/images/202109301236181ad_remuser.png"></p>
+<ul>
+<li><code>win+R</code> 运行 <code>sysdm.cpl</code></li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/crkmythical/PicGo/main/images/202109301249165ad_join.png"></p>
+<p><img src="https://raw.githubusercontent.com/crkmythical/PicGo/main/images/202109301251093ad_join.png"></p>
+<p>出域</p>
+<p><img src="https://raw.githubusercontent.com/crkmythical/PicGo/main/images/202109301254268ad_remo.png"></p>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 askding@qq.com </span>
