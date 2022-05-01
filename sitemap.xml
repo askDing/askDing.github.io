@@ -580,14 +580,14 @@
 
   
   <url>
-    <loc>https://askding.github.io/categories/Evolution/</loc>
+    <loc>https://askding.github.io/categories/Kali/</loc>
     <lastmod>2022-05-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://askding.github.io/categories/Kali/</loc>
+    <loc>https://askding.github.io/categories/Evolution/</loc>
     <lastmod>2022-05-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -629,6 +629,13 @@
   </url>
   
   <url>
+    <loc>https://askding.github.io/categories/Coding/Audit/</loc>
+    <lastmod>2022-05-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://askding.github.io/categories/Coding/Python/</loc>
     <lastmod>2022-05-01</lastmod>
     <changefreq>daily</changefreq>
@@ -637,13 +644,6 @@
   
   <url>
     <loc>https://askding.github.io/categories/Response/</loc>
-    <lastmod>2022-05-01</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://askding.github.io/categories/Coding/Audit/</loc>
     <lastmod>2022-05-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
