@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://askding.github.io/Tools/%E5%A6%82%E4%BD%95%E5%9C%A8AWS%E4%B8%8A%E9%83%A8%E7%BD%B2kali.html</loc>
+    
+    <lastmod>2022-03-23</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://askding.github.io/Coding/IDEA%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B.html</loc>
     
     <lastmod>2022-03-17</lastmod>
@@ -678,13 +685,6 @@
   </url>
   
   <url>
-    <loc>https://askding.github.io/categories/Kali/Exploit/</loc>
-    <lastmod>2022-05-01</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://askding.github.io/categories/Evolution/</loc>
     <lastmod>2022-05-01</lastmod>
     <changefreq>daily</changefreq>
@@ -692,7 +692,7 @@
   </url>
   
   <url>
-    <loc>https://askding.github.io/categories/Coding/</loc>
+    <loc>https://askding.github.io/categories/Kali/Exploit/</loc>
     <lastmod>2022-05-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -706,6 +706,13 @@
   </url>
   
   <url>
+    <loc>https://askding.github.io/categories/Coding/</loc>
+    <lastmod>2022-05-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://askding.github.io/categories/Coding/JavaScript/</loc>
     <lastmod>2022-05-01</lastmod>
     <changefreq>daily</changefreq>
@@ -713,14 +720,14 @@
   </url>
   
   <url>
-    <loc>https://askding.github.io/categories/Coding/Python/</loc>
+    <loc>https://askding.github.io/categories/Coding/Audit/</loc>
     <lastmod>2022-05-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://askding.github.io/categories/Coding/Audit/</loc>
+    <loc>https://askding.github.io/categories/Coding/Python/</loc>
     <lastmod>2022-05-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
