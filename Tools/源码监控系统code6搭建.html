@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>NFS | Mr.Frame</title>
+  <title>源码监控系统code6搭建 | Mr.Frame</title>
   <meta name="keywords" content="">
-  <meta name="description" content="NFS | Mr.Frame">
+  <meta name="description" content="源码监控系统code6搭建 | Mr.Frame">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="404 Not Found: 该页面无法显示很抱歉，您所访问的地址并不存在!!!">
 <meta property="og:type" content="website">
@@ -919,9 +919,9 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="post-NFS" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-源码监控系统code6搭建" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">NFS</h1>
+        <h1 class="article-title">源码监控系统code6搭建</h1>
     
     <div class="article-meta">
         
@@ -931,9 +931,7 @@
             <i class="iconfont icon-category"></i>
             
             
-            <a  data-rel="Kali">Kali</a> > 
-            
-            <a  data-rel="Kali&lt;---&gt;Exploit">Exploit</a>
+            <a  data-rel="Tools">Tools</a>
             
         </span>
         
@@ -941,12 +939,12 @@
     </div>
     <div class="article-meta">
         
-            Created At : <time class="date" title='Updated At: 2020-12-04 20:22:50'>2020-12-04 20:22</time>
+            Created At : <time class="date" title='Updated At: 2022-05-01 16:29:37'>2022-05-01 16:29</time>
         
     </div>
     <div class="article-meta">
         
-        <span>Count:393</span>
+        <span>Count:248</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -976,7 +974,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86"><span class="toc-text">信息收集</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#NFS%E5%85%B1%E4%BA%AB%E4%BF%A1%E6%81%AF%E6%B3%84%E9%9C%B2%E6%BC%8F%E6%B4%9E-CVE-1999-0170"><span class="toc-text">NFS共享信息泄露漏洞 CVE-1999-0170</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#MSF%E7%9B%B8%E5%85%B3%E6%A8%A1%E5%9D%97"><span class="toc-text">MSF相关模块</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8C%82%E8%BD%BDNFS"><span class="toc-text">挂载NFS</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#GitHub%E4%BB%A3%E7%A0%81%E6%B3%84%E9%9C%B2%E7%9B%91%E6%8E%A7%E5%BF%AB%E9%80%9F%E5%AE%9E%E8%B7%B5"><span class="toc-text">GitHub代码泄露监控快速实践</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Code6docker%E5%BF%AB%E9%80%9F%E9%83%A8%E7%BD%B2"><span class="toc-text">Code6docker快速部署</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E4%BD%BF%E7%94%A8"><span class="toc-text">配置使用</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%A4%E7%89%8C%E9%85%8D%E7%BD%AE"><span class="toc-text">令牌配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%BB%E5%8A%A1%E9%85%8D%E7%BD%AE"><span class="toc-text">任务配置</span></a></li></ol></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -992,52 +990,34 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>NFS 网络文件系统(Network File System) 允许客户端上的用户像访问本地文件一样地访问网络上的文件</p>
-<h2 id="信息收集"><a href="#信息收集" class="headerlink" title="信息收集"></a>信息收集</h2><pre><code class="zsh">nmap -Pn -T4 -sV -p111,2049 10.211.55.6 --script rpcinfo
-Host discovery disabled (-Pn). All addresses will be marked &#39;up&#39; and scan times will be slower.
-Starting Nmap 7.91 ( https://nmap.org ) at 2020-11-27 17:00 CST
-Nmap scan report for centos-linux.shared (10.211.55.6)
-Host is up (0.00050s latency).
-
-PORT     STATE SERVICE VERSION
-111/tcp  open  rpcbind 2-4 (RPC #100000)
-| rpcinfo:
-|   program version    port/proto  service
-|   100000  2,3,4        111/tcp   rpcbind
-|   100003  3,4         2049/udp6  nfs
-|   100005  1,2,3      20048/tcp   mountd
-      100021  1,3,4      42555/udp6  nlockmgr
-|   100024  1          34047/tcp6  status
-|   100227  3           2049/tcp   nfs_acl
-2049/tcp open  nfs_acl 3 (RPC #100227)
-
-Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-Nmap done: 1 IP address (1 host up) scanned in 6.38 seconds</code></pre>
-<h2 id="NFS共享信息泄露漏洞-CVE-1999-0170"><a href="#NFS共享信息泄露漏洞-CVE-1999-0170" class="headerlink" title="NFS共享信息泄露漏洞 CVE-1999-0170"></a>NFS共享信息泄露漏洞 CVE-1999-0170</h2><h3 id="MSF相关模块"><a href="#MSF相关模块" class="headerlink" title="MSF相关模块"></a>MSF相关模块</h3><pre><code class="zsh">msf6 auxiliary(scanner/nfs/nfsmount) &gt; show options
-
-Module options (auxiliary/scanner/nfs/nfsmount):
-
-   Name      Current Setting  Required  Description
-   ----      ---------------  --------  -----------
-   PROTOCOL  udp              yes       The protocol to use (Accepted: udp, tcp)
-   RHOSTS    10.211.55.6      yes       The target host(s), range CIDR identifier, or hosts file with syntax &#39;file:&lt;path&gt;&#39;
-   RPORT     111              yes       The target port (TCP)
-   THREADS   1                yes       The number of concurrent threads (max one per host)
-
-msf6 auxiliary(scanner/nfs/nfsmount) &gt; run
-
-[+] 10.211.55.6:111       - 10.211.55.6 NFS Export: / [*]
-[*] 10.211.55.6:111       - Scanned 1 of 1 hosts (100% complete)
-[*] Auxiliary module execution completed</code></pre>
-<h3 id="挂载NFS"><a href="#挂载NFS" class="headerlink" title="挂载NFS"></a>挂载NFS</h3><pre><code class="zsh">&gt; showmount -e 10.211.55.6   # 查看NSF服务器共享目录
-Exports list on 10.211.55.6:
-/root                               *
-
-&gt; mount -t nfs 10.211.55.6:/root /mnt  # 挂在NSF服务器共享的/root目录到本地的/mnt目录
-&gt; ls /mnt   # 查看/mnt目录的文件
-anaconda-ks.cfg  index.html  index.html.1  index.html.2  original-ks.cfg
-</code></pre>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">
+        <p>编写进度</p>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> </li>
+</ul>
+<h1 id="GitHub代码泄露监控快速实践"><a href="#GitHub代码泄露监控快速实践" class="headerlink" title="GitHub代码泄露监控快速实践"></a>GitHub代码泄露监控快速实践</h1><h2 id="Code6docker快速部署"><a href="#Code6docker快速部署" class="headerlink" title="Code6docker快速部署"></a><a target="_blank" rel="noopener" href="https://www.freebuf.com/articles/es/273357.html">Code6</a>docker快速部署</h2><pre><code class="bash">yum install -y docker git    # 安装docker和git
+git clone git clone https://github.com/4x99/code6.git  /opt/code6 ; # 下载code6源码
+cd /opt/code6 ; docker build -t code6 .   # 构建docker镜像
+docker run --name mysqldb -e MYSQL_ROOT_PASSWORD=code6@2022 -d mysql  # 启动mysql
+docker inspect mysqldb | grep IPAddress     # 查看数据库容器的内部IP   
+docker exec -it mysqldb  /bin/bash          # 进入mysql容器
+    mysql -h 172.17.0.2 -u root -p code6@2022     # 登录mysql数据库
+    ALTER USER &#39;root&#39; IDENTIFIED WITH  mysql_native_password  BY  &#39;code6@2021&#39;; # 修改mysql数据库密码
+    create database code6;   # 创建code6数据库
+    FLUSH PRIVILEGES;        # 刷新权限
+    exit;                    # 退出mysql数据库
+docker run -d -p 60080:80 \  # 启动code6-server容器
+    -e MYSQL_HOST=172.17.0.2 \  
+    -e MYSQL_PORT=3306 \  
+    -e MYSQL_DATABASE=code6 \  
+    -e MYSQL_USERNAME=root \  
+    -e MYSQL_PASSWORD=code6@2022 \ 
+    --restart=always   \
+    --name code6-server code6
+docker exec -it code6-server /bin/bash   # 进入code6-server容器
+php artisan code6:user-list              # 查看用户
+php artisan code6:user-add  sec@upex.co Sec@upex.co2022  # 添加用户</code></pre>
+<p>访问 http://<ip>:60080 即可</p>
+<h2 id="配置使用"><a href="#配置使用" class="headerlink" title="配置使用"></a>配置使用</h2><h3 id="令牌配置"><a href="#令牌配置" class="headerlink" title="令牌配置"></a>令牌配置</h3><h3 id="任务配置"><a href="#任务配置" class="headerlink" title="任务配置"></a>任务配置</h3><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 askding@qq.com </span>
     </div>
