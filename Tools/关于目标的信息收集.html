@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>如何利用ssh-session会话实现免密免key登录jumpserver及利用 | Mr.Frame</title>
+  <title>关于目标的信息收集 | Mr.Frame</title>
   <meta name="keywords" content="">
-  <meta name="description" content="如何利用ssh-session会话实现免密免key登录jumpserver及利用 | Mr.Frame">
+  <meta name="description" content="关于目标的信息收集 | Mr.Frame">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="404 Not Found: 该页面无法显示很抱歉，您所访问的地址并不存在!!!">
 <meta property="og:type" content="website">
@@ -1127,9 +1127,9 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="post-如何利用ssh-session会话实现免密免key登录jumpserver及利用" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-关于目标的信息收集" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">如何利用ssh-session会话实现免密免key登录jumpserver及利用</h1>
+        <h1 class="article-title">关于目标的信息收集</h1>
     
     <div class="article-meta">
         
@@ -1139,9 +1139,7 @@
             <i class="iconfont icon-category"></i>
             
             
-            <a  data-rel="Kali">Kali</a> > 
-            
-            <a  data-rel="Kali&lt;---&gt;PostExploit">PostExploit</a>
+            <a  data-rel="Tools">Tools</a>
             
         </span>
         
@@ -1149,12 +1147,12 @@
     </div>
     <div class="article-meta">
         
-            Created At : <time class="date" title='Updated At: 2022-01-18 13:08:49'>2022-01-18 13:08</time>
+            Created At : <time class="date" title='Updated At: 2022-04-26 21:49:32'>2022-04-26 21:49</time>
         
     </div>
     <div class="article-meta">
         
-        <span>Count:195</span>
+        <span>Count:545</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -1184,7 +1182,7 @@
     
     <div class="toc-ref">
     
-        
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Table-of-Contents"><span class="toc-text">Table of Contents</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%95%8F%E6%84%9F%E6%96%87%E4%BB%B6"><span class="toc-text">敏感文件</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%BA%90%E4%BB%A3%E7%A0%81-dvcs-ripper"><span class="toc-text">源代码  dvcs-ripper</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#git%E7%9B%AE%E5%BD%95-git-config-%E5%AD%98%E5%9C%A8%EF%BC%8C%E6%BC%8F%E6%B4%9E%E5%AD%98%E5%9C%A8"><span class="toc-text">.git目录 .git&#x2F;config 存在，漏洞存在</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#svn%E7%9B%AE%E5%BD%95-wc-db-%E6%96%87%E4%BB%B6%E5%AD%98%E5%9C%A8%EF%BC%8C%E6%BC%8F%E6%B4%9E%E5%AD%98%E5%9C%A8"><span class="toc-text">.svn目录  wc.db 文件存在，漏洞存在</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#HG%E6%96%87%E4%BB%B6%E6%B3%84%E9%9C%B2"><span class="toc-text">HG文件泄露</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#DSStore%E6%96%87%E4%BB%B6-dsstoreexp"><span class="toc-text">.DSStore文件  dsstoreexp</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#WEB-INF-web-xml%E6%96%87%E4%BB%B6"><span class="toc-text">WEB-INF&#x2F;web.xml文件</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%87%E4%BB%BD%E6%96%87%E4%BB%B6"><span class="toc-text">备份文件</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BD%91%E7%AB%99%E6%BA%90%E7%A0%81%E5%A4%87%E4%BB%BD"><span class="toc-text">网站源码备份</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#gedit%E5%A4%87%E4%BB%BD%E6%96%87%E4%BB%B6"><span class="toc-text">gedit备份文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#vim%E5%A4%87%E4%BB%BD%E6%96%87%E4%BB%B6"><span class="toc-text">vim备份文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#emacs%E5%A4%87%E4%BB%BD%E6%96%87%E4%BB%B6"><span class="toc-text">emacs备份文件</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%B8%E8%A7%84%E6%96%87%E4%BB%B6"><span class="toc-text">常规文件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#fofa%E4%BF%A1%E6%81%AFjs%E8%84%9A%E6%9C%AC%E9%87%87%E9%9B%86"><span class="toc-text">fofa信息js脚本采集</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#CMS%E4%B8%AD%E9%97%B4%E4%BB%B6-wappalyzer"><span class="toc-text">CMS中间件 wappalyzer</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -1200,46 +1198,76 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <script src=/js/crypto-js.js></script>
-<script>
-function doDecrypt (pwd, onError) {
-	console.log('in doDecrypt');
-	const txt = document.getElementById('enc_content').innerHTML;
-	let plantext;
-	try {
-		const bytes = CryptoJS.AES.decrypt(txt, pwd);
-		var plaintext = bytes.toString(CryptoJS.enc.Utf8);
-	} catch(err) {
-		if(onError) {
-			onError(err);
-		}
-		return;
-	}
-	document.getElementById('enc_content').innerHTML = plaintext;
-	document.getElementById('enc_content').style.display = 'block';
-	document.getElementById('enc_passwd').style.display = 'none';
-	if(typeof MathJax !== 'undefined') {
-		MathJax.Hub.Queue(
-			['resetEquationNumbers', MathJax.InputJax.TeX],
-			['PreProcess', MathJax.Hub],
-			['Reprocess', MathJax.Hub]
-		);
-	}
-}
-</script>
-<div id="enc_content" style="display:none">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</div>
-<div id="enc_passwd"> <input id="enc_pwd_input" type="password" style="border-radius: 5px;border-style: groove;height: 30px;width: 50%;cursor: auto;font-size: 102%;color: currentColor;outline: none;text-overflow: initial;padding-left: 5px;" onkeydown="if (event.keyCode == 13) { decrypt(); return false;}"> <input type="submit" value="解&nbsp;密" onclick="decrypt()" style="width: 58px;height: 34px;border-radius: 5px;background-color: white;border-style: solid;color: currentColor;"><div id="enc_error" style="display: inline-block;color: #d84527;margin-left: 10px"></div>
-<script>
-var onError = function(error) {
-	document.getElementById("enc_error").innerHTML = "password error!"
-};
-function decrypt() {
-var passwd = document.getElementById("enc_pwd_input").value;
-console.log(passwd);
-doDecrypt(passwd, onError);
-}
-</script>
-</div><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">
+        <p>编写进度</p>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> </li>
+</ul>
+<h1 id="Table-of-Contents"><a href="#Table-of-Contents" class="headerlink" title="Table of Contents"></a>Table of Contents</h1><ol>
+<li><a href="#org075cfdf">敏感文件</a><ol>
+<li><a href="#orgf8dd7ec">源代码  dvcs-ripper</a><ol>
+<li> <a href="#org0f91b54">.git目录 <code>.git/config</code> 存在，漏洞存在</a></li>
+<li> <a href="#org90cfaa2">.svn目录  <code>wc.db</code> 文件存在，漏洞存在</a></li>
+<li> <a href="#org1207872">HG文件泄露</a></li>
+<li> <a href="#orgaee4e71">.DS<sub>Store文件</sub>  ds<sub>store</sub><sub>exp</sub></a></li>
+<li> <a href="#org4a16284">WEB-INF/web.xml文件</a></li>
+</ol>
+</li>
+<li><a href="#orgc6edac3">备份文件</a><ol>
+<li> <a href="#orgb46d623">网站源码备份</a></li>
+<li> <a href="#org67c723d">gedit备份文件</a></li>
+<li> <a href="#org400b25e">vim备份文件</a></li>
+<li> <a href="#org05b69f5">emacs备份文件</a></li>
+</ol>
+</li>
+<li> <a href="#org8a78407">常规文件</a></li>
+<li> <a href="#org0f0b5da">fofa信息js脚本采集</a></li>
+</ol>
+</li>
+<li> <a href="#org2c32552">CMS中间件 wappalyzer</a></li>
+</ol>
+<p><a id="org075cfdf"></a></p>
+<h1 id="敏感文件"><a href="#敏感文件" class="headerlink" title="敏感文件"></a>敏感文件</h1><p><a id="orgf8dd7ec"></a></p>
+<h2 id="源代码-dvcs-ripper"><a href="#源代码-dvcs-ripper" class="headerlink" title="源代码  dvcs-ripper"></a>源代码  <a target="_blank" rel="noopener" href="https://github.com/kost/dvcs-ripper">dvcs-ripper</a></h2><p><a id="org0f91b54"></a></p>
+<h3 id="git目录-git-config-存在，漏洞存在"><a href="#git目录-git-config-存在，漏洞存在" class="headerlink" title=".git目录 .git/config 存在，漏洞存在"></a>.git目录 <code>.git/config</code> 存在，漏洞存在</h3><ul>
+<li><p>工具 <a target="_blank" rel="noopener" href="https://github.com/denny0223/scrabble">scrabble</a></p>
+<p>  bash scrabble <a target="_blank" rel="noopener" href="http://www.example.com/">http://www.example.com/</a>      # make sure target has .git folder<br>  git reset–hard HEAD^                      # HEAD 代表当前版本   HEAD^代表上一个版本<br>  git log –stat                             # 查看显示当前的HEAD和它的祖先<br>  git diff HEAD <commit-id>                  # 比较<br>  git reflog                                  # 查看所有提交记录，包括分支</p>
+</li>
+<li><p>工具 <a target="_blank" rel="noopener" href="https://github.com/lijiejie/GitHack">lijiejie-Githack</a>    <a target="_blank" rel="noopener" href="https://github.com/WangYihang/GitHacker">Githacker</a></p>
+<pre><code>  GitHack.py http://www.openssl.org/.git/  
+  pip3 install GitHacker
+  githacker --url http://127.0.0.1/.git/ --folder result</code></pre>
+</li>
+</ul>
+<p><a id="org90cfaa2"></a></p>
+<h3 id="svn目录-wc-db-文件存在，漏洞存在"><a href="#svn目录-wc-db-文件存在，漏洞存在" class="headerlink" title=".svn目录  wc.db 文件存在，漏洞存在"></a>.svn目录  <code>wc.db</code> 文件存在，漏洞存在</h3><pre><code>rip-svn.pl -v -u http://www.example.com/.svn/</code></pre>
+<p><a id="org1207872"></a></p>
+<h3 id="HG文件泄露"><a href="#HG文件泄露" class="headerlink" title="HG文件泄露"></a>HG文件泄露</h3><p>hg init的时候会生成.hg</p>
+<pre><code>rip-hg.pl -v -u http://www.example.com/.hg/</code></pre>
+<p><a id="orgaee4e71"></a></p>
+<h3 id="DSStore文件-dsstoreexp"><a href="#DSStore文件-dsstoreexp" class="headerlink" title=".DSStore文件  dsstoreexp"></a>.DS<sub>Store文件</sub>  <a target="_blank" rel="noopener" href="https://github.com/lijiejie/ds_store_exp">ds<sub>store</sub><sub>exp</sub></a></h3><p>在发布代码时未删除文件夹中隐藏的.DS<sub>store</sub>，被发现后，获取了敏感的文件名等信息。</p>
+<pre><code>python ds_store_exp.py http://www.example.com/.DS_Store</code></pre>
+<p><a id="org4a16284"></a></p>
+<h3 id="WEB-INF-web-xml文件"><a href="#WEB-INF-web-xml文件" class="headerlink" title="WEB-INF/web.xml文件"></a>WEB-INF/web.xml文件</h3><ul>
+<li>  /WEB-INF/web.xml：Web应用程序配置文件，描述了 servlet 和其他的应用组件配置及命名规则。</li>
+<li>  /WEB-INF/classes/：含了站点所有用的 class 文件，包括 servlet class 和非servlet class，他们不能包含在 .jar文件中</li>
+<li>  /WEB-INF/lib/：存放web应用需要的各种JAR文件，放置仅在这个应用中要求使用的jar文件,如数据库驱动jar文件</li>
+<li>  /WEB-INF/src/：源码目录，按照包名结构放置各个java文件</li>
+<li>  /WEB-INF/database.properties：数据库配置文件</li>
+</ul>
+<p>通过找到web.xml文件，推断class文件的路径，最后直接class文件，在通过反编译class文件，得到网站源码。</p>
+<p><a id="orgc6edac3"></a></p>
+<h2 id="备份文件"><a href="#备份文件" class="headerlink" title="备份文件"></a>备份文件</h2><p><a id="orgb46d623"></a></p>
+<h3 id="网站源码备份"><a href="#网站源码备份" class="headerlink" title="网站源码备份"></a>网站源码备份</h3><p><code>www.zip/rar/tar.gz</code> </p>
+<p><a id="org67c723d"></a></p>
+<h3 id="gedit备份文件"><a href="#gedit备份文件" class="headerlink" title="gedit备份文件"></a>gedit备份文件</h3><p><a id="org400b25e"></a></p>
+<h3 id="vim备份文件"><a href="#vim备份文件" class="headerlink" title="vim备份文件"></a>vim备份文件</h3><p><a id="org05b69f5"></a></p>
+<h3 id="emacs备份文件"><a href="#emacs备份文件" class="headerlink" title="emacs备份文件"></a>emacs备份文件</h3><p><a id="org8a78407"></a></p>
+<h2 id="常规文件"><a href="#常规文件" class="headerlink" title="常规文件"></a>常规文件</h2><pre><code>robotx.txt
+readme.md</code></pre>
+<p><a id="org0f0b5da"></a></p>
+<h2 id="fofa信息js脚本采集"><a href="#fofa信息js脚本采集" class="headerlink" title="fofa信息js脚本采集"></a>fofa信息js脚本采集</h2><pre><code>document.querySelectorAll(&quot;.aSpan&quot;).forEach((node)=&gt;&#123;console.log(node.innerText);&#125;)</code></pre>
+<p><a id="org2c32552"></a></p>
+<h1 id="CMS中间件-wappalyzer"><a href="#CMS中间件-wappalyzer" class="headerlink" title="CMS中间件 wappalyzer"></a>CMS中间件 <a target="_blank" rel="noopener" href="https://github.com/AliasIO/wappalyzer">wappalyzer</a></h1><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 askding@qq.com </span>
     </div>
