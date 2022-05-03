@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>基于docker的网络安全靶场搭建-主机篇 | Mr.Frame</title>
+  <title>xray配置反连平台 | Mr.Frame</title>
   <meta name="keywords" content="">
-  <meta name="description" content="基于docker的网络安全靶场搭建-主机篇 | Mr.Frame">
+  <meta name="description" content="xray配置反连平台 | Mr.Frame">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="404 Not Found: 该页面无法显示很抱歉，您所访问的地址并不存在!!!">
 <meta property="og:type" content="website">
@@ -1119,9 +1119,9 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="post-基于docker的网络安全靶场搭建-主机篇" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-xray配置反连平台" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">基于docker的网络安全靶场搭建-主机篇</h1>
+        <h1 class="article-title">xray配置反连平台</h1>
     
     <div class="article-meta">
         
@@ -1139,12 +1139,12 @@
     </div>
     <div class="article-meta">
         
-            Created At : <time class="date" title='Updated At: 2022-03-03 19:06:09'>2022-03-03 19:06</time>
+            Created At : <time class="date" title='Updated At: 2022-04-24 21:47:17'>2022-04-24 21:47</time>
         
     </div>
     <div class="article-meta">
         
-        <span>Count:667</span>
+        <span>Count:228</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -1174,7 +1174,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%93%8D%E4%BD%9C%E6%9C%BA-kali%E6%90%AD%E5%BB%BA"><span class="toc-text">操作机-kali搭建</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%90%AF%E5%8A%A8kali%E5%AE%B9%E5%99%A8"><span class="toc-text">启动kali容器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85%E5%9F%BA%E7%A1%80%E7%8E%AF%E5%A2%83%E5%8C%85"><span class="toc-text">安装基础环境包</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%9F%E6%88%90%E9%95%9C%E5%83%8F-kali-2021"><span class="toc-text">生成镜像 kali-2021</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8E%A8%E9%80%81%E9%95%9C%E5%83%8F%E5%88%B0DockerHub"><span class="toc-text">推送镜像到DockerHub</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%9C%E7%A8%8B%E6%A1%8C%E9%9D%A2%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE"><span class="toc-text">远程桌面环境配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E6%96%B0%E9%95%9C%E5%83%8F%E7%94%9F%E6%88%90%E5%AE%B9%E5%99%A8%E5%B9%B6%E8%BF%9B%E5%85%A5%E5%AE%B9%E5%99%A8"><span class="toc-text">使用新镜像生成容器并进入容器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9B%B4%E6%8D%A2Kali%E6%BA%90"><span class="toc-text">更换Kali源</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85%E6%A1%8C%E9%9D%A2%E7%8E%AF%E5%A2%83%E7%9B%B8%E5%85%B3%E6%9C%8D%E5%8A%A1"><span class="toc-text">安装桌面环境相关服务</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%85%8D%E7%BD%AExrdp%E8%AE%BE%E7%BD%AE%E5%BC%80%E6%9C%BA%E8%87%AA%E5%90%AF%E5%8A%A8"><span class="toc-text">配置xrdp设置开机自启动</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Web%E9%9D%B6%E6%9C%BA%E5%88%B6%E4%BD%9C"><span class="toc-text">Web靶机制作</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%90%AF%E5%8A%A8tomcat-mysql%E5%AE%B9%E5%99%A8"><span class="toc-text">启动tomcat-mysql容器</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Table-of-Contents"><span class="toc-text">Table of Contents</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#xray%E7%8B%AC%E7%AB%8B%E5%8F%8D%E8%BF%9E%E5%B9%B3%E5%8F%B0%E9%85%8D%E7%BD%AE"><span class="toc-text">xray独立反连平台配置</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AB%AF%E9%85%8D%E7%BD%AE"><span class="toc-text">服务器端配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%A2%E6%88%B7%E7%AB%AF%E9%85%8D%E7%BD%AE"><span class="toc-text">客户端配置</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -1194,82 +1194,43 @@
 <ul>
 <li><input checked="" disabled="" type="checkbox"> </li>
 </ul>
-<p>基于docker的网络安全靶场搭建-主机篇</p>
+<h1 id="Table-of-Contents"><a href="#Table-of-Contents" class="headerlink" title="Table of Contents"></a>Table of Contents</h1><ol>
+<li><a href="#org07ca632">xray独立反连平台配置</a><ol>
+<li> <a href="#org19e459d">服务器端配置</a></li>
+<li> <a href="#org224b658">客户端配置</a></li>
+</ol>
+</li>
+</ol>
+<p><a id="org07ca632"></a></p>
+<h1 id="xray独立反连平台配置"><a href="#xray独立反连平台配置" class="headerlink" title="xray独立反连平台配置"></a>xray独立反连平台配置</h1><p>在 xray 中，反连平台默认不启用，因为这里面有些配置没有办法自动化，必须由人工配置完成才可使用。<br>需要反连平台才可以检测出来的漏洞包括但不限于：</p>
 <ul>
-<li><a href="#%E6%93%8D%E4%BD%9C%E6%9C%BA-kali%E6%90%AD%E5%BB%BA">操作机-kali搭建</a><ul>
-<li><a href="#%E5%90%AF%E5%8A%A8kali%E5%AE%B9%E5%99%A8">启动kali容器</a></li>
-<li><a href="#%E5%AE%89%E8%A3%85%E5%9F%BA%E7%A1%80%E7%8E%AF%E5%A2%83%E5%8C%85">安装基础环境包</a></li>
-<li><a href="#%E7%94%9F%E6%88%90%E9%95%9C%E5%83%8F-kali-2021">生成镜像 kali-2021</a><ul>
-<li><a href="#%E6%8E%A8%E9%80%81%E9%95%9C%E5%83%8F%E5%88%B0dockerhub">推送镜像到DockerHub</a></li>
+<li>  ssrf</li>
+<li>  fastjson</li>
+<li>  s2-052</li>
+<li>  xxe 盲打</li>
+<li>  所有依赖反连平台的 poc</li>
 </ul>
-</li>
-<li><a href="#%E8%BF%9C%E7%A8%8B%E6%A1%8C%E9%9D%A2%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE">远程桌面环境配置</a><ul>
-<li><a href="#%E4%BD%BF%E7%94%A8%E6%96%B0%E9%95%9C%E5%83%8F%E7%94%9F%E6%88%90%E5%AE%B9%E5%99%A8%E5%B9%B6%E8%BF%9B%E5%85%A5%E5%AE%B9%E5%99%A8">使用新镜像生成容器并进入容器</a></li>
-<li><a href="#%E6%9B%B4%E6%8D%A2kali%E6%BA%90">更换Kali源</a></li>
-<li><a href="#%E5%AE%89%E8%A3%85%E6%A1%8C%E9%9D%A2%E7%8E%AF%E5%A2%83%E7%9B%B8%E5%85%B3%E6%9C%8D%E5%8A%A1">安装桌面环境相关服务</a></li>
-<li><a href="#%E9%85%8D%E7%BD%AExrdp%E8%AE%BE%E7%BD%AE%E5%BC%80%E6%9C%BA%E8%87%AA%E5%90%AF%E5%8A%A8">配置xrdp设置开机自启动</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#web%E9%9D%B6%E6%9C%BA%E5%88%B6%E4%BD%9C">Web靶机制作</a><ul>
-<li><a href="#%E5%90%AF%E5%8A%A8tomcat-mysql%E5%AE%B9%E5%99%A8">启动tomcat-mysql容器</a></li>
-</ul>
-</li>
-</ul>
-<h1 id="操作机-kali搭建"><a href="#操作机-kali搭建" class="headerlink" title="操作机-kali搭建"></a>操作机-kali搭建</h1><h2 id="启动kali容器"><a href="#启动kali容器" class="headerlink" title="启动kali容器"></a>启动kali容器</h2><pre><code class="zsh">docker search kali                    # 搜索kali基础镜像
-docker pull kalilinux/kali-rolling    # 拉取基础镜像
-docker images                         # 查看镜像
-docker run -itd -p 3399:3389 kalilinux/kali-rolling /bin/bash  
-                                      # 后台运行容器 宿主3399映射到kali的3389
-docker ps -a                          # 查看容器相关信息
-docker attach &lt;Container-ID&gt;          # 进入容器</code></pre>
-<h2 id="安装基础环境包"><a href="#安装基础环境包" class="headerlink" title="安装基础环境包"></a>安装基础环境包</h2><pre><code class="zsh">apt-get -y update &amp;&amp; apt-get -y upgrade &amp;&amp; \
-   DEBIAN_FRONTEND=noninteractive apt-get install -y \
-   kali-tools-top10 \
-   pciutils \
-   vim \
-   iputils-ping \
-   bash-completion &amp;&amp; \
-   apt-get autoremove -y &amp;&amp; \
-   apt-get clean</code></pre>
-<ul>
-<li><code>DEBIAN_FRONTEND=noninteractive</code> 取消交互，直接运行命令，而无需向用户请求输入</li>
-<li><code>kali-tools-top10</code> kai常用工具</li>
-<li><code>pciutils</code> lspci工具</li>
-<li><code>vim</code> 文本编辑器</li>
-<li><code>iputils-ping</code> ping命令</li>
-<li><code>bash-completion</code> 命令自动补全</li>
-</ul>
-<h2 id="生成镜像-kali-2021"><a href="#生成镜像-kali-2021" class="headerlink" title="生成镜像 kali-2021"></a>生成镜像 kali-2021</h2><pre><code class="zsh">docker commit &lt;Container-ID&gt;  &lt;Image-Name&gt;            # 生成镜像
-docker commit kali-2021 crkmyth1cal/kali20201:v1      # 可选，生成镜像并发布</code></pre>
-<h3 id="推送镜像到DockerHub"><a href="#推送镜像到DockerHub" class="headerlink" title="推送镜像到DockerHub"></a>推送镜像到DockerHub</h3><pre><code class="zsh">docker login                             # 登陆docker
-docker push  crkmyth1cal/kali20201:v1    # 推送镜像
-docker logout                            # 退出docker</code></pre>
-<h2 id="远程桌面环境配置"><a href="#远程桌面环境配置" class="headerlink" title="远程桌面环境配置"></a>远程桌面环境配置</h2><h3 id="使用新镜像生成容器并进入容器"><a href="#使用新镜像生成容器并进入容器" class="headerlink" title="使用新镜像生成容器并进入容器"></a>使用新镜像生成容器并进入容器</h3><p><code>Ctrl+P+Q</code> 退出容器不终止容器</p>
-<pre><code class="zsh">docker run -itd -p 3399:3389 kali-2021                        # 后台运行容器，返回容器ID
-docker run -itd -p 3399:3389  -v /tmp/kevin:/data  kali-2021  # 可选： 挂在本地文件
-docker exec -it &lt;ID&gt;  /bin/bash                               # 临时开启shell，退出时容器不停止 exec-running container  run-new container
-docker start -a &lt;ID&gt;                                          # 进入被Exited的容器</code></pre>
-<h3 id="更换Kali源"><a href="#更换Kali源" class="headerlink" title="更换Kali源"></a>更换Kali源</h3><pre><code class="zsh">echo &quot;deb http://mirrors.ustc.edu.cn/kali kali-rolling main non-free contrib&quot; | sudo tee /etc/apt/sources.list
-apt-get update</code></pre>
-<h3 id="安装桌面环境相关服务"><a href="#安装桌面环境相关服务" class="headerlink" title="安装桌面环境相关服务"></a>安装桌面环境相关服务</h3><pre><code class="zsh">apt-get -y install kali-desktop-xfce xorg xrdp
-passwd root      # 修改root密码</code></pre>
-<ul>
-<li><code>kali-desktop-xfce</code> xfce桌面环境</li>
-<li><code>xorg</code> 是x11的实现，提供X server</li>
-<li><code>xrdp</code> 远程桌面服务</li>
-</ul>
-<h3 id="配置xrdp设置开机自启动"><a href="#配置xrdp设置开机自启动" class="headerlink" title="配置xrdp设置开机自启动"></a>配置xrdp设置开机自启动</h3><pre><code class="zsh">sed -i &#39;s/port=3399/port=3389/g&#39; /etc/xrdp/xrdp.ini     # 修改xrdp服务端口
-service xrdp restart                                    # 重启xrdp服务
-update-rc.d xrdp enable                                 # xrdp开机自启动</code></pre>
-<h1 id="Web靶机制作"><a href="#Web靶机制作" class="headerlink" title="Web靶机制作"></a>Web靶机制作</h1><h2 id="启动tomcat-mysql容器"><a href="#启动tomcat-mysql容器" class="headerlink" title="启动tomcat-mysql容器"></a>启动tomcat-mysql容器</h2><pre><code class="zsh">docker search tomcat-mysql                                     # 搜索tomcat-mysql镜像
-docker pull aallam/tomcat-mysql                                # 下载tomcat-msyql镜像
-docker run -d --name=&quot;tomcat-mysql-run&quot;  \
-              -e MYSQL_PASSWORD=root \
-                    -p 1306:3306 -p 1080:8080   aallam/tomcat-mysql  # 后台启动， 
-docker exec –it ID /bin/bash                                  # 进入tomcat-mysql</code></pre>
-<p>参考<br><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/QR9T1TOVIM0sh_TlJhe6Ag">基于docker的网络安全靶场搭建-主机篇</a></p>
+<p><a id="org19e459d"></a></p>
+<h2 id="服务器端配置"><a href="#服务器端配置" class="headerlink" title="服务器端配置"></a>服务器端配置</h2><p>在vps上需配置 <code>config.yaml</code> 中 <strong>reverse</strong> 部分</p>
+<pre><code># 服务端
+reverse:
+  db_file_path: &quot;reverse.db&quot;
+  token: &quot;please_change_me_to_a_new_token&quot;
+  http:
+    listen_ip: 0.0.0.0
+    listen_port: &quot;80&quot;</code></pre>
+<p>执行如下命令</p>
+<pre><code>./xray reverse</code></pre>
+<p><a id="org224b658"></a></p>
+<h2 id="客户端配置"><a href="#客户端配置" class="headerlink" title="客户端配置"></a>客户端配置</h2><p>在本地客户端的xray需配置 <code>config.yaml</code> 如下 <strong>reverse</strong> 部分</p>
+<pre><code>reverse:
+  token: &quot;please_change_me_to_a_new_token&quot;
+  client:
+    remote_server: true
+    http_base_url: &quot;http://YOUR_REVERSE_SERVER_IP:80&quot;</code></pre>
+<p>执行如下命令</p>
+<pre><code>./xray_darwin_amd64 webscan --listen 127.0.0.1:7777  --html-output ~/Desktop/xray-report.html</code></pre>
+<p>References:<br><a target="_blank" rel="noopener" href="https://docs.xray.cool/#/scenario/burp">xray官方文档</a></p>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 askding@qq.com </span>
