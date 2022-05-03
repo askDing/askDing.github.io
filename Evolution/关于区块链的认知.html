@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>VIM | Mr.Frame</title>
+  <title>关于区块链的认知 | Mr.Frame</title>
   <meta name="keywords" content="">
-  <meta name="description" content="VIM | Mr.Frame">
+  <meta name="description" content="关于区块链的认知 | Mr.Frame">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="function doDecrypt (pwd, onError) { 	console.log(&#39;in doDecrypt&#39;); 	const txt &#x3D; document.getElementById(&#39;enc_content&#39;).innerHTML; 	let plantext; 	try { 		const bytes &#x3D; CryptoJS.AES.decrypt(txt, pwd);">
 <meta property="og:type" content="website">
@@ -1111,9 +1111,9 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="post-VIM" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-关于区块链的认知" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">VIM</h1>
+        <h1 class="article-title">关于区块链的认知</h1>
     
     <div class="article-meta">
         
@@ -1123,7 +1123,7 @@
             <i class="iconfont icon-category"></i>
             
             
-            <a  data-rel="Tools">Tools</a>
+            <a  data-rel="Evolution">Evolution</a>
             
         </span>
         
@@ -1131,12 +1131,12 @@
     </div>
     <div class="article-meta">
         
-            Created At : <time class="date" title='Updated At: 2020-12-11 19:10:54'>2020-12-11 19:10</time>
+            Created At : <time class="date" title='Updated At: 2022-05-03 21:34:13'>2022-05-03 21:34</time>
         
     </div>
     <div class="article-meta">
         
-        <span>Count:77</span>
+        <span>Count:668</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -1166,7 +1166,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Vim%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="toc-text">Vim基本概念</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Table-of-Contents"><span class="toc-text">Table of Contents</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8C%BA%E5%9D%97%E9%93%BE%E5%AE%9A%E4%B9%89"><span class="toc-text">区块链定义</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Footnotes"><span class="toc-text">Footnotes</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -1186,23 +1186,37 @@
 <ul>
 <li><input checked="" disabled="" type="checkbox"> </li>
 </ul>
-<h2 id="Vim基本概念"><a href="#Vim基本概念" class="headerlink" title="Vim基本概念"></a>Vim基本概念</h2><blockquote>
-<p>  tab &gt; window &gt; buffer </p>
-</blockquote>
+<h1 id="Table-of-Contents"><a href="#Table-of-Contents" class="headerlink" title="Table of Contents"></a>Table of Contents</h1><ol>
+<li> <a href="#org8c66cd0">区块链定义</a></li>
+</ol>
+<p><a id="org8c66cd0"></a></p>
+<h1 id="区块链定义"><a href="#区块链定义" class="headerlink" title="区块链定义"></a>区块链定义</h1><p>区块链最核心的价值体现在 <strong>去中心化</strong> 、*不可篡改* 、*可溯源*<br>用分布式数据库技术识别、传播和记载信息的智能对等网络<sup><a id="fnr.1" class="footref" href="#fn.1" role="doc-backlink">1</a></sup><br>从狭义上讲通过数字货币看区块链,它既是数据结构,又是分布式账本,更是一套技术方案。</p>
 <ul>
-<li>标签页tab<ul>
-<li>是窗口的集合，<code>:tabnew</code>创建</li>
+<li>  数据结构: 区块链是一种由交易数据构成的区块按时间先后顺序通过区块哈希指针相连组成的链式数据结构</li>
+<li>  分布式账本: 区块链记录了全网发生的所有交易情况</li>
+<li>  技术方案: 区块链构建了比特币的底层技术，保证比特币系统的正常运行</li>
 </ul>
+<p>从广义上讲，区块链技术使用了一种全新的分布式基础架构和计算方式</p>
+<ol>
+<li> 利用链式结构保证数据的完整性，并存储数据;</li>
+<li> 利用密码学来保证数据的可靠性,以及数据的传输和访问安全;</li>
+<li> 利用分布式节点独立运行统一的共识算法来获取数据的记录权，进而更新存储的数据，实现可信任的数据共享;</li>
+<li> 利用智能合约里面的代码自动操作数据，进而保证合约执行不受外界干扰。</li>
+</ol>
+<p>保证隐私的技术🔐-加密</p>
+<ul>
+<li><p>对称(私钥)加密: 加解密互为逆操作,私钥加密，私钥解密<br>  常见的对称加密算法有DES、3DES、AES、Blowfish、IDEA、RC5、RC6</p>
 </li>
-<li>窗口window<ul>
-<li>提供buffer的可视视图，一个buffer对应多个window <code>:split/vsplit</code>创建</li>
-</ul>
-</li>
-<li>缓冲区buffer<ul>
-<li>buffer是vim和实际文件交互的通道，存在于内存中 <code>:buffers</code> 查看buffer列表</li>
-</ul>
+<li><p>非对称加密: 公钥和私钥互为加解密工具，不能x钥加密，x钥解密。私钥可以计算出公钥<br>  公钥加密,私钥签名</p>
 </li>
 </ul>
+<p>数字世界的身份证🆔-哈希<br>哈希算法是将文件映射为较短的固定长度字符串(哈希值)</p>
+<p>相同文件哈希值相同，不可逆推，计算极快</p>
+<p>数字签名: 抗抵赖、不可伪造、可轻松识别</p>
+<p><a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/crkmythical/PicGo/main/images/20220131104740.png">签名、加解密过程</a></p>
+<p>Centralized &#x2013;&gt; Distributed &#x2013;&gt; Decentralized &#x2013;&gt; P2P(拥有一定共识，动力来自底层节点，没有第三方中心节点的统一指挥)</p>
+<p>CAP定理: 在分布式系统中,必然无法同时满足一致性(consistency)、可用性(Availability)、分区容忍性(Partition Tolerance), CAP三者最多得其二</p>
+<h1 id="Footnotes"><a href="#Footnotes" class="headerlink" title="Footnotes"></a>Footnotes</h1><p><sup><a id="fn.1" href="#fnr.1">1</a></sup> 互联网是基于TCP/IP协议搭建起来的，而区块链的P2P网络依然使用的是TCP/IP协议，所以区块链是基于互联网的，它在互联网的基础上实现叠加和升级，是互联网的高级形态</p>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 askding@qq.com </span>

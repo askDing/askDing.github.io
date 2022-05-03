@@ -1,0 +1,2840 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Android软件测试基础 | Mr.Frame</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="Android软件测试基础 | Mr.Frame">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="function doDecrypt (pwd, onError) { 	console.log(&#39;in doDecrypt&#39;); 	const txt &#x3D; document.getElementById(&#39;enc_content&#39;).innerHTML; 	let plantext; 	try { 		const bytes &#x3D; CryptoJS.AES.decrypt(txt, pwd);">
+<meta property="og:type" content="website">
+<meta property="og:title" content="about">
+<meta property="og:url" content="https://askding.github.io/about/index.html">
+<meta property="og:site_name" content="Mr.Frame">
+<meta property="og:description" content="function doDecrypt (pwd, onError) { 	console.log(&#39;in doDecrypt&#39;); 	const txt &#x3D; document.getElementById(&#39;enc_content&#39;).innerHTML; 	let plantext; 	try { 		const bytes &#x3D; CryptoJS.AES.decrypt(txt, pwd);">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-12-08T11:41:14.000Z">
+<meta property="article:modified_time" content="2020-12-08T11:41:14.000Z">
+<meta property="article:author" content="Mr.Frame">
+<meta property="article:tag" content="kali exploit vulnerability programing">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="icon" href="/img/avatar.jpg">
+
+<link href="/css/style.css?v=1.1.0" rel="stylesheet">
+
+<link href="/css/hl_theme/gruvbox-dark.css?v=1.1.0" rel="stylesheet">
+
+<link href="//cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css" rel="stylesheet">
+
+<script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="/js/titleTip.js?v=1.1.0" ></script>
+
+<script src="//cdn.jsdelivr.net/npm/highlightjs@9.16.2/highlight.pack.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<script src="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js"></script>
+
+
+
+<script src="//cdn.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.min.js" ></script>
+
+<script src="/js/iconfont.js?v=1.1.0" ></script>
+
+<meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="Mr.Frame" type="application/atom+xml">
+</head>
+<div style="display: none">
+  <input class="theme_disqus_on" value="false">
+  <input class="theme_preload_comment" value="">
+  <input class="theme_blog_path" value="">
+  <input id="theme_shortcut" value="true" />
+  <input id="theme_highlight_on" value="true" />
+  <input id="theme_code_copy" value="true" />
+</div>
+
+
+
+<body>
+<aside class="nav">
+    <div class="nav-left">
+        <a href="/" class="avatar_target">
+    <img class="avatar" src="/img/avatar.jpg" />
+</a>
+<div class="author">
+    <span>Mr.Frame</span>
+</div>
+
+<div class="icon">
+    
+        
+        <a title="rss" href="/atom.xml" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-rss"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="github" href="https://github.com/askDing" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-github"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+        <a title="email" href="mailto:askding@qq.com" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-email"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="qq" href="http://wpa.qq.com/msgrd?v=3&uin=741474596&site=qq&menu=yes" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-qq"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+    
+        
+    
+</div>
+
+
+
+
+<ul>
+    <li><div class="all active" data-rel="All">All<small>(98)</small></div></li>
+    
+        
+            
+            <li><div data-rel="Tools">Tools<small>(26)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="Kali"><i class="fold iconfont icon-right"></i>Kali<small>(45)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="Kali<--->Exploit">Exploit<small>(35)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="Kali<--->PostExploit">PostExploit<small>(8)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+            <li><div data-rel="Response">Response<small>(3)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="Coding"><i class="fold iconfont icon-right"></i>Coding<small>(12)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="Coding<--->Audit">Audit<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="Coding<--->Python">Python<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="Coding<--->JavaScript">JavaScript<small>(2)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+            <li><div data-rel="Evolution">Evolution<small>(10)</small></div>
+                
+            </li>
+            
+        
+    
+</ul>
+<div class="left-bottom">
+    <div class="menus">
+    
+    
+    
+    
+    </div>
+    <div><a class="about  hasFriend  site_url"  href="/about">About</a><a style="width: 50%"  class="friends">Friends</a></div>
+</div>
+<input type="hidden" id="yelog_site_posts_number" value="98">
+<input type="hidden" id="yelog_site_word_count" value="118.7k">
+<div style="display: none">
+    <span id="busuanzi_value_site_uv"></span>
+    <span id="busuanzi_value_site_pv"></span>
+</div>
+
+    </div>
+    <div class="nav-right">
+        <div class="friends-area">
+    <div class="friends-title">
+        Links
+        <i class="iconfont icon-left"></i>
+    </div>
+    <div class="friends-content">
+        <ul>
+            
+            <li><a target="_blank" href="https://fun0nydg.github.io/">Fun0nydg</a></li>
+            
+            <li><a target="_blank" href="http://yelog.org/">叶落阁</a></li>
+            
+            <li><a target="_blank" href="http://wiki.peiqi.tech/">PeiQI</a></li>
+            
+        </ul>
+    </div>
+</div>
+        <div class="title-list">
+    <div class="right-top">
+        <div id="default-panel">
+            <i class="iconfont icon-search" data-title="搜索 快捷键 i"></i>
+            <div class="right-title">All</div>
+            <i class="iconfont icon-file-tree" data-title="切换到大纲视图 快捷键 w"></i>
+        </div>
+        <div id="search-panel">
+            <i class="iconfont icon-left" data-title="返回"></i>
+            <input id="local-search-input" />
+            <label class="border-line" for="input"></label>
+            <i class="iconfont icon-case-sensitive" data-title="大小写敏感"></i>
+            <i class="iconfont icon-tag" data-title="标签"></i>
+        </div>
+        <div id="outline-panel" style="display: none">
+            <div class="right-title">大纲</div>
+            <i class="iconfont icon-list" data-title="切换到文章列表"></i>
+        </div>
+    </div>
+
+    <div class="tags-list">
+    <input id="tag-search" />
+    <div class="tag-wrapper">
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>aa</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>system</a>
+            </li>
+        
+    </div>
+
+</div>
+
+    
+    <div id="local-search-result">
+
+    </div>
+    
+    <nav id="title-list-nav">
+        
+        <a  class="All Evolution "
+           href="/Evolution/%E5%85%B3%E4%BA%8E%E5%8C%BA%E5%9D%97%E9%93%BE%E7%9A%84%E8%AE%A4%E7%9F%A5.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="关于区块链的认知">关于区块链的认知</span>
+            <span class="post-date" title="2022-05-03 21:34:13">2022/05/03</span>
+        </a>
+        
+        <a  class="All Evolution "
+           href="/Evolution/Android%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Android软件测试基础">Android软件测试基础</span>
+            <span class="post-date" title="2022-04-20 21:36:31">2022/04/20</span>
+        </a>
+        
+        <a  class="All Tools "
+           href="/Tools/%E5%A6%82%E4%BD%95%E5%B0%86%E8%A7%86%E9%A2%91%E8%BD%AC%E5%8C%96%E4%B8%BAGif.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="如何将视频转化为Gif">如何将视频转化为Gif</span>
+            <span class="post-date" title="2022-04-11 21:04:13">2022/04/11</span>
+        </a>
+        
+        <a  class="All Coding "
+           href="/Coding/PHP%E4%BB%A3%E7%A0%81%E5%AE%A1%E8%AE%A1.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="PHP代码审计">PHP代码审计</span>
+            <span class="post-date" title="2022-04-09 21:05:43">2022/04/09</span>
+        </a>
+        
+        <a  class="All Tools "
+           href="/Tools/Mac%E4%B8%8B%E6%90%AD%E5%BB%BANginx-php%E5%BC%80%E5%8F%91%E5%B9%B3%E5%8F%B0.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Mac下搭建Nginx+php开发平台">Mac下搭建Nginx+php开发平台</span>
+            <span class="post-date" title="2022-04-07 21:01:16">2022/04/07</span>
+        </a>
+        
+        <a  class="All Tools "
+           href="/Tools/GnuPG%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="GnuPG使用教程">GnuPG使用教程</span>
+            <span class="post-date" title="2022-04-05 20:55:25">2022/04/05</span>
+        </a>
+        
+        <a  class="All Tools "
+           href="/Tools/%E5%9C%A8Linux%E4%BD%BF%E7%94%A8apache2%E6%90%AD%E5%BB%BAwebdav%E6%9C%8D%E5%8A%A1.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="在Linux使用apache2搭建webdav服务">在Linux使用apache2搭建webdav服务</span>
+            <span class="post-date" title="2022-04-05 10:56:25">2022/04/05</span>
+        </a>
+        
+        <a  class="All Evolution "
+           href="/Evolution/App%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="App渗透测试">App渗透测试</span>
+            <span class="post-date" title="2022-04-01 19:31:20">2022/04/01</span>
+        </a>
+        
+        <a  class="All Tools "
+           href="/Tools/%E5%A6%82%E4%BD%95%E5%9C%A8AWS%E4%B8%8A%E9%83%A8%E7%BD%B2kali.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="如何在AWS上部署kali">如何在AWS上部署kali</span>
+            <span class="post-date" title="2022-03-23 19:26:48">2022/03/23</span>
+        </a>
+        
+        <a  class="All Coding "
+           href="/Coding/IDEA%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="IDEA使用教程">IDEA使用教程</span>
+            <span class="post-date" title="2022-03-17 19:16:17">2022/03/17</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/%E5%88%A9%E7%94%A8msf%E6%A1%86%E6%9E%B6%E5%AF%B9%E5%AE%89%E5%8D%93%E6%89%8B%E6%9C%BA%E8%BF%9B%E8%A1%8C%E7%AE%80%E5%8D%95%E6%93%8D%E4%BD%9C.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="利用msf框架对安卓手机进行简单操作">利用msf框架对安卓手机进行简单操作</span>
+            <span class="post-date" title="2022-03-14 19:11:40">2022/03/14</span>
+        </a>
+        
+        <a  class="All Tools "
+           href="/Tools/linux%E4%B8%8A%E5%A4%9A%E7%89%88%E6%9C%ACJDK%E8%AF%A5%E5%A6%82%E4%BD%95%E7%AE%A1%E7%90%86.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="linux上多版本JDK该如何管理">linux上多版本JDK该如何管理</span>
+            <span class="post-date" title="2022-03-11 19:07:15">2022/03/11</span>
+        </a>
+        
+        <a  class="All Tools "
+           href="/Tools/Android%E8%BD%AF%E4%BB%B6%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95%E8%BD%AF%E4%BB%B6-mac%E5%B9%B3%E5%8F%B0.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Android软件安全测试软件_mac平台">Android软件安全测试软件_mac平台</span>
+            <span class="post-date" title="2022-03-07 19:10:29">2022/03/07</span>
+        </a>
+        
+        <a  class="All Tools "
+           href="/Tools/%E5%9F%BA%E4%BA%8Edocker%E7%9A%84%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E9%9D%B6%E5%9C%BA%E6%90%AD%E5%BB%BA-%E4%B8%BB%E6%9C%BA%E7%AF%87.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="基于docker的网络安全靶场搭建-主机篇">基于docker的网络安全靶场搭建-主机篇</span>
+            <span class="post-date" title="2022-03-03 19:06:09">2022/03/03</span>
+        </a>
+        
+        <a  class="All "
+           href="/askDing/macOS%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="macOS使用记录">macOS使用记录</span>
+            <span class="post-date" title="2022-03-02 19:07:59">2022/03/02</span>
+        </a>
+        
+        <a  class="All Tools "
+           href="/Tools/%E5%85%8D%E6%9D%80%E4%B8%93%E9%A2%98%E6%80%9D%E8%80%83.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="免杀专题思考">免杀专题思考</span>
+            <span class="post-date" title="2022-02-28 19:04:54">2022/02/28</span>
+        </a>
+        
+        <a  class="All Tools "
+           href="/Tools/%E7%BB%95%E8%BF%87CDN%E6%9F%A5%E6%89%BEIP.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="绕过CDN查找IP">绕过CDN查找IP</span>
+            <span class="post-date" title="2022-02-25 19:03:29">2022/02/25</span>
+        </a>
+        
+        <a  class="All Evolution "
+           href="/Evolution/%E7%BD%91%E7%AB%99%E6%9E%B6%E6%9E%84.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="网站架构">网站架构</span>
+            <span class="post-date" title="2022-02-21 18:56:30">2022/02/21</span>
+        </a>
+        
+        <a  class="All Tools "
+           href="/Tools/win%E9%98%B2%E9%94%81%E5%B1%8F%E5%B0%8F%E8%84%9A%E6%9C%AC.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="win防锁屏小脚本">win防锁屏小脚本</span>
+            <span class="post-date" title="2022-02-18 19:00:36">2022/02/18</span>
+        </a>
+        
+        <a  class="All Response "
+           href="/Response/%E9%9A%90%E8%97%8F%E8%B4%A6%E6%88%B7%E6%8E%92%E6%9F%A5.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="隐藏账户排查">隐藏账户排查</span>
+            <span class="post-date" title="2022-02-15 18:57:27">2022/02/15</span>
+        </a>
+        
+        <a  class="All Tools "
+           href="/Tools/%E6%BC%8F%E6%89%ABAWVS-Nessus%E6%90%AD%E5%BB%BA-docker%E7%89%88.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="漏扫AWVS-Nessus搭建-docker版">漏扫AWVS-Nessus搭建-docker版</span>
+            <span class="post-date" title="2022-02-09 18:54:33">2022/02/09</span>
+        </a>
+        
+        <a  class="All "
+           href="/askDing/AD%E5%9F%9F%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="AD域环境搭建">AD域环境搭建</span>
+            <span class="post-date" title="2022-02-05 18:15:20">2022/02/05</span>
+        </a>
+        
+        <a  class="All Tools "
+           href="/Tools/%E5%85%B3%E4%BA%8E%E5%90%8C%E6%AD%A5%E7%9B%98%E7%9A%84%E4%B8%80%E4%BA%9B%E6%96%B9%E6%A1%88.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="关于同步盘的一些方案">关于同步盘的一些方案</span>
+            <span class="post-date" title="2022-02-01 18:12:37">2022/02/01</span>
+        </a>
+        
+        <a  class="All Tools "
+           href="/Tools/linux%E5%A6%82%E4%BD%95%E6%B7%BB%E5%8A%A0%E8%87%AA%E5%AE%9A%E4%B9%89%E6%9C%8D%E5%8A%A1.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="linux如何添加自定义服务">linux如何添加自定义服务</span>
+            <span class="post-date" title="2022-01-27 18:08:19">2022/01/27</span>
+        </a>
+        
+        <a  class="All Tools "
+           href="/Tools/%E6%BA%90%E7%A0%81%E7%9B%91%E6%8E%A7%E7%B3%BB%E7%BB%9Fcode6%E6%90%AD%E5%BB%BA.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="源码监控系统code6搭建">源码监控系统code6搭建</span>
+            <span class="post-date" title="2022-01-23 16:29:37">2022/01/23</span>
+        </a>
+        
+        <a  class="All Kali PostExploit "
+           href="/Kali/PostExploit/%E5%A6%82%E4%BD%95%E5%88%A9%E7%94%A8ssh-session%E4%BC%9A%E8%AF%9D%E5%AE%9E%E7%8E%B0%E5%85%8D%E5%AF%86%E5%85%8Dkey%E7%99%BB%E5%BD%95jumpserver%E5%8F%8A%E5%88%A9%E7%94%A8.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="如何利用ssh-session会话实现免密免key登录jumpserver及利用">如何利用ssh-session会话实现免密免key登录jumpserver及利用</span>
+            <span class="post-date" title="2022-01-18 13:08:49">2022/01/18</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Confluence-CVE2021-26084.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Confluence-CVE2021-26084">Confluence-CVE2021-26084</span>
+            <span class="post-date" title="2022-01-17 16:57:39">2022/01/17</span>
+        </a>
+        
+        <a  class="All Tools "
+           href="/Tools/awschatbot-slack%E9%9B%86%E6%88%90.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="awschatbot_slack集成">awschatbot_slack集成</span>
+            <span class="post-date" title="2021-12-20 12:08:47">2021/12/20</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Apache-Log4j-RCE.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Apache_Log4j_RCE">Apache_Log4j_RCE</span>
+            <span class="post-date" title="2021-12-10 13:31:59">2021/12/10</span>
+        </a>
+        
+        <a  class="All Kali PostExploit "
+           href="/Kali/PostExploit/%E8%BD%AF%E4%BB%B6%E4%BB%A3%E7%A0%81%E7%BC%BA%E9%99%B7%E6%A6%82%E8%BF%B0.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="软件代码缺陷概述">软件代码缺陷概述</span>
+            <span class="post-date" title="2021-11-29 22:43:11">2021/11/29</span>
+        </a>
+        
+        <a  class="All Kali PostExploit "
+           href="/Kali/PostExploit/ZeroTrust.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="ZeroTrust">ZeroTrust</span>
+            <span class="post-date" title="2021-11-18 17:05:23">2021/11/18</span>
+        </a>
+        
+        <a  class="All Kali PostExploit "
+           href="/Kali/PostExploit/%E5%A6%82%E4%BD%95%E5%9C%A8mac%E4%B8%8A%E6%8A%93%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%9A%84%E6%B5%81%E9%87%8F.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="如何在mac上抓小程序的流量">如何在mac上抓小程序的流量</span>
+            <span class="post-date" title="2021-11-15 20:57:33">2021/11/15</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Spring.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Spring">Spring</span>
+            <span class="post-date" title="2021-11-15 20:55:58">2021/11/15</span>
+        </a>
+        
+        <a  class="All Kali PostExploit "
+           href="/Kali/PostExploit/%E5%85%8D%E6%9D%80%E6%80%9D%E8%B7%AF.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="免杀思路">免杀思路</span>
+            <span class="post-date" title="2021-09-25 14:06:46">2021/09/25</span>
+        </a>
+        
+        <a  class="All Kali PostExploit "
+           href="/Kali/PostExploit/%E7%BA%A2%E8%93%9D%E5%AF%B9%E6%8A%97.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="红蓝对抗">红蓝对抗</span>
+            <span class="post-date" title="2021-09-23 10:37:34">2021/09/23</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Nsfocus2docx-md.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Nsfocus2docx.md">Nsfocus2docx.md</span>
+            <span class="post-date" title="2021-05-23 00:05:22">2021/05/23</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Landray-OA.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Landray-OA 蓝凌OA custom.jsp页面任意文件读取">Landray-OA 蓝凌OA custom.jsp页面任意文件读取</span>
+            <span class="post-date" title="2021-05-13 19:40:49">2021/05/13</span>
+        </a>
+        
+        <a  class="All Evolution "
+           href="/Evolution/org-syntax.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="org-syntax">org-syntax</span>
+            <span class="post-date" title="2021-05-08 16:59:18">2021/05/08</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Gopher-md.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Gopher">Gopher</span>
+            <span class="post-date" title="2021-05-06 11:04:32">2021/05/06</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/SSRF.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="SSRF">SSRF</span>
+            <span class="post-date" title="2021-04-19 15:03:37">2021/04/19</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Chrome-0day-RCE-no-sandbox.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Chrome_0day_RCE_no_sandbox">Chrome_0day_RCE_no_sandbox</span>
+            <span class="post-date" title="2021-04-15 15:20:17">2021/04/15</span>
+        </a>
+        
+        <a  class="All Tools "
+           href="/Tools/Telegram.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Telegram">Telegram</span>
+            <span class="post-date" title="2021-04-09 12:42:22">2021/04/09</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Nginx.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Nginx">Nginx</span>
+            <span class="post-date" title="2021-04-07 20:48:12">2021/04/07</span>
+        </a>
+        
+        <a  class="All Evolution "
+           href="/Evolution/win10%E7%B3%BB%E7%BB%9F%E4%BC%98%E5%8C%96.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="win10系统优化">win10系统优化</span>
+            <span class="post-date" title="2021-03-30 13:09:36">2021/03/30</span>
+        </a>
+        
+        <a  class="All Tools "
+           href="/Tools/xray-crawlergo.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="xray_crawlergo">xray_crawlergo</span>
+            <span class="post-date" title="2021-03-25 11:58:41">2021/03/25</span>
+        </a>
+        
+        <a  class="All Coding "
+           href="/Coding/java-basic.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="java-basic">java-basic</span>
+            <span class="post-date" title="2021-03-21 09:04:43">2021/03/21</span>
+        </a>
+        
+        <a  class="All Coding "
+           href="/Coding/getHttpProxy.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="getHttpProxy">getHttpProxy</span>
+            <span class="post-date" title="2021-03-17 17:12:28">2021/03/17</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Ruijie-RG-UAC.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Ruijie_RG_UAC">Ruijie_RG_UAC</span>
+            <span class="post-date" title="2021-03-08 15:36:33">2021/03/08</span>
+        </a>
+        
+        <a  class="All Coding "
+           href="/Coding/code-of-principle.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="code_of_principle">code_of_principle</span>
+            <span class="post-date" title="2021-03-07 15:23:04">2021/03/07</span>
+        </a>
+        
+        <a  class="All Kali "
+           href="/Kali/kali-nethunter_and_Andrax.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="kali_nethunter and Andrax">kali_nethunter and Andrax</span>
+            <span class="post-date" title="2021-03-02 09:01:43">2021/03/02</span>
+        </a>
+        
+        <a  class="All Coding "
+           href="/Coding/python-basic.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="python-basic">python-basic</span>
+            <span class="post-date" title="2021-01-30 11:48:44">2021/01/30</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/fastjson-rce.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="fastjson_rce">fastjson_rce</span>
+            <span class="post-date" title="2021-01-29 16:09:51">2021/01/29</span>
+        </a>
+        
+        <a  class="All Evolution "
+           href="/Evolution/Markdown-of-Emacs.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Markdown_of_Emacs">Markdown_of_Emacs</span>
+            <span class="post-date" title="2021-01-14 11:22:07">2021/01/14</span>
+        </a>
+        
+        <a  class="All Tools "
+           href="/Tools/emacs.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="emacs">emacs</span>
+            <span class="post-date" title="2021-01-12 09:46:03">2021/01/12</span>
+        </a>
+        
+        <a  class="All Tools "
+           href="/Tools/awk-sed-grep-find.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="awk-sed-grep-find">awk-sed-grep-find</span>
+            <span class="post-date" title="2021-01-10 10:20:21">2021/01/10</span>
+        </a>
+        
+        <a  class="All Tools "
+           href="/Tools/TAR.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="TAR">TAR</span>
+            <span class="post-date" title="2021-01-09 21:00:07">2021/01/09</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Shellshock.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Shellshock">Shellshock</span>
+            <span class="post-date" title="2021-01-08 15:54:41">2021/01/08</span>
+        </a>
+        
+        <a  class="All Tools "
+           href="/Tools/curl-wget.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="curl-wget">curl-wget</span>
+            <span class="post-date" title="2021-01-06 18:03:15">2021/01/06</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Elasticsearch.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Elasticsearch">Elasticsearch</span>
+            <span class="post-date" title="2021-01-06 17:50:11">2021/01/06</span>
+        </a>
+        
+        <a  class="All Coding "
+           href="/Coding/bash-basic.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="bash_basic">bash_basic</span>
+            <span class="post-date" title="2021-01-02 18:00:59">2021/01/02</span>
+        </a>
+        
+        <a  class="All Evolution "
+           href="/Evolution/sleep.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="sleep">sleep</span>
+            <span class="post-date" title="2020-12-28 15:50:03">2020/12/28</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/SSLTLS%E7%9B%B8%E5%85%B3%E6%BC%8F%E6%B4%9E.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="SSLTLS相关漏洞">SSLTLS相关漏洞</span>
+            <span class="post-date" title="2020-12-25 10:41:48">2020/12/25</span>
+        </a>
+        
+        <a  class="All Evolution "
+           href="/Evolution/meta_learning.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="meta_learning">meta_learning</span>
+            <span class="post-date" title="2020-12-22 09:26:14">2020/12/22</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/PostgreSQL.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="PostgreSQL">PostgreSQL</span>
+            <span class="post-date" title="2020-12-21 16:02:17">2020/12/21</span>
+        </a>
+        
+        <a  class="All Coding JavaScript "
+           href="/Coding/JavaScript/css-basic.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="css_basic">css_basic</span>
+            <span class="post-date" title="2020-12-20 17:31:07">2020/12/20</span>
+        </a>
+        
+        <a  class="All Coding JavaScript "
+           href="/Coding/JavaScript/html-basic.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="html_basic">html_basic</span>
+            <span class="post-date" title="2020-12-20 14:05:39">2020/12/20</span>
+        </a>
+        
+        <a  class="All Response "
+           href="/Response/%E5%BA%94%E6%80%A5%E5%93%8D%E5%BA%94%E6%A8%A1%E6%9D%BF.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="应急响应模板">应急响应模板</span>
+            <span class="post-date" title="2020-12-20 13:57:33">2020/12/20</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Graphite.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Graphite">Graphite</span>
+            <span class="post-date" title="2020-12-17 17:05:35">2020/12/17</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/XenMobile.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="XenMobile">XenMobile</span>
+            <span class="post-date" title="2020-12-13 14:50:45">2020/12/13</span>
+        </a>
+        
+        <a  class="All Tools "
+           href="/Tools/SpaceVim.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="SpaceVim">SpaceVim</span>
+            <span class="post-date" title="2020-12-12 12:20:18">2020/12/12</span>
+        </a>
+        
+        <a  class="All Tools "
+           href="/Tools/VIM.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="VIM">VIM</span>
+            <span class="post-date" title="2020-12-11 19:10:54">2020/12/11</span>
+        </a>
+        
+        <a  class="All Coding "
+           href="/Coding/program-concept.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="program_concept">program_concept</span>
+            <span class="post-date" title="2020-12-11 16:40:10">2020/12/11</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Kibana.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Kibana">Kibana</span>
+            <span class="post-date" title="2020-12-10 11:32:07">2020/12/10</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Docker.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Docker">Docker</span>
+            <span class="post-date" title="2020-12-09 15:53:15">2020/12/09</span>
+        </a>
+        
+        <a  class="All Response "
+           href="/Response/%E5%BA%94%E6%80%A5%E5%93%8D%E5%BA%94%E5%9F%BA%E7%A1%80%E7%AF%87.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="应急响应基础篇">应急响应基础篇</span>
+            <span class="post-date" title="2020-12-08 19:00:06">2020/12/08</span>
+        </a>
+        
+        <a  class="All Tools "
+           href="/Tools/Nmap.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Nmap">Nmap</span>
+            <span class="post-date" title="2020-12-07 20:08:51">2020/12/07</span>
+        </a>
+        
+        <a  class="All Coding Audit "
+           href="/Coding/Audit/%E4%BB%A3%E7%A0%81%E5%AE%A1%E8%AE%A1%E6%A6%82%E5%BF%B5.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="代码审计概念">代码审计概念</span>
+            <span class="post-date" title="2020-12-07 19:51:19">2020/12/07</span>
+        </a>
+        
+        <a  class="All Kali PostExploit "
+           href="/Kali/PostExploit/%E5%86%85%E7%BD%91%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="内网信息收集">内网信息收集</span>
+            <span class="post-date" title="2020-12-07 18:52:47">2020/12/07</span>
+        </a>
+        
+        <a  class="All Tools "
+           href="/Tools/Tmux.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Tmux">Tmux</span>
+            <span class="post-date" title="2020-12-07 18:14:43">2020/12/07</span>
+        </a>
+        
+        <a  class="All Kali PostExploit "
+           href="/Kali/PostExploit/IPC-Basic-Operation.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="IPC Basic Operation">IPC Basic Operation</span>
+            <span class="post-date" title="2020-12-07 17:55:00">2020/12/07</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/ActiveMQ.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="ActiveMQ">ActiveMQ</span>
+            <span class="post-date" title="2020-12-07 17:26:21">2020/12/07</span>
+        </a>
+        
+        <a  class="All Coding Python "
+           href="/Coding/Python/pythonic-tools.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="pythonic_tools">pythonic_tools</span>
+            <span class="post-date" title="2020-12-06 19:12:43">2020/12/06</span>
+        </a>
+        
+        <a  class="All Evolution "
+           href="/Evolution/Built-Mr-Frame-with-Hexo-and-Git.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Built Mr.Frame with Hexo and Git">Built Mr.Frame with Hexo and Git</span>
+            <span class="post-date" title="2020-12-06 00:09:20">2020/12/06</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/InfluxDB.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="InfluxDB">InfluxDB</span>
+            <span class="post-date" title="2020-12-04 20:24:03">2020/12/04</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/MongoDB.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="MongoDB">MongoDB</span>
+            <span class="post-date" title="2020-12-04 20:23:56">2020/12/04</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Redis.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Redis">Redis</span>
+            <span class="post-date" title="2020-12-04 20:23:48">2020/12/04</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/MySQL.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="MySQL">MySQL</span>
+            <span class="post-date" title="2020-12-04 20:23:41">2020/12/04</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Memcache.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Memcache">Memcache</span>
+            <span class="post-date" title="2020-12-04 20:23:36">2020/12/04</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Hadoop.html"
+           data-tag="aa"
+           data-author="" >
+            <span class="post-title" title="Hadoop">Hadoop</span>
+            <span class="post-date" title="2020-12-04 20:23:31">2020/12/04</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Zookeeper.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Zookeeper">Zookeeper</span>
+            <span class="post-date" title="2020-12-04 20:23:24">2020/12/04</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Tomcat.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Tomcat">Tomcat</span>
+            <span class="post-date" title="2020-12-04 20:23:16">2020/12/04</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Supervisord.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Supervisord">Supervisord</span>
+            <span class="post-date" title="2020-12-04 20:23:08">2020/12/04</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/SaltStack.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="SaltStack">SaltStack</span>
+            <span class="post-date" title="2020-12-04 20:23:00">2020/12/04</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/NFS.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="NFS">NFS</span>
+            <span class="post-date" title="2020-12-04 20:22:50">2020/12/04</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Harbor.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Harbor">Harbor</span>
+            <span class="post-date" title="2020-12-04 20:22:36">2020/12/04</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/JDWP.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="JDWP">JDWP</span>
+            <span class="post-date" title="2020-12-04 20:22:28">2020/12/04</span>
+        </a>
+        
+        <a  class="All Kali Exploit "
+           href="/Kali/Exploit/Java-RMI.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Java RMI">Java RMI</span>
+            <span class="post-date" title="2020-12-04 20:22:17">2020/12/04</span>
+        </a>
+        
+        <a  class="All Kali "
+           href="/Kali/kali-inux%E7%B3%BB%E7%BB%9F%E4%BC%98%E5%8C%96.html"
+           data-tag="system"
+           data-author="" >
+            <span class="post-title" title="kali inux系统优化">kali inux系统优化</span>
+            <span class="post-date" title="2020-12-03 20:44:23">2020/12/03</span>
+        </a>
+        
+        <div id="no-item-tips">
+
+        </div>
+    </nav>
+    <div id="outline-list">
+    </div>
+</div>
+    </div>
+    <div class="hide-list">
+        <div class="semicircle" data-title="切换全屏 快捷键 s">
+            <div class="brackets first"><</div>
+            <div class="brackets">&gt;</div>
+        </div>
+    </div>
+</aside>
+<div id="post">
+    <div class="pjax">
+        <article id="post-Android软件测试基础" class="article article-type-post" itemscope itemprop="blogPost">
+    
+        <h1 class="article-title">Android软件测试基础</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        <span class="book">
+            <i class="iconfont icon-category"></i>
+            
+            
+            <a  data-rel="Evolution">Evolution</a>
+            
+        </span>
+        
+        
+    </div>
+    <div class="article-meta">
+        
+            Created At : <time class="date" title='Updated At: 2022-04-20 21:36:31'>2022-04-20 21:36</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        <span>Count:13k</span>
+        
+        
+        <span id="busuanzi_container_page_pv">
+            Views 👀 :<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+        <span class="top-comment" title="跳转至评论区">
+            <a href="#comments">
+                Comment:<span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </a>
+        </span>
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Table-of-Contents"><span class="toc-text">Table of Contents</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Android-App%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%80"><span class="toc-text">Android App安全基础</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Android-APP%E7%94%9F%E6%88%90%E8%BF%87%E7%A8%8B"><span class="toc-text">Android APP生成过程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7"><span class="toc-text">安全测试工具</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9D%99%E6%80%81%E5%88%86%E6%9E%90%E5%B7%A5%E5%85%B7-%E6%B5%8B%E8%AF%95App%E6%98%AF%E5%90%A6%E5%AD%98%E5%9C%A8%E9%98%B2%E5%8F%8D%E7%BC%96%E8%AF%91%E5%92%8C%E9%98%B2%E7%AF%A1%E6%94%B9%E7%9A%84%E9%97%AE%E9%A2%98"><span class="toc-text">静态分析工具 - 测试App是否存在防反编译和防篡改的问题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8A%A8%E6%80%81%E5%88%86%E6%9E%90%E5%B7%A5%E5%85%B7-%E6%B5%8B%E8%AF%95%E9%98%B2%E8%B0%83%E8%AF%95%E3%80%81%E9%98%B2%E6%B3%A8%E5%85%A5%E3%80%81%E9%98%B2%E5%86%85%E5%AD%98%E8%BD%AC%E5%82%A8%E3%80%81%E6%BC%8F%E6%B4%9E%E6%B5%8B%E8%AF%95%E7%AD%89%E9%97%AE%E9%A2%98"><span class="toc-text">动态分析工具 - 测试防调试、防注入、防内存转储、漏洞测试等问题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%8C%85%E5%88%86%E6%9E%90%E5%B7%A5%E5%85%B7-%E6%B5%8B%E8%AF%95%E6%95%B0%E6%8D%AE%E9%80%9A%E4%BF%A1%E6%97%B6%E5%AD%98%E5%9C%A8%E6%98%8E%E6%96%87%E4%BC%A0%E8%BE%93%E3%80%81%E6%95%B0%E6%8D%AE%E5%BC%B1%E5%8A%A0%E5%AF%86%E3%80%81%E4%B8%AD%E9%97%B4%E4%BA%BA%E6%94%BB%E5%87%BB%E6%BC%8F%E6%B4%9E"><span class="toc-text">数据包分析工具- 测试数据通信时存在明文传输、数据弱加密、中间人攻击漏洞</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8C%82%E9%92%A9%E5%B7%A5%E5%85%B7-%E8%A7%A3%E5%86%B3%E5%8A%A0%E5%AF%86%E6%97%B6%E4%B8%8A%E8%BF%B0%E5%B7%A5%E5%85%B7%E6%97%A0%E6%B3%95%E4%BD%BF%E7%94%A8%E7%9A%84%E9%97%AE%E9%A2%98"><span class="toc-text">挂钩工具 - 解决加密时上述工具无法使用的问题</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#App%E7%9B%B8%E5%85%B3%E7%9A%84%E4%BF%A1%E6%81%AF%E8%B5%84%E4%BA%A7"><span class="toc-text">App相关的信息资产</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%A8%8B%E5%BA%8F%E4%BB%A3%E7%A0%81%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95-APP%E6%96%87%E4%BB%B6%E3%80%81%E7%A8%8B%E5%BA%8F%E8%BF%9B%E7%A8%8B"><span class="toc-text">程序代码安全测试 - APP文件、程序进程</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%90%E8%A1%8C%E7%8E%AF%E5%A2%83%E6%B5%8B%E8%AF%954"><span class="toc-text">运行环境测试4</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%98%B2%E5%8F%8D%E7%BC%96%E8%AF%91%E6%B5%8B%E8%AF%955"><span class="toc-text">防反编译测试5</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%8D%E7%BC%96%E8%AF%91%E5%B7%A5%E5%85%B7%E6%A3%80%E6%B5%8B"><span class="toc-text">反编译工具检测</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81%E6%B7%B7%E6%B7%86%E6%A3%80%E6%B5%8B"><span class="toc-text">代码混淆检测</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B7%B7%E6%B7%86%E5%BC%BA%E5%BA%A6%E6%A3%80%E6%B5%8B"><span class="toc-text">混淆强度检测</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B3%E9%94%AE%E4%BB%A3%E7%A0%81-%E6%95%8F%E6%84%9F%E9%80%BB%E8%BE%91%E5%92%8C%E6%95%B0%E6%8D%AE%E4%BF%9D%E6%8A%A4-%E6%A3%80%E6%B5%8B"><span class="toc-text">关键代码(敏感逻辑和数据保护)检测</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%98%B2%E7%AF%A1%E6%94%B9%E6%B5%8B%E8%AF%956"><span class="toc-text">防篡改测试6</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6%E9%98%B2%E7%AF%A1%E6%94%B9%E6%A3%80%E6%B5%8B"><span class="toc-text">程序文件防篡改检测</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%98%B2%E8%B0%83%E8%AF%95%E6%B5%8B%E8%AF%957"><span class="toc-text">防调试测试7</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#TODO-%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7%E9%98%B2%E6%8A%A4%E6%A3%80%E6%B5%8B"><span class="toc-text">TODO 调试工具防护检测</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#TODO-%E8%B0%83%E8%AF%95%E8%A1%8C%E4%B8%BA%E9%98%B2%E6%8A%A4%E6%A3%80%E6%B5%8B"><span class="toc-text">TODO 调试行为防护检测</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%86%85%E5%AD%98%E9%98%B2%E6%8A%A4%E6%A3%80%E6%B5%8B"><span class="toc-text">内存防护检测</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%98%B2%E6%B3%A8%E5%85%A5%E6%B5%8B%E8%AF%958"><span class="toc-text">防注入测试8</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%9B%E7%A8%8B%E9%98%B2%E6%8A%A4%E6%A3%80%E6%B5%8B"><span class="toc-text">进程防护检测</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%9C%8D%E5%8A%A1%E4%BA%A4%E4%BA%92%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95-%E7%A8%8B%E5%BA%8F%E8%BF%9B%E7%A8%8B%E3%80%81%E5%89%8D%E6%AE%B5%E7%95%8C%E9%9D%A2%E3%80%81%E6%8E%A5%E5%8F%A3%E7%AB%AF%E5%8F%A3"><span class="toc-text">服务交互安全测试 - 程序进程、前段界面、接口端口</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%9B%E7%A8%8B%E9%97%B4%E4%BA%A4%E4%BA%92"><span class="toc-text">进程间交互</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A3%80%E6%B5%8B%E7%9B%AE%E7%9A%84"><span class="toc-text">检测目的</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A3%80%E6%B5%8B%E6%96%B9%E6%B3%95"><span class="toc-text">检测方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A3%80%E6%B5%8B%E7%BB%93%E8%AE%BA"><span class="toc-text">检测结论</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BF%AE%E5%A4%8D%E5%BB%BA%E8%AE%AE"><span class="toc-text">修复建议</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B1%8F%E5%B9%95%E4%BA%A4%E4%BA%92"><span class="toc-text">屏幕交互</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%95%8C%E9%9D%A2%E5%8A%AB%E6%8C%81%E6%A3%80%E6%B5%8B"><span class="toc-text">界面劫持检测</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%98%B2%E6%88%AA-%E5%BD%95%E5%B1%8F%E6%A3%80%E6%B5%8B"><span class="toc-text">防截&#x2F;录屏检测</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#WebView%E4%BA%A4%E4%BA%92"><span class="toc-text">WebView交互</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%8B%E9%9A%86%E6%94%BB%E5%87%BB%E6%A3%80%E6%B5%8B"><span class="toc-text">克隆攻击检测</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#WebView%E5%AE%89%E5%85%A8%E6%A3%80%E6%B5%8B"><span class="toc-text">WebView安全检测</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8E%A5%E5%8F%A3%E7%AB%AF%E5%8F%A3%E4%BA%A4%E4%BA%92"><span class="toc-text">接口端口交互</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AF%B9%E8%B1%A1%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96%E6%A3%80%E6%B5%8B"><span class="toc-text">对象反序列化检测</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Wormhole%E6%BC%8F%E6%B4%9E%E6%A3%80%E6%B5%8B"><span class="toc-text">Wormhole漏洞检测</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%89%B4%E6%9D%83%E8%AE%A4%E8%AF%81%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95-%E6%8E%A5%E5%8F%A3%E7%AB%AF%E5%8F%A3%E3%80%81%E5%86%85%E5%AD%98%E6%95%B0%E6%8D%AE%E3%80%81%E7%BD%91%E7%BB%9C%E9%80%9A%E4%BF%A1"><span class="toc-text">鉴权认证安全测试 - 接口端口、内存数据、网络通信</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B3%A8%E5%86%8C%E8%BF%87%E7%A8%8B%E6%B5%8B%E8%AF%95"><span class="toc-text">注册过程测试</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B3%A8%E5%86%8C%E4%BF%A1%E6%81%AF%E4%BF%9D%E6%8A%A4%E6%A3%80%E6%B5%8B"><span class="toc-text">注册信息保护检测</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B3%A8%E5%86%8C%E4%BF%A1%E6%81%AF%E4%BC%A0%E8%BE%93%E6%A3%80%E6%B5%8B"><span class="toc-text">注册信息传输检测</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B3%A8%E5%86%8C%E8%BF%87%E7%A8%8B%E9%98%B2%E7%88%86%E7%A0%B4%E6%A3%80%E6%B5%8B"><span class="toc-text">注册过程防爆破检测</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B3%A8%E5%86%8C%E8%BF%87%E7%A8%8B%E9%98%B2%E5%97%85%E6%8E%A2%E6%A3%80%E6%B5%8B"><span class="toc-text">注册过程防嗅探检测</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%99%BB%E9%99%86%E8%BF%87%E7%A8%8B%E6%B5%8B%E8%AF%95"><span class="toc-text">登陆过程测试</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AF%86%E7%A0%81%E5%AE%89%E5%85%A8%E9%AA%8C%E8%AF%81%E6%A3%80%E6%B5%8B"><span class="toc-text">密码安全验证检测</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%99%BB%E9%99%86%E4%BF%A1%E6%81%AF%E5%8A%A0%E5%AF%86%E4%BC%A0%E8%BE%93%E6%A3%80%E6%B5%8B"><span class="toc-text">登陆信息加密传输检测</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%99%BB%E9%99%86%E8%BF%87%E7%A8%8B%E9%98%B2%E7%88%86%E7%A0%B4%E6%A3%80%E6%B5%8B"><span class="toc-text">登陆过程防爆破检测</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%99%BB%E9%99%86%E8%BF%87%E7%A8%8B%E9%98%B2%E5%97%85%E6%8E%A2%E6%A3%80%E6%B5%8B"><span class="toc-text">登陆过程防嗅探检测</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%99%BB%E9%99%86%E8%BF%87%E7%A8%8B%E9%98%B2%E7%BB%95%E8%BF%87%E6%A3%80%E6%B5%8B"><span class="toc-text">登陆过程防绕过检测</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8A%A0%E5%BC%BA%E8%AE%A4%E8%AF%81%E6%A3%80%E6%B5%8B"><span class="toc-text">加强认证检测</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BC%9A%E8%AF%9D%E8%BF%87%E7%A8%8B%E6%B5%8B%E8%AF%95"><span class="toc-text">会话过程测试</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9C%89%E7%8A%B6%E6%80%81%E4%BC%9A%E8%AF%9D%E6%A0%87%E5%BF%97%E6%A3%80%E6%B5%8B"><span class="toc-text">有状态会话标志检测</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%97%A0%E7%8A%B6%E6%80%81%E4%BC%9A%E8%AF%9DToken%E6%A3%80%E6%B5%8B"><span class="toc-text">无状态会话Token检测</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BC%9A%E8%AF%9D%E4%B8%8D%E6%B4%BB%E8%B7%83%E6%A3%80%E6%B5%8B"><span class="toc-text">会话不活跃检测</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8A%A0%E5%BC%BA%E8%AE%A4%E8%AF%81%E6%A3%80%E6%B5%8B-1"><span class="toc-text">加强认证检测</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%99%BB%E5%87%BA%E8%BF%87%E7%A8%8B%E6%B5%8B%E8%AF%95"><span class="toc-text">登出过程测试</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BC%9A%E8%AF%9D%E7%BB%88%E6%AD%A2%E6%A3%80%E6%B5%8B"><span class="toc-text">会话终止检测</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%AE%8B%E7%95%99%E6%95%B0%E6%8D%AE%E6%A3%80%E6%B5%8B"><span class="toc-text">残留数据检测</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B3%A8%E9%94%80%E8%BF%87%E7%A8%8B%E6%B5%8B%E8%AF%95"><span class="toc-text">注销过程测试</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%87%8D%E6%96%B0%E6%B3%A8%E5%86%8C%E6%A3%80%E6%B5%8B"><span class="toc-text">重新注册检测</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E6%B8%85%E9%99%A4%E6%A3%80%E6%B5%8B"><span class="toc-text">数据清除检测</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%9C%AC%E5%9C%B0%E6%95%B0%E6%8D%AE%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95-%E5%86%85%E5%AD%98%E6%95%B0%E6%8D%AE%E3%80%81%E6%9C%AC%E5%9C%B0%E5%AD%98%E5%82%A8"><span class="toc-text">本地数据安全测试 - 内存数据、本地存储</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%88%9B%E5%BB%BA%E6%B5%8B%E8%AF%95"><span class="toc-text">数据创建测试</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%94%A8%E6%88%B7%E5%8D%8F%E8%AE%AE%E6%A3%80%E6%B5%8B"><span class="toc-text">用户协议检测</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E6%A3%80%E6%B5%8B"><span class="toc-text">数据采集检测</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E8%BE%93%E5%85%A5%E6%A3%80%E6%B5%8B"><span class="toc-text">数据输入检测</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E7%94%9F%E6%88%90%E6%A3%80%E6%B5%8B"><span class="toc-text">数据生成检测</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8%E6%B5%8B%E8%AF%95"><span class="toc-text">数据存储测试</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AE%BF%E9%97%AE%E6%8E%A7%E5%88%B6%E6%A3%80%E6%B5%8B"><span class="toc-text">访问控制检测</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%8A%A0%E5%AF%86%E6%A3%80%E6%B5%8B"><span class="toc-text">数据加密检测</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E6%B5%8B%E8%AF%95"><span class="toc-text">数据处理测试</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A8%8B%E5%BA%8F%E6%97%A5%E5%BF%97%E6%A3%80%E6%B5%8B"><span class="toc-text">程序日志检测</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%8F%E6%84%9F%E6%95%B0%E6%8D%AE%E4%B8%8D%E5%BD%93%E4%BD%BF%E7%94%A8%E6%A3%80%E6%B5%8B"><span class="toc-text">敏感数据不当使用检测</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%85%B1%E4%BA%AB%E6%B5%8B%E8%AF%95"><span class="toc-text">数据共享测试</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E6%96%B9SDK%E7%94%A8%E6%88%B7%E5%8D%8F%E8%AE%AE%E6%A3%80%E6%B5%8B"><span class="toc-text">第三方SDK用户协议检测</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%8E%E7%AC%AC%E4%B8%89%E6%96%B9SDK%E6%95%B0%E6%8D%AE%E5%85%B1%E4%BA%AB%E6%A3%80%E6%B5%8B"><span class="toc-text">与第三方SDK数据共享检测</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%A4%87%E4%BB%BD%E6%B5%8B%E8%AF%95"><span class="toc-text">数据备份测试</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%8F%E6%84%9F%E6%95%B0%E6%8D%AE%E5%A4%87%E4%BB%BD%E6%A3%80%E6%B5%8B"><span class="toc-text">敏感数据备份检测</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%87%E4%BB%BD%E6%95%B0%E6%8D%AE%E5%8A%A0%E5%AF%86%E5%BC%BA%E5%BA%A6%E6%A3%80%E6%B5%8B"><span class="toc-text">备份数据加密强度检测</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E9%94%80%E6%AF%81%E6%B5%8B%E8%AF%95"><span class="toc-text">数据销毁测试</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%8E%E5%8F%B0%E8%BF%90%E8%A1%8C%E6%95%B0%E6%8D%AE%E6%A3%80%E6%B5%8B"><span class="toc-text">后台运行数据检测</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%8F%E6%84%9F%E6%95%B0%E6%8D%AE%E6%B8%85%E9%99%A4%E6%A3%80%E6%B5%8B"><span class="toc-text">敏感数据清除检测</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%BD%91%E7%BB%9C%E4%BC%A0%E8%BE%93%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95-%E7%BD%91%E7%BB%9C%E9%80%9A%E4%BF%A1"><span class="toc-text">网络传输安全测试 - 网络通信</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E5%85%A8%E4%BC%A0%E8%BE%93%E5%B1%82%E6%B5%8B%E8%AF%95"><span class="toc-text">安全传输层测试</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#TLS%E5%AE%9E%E7%8E%B0%E6%A3%80%E6%B5%8B"><span class="toc-text">TLS实现检测</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#CA%E8%AF%81%E4%B9%A6%E6%A3%80%E6%B5%8B"><span class="toc-text">CA证书检测</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AF%81%E4%B9%A6%E6%A0%A1%E9%AA%8C%E6%A3%80%E6%B5%8B"><span class="toc-text">证书校验检测</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%BB%E6%9C%BA%E5%90%8D%E6%A0%A1%E9%AA%8C"><span class="toc-text">主机名校验</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%8A%A0%E5%AF%86%E6%A3%80%E6%B5%8B-1"><span class="toc-text">数据加密检测</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A3%80%E6%B5%8B%E7%9B%AE%E7%9A%84-1"><span class="toc-text">检测目的</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A3%80%E6%B5%8B%E6%96%B9%E6%B3%95-1"><span class="toc-text">检测方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A3%80%E6%B5%8B%E7%BB%93%E8%AE%BA-1"><span class="toc-text">检测结论</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BF%AE%E5%A4%8D%E5%BB%BA%E8%AE%AE-1"><span class="toc-text">修复建议</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%AD%E9%97%B4%E4%BA%BA%E6%94%BB%E5%87%BB%E6%B5%8B%E8%AF%95"><span class="toc-text">中间人攻击测试</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#HTTP%E4%B8%AD%E9%97%B4%E4%BA%BA%E4%BC%9A%E8%AF%9D%E5%8A%AB%E6%8C%81%E6%A3%80%E6%B5%8B"><span class="toc-text">HTTP中间人会话劫持检测</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#HTTPS%E4%B8%AD%E9%97%B4%E4%BA%BA%E4%BC%9A%E8%AF%9D%E5%8A%AB%E6%8C%81%E6%A3%80%E6%B5%8B"><span class="toc-text">HTTPS中间人会话劫持检测</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#App%E5%8A%A0%E5%9B%BA%E6%8A%80%E6%9C%AF"><span class="toc-text">App加固技术</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Footnotes"><span class="toc-text">Footnotes</span></a></li></ol>
+    
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+    .toc-level-6 i,
+    .toc-level-6 ol {
+        display: none !important;
+    }
+</style>
+</div>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>编写进度</p>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> </li>
+</ul>
+<h1 id="Table-of-Contents"><a href="#Table-of-Contents" class="headerlink" title="Table of Contents"></a>Table of Contents</h1><ol>
+<li><a href="#orgef93074">Android App安全基础</a><ol>
+<li> <a href="#org6a476ce">Android APP生成过程</a></li>
+<li><a href="#orgd65fb7b">安全测试工具</a><ol>
+<li> <a href="#orge8f77e9">静态分析工具 - 测试App是否存在防反编译和防篡改的问题</a></li>
+<li> <a href="#orgb66f7e9">动态分析工具 - 测试防调试、防注入、防内存转储、漏洞测试等问题</a></li>
+<li> <a href="#org871ae98">数据包分析工具- 测试数据通信时存在明文传输、数据弱加密、中间人攻击漏洞</a></li>
+<li> <a href="#org703824e">挂钩工具 - 解决加密时上述工具无法使用的问题</a></li>
+</ol>
+</li>
+<li> <a href="#org6e514a2">App相关的信息资产</a></li>
+</ol>
+</li>
+<li><a href="#org8721875">程序代码安全测试 - APP文件、程序进程</a><ol>
+<li> <a href="#orgdcbf70e">运行环境测试</a></li>
+<li><a href="#orge5164c6">防反编译测试</a><ol>
+<li> <a href="#org8b4c3f1">反编译工具检测</a></li>
+<li> <a href="#orge6edb94">代码混淆检测</a></li>
+<li> <a href="#org241f12f">混淆强度检测</a></li>
+<li> <a href="#org086bde5">关键代码(敏感逻辑和数据保护)检测</a></li>
+</ol>
+</li>
+<li><a href="#org69ea40d">防篡改测试</a><ol>
+<li> <a href="#orgb74ed5b">程序文件防篡改检测</a></li>
+</ol>
+</li>
+<li><a href="#orgcd438a0">防调试测试</a><ol>
+<li> <a href="#org0692e69">调试工具防护检测</a></li>
+<li> <a href="#org4816187">调试行为防护检测</a></li>
+<li> <a href="#org103f672">内存防护检测</a></li>
+</ol>
+</li>
+<li><a href="#org6e4485b">防注入测试</a><ol>
+<li> <a href="#org0649028">进程防护检测</a></li>
+</ol>
+</li>
+</ol>
+</li>
+<li><a href="#org98765cf">服务交互安全测试 - 程序进程、前段界面、接口端口</a><ol>
+<li><a href="#org6bdf04a">进程间交互</a><ol>
+<li> <a href="#org7012d36">检测目的</a></li>
+<li> <a href="#orge4d99d8">检测方法</a></li>
+<li> <a href="#org0f48c98">检测结论</a></li>
+<li> <a href="#org0829600">修复建议</a></li>
+</ol>
+</li>
+<li><a href="#org5a97a7a">屏幕交互</a><ol>
+<li> <a href="#org5bcf1f3">界面劫持检测</a></li>
+<li> <a href="#org41702b1">防截/录屏检测</a></li>
+</ol>
+</li>
+<li><a href="#org5f9f4dc">WebView交互</a><ol>
+<li> <a href="#org8205a3e">克隆攻击检测</a></li>
+<li> <a href="#orgceee83d">WebView安全检测</a></li>
+</ol>
+</li>
+<li><a href="#org8fb541b">接口端口交互</a><ol>
+<li> <a href="#org4a7dda8">对象反序列化检测</a></li>
+<li> <a href="#org6df9c6d">Wormhole漏洞检测</a></li>
+</ol>
+</li>
+</ol>
+</li>
+<li><a href="#org414f599">鉴权认证安全测试 - 接口端口、内存数据、网络通信</a><ol>
+<li><a href="#orgf61b415">注册过程测试</a><ol>
+<li> <a href="#orge9b7dc3">注册信息保护检测</a></li>
+<li> <a href="#org61850ac">注册信息传输检测</a></li>
+<li> <a href="#org155ab47">注册过程防爆破检测</a></li>
+<li> <a href="#org0f50b35">注册过程防嗅探检测</a></li>
+</ol>
+</li>
+<li><a href="#org1371bd6">登陆过程测试</a><ol>
+<li> <a href="#orga447a0e">密码安全验证检测</a></li>
+<li> <a href="#orgf9ae294">登陆信息加密传输检测</a></li>
+<li> <a href="#org5300a15">登陆过程防爆破检测</a></li>
+<li> <a href="#org771fe4a">登陆过程防嗅探检测</a></li>
+<li> <a href="#orgbc121bd">登陆过程防绕过检测</a></li>
+<li> <a href="#orgabc9a4b">加强认证检测</a></li>
+</ol>
+</li>
+<li><a href="#orgfefe1c8">会话过程测试</a><ol>
+<li> <a href="#orgf7b44a1">有状态会话标志检测</a></li>
+<li> <a href="#org9be6f93">无状态会话Token检测</a></li>
+<li> <a href="#org1ce3ca7">会话不活跃检测</a></li>
+<li> <a href="#org71ebb3f">加强认证检测</a></li>
+</ol>
+</li>
+<li><a href="#org783c152">登出过程测试</a><ol>
+<li> <a href="#orga37a056">会话终止检测</a></li>
+<li> <a href="#org22db691">残留数据检测</a></li>
+</ol>
+</li>
+<li><a href="#org13ec53d">注销过程测试</a><ol>
+<li> <a href="#org643d8f5">重新注册检测</a></li>
+<li> <a href="#org0942197">数据清除检测</a></li>
+</ol>
+</li>
+</ol>
+</li>
+<li><a href="#org8c9cd3a">本地数据安全测试 - 内存数据、本地存储</a><ol>
+<li><a href="#org0bb8c18">数据创建测试</a><ol>
+<li> <a href="#org2f44160">用户协议检测</a></li>
+<li> <a href="#orgba2f37e">数据采集检测</a></li>
+<li> <a href="#orga315219">数据输入检测</a></li>
+<li> <a href="#orga14671a">数据生成检测</a></li>
+</ol>
+</li>
+<li><a href="#org0e9c3ed">数据存储测试</a><ol>
+<li> <a href="#org9fc890b">访问控制检测</a></li>
+<li> <a href="#org717a8be">数据加密检测</a></li>
+</ol>
+</li>
+<li><a href="#org80440e9">数据处理测试</a><ol>
+<li> <a href="#org428e884">程序日志检测</a></li>
+<li> <a href="#orge80508d">敏感数据不当使用检测</a></li>
+</ol>
+</li>
+<li><a href="#org203f9e0">数据共享测试</a><ol>
+<li> <a href="#orgdcc9854">第三方SDK用户协议检测</a></li>
+<li> <a href="#org4e8592a">与第三方SDK数据共享检测</a></li>
+</ol>
+</li>
+<li><a href="#orgdbf7381">数据备份测试</a><ol>
+<li> <a href="#orgbd332d3">敏感数据备份检测</a></li>
+<li> <a href="#org1c7a1d8">备份数据加密强度检测</a></li>
+</ol>
+</li>
+<li><a href="#org1c83575">数据销毁测试</a><ol>
+<li> <a href="#org8a07238">后台运行数据检测</a></li>
+<li> <a href="#org57b8027">敏感数据清除检测</a></li>
+</ol>
+</li>
+</ol>
+</li>
+<li><a href="#org3894cd3">网络传输安全测试 - 网络通信</a><ol>
+<li><a href="#org2412456">安全传输层测试</a><ol>
+<li> <a href="#orgefeec07">TLS实现检测</a></li>
+<li> <a href="#orgfb44226">CA证书检测</a></li>
+<li> <a href="#org090d933">证书校验检测</a></li>
+<li> <a href="#org467e66d">主机名校验</a></li>
+</ol>
+</li>
+<li><a href="#org764d1f9">数据加密检测</a><ol>
+<li> <a href="#org9f7544e">检测目的</a></li>
+<li> <a href="#orgb800ad3">检测方法</a></li>
+<li> <a href="#orgbdb1f45">检测结论</a></li>
+<li> <a href="#orgace36cd">修复建议</a></li>
+</ol>
+</li>
+<li><a href="#org30371d5">中间人攻击测试</a><ol>
+<li> <a href="#orgb561cf4">HTTP中间人会话劫持检测</a></li>
+<li> <a href="#org493ff20">HTTPS中间人会话劫持检测</a></li>
+</ol>
+</li>
+</ol>
+</li>
+<li> <a href="#org5b71f45">App加固技术</a></li>
+</ol>
+<p><a id="orgef93074"></a></p>
+<h1 id="Android-App安全基础"><a href="#Android-App安全基础" class="headerlink" title="Android App安全基础"></a>Android App安全基础</h1><p><a id="org6a476ce"></a></p>
+<h2 id="Android-APP生成过程"><a href="#Android-APP生成过程" class="headerlink" title="Android APP生成过程"></a>Android APP生成过程</h2><pre><code>graph LR
+    java[.java文件] --&gt;|javac|cls[.class文件]
+    cls[.class文件] --&gt; dx[dx]
+    jar[.jar文件] --&gt; dx[dx]
+    dx[dx] --&gt; dex[class.dex]
+    dex[class.dex] --&gt;|dex2oat| oat[oat格式的class.dex文件]
+    dex[class.dex] --&gt;aapt[aapt]
+    resource[resource] --&gt;aapt[aapt]
+    aapt --&gt; .apk文件
+    .apk文件 --&gt; jarsigner 
+    jarsigner--&gt; zipalign
+    zipalign --&gt; signsign[signed .apk文件]</code></pre>
+<ol>
+<li> 通过<del>javac</del> 将java源代码生成字节码.class文件</li>
+<li>通过<del>dx &#x2013;dex &#x2013;output=class.dex Test.class</del>将.class文件和jar包生成Android App可执行文件class.dex<br> oat格式文件是android系统自带的ELF文件格式，包括classes.dex文件内容，及classes.dex文件转换的机器指令，存储在<del>/data/dalbik-cache/arm/data@<a href="mailto:&#x41;&#x70;&#x70;&#64;&#x63;&#111;&#109;&#46;&#100;&#101;&#109;&#x6f;&#46;&#116;&#x65;&#115;&#x74;&#x2d;&#49;">&#x41;&#x70;&#x70;&#64;&#x63;&#111;&#109;&#46;&#100;&#101;&#109;&#x6f;&#46;&#116;&#x65;&#115;&#x74;&#x2d;&#49;</a>@test.apk@classes.dex</del></li>
+<li> 通过<del>aapt</del>将.dex文件和其他音视频资源文件打包成.apk文件</li>
+<li> 通过jarsigner对生成的apk文件进行数字签名，防止APP被篡改</li>
+<li> 通过zipalign使apk文件压缩部分在字节边界上使对齐</li>
+</ol>
+<p><a id="orgd65fb7b"></a></p>
+<h2 id="安全测试工具"><a href="#安全测试工具" class="headerlink" title="安全测试工具"></a>安全测试工具</h2><p><a id="orge8f77e9"></a></p>
+<h3 id="静态分析工具-测试App是否存在防反编译和防篡改的问题"><a href="#静态分析工具-测试App是否存在防反编译和防篡改的问题" class="headerlink" title="静态分析工具 - 测试App是否存在防反编译和防篡改的问题"></a>静态分析工具 - 测试App是否存在防反编译和防篡改的问题</h3><ul>
+<li><p><input disabled="" type="checkbox">  apktool 检测防篡改能力</p>
+<ol>
+<li><p>反编译</p>
+<pre><code> java -jar apktool.jar d -f Test.apk</code></pre>
+</li>
+<li><p>重打包</p>
+<pre><code> java -jar apktool.jar b -f directory_name -o Test.apk
+ java -jar signapk.jar testkey.x509.pem testkey.pk8   old.apk new.apk</code></pre>
+</li>
+</ol>
+</li>
+<li><p><input disabled="" type="checkbox">  baksmali  作用 classes.dex -反编译-&gt; smali</p>
+<pre><code>  java -jar  baksmali.jar  classes.dex  -o smalifile</code></pre>
+</li>
+<li><p><input disabled="" type="checkbox">  smail 作用 smali &#x2013;&gt; classes.dex</p>
+<pre><code>  java -jar smali.jar smalifile -o classes.dex</code></pre>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://github.com/pxb1988/dex2jar">dex2jar</a>  作用 dex &#x2013;&gt; jar</p>
+<pre><code>  sh d2j-dex2jar.sh -f ~/path/to/apk_to_decompile.apk</code></pre>
+</li>
+<li><p>  [ ] jd-gui 作用 展示jar包中源码</p>
+</li>
+<li><p>  [ ] <a target="_blank" rel="noopener" href="https://bbs.pediy.com/thread-259895.htm">jeb</a> 用于逆向工程/审计apk文件的反编译工具</p>
+</li>
+</ul>
+<p><a id="orgb66f7e9"></a></p>
+<h3 id="动态分析工具-测试防调试、防注入、防内存转储、漏洞测试等问题"><a href="#动态分析工具-测试防调试、防注入、防内存转储、漏洞测试等问题" class="headerlink" title="动态分析工具 - 测试防调试、防注入、防内存转储、漏洞测试等问题"></a>动态分析工具 - 测试防调试、防注入、防内存转储、漏洞测试等问题</h3><ul>
+<li>  [ ] DDMS(Dalvik debug monitor service)是安卓开发环境中的Dalvik虚拟机调试监控服务</li>
+<li>  [ ] gdb(GNU project debugger)是LInux系统的GCC调试工具</li>
+<li>  [ ] IDA Pro 逆向神器 脱壳</li>
+<li>  [ ] Drozer是一个进行综合安全评估的Android安全测试框架</li>
+</ul>
+<p><a id="org871ae98"></a></p>
+<h3 id="数据包分析工具-测试数据通信时存在明文传输、数据弱加密、中间人攻击漏洞"><a href="#数据包分析工具-测试数据通信时存在明文传输、数据弱加密、中间人攻击漏洞" class="headerlink" title="数据包分析工具- 测试数据通信时存在明文传输、数据弱加密、中间人攻击漏洞"></a>数据包分析工具- 测试数据通信时存在明文传输、数据弱加密、中间人攻击漏洞</h3><ul>
+<li>  [ ] Burpsuite/Fiddler</li>
+<li>  [ ] Wireshark</li>
+</ul>
+<p><a id="org703824e"></a></p>
+<h3 id="挂钩工具-解决加密时上述工具无法使用的问题"><a href="#挂钩工具-解决加密时上述工具无法使用的问题" class="headerlink" title="挂钩工具 - 解决加密时上述工具无法使用的问题"></a>挂钩工具 - 解决加密时上述工具无法使用的问题</h3><ul>
+<li>  [ ] Xposed框架<sup><a id="fnr.1" class="footref" href="#fn.1" role="doc-backlink">1</a></sup> 在不修改APK文件的情况下控制程序运行</li>
+<li>  [ ] Frida 开源的跨平台挂钩框架，用来脱壳关键的函数，达到内存转储的目的</li>
+<li>  [ ] inject App进程注入评测工具</li>
+</ul>
+<p><a id="org6e514a2"></a></p>
+<h2 id="App相关的信息资产"><a href="#App相关的信息资产" class="headerlink" title="App相关的信息资产"></a>App相关的信息资产</h2><ul>
+<li>  App文件<sup><a id="fnr.2" class="footref" href="#fn.2" role="doc-backlink">2</a></sup></li>
+<li>  程序进程</li>
+<li>  内存数据</li>
+<li>  前端界面<sup><a id="fnr.3" class="footref" href="#fn.3" role="doc-backlink">3</a></sup></li>
+<li>  本地存储</li>
+<li>  网络通信</li>
+<li>  交互接口</li>
+<li>  云端平台</li>
+</ul>
+<p><a id="org8721875"></a></p>
+<h1 id="程序代码安全测试-APP文件、程序进程"><a href="#程序代码安全测试-APP文件、程序进程" class="headerlink" title="程序代码安全测试 - APP文件、程序进程"></a>程序代码安全测试 - APP文件、程序进程</h1><p><a id="orgdcbf70e"></a></p>
+<h2 id="运行环境测试4"><a href="#运行环境测试4" class="headerlink" title="运行环境测试4"></a>运行环境测试<sup><a id="fnr.4" class="footref" href="#fn.4" role="doc-backlink">4</a></sup></h2><p><a id="orge5164c6"></a></p>
+<h2 id="防反编译测试5"><a href="#防反编译测试5" class="headerlink" title="防反编译测试5"></a>防反编译测试<sup><a id="fnr.5" class="footref" href="#fn.5" role="doc-backlink">5</a></sup></h2><p><a id="org8b4c3f1"></a></p>
+<h3 id="反编译工具检测"><a href="#反编译工具检测" class="headerlink" title="反编译工具检测"></a>反编译工具检测</h3><ol>
+<li><p>检测目的</p>
+<p> 检测App是否可以防止反编译工具，是否具有防逆向保护措施</p>
+</li>
+<li><p>检测方法</p>
+<ol>
+<li> 通过反编译工具对apk文件进行反编译，查看是否具有防逆向保护措施</li>
+<li> 通过IDA Pro等反汇编工具对动态库so文件进行反汇编，查看App是否具有防反汇编的能力</li>
+</ol>
+</li>
+<li><p>检测结论</p>
+<p> 若App的dex文件和so文件无法正常反编译或者App经过加固处理，则通过测试</p>
+</li>
+<li><p>修复建议</p>
+<p> 对App文件结构进行变形或加密，让反编译工具无法识别，或对App文件进行加固处理</p>
+</li>
+</ol>
+<p><a id="orge6edb94"></a></p>
+<h3 id="代码混淆检测"><a href="#代码混淆检测" class="headerlink" title="代码混淆检测"></a>代码混淆检测</h3><ol>
+<li><p>检测目的</p>
+<p> 检测App反编译后的源码是否经过混淆处理</p>
+</li>
+<li><p>检测方法</p>
+<p> 通过反编译工具对apk文件进行反编译，查看代码中的类、字段和方法是否经过混淆处理</p>
+</li>
+<li><p>检测结论</p>
+<p> 若反编译后源码中的类、字段和方法使用a、b、c、d等无意义的字符重命名，则通过测试</p>
+</li>
+<li><p>修复建议</p>
+<p> 对App源码进行混淆处理</p>
+</li>
+</ol>
+<p><a id="org241f12f"></a></p>
+<h3 id="混淆强度检测"><a href="#混淆强度检测" class="headerlink" title="混淆强度检测"></a>混淆强度检测</h3><ol>
+<li><p>检测目的</p>
+<p> 检测App反编译后的源码的混淆强度，查看是否能够有效地保护代码安全</p>
+</li>
+<li><p>检测方法</p>
+<ol>
+<li> 检测dex文件代码中所有的类名、函数名、字段、方法，是否都经过混淆处理，例如反编译后无法正常识别Java层函数的功能</li>
+<li> 检测so文件中所有类名、函数名、字段、方法，是否都经过混淆处理，例如反汇编后无法正常识别Native层函数功能</li>
+</ol>
+</li>
+<li><p>检测结论</p>
+<p> 若反编译后代码*不能识别*出App函数的功能，则通过测试</p>
+</li>
+<li><p>修复建议</p>
+<p> 针对dex文件和so文件的类名、函数名、字段、方法进行高强度混淆</p>
+</li>
+</ol>
+<p><a id="org086bde5"></a></p>
+<h3 id="关键代码-敏感逻辑和数据保护-检测"><a href="#关键代码-敏感逻辑和数据保护-检测" class="headerlink" title="关键代码(敏感逻辑和数据保护)检测"></a>关键代码(敏感逻辑和数据保护)检测</h3><ol>
+<li><p>检测目的</p>
+<p> 检测App是否对关键代码和数据实施有效的保护措施，是否暴露业务逻辑</p>
+</li>
+<li><p>检测方法</p>
+<p> 通过反编译工具对apk文件进行反编译，结合manifest.xml配置文件，分析App注册、登陆、支付过程、加密算法、数据通信等关键功能代码，查看相关代码逻辑是否有明显的暴露</p>
+</li>
+<li><p>检测结论</p>
+<p> 若App关键业务代码(如相关业务字符串)未暴露，且关键数据经过加密和隐藏保护处理，则通过测试</p>
+</li>
+<li><p>修复建议</p>
+<p> 将App关键代码进行隐藏、混淆、加壳等处理，从而无法逆向出重要的代码信息</p>
+</li>
+</ol>
+<p><a id="org69ea40d"></a></p>
+<h2 id="防篡改测试6"><a href="#防篡改测试6" class="headerlink" title="防篡改测试6"></a>防篡改测试<sup><a id="fnr.6" class="footref" href="#fn.6" role="doc-backlink">6</a></sup></h2><p><a id="orgb74ed5b"></a></p>
+<h3 id="程序文件防篡改检测"><a href="#程序文件防篡改检测" class="headerlink" title="程序文件防篡改检测"></a>程序文件防篡改检测</h3><ol>
+<li><p>检测目的</p>
+<p> 检测App启动时是否进行了完整性校验，是否对客户端代码、资源文件进行修改，是否具有防篡改机制</p>
+</li>
+<li><p>检测方法</p>
+<ol>
+<li>使用反编译工具Apktool对目标文件进行反编译<br> <code>java -jar apktool.jar d -f /path/to/test.apk</code></li>
+<li> 修改相关代码，篡改AndroidManifest.xml、assets文件、res文件等</li>
+<li>使用apktool重新打包签名后再运行App查看运行结果<br> <code>java -jar apktool b -f /path/to/test</code></li>
+</ol>
+</li>
+<li><p>检测结论</p>
+<p> 若打包后安装后*不能正常运行*，则通过测试</p>
+</li>
+<li><p>修复建议</p>
+<p> 采用完整性校验技术对安装包进行校验，校验对象包括原包中代码、资源文件、配置文件等所有文件，一旦校验失败，立即退出</p>
+</li>
+</ol>
+<p><a id="orgcd438a0"></a></p>
+<h2 id="防调试测试7"><a href="#防调试测试7" class="headerlink" title="防调试测试7"></a>防调试测试<sup><a id="fnr.7" class="footref" href="#fn.7" role="doc-backlink">7</a></sup></h2><p><a id="org0692e69"></a></p>
+<h3 id="TODO-调试工具防护检测"><a href="#TODO-调试工具防护检测" class="headerlink" title="TODO 调试工具防护检测"></a>TODO 调试工具防护检测</h3><ol>
+<li><p> 检测目的</p>
+</li>
+<li><p> 检测方法</p>
+</li>
+<li><p> 检测结论</p>
+</li>
+<li><p> 修复建议</p>
+</li>
+</ol>
+<p><a id="org4816187"></a></p>
+<h3 id="TODO-调试行为防护检测"><a href="#TODO-调试行为防护检测" class="headerlink" title="TODO 调试行为防护检测"></a>TODO 调试行为防护检测</h3><ol>
+<li><p> 检测目的</p>
+</li>
+<li><p> 检测方法</p>
+</li>
+<li><p> 检测结论</p>
+</li>
+<li><p> 修复建议</p>
+</li>
+</ol>
+<p><a id="org103f672"></a></p>
+<h3 id="内存防护检测"><a href="#内存防护检测" class="headerlink" title="内存防护检测"></a>内存防护检测</h3><ol>
+<li><p>检测目的</p>
+<p> 检测App内存是否具有内存防护功能，防止内存转储</p>
+</li>
+<li><p>检测方法</p>
+<ol>
+<li> 运行App，使用ps命令查看进程PID</li>
+<li> 使用 <code>gdb -p &lt;PID&gt;</code> 挂载App进程后，使用 <code>(gdb) gcore</code> 转储内存</li>
+</ol>
+</li>
+<li><p>检测结论</p>
+<p> 若未生成corefile <code>core.&lt;pid&gt;</code> ,则通过测试</p>
+</li>
+<li><p>修复建议</p>
+<p> 通过监控 <code>/proc/pid/mem</code> 和 <code>/proc/pid/pagemep</code> 来防止内存转储</p>
+</li>
+</ol>
+<p><a id="org6e4485b"></a></p>
+<h2 id="防注入测试8"><a href="#防注入测试8" class="headerlink" title="防注入测试8"></a>防注入测试<sup><a id="fnr.8" class="footref" href="#fn.8" role="doc-backlink">8</a></sup></h2><p><a id="org0649028"></a></p>
+<h3 id="进程防护检测"><a href="#进程防护检测" class="headerlink" title="进程防护检测"></a>进程防护检测</h3><ol>
+<li><p>检测目的</p>
+<p> 检测App进程空间是否可以被注入第三方动态so文件</p>
+</li>
+<li><p>检测方法</p>
+<ol>
+<li> 运行App，通过注入工具或脚本，将第三方动态库文件注入App进程空间，查看第三方动态库是否在进程的内存空间中</li>
+</ol>
+</li>
+<li><p>检测结论</p>
+<p> 若第三方动态库文件*不能注入*到目标进程空间，则通过测试</p>
+</li>
+<li><p>修复建议</p>
+<ul>
+<li>  增加ptrace函数的检测功能，使第三方无法使用该函数附加进程</li>
+<li>  修改linker中的dlopen函数，防止第三方进行so加载</li>
+<li>  定时检测App加载的第三方so库，若发现使被注入的so库，程序进程立即报异常</li>
+</ul>
+</li>
+</ol>
+<p><a id="org98765cf"></a></p>
+<h1 id="服务交互安全测试-程序进程、前段界面、接口端口"><a href="#服务交互安全测试-程序进程、前段界面、接口端口" class="headerlink" title="服务交互安全测试 - 程序进程、前段界面、接口端口"></a>服务交互安全测试 - 程序进程、前段界面、接口端口</h1><p><a id="org6bdf04a"></a></p>
+<h2 id="进程间交互"><a href="#进程间交互" class="headerlink" title="进程间交互"></a>进程间交互</h2><p><a id="org7012d36"></a></p>
+<h3 id="检测目的"><a href="#检测目的" class="headerlink" title="检测目的"></a>检测目的</h3><p>检测进程间数据通信是否具有泄露用户信息的风险</p>
+<p><a id="orge4d99d8"></a></p>
+<h3 id="检测方法"><a href="#检测方法" class="headerlink" title="检测方法"></a>检测方法</h3><p>查看AndroidManifest.xml文件中的<activity>、<provider>、<receiver>、<service>标签内的exported属性是否为false</p>
+<ul>
+<li>  <code>&lt;activity android:exported=&quot;true&quot;</code> 则可以被第三方App启动</li>
+<li>  <code>&lt;provider android:authorities=&quot;com.bgy.ssm.fileprovider&quot; android:exported=&quot;true&quot;</code> 则可以被第三方app调用，实现增、删、改、查</li>
+<li>  <code>&lt;receiver android:exported=&quot;true&quot;</code> 则可以接收第三方App发送的广播消息</li>
+<li>  <code>&lt;service android:enabled=&quot;true&quot; android:exported=&quot;true&quot;</code> 则可以被第三方app启动</li>
+</ul>
+<p><a id="org0f48c98"></a></p>
+<h3 id="检测结论"><a href="#检测结论" class="headerlink" title="检测结论"></a>检测结论</h3><p>客户端App用于跨进程通信的4种组建分别为Activity、ContentProvider、BroadCast、Service<br>在 <strong>未明确要求</strong> 的情况下，只要以上配置中存在任一 <code>exported=true</code> 则测试 <strong>不通过</strong></p>
+<p><a id="org0829600"></a></p>
+<h3 id="修复建议"><a href="#修复建议" class="headerlink" title="修复建议"></a>修复建议</h3><p>在未明确要求的情况下，在AndroidManifest.xml配置文件中设置该组建的exported属性为false，或对组建进行权限</p>
+<p><a id="org5a97a7a"></a></p>
+<h2 id="屏幕交互"><a href="#屏幕交互" class="headerlink" title="屏幕交互"></a>屏幕交互</h2><p><a id="org5bcf1f3"></a></p>
+<h3 id="界面劫持检测"><a href="#界面劫持检测" class="headerlink" title="界面劫持检测"></a>界面劫持检测</h3><ol>
+<li><p>检测目的</p>
+<p> App是否具有防界面劫持(UI欺骗)功能，防止黑客伪造界面对原有界面进行覆盖，窃取用户和密码等敏感信息</p>
+</li>
+<li><p>检测方法</p>
+<ol>
+<li><p>反编译源码，查看是否具有检测程序进入后台运行的代码, 当程序不是因为触摸返回键和HOME键今后后台运行时，提醒用户具有被劫持的风险</p>
+<pre><code> @Override
+ public boolean onKeyDown(int keyCode, KeyEvent event)&#123;
+     // 判断程序进入后台运行是否未触摸返回键和HOME键造成的
+     if((keyCode == KeyEvent.KEYCODE_BACK || keyCode == KeyEvent.KEYCODE_HOME)
+        &amp;&amp; event.getRepeatCount()==0)&#123;
+         flag = false;
+     &#125;
+     return super.onKeyDown(keyCode, event);
+ &#125;
+
+ @Override
+ protected void onPause()&#123;
+     // 程序进入后台如果不是触摸返回键和HOME键造成的，则进行劫持风险提示
+     if(flag)&#123;
+         // 弹出警示信息
+         Toast.makeText(getApplicationContext(),
+                        &quot;程序已经进入后台运行，具有劫持的风险&quot;,
+                        Toast.LENGTH_SHORT).show();
+     &#125;
+     super.onPause();
+ &#125;</code></pre>
+</li>
+<li><p> 编写透明界面，当运行至登陆、支付等界面时进行覆盖，查看是否具有风险提示</p>
+</li>
+</ol>
+</li>
+<li><p>修复建议</p>
+<p> 对App的UI界面进行校验，强制将自身UI时刻设置成顶层显示，其中HOME键除外，或自身UI界面进入后台运行后弹框提示用户App已经进入后台运行，有界面劫持风险</p>
+</li>
+</ol>
+<p><a id="org41702b1"></a></p>
+<h3 id="防截-录屏检测"><a href="#防截-录屏检测" class="headerlink" title="防截/录屏检测"></a>防截/录屏检测</h3><ol>
+<li><p>检测目的</p>
+<p> 检测App运行后是否存在防截/录屏保护措施</p>
+</li>
+<li><p>检测方法</p>
+<ol>
+<li> 通过 <code>screencap</code> 命令进行连续截屏，查看界面后的图片是否显示敏感信息</li>
+<li> 通过 <code>screenrecord</code> 命令进行录屏，查看录制后的视频是否显示敏感信息</li>
+</ol>
+</li>
+<li><p>修复建议</p>
+<p> App要实现防截录屏的保护措施</p>
+</li>
+</ol>
+<p><a id="org5f9f4dc"></a></p>
+<h2 id="WebView交互"><a href="#WebView交互" class="headerlink" title="WebView交互"></a>WebView交互</h2><p><a id="org8205a3e"></a></p>
+<h3 id="克隆攻击检测"><a href="#克隆攻击检测" class="headerlink" title="克隆攻击检测"></a>克隆攻击检测</h3><ol>
+<li><p>检测目的</p>
+<p> 检测App中是否存在设置为可被导出的Activity组件，且组建中包含WebView调用，存在导致敏感信息泄露的风险</p>
+</li>
+<li><p>检测方法</p>
+<ol>
+<li> 通过JEB攻击反编译dex文件的源码，查看客户端是否使用了WebView空间，并将 <code>setAllowFileAccessFromeFileURLs</code> 或 <code>setAllowUninvertedFileAccessFromFileURLs</code> API设置为 <code>true</code></li>
+<li> 检测file域的路径是否做了严格限制</li>
+</ol>
+</li>
+<li><p>检测结论</p>
+<p> 若App使用WebView组建，并将 <code>setAllowFileAccessFromeFileURLs</code> 或 <code>setAllowUninvertedFileAccessFromFileURLs</code> API设置为 <code>false</code> ，则通过测试<br> 若App使用WebView组建，并将 <code>setAllowFileAccessFromeFileURLs</code> 或 <code>setAllowUninvertedFileAccessFromFileURLs</code> API设置为 <code>true</code> ，且file域的路径做了严格限制，则通过测试</p>
+</li>
+<li><p>修复建议</p>
+<p> 严格限制包含WebView调用的Activity组建的导出权限，关闭导出权限或限制导出组建的发起者</p>
+</li>
+</ol>
+<p><a id="orgceee83d"></a></p>
+<h3 id="WebView安全检测"><a href="#WebView安全检测" class="headerlink" title="WebView安全检测"></a>WebView安全检测</h3><ol>
+<li><p>检测目的</p>
+<p> 检测App使用的WebView空间加载的外部资源是否存在潜在风险</p>
+</li>
+<li><p>检测方法</p>
+<p> 检测App源码，查看客户端是否对WebView对空间加载的资源文件进行了校验，过滤风险代码</p>
+</li>
+<li><p>检测结论</p>
+<p> App使用WebView空间减灾的HTML未明确要求使用Javascript，<br> 未对加载文件进行校验，或未使用安全的通信协议，<br> 并在WebView加载的程序中有实现发送短信，拨打电话等敏感行为的操作代码，则本项测试不通过</p>
+</li>
+<li><p>修复建议</p>
+<ul>
+<li>  WebView加载的HTML页面，在未明确要求的情况下，禁用Javascript</li>
+<li>  对WebView加载的外部文件进行校验</li>
+<li>  采用HTTPS安全通信协议，不要在WebView加载的外部文件中实现敏感操作的代码</li>
+</ul>
+</li>
+</ol>
+<p><a id="org8fb541b"></a></p>
+<h2 id="接口端口交互"><a href="#接口端口交互" class="headerlink" title="接口端口交互"></a>接口端口交互</h2><p><a id="org4a7dda8"></a></p>
+<h3 id="对象反序列化检测"><a href="#对象反序列化检测" class="headerlink" title="对象反序列化检测"></a>对象反序列化检测</h3><ol>
+<li><p>检测目的</p>
+<p> 检测App是否使用安全的API实现序列化和反序列化，是否存在反序列化漏洞</p>
+</li>
+<li><p>检测方法</p>
+<ol>
+<li> 通过JEB工具反编译dex文件的源码，查看客户端App是否具有实现序列化和反序列化的源代码</li>
+<li> 检测实现序列化和反序列化的API是否具有潜在风险和漏洞</li>
+</ol>
+</li>
+<li><p>检测结论</p>
+<p> 若客户端App不具有序列化和反序列化的代码，或实现序列化和反序列化的API不具有潜在风险和漏洞，则通过测试</p>
+</li>
+<li><p>修复建议</p>
+<p> App采用安全框架的API实现序列化和反序列化</p>
+</li>
+</ol>
+<p><a id="org6df9c6d"></a></p>
+<h3 id="Wormhole漏洞检测"><a href="#Wormhole漏洞检测" class="headerlink" title="Wormhole漏洞检测"></a>Wormhole漏洞检测</h3><ol>
+<li><p>检测目的</p>
+<p> 检测App是否存在Wormhole漏洞</p>
+</li>
+<li><p>检测方法</p>
+<ol>
+<li> 检测App是否私自开启HTTP服务，是否进行身份认证</li>
+<li> 通过nmap工具扫描，检测App代码中是否开放某个TCP端口</li>
+</ol>
+</li>
+<li><p>检测结论</p>
+<p> 如App私自开启了HTTP服务，开放某个TCP端口，同时该服务无身份认证，则本测试 <strong>不通过</strong> </p>
+</li>
+<li><p>修复建议</p>
+<p> App关闭HTTP服务和端口，增加App的访问权限控制机制</p>
+</li>
+</ol>
+<p><a id="org414f599"></a></p>
+<h1 id="鉴权认证安全测试-接口端口、内存数据、网络通信"><a href="#鉴权认证安全测试-接口端口、内存数据、网络通信" class="headerlink" title="鉴权认证安全测试 - 接口端口、内存数据、网络通信"></a>鉴权认证安全测试 - 接口端口、内存数据、网络通信</h1><p><a id="orgf61b415"></a></p>
+<h2 id="注册过程测试"><a href="#注册过程测试" class="headerlink" title="注册过程测试"></a>注册过程测试</h2><p><a id="orge9b7dc3"></a></p>
+<h3 id="注册信息保护检测"><a href="#注册信息保护检测" class="headerlink" title="注册信息保护检测"></a>注册信息保护检测</h3><ol>
+<li><p>检测目的</p>
+<p> 检测App注册密码的复杂度(密码内容要求字母大小写、数字、特殊字符组合，长度等)和注册信息在本地存储时的保护程度是否足够高</p>
+</li>
+<li><p>检测方法</p>
+<ol>
+<li><p>检测App注册密码的复杂度</p>
+<pre><code> public static boolean isPasswordChecked(CharSequence data)&#123;
+     return Pattern.compile(&quot;^((a-z0-9A-Z)+[_]?)&#123;6,20&#125;$&quot;).matcher(data).find();
+ &#125;</code></pre>
+</li>
+<li><p> 检测App在本地存储的注册信息是否加密存储，加密密钥是否进行了隐藏处理</p>
+</li>
+</ol>
+</li>
+<li><p>检测结论</p>
+<p> 如果对注册密码复杂度、长度进行了限制处理，且对本地存储的注册信息进行了加密保护，加密密钥隐藏，则通过测试</p>
+</li>
+<li><p>修复建议</p>
+<ul>
+<li>  对注册密码的复杂度和长度进行限制</li>
+<li>  对在本地存在的用户注册信息进行加密处理，隐藏加密密钥</li>
+</ul>
+</li>
+</ol>
+<p><a id="org61850ac"></a></p>
+<h3 id="注册信息传输检测"><a href="#注册信息传输检测" class="headerlink" title="注册信息传输检测"></a>注册信息传输检测</h3><ol>
+<li><p>检测目的</p>
+<p> 检测App将用户注册信息传输到服务器端的过程中是进行了加密保护</p>
+</li>
+<li><p>检测方法</p>
+<p> 使用Burpsuite拦截App注册用户的数据包，查看数据包是否加密</p>
+</li>
+<li><p>检测结论</p>
+<p> 若App在将用户注册信息传输到服务器端时进行了加密处理，则通过测试</p>
+</li>
+<li><p>修复建议</p>
+<p> 在将用户注册信息传输到服务器端的过程中，对用户注册信息进行加密处理</p>
+</li>
+</ol>
+<p><a id="org155ab47"></a></p>
+<h3 id="注册过程防爆破检测"><a href="#注册过程防爆破检测" class="headerlink" title="注册过程防爆破检测"></a>注册过程防爆破检测</h3><ol>
+<li><p>检测目的</p>
+<p> 检测App在注册账户时，是否可以爆破获取正确的验证码，注册任意用户</p>
+</li>
+<li><p>检测方法</p>
+<p> 在注册界面填写完注册信息后，点击&ldquo;获取验证码&rdquo;，使用抓包工具对其抓包，对数据包中的验证码进行暴力破解，爆破成功后，便可注册任意账号</p>
+</li>
+<li><p>检测结论</p>
+<p> 若在注册App时验证码被爆破，可以任意注册账户，则本项测试不通过</p>
+</li>
+<li><p>修复建议</p>
+<ul>
+<li>  使用复杂的验证码，验证码长度不低于6位，包含数字及字母</li>
+<li>  对发送验证码请求进行时间和次数限制</li>
+<li>  验证码在传输时进行有效的加密处理</li>
+</ul>
+</li>
+</ol>
+<p><a id="org0f50b35"></a></p>
+<h3 id="注册过程防嗅探检测"><a href="#注册过程防嗅探检测" class="headerlink" title="注册过程防嗅探检测"></a>注册过程防嗅探检测</h3><ol>
+<li><p>检测目的</p>
+<p> 检测在App注册过程中是否可以利用已有社工库中的手机号、邮箱、用户名、密码等信息，通过撞库方式频繁嗅探注册账户</p>
+</li>
+<li><p>检测方法</p>
+<p> 利用Burpsuite拦截注册用户时的数据包，分析查看是否暴露账户、密码参数，然后利用社工库数据替换账户、密码参数，进行撞库，从而获取用户注册</p>
+</li>
+<li><p>检测结论</p>
+<p> 若在注册时暴露账户、密码参数，具有利用撞库对用户注册信息进行嗅探的风险，则本项测试不通过</p>
+</li>
+<li><p>修复建议</p>
+<ul>
+<li>  对传输的注册账户、密码等敏感信息进行强加密处理</li>
+<li>  服务器端限制访问次数</li>
+</ul>
+</li>
+</ol>
+<p><a id="org1371bd6"></a></p>
+<h2 id="登陆过程测试"><a href="#登陆过程测试" class="headerlink" title="登陆过程测试"></a>登陆过程测试</h2><p><a id="orga447a0e"></a></p>
+<h3 id="密码安全验证检测"><a href="#密码安全验证检测" class="headerlink" title="密码安全验证检测"></a>密码安全验证检测</h3><ol>
+<li><p>检测目的</p>
+<p> 检测App登陆密码的验证方案是在本地验证还是在服务器端验证，验证过程中是否加入了设备信息</p>
+</li>
+<li><p>检测方法</p>
+<p> 利用JEB逆向分析App登陆功能的源码，分析密码验证中是否加密了设备信息IMEI</p>
+</li>
+<li><p>检测结论</p>
+<p> 若密码验证在服务器端进行，且加入了设备信息，避免在非法设备登陆，则通过测试</p>
+</li>
+<li><p>修复建议</p>
+<p> App登陆密码在服务器端进行验证，并加入设备信息，以降低用户登陆密码泄露的风险</p>
+</li>
+</ol>
+<p><a id="orgf9ae294"></a></p>
+<h3 id="登陆信息加密传输检测"><a href="#登陆信息加密传输检测" class="headerlink" title="登陆信息加密传输检测"></a>登陆信息加密传输检测</h3><ol>
+<li><p>检测目的</p>
+<p> 检测App在将用户登录信息传输到服务器端的过程中是否进行了加密保护，以免被攻击者拦截网络流量，窃取用户登陆信息</p>
+</li>
+<li><p>检测方法</p>
+<p> 使用Burpsuite拦截app登陆操作的数据包，分析是否明文传输用户信息</p>
+</li>
+<li><p>检测结论</p>
+<p> 若App在将用户注册信息传输到服务器端时进行了加密处理，则通过测试</p>
+</li>
+<li><p>修复建议</p>
+<p> App在将用户登陆信息传输到服务器端的过程中，要对用户登陆信息进行加密处理</p>
+</li>
+</ol>
+<p><a id="org5300a15"></a></p>
+<h3 id="登陆过程防爆破检测"><a href="#登陆过程防爆破检测" class="headerlink" title="登陆过程防爆破检测"></a>登陆过程防爆破检测</h3><ol>
+<li><p>检测目的</p>
+<p> 检测App在登录时，是否可以抓取数据包，利用数据包中的验证码字段/密码字段进行暴力破解</p>
+</li>
+<li><p>检测方法</p>
+<p> 检测App在登陆时，是否可以爆破验证码/密码，获取正确的验证码和登陆密码</p>
+</li>
+<li><p>检测结论</p>
+<p> 若App在登陆时验证码和登陆密码可以被爆破，则本项测试不通过</p>
+</li>
+<li><p>修复建议</p>
+<ul>
+<li>  使用复杂的验证码和登陆密码</li>
+<li>  对发送验证码的请求进行时间和次数限制</li>
+<li>  对验证码、登陆密码进行输入错误次数限制</li>
+<li>  验证码、登录密码在传输时进行有效的加密处理</li>
+</ul>
+</li>
+</ol>
+<p><a id="org771fe4a"></a></p>
+<h3 id="登陆过程防嗅探检测"><a href="#登陆过程防嗅探检测" class="headerlink" title="登陆过程防嗅探检测"></a>登陆过程防嗅探检测</h3><ol>
+<li><p>检测目的</p>
+<p> 检测App是否可以通过爆破验证码实现任意账户登陆、任意重置用户密码等操作</p>
+</li>
+<li><p>检测方法</p>
+<ol>
+<li>验证码爆破检测<br> 在登陆界面填写完手机号等信息后点击“获取验证码”，使用抓包工具对其抓包，对数据中的验证码进行暴力破解，爆破成功后便可实现登陆任意账户、任意重置用户密码</li>
+<li>短信轰炸检测<br> 在登陆界面填写完手机号等信息后点击“获取验证码”，若短信验证码无获取时间、获取次数限制，便可重放发送短信验证码数据进行短信轰炸</li>
+<li>探测是否具有撞库风险<br> 利用工具拦截用户登陆时的数据包，分析查看是否暴露账户、密码参数，然后利用社工库数据替换账户、密码参数进行撞库，从而获取用户登陆信息</li>
+</ol>
+</li>
+<li><p>检测结论</p>
+<p> 若App通过爆破验证码实现登陆任意账户、任意重置用户密码、短信炸弹，或通过撞库获取用户登陆信息，则此项测试 <strong>不通过</strong> </p>
+</li>
+<li><p>修复建议</p>
+<ul>
+<li>  使用复杂验证码、登陆密码</li>
+<li>  对发送验证码的请求进行时间和次数限制</li>
+<li>  对验证码输入错误次数进行限制</li>
+<li>  验证码在传输时进行有效的加密处理</li>
+<li>  服务端限制访问次数</li>
+</ul>
+</li>
+</ol>
+<p><a id="orgbc121bd"></a></p>
+<h3 id="登陆过程防绕过检测"><a href="#登陆过程防绕过检测" class="headerlink" title="登陆过程防绕过检测"></a>登陆过程防绕过检测</h3><ol>
+<li><p>检测目的</p>
+<p> 检测App是否可以绕过验证码登陆任意账户、修改用户ID获取其他用户信息</p>
+</li>
+<li><p>检测方法</p>
+<ol>
+<li> 抓取登陆成功后的响应包，之后退出，在登陆其他用户账户时，用登陆成功的响应包替换登陆失败的数据包，检测是否可以绕过验证码、密码验证，进而成功登陆其他用户的账户</li>
+<li> 修改用户ID，检测是否可以获取任意用户信息，若用户身份认证采用单一ID值判断，攻击者可以修改数据包中的用户ID进行重放，从而获取其他用户信息</li>
+</ol>
+</li>
+<li><p>检测结论</p>
+<p> 若App可以绕过验证码登陆其他用户，或可以修改用户ID获取其他用户信息，则本项测试 <strong>不通过</strong></p>
+</li>
+<li><p>修复建议</p>
+<p> 加强身份验证机制，使用Token或Session机制，设置访问控制策略，敏感数据采用高强度加密传输</p>
+</li>
+</ol>
+<p><a id="orgabc9a4b"></a></p>
+<h3 id="加强认证检测"><a href="#加强认证检测" class="headerlink" title="加强认证检测"></a>加强认证检测</h3><ol>
+<li><p>检测目的</p>
+<p> 检测App客户端是否具有双因子认证机制，保护用户登陆信息</p>
+</li>
+<li><p>检测方法</p>
+<ol>
+<li> 检测App在登陆时，是否具有双因子认证机制(密码+令牌/指纹/设备信息/短信)</li>
+<li> 使用用户登陆信息在新设备登陆时，查看是否具有短信提醒</li>
+</ol>
+</li>
+<li><p>检测结论</p>
+<p> 如Apple具有双因子认证机制和不同设备登录时的短信提醒认证机制，则通过测试</p>
+</li>
+<li><p>修复建议</p>
+<p> App采用双因子认证机制和不同设备登陆短信提醒认证机制，保护用户登陆信息安全</p>
+</li>
+</ol>
+<p><a id="orgfefe1c8"></a></p>
+<h2 id="会话过程测试"><a href="#会话过程测试" class="headerlink" title="会话过程测试"></a>会话过程测试</h2><p><a id="orgf7b44a1"></a></p>
+<h3 id="有状态会话标志检测"><a href="#有状态会话标志检测" class="headerlink" title="有状态会话标志检测"></a>有状态会话标志检测</h3><ol>
+<li><p>检测目的</p>
+<p> 检测客户端与服务器端交互的会话，是否存在复杂的会话ID，同时服务器是否对其进行校验</p>
+</li>
+<li><p>检测方法</p>
+<ol>
+<li> 模拟客户端与服务器端登陆，查看是否采用 <strong>简单的<sub>Session</sub><sub>id方式标识</sub></strong> 客户端</li>
+<li> 利用服务端返回的 <strong>_Session<sub>id构建新的URL</sub></strong> 访问服务器端，查看是否能够绕过验证</li>
+<li> 查看客户端与服务器交互时是否采用 *复杂的Key*，是否存在时间有效性校验，防止被伪造</li>
+</ol>
+</li>
+<li><p>检测结论</p>
+<p> 若客户端与服务器端会话时采用来复杂加密的Key，同时服务器端对客户端发送的Key进行了校验，攻击这无法伪造，服务器端无响应，则通过测试</p>
+</li>
+<li><p>修复建议</p>
+<p> 客户端与服务器端通信会话时采用复杂的算法对随机的<sub>Session</sub><sub>id进行加密</sub>，同时服务器端对随机的<sub>Session</sub><sub>id进行校验</sub></p>
+</li>
+</ol>
+<p><a id="org9be6f93"></a></p>
+<h3 id="无状态会话Token检测"><a href="#无状态会话Token检测" class="headerlink" title="无状态会话Token检测"></a>无状态会话Token检测</h3><ol>
+<li><p>检测目的</p>
+<p> 在客户端与服务器端通信会话过程中，检测是否存在Token机制，是否容易被攻击者截取利用</p>
+</li>
+<li><p>检测方法</p>
+<ol>
+<li> 检测客户端与服务器端通信会话的URL中是否使用携带Token，Token是否明文显示</li>
+<li> 检测客户端与服务器端认证的复杂性，是否采用类似 <strong>UID+Toekn+timestamp+密钥</strong> 的Toekn机制，并尝试破解</li>
+</ol>
+</li>
+<li><p>检测结论</p>
+<p> 若客户端与服务器端通信会话的Toekn能被轻易获取利用或被破解，则本项测试不通过</p>
+</li>
+<li><p>修复建议</p>
+<ul>
+<li>  每次登陆时重新生成Token，并设置有效期，每次操作后更新Token的时间戳，保证Token有效期往后延续</li>
+<li>  为了避免Token被截获，伪造非法请求，在每次请求时，建议采用 <strong>UID+Token+timestamp+密钥+请求参数签名</strong> ，服务器同时验证Token和签名，以保证请求的安全性</li>
+</ul>
+</li>
+</ol>
+<p><a id="org1ce3ca7"></a></p>
+<h3 id="会话不活跃检测"><a href="#会话不活跃检测" class="headerlink" title="会话不活跃检测"></a>会话不活跃检测</h3><ol>
+<li><p>检测目的</p>
+<p> 若客户端与服务器端通信临时终端或长时间不活跃，检测服务器是否立即终止会话</p>
+</li>
+<li><p>检测方法</p>
+<ol>
+<li> 在客户单与服务器端通信过程中，若长时间不操作，然后再操作时，查看客户端与服务器端是否已中断</li>
+<li> 在客户单与服务器端通信过程中，若临时中断，例如打开微信等其他操作，让服务在后台运行，查看客户端与服务器端是否已中断</li>
+</ol>
+</li>
+<li><p>检测结论</p>
+<p> 若客户端与服务器端通信临时中断或长时间不活跃时，服务器端立即与客户端中断会话，需要重新认证，则本项测试结果为通过</p>
+</li>
+<li><p>修复建议</p>
+<p> 在客户端与服务器端通信会话过程中，增加时间的有效性，例如设置时间为5min，若客户端与服务器长时间不活跃或者客户端服务在后台运行，服务器立即中断本次会话</p>
+</li>
+</ol>
+<p><a id="org71ebb3f"></a></p>
+<h3 id="加强认证检测-1"><a href="#加强认证检测-1" class="headerlink" title="加强认证检测"></a>加强认证检测</h3><ol>
+<li><p>检测目的</p>
+<p> 在客户端与服务器端进行敏感交易时，检测服务器端是否存在双因子身份认证机制</p>
+</li>
+<li><p>检测方法</p>
+<ol>
+<li> 检测客户端与服务器端进行支付、转账等敏感交易时，客户端是否需要多个身份认证方式，同时服务器端是否对其双因子进行校验</li>
+<li> 检测客户端与服务器端进行身份认证过程中，数据是否进行加密处理，加密强度如何</li>
+</ol>
+</li>
+<li><p>检测结论</p>
+<p> 若客户端与服务器端存在双因子身份认证，则通过测试</p>
+</li>
+<li><p>修复建议</p>
+<p> App中涉及敏感用户信息的界面，要求使用双因子身份认证机制，例如采用支付密码和用户预留短信验证码等认证方式</p>
+</li>
+</ol>
+<p><a id="org783c152"></a></p>
+<h2 id="登出过程测试"><a href="#登出过程测试" class="headerlink" title="登出过程测试"></a>登出过程测试</h2><p><a id="orga37a056"></a></p>
+<h3 id="会话终止检测"><a href="#会话终止检测" class="headerlink" title="会话终止检测"></a>会话终止检测</h3><ol>
+<li><p>检测目的</p>
+<p> 在用户执行登出操作后，检测服务器端是否立即终止与客户端之间的会话连接</p>
+</li>
+<li><p>检测方法</p>
+<ol>
+<li> 登陆App，执行一些需要在App进行身份验证的操作，并拦截</li>
+<li> 退出App</li>
+<li> 重放步骤1中的操作，显示错误消息或重定向到登录页面</li>
+</ol>
+</li>
+<li><p>检测结论</p>
+<p> 若在客户端用户执行登出操作后，服务器立即终止与客户端之间的会话连接，需要用户重新进行登陆认证</p>
+</li>
+<li><p>修复建议</p>
+<p> 在用户执行登出操作后，立即终止客户端与服务器端的会话连接</p>
+</li>
+</ol>
+<p><a id="org22db691"></a></p>
+<h3 id="残留数据检测"><a href="#残留数据检测" class="headerlink" title="残留数据检测"></a>残留数据检测</h3><ol>
+<li><p>检测目的</p>
+<p> 当用户执行登出操作后，检测服务器是否及时删除客户端对应的Token或<sub>Session</sub><sub>id</sub></p>
+</li>
+<li><p>检测方法</p>
+<p> 操作客户端登出功能，通过用户名、密码、及之前的Token值或<sub>Session</sub><sub>id值能够登陆成功</sub>，则本项测试不通过</p>
+</li>
+<li><p>检测结论</p>
+<p> 在用户执行登出操作后，若客户端使用之前的Token或<sub>Session</sub><sub>id值能够登陆成功</sub>，则本项测试不通过</p>
+</li>
+<li><p>修复建议</p>
+<p> 当用户执行登出操作后，服务端及时删除户端对应的Token或<sub>Session</sub><sub>id值</sub></p>
+</li>
+</ol>
+<p><a id="org13ec53d"></a></p>
+<h2 id="注销过程测试"><a href="#注销过程测试" class="headerlink" title="注销过程测试"></a>注销过程测试</h2><p><a id="org643d8f5"></a></p>
+<h3 id="重新注册检测"><a href="#重新注册检测" class="headerlink" title="重新注册检测"></a>重新注册检测</h3><ol>
+<li><p>检测目的</p>
+<p> 检测在客户端注销后，使用相同账户能否重新注册</p>
+</li>
+<li><p>检测方法</p>
+<ol>
+<li> 检测客户端是否存在注销功能</li>
+<li> 在客户单注销之后，使用相同账户注册，查看是否可以重新注册，测试第三方关联的账户是否也已经注销，还能否正常登陆</li>
+</ol>
+</li>
+<li><p>检测结论</p>
+<p> 若注销账户后仍可以使用相同的账户注册，关联的第三方数据无法使用，则通过测试</p>
+</li>
+<li><p>修复建议</p>
+<p> 在客户端注销操作后，可以使用相同账户重新注册，确认原来的账户信息已经清除</p>
+</li>
+</ol>
+<p><a id="org0942197"></a></p>
+<h3 id="数据清除检测"><a href="#数据清除检测" class="headerlink" title="数据清除检测"></a>数据清除检测</h3><ol>
+<li><p>检测目的</p>
+<p> 检测在App卸载后，本地存储的数据或账户缓存等信息是否全部清除</p>
+</li>
+<li><p>检测方法</p>
+<ol>
+<li> 安装App，先注册，登录试用，然后卸载，查看本地注册的用户账户信息等数据是否及时删除</li>
+<li> 重新安装App，查看使用之前的账户和密码是否可以直接登陆</li>
+</ol>
+</li>
+<li><p>检测结论</p>
+<p> 若卸载App后，本地数据完全及时清除，则通过测试</p>
+</li>
+<li><p>修复建议</p>
+<p> 在App卸载后，及时删除本地存储的全部数据</p>
+</li>
+</ol>
+<p><a id="org8c9cd3a"></a></p>
+<h1 id="本地数据安全测试-内存数据、本地存储"><a href="#本地数据安全测试-内存数据、本地存储" class="headerlink" title="本地数据安全测试 - 内存数据、本地存储"></a>本地数据安全测试 - 内存数据、本地存储</h1><p><a id="org0bb8c18"></a></p>
+<h2 id="数据创建测试"><a href="#数据创建测试" class="headerlink" title="数据创建测试"></a>数据创建测试</h2><p><a id="org2f44160"></a></p>
+<h3 id="用户协议检测"><a href="#用户协议检测" class="headerlink" title="用户协议检测"></a>用户协议检测</h3><ol>
+<li><p>检测目的</p>
+<p> 检测App是否存在用户协议声明。若存在，是否对使用用户信息用户及保护措施进行声明，是否存在违规行为</p>
+</li>
+<li><p>检测方法</p>
+<ol>
+<li> 安装运行App，试用App的所有主要功能，并抓包，通过数据包和源代码了解其行为特征</li>
+<li> 查看是否存在用户协议，以及协议内容是否声明App需要手机的用户信息及保护措施</li>
+</ol>
+</li>
+<li><p>检测结论</p>
+<p> 若App存在用户服务协议，且声明了用户信息用途及保护措施，则通过测试</p>
+</li>
+<li><p>修复建议</p>
+<p> App手机用户个人信息前，必须在用户服务协议中声明，需要收集用户设备的哪些信息、具体用途、及保护用户信息的安全措施和具体承诺</p>
+</li>
+</ol>
+<p><a id="orgba2f37e"></a></p>
+<h3 id="数据采集检测"><a href="#数据采集检测" class="headerlink" title="数据采集检测"></a>数据采集检测</h3><ol>
+<li><p>检测目的</p>
+<p> 检测App是否过度申请系统敏感权限，使用该权限时是否提示用户授权，是否过度手机用户数据，数据传输过程是否安全</p>
+</li>
+<li><p>检测方法</p>
+<ol>
+<li> 查看AndroidManifest.xml文件<users-permission>标签，分析App所申请的系统权限，是否存在过度申请的敏感权限</li>
+<li> 查看App调用系统的敏感权限时是否提示用户授权</li>
+<li> 分析App源码及数据包内容，查看是否过度收集在用户协议声明范围外的用户数据，确认数据传输过程中的安全性</li>
+</ol>
+</li>
+<li><p>检测结论</p>
+<p> 若App无过度申请系统敏感权限，且在使用该权限时提示用户授权，同时没有过度收集用户数据，则通过测试</p>
+</li>
+<li><p>修复建议</p>
+<p> App发布时需要删除不需要的系统敏感权限，在申请系统敏感权限时，需要提示用户授权，不得私自上传在协议中未声明的用户信息</p>
+</li>
+</ol>
+<p><a id="orga315219"></a></p>
+<h3 id="数据输入检测"><a href="#数据输入检测" class="headerlink" title="数据输入检测"></a>数据输入检测</h3><ol>
+<li><p>检测目的</p>
+<p> 检测App是否实现了自带的安全键盘，且启动键盘时数字是否随机分布，关键的输入框是否禁用复制粘贴功能，是否存在验证码校验机制，验证码是否安全</p>
+</li>
+<li><p>检测方法</p>
+<ol>
+<li> 检测App是否实现了自定义软键盘，在每次启动时按键数字随机分布，且按键时不存在按键阴影，按键回显等特效</li>
+<li> 检测要求输入敏感数据(登陆密码、支付密码、银行卡账户等)输入框禁用复制粘贴功能</li>
+<li> 检测验证码是否由图形验证码或短信验证码组成，是否通过服务器端返回给客户端</li>
+</ol>
+</li>
+<li><p>检测结论</p>
+<p> 若App实现了自定义软键盘，键盘数字实现了随机分布，具有安全的验证码，同时密码输入框禁用了复制粘贴功能，则通过测试</p>
+</li>
+<li><p>修复建议</p>
+<ul>
+<li>  App客户端实现自定义的软键盘，软键盘每次启动时都要随机分布，且按键无回显、阴影等特效</li>
+<li>  要求输入登陆、支付密码、银行卡账户等输入框禁用复制粘贴功能 设置 <code>android:longClickable=&quot;false&quot;</code> 关闭其功能</li>
+<li>  增加复杂图形验证码或短信验证码，且在传输过程中对数据进行加密</li>
+</ul>
+</li>
+</ol>
+<p><a id="orga14671a"></a></p>
+<h3 id="数据生成检测"><a href="#数据生成检测" class="headerlink" title="数据生成检测"></a>数据生成检测</h3><ol>
+<li><p>检测目的</p>
+<p> 检测App生成数据的存储形式时是结构话还是非结构话，数据是否经过加密后存储</p>
+</li>
+<li><p>检测方法</p>
+<ol>
+<li> 检测App生成的结构化数据，要求数据内容加密后存储</li>
+<li> 检测App生成的非结构化数据，要求数据内容加密后存储</li>
+</ol>
+</li>
+<li><p>检测结论</p>
+<p> 若本地存储的数据经过加密处理，则通过测试</p>
+</li>
+<li><p>修复建议</p>
+<p> 不管生成的数据是采用结构化还是非结构化形式存储，都要求加密后存储</p>
+</li>
+</ol>
+<p><a id="org0e9c3ed"></a></p>
+<h2 id="数据存储测试"><a href="#数据存储测试" class="headerlink" title="数据存储测试"></a>数据存储测试</h2><p><a id="org9fc890b"></a></p>
+<h3 id="访问控制检测"><a href="#访问控制检测" class="headerlink" title="访问控制检测"></a>访问控制检测</h3><ol>
+<li><p>检测目的</p>
+<p> 检测App是否具备完善的权限管理机制，是否能够与其他App隔离，是否在权限允许的范围之外存在数据被其他客户端访问的风险</p>
+</li>
+<li><p>检测方法</p>
+<p> 查看App本地存储文件的权限</p>
+<pre><code> ls -al files        # 本地存储file文件权限
+ ls -al shared_pref  # 本地存储xml文件权限
+ ls -al app_webview  # 本地存储的cache文件权限
+ ls -al databases    # 本地存储的db文件权限</code></pre>
+</li>
+<li><p>检测结论</p>
+<p> 如客户端具备完善的权限管理机制，以最小权限为原则，则通过测试</p>
+</li>
+<li><p>修复建议</p>
+<p> App客户端严格控制本地生成敏感数据访问权限，避免被第三方App非法访问导致用户信息泄露</p>
+</li>
+</ol>
+<p><a id="org717a8be"></a></p>
+<h3 id="数据加密检测"><a href="#数据加密检测" class="headerlink" title="数据加密检测"></a>数据加密检测</h3><ol>
+<li><p>检测目的</p>
+<p> 检测App在本地存储的用户信息是否经过了加密处理，加密密钥是否进行了保护，加密算法是否合理，生成的随机数强度是否较高，避免造成用户信息泄露风险</p>
+</li>
+<li><p>检测方法</p>
+<p> 检测App在本地生成的数据文件是否加密，检测App在本地存储的文件是否加密</p>
+</li>
+<li><p>检测结论</p>
+<p> 若本地数据进行了加密处理，加密密钥进行了保护处理，且采用多种加密算法组合加密，对不同的数据采用了不同的加密算法，采用安全的方式生成随机数，则通过测试</p>
+</li>
+<li><p>修复建议</p>
+<ul>
+<li>  对App在本地存储的用户信息进行加密处理</li>
+<li>  对对称加密算法的加密密钥进行加密保护和隐藏处理</li>
+<li>  对APp在本地存储的用户信息进行多重加密，并对用户数据采用多种加密方式</li>
+<li>  避免使用不安全的随机数生成类</li>
+<li>  避免使用不安全的加密算法</li>
+</ul>
+</li>
+</ol>
+<p><a id="org80440e9"></a></p>
+<h2 id="数据处理测试"><a href="#数据处理测试" class="headerlink" title="数据处理测试"></a>数据处理测试</h2><p><a id="org428e884"></a></p>
+<h3 id="程序日志检测"><a href="#程序日志检测" class="headerlink" title="程序日志检测"></a>程序日志检测</h3><ol>
+<li><p>检测目的</p>
+<p> 检测App源码中的调试信息是否关闭，在调试信息中是否写入敏感信息</p>
+</li>
+<li><p>检测方法</p>
+<ol>
+<li><p>反编译源码，查看是否存在日志调试代码，要求不得存在日志调试代码</p>
+<pre><code> private void save()&#123;
+     String mName=etUsername.getText().toString();
+     String mPwd=etPwd.getText().toString();
+     mEditor.putString(&quot;Name&quot;,mName);
+     mEditor.putString(&quot;Pwd&quot;,mPwd);
+     mEditor.commit();
+     Log.d(&quot;TEST&quot;,&quot;本地存储&quot;+&quot;用户名&quot;+mName+&quot;密码&quot;+mPwd);
+ &#125;</code></pre>
+</li>
+<li><p> 动态运行App客户端，使用<del>logcat</del>查看后台打印日志是否存在用户敏感数据，要求后台不得打印日志调试信息</p>
+</li>
+</ol>
+</li>
+<li><p>检测结论</p>
+<p> 若App关闭了源码中的调试信息，则通过测试</p>
+</li>
+<li><p>修复建议</p>
+<p> App发布时应删除源码中的日志调试代码</p>
+</li>
+</ol>
+<p><a id="orge80508d"></a></p>
+<h3 id="敏感数据不当使用检测"><a href="#敏感数据不当使用检测" class="headerlink" title="敏感数据不当使用检测"></a>敏感数据不当使用检测</h3><ol>
+<li><p>检测目的</p>
+<p> 检测App源码和行为特征是否符合App安全相关标准的规定</p>
+</li>
+<li><p>检测方法</p>
+<p> 反编译App代码，查看是否私自手机用户敏感信息，抓包拦截，检测是App是否私自上传用户隐私到服务器</p>
+</li>
+<li><p>检测结论</p>
+<p> 逆向分析源码和数据包，若符合App安全相关标准的规定，则通过测试</p>
+</li>
+<li><p>修复建议</p>
+<p> App源码要进行严格审核处理，禁止在用户未知情的情况下私自收集用户信息</p>
+</li>
+</ol>
+<p><a id="org203f9e0"></a></p>
+<h2 id="数据共享测试"><a href="#数据共享测试" class="headerlink" title="数据共享测试"></a>数据共享测试</h2><p><a id="orgdcc9854"></a></p>
+<h3 id="第三方SDK用户协议检测"><a href="#第三方SDK用户协议检测" class="headerlink" title="第三方SDK用户协议检测"></a>第三方SDK用户协议检测</h3><ol>
+<li><p>检测目的</p>
+<p> 检测在App服务协议中是否声明第三方SDK收集用户信息的用途，是否过度收集用户个人信息</p>
+</li>
+<li><p>检测方法</p>
+<p> 查看用户协议内容是否声明共享用户信息给第三方SDK，并通过抓包查看第三方SDK的行为特征</p>
+</li>
+<li><p>检测结论</p>
+<p> 若用户协议中明确声明App信息与第三方共享情况，则通过测试</p>
+</li>
+<li><p>修复建议</p>
+<p> App要明确声明是否会与第三方共享用户信息，以及共享用户信息的具体用途</p>
+</li>
+</ol>
+<p><a id="org4e8592a"></a></p>
+<h3 id="与第三方SDK数据共享检测"><a href="#与第三方SDK数据共享检测" class="headerlink" title="与第三方SDK数据共享检测"></a>与第三方SDK数据共享检测</h3><ol>
+<li><p>检测目的</p>
+<p> 检测App是否在用户未知情的情况下，私自共享用户个人信息给第三方SDK，以及第三方SDK是否私自收集用户个人信息到指定服务器</p>
+</li>
+<li><p>检测方法</p>
+<ol>
+<li> 分析App源码和数据包，查看是否在用户未知情的情况下，将收集的用户信息私自上传至第三方服务器</li>
+<li> 分析App嵌入的第三方SDK源码和数据包，查看是否存在第三方SDK在用户不知情的情况下，将收集的用户信息私自上传至第三方服务器</li>
+</ol>
+</li>
+<li><p>检测结论</p>
+<p> 若分析源码内容和数据包后，符合App安全相关标准的规定，则通过测试</p>
+</li>
+<li><p>修复建议</p>
+<p> 在App共享数据给第三方SDK的服务协议之外，禁止App和第三方SDK私自采用短信或数据包等形式，收集用户信息并上传到指定服务器</p>
+</li>
+</ol>
+<p><a id="orgdbf7381"></a></p>
+<h2 id="数据备份测试"><a href="#数据备份测试" class="headerlink" title="数据备份测试"></a>数据备份测试</h2><p><a id="orgbd332d3"></a></p>
+<h3 id="敏感数据备份检测"><a href="#敏感数据备份检测" class="headerlink" title="敏感数据备份检测"></a>敏感数据备份检测</h3><ol>
+<li><p>检测目的</p>
+<p> 检测App应用数据是否可以备份，是否能够防止攻击者复制App数据</p>
+</li>
+<li><p>检测方法</p>
+<p> 查看Androidmanifest.xml文件中的allowBackup属性是否为true<br> <code>&lt;application android:allowBackup=&quot;true&quot;</code></p>
+</li>
+<li><p>检测结论</p>
+<p> 在App不具备备份功能的情况下，若 <code>&lt;application android:allowBackup=&quot;false&quot;</code> 则通过测试</p>
+</li>
+<li><p>修复建议</p>
+<p> 在App不具备备份功能的情况下，应将 <code>&lt;application android:allowBackup=&quot;false&quot;</code> </p>
+</li>
+</ol>
+<p><a id="org1c7a1d8"></a></p>
+<h3 id="备份数据加密强度检测"><a href="#备份数据加密强度检测" class="headerlink" title="备份数据加密强度检测"></a>备份数据加密强度检测</h3><ol>
+<li><p>检测目的</p>
+<p> 检测App备份的数据是否进行加密处理，并且要求使用复杂的加密强度高的算法</p>
+</li>
+<li><p>检测方法</p>
+<p> 若采用对称算法加密，则判断对称算法的密码是否存储安全，加密算法的源代码是否可以被破解</p>
+</li>
+<li><p>检测结论</p>
+<p> 若App备份的数据进行了加密处理，则通过测试</p>
+</li>
+<li><p>修复建议</p>
+<p> 采用多种混合算法加密，例如AES256,MD5,HASH,DES,BASE64</p>
+</li>
+</ol>
+<p><a id="org1c83575"></a></p>
+<h2 id="数据销毁测试"><a href="#数据销毁测试" class="headerlink" title="数据销毁测试"></a>数据销毁测试</h2><p><a id="org8a07238"></a></p>
+<h3 id="后台运行数据检测"><a href="#后台运行数据检测" class="headerlink" title="后台运行数据检测"></a>后台运行数据检测</h3><ol>
+<li><p>检测目的</p>
+<p> 检测App客户端在切入后台运行时是否对收集存储的文件、数据库、配置文件、缓存文件等进行及时清理操作</p>
+</li>
+<li><p>检测方法</p>
+<ol>
+<li> App切入后台运行时，查看本地生成的db文件、xml文件或者内存中的数据是否进行了删除</li>
+<li> 导出本地的缓存信息文件，查看是否有敏感信息暴露</li>
+</ol>
+</li>
+<li><p>检测结论</p>
+<p> 若App在切入后台运行时，本地生成的临时文件db、xml、cache中的数据或者运行时内存中的用户数据做到了及时清理，则通过测试</p>
+</li>
+<li><p>修复建议</p>
+<p> App在切入后台运行后，应及时清理本地存储的用户敏感信息和内存中的数据信息</p>
+</li>
+</ol>
+<p><a id="org57b8027"></a></p>
+<h3 id="敏感数据清除检测"><a href="#敏感数据清除检测" class="headerlink" title="敏感数据清除检测"></a>敏感数据清除检测</h3><ol>
+<li><p>检测目的</p>
+<p> 检测App在退出或被卸载时，是否彻底删除在手机本地存储的文件、数据库、缓存、配置信息等文件</p>
+</li>
+<li><p>检测方法</p>
+<p> 使用反编译工具apktool对目标文件进行反编译，查看App代码中是否具有清除缓存信息的方法 <code>removeSessionCookie()/deleteCookie()</code></p>
+<pre><code> if(&quot;ClearWebView&quot; , &quot;webView.clearCache&quot;)&#123;
+     try&#123;
+         CookieSyncManager.createInstance(this.Y.getApplicationContext());
+         CookieSyncManager.getInstance().removeSessionCookie();
+         CookieSyncManager.getInstance().sync();
+     &#125;catch(Exception v0_1)&#123;
+
+     &#125;
+ &#125;</code></pre>
+</li>
+<li><p>检测结论</p>
+<p> 若本地生成文件仍然存在，则本项测试 <strong>不通过</strong></p>
+</li>
+<li><p>修复建议</p>
+<p> 检测App在退出或被卸载时，应彻底删除在手机本地存储的文件、数据库、缓存、配置信息等信息</p>
+</li>
+</ol>
+<p><a id="org3894cd3"></a></p>
+<h1 id="网络传输安全测试-网络通信"><a href="#网络传输安全测试-网络通信" class="headerlink" title="网络传输安全测试 - 网络通信"></a>网络传输安全测试 - 网络通信</h1><p><a id="org2412456"></a></p>
+<h2 id="安全传输层测试"><a href="#安全传输层测试" class="headerlink" title="安全传输层测试"></a>安全传输层测试</h2><p><a id="orgefeec07"></a></p>
+<h3 id="TLS实现检测"><a href="#TLS实现检测" class="headerlink" title="TLS实现检测"></a>TLS实现检测</h3><ol>
+<li><p>检测目的</p>
+<p> 检测客户端与服务器端交互核心的通信会话是否采用HTTPS，同时是否为现有最佳实践方式</p>
+</li>
+<li><p>检测方法</p>
+<p> 使用Burpsuite/Wireshark抓包，判定用户登录、交易等私密连接是否使用HTTPS进行网络通信，查看TLS版本是否高于1.0</p>
+</li>
+<li><p>检测结论</p>
+<p> 若客户端与服务器端通信采用HTTPS，且TLS版本高于1.0，则通过测试</p>
+</li>
+<li><p>修复建议</p>
+<p> 客户端与服务器端核心的通信会话均采用HTTPS，同时TLS版本高于1.0</p>
+</li>
+</ol>
+<p><a id="orgfb44226"></a></p>
+<h3 id="CA证书检测"><a href="#CA证书检测" class="headerlink" title="CA证书检测"></a>CA证书检测</h3><ol>
+<li><p>检测目的</p>
+<p> 检测客户端与服务器建立安全通道时，客户端是否验证远程端点的X.509证书，是否只接受受信任的CA签名证书</p>
+</li>
+<li><p>检测方法</p>
+<p> 检测CA证书的合法性，是否为受信任的CA签名证书，App是否只接受受信任的CA签名证书</p>
+<ol>
+<li> 抓取App与服务器端交互的数据，校验证书的颁发机构</li>
+<li> 在源码中检查客户端是否只接受受信任的CA签名证书</li>
+</ol>
+</li>
+<li><p>检测结论</p>
+<p> 若截获的数据包中证书由可信任机构签发，且在有效期内，且访问服务器与证书绑定的一致，同时只接受信任的CA签名证书，则通过测试</p>
+</li>
+<li><p>修复建议</p>
+<p> 客户端验证远程端点的X.509证书，只接受受信任的CA签名的证书</p>
+</li>
+</ol>
+<p><a id="org090d933"></a></p>
+<h3 id="证书校验检测"><a href="#证书校验检测" class="headerlink" title="证书校验检测"></a>证书校验检测</h3><ol>
+<li><p>检测目的</p>
+<p> 检测客户端和服务器是否对证书进行双向校验</p>
+</li>
+<li><p>检测方法</p>
+<ol>
+<li>反编译App代码，检测是否存在客户端验证服务器端证书的代码<ul>
+<li>  验证证书内容有效性、数字摘要是否一致</li>
+</ul>
+</li>
+<li> 反编译App代码，检测是否存在客户端发送本地证书给服务器端认证的代码</li>
+</ol>
+</li>
+<li><p>检测结论</p>
+<p> 若客户端对服务器端返回的证书进行了验证，同时服务器端也对客户端证书进行了校验，则通过测试</p>
+</li>
+<li><p>修复建议</p>
+<p> 建议一般的App要实现客户端对服务器端证书的单向验证，对于安全要求比较高的App，要实现客户端与服务器端证书的双向验证</p>
+</li>
+</ol>
+<p><a id="org467e66d"></a></p>
+<h3 id="主机名校验"><a href="#主机名校验" class="headerlink" title="主机名校验"></a>主机名校验</h3><ol>
+<li><p>检测目的</p>
+<p> 检测客户端是否对主机名进行校验</p>
+</li>
+<li><p>检测方法</p>
+<p> 反编译App代码，查找App通信的代码，查看 <code>setHostnameVerifier()</code> 方法接受任意域名还是进行了主机名验证</p>
+<pre><code> public static SSLSocketFactory getFixedSocketFactory()&#123;
+     MySSLSocketFactory v0;
+     try&#123;
+         v0=new MySSLSocketFactory(MySSLSocketFactory.getKeystore());
+         //缺陷代码
+         ((SSLSocketFactory)v0).setHostnameVerifier(SSLSocketFactory.ALLOW_ALL_HOSTNAME_VERIFIER);
+     &#125;catch(Throwable v1)&#123;
+         v1.printStackTrace();
+         SSLSocketFactory v0_1 = SSLSocketFactory.getSocketFactory();
+     &#125;
+     return ((SSLSocketFactory)v0);
+ &#125;</code></pre>
+</li>
+<li><p>检测结论</p>
+<p> 若App接受任意域名，则本项测试 <strong>不通过</strong></p>
+</li>
+<li><p>修复建议</p>
+<p> App对主机名进行校验，不能接受任意域名</p>
+</li>
+</ol>
+<p><a id="org764d1f9"></a></p>
+<h2 id="数据加密检测-1"><a href="#数据加密检测-1" class="headerlink" title="数据加密检测"></a>数据加密检测</h2><p><a id="org9f7544e"></a></p>
+<h3 id="检测目的-1"><a href="#检测目的-1" class="headerlink" title="检测目的"></a>检测目的</h3><p>检测在客户端与服务器端通信过程中，业务数据是否以明文方式在网络中传输，数据加密的复杂度如何</p>
+<p><a id="orgb800ad3"></a></p>
+<h3 id="检测方法-1"><a href="#检测方法-1" class="headerlink" title="检测方法"></a>检测方法</h3><ol>
+<li> 对客户端与服务器端通信的登陆、支付、转账等核心功能进行抓包，查看业务数据是否以明文方式在网络中传输</li>
+<li> 检测数据加密方式的复杂度，url编码、Base64编码、AES\DES加密等</li>
+</ol>
+<p><a id="orgbdb1f45"></a></p>
+<h3 id="检测结论-1"><a href="#检测结论-1" class="headerlink" title="检测结论"></a>检测结论</h3><p>若客户端与服务器端交互的业务数据经过多个复杂的算法加密，且无法破解，则通过测试</p>
+<p><a id="orgace36cd"></a></p>
+<h3 id="修复建议-1"><a href="#修复建议-1" class="headerlink" title="修复建议"></a>修复建议</h3><p>客户端与服务器端交互的上行/下行数据要经过多个复杂算法进行加密，同时加密存储对称加密算法密钥</p>
+<p><a id="org30371d5"></a></p>
+<h2 id="中间人攻击测试"><a href="#中间人攻击测试" class="headerlink" title="中间人攻击测试"></a>中间人攻击测试</h2><p><a id="orgb561cf4"></a></p>
+<h3 id="HTTP中间人会话劫持检测"><a href="#HTTP中间人会话劫持检测" class="headerlink" title="HTTP中间人会话劫持检测"></a>HTTP中间人会话劫持检测</h3><ol>
+<li><p>检测目的</p>
+<p> 检测客户端与服务器端交互的数据是否可以被任意篡改，导致重放攻击漏洞</p>
+</li>
+<li><p>检测方法</p>
+<p> 运行测试App，点击登陆，拦截数据包，并进行修改后放行，查看App运行结果是否能够修改成功</p>
+</li>
+<li><p>检测结论</p>
+<p> 若客户端与服务器端交互的数据经过加密处理，且数据无法修改，则通过测试</p>
+</li>
+<li><p>修复建议</p>
+<ul>
+<li>  采用高强度的加密算法对交互数据进行加密/或使用HTTPS</li>
+<li>  对客户端请求的数据和服务器端返回的数据进行完整性校验，防止被篡改</li>
+</ul>
+</li>
+</ol>
+<p><a id="org493ff20"></a></p>
+<h3 id="HTTPS中间人会话劫持检测"><a href="#HTTPS中间人会话劫持检测" class="headerlink" title="HTTPS中间人会话劫持检测"></a>HTTPS中间人会话劫持检测</h3><ol>
+<li><p>检测目的</p>
+<p> 检测App在使用HTTPS时，是否存在中间人攻击漏洞</p>
+</li>
+<li><p>检测方法</p>
+<ol>
+<li><p>反编译源码，查看是否校验服务器端是否可信- 查看实现X509TrustManager接口中 <code>checkServerTrusted()</code> 方法实现是否为空</p>
+<pre><code> public MySSLSocketFactory(KeyStore truststore) throws NoSuchAlgorithmException,
+                                                       KeyManagementException&#123;
+     this.sslContext = SSLContext.getInstance(&quot;TLS&quot;);
+     this.sslContext.init(null,new TrustManager[]&#123;new X509TrustManager()&#123;
+             public X509Certificate[] getAcceptedIssuers()&#123;
+                 return null;
+             &#125;
+             public void checkServerTrusted(X509Certificate[] arg0, String arg1) throws CertificateException&#123;
+                 //实现逻辑为空
+             &#125;
+             public void checkClientTrusted(X509Certificate[] arg0, String arg1) throws CertificateException&#123;
+                 //实现逻辑为空
+             &#125;
+
+         &#125;&#125;,null);
+ &#125;</code></pre>
+</li>
+<li><p>反编译源码，查看站点域名与站点证书的域名是否匹配- 查看 <code>HostnameVerifier()</code> 方法中的 <code>verify()</code> 函数是否存在域名校验</p>
+<p> NetworkUtils.conn=null;<br> NetworkUtils.is =null;<br> NetworkUtils.os=null;<br> NetowrkUtils.DO_NOT_VERIFY = new HostanmeVerifier(){</p>
+<pre><code>     public boolean verify(String s, SSLSession sslSession)&#123;
+         return 1; // 不检查站点域名和站点证书的域名
+     &#125;
+ &#125;</code></pre>
+</li>
+<li><p>查看 <code>sethostnameverifier()</code> 方法是否接受任意域名</p>
+<pre><code> public static SSLSocketFactory getFixedSocketFactory()&#123;
+     MySSLSocketFactory v0;
+     try&#123;
+         v0=new MySSLSocketFactory(MySSLSocketFactory.getKeystore());
+         //缺陷代码
+         ((SSLSocketFactory)v0).setHostnameVerifier(SSLSocketFactory.ALLOW_ALL_HOSTNAME_VERIFIER);
+     &#125;catch(Throwable v1)&#123;
+         v1.printStackTrace();
+         SSLSocketFactory v0_1 = SSLSocketFactory.getSocketFactory();
+     &#125;
+     return null;
+ &#125;</code></pre>
+</li>
+</ol>
+</li>
+<li><p>检测结论</p>
+<p> 若客户端不进行服务器端是否可信、不进行域名校验、接受任意域名，对APP数据包进行拦截和篡改，则造成中间人攻击的风险。<br> 若客户端对服务器端返回的SSL证书进行强校验，则通过测试</p>
+</li>
+<li><p>修复建议</p>
+<p> 对SSL证书进行签名CA是否合法、证书是否自签名、主机域名是否匹配、证书是否过期等校验。</p>
+</li>
+</ol>
+<p><a id="org5b71f45"></a></p>
+<h1 id="App加固技术"><a href="#App加固技术" class="headerlink" title="App加固技术"></a>App加固技术</h1><ol>
+<li><p>第一代加固技术： 通过对源码进行</p>
+<ul>
+<li>  压缩： 检测并一处代码中无用的类、字段、方法和特性</li>
+<li>  优化： 对字节码进行优化，移除无用指令</li>
+<li>  混淆： 使用a、b、c、d等无意义字符对类、字段、方法进行重命名</li>
+<li>  预检： 在Java平台上对处理后的代码进行预检，确保加载的class文件时可执行</li>
+</ul>
+</li>
+<li><p> 第二代加固技术： 对原始App的dex文件加密，并外包一层克，将App的核心代码进行隐藏</p>
+</li>
+<li><p> 第三代加固技术： 对dex文件中所有的类及方法函数内容进行抽取、加密和隐藏，单独加密后存放在apk中的特定文件内</p>
+</li>
+<li><p> 第四代加固技术： DVMP(dex虚拟机保护) 具有自定义虚拟机、指令集和解释器，未保护的代码在系统虚拟机中运行，保护代码在自定义虚拟机运行</p>
+</li>
+</ol>
+<h1 id="Footnotes"><a href="#Footnotes" class="headerlink" title="Footnotes"></a>Footnotes</h1><p><sup><a id="fn.1" href="#fnr.1">1</a></sup> 替换Android系统/system/bin/app<sub>process文件</sub></p>
+<p><sup><a id="fn.2" href="#fnr.2">2</a></sup> 如apk文件和dex文件</p>
+<p><sup><a id="fn.3" href="#fnr.3">3</a></sup> 可导致调用系统功能截取屏幕和录像窃取用户信息，界面劫持，对用户进行钓鱼</p>
+<p><sup><a id="fn.4" href="#fnr.4">4</a></sup> 检测客户端程序是否对已经root的android系统、模拟器和逆向框架进行检测</p>
+<p><sup><a id="fn.5" href="#fnr.5">5</a></sup> 检测客户端程序是否进行代码加密、代码混淆和代码加固，是否易被逆向并泄露程序的设计原理和运行流程</p>
+<p><sup><a id="fn.6" href="#fnr.6">6</a></sup> 检测客户程序是否对自身进行校验</p>
+<p><sup><a id="fn.7" href="#fnr.7">7</a></sup> 检测客户端程序是否可被外部程序动态调试并输出敏感信息</p>
+<p><sup><a id="fn.8" href="#fnr.8">8</a></sup> 检测客户端程序是否存在进程保护和内存保护，防止被外部程序动态注入so文件到指定进程、以及任意修改、转储内存代码行为</p>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">
+      
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 askding@qq.com </span>
+    </div>
+</article>
+
+
+<p>
+    <a  class="dashang" onclick="dashangToggle()">💰</a>
+</p>
+
+
+
+
+    <div id="comments"></div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+
+<script type="text/javascript">
+    $.getScript('/js/gitalk.js', function () {
+        var gitalk = new Gitalk({
+            clientID: '3675559917bdc294608c',
+            clientSecret: 'a826e0ded6d8b29a5bb77843f4c3805ecf7b263f',
+            repo: 'askding.github.io',
+            owner: 'askDing',
+            admin: ['askDing'],
+            id: decodeURI(location.pathname),
+            distractionFreeMode: 'true',
+            language: 'zh-CN',
+            perPage: parseInt('10',10)
+        })
+        gitalk.render('comments')
+    })
+</script>
+
+
+
+
+    
+
+
+
+
+    </div>
+    <div class="copyright">
+        <p class="footer-entry">
+    ©1996-2020 Mr.Frame
+</p>
+<p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
+
+    </div>
+    <div class="full-toc">
+        <button class="full" data-title="切换全屏 快捷键 s"><span class="min "></span></button>
+<a class="" id="rocket" ></a>
+
+    </div>
+</div>
+
+<div class="hide_box" onclick="dashangToggle()"></div>
+<div class="shang_box">
+    <a class="shang_close"  onclick="dashangToggle()">×</a>
+    <div class="shang_tit">
+        <p>Help us with donation</p>
+    </div>
+    <div class="shang_payimg">
+        <div class="pay_img">
+            <img src="/img/alipay.jpg" class="alipay" title="扫码支持">
+            <img src="/img/weixin.jpg" class="weixin" title="扫码支持">
+        </div>
+    </div>
+    <div class="shang_payselect">
+        <span><label><input type="radio" name="pay" checked value="alipay">alipay</label></span><span><label><input type="radio" name="pay" value="weixin">weixin</label></span>
+    </div>
+</div>
+
+
+</body>
+<script src="/js/jquery.pjax.js?v=1.1.0" ></script>
+
+<script src="/js/script.js?v=1.1.0" ></script>
+<script>
+    var img_resize = 'default';
+    function initArticle() {
+        /*渲染对应的表格样式*/
+        
+            $("#post .pjax table").addClass("green_title");
+        
+
+        /*渲染打赏样式*/
+        
+        $("input[name=pay]").on("click", function () {
+            if($("input[name=pay]:checked").val()=="weixin"){
+                $(".shang_box .shang_payimg .pay_img").addClass("weixin_img");
+            } else {
+                $(".shang_box .shang_payimg .pay_img").removeClass("weixin_img");
+            }
+        })
+        
+
+        /*高亮代码块行号*/
+        
+
+        /*访问数量*/
+        
+        $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
+        
+
+        /*代码高亮，行号对齐*/
+        $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
+
+        
+        
+        /* 渲染*/
+        function HTMLDecode(text) {
+            var temp = document.createElement("div");
+            temp.innerHTML = text;
+            var output = temp.innerText || temp.textContent;
+            temp = null;
+            return output;
+        }
+        if (window.mermaid){
+            window.mermaid = null
+        }
+        $.getScript("//cdn.jsdelivr.net/npm/mermaid@8.4.2/dist/mermaid.min.js", function () {
+            var mermaidOptions = JSON.parse(HTMLDecode("{&#34;theme&#34;:&#34;default&#34;,&#34;startOnLoad&#34;:true,&#34;flowchart&#34;:{&#34;useMaxWidth&#34;:false,&#34;htmlLabels&#34;:true}}"))
+            if (window.mermaid) {
+                mermaid.initialize(mermaidOptions)
+                mermaid.contentLoaded()
+            }
+        })
+        
+    }
+
+    /*打赏页面隐藏与展示*/
+    
+    function dashangToggle() {
+        $(".shang_box").fadeToggle();
+        $(".hide_box").fadeToggle();
+    }
+    
+
+</script>
+
+<!--加入行号的高亮代码块样式-->
+
+<!--自定义样式设置-->
+<style>
+    
+    
+    .nav {
+        width: 542px;
+    }
+    .nav.fullscreen {
+        margin-left: -542px;
+    }
+    .nav-left {
+        width: 120px;
+    }
+    
+    
+    @media screen and (max-width: 1468px) {
+        .nav {
+            width: 492px;
+        }
+        .nav.fullscreen {
+            margin-left: -492px;
+        }
+        .nav-left {
+            width: 100px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1024px) {
+        .nav {
+            width: 492px;
+            margin-left: -492px
+        }
+        .nav.fullscreen {
+            margin-left: 0;
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .nav {
+            width: 100%;
+        }
+        .nav-left {
+            width: 100%;
+        }
+    }
+    
+    
+    .nav-right .title-list nav a .post-title, .nav-right .title-list #local-search-result a .post-title {
+        color: #383636;
+    }
+    
+    
+    .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
+        color: #5e5e5f;
+    }
+    
+    
+    .nav-right nav a.hover, #local-search-result a.hover{
+        background-color: #e2e0e0;
+    }
+    
+    
+
+    /*列表样式*/
+    
+
+    /* 背景图样式 */
+    
+    
+
+
+    /*引用块样式*/
+    
+
+    /*文章列表背景图*/
+    
+
+    
+</style>
+
+
+
+
+
+
+
+<div id="musicMouseDrag" style="position:fixed; z-index: 9999; bottom: 0; right: 0;">
+    <!--默认style是底部bottom,右下角right -->
+    <div id="musicDragArea" style="position: absolute; top: 0; left: 0; width: 100%;height: 10px;cursor: move; z-index: 10;">
+    </div>
+    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=150 height=40 src="//music.163.com/outchain/player?type=2&id=1373296&auto=1&height=32">
+    </iframe>
+</div>
+
+
+<!--以下代码是为了支持随时拖动音乐控件的位置，如没有需求，可去掉下面代码-->
+<!--但是好像不能用 -->
+<script>
+    var $DOC = $(document)
+    $('#musicMouseDrag').on('mousedown', function (e) {
+// 阻止文本选中
+        $DOC.bind("selectstart", function () {
+            return false;
+        });
+        $('#musicDragArea').css('height', '100%');
+        var $moveTarget = $('#musicMouseDrag');
+        $moveTarget.css('border', '1px dashed grey')
+        var div_x = e.pageX - $moveTarget.offset().left;
+        var div_y = e.pageY - $moveTarget.offset().top;
+        $DOC.on('mousemove', function (e) {
+            var targetX = e.pageX - div_x;
+            var targetY = e.pageY - div_y;
+            targetX = targetX < 0 ? 0 : (targetX + $moveTarget.outerWidth() >= window.innerWidth) ? window.innerWidth - $moveTarget.outerWidth() : targetX;
+            targetY = targetY < 0 ? 0 : (targetY + $moveTarget.outerHeight() >= window.innerHeight) ? window.innerHeight - $moveTarget.outerHeight() : targetY;
+            $moveTarget.css({'left': targetX + 'px', 'top': targetY + 'px', 'bottom': 'inherit', 'right': 'inherit'})
+        }).on('mouseup', function () {
+            $DOC.unbind("selectstart");
+            $DOC.off('mousemove')
+            $DOC.off('mouseup')
+            $moveTarget.css('border', 'none')
+            $('#musicDragArea').css('height', '10px');
+        })
+    })
+</script>
+
+
+
+<!--添加建站时间代码 -->
+<script language=javascript>
+    function siteTime() {
+        window.setTimeout("siteTime()", 1000);
+        var seconds = 1000;
+        var minutes = seconds * 60;
+        var hours = minutes * 60;
+        var days = hours * 24;
+        var years = days * 365;
+        var today = new Date();
+        var todayYear = today.getFullYear();
+        var todayMonth = today.getMonth() + 1;
+        var todayDate = today.getDate();
+        var todayHour = today.getHours();
+        var todayMinute = today.getMinutes();
+        var todaySecond = today.getSeconds();
+        /* Date.UTC() -- 返回date对象距世界标准时间(UTC)1970年1月1日午夜之间的毫秒数(时间戳)
+        year - 作为date对象的年份，为4位年份值
+        month - 0-11之间的整数，做为date对象的月份
+        day - 1-31之间的整数，做为date对象的天数
+        hours - 0(午夜24点)-23之间的整数，做为date对象的小时数
+        minutes - 0-59之间的整数，做为date对象的分钟数
+        seconds - 0-59之间的整数，做为date对象的秒数
+        microseconds - 0-999之间的整数，做为date对象的毫秒数 */
+        var t1 = Date.UTC(2020, 12, 05, 00, 00, 00); //北京时间2020-12-05 00:00:00
+        var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+        var diff = t2 - t1;
+        var diffYears = Math.floor(diff / years);
+        var diffDays = Math.floor((diff / days) - diffYears * 365);
+        var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+        var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) / minutes);
+        var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours - diffMinutes * minutes) / seconds);
+        document.getElementById("sitetime").innerHTML = "本站已运行: " +diffYears+" 年 "+diffDays + " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+    }/*因为建站时间还没有一年，就将之注释掉了。需要的可以取消*/
+    siteTime();
+</script>
+
+</html>
