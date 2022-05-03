@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>免杀思路 | Mr.Frame</title>
+  <title>GnuPG使用教程 | Mr.Frame</title>
   <meta name="keywords" content="">
-  <meta name="description" content="免杀思路 | Mr.Frame">
+  <meta name="description" content="GnuPG使用教程 | Mr.Frame">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="404 Not Found: 该页面无法显示很抱歉，您所访问的地址并不存在!!!">
 <meta property="og:type" content="website">
@@ -1071,9 +1071,9 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="post-免杀思路" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-GnuPG使用教程" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">免杀思路</h1>
+        <h1 class="article-title">GnuPG使用教程</h1>
     
     <div class="article-meta">
         
@@ -1083,9 +1083,7 @@
             <i class="iconfont icon-category"></i>
             
             
-            <a  data-rel="Kali">Kali</a> > 
-            
-            <a  data-rel="Kali&lt;---&gt;PostExploit">PostExploit</a>
+            <a  data-rel="Tools">Tools</a>
             
         </span>
         
@@ -1093,7 +1091,7 @@
     </div>
     <div class="article-meta">
         
-            Created At : <time class="date" title='Updated At: 2021-09-25 14:06:46'>2021-09-25 14:06</time>
+            Created At : <time class="date" title='Updated At: 2022-04-05 20:55:25'>2022-04-05 20:55</time>
         
     </div>
     <div class="article-meta">
@@ -1128,7 +1126,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9D%80%E6%AF%92%E8%BD%AF%E4%BB%B6%E5%B8%B8%E8%A7%81%E6%A3%80%E6%B5%8B%E6%96%B9%E6%B3%95%EF%BC%9A"><span class="toc-text">杀毒软件常见检测方法：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%86%9F%E6%82%89%E5%90%84%E4%B8%AA%E6%9D%80%E8%BD%AF%E7%9A%84%E6%9F%A5%E6%9D%80%E7%89%B9%E6%80%A7"><span class="toc-text">熟悉各个杀软的查杀特性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%92%88%E5%AF%B9%E5%90%84%E4%B8%AA%E6%9D%80%E8%BD%AF%E7%9A%84%E7%89%B9%E7%82%B9%E8%BF%9B%E8%A1%8C%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8A%A0%E8%BD%BD%E5%99%A8"><span class="toc-text">针对各个杀软的特点进行自定义加载器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AE%80%E8%BF%B0%E8%BF%9C%E7%A8%8B%E5%8A%A0%E8%BD%BD%E5%99%A8%E5%88%86%E7%A6%BB%E5%85%8D%E6%9D%80%E7%9A%84%E6%80%9D%E8%B7%AF%E6%AF%94%E8%BE%83%E5%A5%BD%EF%BC%8C%E5%AE%9E%E7%8E%B0%E4%BB%A3%E7%A0%81%E9%80%BB%E8%BE%91"><span class="toc-text">简述远程加载器分离免杀的思路比较好，实现代码逻辑</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%86%E7%A6%BB%E5%85%8D%E6%9D%80"><span class="toc-text">分离免杀</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9%E8%B5%84%E6%BA%90"><span class="toc-text">修改资源</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9A%90%E8%97%8FIAT"><span class="toc-text">隐藏IAT</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#msf%E4%B8%8Ecs%E7%9A%84stager%E5%AF%B9%E6%AF%94%E5%88%86%E6%9E%90"><span class="toc-text">msf与cs的stager对比分析</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#payload%E5%8A%A0%E8%BD%BD%E6%96%B9%E5%BC%8F%E5%9F%BA%E6%9C%AC%E4%B8%80%E8%87%B4-cs%E5%8F%82%E8%80%83msf%EF%BC%8C%E9%83%BD%E6%94%AF%E6%8C%81stager%E5%92%8Cstageless%E6%96%B9%E5%BC%8F%E5%8A%A0%E8%BD%BD"><span class="toc-text">payload加载方式基本一致(cs参考msf，都支持stager和stageless方式加载)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#C2%E5%AE%9E%E7%8E%B0%E6%96%B9%E5%BC%8F%EF%BC%9A"><span class="toc-text">C2实现方式：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE%E4%B8%8A%E5%B7%AE%E5%BC%82%EF%BC%9A"><span class="toc-text">通信协议上差异：</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Table-of-Contents"><span class="toc-text">Table of Contents</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Gnu-PG%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C"><span class="toc-text">Gnu PG基本操作</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%9F%E6%88%90%E5%85%AC-%E7%A7%81%E9%92%A5"><span class="toc-text">生成公&#x2F;私钥</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9B%B4%E6%94%B9%E5%AF%86%E9%92%A5%E5%AF%86%E7%A0%81"><span class="toc-text">更改密钥密码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%97%E5%87%BA%E5%85%AC-%E7%A7%81%E9%92%A5"><span class="toc-text">列出公&#x2F;私钥</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AF%BC%E5%87%BA%E5%85%AC-%E7%A7%81%E9%92%A5"><span class="toc-text">导出公&#x2F;私钥</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AF%BC%E5%85%A5%E5%85%AC-%E7%A7%81%E9%92%A5"><span class="toc-text">导入公&#x2F;私钥</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%AA%8C%E8%AF%81%E5%85%AC%E9%92%A5"><span class="toc-text">验证公钥</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%A0%E9%99%A4%E5%85%AC%E9%92%A5-%E7%A7%81%E9%92%A5"><span class="toc-text">删除公钥&#x2F;私钥</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BA%9F%E9%99%A4%E5%AF%86%E9%92%A5"><span class="toc-text">废除密钥</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#exchange-on-keyservers"><span class="toc-text">exchange on keyservers</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%BA%94%E7%94%A8-%E5%8A%A0%E8%A7%A3%E5%AF%86%E6%96%87%E4%BB%B6"><span class="toc-text">应用-加解密文件</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%AC%E9%92%A5%E6%96%B9%E5%BC%8F"><span class="toc-text">公钥方式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AF%B9%E7%A7%B0%E5%AF%86%E7%A0%81%E6%96%B9%E6%B3%95"><span class="toc-text">对称密码方法</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%BA%94%E7%94%A8-%E6%95%B0%E5%AD%97%E7%AD%BE%E5%90%8D"><span class="toc-text">应用-数字签名</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%A7%81%E9%92%A5%E5%88%9B%E5%BB%BA-%E5%85%AC%E9%92%A5%E9%AA%8C%E8%AF%81"><span class="toc-text">私钥创建,公钥验证</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -1148,65 +1146,274 @@
 <ul>
 <li><input checked="" disabled="" type="checkbox"> </li>
 </ul>
-<h2 id="杀毒软件常见检测方法："><a href="#杀毒软件常见检测方法：" class="headerlink" title="杀毒软件常见检测方法："></a>杀毒软件常见检测方法：</h2><p>通常分为静态特征查杀和动态行为检测(包括沙箱)</p>
-<ul>
-<li><p>静态特征查杀，基于匹配特征码，与病毒库里面的md5进行比较。</p>
-<pre><code> 做法：模糊哈希算法，机器学习跑模型 ， </code></pre>
-<p>绕过：利用myccl工具查找定位复合特征码 或手工（单步查杀找到特征码）对特征码进行混淆处理</p>
+<h1 id="Table-of-Contents"><a href="#Table-of-Contents" class="headerlink" title="Table of Contents"></a>Table of Contents</h1><ol>
+<li><a href="#org99fae5b">Gnu PG基本操作</a><ol>
+<li> <a href="#org93134f5">生成公/私钥</a></li>
+<li> <a href="#org1f0eac3">更改密钥密码</a></li>
+<li> <a href="#org727b018">列出公/私钥</a></li>
+<li> <a href="#org3966672">导出公/私钥</a></li>
+<li> <a href="#org81de83f">导入公/私钥</a></li>
+<li> <a href="#org76bf1ce">验证公钥</a></li>
+<li> <a href="#orgd8946c4">删除公钥/私钥</a></li>
+<li> <a href="#orgaa85092">废除密钥</a></li>
+<li> <a href="#org46449e8">exchange on keyservers</a></li>
+</ol>
 </li>
-<li><p>动态行为检测 ，沙箱执行可以程序 </p>
-<pre><code> 做法：hook关键api，监控注册表启动项，系统文件，防止对其修改   
- 绕过： 沙箱检测(检测线程数)，文件重命名检测 延时(类似cobaltstrike的睡眠机制，用钩子在睡眠时间内存权限设置读写，在非睡眠时改回可执行。)</code></pre>
+<li><a href="#orgc92c582">应用-加解密文件</a><ol>
+<li> <a href="#org0c7f3d4">公钥方式</a></li>
+<li> <a href="#org55024ed">对称密码方法</a></li>
+</ol>
 </li>
-</ul>
-<h2 id="熟悉各个杀软的查杀特性"><a href="#熟悉各个杀软的查杀特性" class="headerlink" title="熟悉各个杀软的查杀特性"></a>熟悉各个杀软的查杀特性</h2><ul>
-<li><p>火绒： 重点基于字符串去查杀，<br>做法：重点针对函数如regMovememory进行字符串混淆或更换函数</p>
-</li>
-<li><p>360： 重点基于函数具体触发的行为去查杀 <br>做法： 延时，沙箱检测，文件重命名检测</p>
-</li>
-<li><p>WinDefender： 重点基于特定位置，特征码去查杀   <br>做法：找特征码去混淆</p>
-</li>
-</ul>
-<h2 id="针对各个杀软的特点进行自定义加载器"><a href="#针对各个杀软的特点进行自定义加载器" class="headerlink" title="针对各个杀软的特点进行自定义加载器"></a>针对各个杀软的特点进行自定义加载器</h2><p>免杀处理思路：</p>
-<ol>
-<li><p>源码免杀，（有源码时） 定位特征码，进行混淆<br>a)如内嵌汇编加载、内存免杀(渐进式申请一块内存，最后改为可执行)、分离免杀、二次编译、<br>b)隐藏IAT、强制类型转换、加花指令、多层跳转、加无效指令、替换/重写API、API伪调用等<br>c)shellcode进行异或 编码base64，AES加密等 </p>
-</li>
-<li><p>无源码免杀，在源码不好修改时，<br>a)resourceHacker资源修改、<br>b)vmp加壳、加签名、PE优化等组合使用</p>
-</li>
-<li><p>白名单exe/dll免杀-如rundll32、msbuild、mshta、cscript等</p>
-</li>
-<li><p>Powershell混淆绕过  – 根据powershell语言特性，字符串转换，变量转换，编码，压缩等</p>
-</li>
-<li><p>偏僻语言编写shellcode</p>
-</li>
-<li><p>加载器分离免杀</p>
+<li><a href="#org101dfb7">应用-数字签名</a><ol>
+<li> <a href="#org02dfb61">私钥创建,公钥验证</a></li>
+</ol>
 </li>
 </ol>
-<h2 id="简述远程加载器分离免杀的思路比较好，实现代码逻辑"><a href="#简述远程加载器分离免杀的思路比较好，实现代码逻辑" class="headerlink" title="简述远程加载器分离免杀的思路比较好，实现代码逻辑"></a>简述远程加载器分离免杀的思路比较好，实现代码逻辑</h2><p>  规避网络测绘-&gt;shellcode混淆-&gt;beacon去特征<br>大体思路：<br>Winhttp库或window sockets实现http请求（cs使用winInet库） –&gt; 存在问题：容易暴露自己C2和文件服务器地址(域前置解决)<br>对shellcode进行AES动态加密</p>
-<ul>
-<li>服务器<br>用netty框架，采用select多客户端模型 写一个web服务器，获取请求发过来的key值，用key对shellcode进行加密，响应给客户端</li>
-<li>客户端（C++加载器）</li>
-</ul>
-<ol>
-<li>每次请求shellcode时随机生成一个key值，通过http请求将key发送到服务器</li>
-<li>服务器使用key对shellcode进行AES加密或shellcode每一位与key进行异或操作，响应给客户端</li>
-<li>用cryptopp库进行AES解密shellcode，virtualAlloc采用渐进式申请内存空间，使用memcpy拷贝shellcode到内存中，最后调用这个内存地址</li>
-</ol>
-<p>甚至可以将loader是否也可以尝试一下，客户端仅保留下载loader和shellcode的功能</p>
-<p>shellcode生成工具-donut，对Execute-Assembly进一步利用，将exe,dll,vbs,js转成shellcode<br>shellcode混淆器-Obfuscator<br>修改加载器特征<br>加载器特征= A「shellcode+硬编码字符串」 + B 「virtualAlloc，virtualProtect函数」</p>
-<p>修改方法：<br>          对A进行 base64编码+加密（如xor）(更安全)，   <br>         对B插入花指令(无意义代码)， 可以使用HeapAlloc替换virtualAlloc函数<br>修改加载器的特征</p>
-<p>对<code>func_get_delegate_type</code>，<code>func_get_proc_address</code>两个函数重命名替换，对函数里面的一些变量进行重新定义</p>
-<h3 id="分离免杀"><a href="#分离免杀" class="headerlink" title="分离免杀"></a>分离免杀</h3><p>shellcode加载器=S_0「shellcode_downloader」+ S_1「donwlod+run_shellcode」<br>通常杀软只检测一个进程的行为，<br>做法： 使用windows管道，socket通道<br>分离免杀，将shellcode写入到文件中和加载器分离开，在加载器启动执行时再将shellcode从文件当中读取进来。</p>
-<h3 id="修改资源"><a href="#修改资源" class="headerlink" title="修改资源"></a>修改资源</h3><p>杀软会检测文件的描述，版本号，创建日期作为特征检测<br>做法： 使用restorator对目标修改资源文件</p>
-<h3 id="隐藏IAT"><a href="#隐藏IAT" class="headerlink" title="隐藏IAT"></a>隐藏IAT</h3><p>杀软检测导入表中是否存在可疑函数<br>做法： opt1 调用getProcessAddress获取所需函数地址<br>opt2  用汇编从Teb里找到kernel32.dll地址，再从其导出表中获取所需系统函数</p>
-<h2 id="msf与cs的stager对比分析"><a href="#msf与cs的stager对比分析" class="headerlink" title="msf与cs的stager对比分析"></a>msf与cs的stager对比分析</h2><p>  相同点： 通过WinInet系列函数远程加载stage并使用VirtualAlloc为其分配一块rwx的内存空间，最后转去执行stage<br>  不同点： cs比msf多调用几个函数 InternetErrorDlg, GetDesktopWindow, GetLastError</p>
-<h3 id="payload加载方式基本一致-cs参考msf，都支持stager和stageless方式加载"><a href="#payload加载方式基本一致-cs参考msf，都支持stager和stageless方式加载" class="headerlink" title="payload加载方式基本一致(cs参考msf，都支持stager和stageless方式加载)"></a>payload加载方式基本一致(cs参考msf，都支持stager和stageless方式加载)</h3><p>meterpreter加载顺序：stager-&gt;metsrv.dll-&gt;stdapi.dll<br>           cs-beacon加载顺序： stgaer-&gt;beacon.dll</p>
-<h3 id="C2实现方式："><a href="#C2实现方式：" class="headerlink" title="C2实现方式："></a>C2实现方式：</h3><pre><code>   meterpreter的handler实现：TCPServer结合resources实现的简易HTTP服务
-   Beacon的Listener实现：基于NanoHTTPD实现(成熟稳定)</code></pre>
-<h3 id="通信协议上差异："><a href="#通信协议上差异：" class="headerlink" title="通信协议上差异："></a>通信协议上差异：</h3><pre><code>cs和msf均使用http/s进行数据通信，但具体传输方式上有差异
-    meterpreter使用HTTP 1.1 ，默认使用keep-alive功能，且不能关闭 （不稳定）
-    Beacon使用HTTP 1.1 ，但默认不开启keep-alive功能 且支持抖动特性</code></pre>
-<p>具体的表现为在实际使用过程中,Meterpreter与C2服务器始终保持一条TCP连接,且对TCP连接的状态没有监控. 相对应的Beacon在请求任务/返回结果时会与C2建立连接,而在sleep阶段与C2没有网络连接. </p>
+<p><a id="org99fae5b"></a></p>
+<h1 id="Gnu-PG基本操作"><a href="#Gnu-PG基本操作" class="headerlink" title="Gnu PG基本操作"></a>Gnu PG基本操作</h1><p><code>brew install gpg</code></p>
+<p><a id="org93134f5"></a></p>
+<h2 id="生成公-私钥"><a href="#生成公-私钥" class="headerlink" title="生成公/私钥"></a>生成公/私钥</h2><pre><code>gpg --gen-key
+gpg (GnuPG) 2.3.1; Copyright (C) 2021 Free Software Foundation, Inc.
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+gpg: directory &#39;/Users/crkmyth1cal/.gnupg&#39; created
+gpg: keybox &#39;/Users/crkmyth1cal/.gnupg/pubring.kbx&#39; created
+Note: Use &quot;gpg --full-generate-key&quot; for a full featured key generation dialog.
+
+GnuPG needs to construct a user ID to identify your key.
+
+Real name: crkmyth1cal
+Email address: crkmyth1cal@protonmail.com
+You selected this USER-ID:
+    &quot;crkmyth1cal &lt;crkmyth1cal@protonmail.com&gt;&quot;
+
+Change (N)ame, (E)mail, or (O)kay/(Q)uit? O
+We need to generate a lot of random bytes. It is a good idea to perform
+some other action (type on the keyboard, move the mouse, utilize the
+disks) during the prime generation; this gives the random number
+generator a better chance to gain enough entropy.
+We need to generate a lot of random bytes. It is a good idea to perform
+some other action (type on the keyboard, move the mouse, utilize the
+disks) during the prime generation; this gives the random number
+generator a better chance to gain enough entropy.
+gpg: /Users/crkmyth1cal/.gnupg/trustdb.gpg: trustdb created
+gpg: key AA72032823A2ECCA marked as ultimately trusted
+gpg: directory &#39;/Users/crkmyth1cal/.gnupg/openpgp-revocs.d&#39; created
+gpg: revocation certificate stored as &#39;/Users/crkmyth1cal/.gnupg/openpgp-revocs.d/CDD514503006241E57352861AA72032823A2ECCA.rev&#39;
+public and secret key created and signed.
+
+pub   ed25519 2021-06-19 [SC] [expires: 2023-06-19]
+      CDD514503006241E57352861AA72032823A2ECCA
+uid                      crkmyth1cal &lt;crkmyth1cal@protonmail.com&gt;
+sub   cv25519 2021-06-19 [E] [expires: 2023-06-19]</code></pre>
+<p><a id="org1f0eac3"></a></p>
+<h2 id="更改密钥密码"><a href="#更改密钥密码" class="headerlink" title="更改密钥密码"></a>更改密钥密码</h2><pre><code>gpg --change-passphrase crkmyth1cal
+gpg (GnuPG) 2.3.1; Copyright (C) 2021 Free Software Foundation, Inc.
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.</code></pre>
+<p><a id="org727b018"></a></p>
+<h2 id="列出公-私钥"><a href="#列出公-私钥" class="headerlink" title="列出公/私钥"></a>列出公/私钥</h2><pre><code>gpg --list-keys  # or -k
+/Users/crkmyth1cal/.gnupg/pubring.kbx
+-------------------------------------
+pub   ed25519 2021-06-19 [SC] [expires: 2023-06-19]
+      CDD514503006241E57352861AA72032823A2ECCA
+uid           [ultimate] crkmyth1cal &lt;crkmyth1cal@protonmail.com&gt;
+sub   cv25519 2021-06-19 [E] [expires: 2023-06-19]
+
+gpg --list-secret-key # or -K
+/Users/crkmyth1cal/.gnupg/pubring.kbx
+-------------------------------------
+sec   ed25519 2021-06-19 [SC] [expires: 2023-06-19]
+      CDD514503006241E57352861AA72032823A2ECCA
+uid           [ultimate] crkmyth1cal &lt;crkmyth1cal@protonmail.com&gt;
+ssb   cv25519 2021-06-19 [E] [expires: 2023-06-19]</code></pre>
+<p><a id="org3966672"></a></p>
+<h2 id="导出公-私钥"><a href="#导出公-私钥" class="headerlink" title="导出公/私钥"></a>导出公/私钥</h2><pre><code>gpg -a -o crkmyth1cal.gpg  --export crkmyth1cal@protonmail.com
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+
+mDMEYM1ptRYJKwYBBAHaRw8BAQdAaHUGQrDArp3fZYv3MxlT6yxP9/CW5wAgdP7n
+Lfqz4MO0KGNya215dGgxY2FsIDxjcmtteXRoMWNhbEBwcm90b25tYWlsLmNvbT6I
+mgQTFgoAQhYhBM3VFFAwBiQeVzUoYapyAygjouzKBQJgzWm1AhsDBQkDwmcABQsJ
+CAcCAyICAQYVCgkICwIEFgIDAQIeBwIXgAAKCRCqcgMoI6LsynziAQCa+VwORih0
+H2Ycnx8vaM4hwr1iyySb3Bb5o0caHdeu3QEAzBAaIX6JnVPJnIskca6b+k+iJJsW
+B0xG/GTwp/G5Egi4OARgzWm1EgorBgEEAZdVAQUBAQdAmrrwVy7J5GgqpA9PfB63
+oTVQAKR/w6aARrqQ7VNybWYDAQgHiH4EGBYKACYWIQTN1RRQMAYkHlc1KGGqcgMo
+I6LsygUCYM1ptQIbDAUJA8JnAAAKCRCqcgMoI6LsyiSuAQD2PfSX8REDV34euf9D
+RoBg0uKhLTgQtgm2zeEcpm+0UAD/V4KzFUFrwMqHComhztuWLEWiCZdvRn1n+n4v
+vYFYggQ=
+=3qda
+-----END PGP PUBLIC KEY BLOCK-----
+
+gpg -ao crkmyth1cal@protonmail.com.private.key  --export-secret-keys crkmyth1cal@protonmail.com
+-----BEGIN PGP PRIVATE KEY BLOCK-----
+
+lIYEYM1ptRYJKwYBBAHaRw8BAQdAaHUGQrDArp3fZYv3MxlT6yxP9/CW5wAgdP7n
+Lfqz4MP+BwMClpMTsR0QrB7z+mUYYoXKHAVO6Sx8Qou3jDkh+13GjO8T0BKtvJxp
+4gg+ycTou2JKSF79LJPTVJKMxO+qVL9ZoXNKPMroumiraVtFKp2OOrQoY3JrbXl0
+aDFjYWwgPGNya215dGgxY2FsQHByb3Rvbm1haWwuY29tPoiaBBMWCgBCFiEEzdUU
+UDAGJB5XNShhqnIDKCOi7MoFAmDNabUCGwMFCQPCZwAFCwkIBwIDIgIBBhUKCQgL
+AgQWAgMBAh4HAheAAAoJEKpyAygjouzKfOIBAJr5XA5GKHQfZhyfHy9oziHCvWLL
+JJvcFvmjRxod167dAQDMEBohfomdU8mciyRxrpv6T6IkmxYHTEb8ZPCn8bkSCJyL
+BGDNabUSCisGAQQBl1UBBQEBB0CauvBXLsnkaCqkD098HrehNVAApH/DpoBGupDt
+U3JtZgMBCAf+BwMC3RGXbNzVlWDz4USVVz26VGm7Wo8VSovee7SFJ2YXwFbx0//u
+5luXDYhKK7iTrtjDQqMXk1LOnOdO1HM5nn0uD5N5eTgRKfiDBLZRYRXxaIh+BBgW
+CgAmFiEEzdUUUDAGJB5XNShhqnIDKCOi7MoFAmDNabUCGwwFCQPCZwAACgkQqnID
+KCOi7MokrgEA9j30l/ERA1d+Hrn/Q0aAYNLioS04ELYJts3hHKZvtFAA/1eCsxVB
+a8DKhwqJoc7blixFogmXb0Z9Z/p+L72BWIIE
+=hdmV
+-----END PGP PRIVATE KEY BLOCK-----</code></pre>
+<p><a id="org81de83f"></a></p>
+<h2 id="导入公-私钥"><a href="#导入公-私钥" class="headerlink" title="导入公/私钥"></a>导入公/私钥</h2><pre><code>gpg --import crkmyth1cal.gpg
+
+gpg --import crkmyth1cal.private.key
+gpg: key AA72032823A2ECCA: &quot;crkmyth1cal &lt;crkmyth1cal@protonmail.com&gt;&quot; not changed
+gpg: key AA72032823A2ECCA: secret key imported
+gpg: Total number processed: 1
+gpg:              unchanged: 1
+gpg:       secret keys read: 1
+gpg:  secret keys unchanged: 1</code></pre>
+<p><a id="org76bf1ce"></a></p>
+<h2 id="验证公钥"><a href="#验证公钥" class="headerlink" title="验证公钥"></a>验证公钥</h2><pre><code>gpg --edit-key crkmyth1cal
+gpg (GnuPG) 2.3.1; Copyright (C) 2021 Free Software Foundation, Inc.
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+Secret key is available.
+
+sec  ed25519/AA72032823A2ECCA
+     created: 2021-06-19  expires: 2023-06-19  usage: SC
+     trust: ultimate      validity: ultimate
+ssb  cv25519/603F4ACEF55D04B2
+     created: 2021-06-19  expires: 2023-06-19  usage: E
+[ultimate] (1). crkmyth1cal &lt;crkmyth1cal@protonmail.com&gt;
+
+gpg&gt; fpr  # fingerprint
+pub   ed25519/AA72032823A2ECCA 2021-06-19 crkmyth1cal &lt;crkmyth1cal@protonmail.com&gt;
+ Primary key fingerprint: CDD5 1450 3006 241E 5735  2861 AA72 0328 23A2 ECCA
+
+gpg&gt; sign
+&quot;crkmyth1cal &lt;crkmyth1cal@protonmail.com&gt;&quot; was already signed by key AA72032823A2ECCA
+Nothing to sign with key AA72032823A2ECCA
+
+gpg&gt; quit</code></pre>
+<p><a id="orgd8946c4"></a></p>
+<h2 id="删除公钥-私钥"><a href="#删除公钥-私钥" class="headerlink" title="删除公钥/私钥"></a>删除公钥/私钥</h2><pre><code>gpg --delete-key crkmyth1cal@protonmail.com
+gpg --delete-secret-key crkmyth1cal@protonmail.com</code></pre>
+<p><a id="orgaa85092"></a></p>
+<h2 id="废除密钥"><a href="#废除密钥" class="headerlink" title="废除密钥"></a>废除密钥</h2><pre><code>gpg  --output revoke.asc  --gen-revoke crkmyth1cal@protonmail.com                                                                130 ↵
+
+sec  ed25519/AA72032823A2ECCA 2021-06-19 crkmyth1cal &lt;crkmyth1cal@protonmail.com&gt;
+
+Create a revocation certificate for this key? (y/N) y
+Please select the reason for the revocation:
+  0 = No reason specified
+  1 = Key has been compromised
+  2 = Key is superseded
+  3 = Key is no longer used
+  Q = Cancel
+(Probably you want to select 1 here)
+Your decision? 3
+Enter an optional description; end it with an empty line:
+&gt; I&#39;m not used this key
+&gt;
+Reason for revocation: Key is no longer used
+I&#39;m not used this key
+Is this okay? (y/N) y
+ASCII armored output forced.
+Revocation certificate created.
+
+Please move it to a medium which you can hide away; if Mallory gets
+access to this certificate he can use it to make your key unusable.
+It is smart to print this certificate and store it away, just in case
+your media become unreadable.  But have some caution:  The print system of
+your machine might store the data and make it available to others!
+
+gpg --import revoke.asc
+gpg --send-keys  crkmyth1cal@protonmail.com</code></pre>
+<p><a id="org46449e8"></a></p>
+<h2 id="exchange-on-keyservers"><a href="#exchange-on-keyservers" class="headerlink" title="exchange on keyservers"></a>exchange on keyservers</h2><pre><code>gpg --refresh-keys  # update all keys from a keyserver
+gpg: refreshing 1 key from hkps://hkps.pool.sks-keyservers.net
+gpg: key 32B25331509A6D85: &quot;crkmyth1cal &lt;crkmyth1cal@protonmail.com&gt;&quot; not changed
+gpg: Total number processed: 1
+gpg:              unchanged: 1
+
+# 发送key ID到keyserver
+gpg --send-keys 9001430FA52D253633CB1B8D32B25331509A6D85                                                                           2 ↵
+gpg: sending key 32B25331509A6D85 to hkps://hkps.pool.sks-keyservers.net
+
+gpg --search-keys ethan hunter  # search key and import
+gpg: data source: https://hkps.pool.sks-keyservers.net:443
+(1)    Ethan Hunter &lt;Ethanhunter@cock.li&gt;
+      2048 bit RSA key E6F7CD04BD975343, created: 2018-05-12, expires: 2020-05-12 (expired)
+Keys 1-1 of 1 for &quot;ethan hunter&quot;.  Enter number(s), N)ext, or Q)uit &gt; 1
+gpg: key E6F7CD04BD975343: public key &quot;Ethan Hunter &lt;Ethanhunter@cock.li&gt;&quot; imported
+gpg: Total number processed: 1
+gpg:               imported: 1
+
+# import keys from a keyserver
+gpg --receive-keys B9c0165f
+gpg: key C7BA956CB9C0165F: public key &quot;ethan &lt;askding@bugbank.cn&gt;&quot; imported
+gpg: Total number processed: 1
+gpg:               imported: 1</code></pre>
+<p><a id="orgc92c582"></a></p>
+<h1 id="应用-加解密文件"><a href="#应用-加解密文件" class="headerlink" title="应用-加解密文件"></a>应用-加解密文件</h1><p><a id="org0c7f3d4"></a></p>
+<h2 id="公钥方式"><a href="#公钥方式" class="headerlink" title="公钥方式"></a>公钥方式</h2><pre><code># encrypt
+gpg  -ao msg.txt.gpg  -r crkmyth1cal   -e msg.txt  # -r = --recipient ,many recipient use : -r askDing -r crkmyth1cal
+
+ -----BEGIN PGP MESSAGE-----
+
+hF4DYD9KzvVdBLISAQdAsW4ri+FuwxVn0pE1/WGl0hsmKL+j5+hWiXRohZFeXGgw
+9PDAlAPE5icl3aKaOH2ZLVPaGLerGjRVZDopJqmAH812IPvlZHtZdRSPvBhb39dr
+1GkBCQIV1TBYqTyxBsdFBrkOmc9dVS2/720cTcwoEISGa6RRAvzj1wIFDaP9yW0g
+iA9TybkoHWaM0Gfa2Zb9d3I2FGfV+wnusWr1zl8HUGxQ+HwxaJi0PvRM1T1LZHla
++qOU2zzdLNNlXP0=
+=E0w0
+-----END PGP MESSAGE-----
+
+# decrypt
+gpg -o msg.txt -d msg.txt.gpg
+gpg: encrypted with cv25519 key, ID 603F4ACEF55D04B2, created 2021-06-19
+      &quot;crkmyth1cal &lt;crkmyth1cal@protonmail.com&gt;&quot;</code></pre>
+<p><a id="org55024ed"></a></p>
+<h2 id="对称密码方法"><a href="#对称密码方法" class="headerlink" title="对称密码方法"></a>对称密码方法</h2><pre><code>#encrypt
+gpg -ao msg.txt.symmetric.gpg  -c msg.txt  # -c as --symmetric
+-----BEGIN PGP MESSAGE-----
+
+jA0ECQMCDFhZquLMGzHz0loBJfOjQIg8gbP4LwMYHQ1dJzPmEjwPRR9WcT0OffXq
+Xqjk0ku3bUCXhKcx4FTmapleTSDJUBqHRNmBf94F2cbnSt+JUJZNpyPkY447wDne
+SYkxccKlP67k+Ro=
+=6Q3U
+-----END PGP MESSAGE-----
+
+# decrypt
+gpg -o msg.txt  -d msg.txt.symmetric.gpg
+gpg: AES256.CFB encrypted data
+gpg: encrypted with 1 passphrase</code></pre>
+<p><a id="org101dfb7"></a></p>
+<h1 id="应用-数字签名"><a href="#应用-数字签名" class="headerlink" title="应用-数字签名"></a>应用-数字签名</h1><p><a id="org02dfb61"></a></p>
+<h2 id="私钥创建-公钥验证"><a href="#私钥创建-公钥验证" class="headerlink" title="私钥创建,公钥验证"></a>私钥创建,公钥验证</h2><pre><code># sign
+gpg -ao msg.txt.sign -s msg.txt  # -s as --sign
+-----BEGIN PGP MESSAGE-----
+
+owGbwMvMwCVmtCnYMGBWbivjGp0k9tzidL2SipKEs02PSjIyixWAKFEhObE4VSE/
+TSE1L7mosqBEIS0zJ5Wro5SFQYyLQVZMkWUCozP/Ul1VM+PT0r0w01iZQGYwcHEK
+wEQWf2Vk2J26+Yxx+Y4vEWt5l2w8+HDx97CNWmeVDZfnrN7XlPemvp+R4YTTtZ2H
+xGVayz76q6yb1eRmfiuWbW/wHB3fzS0niydJsQIA
+=GoIj
+-----END PGP MESSAGE-----
+
+# verify
+ gpg --verify msg.txt.sign
+gpg: Signature made Sat Jun 19 13:38:42 2021 CST
+gpg:                using EDDSA key 9001430FA52D253633CB1B8D32B25331509A6D85
+gpg: Good signature from &quot;crkmyth1cal &lt;crkmyth1cal@protonmail.com&gt;&quot; [ultimate]
+
+# verify and restore
+gpg -o msg.txt -d msg.txt.sign
+gpg: Signature made Sat Jun 19 13:38:42 2021 CST
+gpg:                using EDDSA key 9001430FA52D253633CB1B8D32B25331509A6D85
+gpg: Good signature from &quot;crkmyth1cal &lt;crkmyth1cal@protonmail.com&gt;&quot; [ultimate]</code></pre>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 askding@qq.com </span>
