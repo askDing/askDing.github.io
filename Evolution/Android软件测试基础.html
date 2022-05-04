@@ -1384,7 +1384,7 @@
     zipalign --&gt; signsign[signed .apk文件]</code></pre>
 <ol>
 <li> 通过<del>javac</del> 将java源代码生成字节码.class文件</li>
-<li>通过<del>dx &#x2013;dex &#x2013;output=class.dex Test.class</del>将.class文件和jar包生成Android App可执行文件class.dex<br> oat格式文件是android系统自带的ELF文件格式，包括classes.dex文件内容，及classes.dex文件转换的机器指令，存储在<del>/data/dalbik-cache/arm/data@<a href="mailto:&#65;&#x70;&#112;&#64;&#x63;&#x6f;&#x6d;&#46;&#x64;&#101;&#109;&#111;&#x2e;&#116;&#101;&#x73;&#x74;&#x2d;&#x31;">&#65;&#x70;&#112;&#64;&#x63;&#x6f;&#x6d;&#46;&#x64;&#101;&#109;&#111;&#x2e;&#116;&#101;&#x73;&#x74;&#x2d;&#x31;</a>@test.apk@classes.dex</del></li>
+<li>通过<del>dx &#x2013;dex &#x2013;output=class.dex Test.class</del>将.class文件和jar包生成Android App可执行文件class.dex<br> oat格式文件是android系统自带的ELF文件格式，包括classes.dex文件内容，及classes.dex文件转换的机器指令，存储在<del>/data/dalbik-cache/arm/data@<a href="mailto:&#65;&#x70;&#112;&#64;&#99;&#111;&#109;&#46;&#100;&#101;&#109;&#x6f;&#x2e;&#x74;&#101;&#115;&#116;&#45;&#49;">&#65;&#x70;&#112;&#64;&#99;&#111;&#109;&#46;&#100;&#101;&#109;&#x6f;&#x2e;&#x74;&#101;&#115;&#116;&#45;&#49;</a>@test.apk@classes.dex</del></li>
 <li> 通过<del>aapt</del>将.dex文件和其他音视频资源文件打包成.apk文件</li>
 <li> 通过jarsigner对生成的apk文件进行数字签名，防止APP被篡改</li>
 <li> 通过zipalign使apk文件压缩部分在字节边界上使对齐</li>

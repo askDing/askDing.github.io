@@ -1160,7 +1160,7 @@
     </div>
     <div class="article-meta">
         
-        <span>Count:243</span>
+        <span>Count:246</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -1233,6 +1233,7 @@ sudo htpasswd -D /var/passwd.dav admin2</code></pre>
     CustomLog &quot;/private/var/log/apache2/dummy-host.example.com-access_log&quot; common
 
     Alias /webdav /var/webdav
+    DavLockDB /var/DavLock
     &lt;Directory /var/webdav/&gt;
       Options Indexes MultiViews
       AllowOverride None

@@ -725,7 +725,7 @@
 
   <url>
     <loc>https://askding.github.io/</loc>
-    <lastmod>2022-05-03</lastmod>
+    <lastmod>2022-05-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -733,14 +733,14 @@
   
   <url>
     <loc>https://askding.github.io/tags/aa/</loc>
-    <lastmod>2022-05-03</lastmod>
+    <lastmod>2022-05-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://askding.github.io/tags/system/</loc>
-    <lastmod>2022-05-03</lastmod>
+    <lastmod>2022-05-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -748,71 +748,71 @@
 
   
   <url>
+    <loc>https://askding.github.io/categories/Tools/</loc>
+    <lastmod>2022-05-04</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://askding.github.io/categories/Kali/</loc>
-    <lastmod>2022-05-03</lastmod>
+    <lastmod>2022-05-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://askding.github.io/categories/Evolution/</loc>
-    <lastmod>2022-05-03</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://askding.github.io/categories/Tools/</loc>
-    <lastmod>2022-05-03</lastmod>
+    <lastmod>2022-05-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://askding.github.io/categories/Kali/Exploit/</loc>
-    <lastmod>2022-05-03</lastmod>
+    <lastmod>2022-05-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://askding.github.io/categories/Coding/</loc>
-    <lastmod>2022-05-03</lastmod>
+    <lastmod>2022-05-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://askding.github.io/categories/Kali/PostExploit/</loc>
-    <lastmod>2022-05-03</lastmod>
+    <lastmod>2022-05-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://askding.github.io/categories/Coding/JavaScript/</loc>
-    <lastmod>2022-05-03</lastmod>
+    <lastmod>2022-05-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://askding.github.io/categories/Coding/Python/</loc>
-    <lastmod>2022-05-03</lastmod>
+    <lastmod>2022-05-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://askding.github.io/categories/Coding/Audit/</loc>
-    <lastmod>2022-05-03</lastmod>
+    <lastmod>2022-05-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://askding.github.io/categories/Response/</loc>
-    <lastmod>2022-05-03</lastmod>
+    <lastmod>2022-05-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
